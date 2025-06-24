@@ -1,0 +1,553 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/202/index.mdx",
+  "source_file_content_hash": "ad71ed5141246a020ef0462e8244cbf994c1107713a403fe9474612b0bee522b",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /202\ntitle: \"This Week In React #202: Next.js, Composition, search params, PPR, useActionState, content-visibility, Astro, MDX, Storybook, Priompt, Radon, Expo, MiniSim, CSS, Bun, Deno, Node.js...\"\nauthors: [slorber]\ndate: 09-25-2024\n---",
+      "source_content_hash": "d4a6652756498d26eeaa4baaa52be5981c7afd01cd4b8961dfe0fdc387fdd3d4",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week has been rather quiet in terms of React/RN announcements, but we still had great blog posts and various interesting Next.js and CSS news.",
+      "source_content_hash": "cd6cc80ccd05a0b453f446f49bee2cfd14e31b63da693f15e1c29c77b9934d60",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine a été plutôt calme en termes d'annonces React/RN, mais nous avons tout de même eu d'excellents articles de blog et diverses actualités intéressantes sur Next.js et CSS.",
+        "en": "Cette semaine a été plutôt calme en termes d'annonces React/RN, mais nous avons tout de même eu d'excellents articles de blog et diverses nouvelles intéressantes sur Next.js et CSS."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b7b09f68",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_b7b09f68",
+        "en": "@@untranslatable_placeholder_b7b09f68"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5beeb758",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6c991806",
+        "en": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_8f488ab5",
+        "en": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![AG Grid: The Best React Data Grid In The World.](/emails/issues/202/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)",
+      "source_content_hash": "e53e7a7a81aae9f5d43f08fa91c38b620df8fcec4e94ca045c0988b3a133bda2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![AG Grid: The Best React Data Grid In The World.](/emails/issues/202/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)",
+        "en": "[![AG Grid : La meilleure grille de données React au monde.](/emails/issues/202/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[AG Grid: The Best React Data Grid In The World.](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)**",
+      "source_content_hash": "66c95734d29bb14cefbeec89b21cc8a727cc75ab312b14dba5cc56524e76b310",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[AG Grid : La meilleure grille de données React au monde.](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)**",
+        "en": "**[AG Grid : La meilleure grille de données React au monde.](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "AG Grid is a fast, free and fully customisable React Data Grid. Used by **90% of the Fortune 500**, AG Grid is **100% open source** with over **4 million npm downloads per month**:",
+      "source_content_hash": "e5343d513a02b7b3184a2e462edddfbff3d671ee14a520b0900f9f7393b26b7e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "AG Grid est une grille de données React rapide, gratuite et entièrement personnalisable. Utilisée par **90% du Fortune 500**, AG Grid est **100% open source** avec plus de **4 millions de téléchargements npm par mois** :",
+        "en": "AG Grid est une grille de données React rapide, gratuite et entièrement personnalisable. Utilisée par **90% du Fortune 500**, AG Grid est **100% open source** avec plus de **4 millions de téléchargements npm par mois** :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b525ab",
+      "source_content": "- 🆓 **Free:** Access 100s of features such as **Sorting**, **Filtering**, **Pagination**, **Cell Editing** and more, all for **free** - forever.\n- **🚀 Fast:** Display **millions of cells** out of the box, without compromising on performance.\n- **🎨 Customisable:** Add your own components to cells, rows & columns and use **100+ CSS variables** to style every element.\n- 🏢 **Enterprise Features:** Purchase a licence for lifetime access to advanced features including **Pivoting**, **Grouping**, **Master / Detail** and **Integrated Charts** (powered by our React Charting Library, [AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)). Try it for free - no trial license required.",
+      "source_content_hash": "1666724691f5b5a543041df8f94297c411ec6193e3b56d5d4efd1cd7a51847ae",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🆓 **Gratuit :** Accédez à des centaines de fonctionnalités comme le **tri**, le **filtrage**, la **pagination**, l'**édition de cellules** et plus encore, **gratuitement** - pour toujours.\n- **🚀 Rapide :** Affichez **des millions de cellules** dès la sortie de la boîte, sans compromettre les performances.\n- **🎨 Personnalisable :** Ajoutez vos propres composants aux cellules, lignes et colonnes, et utilisez **plus de 100 variables CSS** pour styliser chaque élément.\n- 🏢 **Fonctionnalités Entreprise :** Achetez une licence pour un accès à vie à des fonctionnalités avancées incluant le **pivotage**, le **regroupement**, les **détails maître/détail** et les **graphiques intégrés** (alimentés par notre bibliothèque de graphiques React, [AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)). Essayez-la gratuitement - aucune licence d'essai requise.",
+        "en": "- 🆓 **Gratuit :** Accédez à des centaines de fonctionnalités comme le **Tri**, le **Filtrage**, la **Pagination**, l'**Édition de cellules** et plus encore, entièrement **gratuitement** - pour toujours.\n- **🚀 Rapide :** Affichez **des millions de cellules** prêt à l'emploi sans compromettre les performances.\n- **🎨 Personnalisable :** Ajoutez vos propres composants aux cellules, lignes et colonnes et utilisez **plus de 100 variables CSS** pour styliser chaque élément.\n- 🏢 **Fonctionnalités Entreprise :** Achetez une licence pour un accès à vie à des fonctionnalités avancées incluant le **Pivotage**, le **Regroupement**, le **Master/Détail** et les **Graphiques Intégrés** (alimentés par notre bibliothèque de graphiques React, [AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)). Essayez gratuitement - aucune licence d'essai requise."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "Learn More: [ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)",
+      "source_content_hash": "cd49af871211ee25d99578ef29ec8b6b5b3ef563831b4bcb54b61286021f196f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En savoir plus : [ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)",
+        "en": "En savoir plus : [ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9438ce36",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9f9e64f5",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "[![How I Built My Blog](/emails/issues/202/josh.jpg)](https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/)",
+      "source_content_hash": "fa091ccaf5eb9e6d3937c4c1aa1b056e8077e8f9abe60e5fc75570de16b54b21",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![How I Built My Blog](/emails/issues/202/josh.jpg)](https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/)",
+        "en": "[![Comment j'ai construit mon blog](/emails/issues/202/josh.jpg)](https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "**[How I Built My Blog](https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/)**",
+      "source_content_hash": "54902ad9abd64d1a554df31ccbf687feffc05cf0f1bcf57efa4e2ca412ff3066",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Comment j'ai construit mon blog](https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/)**",
+        "en": "**[Comment j'ai construit mon blog](https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "Josh Comeau shares his experience migrating an advanced blog (100k LOC) from the Next.js Pages Router to the App Router, with mitigated feedback (lower Lighthouse score, slower dev server…). It’s an interesting React read overall, presently presented, interactive, and not limited to Next.js users. Includes many details involving various dependencies: MDX, Shiki, Linaria, Framer-Motion…",
+      "source_content_hash": "5833817e246553f970d64b37cf0bde3d1440d708f1fe2302885ebbf679a44952",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Josh Comeau partage son expérience de migration d'un blog avancé (100k LOC) du Pages Router vers l'App Router de Next.js, avec des retours mitigés (score Lighthouse plus bas, serveur de développement plus lent...). C'est une lecture React intéressante dans l'ensemble, présentée de manière attrayante, interactive, et pas limitée aux utilisateurs de Next.js. Comprend de nombreux détails impliquant diverses dépendances : MDX, Shiki, Linaria, Framer-Motion...",
+        "en": "Josh Comeau partage son expérience de migration d'un blog avancé (100k LOC) du Next.js Pages Router vers l'App Router, avec des retours mitigés (score Lighthouse plus bas, serveur de développement plus lent…). Une lecture React intéressante, présentée de manière interactive, et pas limitée aux utilisateurs Next.js. Inclut de nombreux détails sur des dépendances variées : MDX, Shiki, Linaria, Framer-Motion…"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "67c8996f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[![Component Composition is great btw](/emails/issues/202/composition.jpg)](https://tkdodo.eu/blog/component-composition-is-great-btw)",
+      "source_content_hash": "106ecc88f8579dda06e6b28282fbb73c029a058c74757dd8fd7fad330e368d02",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Component Composition is great btw](/emails/issues/202/composition.jpg)](https://tkdodo.eu/blog/component-composition-is-great-btw)",
+        "en": "[![La composition de composants est géniale au fait](/emails/issues/202/composition.jpg)](https://tkdodo.eu/blog/component-composition-is-great-btw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "**[Component Composition is great btw](https://tkdodo.eu/blog/component-composition-is-great-btw)**",
+      "source_content_hash": "43c6759b051dfb3029faad9a7142dc6b0226df20dc4bb37662851f30e561829f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[La composition de composants est géniale d'ailleurs](https://tkdodo.eu/blog/component-composition-is-great-btw)**",
+        "en": "**[La composition de composants est géniale au fait](https://tkdodo.eu/blog/component-composition-is-great-btw)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "Dominik explains how React redefined the concept of “Separation of Concerns” and why you should favor composition and early returns over rendering multiple states conditionally. I share the same experience: the component is more likely to remain maintainable over time this way.",
+      "source_content_hash": "af6985752333e18bd602b5c4554931340d77972775da017b3c76fc1761521c42",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dominik explique comment React a redéfini le concept de \"séparation des préoccupations\" et pourquoi vous devriez privilégier la composition et les retours précoces plutôt que le rendu conditionnel de multiples états. Je partage la même expérience : le composant a ainsi plus de chances de rester maintenable dans le temps.",
+        "en": "Dominik explique comment React a redéfini le concept de \"Séparation des préoccupations\" et pourquoi privilégier la composition et les retours précoces plutôt qu'un rendu conditionnel d'états multiples. Je partage la même expérience : le composant a plus de chances de rester maintenable dans le temps ainsi."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6e9a41d8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- 💸 [React Component Analytics — Omlet Scans Your Codebase to Measure Component Usage to Increase Code Quality and Design Systems Adoption](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-aug-2024)\n- 👀 [Next.js PR \\- `@next/codemod upgrade` CLI](https://github.com/vercel/next.js/pull/69935): Next.js 15 will have a CLI to automatically upgrade your dependencies to the latest stable, RC, or canary, with the ability to run the appropriate breaking change codemods.\n- 👀 [Next.js PR \\- Update Dynamic APIs to be async](https://github.com/vercel/next.js/pull/68812): APIs like `cookies()`, `headers()`, `params` are going async in Next.js 15\\. The PR is still WIP but [codemods have already been merged](https://github.com/vercel/next.js/pull/69572). The breaking change is not so well-received by the community but opens the way to upcoming innovations for the Next.js team.\n- 🔐 [Next.js Cache Poisoning vulnerability](https://github.com/advisories/GHSA-gp8f-8m3g-qvj9): Only affects Page Router non-dynamic routes, fixed in 13.5.7 and 14.2.9\n- 🧑‍🎓 [Vim for React Developers](https://vimforreactdevs.com/): Free pragmatic mini-course from Lee Robinson.\n- 🧑‍🎓 [EpicReact v2 \\- React 19 update](https://www.epicreact.dev/): Kent C. Dodds released a new version of his flagship React course (paid, currently 40% off).\n- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇺🇸 New-York - 19 & 22 December - [Free remote tickets are available now, click here !](https://gitnation.com/badges/react-summit-us-2024/addy_osmani?from=This+Week+In+React) 10% discount with code TWIR.\n- 🗓️ [React Advanced London](https://reactadvanced.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇬🇧 London - 25 & 28 October - Hurry and grab your ticket to the conference as prices are about to go up ! And fon’t forget your discount with code “TWIR”.\n- 📜 [How to control a React component with the URL](https://buildui.com/posts/how-to-control-a-react-component-with-the-url): This cool interactive blog post greatly illustrates a common antipattern among React devs using search parameters. You should consider the URL as the source of truth, instead of trying to sync your state to the URL.\n- 📜 [Partial Prerendering for Everyone with Cloudflare Workers](https://sunilpai.dev/posts/ppr-for-everyone/): Former React team member Sunil Pai shared a demo of implementing PPR from scratch outside of Next.js, using React `prerender()`, `postpone()` and `resumeToPipeableStream()`. These are very experimental APIs that may change, don’t do this at home and only use this for learning/curiosity.\n- 📜 [CSS `content-visibility` for React devs](https://dev.to/sebastienlorber/css-content-visibility-for-react-devs-4a3i): I aggregated a few interesting tweets/links explaining why React devs should care about this new CSS property that can improve your app rendering performance. It’s now in all browsers and although not widely supported, can be a progressive enhancement. You could use it as a replacement or alongside a React virtualization library to improve performance and accessibility.\n- 📜 [HTMX Essay \\- You Can't Build Interactive Web Apps Except as Single Page Applications... And Other Myths](https://htmx.org/essays/you-cant/): An interesting read debunking myths and explaining what’s possible to do without an SPA framework like React. The gap between MPAs and SPAs is getting thinner thanks to modern technologies: Service Workers, View Transitions, Speculation Rules…\n- 📜 [How to fetch data in React](https://www.robinwieruch.de/react-fetching-data/): Robin Wieruch refreshed his data fetching overview post listing modern 2024 practices using React Query, useEffect, use(), RSC, and tRPC.\n- 📜 [Efficient Refresh Token Implementation with React Query and Axios](https://dev.to/elmehdiamlou/efficient-refresh-token-implementation-with-react-query-and-axios-f8d): Uses Axios interceptors to automatically add an `Authorization` header and React Query `onError` callback to refresh expired tokens and retry the query/mutation.\n- 📜 [How to reset the state of useActionState in React](https://www.nico.fyi/blog/reset-state-from-react-useactionstate): Resetting the action state is surprisingly tricky.\n- 📜 [From Parcel to Vite: A short story of a 100K LOC migration](https://blog.logto.io/parcel-to-vite): Logto migrated a React frontend to Vite and shared integration details on various React-related features: MDX, SVGR, `React.lazy`, Fast Refresh…\n- 📜 [Astro Content Layer \\- A Deep Dive](https://astro.build/blog/content-layer-deep-dive/)\n- 📦 [Storybook 8.3](https://storybook.js.org/blog/storybook-8-3/): Includes a first-class Vitest integration that makes Component Testing x6 faster, and a better integration with Next.js projects.\n- 📦 [Priompt \\- JSX-based prompt design library](https://www.cursor.com/blog/prompt-design): I missed that AI prompting library released last year by a Cursor dev.\n- 📦 [next-view-transitions 0.3.2 \\- useTransitionRouter API](https://x.com/shuding_/status/1838000183356850240)\n- 📦 [Legend-State 3.0 beta \\- Signal-based state library \\- Improves on computed observables, persistence, sync](https://www.legendapp.com/open-source/state/v3/)\n- 📦 [Vaultusaurus \\- Tools to integrate an Obsidian Vault with a Docusaurus site, including a graph view](https://github.com/chanjunren/vaultusaurus)\n- 🎥 [Jack Herrington \\- I hacked ShadCN to Create Insane React Templates and Installers](https://www.youtube.com/watch?v=NP2ULDZxpd0): The CLI can be hijacked by writing/generating your own JSON update files.\n- 🎥 [Theo \\- The React \"head\" Drama…](https://www.youtube.com/watch?v=qmM91SnSw8w): React 19 won’t deduplicate `<title>` tags for you and you still may want to use a lib like React Helmet.\n- 🎥 [ThePrimeTime \\- Remix's Concurrent Submissions Are Fundamentally Flawed](https://www.youtube.com/watch?v=Tvms2DaG8UY)\n- 🎙️ [Frontend First 196 \\- Tom Occhino on the future of React](https://www.youtube.com/watch?v=ktO2OqwvgEs): A look back at the many years of innovation at Facebook that led to the creation of RSC and Partial Prerendering as a North Star. From BigPipe to GraphQL/Relay to RSC.\n- 🎙️ [PodRocket \\- TanStack and TanRouter with Tanner Linsley](https://podrocket.logrocket.com/tanstack-tanrouter-tanner-linsley)\n- 🎙️ [Syntax.fm 824 \\- Taylor Otwell's opinions on PHP, React, Laravel and Lamborghini Memes](https://syntax.fm/show/824/taylor-otwell-s-opinions-on-php-react-laravel-and-lamborghini-memes)",
+      "source_content_hash": "b33189ba60e4653f4930ae418d5f28fdb4e82e6c1fa1337707d6a8e8b31d21c5",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_30193704",
+        "en": "@@untranslatable_placeholder_30193704"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "46cf9aca",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_46cf9aca",
+        "en": "@@untranslatable_placeholder_46cf9aca"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "233bb60e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "[![Ready to automate your Data Extraction?](/emails/issues/202/apryse.jpg)](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)",
+      "source_content_hash": "7d415aa9d378d1c91fef2516a7c5f4453702135118571f52c21f711635fbd2f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Prêt à automatiser votre extraction de données ?](/emails/issues/202/apryse.jpg)](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)",
+        "en": "[![Prêt à automatiser votre extraction de données ?](/emails/issues/202/apryse.jpg)](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "**[Ready to automate your Data Extraction?](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)**",
+      "source_content_hash": "b09c08ddb5757d7cedf3f9b815810b47fb3c3870331f160731e8f992cc4a80a8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Prêt à automatiser votre extraction de données ?](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)**",
+        "en": "**[Prêt à automatiser votre extraction de données ?](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "Apryse IDP simplifies data extraction from PDFs. Easily pull details from financial reports or patient records with high accuracy and minimal setup. Our AI extracts text, tables, and forms from various documents, reducing manual work and improving data quality.",
+      "source_content_hash": "e622b5b1fc42afa66161cf5c0a3a2f3f6beaab6730c7a72c8a34c7d71ceb4bba",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Apryse IDP simplifie l'extraction de données depuis des PDF. Extrayez facilement des détails de rapports financiers ou dossiers patients avec une grande précision et une configuration minimale. Notre IA extrait du texte, des tableaux et des formulaires de divers documents, réduisant le travail manuel et améliorant la qualité des données.",
+        "en": "Apryse IDP simplifie l'extraction de données à partir de PDFs. Extrayez facilement des détails de rapports financiers ou de dossiers patients avec une grande précision et une configuration minimale. Notre IA extrait le texte, les tableaux et les formulaires de divers documents, réduisant le travail manuel et améliorant la qualité des données."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "[Get Started Today.](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)",
+      "source_content_hash": "5d3218d7c71997df7ac2097cca7b5c1ea154fe3f68f467f8f9662f37a648929c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Commencez dès aujourd'hui.](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)",
+        "en": "[Commencez dès aujourd'hui.](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "647304fd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "71169a2d",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd1d0fe2",
+      "source_content": "- 💸 [Sonny Sangha - Build a Zoom 2.0 Clone with React Native](https://go.clerk.com/jBpMIuk)\n- 🐦 [React-Native-WebGPU on macOS demo](https://x.com/SaadNajmi/status/1838295375700201720)\n- 🐦 [Tzvetan Mikov about usefulness of adding Wasm support to Hermes](https://x.com/tmikov/status/1837600409386734037)\n- 📊 [React Native Benchmarking](https://dream-sports-labs.github.io/rn-benchmarking/): This interesting site allows us to compare the performance of React Native depending on version, architecture, and platform (iOS/Android)\n- 🗓️ [RNLConf](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact) \\- 🇬🇧 London - 14 & 15 November - Get a 10% discount with code \"TWIR”, grab a ticket now !\n- 📜 [React Native IDE is now Radon IDE](https://blog.swmansion.com/react-native-ide-is-now-radon-ide-cfbdad77d43c): TL;DR it’s just a name change for practical reasons. Still fun to read why they choose that name (hint: atomic, Polonium)\n- 📜 [How to listen to uncaught/unhandled errors in React Native](https://andrei-calazans.com/posts/how-to-global-catch-errors/): with `globalThis.ErrorUtils.setGlobalHandler()`\n- 📜 [How to incrementally adopt Expo](https://expo.dev/blog/how-to-incrementally-adopt-expo)\n- 📦 [MiniSim 0.9 \\- Physical devices support](https://github.com/okwasniewski/MiniSim/releases/tag/v0.9.0)\n- 📦 [React Native 0.76.0-rc.2](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.2)\n- 🎥 [Simon Grimm \\- Why React Native 3D doesn't suck (anymore)](https://www.youtube.com/watch?v=msErROjFY08)\n- 🎙️ [React Universe On Air \\- Coffee Talk 21 \\- How to Get Started With 3D in React](https://www.youtube.com/watch?v=Olh_sE0BL1s)\n- 🎙️ [Rocket Ship 50 \\- New Arch, JSI, Native Modules & Rust with Oscar Franco](https://share.transistor.fm/s/01c99662)\n- 🎙️ [RNR 308 \\- Coding and ADHD with Chris Ferdinandi](https://www.reactnativeradio.com/episodes/rnr-308-coding-and-adhd-with-chris-ferdinandi)",
+      "source_content_hash": "0c5c36ebd77a2d790ba7ac1e194888740d17164e6538531f5065f6317ae364b6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Sonny Sangha - Construire un clone de Zoom 2.0 avec React Native](https://go.clerk.com/jBpMIuk)\n- 🐦 [Démo React-Native-WebGPU sur macOS](https://x.com/SaadNajmi/status/1838295375700201720)\n- 🐦 [Tzvetan Mikov sur l'utilité d'ajouter la prise en charge Wasm à Hermes](https://x.com/tmikov/status/1837600409386734037)\n- 📊 [Benchmarking React Native](https://dream-sports-labs.github.io/rn-benchmarking/) : Ce site intéressant permet de comparer les performances de React Native selon la version, l'architecture et la plateforme (iOS/Android)\n- 🗓️ [RNLConf](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact) \\- 🇬🇧 Londres - 14 & 15 novembre - Obtenez 10% de réduction avec le code \"TWIR\", achetez votre billet maintenant !\n- 📜 [L'IDE React Native devient Radon IDE](https://blog.swmansion.com/react-native-ide-is-now-radon-ide-cfbdad77d43c) : TL;DR il s'agit juste d'un changement de nom pour des raisons pratiques. Toujours intéressant de lire pourquoi ils ont choisi ce nom (indice : atomique, Polonium)\n- 📜 [Comment écouter les erreurs non capturées/non gérées dans React Native](https://andrei-calazans.com/posts/how-to-global-catch-errors/) : avec `globalThis.ErrorUtils.setGlobalHandler()`\n- 📜 [Comment adopter Expo progressivement](https://expo.dev/blog/how-to-incrementally-adopt-expo)\n- 📦 [MiniSim 0.9 - Prise en charge des appareils physiques](https://github.com/okwasniewski/MiniSim/releases/tag/v0.9.0)\n- 📦 [React Native 0.76.0-rc.2](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.2)\n- 🎥 [Simon Grimm - Pourquoi la 3D dans React Native n'est plus nulle (désormais)](https://www.youtube.com/watch?v=msErROjFY08)\n- 🎥 [React Universe On Air - Coffee Talk 21 - Comment commencer avec la 3D dans React](https://www.youtube.com/watch?v=Olh_sE0BL1s)\n- 🎙️ [Rocket Ship 50 - Nouvelle Arch, JSI, modules natifs et Rust avec Oscar Franco](https://share.transistor.fm/s/01c99662)\n- 🎙️ [RNR 308 - Programmation et TDAH avec Chris Ferdinandi](https://www.reactnativeradio.com/episodes/rnr-308-coding-and-adhd-with-chris-ferdinandi)",
+        "en": "- 💸 [Sonny Sangha - Construire un clone de Zoom 2.0 avec React Native](https://go.clerk.com/jBpMIuk)\n- 🐦 [Démonstration de React-Native-WebGPU sur macOS](https://x.com/SaadNajmi/status/1838295375700201720)\n- 🐦 [Tzvetan Mikov sur l'utilité d'ajouter la prise en charge Wasm à Hermes](https://x.com/tmikov/status/1837600409386734037)\n- 📊 [Benchmarking React Native](https://dream-sports-labs.github.io/rn-benchmarking/) : Ce site intéressant nous permet de comparer les performances de React Native selon la version, l'architecture et la plateforme (iOS/Android)\n- 🗓️ [RNLConf](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact) \\- 🇬🇧 Londres - 14 & 15 novembre - Obtenez 10% de réduction avec le code \"TWIR\", procurez-vous un billet maintenant !\n- 📜 [L'IDE React Native devient désormais Radon IDE](https://blog.swmansion.com/react-native-ide-is-now-radon-ide-cfbdad77d43c) : TL;DR il s'agit juste d'un changement de nom pour des raisons pratiques. Toujours intéressant de lire pourquoi ils ont choisi ce nom (indice : atomique, Polonium)\n- 📜 [Comment écouter les erreurs non capturées/non gérées dans React Native](https://andrei-calazans.com/posts/how-to-global-catch-errors/) : avec `globalThis.ErrorUtils.setGlobalHandler()`\n- 📜 [Comment adopter Expo progressivement](https://expo.dev/blog/how-to-incrementally-adopt-expo)\n- 📦 [MiniSim 0.9 - Prise en charge des appareils physiques](https://github.com/okwasniewski/MiniSim/releases/tag/v0.9.0)\n- 📦 [React Native 0.76.0-rc.2](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.2)\n- 🎥 [Simon Grimm - Pourquoi la 3D dans React Native ne craint plus](https://www.youtube.com/watch?v=msErROjFY08)\n- 🎙️ [React Universe On Air - Coffee Talk 21 - Comment démarrer avec la 3D dans React](https://www.youtube.com/watch?v=Olh_sE0BL1s)\n- 🎙️ [Rocket Ship 50 - Nouvelle Arch, JSI, Native Modules & Rust avec Oscar Franco](https://share.transistor.fm/s/01c99662)\n- 🎙️ [RNR 308 - Coder avec le TDAH avec Chris Ferdinandi](https://www.reactnativeradio.com/episodes/rnr-308-coding-and-adhd-with-chris-ferdinandi)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0bee36ce",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9b8694c",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82abb0a4",
+      "source_content": "- 👀 [CSS Values and Units Level 5 \\- First Public Working Draft](https://www.w3.org/blog/CSS/2024/09/13/css-values-5-fpwd/)\n- 👀 [CSS Grid Level 3 / Masonry Layout \\- First Public Working Draft](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)\n- 🐦 [Web Preference API upstreamed to CSS Media Queries Draft Spec](https://x.com/sebastienlorber/status/1836698597548593350)\n- 📜 [9 Principles for Doing Node.js Right in Enterprise Environments](https://www.platformatichq.com/node-principles)\n- 📜 [Animate to height: auto; (and other intrinsic sizing keywords) in CSS](https://developer.chrome.com/docs/css-ui/animate-to-height-auto/)\n- 📜 [Why Typed Linting Needs TypeScript Today](https://www.joshuakgoldberg.com/blog/why-typed-linting-needs-typescript-today/)\n- 📦 [Bun 1.1.28 \\- Compile and run C in JavaScript, fix React 19 SSR](https://bun.sh/blog/compile-and-run-c-in-js)\n- 📦 [ts-blank-space \\- fast type-stripping compiler that converts TypeScript to JavaScript](https://bloomberg.github.io/ts-blank-space/)\n- 📦 [Deno 2.0 Release Candidate](https://deno.com/blog/v2.0-release-candidate)\n- 📦 [Module Federation Vite 1.0](https://www.learnbydo.ing/diary/2024-09-23-module-federation-vite-v1)",
+      "source_content_hash": "619a389dca4b2b79496a87de7cd221cd5805f44474e0d6eb9d08877b3a0ce43f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [CSS Values and Units Level 5 - Premier brouillon de travail public](https://www.w3.org/blog/CSS/2024/09/13/css-values-5-fpwd/)\n- 👀 [CSS Grid Level 3 / Masonry Layout - Premier brouillon de travail public](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)\n- 🐦 [Web Preference API intégrée au brouillon de spécification CSS Media Queries](https://x.com/sebastienlorber/status/1836698597548593350)\n- 📜 [9 principes pour bien utiliser Node.js dans les environnements d'entreprise](https://www.platformatichq.com/node-principles)\n- 📜 [Animer vers height: auto; (et autres mots-clés de dimension intrinsèque) en CSS](https://developer.chrome.com/docs/css-ui/animate-to-height-auto/)\n- 📜 [Pourquoi le linting typé a besoin de TypeScript aujourd'hui](https://www.joshuakgoldberg.com/blog/why-typed-linting-needs-typescript-today/)\n- 📦 [Bun 1.1.28 - Compiler et exécuter du C en JavaScript, correction du SSR React 19](https://bun.sh/blog/compile-and-run-c-in-js)\n- 📦 [ts-blank-space - compilateur rapide de suppression de types convertissant TypeScript en JavaScript](https://bloomberg.github.io/ts-blank-space/)\n- 📦 [Deno 2.0 Release Candidate](https://deno.com/blog/v2.0-release-candidate)\n- 📦 [Module Federation Vite 1.0](https://www.learnbydo.ing/diary/2024-09-23-module-federation-vite-v1)",
+        "en": "- 👀 [CSS Values and Units Level 5 - Premier brouillon de travail public](https://www.w3.org/blog/CSS/2024/09/13/css-values-5-fpwd/)\n- 👀 [CSS Grid Level 3 / Masonry Layout - Premier brouillon de travail public](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)\n- 🐦 [API Web Preference intégrée au brouillon de spécification CSS Media Queries](https://x.com/sebastienlorber/status/1836698597548593350)\n- 📜 [9 principes pour bien utiliser Node.js en environnement d'entreprise](https://www.platformatichq.com/node-principles)\n- 📜 [Animer vers height: auto; (et autres mots-clés de dimension intrinsèque) en CSS](https://developer.chrome.com/docs/css-ui/animate-to-height-auto/)\n- 📜 [Pourquoi le linting typé nécessite TypeScript aujourd'hui](https://www.joshuakgoldberg.com/blog/why-typed-linting-needs-typescript-today/)\n- 📦 [Bun 1.1.28 - Compiler et exécuter du C en JavaScript, correction du SSR React 19](https://bun.sh/blog/compile-and-run-c-in-js)\n- 📦 [ts-blank-space - compilateur rapide de suppression de types convertissant TypeScript en JavaScript](https://bloomberg.github.io/ts-blank-space/)\n- 📦 [Deno 2.0 Release Candidate](https://deno.com/blog/v2.0-release-candidate)\n- 📦 [Module Federation Vite 1.0](https://www.learnbydo.ing/diary/2024-09-23-module-federation-vite-v1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "[![alt](/emails/issues/202/meme.jpg)](https://x.com/Nateemerson/status/1836537823027134744)",
+      "source_content_hash": "82ae38c223d30df7338ae81fa60b01f0e3dbf2db23e20a2ca6e5caf7cb5bdcce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/202/meme.jpg)](https://x.com/Nateemerson/status/1836537823027134744)",
+        "en": "[![alt](/emails/issues/202/meme.jpg)](https://x.com/Nateemerson/status/1836537823027134744)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "534ac82e",
+      "source_content": "[![alt](/emails/issues/202/meme2.jpg)](https://x.com/laszek44/status/1832024709887631384)",
+      "source_content_hash": "86bc7d2f70c06048571c65c510a77faace0fa7cb73336b27805ef7ef46fe9d6c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/202/meme2.jpg)](https://x.com/laszek44/status/1832024709887631384)",
+        "en": "[![alt](/emails/issues/202/meme2.jpg)](https://x.com/laszek44/status/1832024709887631384)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "[![alt](/emails/issues/202/meme3.jpg)](https://x.com/jarredsumner/status/1836438965664256399)",
+      "source_content_hash": "6aa62e144e3616d29c5e5435167875c1f507ec9b27fdc6b9945282e100f4fa4a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/202/meme3.jpg)](https://x.com/jarredsumner/status/1836438965664256399)",
+        "en": "[![alt](/emails/issues/202/meme3.jpg)](https://x.com/jarredsumner/status/1836438965664256399)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/202/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.211904+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "ad71ed5141246a020ef0462e8244cbf994c1107713a403fe9474612b0bee522b",
+    "en": "ad71ed5141246a020ef0462e8244cbf994c1107713a403fe9474612b0bee522b"
+  }
+}

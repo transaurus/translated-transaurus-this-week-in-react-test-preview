@@ -1,0 +1,673 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/215/index.mdx",
+  "source_file_content_hash": "c0c7815ee306d1163dcc1ee68fa0177546827d7a62b4d3f2ec071803731bc397",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /215\ntitle: \"This Week In React #215: Dropdown, i18n, Next.js, Remix, Astro, shadcn, StyleX, Fancy Components, Expo, Static Hermes, Skia, ExecuTorch, Kotlin, Node, Shortest, Rolldown, Rspack, pnpm...\"\nauthors: [slorber]\ndate: 01-02-2025\n---",
+      "source_content_hash": "837ae7237bb257913cc871fcc238ad3fbe937c51bcf84ca9ecd314c2d41bad83",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "We initially planned to return on 8th January.\\\nBut here I am a little earlier, wishing you all a Happy New Year! 🎉\\\nWith the end-of-year festivities, it's been a quiet week for React, as you'd expect.",
+      "source_content_hash": "d6af9f128ef9a86fb865dc0710c6e1fc76ecefa44b0eec72704ca6ec4f9f524e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avions initialement prévu de revenir le 8 janvier.\\\nMais me voici un peu plus tôt pour vous souhaiter à tous une bonne année ! 🎉\\\nAvec les fêtes de fin d'année, ce fut une semaine calme pour React, comme on pouvait s'y attendre.",
+        "en": "Nous avions initialement prévu de revenir le 8 janvier.\\\nMais me voici un peu plus tôt pour vous souhaiter à tous une Bonne Année ! 🎉\\\nAvec les fêtes de fin d'année, ce fut une semaine calme pour React, comme on pouvait s'y attendre."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "I also take the opportunity to share a little newsletter retrospective, and thank you once again for reading the newsletter and making all this possible.",
+      "source_content_hash": "03ce6b6da4261c486a59a02fe47f7a23b9465fbddca489e247d54b909171edb1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'en profite également pour partager une petite rétrospective de la newsletter et vous remercier encore une fois de votre lecture qui rend tout cela possible.",
+        "en": "J'en profite également pour partager une petite rétrospective de la newsletter et vous remercier encore une fois de votre lecture qui rend tout cela possible."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "In 2024 the newsletter went from being a sustainable project to a break-even business. This allows me to invest more in the project and improve the content. Let's share some concrete figures from 2023 to 2024 :",
+      "source_content_hash": "89fb446c14f659d4f4d9ecdb73d27fdabdb2ff41ff5010c3b2ddf10a44e2cdd0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En 2024, la newsletter est passée d'un projet durable à une activité à l'équilibre. Cela me permet d'investir davantage dans le projet et d'améliorer le contenu. Voici quelques chiffres concrets de 2023 à 2024 :",
+        "en": "En 2024, la newsletter est passée d'un projet durable à une activité à l'équilibre. Cela me permet d'investir davantage dans le projet et d'améliorer le contenu. Voici quelques chiffres concrets comparant 2023 et 2024 :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "11c829ab",
+      "source_content": "- 📈 **Subscribers**: 31k ➡️ 46k - A great +15k subscribers increase this year. Not exponential as I expected, but still very nice!\n- 👥 **Writers**: 1 ➡️ 4 - I'm no longer the sole writer of this curation newsletter: Benedikt, Matthieu and Cyril have backed me up when I was unavailable.\n- 📨 **Issues**: 38 ➡️ 47 - Onboarding other writers allowed us to send out an email almost every week!\n- 💰 **Income**: 47k€ ➡️ 99k€ ARR - We are getting good as sales, and have successfully convinced most companies we wanted to work with to sponsor us.\n- 💸 **Charges**: 15k€ ➡️ 36k€ - We have increased our charges significantly this year by onboarding guest newsletter writers (14k€). The other charges are ads (12k€), SaaS (7k€) and virtual assistants (3k€).",
+      "source_content_hash": "60a13120a2a032ea31d268ce22c65c642f9ca2898665e7d5581917105a871978",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📈 **Abonnés** : 31k ➡️ 46k - Une belle augmentation de +15k abonnés cette année. Pas exponentielle comme je l'espérais, mais très satisfaisante !\n- 👥 **Rédacteurs** : 1 ➡️ 4 - Je ne suis plus le seul rédacteur de cette newsletter de curation : Benedikt, Matthieu et Cyril m'ont relayé en mon absence.\n- 📨 **Numéros** : 38 ➡️ 47 - L'arrivée d'autres rédacteurs nous a permis d'envoyer un email presque chaque semaine !\n- 💰 **Revenus** : 47k€ ➡️ 99k€ ARR - Nous progressons en vente et avons convaincu la plupart des entreprises que nous souhaitions collaborer avec nous.\n- 💸 **Charges** : 15k€ ➡️ 36k€ - Nos charges ont significativement augmenté cette année avec les rédacteurs invités (14k€). Les autres dépenses sont les publicités (12k€), les SaaS (7k€) et les assistants virtuels (3k€).",
+        "en": "- 📈 **Abonnés** : 31k ➡️ 46k - Une belle augmentation de +15k abonnés cette année. Pas exponentielle comme je l'espérais, mais toujours très bien !\n- 👥 **Rédacteurs** : 1 ➡️ 4 - Je ne suis plus le seul rédacteur de cette newsletter de curation : Benedikt, Matthieu et Cyril m'ont soutenu lorsque j'étais indisponible.\n- 📨 **Numéros** : 38 ➡️ 47 - L'intégration d'autres rédacteurs nous a permis d'envoyer un email presque chaque semaine !\n- 💰 **Revenus** : 47k€ ➡️ 99k€ ARR - Nous devenons performants en vente et avons convaincu la plupart des entreprises que nous souhaitions voir nous sponsoriser.\n- 💸 **Charges** : 15k€ ➡️ 36k€ - Nous avons significativement augmenté nos charges cette année en intégrant des rédacteurs invités (14k€). Les autres charges concernent les publicités (12k€), les SaaS (7k€) et les assistants virtuels (3k€)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "Overall I think it has been a great 2024 year, looking forward to a promising future. I didn't reach my ambitious goal of 50k subscribers, but I'm not too far. After the summer, it became more challenging to grow, not sure why. I still reached another important symbolic milestone: having more newsletter subscribers than Twitter followers, becoming less dependent of social platforms.",
+      "source_content_hash": "9ff4c0a51c3e6bc27826395e5a187868f09812436d4f83b24137b0db3eae0910",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dans l'ensemble, 2024 a été une excellente année, avec des perspectives prometteuses. Je n'ai pas atteint mon objectif ambitieux de 50k abonnés, mais j'en suis proche. Après l'été, la croissance est devenue plus difficile, sans raison évidente. J'ai tout de même franchi un jalon symbolique important : dépasser le nombre d'abonnés à la newsletter par rapport aux followers Twitter, réduisant ainsi la dépendance aux plateformes sociales.",
+        "en": "Globalement, je considère 2024 comme une excellente année et j'envisage un avenir prometteur. Je n'ai pas atteint mon objectif ambitieux de 50k abonnés, mais j'en suis proche. Après l'été, la croissance est devenue plus difficile, sans raison évidente. J'ai tout de même franchi un cap symbolique important : dépasser le nombre d'abonnés Twitter, réduisant ainsi ma dépendance aux plateformes sociales."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "In 2025, I'd like the newsletter to be more than just a list of curation emails. I plan to onboard guest writers, paying them to produce a series of articles on topics they are passionate about. If you think you'd be a great fit, reply and say hi! 👋",
+      "source_content_hash": "dec6711c8f68981a65935dabc753d42de0f72cc737fee7e7c18aa0d58b29ccfc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En 2025, j'aimerais que la newsletter soit plus qu'une simple curation. Je prévois d'engager des rédacteurs invités, rémunérés pour produire des séries d'articles sur leurs sujets de prédilection. Si vous pensez correspondre au profil, répondez et dites bonjour ! 👋",
+        "en": "En 2025, j'aimerais que la newsletter soit plus qu'une simple liste de curation. Je prévois d'intégrer des rédacteurs invités, rémunérés pour produire des séries d'articles sur leurs sujets de prédilection. Si vous pensez correspondre au profil, répondez et dites bonjour ! 👋"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "If you'd like to help me realize my plans, please share the newsletter with a friend or colleague who might enjoy it, or on any social platform.",
+      "source_content_hash": "bbfff30c4ecf70de628bf1ed11d10900dc47f6c0720730df08c3f4335ce7e858",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Si vous souhaitez m'aider à concrétiser ces projets, partagez la newsletter avec un ami ou collègue qui pourrait l'apprécier, ou sur les réseaux sociaux.",
+        "en": "Si vous souhaitez m'aider à concrétiser ces projets, partagez la newsletter avec un ami ou collègue qui pourrait l'apprécier, ou sur vos réseaux sociaux."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "93a1a7a5",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_93a1a7a5",
+        "en": "@@untranslatable_placeholder_93a1a7a5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b8530f1c",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_b8530f1c",
+        "en": "@@untranslatable_placeholder_b8530f1c"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0d484a6",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_d0d484a6",
+        "en": "@@untranslatable_placeholder_d0d484a6"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[![Become a better engineer one newsletter at a time.](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)",
+      "source_content_hash": "8f7959b385b501683cd2748c2b5e76b971c187adccd4b6c94333218bb6cd9387",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)",
+        "en": "[![Devenez un meilleur ingénieur une newsletter à la fois.](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "**[Become a better engineer one newsletter at a time.](https://dub.link/twir-dec18)**",
+      "source_content_hash": "f95a156f0a25568b14dd31edafc4ab2ac75f670387fe5b14d449939aff2eae87",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Devenez un meilleur ingénieur une newsletter à la fois.](https://dub.link/twir-dec18)**",
+        "en": "**[Devenez un meilleur ingénieur une newsletter à la fois.](https://dub.link/twir-dec18)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[Product for Engineers](https://dub.link/twir-dec18) is PostHog’s newsletter dedicated to helping engineers improve their product skills.",
+      "source_content_hash": "c45ed005c2ca09efebe89ac7220481985e7dbfe6412f41cad81366f799d1b9a3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Product for Engineers](https://dub.link/twir-dec18) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit.",
+        "en": "[Product for Engineers](https://dub.link/twir-dec18) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "With over 30k subscribers, it is a trusted source that bridges the gap between product and engineering, helping you ship products users love.",
+      "source_content_hash": "16339ef9f0e3621e3ee0e1eb7c5eb89451745a4011662ec43924a9d1efed4c4c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec plus de 30k abonnés, c'est une source fiable qui comble le fossé entre produit et ingénierie, vous aidant à livrer des produits que les utilisateurs adorent.",
+        "en": "Avec plus de 30k abonnés, c'est une source fiable qui comble le fossé entre produit et ingénierie, vous aidant à livrer des produits que les utilisateurs adorent."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "It covers topics like how to choose the right technologies, non-obvious behaviors that will kill your startup, and A/B testing mistakes they learned the hard way. It’s totally free and always will be.",
+      "source_content_hash": "8ea4cfb5af5324dfa4760d37d240ae5a8b878422fc3c56e2065f6aaf64d02522",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Elle couvre des sujets comme le choix des bonnes technologies, les comportements non évidents qui nuisent aux startups, et les erreurs de tests A/B apprises à la dure. C'est entièrement gratuit et le restera.",
+        "en": "Elle couvre des sujets comme le choix des technologies, les comportements non évidents qui tuent les startups, et les erreurs de tests A/B apprises à la dure. Totalement gratuite, elle le restera toujours."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[**Subscribe for free.**](https://dub.link/twir-dec18)",
+      "source_content_hash": "4c9c13e40c2031b996a5287e6625926df0d884495571527fbc27b6350070df58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Abonnez-vous gratuitement.**](https://dub.link/twir-dec18)",
+        "en": "[**Abonnez-vous gratuitement.**](https://dub.link/twir-dec18)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e0a17c0d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "60410af6",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "[![Building a dropdown](/emails/issues/215/dropdown.jpg)](https://reshaped.so/blog/building-a-dropdown)",
+      "source_content_hash": "4f54e8eca00120a23749351b0140e560d62f9489232a86eda6d726c13bec0ec6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Construire un menu déroulant](/emails/issues/215/dropdown.jpg)](https://reshaped.so/blog/building-a-dropdown)",
+        "en": "[![Construire un menu déroulant](/emails/issues/215/dropdown.jpg)](https://reshaped.so/blog/building-a-dropdown)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "**[Building a dropdown](https://reshaped.so/blog/building-a-dropdown)**",
+      "source_content_hash": "bf0201eaf1abf17b7211c5ebc9fb5692c38f1a4f55feef42dd36bf53989883b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Construire un menu déroulant](https://reshaped.so/blog/building-a-dropdown)**",
+        "en": "**[Construire un menu déroulant](https://reshaped.so/blog/building-a-dropdown)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "A great interactive article that shows how complex it can be to implement a flexible dropdown React component abstraction from scratch, covering triggers, positioning, focus traps, keyboard navigation, accessibility, and many other subtleties to consider.",
+      "source_content_hash": "a0d007c2ecd0da048de700f068cf0865ddd53cf6a7ec9d3c96fbb03148a43a59",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Un excellent article interactif qui montre la complexité de l'implémentation d'une abstraction de composant React déroulant flexible à partir de zéro, couvrant les déclencheurs, le positionnement, les pièges de focus, la navigation au clavier, l'accessibilité et de nombreuses autres subtilités à considérer.",
+        "en": "Un excellent article interactif qui montre la complexité de concevoir une abstraction de composant React déroulant flexible depuis zéro, couvrant les déclencheurs, le positionnement, les pièges de focus, la navigation au clavier, l'accessibilité et bien d'autres subtilités à prendre en compte."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "[![Scaffolding your internatlization in React with automation](/emails/issues/215/i18n.jpg)](https://lingual.dev/blog/automating-your-react-internationalization/)",
+      "source_content_hash": "b8e7b3500f97ec8a9fa0a94b9a8e4c2090c4dab556c2a9de98db39f894af2feb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Échafaudage de votre internationalisation dans React avec automatisation](/emails/issues/215/i18n.jpg)](https://lingual.dev/blog/automating-your-react-internationalization/)",
+        "en": "[![Structurer votre internationalisation dans React par automatisation](/emails/issues/215/i18n.jpg)](https://lingual.dev/blog/automating-your-react-internationalization/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "**[Scaffolding your internatlization in React with automation](https://lingual.dev/blog/automating-your-react-internationalization/)**",
+      "source_content_hash": "eb6f66f2da3bb30e67fdbe3b4ff6b17a2e0d061b6e1a7076883eade8e30adb85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Échafaudage de votre internationalisation dans React avec automatisation](https://lingual.dev/blog/automating-your-react-internationalization/)**",
+        "en": "**[Structurer votre internationalisation dans React par automatisation](https://lingual.dev/blog/automating-your-react-internationalization/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "This article shows how you can use ts-morph AST transformations to automatically replace all your app’s hardcoded strings by react-i18next or react-intl translation APIs.",
+      "source_content_hash": "cd74bb8c94baa6ef7b388f3bc03798725c08af35c836345b55dec8f792521242",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cet article montre comment utiliser les transformations AST de ts-morph pour remplacer automatiquement toutes les chaînes codées en dur de votre application par les API de traduction de react-i18next ou react-intl.",
+        "en": "Cet article montre comment utiliser les transformations AST de ts-morph pour remplacer automatiquement toutes les chaînes codées en dur de votre application par les APIs de traduction de react-i18next ou react-intl."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a635fada",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76dbcc76",
+      "source_content": "- 💸 [React Native Zero to Hero - Everything you need to ship your first app](https://galaxies.dev/missions/zero-to-hero?utm_source=thisweekinreact)\n- 👀 [React PR \\- “Forgive” IDE extension](https://github.com/facebook/react/pull/31918): The React Compiler team recently [hinted at React Summit](https://www.youtube.com/watch?v=C8Mg-NSyqWg&t=14452s) their intent to create a “React IDE” powered by the compiler, not limited to just linting but also providing educational tooltips and more. Well, there's nothing very interesting to see yet, but work has begun on scaffolding a Language Server Protocol and VSCode extension.\n- 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 February - Full speaker line up just dropped! Join Mateusz Burzyński, Elise Patrikainen and David Rousset! Get 20% off tickets with code \"TWIR\"!\n- 📜 [You don't need Next.js](https://www.comfydeploy.com/blog/you-dont-need-nextjs): They migrated dashboards from Next.js 15 to just React with TanStack Router and Rspack with satisfying results.\n- 📜 [Building the Black Friday-Cyber Monday live dashboard](https://vercel.com/blog/building-the-black-friday-cyber-monday-live-dashboard): Vercel presents the technical architecture behind their Next.js-based Black Friday dashboard\n- 📜 [Replacing Legacy throw in React 19 with Suspense and use](https://peterkellner.net/2024/12/31/replacing-legacy-throw-in-react-19-with-suspense-and-use/): There’s a new `use()` hook, but throwing promises still works.\n- 📜 [Remix Security Checklist](https://blog.arcjet.com/remix-security-checklist/)\n- 📜 [Building a simple form in React \\- before and after React 19](https://reactpractice.dev/articles/building-a-simple-form-in-react-before-and-after-react-19/)\n- 📦 [Astro 5.1 \\- Experimental sessions, remote image caching, getActionPath](https://astro.build/blog/astro-510/)\n- 📦 [StyleX 0.10 - PostCSS plugin, better debugging, ESLint/Perf/CLI improvements](https://stylexjs.com/blog/v0.10.0): The new PostCSS plugin should make StyleX easier to adopt in various contexts.\n- 📦 [Fancy Components \\- Collection of funky, unconventional components](https://www.fancycomponents.dev/)\n- 📦 [next-intl 4.0 beta](https://next-intl.dev/blog/next-intl-4-0): type-safety for ICU params is really cool\\! Also lays the ground for the latest Next.js innovations like PPR, dynamicIO, and rootParams.\n- 📦 [React Router 7.1 \\- Support for Vite 6](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v710)\n- 📦 [shadcn/ui CLI \\- Experimental monorepo support](https://ui.shadcn.com/docs/monorepo)\n- 📦 [React Toastify 11.0 \\- Easy customization](https://github.com/fkhadra/react-toastify/releases/tag/v11.0.0)\n- 📦 [TanStack Store 0.7 \\- Derived/Effect classes](https://tanstack.com/store/latest/docs/quick-start#derived)\n- 🎥 [Theo \\- This magic hack makes Next.js possible](https://www.youtube.com/watch?v=VMDydLUCLtE): A great video explaining how Next.js implements PPR and Dynamic IO features using only JS features.\n- 🎥 [Theo \\- I might have a new favorite state manager (XState Store)](https://www.youtube.com/watch?v=Pmieyp75SrA)\n- 🎥 [Lee Robinson \\- Forms with React 19 and Next.js](https://www.youtube.com/watch?v=KhO4VjaYSXU)\n- 🎥 [Ankita \\- Stop\\! These Next.js Mistakes are Killing Your App](https://www.youtube.com/watch?v=6ZR5drEQzp4)\n- 🎙️ [This Month in React \\- React 19 is here, 2024 is over](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-12-React-19-is-here--2024-is-over-e2sv4o6)",
+      "source_content_hash": "b3102d85d0f5893892b076d2f689f1781c1763e7a34c9334b241fa14185fb4f8",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_76dbcc76",
+        "en": "@@untranslatable_placeholder_76dbcc76"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0904148e",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_0904148e",
+        "en": "@@untranslatable_placeholder_0904148e"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4f2104fa",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f8edb6d2",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "[![React-admin: The Open-Source Framework for B2B apps](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)",
+      "source_content_hash": "d5cec28489d305898e6708c3f03590161bc0590d1998cb09d20d6166251ff225",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React-admin : Le framework open-source pour les applications B2B](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)",
+        "en": "[![React-admin : Le framework open-source pour applications B2B](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "**[React-admin: The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/)**",
+      "source_content_hash": "134eba9a0d54cccd0c26001e8ef40db0ca57b4aed3b5964db5fa48be482c2b51",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React-admin : Le framework open-source pour les applications B2B](https://marmelab.com/react-admin/)**",
+        "en": "**[React-admin : Le framework open-source pour applications B2B](https://marmelab.com/react-admin/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "👩🏻‍💻 **For developers, by developers**: React-admin is a free, low-code library that accelerates the development of internal tools, admins or B2B apps. Unlike no-code tools, you use code, ensuring you’re never limited by the framework.",
+      "source_content_hash": "a05239d03a07c1b3679f8a524c98dbae83cfd7b6b2992c012c54b70eb59597ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "👩🏻‍💻 **Par des développeurs, pour des développeurs** : React-admin est une bibliothèque gratuite à faible code qui accélère le développement d'outils internes, d'administrations ou d'applications B2B. Contrairement aux outils no-code, vous utilisez du code, garantissant de ne jamais être limité par le framework.",
+        "en": "👩🏻‍💻 **Par des développeurs, pour des développeurs** : React-admin est une bibliothèque gratuite low-code qui accélère le développement d'outils internes, d'interfaces d'administration ou d'applications B2B. Contrairement aux outils no-code, vous utilisez du code, garantissant de ne jamais être limité par le framework."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "🔌 **Flexible Integration**: React-admin supports any API format (REST or GraphQL) and various authentication backends, including Auth0, Cognito, Google Auth, Active Directory, and Keycloak. You control the server, so there are no extra costs for Single Sign-On (SSO) capabilities. It's fully themeable, allowing you to customize it with your company's colors.",
+      "source_content_hash": "af55e13175397b9c5d7969ae2b68e9180995c471a08725ae289c8d87edff16bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🔌 **Intégration flexible** : React-admin prend en charge n'importe quel format d'API (REST ou GraphQL) et divers backends d'authentification, notamment Auth0, Cognito, Google Auth, Active Directory et Keycloak. Vous contrôlez le serveur, il n'y a donc pas de coûts supplémentaires pour les capacités Single Sign-On (SSO). Il est entièrement personnalisable, vous permettant de l'adapter aux couleurs de votre entreprise.",
+        "en": "🔌 **Intégration flexible** : React-admin prend en charge tout format d'API (REST ou GraphQL) et divers backends d'authentification, notamment Auth0, Cognito, Google Auth, Active Directory et Keycloak. Vous contrôlez le serveur, donc aucun coût supplémentaire pour les capacités Single Sign-On (SSO). Il est entièrement personnalisable, vous permettant de l'adapter aux couleurs de votre entreprise."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "🚀 **Proven Success**: Over 25,000 companies have built single-page applications with React-admin. For your next project, save weeks of development time by using react-admin. [Try react-admin now](https://marmelab.com/react-admin/).",
+      "source_content_hash": "bd9723d9e7ea85f27f3318cb9a48d22c9577c717e8bbb3c4a9d1d8f0a995f1bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🚀 **Succès avéré** : Plus de 25 000 entreprises ont construit des applications monopage avec React-admin. Pour votre prochain projet, économisez des semaines de temps de développement en utilisant react-admin. [Essayez react-admin maintenant](https://marmelab.com/react-admin/).",
+        "en": "🚀 **Succès avéré** : Plus de 25 000 entreprises ont construit des applications monopage avec React-admin. Pour votre prochain projet, économisez des semaines de développement en utilisant react-admin. [Essayez react-admin maintenant](https://marmelab.com/react-admin/)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bc8bc928",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "722e4930",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "[![Expo - 2024 year in review](/emails/issues/215/expo.jpg)](https://expo.dev/blog/2024-year-in-review)",
+      "source_content_hash": "a5b41c9ffe152b2e1c3b84b657900ac4beb157f7c5ff0a45c2f158540b881de9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Expo - Bilan de l'année 2024](/emails/issues/215/expo.jpg)](https://expo.dev/blog/2024-year-in-review)",
+        "en": "[![Expo - Bilan de l'année 2024](/emails/issues/215/expo.jpg)](https://expo.dev/blog/2024-year-in-review)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "**[Expo \\- 2024 year in review](https://expo.dev/blog/2024-year-in-review)**",
+      "source_content_hash": "0a9da2b03ed938bfc44ea908707b2fae986077066d55fe999f249d24765fdd3d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Expo \\- Bilan de l'année 2024](https://expo.dev/blog/2024-year-in-review)**",
+        "en": "**[Expo - Bilan de l'année 2024](https://expo.dev/blog/2024-year-in-review)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "To get 2025 off to a good start, let's recap all the great things Expo offered us last year:",
+      "source_content_hash": "38e1b499cc45402294c0cee1c5dbc6c14a021264959a359c6cfe2c3b23f1f4ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pour bien démarrer 2025, récapitulons toutes les excellentes fonctionnalités qu'Expo nous a offertes l'année dernière :",
+        "en": "Pour bien démarrer 2025, récapitulons toutes les grandes choses qu'Expo nous a offertes l'année dernière :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a1e835c",
+      "source_content": "- Expo SDKs v50, v51, v52\n- Support for New Arch by default\n- Expo Router v3, v4\n- DOM components\n- Fingerprinting\n- Atlas & DevTools\n- expo.new\n- Workflows\n- Environment variables, security activity, and audit logs",
+      "source_content_hash": "f7c3da47f6c9da79a78228a24e9791ed54caf0e693d805c148e9b1e59cfae17d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- SDK Expo v50, v51, v52\n- Prise en charge de la Nouvelle Architecture par défaut\n- Expo Router v3, v4\n- Composants DOM\n- Empreinte numérique\n- Atlas & DevTools\n- expo.new\n- Flux de travail\n- Variables d'environnement, activité de sécurité et journaux d'audit",
+        "en": "- SDK Expo v50, v51, v52\n- Support de la New Arch par défaut\n- Expo Router v3, v4\n- Composants DOM\n- Fingerprinting\n- Atlas & DevTools\n- expo.new\n- Workflows\n- Variables d'environnement, activité de sécurité et journaux d'audit"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd2fd2f2",
+      "source_content": "- 💸 [Demos \\- 90+ React Native animations crafted with Reanimated, Gesture Handler, and Skia, by Reactiive](https://reactiive.io/demos?utm_source=thisweekinreact)\n- 👀 [RN Skia PR \\- macOS support](https://github.com/Shopify/react-native-skia/pull/2836)\n- 📊 [State of React Native](https://stateofreactnative.com/): Last week to answer the annual community survey\\!\n- 📜 [Static Hermes Update, Dec 2024](https://x.com/tmikov/status/1869945330638442651): Static Hermes is expected to roll out in 2025, initially opt-in, then enabled by default. It can compile and execute both typed and untyped code. Benchmarks show it’s already significantly faster on untyped code, particularly with JIT mode when Hermes can infer types. No benchmark was provided for typed code, but we can expect it to be much faster\\! The improved ES compliance will also permit to remove heavy Babel plugins. TLDR: in 2025 you can expect a great speed increase of both build and runtime.\n- 📜 [How to create beautiful glowing components on React Native 0.76+](https://www.devas.life/how-to-create-beautiful-glowing-components-on-react-native-0-76/): box-shadow support and New Architecture unlock new creative possibilities.\n- 📜 [From Native to Multiplatform Development: Unpacking Kotlin and Compose](https://www.callstack.com/blog/from-native-to-multiplatform-development-unpacking-kotlin-and-compose): Explains the Android Kotlin ecosystem from the perspective of a React Native dev.\n- 📜 [The Time for React Native is Now](https://galaxies.dev/article/time-for-react-native)\n- 📜 [Why Expo is a great fit for new and existing React Native apps](https://expo.dev/blog/why-expo-is-a-great-fit-for-new-and-existing-react-native-apps)\n- 📜 [Skeleton Animation in React Native with Moti](https://reactiive.io/articles/skeleton-loader)\n- 📦 [RN ExecuTorch 0.2 \\- Support for Computer Vision models](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.2.0)\n- 📦 [RN Volume Manager 2.0 \\- New Architecture support](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)\n- 📦 [RN Skia 1.8 \\- New reconciler on React Native Web](https://github.com/Shopify/react-native-skia/releases/tag/v1.8.0)\n- 📦 [RN 0.77 RC.5](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.5)\n- 📦 [RN Windows 0.77 preview.1](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0-preview.1)\n- 📦 [RN Screens 4.4 \\- Important fixes](https://github.com/software-mansion/react-native-screens/releases/tag/4.4.0)\n- 🎥 [Dan’s Lab \\- Trigonometry and React-Native Skia \\- My Take](https://www.youtube.com/watch?v=r5P7Z3O8Jog)\n- 🎙️ [React Universe On Air \\- Evan Bacon on Universal React Native Apps, DOM & React Server Component](https://www.youtube.com/watch?v=rA7E3rGKSZw)\n- 🎙️ [RNR \\- React Native Rewind 2024](https://www.reactnativeradio.com/episodes/rnr-317-react-native-rewind-2024)",
+      "source_content_hash": "9b5b8da4b0bb7e268377bf69c59aad2a269f03cbe36baff295537b8282618030",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Demos - 90+ animations React Native créées avec Reanimated, Gesture Handler et Skia, par Reactiive](https://reactiive.io/demos?utm_source=thisweekinreact)\n- 👀 [PR RN Skia - support macOS](https://github.com/Shopify/react-native-skia/pull/2836)\n- 📊 [State of React Native](https://stateofreactnative.com/) : Dernière semaine pour répondre à l'enquête annuelle de la communauté !\n- 📜 [Mise à jour de Static Hermes, déc. 2024](https://x.com/tmikov/status/1869945330638442651) : Static Hermes devrait être déployé en 2025, initialement en option puis activé par défaut. Il peut compiler et exécuter du code typé et non typé. Les benchmarks montrent qu'il est déjà significativement plus rapide sur le code non typé, notamment avec le mode JIT quand Hermes peut inférer les types. Aucun benchmark n'a été fourni pour le code typé, mais on s'attend à ce qu'il soit beaucoup plus rapide ! La conformité ES améliorée permettra également de supprimer de lourds plugins Babel. TLDR : en 2025, préparez-vous à une augmentation significative des performances de build et d'exécution.\n- 📜 [Comment créer de magnifiques composants luminescents sur React Native 0.76+](https://www.devas.life/how-to-create-beautiful-glowing-components-on-react-native-0-76/) : la prise en charge de box-shadow et la New Architecture débloquent de nouvelles possibilités créatives.\n- 📜 [Du Natif au Développement Multiplateforme : Décryptage de Kotlin et Compose](https://www.callstack.com/blog/from-native-to-multiplatform-development-unpacking-kotlin-and-compose) : Explore l'écosystème Android Kotlin du point de vue d'un développeur React Native.\n- 📜 [Le moment est venu pour React Native](https://galaxies.dev/article/time-for-react-native)\n- 📜 [Pourquoi Expo est idéal pour les nouvelles et existantes applications React Native](https://expo.dev/blog/why-expo-is-a-great-fit-for-new-and-existing-react-native-apps)\n- 📜 [Animation de squelette dans React Native avec Moti](https://reactiive.io/articles/skeleton-loader)\n- 📦 [RN ExecuTorch 0.2 - Prise en charge des modèles de vision par ordinateur](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.2.0)\n- 📦 [RN Volume Manager 2.0 - Prise en charge de la New Architecture](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)\n- 📦 [RN Skia 1.8 - Nouveau réconciliateur sur React Native Web](https://github.com/Shopify/react-native-skia/releases/tag/v1.8.0)\n- 📦 [RN 0.77 RC.5](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.5)\n- 📦 [RN Windows 0.77 preview.1](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0-preview.1)\n- 📦 [RN Screens 4.4 - Correctifs importants](https://github.com/software-mansion/react-native-screens/releases/tag/4.4.0)\n- 🎥 [Le Lab de Dan - Trigonométrie et React-Native Skia - Mon avis](https://www.youtube.com/watch?v=r5P7Z3O8Jog)\n- 🎙️ [React Universe On Air - Evan Bacon sur les applications React Native universelles, DOM & React Server Component](https://www.youtube.com/watch?v=rA7E3rGKSZw)\n- 🎙️ [RNR - React Native Rewind 2024](https://www.reactnativeradio.com/episodes/rnr-317-react-native-rewind-2024)",
+        "en": "- 💸 [Démos - 90+ animations React Native créées avec Reanimated, Gesture Handler et Skia, par Reactiive](https://reactiive.io/demos?utm_source=thisweekinreact)\n- 👀 [PR RN Skia - Support macOS](https://github.com/Shopify/react-native-skia/pull/2836)\n- 📊 [State of React Native](https://stateofreactnative.com/) : Dernière semaine pour répondre à l'enquête annuelle de la communauté !\n- 📜 [Mise à jour de Static Hermes, déc. 2024](https://x.com/tmikov/status/1869945330638442651) : Static Hermes devrait être déployé en 2025, initialement en option, puis activé par défaut. Il peut compiler et exécuter du code typé et non typé. Les benchmarks montrent qu'il est déjà nettement plus rapide sur du code non typé, particulièrement avec le mode JIT quand Hermes peut inférer les types. Aucun benchmark n'a été fourni pour le code typé, mais nous pouvons nous attendre à ce qu'il soit beaucoup plus rapide ! La conformité ES améliorée permettra également de supprimer les lourds plugins Babel. TLDR : en 2025, attendez-vous à une grande augmentation de vitesse à la fois du build et de l'exécution.\n- 📜 [Comment créer de beaux composants lumineux sur React Native 0.76+](https://www.devas.life/how-to-create-beautiful-glowing-components-on-react-native-0-76/) : La prise en charge de box-shadow et la Nouvelle Architecture débloquent de nouvelles possibilités créatives.\n- 📜 [Du natif au développement multiplateforme : Décryptage de Kotlin et Compose](https://www.callstack.com/blog/from-native-to-multiplatform-development-unpacking-kotlin-and-compose) : Explique l'écosystème Android Kotlin du point de vue d'un dev React Native.\n- 📜 [Le moment pour React Native est maintenant](https://galaxies.dev/article/time-for-react-native)\n- 📜 [Pourquoi Expo convient parfaitement aux nouvelles et existantes applications React Native](https://expo.dev/blog/why-expo-is-a-great-fit-for-new-and-existing-react-native-apps)\n- 📜 [Animation Squelette dans React Native avec Moti](https://reactiive.io/articles/skeleton-loader)\n- 📦 [RN ExecuTorch 0.2 - Prise en charge des modèles de vision par ordinateur](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.2.0)\n- 📦 [RN Volume Manager 2.0 - Support de la Nouvelle Architecture](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)\n- 📦 [RN Skia 1.8 - Nouveau réconciliateur sur React Native Web](https://github.com/Shopify/react-native-skia/releases/tag/v1.8.0)\n- 📦 [RN 0.77 RC.5](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.5)\n- 📦 [RN Windows 0.77 preview.1](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0-preview.1)\n- 📦 [RN Screens 4.4 - Correctifs importants](https://github.com/software-mansion/react-native-screens/releases/tag/4.4.0)\n- 🎥 [Dan's Lab - Trigonométrie et React-Native Skia - Mon avis](https://www.youtube.com/watch?v=r5P7Z3O8Jog)\n- 🎙️ [React Universe On Air - Evan Bacon sur les applications React Native universelles, DOM & React Server Component](https://www.youtube.com/watch?v=rA7E3rGKSZw)\n- 🎙️ [RNR - React Native Rewind 2024](https://www.reactnativeradio.com/episodes/rnr-317-react-native-rewind-2024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ac00ead3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "671cbf7c",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1852dfef",
+      "source_content": "- 📜 [Node.js Now Supports TypeScript By Default](https://www.totaltypescript.com/typescript-is-coming-to-node-23): The upcoming Node.js release v23.6 (and later v22.x) will be able to run `.ts` files by default\\! 🔥\n- 📜 [Breaking Up with Long Tasks](https://calendar.perfplanet.com/2024/breaking-up-with-long-tasks-or-how-i-learned-to-group-loops-and-wield-the-yield/)\n- 📦 [Shortest \\- AI-powered natural language end-to-end testing framework](https://github.com/anti-work/shortest)\n- 📦 [Rolldown 1.0 beta](https://github.com/rolldown/rolldown/releases/tag/v1.0.0-beta.1): An official release of Vite running on Rolldown is expected in early 2025\\.\n- 📦 [Skip \\- The reactive framework](https://skiplabs.io/): It’s like “React for the backend” according to Christopher Chedeau. 👀\n- 📦 [Rspack 1.2 alpha \\- Experimental persistent caching, perf improvements](https://github.com/web-infra-dev/rspack/releases/tag/v1.2.0-alpha.0)\n- 📦 [pnpm 10.0 RC \\- Increased security, whitelist packages allowed to run install scripts](https://github.com/pnpm/pnpm/releases/tag/v10.0.0-rc.2)\n- 📦 [Languine \\- Translate your application with a CLI powered by AI](https://languine.ai/)",
+      "source_content_hash": "f3b4606999d68e105dd8a07c6ecdcd633c2cb3553daeba41b0d995ae2353f7bd",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Node.js Now Supports TypeScript By Default](https://www.totaltypescript.com/typescript-is-coming-to-node-23) : Les prochaines versions de Node.js v23.6 (et ultérieurement v22.x) pourront exécuter les fichiers `.ts` par défaut ! 🔥\n- 📜 [Breaking Up with Long Tasks](https://calendar.perfplanet.com/2024/breaking-up-with-long-tasks-or-how-i-learned-to-group-loops-and-wield-the-yield/)\n- 📦 [Shortest - AI-powered natural language end-to-end testing framework](https://github.com/anti-work/shortest)\n- 📦 [Rolldown 1.0 beta](https://github.com/rolldown/rolldown/releases/tag/v1.0.0-beta.1) : Une version officielle de Vite fonctionnant sur Rolldown est attendue début 2025.\n- 📦 [Skip - The reactive framework](https://skiplabs.io/) : C'est comme \"React pour le backend\" selon Christopher Chedeau. 👀\n- 📦 [Rspack 1.2 alpha - Experimental persistent caching, perf improvements](https://github.com/web-infra-dev/rspack/releases/tag/v1.2.0-alpha.0)\n- 📦 [pnpm 10.0 RC - Increased security, whitelist packages allowed to run install scripts](https://github.com/pnpm/pnpm/releases/tag/v10.0.0-rc.2)\n- 📦 [Languine - Translate your application with a CLI powered by AI](https://languine.ai/)",
+        "en": "- 📜 [Node.js prend désormais en charge TypeScript par défaut](https://www.totaltypescript.com/typescript-is-coming-to-node-23) : La prochaine version de Node.js v23.6 (et ultérieurement v22.x) pourra exécuter les fichiers `.ts` par défaut ! 🔥\n- 📜 [Rompre avec les tâches longues](https://calendar.perfplanet.com/2024/breaking-up-with-long-tasks-or-how-i-learned-to-group-loops-and-wield-the-yield/)\n- 📦 [Shortest - Cadre de tests end-to-end en langage naturel alimenté par l'IA](https://github.com/anti-work/shortest)\n- 📦 [Rolldown 1.0 bêta](https://github.com/rolldown/rolldown/releases/tag/v1.0.0-beta.1) : Une version officielle de Vite fonctionnant sur Rolldown est prévue début 2025.\n- 📦 [Skip - Le framework réactif](https://skiplabs.io/) : C'est comme \"React pour le backend\" selon Christopher Chedeau. 👀\n- 📦 [Rspack 1.2 alpha - Cache persistant expérimental, améliorations des performances](https://github.com/web-infra-dev/rspack/releases/tag/v1.2.0-alpha.0)\n- 📦 [pnpm 10.0 RC - Sécurité renforcée, liste blanche des packages autorisés à exécuter des scripts d'installation](https://github.com/pnpm/pnpm/releases/tag/v10.0.0-rc.2)\n- 📦 [Languine - Traduisez votre application avec une CLI alimentée par l'IA](https://languine.ai/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a0d6d6c7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5905b07",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Détente {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "[![alt](/emails/issues/215/meme.jpg)](https://bsky.app/profile/brandonroberts.dev/post/3ld74oultjc2g)",
+      "source_content_hash": "fafd00dff0ef188f2097d6f86b44a085fe854f7ecc273bf1039024f7c362959c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/215/meme.jpg)](https://bsky.app/profile/brandonroberts.dev/post/3ld74oultjc2g)",
+        "en": "[![alt](/emails/issues/215/meme.jpg)](https://bsky.app/profile/brandonroberts.dev/post/3ld74oultjc2g)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b08ad0b4",
+      "source_content": "[![alt](/emails/issues/215/meme2.jpg)](https://x.com/flydotio/status/1873840239166226548)",
+      "source_content_hash": "954d2f90f42afce6f35c08f1341674b2d0ece2fadd9d7ff33134d10b8e069326",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/215/meme2.jpg)](https://x.com/flydotio/status/1873840239166226548)",
+        "en": "[![alt](/emails/issues/215/meme2.jpg)](https://x.com/flydotio/status/1873840239166226548)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d636abf8",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À plus tard ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/215/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.219229+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "c0c7815ee306d1163dcc1ee68fa0177546827d7a62b4d3f2ec071803731bc397",
+    "en": "c0c7815ee306d1163dcc1ee68fa0177546827d7a62b4d3f2ec071803731bc397"
+  }
+}

@@ -1,0 +1,529 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/189/index.mdx",
+  "source_file_content_hash": "ff8ea2e62dc855146a14bbe65f0a3ed7694d2601c781b0a0bc3483d5aa7c0257",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /189\ntitle: \"This Week In React #189: Next.js Security, Memoization, useFormStatus, React State, Remix Typesafe Routes, View Transitions, Astro, Starlight, Hydrogen, Remotion, Lingui, Storybook, Skia Video, Starlink, App Clips, VisionOS...\"\nauthors: [bndkt]\ndate: 06-12-2024\n---",
+      "source_content_hash": "7d7cd0f648799da182d52382ec56af193a4ec1f15f765f247bbfce19acde7890",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "It's [Benedikt](https://x.com/bndkt) again this week, as Sebastien is taking a break.",
+      "source_content_hash": "96db336e60e4151d7583798d31f3ba7c42dd13419077c848c5a34121ff961601",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "C'est encore [Benedikt](https://x.com/bndkt) cette semaine, car Sébastien prend une pause.",
+        "en": "C'est encore [Benedikt](https://x.com/bndkt) cette semaine, car Sebastien prend une pause."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "For me, the week's most interesting topics are not big announcements or new releases but rather subtle hints at future work (type-safe routes models coming to Remix, React Compiler coming to Expo, native intents in Expo Router), as well as some online discussions about React Suspense implementation details (`display: none`, and, more importantly, a pretty significant change in parallel fetching behavior with React 19).",
+      "source_content_hash": "88b32d508821f3f2a8ae088ec4bae43dc0ada6031f231fe25c9a1327004dcf27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pour moi, les sujets les plus intéressants de la semaine ne sont pas des annonces majeures ou de nouvelles versions, mais plutôt des indices subtils sur les travaux futurs (les modèles de routes typées qui arrivent dans Remix, le compilateur React qui arrive dans Expo, les intents natifs dans Expo Router), ainsi que des discussions en ligne sur les détails d'implémentation de React Suspense (`display: none`, et surtout un changement assez significatif dans le comportement de récupération parallèle avec React 19).",
+        "en": "Pour moi, les sujets les plus intéressants de la semaine ne sont pas de grandes annonces ou nouvelles versions, mais plutôt des indices subtils sur les travaux futurs (modèles de routes typées dans Remix, React Compiler dans Expo, intents natifs dans Expo Router), ainsi que des discussions en ligne sur les détails d'implémentation de React Suspense (`display: none`, et surtout un changement significatif dans le comportement de récupération parallèle avec React 19)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_e883b2cc",
+        "en": "@@untranslatable_placeholder_e883b2cc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_92f4ea84",
+        "en": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5dfba1c3",
+        "en": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Partenaire {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Flex your product muscles](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+      "source_content_hash": "3283f36cb9f6872a5ba5d2c8693ccc058369afcba14547b23c776200a8c42170",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Musclez votre produit](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+        "en": "[![Développez vos muscles produits](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Flex your product muscles](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+      "source_content_hash": "e4cbf424988f5a16c29026da867484daa7967c9694373c0233dbf4a68927072f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Musclez votre produit](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+        "en": "**[Développez vos muscles produits](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) is PostHog’s newsletter dedicated to helping engineers improve their product skills. Learn what questions to ask users, how to build new features users love, and the path to product market fit.",
+      "source_content_hash": "dafb8650efe99337a8919642c13774a586336b2fb91f36b3b2fae7dec8e62387",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit. Apprenez quelles questions poser aux utilisateurs, comment créer de nouvelles fonctionnalités qu'ils adoreront, et le chemin vers le product-market fit.",
+        "en": "[**Produit pour les ingénieurs**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit. Découvrez quelles questions poser aux utilisateurs, comment créer des fonctionnalités appréciées et le chemin vers le product market fit."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[**Subscribe for free**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) to get curated advice on building great products, lessons (and mistakes) from building PostHog, and deep dives into the strategies of top startups.",
+      "source_content_hash": "2df114b9fcd4e6f633a0926e9670819f408cf761beed46d1ded189643c97c963",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils triés sur le fil pour construire d'excellents produits, des leçons (et erreurs) tirées du développement de PostHog, et des analyses approfondies des stratégies des meilleures startups.",
+        "en": "[**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils triés sur la création de produits performants, des leçons (et erreurs) du développement de PostHog et des analyses approfondies des stratégies des meilleures startups."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[![Mind the gap](/emails/issues/189/react189.jpg)](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)",
+      "source_content_hash": "994757f40378dcc96d0be571c5b20bae8095891e2979fda01ac7c67ab1479037",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Mind the gap](/emails/issues/189/react189.jpg)](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)",
+        "en": "[![Attention à l'écart](/emails/issues/189/react189.jpg)](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "🎥 **[Ryan Florence talk “Mind the Gap”](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)**",
+      "source_content_hash": "d48d551232a76c930a09394cae43b362eb6ec446a779def146169b1117966908",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🎥 **[Conférence de Ryan Florence \"Mind the Gap\"](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)**",
+        "en": "🎥 **[Conférence de Ryan Florence \"Attention à l'écart\"](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "I watched this talk after hearing multiple people describing it as one of the best tech conference talks they’ve ever seen. We’re at a very interesting point in time in web development, with React 19 bringing a major shift to the React model, new JS frameworks gaining popularity, and lots of online discussions drawing distinctions and/or making comparisons to Rails and Laravel. Ryan’s talk is a really good overview of how we got here and it offers, in my opinion, a very good mental model of how to think about React 19. Also fun to see one of the creators of Remix give a Next.js demo 😉",
+      "source_content_hash": "9258378dd11fa3f0df431d2ef764fc08a562102d127ec24e2452161f54495a70",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'ai regardé cette conférence après avoir entendu plusieurs personnes la décrire comme l'une des meilleures conférences techniques qu'ils aient jamais vues. Nous vivons une période très intéressante dans le développement web, avec React 19 apportant un changement majeur au modèle React, de nouveaux frameworks JS gagnant en popularité, et de nombreuses discussions en ligne établissant des distinctions et/ou faisant des comparaisons avec Rails et Laravel. La conférence de Ryan offre un très bon aperçu de comment nous en sommes arrivés là et propose, à mon avis, un excellent modèle mental pour penser React 19. C'est aussi amusant de voir l'un des créateurs de Remix faire une démo Next.js 😉",
+        "en": "J'ai regardé cette conférence après avoir entendu plusieurs personnes la décrire comme l'une des meilleures qu'ils aient jamais vues. Nous vivons un moment fascinant du développement web, avec React 19 apportant un changement majeur, de nouveaux frameworks JS gagnant en popularité, et de nombreuses discussions comparant ces approches à Rails ou Laravel. La présentation de Ryan offre un excellent aperçu historique et, selon moi, un modèle mental pertinent pour appréhender React 19. Amusant aussi de voir un créateur de Remix faire une démo Next.js 😉"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- 💸 [NL Kit — Ship AI Features Faster With JavaScript](https://nlkit.com)\n- 🐦 [Flow diagram on how to pick one of the over 30 ways to handle React state](https://x.com/housecor/status/1799435036736778364)\n- 🐦 [React changes a component in a Suspense context to `display: none !important` until data fetching completes](https://x.com/cpojer/status/1798912741383844237)\n- 🐦 [Type-safe route modules coming to Remix/React Router 7](https://x.com/pcattori/status/1799194706850504818)\n- 🐦 [Significant difference in how Suspense handles parallel fetching between React 18 and 19 raises concerns](https://x.com/TkDodo/status/1800501040766144676)\n- 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - June 27 - Only 2 weeks left before the conference! 10% discount with code \"TWIR\"\n- 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Tickets are almost sold out. Get a 10% discount with code \"TWIR\".\n- 📜 [Weak memoization in JavaScript](https://dev.to/thekashey/weak-memoization-in-javascript-4po6): I really like those “fundamental” articles. This is not about useMemo, it explains the concept of memoization from scratch (while referencing React a bunch), really helps to deepen the understanding of what’s going on under the hood.\n- 📜 [Creating a Reusable SubmitButton with useFormStatus](https://aurorascharff.no/posts/creating-a-reusable-submitbutton-with-useformstatus/): Following this article not only teaches you how to work with forms and server actions in React 19, but also how to do it using progressively enhanced forms.\n- 📜 [Lingui with React Server Components](https://lingui.dev/tutorials/react-rsc): Tutorial on how to internationalize a Next.js App Router app (incl. RSC) using Lingui.\n- 📜 [Next.js security checklist](https://blog.arcjet.com/next-js-security-checklist/): Useful checklist covering 7 areas, some very obvious (update dependencies, sanitize inputs), and others a bit more specific (avoid exposing server code, use security headers).\n- 📜 [Hydrogen - June 2024 Release - Optimistic cart, RichText component, stable analytics](https://hydrogen.shopify.dev/update/june-2024): Apart from these three features announcements, the post starts with a repeated commitment to Remix (aka React Router 7), in case you were wondering.\n- 📜 [Astro - Starlight (the Astro-based documentation builder) turns one year old](https://astro.build/blog/starlight-turns-one/): Pretty impressive stats: 24 minor releases, 181 contributors, 2,000 commits, 4,000 GitHub stars, and 2,700 open-source Starlight sites.\n- 📜 [Astro - Zero-JavaScript View Transitions](https://astro.build/blog/future-of-astro-zero-js-view-transitions/): Chrome 126 just shipped support for native, app-like animations between page navigation.\n- 📜 [The Need for Speed: A Quick Way to Improve React Testing Times](https://www.helpscout.com/blog/improve-react-testing-times/)\n- 📜 [Interactive dropdown menus with Radix UI](https://www.joshuawootonn.com/radix-interactive-dropdown)\n- 📜 [How to render zoomable image with Shadcn UI and Tailwind CSS in Next.js](https://www.nico.fyi/blog/easy-zoomable-image-with-shadcn-tailwind)\n- 📜[Storybook - Interactive story generation](https://storybook.js.org/blog/interactive-story-generation/)\n- 📜 [How to Build a Notification System in Next.js with Knock](https://spacejelly.dev/posts/how-to-build-a-notification-system-in-next-js-with-knock)\n- 📦 [Code Hike + Remotion example](https://github.com/code-hike/examples/tree/main/with-remotion): Neat combination to create animated code videos (🐦 [Demo video](https://x.com/pomber/status/1800108854459715864?t=8ickNCn-Orou7665JY31VA&s=19)).\n- 📦 [@xstate/store 1.0.0](https://github.com/statelyai/xstate/releases/tag/%40xstate%2Fstore%401.0.0)\n- 📦 [@tanstack/query 5.44.0](https://github.com/TanStack/query/releases/tag/v5.44.0): Brings a “staleTime” function, e.g. to derive stale time from cache-control headers.\n- 🎥 [Theo - React Compiler: It's Stranger Than You Think](https://www.youtube.com/watch?v=wnXGSwrOw80)\n- 🎥 [Ben Holmes - The problem with server actions](https://www.youtube.com/watch?v=GPYAC1qGD44)\n- 🎥 [Jack Herrington - Radix Themes: Awesome New Components For NextJS](https://www.youtube.com/watch?v=SKm2XGxbLLM)\n- 🎥 [Syntax - What's new in the world of React? - React Conf 2024 Recap](https://www.youtube.com/watch?v=udXZw-9LdOM)",
+      "source_content_hash": "8a84af86b5ada0eafcf792c4b2b7d79dac987b919c4e639cc2f6159c3e7f45cf",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_824626b3",
+        "en": "@@untranslatable_placeholder_824626b3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "32db7046",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_32db7046",
+        "en": "@@untranslatable_placeholder_32db7046"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "01868def",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Partenaire {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e8e162a9",
+      "source_content": "[![WorkOS: enterprise-grade auth in minutes](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)",
+      "source_content_hash": "035f3eae0d7fcb348dee444aeb6aa66e830d0e708073d822be982a2a2ed99631",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![WorkOS : l'authentification de niveau entreprise en quelques minutes](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)",
+        "en": "[![WorkOS : authentification professionnelle en minutes](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "**[WorkOS: enterprise-grade auth in minutes](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**",
+      "source_content_hash": "a7a8f58de04c3a71af5875752192617bb7ed72e0dff0fca255bf686869139eb5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[WorkOS : l'authentification de niveau entreprise en quelques minutes](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**",
+        "en": "**[WorkOS : authentification professionnelle en minutes](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "🔐 WorkOS supports a complete User Management solution along with **SSO, SCIM, RBAC, & FGA**.",
+      "source_content_hash": "2f2e507bd12e3ac919139e6f3d3d225a5373ae15c038928e94c42acd977b1d73",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🔐 WorkOS propose une solution complète de gestion des utilisateurs avec **SSO, SCIM, RBAC & FGA**.",
+        "en": "🔐 WorkOS propose une solution complète de gestion utilisateurs avec **SSO, SCIM, RBAC & FGA**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "🗂️ Unlike other auth providers that rely on user-centric models, WorkOS is designed for B2B SaaS with an **org modeling approach**.",
+      "source_content_hash": "7dc18354f94bc88426e767a51c0c4a32cf5f80ace68a0932091929775b003a29",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🗂️ Contrairement aux autres fournisseurs d'authentification basés sur des modèles centrés utilisateur, WorkOS est conçu pour les SaaS B2B avec une **approche de modélisation organisationnelle**.",
+        "en": "🗂️ Contrairement aux autres fournisseurs basés sur des modèles centrés utilisateur, WorkOS est conçu pour les SaaS B2B avec une **approche par modélisation organisationnelle**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "🏗️ The APIs are **flexible, easy-to-use, and modular**. Pick and choose what you need and integrate in minutes.",
+      "source_content_hash": "40cbba585ed73eb8b160406f2c3c40e74d45e7c861b8fe1a05b5a6778845df26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🏗️ Les API sont **flexibles, faciles à utiliser et modulaires**. Choisissez ce dont vous avez besoin et intégrez en quelques minutes.",
+        "en": "🏗️ Les APIs sont **flexibles, faciles à utiliser et modulaires**. Choisissez ce dont vous avez besoin et intégrez en minutes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "✨ User Management is **free up to 1 million MAUs** and includes bot protection, impersonation, MFA, & more.",
+      "source_content_hash": "582b686ca0891e3a152f6754ce81a454d6c569775a71cc7fe8ed336c18f84712",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "✨ La gestion des utilisateurs est **gratuite jusqu'à 1 million de MAU** et inclut la protection contre les bots, l'usurpation d'identité, l'authentification multi-facteur (MFA), et plus encore.",
+        "en": "✨ La gestion des utilisateurs est **gratuite jusqu'à 1 million d'utilisateurs actifs mensuels (MAU)** et comprend la protection contre les bots, l'usurpation d'identité, l'authentification multifacteur (MFA), et plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "🤝 WorkOS is trusted by hundreds of leading startups like **Perplexity**, **Vercel**, & **Webflow**.",
+      "source_content_hash": "43e2ceada1d518743097693e7bee36fd8f5f6a9f9a03dd28878d31ae3a97fba6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🤝 WorkOS est utilisé par des centaines de startups leaders comme **Perplexity**, **Vercel** et **Webflow**.",
+        "en": "🤝 WorkOS est approuvé par des centaines de startups leaders comme **Perplexity**, **Vercel** et **Webflow**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Future-proof your auth stack with [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 🚀",
+      "source_content_hash": "5bfe5bb18f2e9074d5d68896059a5e32c413c1dbc50a863396fcdd9fe90167bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Préparez votre pile d'authentification pour l'avenir avec [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 🚀",
+        "en": "Protégez l'avenir de votre pile d'authentification avec [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b805e2c6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b10963d7",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette section est rédigée par [Benedikt](https://twitter.com/bndkt).",
+        "en": "Cette section est rédigée par [Benedikt](https://twitter.com/bndkt)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9f974d3d",
+      "source_content": "- 💸 [WithFrame - Ready to Use React Native Components](https://withfra.me/?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--2)\n- 👀 [Expo adds experimental React Compiler support](https://github.com/expo/expo/pull/29168)\n- 👀 [Expo Router +native-intent Demo](https://github.com/EvanBacon/expo-router-native-intent-demo)\n- 🐦 [Skia Video is coming to the web, too](https://x.com/wcandillon/status/1799859456584646663)\n- 🐦 [Lorenzo leaving Microsoft and React Native](https://x.com/Kelset/status/1800158749811966280?t=jif1MJRNNYc3wIE1cIUJvw&s=19): Thanks Lorenzo for all your contributions to RN and it’s community as a long-time core maintainer, and best wishes for whatever comes next!\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) -  Portland, OR - July 17-19. The U.S. React Native Conference is back with engaging talks and hands-on workshops! Get 15% off your ticket with code “TWIR”\n- 📜 [Apple Vision Pro: Insights From Conferences and Beyond](https://www.callstack.com/blog/apple-vision-pro-insights-from-conferences-and-beyond)\n- 📜 [Now that I can write React Native, what should I test](https://thoughtbot.com/blog/now-that-i-can-write-react-native-what-should-i-test): A beginner’s journey into unit and integration tests with React Native. Next, do end to end testing!\n- 📜 [How Starlink built 3d and AR in React Native & Expo](https://www.notjust.dev/blog/react-native-starlink): Summary of Aaron’s talk at App.js conf. Read this if you insist on text, but I’d recommend watching the original talk.\n- 📜 [How Belka built the MangaYo! app in just 3 months with Expo](https://expo.dev/blog/how-belka-built-mangayo-app-in-just-3-months-with-expo): Built using Expo and Supabase in 3 months, hit no 5 of the App Store charts on launch.\n- 📜 [Flatlist Rendering Techniques](https://www.andydevs.dev/articles/flatlist-rendering-techniques): I mostly reach for FlashList directly, but if you somehow can’t or don’t want to use this, here’s how to optimize rendering of the classic FlatList.\n- 📦 [react-native-app-clip 0.3.0 - Now supports Expo 51, RN 0.74, New Architecture, and Apple Pay](https://github.com/bndkt/react-native-app-clip/releases/tag/v0.3.0)\n- 📦 [@rn-tools/navigation](https://github.com/ajsmth/rn-tools/blob/main/packages/navigation/readme.md): New set of set of navigation components for React Native.\n- 🎙️ [RNR 299 - What to Expect From React Native in 5 Years](https://www.reactnativeradio.com/episodes/rnr-299-what-to-expect-from-react-native-in-5-years)\n- 🎙️ [React Conf 2024 Highlights: Speakers Interviews | The React Native Show Podcast #38](https://www.youtube.com/watch?v=EP2IzK6rPv8)\n- 🎥 [Expo livestream - Presenting SDK 51: New Architecture, Router 3.5, Faster 'getting started' flow and more](https://www.youtube.com/watch?v=k1ISWPgP4S4)\n- 🎥 [Simon Grimm - Building a Local-First React Native App with PowerSync and Supabase](https://www.youtube.com/watch?v=xvvVGOyRgZg)",
+      "source_content_hash": "5e77a3097ca940eb6637afb6440db7e4d109821916b2f4b1e8b7adeb7f3e3e61",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [WithFrame - Composants React Native prêts à l'emploi](https://withfra.me/?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--2)\n- 👀 [Expo ajoute le support expérimental du React Compiler](https://github.com/expo/expo/pull/29168)\n- 👀 [Démo Expo Router + native-intent](https://github.com/EvanBacon/expo-router-native-intent-demo)\n- 🐦 [Skia Video arrive également sur le web](https://x.com/wcandillon/status/1799859456584646663)\n- 🐦 [Lorenzo quitte Microsoft et React Native](https://x.com/Kelset/status/1800158749811966280?t=jif1MJRNNYc3wIE1cIUJvw&s=19) : Merci à Lorenzo pour toutes ses contributions à RN et à sa communauté en tant que mainteneur principal de longue date, et tous nos vœux de réussite pour la suite !\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - Portland, OR - 17-19 juillet. La conférence américaine React Native est de retour avec des présentations captivantes et des ateliers pratiques ! Obtenez 15% de réduction sur votre billet avec le code \"TWIR\"\n- 📜 [Apple Vision Pro : Perspectives issues des conférences et au-delà](https://www.callstack.com/blog/apple-vision-pro-insights-from-conferences-and-beyond)\n- 📜 [Maintenant que je peux écrire du React Native, que dois-je tester ?](https://thoughtbot.com/blog/now-that-i-can-write-react-native-what-should-i-test) : Le parcours d'un débutant dans les tests unitaires et d'intégration avec React Native. Prochaine étape : les tests end-to-end !\n- 📜 [Comment Starlink a construit des expériences 3D et AR dans React Native & Expo](https://www.notjust.dev/blog/react-native-starlink) : Résumé de la présentation d'Aaron à la conférence App.js. Lisez ceci si vous tenez au texte, mais je recommande de regarder la présentation originale.\n- 📜 [Comment Belka a construit l'application MangaYo! en seulement 3 mois avec Expo](https://expo.dev/blog/how-belka-built-mangayo-app-in-just-3-months-with-expo) : Développée avec Expo et Supabase en 3 mois, classée n°5 des charts de l'App Store au lancement.\n- 📜 [Techniques de rendu de FlatList](https://www.andydevs.dev/articles/flatlist-rendering-techniques) : J'utilise généralement FlashList directement, mais si vous ne pouvez ou ne voulez pas l'utiliser, voici comment optimiser le rendu de la FlatList classique.\n- 📦 [react-native-app-clip 0.3.0 - Supporte désormais Expo 51, RN 0.74, la Nouvelle Architecture et Apple Pay](https://github.com/bndkt/react-native-app-clip/releases/tag/v0.3.0)\n- 📦 [@rn-tools/navigation](https://github.com/ajsmth/rn-tools/blob/main/packages/navigation/readme.md) : Nouvel ensemble de composants de navigation pour React Native.\n- 🎙️ [RNR 299 - À quoi s'attendre de React Native dans 5 ans](https://www.reactnativeradio.com/episodes/rnr-299-what-to-expect-from-react-native-in-5-years)\n- 🎙️ [Points forts de la React Conf 2024 : Interviews des intervenants | The React Native Show Podcast #38](https://www.youtube.com/watch?v=EP2IzK6rPv8)\n- 🎥 [Expo livestream - Présentation du SDK 51 : Nouvelle Architecture, Router 3.5, flux de démarrage accéléré et plus encore](https://www.youtube.com/watch?v=k1ISWPgP4S4)\n- 🎥 [Simon Grimm - Construire une application React Native \"local-first\" avec PowerSync et Supabase](https://www.youtube.com/watch?v=xvvVGOyRgZg)",
+        "en": "- 💸 [WithFrame - Composants React Native prêts à l'emploi](https://withfra.me/?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--2)\n- 👀 [Expo ajoute le support expérimental du React Compiler](https://github.com/expo/expo/pull/29168)\n- 👀 [Démo Expo Router +native-intent](https://github.com/EvanBacon/expo-router-native-intent-demo)\n- 🐦 [Skia Video arrive aussi sur le web](https://x.com/wcandillon/status/1799859456584646663)\n- 🐦 [Lorenzo quitte Microsoft et React Native](https://x.com/Kelset/status/1800158749811966280?t=jif1MJRNNYc3wIE1cIUJvw&s=19) : Merci Lorenzo pour toutes tes contributions à RN et à sa communauté en tant que mainteneur principal de longue date, et bon succès pour la suite !\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - Portland, OR - 17-19 juillet. La conférence américaine React Native revient avec des présentations captivantes et des ateliers pratiques ! Obtenez 15% de réduction avec le code \"TWIR\"\n- 📜 [Apple Vision Pro : Retours des conférences et au-delà](https://www.callstack.com/blog/apple-vision-pro-insights-from-conferences-and-beyond)\n- 📜 [Maintenant que je sais écrire du React Native, quels tests effectuer](https://thoughtbot.com/blog/now-that-i-can-write-react-native-what-should-i-test) : Le parcours d'un débutant dans les tests unitaires et d'intégration avec React Native. Prochaine étape : les tests de bout en bout !\n- 📜 [Comment Starlink a construit la 3D et la RA dans React Native & Expo](https://www.notjust.dev/blog/react-native-starlink) : Résumé de la présentation d'Aaron à App.js conf. Lisez ceci si vous préférez le texte, mais je recommande la vidéo originale.\n- 📜 [Comment Belka a développé l'app MangaYo! en 3 mois avec Expo](https://expo.dev/blog/how-belka-built-mangayo-app-in-just-3-months-with-expo) : Construit avec Expo et Supabase en 3 mois, classé n°5 de l'App Store au lancement.\n- 📜 [Techniques de rendu de Flatlist](https://www.andydevs.dev/articles/flatlist-rendering-techniques) : J'utilise généralement FlashList directement, mais si vous ne pouvez/pouvez pas l'utiliser, voici comment optimiser le rendu de Flatlist classique.\n- 📦 [react-native-app-clip 0.3.0 - Supporte désormais Expo 51, RN 0.74, Nouvelle Architecture et Apple Pay](https://github.com/bndkt/react-native-app-clip/releases/tag/v0.3.0)\n- 📦 [@rn-tools/navigation](https://github.com/ajsmth/rn-tools/blob/main/packages/navigation/readme.md) : Nouvel ensemble de composants de navigation pour React Native.\n- 🎙️ [RNR 299 - À quoi s'attendre de React Native d'ici 5 ans](https://www.reactnativeradio.com/episodes/rnr-299-what-to-expect-from-react-native-in-5-years)\n- 🎙️ [Points forts de React Conf 2024 : Interviews des intervenants | The React Native Show Podcast #38](https://www.youtube.com/watch?v=EP2IzK6rPv8)\n- 🎥 [Live Expo - Présentation du SDK 51 : Nouvelle Architecture, Router 3.5, flux de démarrage accéléré](https://www.youtube.com/watch?v=k1ISWPgP4S4)\n- 🎥 [Simon Grimm - Créer une app React Native Local-First avec PowerSync et Supabase](https://www.youtube.com/watch?v=xvvVGOyRgZg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9673e622",
+      "source_content": "- 📜 [WebKit in Safari 18 beta - View Transitions, Style Queries, WebXR...](https://webkit.org/blog/15443/news-from-wwdc24-webkit-in-safari-18-beta/)\n- 📜 [How Deep is Your DOM?](https://frontendatscale.com/blog/how-deep-is-your-dom/)\n- 📜 [Find slow interactions in the field](https://web.dev/articles/find-slow-interactions-in-the-field)\n- [Your Node is Leaking Memory? setTimeout Could be the Reason](https://lucumr.pocoo.org/2024/6/5/node-timeout/)\n- 📜 [Comprehensive guide to JavaScript performance analysis using Chrome DevTools](https://blog.jiayihu.net/comprenhensive-guide-chrome-performance/)\n- 📦 [TypeScript 5.5 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-rc/?t)\n- 📦 [Valibot v0.31.0 is finally available](https://valibot.dev/blog/valibot-v0.31.0-is-finally-available/)\n- 📦 [Vite 5.3.0-beta.2](https://github.com/vitejs/vite/blob/v5.3.0-beta.2/packages/vite/CHANGELOG.md#530-beta2-2024-06-10)",
+      "source_content_hash": "eff3cd9754db05c6309150e0295c1893a1248940d4b92d5702e3ddca444dfde5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [WebKit dans Safari 18 bêta - Transitions de vue, Requêtes de style, WebXR...](https://webkit.org/blog/15443/news-from-wwdc24-webkit-in-safari-18-beta/)\n- 📜 [Quelle est la profondeur de votre DOM ?](https://frontendatscale.com/blog/how-deep-is-your-dom/)\n- 📜 [Détecter les interactions lentes sur le terrain](https://web.dev/articles/find-slow-interactions-in-the-field)\n- [Votre Node fuit-il la mémoire ? setTimeout pourrait en être la cause](https://lucumr.pocoo.org/2024/6/5/node-timeout/)\n- 📜 [Guide complet d'analyse des performances JavaScript avec Chrome DevTools](https://blog.jiayihu.net/comprenhensive-guide-chrome-performance/)\n- 📦 [TypeScript 5.5 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-rc/?t)\n- 📦 [Valibot v0.31.0 est enfin disponible](https://valibot.dev/blog/valibot-v0.31.0-is-finally-available/)\n- 📦 [Vite 5.3.0-beta.2](https://github.com/vitejs/vite/blob/v5.3.0-beta.2/packages/vite/CHANGELOG.md#530-beta2-2024-06-10)",
+        "en": "- 📜 [WebKit dans Safari 18 bêta - Transitions de vue, Requêtes de style, WebXR...](https://webkit.org/blog/15443/news-from-wwdc24-webkit-in-safari-18-beta/)\n- 📜 [Quelle est la profondeur de votre DOM ?](https://frontendatscale.com/blog/how-deep-is-your-dom/)\n- 📜 [Détecter les interactions lentes en production](https://web.dev/articles/find-slow-interactions-in-the-field)\n- [Votre Node fuit de la mémoire ? setTimeout pourrait en être la raison](https://lucumr.pocoo.org/2024/6/5/node-timeout/)\n- 📜 [Guide complet pour l'analyse des performances JavaScript avec Chrome DevTools](https://blog.jiayihu.net/comprenhensive-guide-chrome-performance/)\n- 📦 [TypeScript 5.5 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-rc/?t)\n- 📦 [Valibot v0.31.0 est enfin disponible](https://valibot.dev/blog/valibot-v0.31.0-is-finally-available/)\n- 📦 [Vite 5.3.0-beta.2](https://github.com/vitejs/vite/blob/v5.3.0-beta.2/packages/vite/CHANGELOG.md#530-beta2-2024-06-10)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44f53186",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f1c1cd6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "[![tailwind monitor](/emails/issues/189/meme.jpg)](https://x.com/thekitze/status/1788852862669217805)",
+      "source_content_hash": "a0f5381f9206ef4806bf90356f912163fa8bbdd18e3efe5027396371ab722a1e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![moniteur tailwind](/emails/issues/189/meme.jpg)](https://x.com/thekitze/status/1788852862669217805)",
+        "en": "[![moniteur tailwind](/emails/issues/189/meme.jpg)](https://x.com/thekitze/status/1788852862669217805)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus tard ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/189/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.181382+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "ff8ea2e62dc855146a14bbe65f0a3ed7694d2601c781b0a0bc3483d5aa7c0257",
+    "en": "ff8ea2e62dc855146a14bbe65f0a3ed7694d2601c781b0a0bc3483d5aa7c0257"
+  }
+}

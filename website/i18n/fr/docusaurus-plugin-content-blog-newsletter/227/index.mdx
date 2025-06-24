@@ -1,0 +1,162 @@
+---
+slug: /227
+title: "This Week In React #227: Next.js, tRPC, React Query, React Router, StyledComponents, MUI, Base UI, Next Intl | React Native birthday, Lynx, EAS, Atlas, Reanimated, Audio, BottomTabs | CSS, Rsdoctor, Linters, Node"
+authors: [slorber]
+date: 03-26-2025
+---
+
+Bonjour à tous !
+
+Cette semaine, vous n'avez probablement pas manqué le drama autour du middleware Next.js, mais ce n'était pas la seule actualité !
+
+Nous avons également eu de nombreuses sorties remarquables comme tRPC, React Query, Rsdoctor et plus encore !
+
+Aussi, React Native fête ses 10 ans aujourd'hui ! 🥳
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Convex : La base de données conçue pour le codage IA](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)
+
+**[Convex : La base de données conçue pour le codage IA](https://convex.link/thisweekai)**
+
+À l'ère de la génération de code, vous avez besoin d'un backend que vous pouvez générer en toute confiance avec des plateformes IA. Convex est de loin [le meilleur de sa catégorie](https://stack.convex.dev/introducing-fullstack-bench) à cet égard.
+
+Cela s'explique par le fait que Convex n'est que du TypeScript, vous permettant d'écrire des [requêtes sous forme de code](https://docs.convex.dev/functions/query-functions/) qui sont automatiquement transactionnelles, mises en cache et en temps réel.
+
+Et ce n'est que le début. Avec Convex, vous pouvez :
+
+- Planifier facilement des fonctions et écrire des tâches cron
+- Configurer le stockage de fichiers
+- Écrire des fonctions serveur efficaces
+- Et bien plus encore...
+
+[Essayez un démarrage rapide dès aujourd'hui](https://docs.convex.dev/quickstarts)
+
+---
+
+## ⚛️ React {#react}
+
+[![Post-mortem sur le contournement du middleware Next.js](/emails/issues/227/middleware.png)](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)
+
+**[Post-mortem sur le contournement du middleware Next.js](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)**
+
+A few days ago, Vercel announced a critical 9.1 vulnerability in Next.js middleware system. With a simple but malicious `x-middleware-subrequest` header, you can bypass the middleware, possibly exposing sensitive information. Patches are available for Next.js 12/13/14/15. Note that this vulnerability only affects self-hosted apps using `output: ‘standalone’` and `next start` are affected. Customers of major serverless cloud providers are either not affected (Vercel, Netlify), or protection can be turned on (Cloudflare).
+
+Il est important de noter que même si le middleware Next.js ne devrait pas avoir cette vulnérabilité, ce n'est [pas l'endroit recommandé pour gérer les sessions utilisateur et protéger les routes](https://nextjs.org/docs/pages/building-your-application/authentication#optimistic-checks-with-middleware-optional), et ne devrait pas être la seule ligne de défense dans votre application Next.js. Le middleware est plutôt conçu pour effectuer des vérifications optimistes légères, éventuellement en réécrivant/redirigeant sans accéder à aucune base de données.
+
+Cet événement de sécurité a provoqué beaucoup de drama dans l'écosystème, sur lequel je préfère ne pas trop m'étendre. Vercel aurait pu mieux gérer la situation, et ils prévoient de faire mieux à l'avenir. Je vous laisse vous faire votre propre opinion sur la base de diverses ressources, et il y en a trop, donc ceci n'est qu'un sous-ensemble :
+
+- 📜 [Next.js and the corrupt middleware: the authorizing artifact](https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware): L'article original des chercheurs en sécurité qui ont découvert la vulnérabilité.
+- 📜 [How to Think About Security in Next.js](https://nextjs.org/blog/security-nextjs-server-components-actions): Article plus ancien mais toujours pertinent aujourd'hui.
+- 📜 [Authorization in Next.js](https://www.robinwieruch.de/next-authorization/): Robin explique son approche de l'autorisation dans les projets Next.js, au plus près des données sensibles.
+- 📜 [You should know this before choosing Next.js](https://eduardoboucas.com/posts/2025-03-25-you-should-know-this-before-choosing-nextjs/): Le point de vue de l'ingénieur principal de Netlify.
+- 🎥 [Theo \- Next.js security exploit](https://www.youtube.com/live/UbcrphhSAIs?si=QgihLKnhpyE3RxPO&t=8243): Un stream d'1h sur ce sujet, expliquant également ce que Vercel a mal géré.
+
+---
+
+- 💸 [Product for Engineers - Don't make these feature flag mistakes](https://dub.link/twir-mar26)
+- 👀 [Next.js PR \- `useLinkStatus()`](https://github.com/vercel/next.js/pull/77300): New hook to provide pending feedback during navigation transitions.
+- 👀 [Next.js PR \- Link `onNavigate` prop](https://github.com/vercel/next.js/pull/77209)
+- 📣 [Styled Components \- Thank you](https://opencollective.com/styled-components/updates/thank-you): The popular old-gen CSS-in-JS library is now in maintenance mode and not recommended for new projects.
+- 🗓 [React-Summit](https://reactsummit.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇳🇱 Amsterdam - 13 & 17 June. Creators of React Query (Tanner Linsley), Expo Router (Evan Bacon), Million.js (Aiden Bai) & more will share knowledge at React Summit! Use promo code TWIR for 10% off tickets.
+- 📜 [Experimenting with React View Transitions](https://frontendatscale.com/issues/43): Explains what View Transitions are and how React’s experimental `<ViewComponent>` API integrates this web feature. React starts view transitions automatically when using concurrent features, applies transition names automatically at the right time, and exposes convenient lifecycle props.
+- 📜 [Components Are Just Sparkling Hooks](https://www.bbss.dev/posts/sparkling-hooks/): Shows how a component can be transformed into a hook, how the 2 are related, and introduces the concept of hook-based headless components as a flexible primitive.
+- 📜 [Writing static websites with Vite and React](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/): Carlos created a Vite plugin to implement a simple React-based static site generator, using React only as a server-side templating system.
+- 📜 [Next.js vs TanStack](https://www.kylegill.com/essays/next-vs-tanstack/): Kyle is done with Next.js complexity and thinks TanStack Start is the right abstraction.
+- 📜 [Passing TypeScript react components native HTML attributes](https://frontguys.fr/front-end/typescript-react-native-attributes/): Shows how to wrap a native input while keeping the ability to pass any native input prop.
+- 📜 [Storybook 9 sneak peek: Accessibility Addon refresh](https://storybook.js.org/blog/preview-the-new-accessibility-addon/)
+- 📜 [React Trends in 2025](https://www.robinwieruch.de/react-trends/)
+- 📜 [How does the use API work with Next 15 and React 19?](https://www.premieroctet.com/blog/en/how-does-the-use-api-work-with-next-15-and-react-19)
+- 💸 [Omlet for VS Code: Get React component usage insights in VS Code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+- 📦 [tRPC 11.0](https://trpc.io/blog/announcing-trpc-v11): This release brings many new React-related features, including TanStack Query v5 support, the new more native React Query integration based on `queryOptions`, improved Next.js/RSC support, the ability to download/upload binaries, and more.
+- 📦 [React Query 5.69 \- `streamedQuery`](https://github.com/TanStack/query/releases/tag/v5.69.0): React Query can now handle `AsyncIterable` types and receive chunks of data. It will be `pending` only while waiting for the first chunk. This looks particularly useful for building AI/LLM chats.
+- 📦 [Rsbuild Plugin React Router](https://github.com/rspack-contrib/rsbuild-plugin-react-router/releases/tag/rsbuild-plugin-react-router%400.0.1): Now available on npm, you can use React Router in framework mode with another bundler than Vite. It works well with all the React Router CLI templates and the Epic Stack.
+- 📦 [Material UI 7.0 \- Improved ESM support, consitent slot pattern implementation, `enableCssLayer`](https://mui.com/blog/material-ui-v7-is-here/)
+- 📦 [Base UI 1.0.0-alpha.7](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.7): Another great release from the promising Radix UI challenger.
+- 📦 [Next Intl 4.0 \- Type-safe locales, ICU arguments, format and more](https://next-intl.dev/blog/next-intl-4-0)
+- 📦 [Merge Refs 2.0 \- Merges React refs into one](https://github.com/wojtekmaj/merge-refs)
+- 📦 [React-Admin 5.5 & 5.6 \- March 2025 Update](https://marmelab.com/blog/2025/03/24/react-admin-march-2025-update.html)
+- 📦 [Ionic 8.5 \- React 19 support](https://ionic.io/blog/announcing-ionic-8-5)
+- 🎥 [React Paris 2025 Playlist](https://www.youtube.com/watch?v=-W3_dxNDHVw&list=PL53Z0yyYnpWitP8Zv01TSEQmKLvuRh_Dj): I was at the conf last Friday, great talks already available online, and it was nice to meet some of you there 👋!
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Rencontrez @clerk/agent-toolkit](/emails/issues/227/clerk.jpg)](https://go.clerk.com/ovPb3z0)
+
+**[Rencontrez @clerk/agent-toolkit](https://go.clerk.com/ovPb3z0)**
+
+Nouveau package expérimental de Clerk pour utiliser Clerk dans vos workflows d'agents IA. Gérez utilisateurs, organisations et plus encore avec Vercel AI SDK + support LangChain. Essayez maintenant : `npm install @clerk/agent-toolkit`
+
+---
+
+## 📱 React-Native {#react-native}
+
+![React Native fête ses 10 ans](/emails/issues/227/rn-10.jpg)
+
+**React Native fête ses 10 ans ! 🎉🤯**
+
+Croyez-le ou non, React Native a été [open-sourcé il y a exactement 10 ans](https://engineering.fb.com/2015/03/26/android/react-native-bringing-modern-web-techniques-to-mobile/), et fête sa première décennie aujourd'hui !
+
+Un immense bravo à tous ceux qui l'ont rendu possible ! Réécoutons [cet épisode de podcast avec Christopher Chedeau](https://youtu.be/_cBqGenDCks?si=nrfF4D_FGEJhQsH3&t=1504) (Vjeux, co-créateur de React Native) où il raconte l'histoire de React Native, et comment ce projet aurait pu disparaître sans des visionnaires prêts à miser sur lui.
+
+Bravo aussi à l'incroyable communauté React Native – soudée, toujours en mouvement, relevant les défis et construisant ensemble l'avenir de l'UI native déclarative 🚀
+
+À la prochaine décennie prometteuse ! 🥂
+
+---
+
+- 💸 [Codemagic - une excellente alternative à App Center pour les développeurs React Native ! Des builds 8x plus rapides, CodePush, distribution automatisée. Essai gratuit d'un mois !](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)
+- 👀 [Qui utilise Expo OSS en 2025](https://bacon.expo.app/blog/expo-apps): Evan vient de mettre à jour sa liste de 2 262 meilleures applications utilisant Expo ou React Navigation.
+- 👀 [Plugin Pro](https://pluginpro.dev/): Prévisualisation d'un CLI à venir qui enregistre vos modifications de plateforme native puis génère un plugin de configuration Expo. Cela rappelle le fonctionnement de patch-package.
+- 👀 [Legend Photos - Application open source de visualisation de photos - Construite avec React Native macOS](https://github.com/LegendApp/legend-photos)
+- 🐦 [Evan Bacon - "Et si vous pouviez simplement créer des applications mobiles—en déplacement—depuis une application mobile ?"](https://x.com/Baconbrix/status/1904548835143409948): Cette idée est assez intéressante. Plutôt que d'utiliser l'IA pour générer une UI pilotée par le serveur, pourquoi ne pas générer des écrans entiers localement ?
+- 📣 [EAS Build & Workflows - Présentation de M4 Pro - Builds iOS 1,85x plus rapides](https://expo.dev/changelog/eas-build-workflows-m4-pro)
+- 📜 [Feuille de route Lynx 2025](https://lynxjs.org/blog/lynx-open-source-roadmap-2025.html): Le concurrent de React Native prévoit d'ouvrir le support desktop pour Windows, macOS et OpenHarmony. Nouvelles capacités, éléments UI et amélioration des outils à venir.
+- 📜 [Pourquoi connaître le contenu de votre bundle est crucial pour les performances React Native](https://www.callstack.com/blog/knowing-your-apps-bundle-contents-native-performance): Explique comment utiliser Expo Atlas, et une astuce pour le faire fonctionner sans Expo !
+- 📜 [Migration depuis Firebase Dynamic Links : guide pratique](https://medium.com/@louis.lagrange/migrating-from-firebase-dynamic-links-a-practical-guide-9905bbb8f04d)
+- 📜 [Modales React Native en 2025](https://addjam.com/blog/2025-03-24/react-native-modals-2025-comprehensive-guide/)
+- 📦 [Reanimated 4 beta.3 - Raccourci pour les transitions CSS, edge-to-edge, suppression du code Old Arch, dépend de react-native-worklets](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.3)
+- 📦 [Bottom Tabs 0.9 - Ajout de `freezeOnBlur`, suppression de `ignoresTopSafeArea` (désormais automatique)](https://github.com/callstackincubator/react-native-bottom-tabs/releases)
+- 📦 [Audio API 0.5 - RN 0.78, correction de hauteur, décodage audio en mémoire](https://github.com/software-mansion/react-native-audio-api/releases/tag/0.5.0)
+- 📦 [Plugin Expo Tanstack Query DevTools](https://github.com/LovesWorking/tanstack-query-dev-tools-expo-plugin)
+- 📦 [React Native Auto Skeleton - Génère automatiquement un squelette basé sur votre disposition UI existante](https://github.com/pioner92/react-native-auto-skeleton)
+- 📦 [Expo Passkey - Un meilleur plugin d'authentification permettant une authentification sécurisée sans mot de passe](https://github.com/iosazee/expo-passkey)
+- 📦 [React Native Magic Scroll 0.1.25 - Gère les claviers et ScrollViews sur les longs formulaires - Nouvelle Arch, support Expo 52](https://github.com/AppAndFlow/react-native-magic-scroll/releases/tag/v0.1.25)
+- 🎙️ [Rocket Ship 63 - De l'idée à l'application avec Replit ft. Matt Palmer](https://podcast.galaxies.dev/episodes/063-from-idea-to-app-using-replit-with-matt-palmer)
+- 🎥 [Webinaire Callstack - Utiliser React Native dans des applications existantes pour des fonctionnalités multiplateformes plus rapides](https://www.youtube.com/watch?v=qlm1q0ZQ0ko)
+
+---
+
+## 🔀 Autre {#other}
+
+- 👀 [Node PR - v24.0 release](https://github.com/nodejs/node/pull/57609) : La nouvelle version LTS de Node.js est en RC et devrait être publiée le 22 avril. Elle met à jour V8 vers la version 13.4, ce qui devrait débloquer de nouvelles fonctionnalités JavaScript telles que `Promise.try`, `Intl.DurationFormat` et `Atomics.pause`.
+- 📜 [One Thing @scope Can Do is Reduce Concerns About Source Order](https://frontendmasters.com/blog/one-thing-scope-can-do-is-reduce-concerns-about-source-order/) : Aujourd'hui j'ai appris que `@scope` introduit un nouveau concept de "proximité de portée" dans la cascade CSS ! C'est dans Interop 2025 et devrait arriver dans tous les navigateurs très bientôt.
+- 📜 [Chrome 135 - Carousels with CSS](https://developer.chrome.com/blog/carousels-with-css)
+- 📜 [Chrome 135 - The \<select\> element can now be customized with CSS](https://developer.chrome.com/blog/a-customizable-select)
+- 📜 [Hybrid Linters: The Best of Both Worlds](https://www.joshuakgoldberg.com/blog/hybrid-linters-the-best-of-both-worlds/)
+- 📦 [Rsdoctor 1.0 - Build analyzer for webpack and Rspack](https://rsdoctor.dev/blog/release/release-note-1_0) : Un excellent outil que j'utilise sur Docusaurus pour identifier les goulots d'étranglement dans les temps de build.
+- 📦 [Biome 2.0 beta - Plugins, domains, multi-file analysis and more](https://biomejs.dev/blog/biome-v2-0-beta/)
+
+---
+
+## 🤭 Amusant {#fun}
+
+Cette semaine nous avons 2 vidéos, il faut cliquer 😂
+
+[![alt](/emails/issues/227/meme.jpg)](https://x.com/sebastienlorber/status/1904152606181658966)
+
+[![alt](/emails/issues/227/meme2.jpg)](https://x.com/flexbox_/status/1903547233032712635)
+
+À plus ! 👋

@@ -1,0 +1,613 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/229/index.mdx",
+  "source_file_content_hash": "e7d740b22b3d72c06de62a0e9ad5de5a59b9a6606386b7307aa79de37cdad94d",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /229\ntitle: \"This Week In React #229: React Conf, React Router, Next.js Adapters, Redwood, Apollo, Fastify, Vite, Waku | RN v0.79, Deep Imports, Builder Bob, Fingerprinting | TC39, Tailwind, Rspack, Rstest, Turborepo, Bun\"\nauthors: [kacperkapusciak, tomekzaw]\ndate: 04-09-2025\n---",
+      "source_content_hash": "fe100a089bf996cc12025668cfd602a70fe036bbc8acf3578cc37c613abe6001",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week, I'm excited to introduce 2 new contributors to help me with the newsletter!",
+      "source_content_hash": "a0bec80e6b5521feb3789b20451ba6be57af64bef43c316859a10d9419a45fae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, je suis ravi de vous présenter 2 nouveaux contributeurs qui vont m'aider avec la newsletter !",
+        "en": "Cette semaine, je suis ravi de présenter 2 nouveaux contributeurs qui vont m'aider avec la newsletter !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "**Tomasz and Kacper from [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** here – you may already know us from libraries like Reanimated or Gesture Handler. We're happy to be among the authors of the This Week in React newsletter!",
+      "source_content_hash": "09498ca461cdbc380bcc89bf74c786409909576aa26380968febf0419c4a3464",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Tomasz et Kacper de [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** ici – vous nous connaissez peut-être déjà grâce à des bibliothèques comme Reanimated ou Gesture Handler. Nous sommes heureux de figurer parmi les auteurs de la newsletter This Week in React !",
+        "en": "**Tomasz et Kacper de [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** ici – vous nous connaissez peut-être déjà grâce à des bibliothèques comme Reanimated ou Gesture Handler. Nous sommes heureux de faire partie des auteurs de la newsletter This Week in React !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "We were about to call it a fairly calm week… until React Conf 2025 was officially announced and React Native 0.79 dropped with Swift-compatible native modules for iOS, faster app startup on Android, and many more. Let's dive in!",
+      "source_content_hash": "904f81cd30050afbb9556524de19d9f0f08a20b085847cf45d8d3025075d5800",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous étions sur le point de qualifier cette semaine de plutôt calme… jusqu'à ce que React Conf 2025 soit officiellement annoncé et que React Native 0.79 débarque avec des modules natifs compatibles Swift pour iOS, un démarrage d'applications plus rapide sur Android et bien plus encore. Plongeons dans le vif du sujet !",
+        "en": "Nous étions sur le point de dire que c'était une semaine assez calme… jusqu'à ce que React Conf 2025 soit officiellement annoncé et que React Native 0.79 sorte avec des modules natifs compatibles Swift pour iOS, un démarrage plus rapide des applications sur Android, et bien plus encore. Plongeons dans le vif du sujet !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6c991806",
+        "en": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_8f488ab5",
+        "en": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![React-admin: Yes, You Could Build It Yourself… But Why?](/emails/issues/229/marmelab.jpg)](https://marmelab.com/react-admin/)",
+      "source_content_hash": "97cb654b9053dec86b6484358687af1ba2e49f1f801424edd88c44890ea9cfd0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React-admin : Oui, vous pourriez le construire vous-même… Mais pourquoi ?](/emails/issues/229/marmelab.jpg)](https://marmelab.com/react-admin/)",
+        "en": "[![React-admin : Oui, vous pourriez le construire vous-même… Mais pourquoi ?](/emails/issues/229/marmelab.jpg)](https://marmelab.com/react-admin/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[React-admin: Yes, You Could Build It Yourself… But Why?](https://marmelab.com/react-admin/)**",
+      "source_content_hash": "cf90cfa76d05c95b21d03945051845bedcd9afb0ebae8a45ff99de04e2b2b535",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React-admin : Oui, vous pourriez le construire vous-même… Mais pourquoi ?](https://marmelab.com/react-admin/)**",
+        "en": "**[React-admin : Oui, vous pourriez le construire vous-même… Mais pourquoi ?](https://marmelab.com/react-admin/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "You didn’t spend years mastering React just to build CRUD apps on repeat. Yet here you are—facing another request for an admin panel and questioning your life choices.",
+      "source_content_hash": "016358afb1aa2720a848bf85917acb5ff794778495ae9cbf9348fe468b821de7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous n'avez pas passé des années à maîtriser React pour construire des applications CRUD en boucle. Pourtant, vous voilà confronté à une nouvelle demande de panneau d'administration et remettant vos choix de vie en question.",
+        "en": "Vous n'avez pas passé des années à maîtriser React pour simplement construire des applications CRUD en boucle. Pourtant, vous voilà – confronté à une autre demande de panneau d'administration et remettant en question vos choix de vie."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "We've been there ourselves. That’s why we built [**react-admin**](https://marmelab.com/react-admin/)—an open-source framework that handles the boring parts (data fetching, forms, auth, permissions…) so you can focus on the real dev work.",
+      "source_content_hash": "e241cc018b4cd7d36c6fba20a878bdb137bd4e982f28a41bdf87f9bd0c3ff603",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous sommes passés par là. C'est pourquoi nous avons créé [**react-admin**](https://marmelab.com/react-admin/) – un framework open source qui gère les parties rébarbatives (récupération de données, formulaires, authentification, permissions…) pour que vous puissiez vous concentrer sur le vrai travail de développement.",
+        "en": "Nous sommes passés par là. C'est pourquoi nous avons construit [**react-admin**](https://marmelab.com/react-admin/) – un framework open source qui gère les parties ennuyeuses (récupération de données, formulaires, authentification, permissions…) afin que vous puissiez vous concentrer sur le vrai travail de développement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Powered by **Material UI, react-hook-form, react-router, react-query, and TypeScript**, it lets you build admins on top of any REST/GraphQL API—fast.",
+      "source_content_hash": "15f16418fe748e4e0ee43e8c428f286785459854ddbe78128d4d894138448e53",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Propulsé par **Material UI, react-hook-form, react-router, react-query et TypeScript**, il vous permet de construire des interfaces d'administration sur n'importe quelle API REST/GraphQL – rapidement.",
+        "en": "Propulsé par **Material UI, react-hook-form, react-router, react-query et TypeScript**, il vous permet de construire des interfaces d'administration sur n'importe quelle API REST/GraphQL – rapidement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "So next time your PM asks for a new dashboard, skip the existential crisis. [Just use react-admin.](https://github.com/marmelab/react-admin)",
+      "source_content_hash": "ab4c33d95971d97c1d6dd23cad1d5d2a7ab5a54b0e8a76acfcf91da1fcc82d9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Alors la prochaine fois que votre chef de produit demande un nouveau tableau de bord, évitez la crise existentielle. [Utilisez simplement react-admin.](https://github.com/marmelab/react-admin)",
+        "en": "Alors la prochaine fois que votre chef de produit demande un nouveau tableau de bord, évitez la crise existentielle. [Utilisez simplement react-admin.](https://github.com/marmelab/react-admin)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![React Conf 2025](/emails/issues/229/react-conf-2025.png)](https://conf.react.dev/)",
+      "source_content_hash": "f7eca2f2062b1953aa1329927ba291ed34615300de186e0d370e50f9063f6b3f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Conf 2025](/emails/issues/229/react-conf-2025.png)](https://conf.react.dev/)",
+        "en": "[![Conférence React 2025](/emails/issues/229/react-conf-2025.png)](https://conf.react.dev/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "**[React Conf is back for 2025](https://conf.react.dev/)**",
+      "source_content_hash": "a76b1b35f508e5a631936f2943261d278515cf3c0b80776b9fd0f5223c5e995e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Conf revient en 2025](https://conf.react.dev/)**",
+        "en": "**[La conférence React revient en 2025](https://conf.react.dev/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "The React conference is happening on October 7-8, 2025 in Henderson, Nevada, 🇺🇸 US. It’s where the React & React Native team shares official announcements live.",
+      "source_content_hash": "4b113ed91abbb93ad7d7207bff5b1fa7f686f9438287e8e0b330a5326bd29c00",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La conférence React aura lieu les 7 et 8 octobre 2025 à Henderson, Nevada, 🇺🇸 États-Unis. C'est là que l'équipe React & React Native partage les annonces officielles en direct.",
+        "en": "La conférence React aura lieu les 7 et 8 octobre 2025 à Henderson, Nevada, 🇺🇸 États-Unis. C'est là que l'équipe React & React Native partage les annonces officielles en direct."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "The only way to attend the conference in person is to win a ticket lottery that lets you purchase up to 2 tickets. Fortunately, if you’re not one of the lucky ones, the event will be livestreamed for free.",
+      "source_content_hash": "c6e5ce3dcbc4162033cbd4ccf63cb90cac39c5f726121360c8a6a2cd0c22bf1a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La seule façon d'assister à la conférence en personne est de gagner une loterie de billets qui vous permet d'acheter jusqu'à 2 billets. Heureusement, si vous n'êtes pas parmi les chanceux, l'événement sera diffusé en streaming gratuitement.",
+        "en": "La seule façon d'assister à la conférence en personne est de gagner une loterie de billets qui vous permet d'acheter jusqu'à 2 billets. Heureusement, si vous ne faites pas partie des chanceux, l'événement sera diffusé en direct gratuitement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "816a06a6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "- 💸 [Product for Engineers - Good taste makes great products: Simple design principles every engineer should know](https://go.posthog.com/twir-apr9)\n- 📣 [The Future of Redwood Launches Today](https://community.redwoodjs.com/t/the-future-of-redwood-launches-today/7938): The former project gets renamed to Redwood GraphQL and enters maintenance mode. [RedwoodSDK](https://redwoodjs.com/) is the new path for the framework under new leadership.\n- 💬 [Next.js RFC – Deployment Adapters API](https://github.com/vercel/next.js/discussions/77740): Vercel plans to support adapters to deploy Next.js to any hosting provider.\n- 🐦 [Tanner Linsley – TanStack Router \\`intent\\` preloading will predict where your users cursor will go](https://x.com/tannerlinsley/status/1908723776650355111)\n- 🔐 [React Router and the Remix’ed path](https://zhero-web-sec.github.io/research-and-things/react-router-and-the-remixed-path): Vulnerability discovered affecting both React Router and Remix, a flaw for a potential DoS attack through cache poisoning.\n- 📜 [React for Two Computers](https://overreacted.io/react-for-two-computers/): Dan Abramov expands on his React Conf talk with fresh insights to help you build a solid mental model of React Server Components and their origins.\n- 📜 [Advanced React in the Wild](https://largeapps.dev/case-studies/advanced/): A great case study outlining 5 companies that have significantly improved the performance metrics of their React & Next.js sites and how they did it.\n- 📜 [React & live streaming: How to include video mixing in your app](https://blog.swmansion.com/react-live-streaming-how-to-include-video-mixing-in-your-app-c460e09da7a8). A short tutorial explaining how to mix live video with React syntax and stream the output directly from the browser.\n- 📜 [Why We Moved off Next.js](https://documenso.com/blog/why-we-moved-off-next-js): Quick feedback from the Documenso project, moving from Next.js App Router to Vite and React Router.\n- 📜 [React.memo Demystified: When It Helps and When It Hurts](https://cekrem.github.io/posts/react-memo-when-it-helps-when-it-hurts): A concise explanation of common misconceptions and hidden pitfalls of memoization.\n- 📜 [React Reconciliation: The Hidden Engine Behind Your Components](https://cekrem.github.io/posts/react-reconciliation-deep-dive/): Practical guidelines and clean architecture tips to ensure best performance with React reconciler\n- 📜 [Why you need a custom context provider](https://gabrielpichot.fr/blog/why-you-need-a-custom-context-provider/): A nice interactive article that shows creating a custom Context Provider wrapper component can reduce un-necessary re-renders.\n- 💸 [Supabase breaks the norms of traditional software architecture. Learn how.](https://go.clerk.com/pkKoKSg)\n- 📦 [React Router 7.5 – new `route.lazy` API](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v750): Allows for more granular lazy loading.\n- 📦 [Cloudflare Vite Plugin 1.0](https://blog.cloudflare.com/introducing-the-cloudflare-vite-plugin/): Brings official support for React Router v7. Leverages Vite v6 Environment API so that your local dev server matches the production Cloudflare Workers runtime.\n- 📦 [Fastify React 1.0](https://github.com/fastify/fastify-vite/releases/tag/react-v1.0.0): This new package might help you assemble your custom React meta-framework based on the Fastify web server and Vite (creating your own “Mini Next.js”). It supports React 19, and RSCs will come later. See also the related launch post ([React Server Confusion](https://hire.jonasgalvez.com.br/2025/apr/8/react-server-confusion/)) which also gives a good overview of the state of RSC support outside Webpack.\n- 📦 [Apollo Client Next.js integration](https://www.apollographql.com/blog/apollo-client-integration-nextjs-officially-released): The experimental GraphQL client integration package is now officially stable, including a new implementation for `PreloadQuery` to help you avoid request waterfalls. Apollo Client v4 is now in alpha, and integration packages for React Router / TanStack Start being worked on.\n- 📦 [Waku 0.22 – Announcing API routes](https://waku.gg/blog/api-routes)\n- 📦 [Astro 5.6 – Global `astro:env` and experimental sessions on Cloudflare, experimental cookie-less sessions](https://astro.build/blog/astro-560/)\n- 📦 [Hydrogen – March 2025 release – Support for Vite 6, turn on Remix `v3_routeConfig` flag 6](https://hydrogen.shopify.dev/update/march-2025)\n- 🎥 [Theo – A breakdown of style solutions for 2025](https://www.youtube.com/watch?v=lIUp8bdKiq4)\n- 🎥 [Youssef Benlemlih – The Magic Of Compound Components in React](https://www.youtube.com/watch?v=WSM2MpJIwFg)",
+      "source_content_hash": "7ceab14d853bed5e9e24be12d3a902a2333e8a538c82cd041a57f679a3bc4054",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_b4ef1e56",
+        "en": "@@untranslatable_placeholder_b4ef1e56"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7961985",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_e7961985",
+        "en": "@@untranslatable_placeholder_e7961985"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "63e1d83c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "58ed925f",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "[![AppZung: the enterprise-ready CodePush alternative](/emails/issues/229/AppZ.jpg)](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409)",
+      "source_content_hash": "59a0081e823450eac1dc9730ef25ac3c4efc6cc75d8dcd04c66e6533e06a382b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![AppZung : l'alternative prête pour l'entreprise à CodePush](/emails/issues/229/AppZ.jpg)](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409)",
+        "en": "[![AppZung : l'alternative CodePush prête pour l'entreprise](/emails/issues/229/AppZ.jpg)](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "**[AppZung: the enterprise-ready CodePush alternative](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409)**",
+      "source_content_hash": "e13c30bfbcac2ed0bb147857fe17e264a87e74f4a14eff8a40e36c311fb6849c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[AppZung : l'alternative prête pour l'entreprise à CodePush](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409)**",
+        "en": "**[AppZung : l'alternative CodePush prête pour l'entreprise](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "With Microsoft AppCenter shutdown, choose the reliable and robust alternative that doesn't compromise on security, privacy or performance.",
+      "source_content_hash": "575bd6f2365ab99adafaa959dbaa8d9fb5621c066d4f0fddf462011d225619b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec l'arrêt de Microsoft AppCenter, choisissez l'alternative fiable et robuste qui ne fait pas de compromis sur la sécurité, la confidentialité ou les performances.",
+        "en": "Avec l'arrêt de Microsoft AppCenter, choisissez l'alternative fiable et robuste qui ne compromet pas la sécurité, la confidentialité ou les performances."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "AppZung CodePush delivers:",
+      "source_content_hash": "f868a0f88eda44741e53db23548fac015d38bcd92b797410bddf7f736aa90be7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "AppZung CodePush propose :",
+        "en": "AppZung CodePush offre :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9e8f150c",
+      "source_content": "- ✅ Seamless transition: One-command migration from AppCenter\n- ✅ Enterprise-grade security: Code signing, SAML SSO, IP allowlisting and more\n- ✅ Performance at scale: High-availability architecture with fast global CDN\n- ✅ Privacy-first approach: EU-based infrastructure with built-in GDPR compliance features\n- ✅ Dedicated support: Priority handling and satisfied customers",
+      "source_content_hash": "a0292d53dfc0b41ae6c508fee7feee849ae889777d2a58827b708f028aff8161",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- ✅ Transition transparente : Migration en une commande depuis AppCenter\n- ✅ Sécurité de niveau entreprise : Signature de code, SSO SAML, liste blanche IP et plus\n- ✅ Performance à grande échelle : Architecture haute disponibilité avec CDN mondial rapide\n- ✅ Approche axée sur la confidentialité : Infrastructure basée dans l'UE avec fonctionnalités intégrées de conformité RGPD\n- ✅ Support dédié : Traitement prioritaire et clients satisfaits",
+        "en": "- ✅ Transition transparente : Migration en une seule commande depuis AppCenter\n- ✅ Sécurité de niveau entreprise : Signature de code, SSO SAML, liste blanche d'IP et plus encore\n- ✅ Performances à grande échelle : Architecture haute disponibilité avec CDN global rapide\n- ✅ Approche axée sur la confidentialité : Infrastructure basée dans l'UE avec fonctionnalités intégrées de conformité RGPD\n- ✅ Support dédié : Traitement prioritaire et clients satisfaits"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "Our platform is built by developers managing high-traffic applications who understand what's at stake when pushing critical updates.",
+      "source_content_hash": "077da37c096e7e707b4cd589374c81392065ca2af8239be09cb7dac74249f8ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Notre plateforme est conçue par des développeurs gérant des applications à fort trafic, qui comprennent les enjeux lors du déploiement de mises à jour critiques.",
+        "en": "Notre plateforme est construite par des développeurs gérant des applications à fort trafic qui comprennent les enjeux du déploiement de mises à jour critiques."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "[Start deploying](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409) with AppZung today!",
+      "source_content_hash": "2149dbe5c6612ededb3bbfea0303dc47799324aca9bf34dd9ce6885b9ae4968f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Commencez à déployer](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409) avec AppZung dès aujourd'hui !",
+        "en": "[Commencez à déployer](https://appzung.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_250409) avec AppZung dès aujourd'hui !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1742e28b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "99d0dd9b",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "[![React Native 0.79](/emails/issues/229/react-native-0.79.png)](https://reactnative.dev/blog/2025/04/08/react-native-0.79)",
+      "source_content_hash": "46c464d80a775a13175bcdeb887e631dad0bd3b28340df94ff2e23773e51dbae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Native 0.79](/emails/issues/229/react-native-0.79.png)](https://reactnative.dev/blog/2025/04/08/react-native-0.79)",
+        "en": "[![React Native 0.79](/emails/issues/229/react-native-0.79.png)](https://reactnative.dev/blog/2025/04/08/react-native-0.79)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "**[React Native 0.79 – Faster tooling and much more](https://reactnative.dev/blog/2025/04/08/react-native-0.79)**",
+      "source_content_hash": "41468517d3fee55878d317a07a23839b1116eba7702fc764cc768d19e94c1c3b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Native 0.79 – Outillage plus rapide et bien plus](https://reactnative.dev/blog/2025/04/08/react-native-0.79)**",
+        "en": "**[React Native 0.79 – Outillage plus rapide et bien plus encore](https://reactnative.dev/blog/2025/04/08/react-native-0.79)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "Recently, the React Native core team switched to more frequent release cycles, so this is a smaller release, but nonetheless exciting in terms of performance improvements. Here are the highlights:",
+      "source_content_hash": "017f1cbb73c04ffe508e928dbd48fdfc25a3171a41a9085d361f393e88ee7de3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Récemment, l'équipe principale de React Native est passée à des cycles de publication plus fréquents, cette version est donc plus légère mais néanmoins passionnante en termes d'améliorations de performance. Voici les points forts :",
+        "en": "Récemment, l'équipe principale de React Native est passée à des cycles de publication plus fréquents. Bien que cette version soit plus modeste, elle reste passionnante en termes d'améliorations de performances. Voici les points forts :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "664ad8b1",
+      "source_content": "- Metro: 3x faster cold startup and package exports support\n- JavaScriptCore (JSC) moving to a Community Package\n- iOS: Swift-Compatible Native Modules registration\n- Android: Faster app startup thanks to skipping the JS bundle compression\n- Removal of Remote JS Debugging",
+      "source_content_hash": "379a19b23c858a8f5eaf362eb8b8e1af10a0d56d2c5de65a430401e6da195693",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Metro : démarrage à froid 3x plus rapide et support des exports de paquets\n- JavaScriptCore (JSC) déplacé vers un paquet communautaire\n- iOS : Enregistrement des modules natifs compatible Swift\n- Android : Démarrage d'applications plus rapide grâce au saut de la compression du bundle JS\n- Suppression du débogage JS à distance",
+        "en": "- Metro : Démarrage à froid 3x plus rapide et prise en charge des exports de paquets\n- JavaScriptCore (JSC) migre vers un paquet communautaire\n- iOS : Enregistrement des modules natifs compatibles Swift\n- Android : Démarrage d'application accéléré grâce au saut de la compression du bundle JS\n- Suppression du débogage JS à distance"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e55f4c1f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "- 💸 [Radon IDE – More than 20,000 engineers have already chosen it for a smoother, all-in-one development experience. It's your turn.](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 👀 [Expo – React 19.1 `captureOwnerStack` will enable improved error messages](https://github.com/expo/expo/pull/35866#issuecomment-2789891297)\n- 💬 [React Native RFC – Removing deep imports from react-native](https://github.com/huntie/react-native-discussions-and-proposals/blob/proposal-deprecate-subpath-imports/proposals/0894-deprecate-subpath-imports.md): This change allows to define what functions are exported from packages shrinking the API surface area. The goal is to provide a more stable API throughout the ecosystem.\n- 🐦 [Ben Awad – describes his journey to reduce Application Not Responding (ANR) errors on Android](https://x.com/benawad/status/1908860185113665889)\n- ☂️ [Help React Native core team Kotlin-ify React Native tests](https://github.com/facebook/react-native/issues/50513): Great way to start contributing to an open source project.\n- 📅 [React Native London Meetup – April 17th, 2025](https://guild.host/events/react-native-london-e0q1f1)\n- 📜 [Understanding and comparing fingerprints in Expo apps](https://expo.dev/blog/understanding-and-comparing-fingerprints-in-expo-apps): Using hashes to compare whether there was a change in a native build of a React Native & Expo app.\n- 📜 [Cut CI from 20 minutes to 6 with EAS Workflows and EAS Updates](https://shift.infinite.red/cut-ci-from-20-minutes-to-6-with-eas-workflows-and-eas-updates-8d928fe5dcfc): Infinite Red shows how they improved their CI time by fingerprinting native builds.\n- 📜 [Playing Audio in React Native with react-native-track-player](https://addjam.com/blog/2025-04-04/playing-audio-in-react-native/)\n- 📜 [Vercel & React Native – A New Era of Mobile Development?](https://www.thisdot.co/blog/vercel-and-react-native-a-new-era-of-mobile-development): Speculation on what steps Vercel might take in the React Native space.\n- 📜 [A Guide to Logging in React Native](https://blog.sentry.io/a-guide-to-logging-in-react-native/): Including console, native and system logs.\n- 📦 [Builder Bob 0.40](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.40.0)\n- 🎥 [Simon Grimm – The ultimate way to build apps in 2025](https://www.youtube.com/watch?v=acj7-3-EQWM)\n- 🎥 [Catalin Miron – Expo Router: Tabs, Stacks, Deep Linking Fix](https://www.youtube.com/watch?v=HmbBzw0rF6w)\n- 🎙️ [React Native Radio 327 – Automating App Releases with Pratul Kalia](https://infinite.red/react-native-radio/rnr-327-automating-app-releases-with-pratul-kalia)",
+      "source_content_hash": "efb77a1e3ef4f1c0ec34cb0800eae659fdcde9023033af59ca0a39ff8e13405e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Radon IDE – Plus de 20 000 ingénieurs l'ont déjà choisi pour une expérience de développement tout-en-un plus fluide. À vous de jouer.](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 👀 [Expo – React 19.1 `captureOwnerStack` permettra d'améliorer les messages d'erreur](https://github.com/expo/expo/pull/35866#issuecomment-2789891297)\n- 💬 [RFC React Native – Suppression des imports profonds de react-native](https://github.com/huntie/react-native-discussions-and-proposals/blob/proposal-deprecate-subpath-imports/proposals/0894-deprecate-subpath-imports.md) : Ce changement permet de définir quelles fonctions sont exportées depuis les packages, réduisant la surface d'API. L'objectif est de fournir une API plus stable dans tout l'écosystème.\n- 🐦 [Ben Awad – décrit son parcours pour réduire les erreurs Application Not Responding (ANR) sur Android](https://x.com/benawad/status/1908860185113665889)\n- ☂️ [Aidez l'équipe principale React Native à convertir les tests React Native en Kotlin](https://github.com/facebook/react-native/issues/50513) : Excellente façon de commencer à contribuer à un projet open source.\n- 📅 [Meetup React Native London – 17 avril 2025](https://guild.host/events/react-native-london-e0q1f1)\n- 📜 [Comprendre et comparer les empreintes dans les applications Expo](https://expo.dev/blog/understanding-and-comparing-fingerprints-in-expo-apps) : Utilisation de hachages pour détecter les changements dans une build native d'application React Native & Expo.\n- 📜 [Réduire le CI de 20 minutes à 6 avec EAS Workflows et EAS Updates](https://shift.infinite.red/cut-ci-from-20-minutes-to-6-with-eas-workflows-and-eas-updates-8d928fe5dcfc) : Infinite Red montre comment ils ont amélioré leur temps CI en utilisant l'empreinte des builds natifs.\n- 📜 [Lire de l'audio dans React Native avec react-native-track-player](https://addjam.com/blog/2025-04-04/playing-audio-in-react-native/)\n- 📜 [Vercel & React Native – Une nouvelle ère du développement mobile ?](https://www.thisdot.co/blog/vercel-and-react-native-a-new-era-of-mobile-development) : Spéculations sur les futures étapes de Vercel dans l'espace React Native.\n- 📜 [Guide de journalisation dans React Native](https://blog.sentry.io/a-guide-to-logging-in-react-native/) : Incluant les journaux console, natifs et système.\n- 📦 [Builder Bob 0.40](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.40.0)\n- 🎥 [Simon Grimm – La méthode ultime pour construire des apps en 2025](https://www.youtube.com/watch?v=acj7-3-EQWM)\n- 🎥 [Catalin Miron – Expo Router : Onglets, Piles, Correction de Deep Linking](https://www.youtube.com/watch?v=HmbBzw0rF6w)\n- 🎙️ [React Native Radio 327 – Automatisation des publications d'apps avec Pratul Kalia](https://infinite.red/react-native-radio/rnr-327-automating-app-releases-with-pratul-kalia)",
+        "en": "- 💸 [Radon IDE – Plus de 20 000 ingénieurs l'ont déjà choisi pour une expérience de développement tout-en-un plus fluide. C'est votre tour.](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 👀 [Expo – React 19.1 `captureOwnerStack` permettra d'améliorer les messages d'erreur](https://github.com/expo/expo/pull/35866#issuecomment-2789891297)\n- 💬 [RFC React Native – Suppression des imports profonds de react-native](https://github.com/huntie/react-native-discussions-and-proposals/blob/proposal-deprecate-subpath-imports/proposals/0894-deprecate-subpath-imports.md): Ce changement permet de définir quelles fonctions sont exportées depuis les packages, réduisant ainsi la surface d'API. L'objectif est de fournir une API plus stable dans tout l'écosystème.\n- 🐦 [Ben Awad – décrit son parcours pour réduire les erreurs Application Not Responding (ANR) sur Android](https://x.com/benawad/status/1908860185113665889)\n- ☂️ [Aidez l'équipe principale de React Native à Kotlin-ifier les tests React Native](https://github.com/facebook/react-native/issues/50513): Excellente façon de commencer à contribuer à un projet open source.\n- 📅 [Meetup React Native London – 17 avril 2025](https://guild.host/events/react-native-london-e0q1f1)\n- 📜 [Comprendre et comparer les empreintes dans les apps Expo](https://expo.dev/blog/understanding-and-comparing-fingerprints-in-expo-apps): Utilisation de hachages pour détecter les changements dans une build native d'une app React Native & Expo.\n- 📜 [Réduire le CI de 20 minutes à 6 avec EAS Workflows et EAS Updates](https://shift.infinite.red/cut-ci-from-20-minutes-to-6-with-eas-workflows-and-eas-updates-8d928fe5dcfc): Infinite Red montre comment ils ont amélioré leur temps de CI en utilisant l'empreinte des builds natives.\n- 📜 [Lire de l'audio dans React Native avec react-native-track-player](https://addjam.com/blog/2025-04-04/playing-audio-in-react-native/)\n- 📜 [Vercel & React Native – Une nouvelle ère du développement mobile ?](https://www.thisdot.co/blog/vercel-and-react-native-a-new-era-of-mobile-development): Spéculations sur les étapes que Vercel pourrait entreprendre dans l'espace React Native.\n- 📜 [Guide du logging dans React Native](https://blog.sentry.io/a-guide-to-logging-in-react-native/): Incluant les logs console, natifs et système.\n- 📦 [Builder Bob 0.40](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.40.0)\n- 🎥 [Simon Grimm – La méthode ultime pour créer des apps en 2025](https://www.youtube.com/watch?v=acj7-3-EQWM)\n- 🎥 [Catalin Miron – Expo Router : Onglets, Piles, Correction des deep links](https://www.youtube.com/watch?v=HmbBzw0rF6w)\n- 🎙️ [React Native Radio 327 – Automatisation des publications d'apps avec Pratul Kalia](https://infinite.red/react-native-radio/rnr-327-automating-app-releases-with-pratul-kalia)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d53c8ed4",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ecba4df2",
+      "source_content": "- 👀 [Agenda for the 107th meeting of Ecma TC39](https://github.com/tc39/agendas/blob/main/2025/04.md): Next week the TC39 committee meets again to discuss many new exciting proposals, including Enums, Composites, `export defer`, and more.\n- 📜 [Debugging JavaScript Memory Leaks](https://bun.sh/blog/debugging-memory-leaks)\n- 📜 [First Look at The Modern CSS `attr()`](https://ishadeed.com/article/modern-attr/)\n- 📜 [A Deep Dive into OSI, TCP/UDP, HTTP, and More](https://www.deepintodev.com/blog/how-data-travels-the-world-to-reach-your-screen)\n- 📦 [Tailwind CSS 4.1 – Text shadows, masks, and tons more](https://tailwindcss.com/blog/tailwindcss-v4-1)\n- 📦 [Rspack 1.3.1 – Run JS loaders in parallel](https://x.com/rspack_dev/status/1907336863096123484)\n- 📦 [Turborepo 2.5](https://turbo.build/blog/turbo-2-5)\n- 📦 [Rstest – The testing framework powered by Rspack (WIP)](https://github.com/web-infra-dev/rstest)\n- 📦 [Bun 1.2.9 – Redis client, Node.js compatibility, `require` improvements](https://bun.sh/blog/bun-v1.2.9)",
+      "source_content_hash": "a51b1a99f7db6306146e06a253a53aabb168f8b836a54b6b3c70060fabb6ad9f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Ordre du jour de la 107e réunion d'Ecma TC39](https://github.com/tc39/agendas/blob/main/2025/04.md): La semaine prochaine, le comité TC39 se réunira à nouveau pour discuter de nombreuses propositions passionnantes, notamment les Enums, Composites, `export defer`, et plus encore.\n- 📜 [Débogage des fuites mémoire en JavaScript](https://bun.sh/blog/debugging-memory-leaks)\n- 📜 [Premier regard sur le `attr()` CSS moderne](https://ishadeed.com/article/modern-attr/)\n- 📜 [Une plongée approfondie dans OSI, TCP/UDP, HTTP et plus](https://www.deepintodev.com/blog/how-data-travels-the-world-to-reach-your-screen)\n- 📦 [Tailwind CSS 4.1 – Ombres de texte, masques et bien plus encore](https://tailwindcss.com/blog/tailwindcss-v4-1)\n- 📦 [Rspack 1.3.1 – Exécution des loaders JS en parallèle](https://x.com/rspack_dev/status/1907336863096123484)\n- 📦 [Turborepo 2.5](https://turbo.build/blog/turbo-2-5)\n- 📦 [Rstest – Le framework de test propulsé par Rspack (WIP)](https://github.com/web-infra-dev/rstest)\n- 📦 [Bun 1.2.9 – Client Redis, compatibilité Node.js, améliorations de `require`](https://bun.sh/blog/bun-v1.2.9)",
+        "en": "- 👀 [Ordre du jour de la 107e réunion d'Ecma TC39](https://github.com/tc39/agendas/blob/main/2025/04.md): La semaine prochaine, le comité TC39 se réunira à nouveau pour discuter de nombreuses nouvelles propositions passionnantes, notamment les Enums, les Composites, `export defer`, et plus encore.\n- 📜 [Débogage des fuites de mémoire en JavaScript](https://bun.sh/blog/debugging-memory-leaks)\n- 📜 [Premier aperçu du CSS moderne `attr()`](https://ishadeed.com/article/modern-attr/)\n- 📜 [Une plongée approfondie dans OSI, TCP/UDP, HTTP et plus](https://www.deepintodev.com/blog/how-data-travels-the-world-to-reach-your-screen)\n- 📦 [Tailwind CSS 4.1 – Ombres de texte, masques et bien plus encore](https://tailwindcss.com/blog/tailwindcss-v4-1)\n- 📦 [Rspack 1.3.1 – Exécution des chargeurs JS en parallèle](https://x.com/rspack_dev/status/1907336863096123484)\n- 📦 [Turborepo 2.5](https://turbo.build/blog/turbo-2-5)\n- 📦 [Rstest – Le framework de test propulsé par Rspack (WIP)](https://github.com/web-infra-dev/rstest)\n- 📦 [Bun 1.2.9 – Client Redis, compatibilité Node.js, améliorations de `require`](https://bun.sh/blog/bun-v1.2.9)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "294e85af",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b448c8b",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Détente {#fun}",
+        "en": "## 🤭 Divertissant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad3e22c6",
+      "source_content": "[![alt](/emails/issues/229/meme1.jpg)](https://x.com/thekitze/status/1907508349442339078)",
+      "source_content_hash": "7f688839467612a19fbc7777daa50c4a5cf3f8f72d643f53e9614fbff028edf2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/229/meme1.jpg)](https://x.com/thekitze/status/1907508349442339078)",
+        "en": "[![alt](/emails/issues/229/meme1.jpg)](https://x.com/thekitze/status/1907508349442339078)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8f45da",
+      "source_content": "[![alt](/emails/issues/229/meme2.jpg)](https://x.com/sebastienlorber/status/1909916465190383982)",
+      "source_content_hash": "f1b5ee09b7c07dcea1ebc7a5f53845811813913de5092e784608a1ec6da5a072",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/229/meme2.jpg)](https://x.com/sebastienlorber/status/1909916465190383982)",
+        "en": "[![alt](/emails/issues/229/meme2.jpg)](https://x.com/sebastienlorber/status/1909916465190383982)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4c787c52",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/229/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.219643+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "e7d740b22b3d72c06de62a0e9ad5de5a59b9a6606386b7307aa79de37cdad94d",
+    "en": "e7d740b22b3d72c06de62a0e9ad5de5a59b9a6606386b7307aa79de37cdad94d"
+  }
+}

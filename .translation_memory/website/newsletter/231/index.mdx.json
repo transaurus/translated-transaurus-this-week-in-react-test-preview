@@ -1,0 +1,745 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/231/index.mdx",
+  "source_file_content_hash": "7c46803c61c65dd2e239daf78aabae1847cd0573c44cdf3f367c84594292c93e",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /231\ntitle: \"This Week In React #231: React Labs, Compiler, React Router, Next.js, TanStack Query, c15t, RTK, Base UI | Legend List, FlashList, Versioning, Metro, ExecuTorch, Brownfield, Expo Router | TC39, Surveys, Rspack, tsdown\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 04-23-2025\n---",
+      "source_content_hash": "a6a161240f8afebe9b04c2183c33e4486b611ee17ea09648786bc90753d415c9",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) here 👋, standing in for Seb to bring you the latest news from the React and React Native worlds.",
+      "source_content_hash": "8d47b7254afc68cce85ae5b5fd04d2b379f21717631b5e46962fc5dc6ddefe63",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cyril et Matthieu de [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) ici 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles des mondes React et React Native.",
+        "en": "Cyril et Matthieu de [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) ici 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles des écosystèmes React et React Native."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "This week, we have two exciting blog posts for the React team, and a special guest from the React core team has a message for you all!",
+      "source_content_hash": "bc1a20d2eaa2c16e62310df4a605486390862977e1706163ca92660ca25c07df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, nous avons deux articles de blog passionnants de l'équipe React, et un invité spécial de l'équipe principale de React a un message pour vous tous !",
+        "en": "Cette semaine, nous avons deux articles passionnants de l'équipe React, et un invité spécial de l'équipe principale de React a un message pour vous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "We've also been reading quite a few interesting blog posts from the \"official\" blogs and the community.",
+      "source_content_hash": "4d3f8ceef795193d3cc37e252473766cd3c737200ce7fd8131ff1d69098c6c73",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons également lu pas mal d'articles de blog intéressants provenant des blogs \"officiels\" et de la communauté.",
+        "en": "Nous avons également lu plusieurs articles intéressants provenant des blogs \"officiels\" et de la communauté."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6c991806",
+        "en": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_8f488ab5",
+        "en": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![Convex: The Database Designed for AI Coding](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)",
+      "source_content_hash": "4035796cb62442c23691cfb51a2e889ced451d26cabc9790c92d66a1c6286830",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Convex: The Database Designed for AI Coding](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)",
+        "en": "[![Convex: The Database Designed for AI Coding](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[Convex: The Database Designed for AI Coding](https://convex.link/thisweekai)**",
+      "source_content_hash": "d384fd6f220e543e310b02b0dbf2f609aeb6345a2c6e5afafb56a68aae15b062",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Convex: La base de données conçue pour le codage IA](https://convex.link/thisweekai)**",
+        "en": "**[Convex: The Database Designed for AI Coding](https://convex.link/thisweekai)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "In the age of code generation, you need a backend that you can confidently generate with AI platforms. Convex is by far and away [best in class](https://stack.convex.dev/introducing-fullstack-bench) in this respect.",
+      "source_content_hash": "3d6b6550ec4434fdb7d1e0d080f650b4d4ce50ff1bfec51a6a667626a9411329",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À l'ère de la génération de code, vous avez besoin d'un backend que vous pouvez générer en toute confiance avec des plateformes d'IA. Convex est de loin [le meilleur de sa catégorie](https://stack.convex.dev/introducing-fullstack-bench) à cet égard.",
+        "en": "À l'ère de la génération de code, vous avez besoin d'un backend que vous pouvez générer en toute confiance avec des plateformes d'IA. Convex est [largement supérieur](https://stack.convex.dev/introducing-fullstack-bench) dans ce domaine."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "This is because Convex is just TypeScript, allowing you to write [queries as code](https://docs.convex.dev/functions/query-functions/) that are automatically transactional, cached, and realtime.",
+      "source_content_hash": "b00591181af36984cd990624880779b79694b2dffc5adce3c0d62fdea305b862",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "C'est parce que Convex n'est que du TypeScript, vous permettant d'écrire des [requêtes sous forme de code](https://docs.convex.dev/functions/query-functions/) qui sont automatiquement transactionnelles, mises en cache et en temps réel.",
+        "en": "Cela parce que Convex est simplement du TypeScript, vous permettant d'écrire des [requêtes sous forme de code](https://docs.convex.dev/functions/query-functions/) qui sont automatiquement transactionnelles, mises en cache et en temps réel."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "And that’s just the beginning. With Convex, you can:",
+      "source_content_hash": "6cde80d7e7f63df8bc62324cf0d40c07146774a00de388434787366d409a424a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Et ce n'est que le début. Avec Convex, vous pouvez :",
+        "en": "Et ce n'est que le début. Avec Convex, vous pouvez :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- Easily schedule functions and write cron jobs\n- Set up file storage\n- Write efficient server functions\n- And so much more…",
+      "source_content_hash": "4a6286ba8f677bac5d7d1196522d5c14cb3407786a98babe46839c1f52ebff65",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Planifier facilement des fonctions et écrire des tâches cron\n- Configurer le stockage de fichiers\n- Écrire des fonctions serveur efficaces\n- Et bien plus encore…",
+        "en": "- Planifier facilement des fonctions et créer des tâches cron\n- Configurer un stockage de fichiers\n- Écrire des fonctions serveur efficaces\n- Et bien plus encore…"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "[Try a Quickstart today](https://docs.convex.dev/quickstarts)",
+      "source_content_hash": "bae3099e9bb4fe5dd167b12ba995e805841457f7c924697770516e6cf10e140a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Essayez un démarrage rapide aujourd'hui](https://docs.convex.dev/quickstarts)",
+        "en": "[Essayez un guide de démarrage rapide dès aujourd'hui](https://docs.convex.dev/quickstarts)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## 📣 From the React team {#react-core-team}",
+      "source_content_hash": "590c5034a1ad068e7cd8b197267cc5effe11f141c9fe97a14edd17ee45f83350",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📣 De l'équipe React {#react-core-team}",
+        "en": "## 📣 De l'équipe React {#react-core-team}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![React Labs: View Transitions, Activity, and more](/emails/issues/231/labs.jpg)](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)",
+      "source_content_hash": "bf0a0d1e1533c850d529488d67ea28226d3a30eed67e109806f01ee60487e24f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Labs: View Transitions, Activity, and more](/emails/issues/231/labs.jpg)](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)",
+        "en": "[![React Labs: View Transitions, Activity, et plus](/emails/issues/231/labs.jpg)](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "**[React Labs: View Transitions, Activity, and more](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)**",
+      "source_content_hash": "024c3d6acdac911c8e4c0422aa5a287caeb4897afd992f0243b3fd44b40174ae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Labs: Transitions de vue, Activité et plus encore](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)**",
+        "en": "**[React Labs: View Transitions, Activity, et plus](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "The rumors you’ve heard that the React Team only cares about the server have been greatly exaggerated.",
+      "source_content_hash": "fb765f56c0b44eceea6c2a88c7c204a1593b5ca53695fb6e441e705530bbabd5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les rumeurs selon lesquelles l'équipe React ne se soucierait que du serveur sont grandement exagérées.",
+        "en": "Les rumeurs selon lesquelles l'équipe React ne se soucie que du serveur sont grandement exagérées."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "In our [React Labs post](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more) today, we shared that [View Transitions](https://react.dev/reference/react/ViewTransition) and [Activity](https://react.dev/reference/react/Activity) are now ready to try out in our experimental channel, along with docs for each. These new features allow React running on the client to animate UI transitions, and hide and show parts of the UI as the user navigates client-side. They work with server features, but are aimed at solving problems on the client.",
+      "source_content_hash": "a8a48ff6763cdbeca2e71da461fec1f4be0be98665590aa57da6a6e28bc3ad83",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dans notre [article React Labs](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more) publié aujourd'hui, nous avons annoncé que les [Transitions de vue](https://react.dev/reference/react/ViewTransition) et l'[Activité](https://react.dev/reference/react/Activity) sont désormais prêtes à être testées dans notre canal expérimental, accompagnées de leur documentation. Ces nouvelles fonctionnalités permettent à React côté client d'animer les transitions d'interface utilisateur, et de masquer/afficher des éléments d'UI lors de la navigation côté client. Elles fonctionnent avec les fonctionnalités serveur mais ciblent spécifiquement les problèmes côté client.",
+        "en": "Dans notre [article React Labs](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more) aujourd'hui, nous avons annoncé que les [View Transitions](https://react.dev/reference/react/ViewTransition) et l'[Activity](https://react.dev/reference/react/Activity) sont maintenant prêts à être testés dans notre canal expérimental, avec une documentation pour chacun. Ces nouvelles fonctionnalités permettent à React côté client d'animer les transitions d'interface, et de masquer/afficher des éléments d'UI lors de la navigation côté client. Elles fonctionnent avec les fonctionnalités serveur mais visent à résoudre des problèmes côté client."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "We also [shared updates](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#features-in-development) on problem areas we’re focusing on that impact client-rendered apps including better profiling tools, automatically compiling effect dependencies, a potential IDE extension, fragment refs, and yes even a concurrent store. These are problem areas we’ve wanted to address for a while, which recent features like the React Compiler and the `use` API allow us to finally tackle.",
+      "source_content_hash": "0c07e0bbcac4e8aa0f3f92ac1af056a03f6b1e2a951adb18c8e860b2e776f781",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons également [partagé des mises à jour](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#features-in-development) sur les domaines problématiques que nous traitons, impactant les applications rendues côté client : meilleurs outils de profilage, compilation automatique des dépendances d'effets, extension IDE potentielle, références de fragments et même un store concurrent. Ces problématiques attendent une solution depuis longtemps, désormais abordables grâce à des fonctionnalités récentes comme le compilateur React et l'API `use`.",
+        "en": "Nous avons également [partagé des mises à jour](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#features-in-development) sur les domaines problématiques que nous ciblons, impactant les applications rendues côté client, incluant de meilleurs outils de profilage, la compilation automatique des dépendances d'effets, une extension IDE potentielle, les références de fragments et même un store concurrent. Ces zones problématiques que nous voulions adresser depuis longtemps peuvent enfin être traitées grâce à des fonctionnalités récentes comme le React Compiler et l'API `use`."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "These features are still early and might change significantly before they’re ready to try. You can follow along while we build these features, and this newsletter is a great way to stay up to date. But don’t stress about learning everything \\- you can let us cook first.",
+      "source_content_hash": "63b26ce8772d5d06dfdc4211d8f7140e54e9790b91a024ec38fa9f0322e54107",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ces fonctionnalités sont encore précoces et pourraient évoluer significativement avant leur disponibilité. Vous pouvez suivre leur développement via cette newsletter. Mais ne stressez pas pour tout apprendre - laissez-nous d'abord finaliser le travail.",
+        "en": "Ces fonctionnalités sont encore précoces et pourraient changer significativement avant d'être prêtes. Vous pouvez suivre notre progression, et cette newsletter est un excellent moyen de rester informé. Mais ne stressez pas pour tout apprendre - laissez-nous d'abord cuisiner."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "When we’re more confident a feature will ship, we’ll announce it on the blog and publish docs, like we’re doing today for View Transitions and Activity.",
+      "source_content_hash": "e4a9af4b0a7d2cbe1e30a35056d275dc2ab4cfd495d5fa1ac714c63a46988e5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Quand nous aurons plus de certitude sur la livraison d'une fonctionnalité, nous l'annoncerons sur le blog avec sa documentation, comme nous le faisons aujourd'hui pour les Transitions de vue et l'Activité.",
+        "en": "Quand nous serons plus confiants dans le déploiement d'une fonctionnalité, nous l'annoncerons sur le blog et publierons sa documentation, comme nous le faisons aujourd'hui pour les View Transitions et Activity."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "Give the new experimental features a try, and check out the areas we’re working on in the [blog post](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more).",
+      "source_content_hash": "1c09c1dd402c30e39d1a67c9b36cfc0d0348d036b849566c20f418975d376b1b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Essayez les nouvelles fonctionnalités expérimentales et découvrez les domaines sur lesquels nous travaillons dans le [billet de blog](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more).",
+        "en": "Essayez les nouvelles fonctionnalités expérimentales et découvrez les domaines sur lesquels nous travaillons dans le [billet de blog](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "\\-[Ricky Hanlon](https://bsky.app/profile/ricky.fm)",
+      "source_content_hash": "cb1bd4d7df05a1906d9f33a9b232a8cba13371e2ee816ca3a657d9df6320a3ae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "\\-[Ricky Hanlon](https://bsky.app/profile/ricky.fm)",
+        "en": "\\-[Ricky Hanlon](https://bsky.app/profile/ricky.fm)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42c293cc",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5a4323e",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "[![React Compiler RC](/emails/issues/231/compiler.jpg)](https://react.dev/blog/2025/04/21/react-compiler-rc)",
+      "source_content_hash": "b147b0547accdd39456c1eb3d4745b68eed085a47d70185d034cc3c6f186daf9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![RC du compilateur React](/emails/issues/231/compiler.jpg)](https://react.dev/blog/2025/04/21/react-compiler-rc)",
+        "en": "[![Compilateur React RC](/emails/issues/231/compiler.jpg)](https://react.dev/blog/2025/04/21/react-compiler-rc)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7772088",
+      "source_content": "**[React Compiler RC](https://react.dev/blog/2025/04/21/react-compiler-rc)**",
+      "source_content_hash": "955193c5b18675ae0933911e98afb22cd6ad97e9ba6dd0c6318f132ee97433d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[RC du compilateur React](https://react.dev/blog/2025/04/21/react-compiler-rc)**",
+        "en": "**[Compilateur React RC](https://react.dev/blog/2025/04/21/react-compiler-rc)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "The React Labs post is not the only exciting update this week! The React Compiler is also in Release Candidate, in preparation of the compiler’s stable release.",
+      "source_content_hash": "c018541e2cae19c875442e687b5d25ab8834041c882404c8b2e60c663d031d86",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le billet React Labs n'est pas la seule mise à jour passionnante cette semaine ! Le compilateur React est également en version Release Candidate, en préparation de la sortie stable du compilateur.",
+        "en": "Le billet React Labs n'est pas la seule mise à jour excitante cette semaine ! Le compilateur React est également en Release Candidate, en préparation de la version stable du compilateur."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "The Babel-free builds is a welcome improvement so that we can keep using the compiler with our modern Rust tooling!",
+      "source_content_hash": "4f1cb67cffd9fba7c6af1127f653f86d937aeadd08db7f3286e74ebfe03fc064",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les builds sans Babel sont une amélioration bienvenue qui nous permet de continuer à utiliser le compilateur avec notre outillage Rust moderne !",
+        "en": "Les builds sans Babel sont une amélioration bienvenue qui nous permet de continuer à utiliser le compilateur avec notre outillage Rust moderne !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "63e1d83c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1316cb90",
+      "source_content": "- 💸 [How to build a multi-tenant app using Clerk + Supabase](https://go.clerk.com/j5M7vZt)\n- 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) \\- 🇫🇮 Espoo \\- 26-28 May. Dive into the future of frontend development with Aurora Scharff, Rachel Nabors, and others\\! Use code \"TWIR\" for a 10% discount.\n- 📜 [Impossible Components](https://overreacted.io/impossible-components/): Dan Abramov continues his series of blog posts about RSC, this time detailing, among other things, how it squares with React’s top-down data flow.\n- 📜 [Faster Lazy Loading in React Router v7.5+](https://remix.run/blog/faster-lazy-loading): This was released a few weeks ago. Mark Dalgleish explains in this post why the new approach (lazy loading by route properties instead of the whole route) was necessary, especially when using middlewares.\n- 📜 [Performance tips with Next.js](https://vercel.com/blog/guide-to-fast-websites-with-next-js-tips-for-maximizing-server-speeds#how-to-speed-up-the-page-render-minimize-client-burden): A nice recap of all the available optimizations: pre-render, use caching, watch bundle size, lazy-load what can be, optimize fonts and images, use virtualization…\n- 📜 [Simplify TanStack React Query State Handling with Pattern Matching](https://gabrielpichot.fr/blog/simplify-tanstack-react-query-state-handling-with-pattern-matching/)\n- 📜 [Using Client Caches In Loaders](https://www.brenelz.com/posts/using-client-caches-in-loaders/)\n- 📜 [Life of a Request: Application-aware routing \\- Vercel](https://vercel.com/blog/life-of-a-request-application-aware-routing)\n- 📜 [Tailwind vs Linaria: Performance Investigation](https://www.developerway.com/posts/tailwind-vs-linaria-performance)\n- 📦 [c15t](https://github.com/c15t/c15t): A new consent management framework coming with drop-in React components.\n- 📦 [Redux Toolkit 2.7](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.7.0): Standard Schema for RTK query, improved infinite queries.\n- 📦 [Headless Tree 1.0](https://headless-tree.lukasbach.com/): A successor to React Complex tree, the author has a [blog post explaining the change](https://medium.com/@lukasbach/headless-tree-and-the-future-of-react-complex-tree-fc920700e82a).\n- 📦 [Module Federation Core 0.13](https://github.com/module-federation/core/releases/tag/v0.13.0): Better React 19 support and bug fixes.\n- 📦 [Base UI 1.0 alpha-8](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.8): The new Radix UI alternative keeps progressing with new Toast and Meter components among many other things.\n- 🎙️ [Syntax.fm \\- React Server Components: Where are we at?](https://syntax.fm/show/895/react-server-components-where-are-we-at)",
+      "source_content_hash": "5f2d96326448af72b9fa54921e2131de7f3e6f584bdfe0f4eab71d8259a6f8be",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Comment créer une application multi-locataire avec Clerk + Supabase](https://go.clerk.com/j5M7vZt)\n- 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) \\- 🇫🇮 Espoo \\- 26-28 mai. Plongez dans l'avenir du développement frontend avec Aurora Scharff, Rachel Nabors et d'autres\\! Utilisez le code \"TWIR\" pour une réduction de 10%.\n- 📜 [Composants impossibles](https://overreacted.io/impossible-components/): Dan Abramov poursuit sa série d'articles de blog sur RSC, détaillant notamment comment cela s'accorde avec le flux de données descendant de React.\n- 📜 [Chargement différé plus rapide dans React Router v7.5+](https://remix.run/blog/faster-lazy-loading): Publié il y a quelques semaines. Mark Dalgleish explique dans cet article pourquoi la nouvelle approche (chargement différé par propriétés de route plutôt que par route entière) était nécessaire, surtout avec les middlewares.\n- 📜 [Conseils de performance avec Next.js](https://vercel.com/blog/guide-to-fast-websites-with-next-js-tips-for-maximizing-server-speeds#how-to-speed-up-the-page-render-minimize-client-burden): Un bon récapitulatif des optimisations disponibles : pré-rendu, utilisation du cache, surveillance de la taille du bundle, chargement différé, optimisation des polices et images, virtualisation…\n- 📜 [Simplifier la gestion d'état de TanStack React Query avec le pattern matching](https://gabrielpichot.fr/blog/simplify-tanstack-react-query-state-handling-with-pattern-matching/)\n- 📜 [Utiliser les caches clients dans les loaders](https://www.brenelz.com/posts/using-client-caches-in-loaders/)\n- 📜 [Vie d'une requête : routage conscient de l'application - Vercel](https://vercel.com/blog/life-of-a-request-application-aware-routing)\n- 📜 [Tailwind vs Linaria : enquête de performance](https://www.developerway.com/posts/tailwind-vs-linaria-performance)\n- 📦 [c15t](https://github.com/c15t/c15t): Un nouveau framework de gestion de consentement avec composants React prêts à l'emploi.\n- 📦 [Redux Toolkit 2.7](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.7.0): Schéma standard pour RTK Query, requêtes infinies améliorées.\n- 📦 [Headless Tree 1.0](https://headless-tree.lukasbach.com/): Successeur de React Complex Tree. L'auteur explique le changement dans [cet article](https://medium.com/@lukasbach/headless-tree-and-the-future-of-react-complex-tree-fc920700e82a).\n- 📦 [Module Federation Core 0.13](https://github.com/module-federation/core/releases/tag/v0.13.0): Meilleure prise en charge de React 19 et corrections de bugs.\n- 📦 [Base UI 1.0 alpha-8](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.8): L'alternative à Radix UI progresse avec de nouveaux composants Toast et Meter.\n- 🎙️ [Syntax.fm - Composants Serveur React : où en sommes-nous ?](https://syntax.fm/show/895/react-server-components-where-are-we-at)",
+        "en": "- 💸 [Comment construire une application multi-locataire avec Clerk + Supabase](https://go.clerk.com/j5M7vZt)\n- 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) \\- 🇫🇮 Espoo \\- 26-28 mai. Plongez dans l'avenir du développement frontend avec Aurora Scharff, Rachel Nabors et d'autres\\! Utilisez le code \"TWIR\" pour 10% de réduction.\n- 📜 [Composants impossibles](https://overreacted.io/impossible-components/): Dan Abramov poursuit sa série d'articles sur les RSC, détaillant cette fois comment ils s'alignent avec le flux de données descendant de React.\n- 📜 [Chargement paresseux plus rapide dans React Router v7.5+](https://remix.run/blog/faster-lazy-loading): Sorti il y a quelques semaines. Mark Dalgleish explique pourquoi cette nouvelle approche (chargement paresseux par propriétés de route) était nécessaire, surtout avec les middlewares.\n- 📜 [Conseils de performance avec Next.js](https://vercel.com/blog/guide-to-fast-websites-with-next-js-tips-for-maximizing-server-speeds#how-to-speed-up-the-page-render-minimize-client-burden): Un récapitulatif des optimisations disponibles : pré-rendu, mise en cache, surveillance de la taille des bundles, chargement paresseux, optimisation des polices et images, virtualisation…\n- 📜 [Simplifier la gestion d'état de TanStack React Query avec le pattern matching](https://gabrielpichot.fr/blog/simplify-tanstack-react-query-state-handling-with-pattern-matching/)\n- 📜 [Utiliser les caches clients dans les loaders](https://www.brenelz.com/posts/using-client-caches-in-loaders/)\n- 📜 [Vie d'une requête : routage conscient de l'application - Vercel](https://vercel.com/blog/life-of-a-request-application-aware-routing)\n- 📜 [Tailwind vs Linaria : enquête de performance](https://www.developerway.com/posts/tailwind-vs-linaria-performance)\n- 📦 [c15t](https://github.com/c15t/c15t): Un nouveau framework de gestion des consentements avec composants React prêts à l'emploi.\n- 📦 [Redux Toolkit 2.7](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.7.0): Schéma standard pour RTK Query, requêtes infinies améliorées.\n- 📦 [Headless Tree 1.0](https://headless-tree.lukasbach.com/): Successeur de React Complex Tree, l'auteur explique le changement dans un [article de blog](https://medium.com/@lukasbach/headless-tree-and-the-future-of-react-complex-tree-fc920700e82a).\n- 📦 [Module Federation Core 0.13](https://github.com/module-federation/core/releases/tag/v0.13.0): Meilleure prise en charge de React 19 et corrections de bugs.\n- 📦 [Base UI 1.0 alpha-8](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.8): L'alternative à Radix UI progresse avec de nouveaux composants Toast et Meter.\n- 🎙️ [Syntax.fm - Composants serveur React : où en sommes-nous ?](https://syntax.fm/show/895/react-server-components-where-are-we-at)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "db2c1b40",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_db2c1b40",
+        "en": "@@untranslatable_placeholder_db2c1b40"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7a7cb1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e06c002e",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "[![Self-service analytics and dashboards in your product](/emails/issues/231/semaphor.jpg)](https://semaphor.cloud)",
+      "source_content_hash": "97cee3a3d70a7ccede9ebd1e0aecf0728d4492fa1f2124cd02c291622eadbcb7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Analytiques et tableaux de bord en libre-service dans votre produit](/emails/issues/231/semaphor.jpg)](https://semaphor.cloud)",
+        "en": "[![Analyses et tableaux de bord en libre-service dans votre produit](/emails/issues/231/semaphor.jpg)](https://semaphor.cloud)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "**[Self-service analytics and dashboards in your product](https://semaphor.cloud)**",
+      "source_content_hash": "2e70f5c0d8903855253f212c67947315376a035794057d751c4fe7c1c00921e1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Analytiques et tableaux de bord en libre-service dans votre produit](https://semaphor.cloud)**",
+        "en": "**[Analyses et tableaux de bord en libre-service dans votre produit](https://semaphor.cloud)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "**Your engineers didn’t sign up to build dashboards.**\nLet them focus on features.",
+      "source_content_hash": "718bffee3200eff379d1e71b9675a7bf66df2e2f5d9a92781c27c023b9c422c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Vos ingénieurs ne se sont pas engagés à construire des tableaux de bord.**\nLaissez-les se concentrer sur les fonctionnalités.",
+        "en": "**Vos ingénieurs ne se sont pas engagés à construire des tableaux de bord.**\nLaissez-les se concentrer sur les fonctionnalités."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "With Semaphor, your data team can ship insights independently. No code changes, no front-end redeploys. Decouple analytics from your product code and move faster.",
+      "source_content_hash": "5738cb534fce54bc9a7feac3523856cf933cc89bb813de326dccddd15eb45a31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec Semaphor, votre équipe data peut fournir des insights indépendamment. Aucune modification de code, aucun redéploiement frontend. Découplez l'analytique de votre code produit et avancez plus vite.",
+        "en": "Avec Semaphor, votre équipe data peut livrer des insights indépendamment. Aucune modification de code, aucun redéploiement frontend. Découplez les analyses de votre code produit et avancez plus vite."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bc8bc928",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "722e4930",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "[![Legend List 1.0](/emails/issues/231/legend-list.png)](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)",
+      "source_content_hash": "0f70eee1e38a4d1de0c3ce2e663800bcf93af826c28f0f3adee2ad8b100c3ee6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Legend List 1.0](/emails/issues/231/legend-list.png)](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)",
+        "en": "[![Legend List 1.0](/emails/issues/231/legend-list.png)](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "**[Legend List 1.0](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)**",
+      "source_content_hash": "ad71475ea09909c33212aca1ab043144864eaac434633cc2ca6a156556018ccc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Legend List 1.0](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)**",
+        "en": "**[Legend List 1.0](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "Making long lists performant is a hard problem, and React Native’s old architecture wasn’t making it any easier with it’s asynchronous layout computation. We remember Margelo abandoning their `WishList` project.\nLegend List is now in version 1.0, and promises to be even faster than `FlashList`, all the while handling the \"hard cases\": bidirectional infinite lists, varying item sizes… And it's compatible with the old arch (though less performant and with possible glitches).",
+      "source_content_hash": "e6455b133af1a2efcbe64e5bb49aeb66e0c9d019596bc9287c6a679a241f1811",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Rendre les longues listes performantes est un problème difficile, et l'ancienne architecture de React Native ne facilitait pas les choses avec son calcul de mise en page asynchrone. Nous nous souvenons que Margelo a abandonné son projet `WishList`.\nLegend List est désormais en version 1.0 et promet d'être encore plus rapide que `FlashList`, tout en gérant les \"cas difficiles\" : listes infinies bidirectionnelles, tailles d'éléments variables… Et il est compatible avec l'ancienne architecture (bien que moins performant et avec des problèmes possibles).",
+        "en": "Rendre les longues listes performantes est un problème difficile, et l'ancienne architecture de React Native ne facilitait pas les choses avec son calcul de mise en page asynchrone. Nous nous souvenons que Margelo a abandonné son projet `WishList`.  \nLegend List est maintenant en version 1.0 et promet d'être encore plus rapide que `FlashList`, tout en gérant les \"cas difficiles\" : listes infinies bidirectionnelles, tailles d'éléments variables… Et il est compatible avec l'ancienne architecture (bien que moins performant et avec d'éventuels bugs)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "As Seb mentioned last week, there’s also a [v2 of `FlashList`](https://github.com/Shopify/flash-list/tree/new-rlv-prototype) in the works, which should be easier to use (no need to specify estimatedItemSize for instance).",
+      "source_content_hash": "e4ee8bbd53035e62ee2de0112545f282d6aa484b2d64360ca182cf08ebaa8a67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Comme Seb l'a mentionné la semaine dernière, une [v2 de `FlashList`](https://github.com/Shopify/flash-list/tree/new-rlv-prototype) est également en cours de développement, qui devrait être plus facile à utiliser (par exemple, sans besoin de spécifier estimatedItemSize).",
+        "en": "Comme Seb l'a mentionné la semaine dernière, une [v2 de `FlashList`](https://github.com/Shopify/flash-list/tree/new-rlv-prototype) est en cours de développement, qui devrait être plus facile à utiliser (pas besoin de spécifier estimatedItemSize par exemple)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "Thankfully, all those copy the API of `FlatList` so it’s easy to switch back and forth 🙂.",
+      "source_content_hash": "072ed1459700b112e9e21e3986653ae549dac325cd57fa12b00a6240da05b8a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Heureusement, tous ceux-ci reprennent l'API de `FlatList`, ce qui facilite les changements 🙂.",
+        "en": "Heureusement, tous reprennent l'API de `FlatList`, donc il est facile de passer de l'un à l'autre 🙂."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40a587f3",
+      "source_content": "- 💸 [PostHog - How to set up React Native session replay](https://go.posthog.com/twir-apr23)\n- 🐦 [Prototype of Module Federation working with Metro Bundler](https://x.com/_jbroma/status/1912903068464594993)\n- 🐦 [An experiment of CSS support in React Native, including grid layout](https://x.com/mani3xis/status/1912947427864441144)\n- 📖 [React Native Versioning Policy](https://reactnative.dev/contributing/versioning-policy): This new page details the versioning scheme based on the `0.x.y` pattern. Even more importantly, this also explains the release process and what is considered a breaking change. This is part of an ongoing effort to clarify the public API surface and even reduce it (see the [Removing deep imports RFC](https://github.com/react-native-community/discussions-and-proposals/pull/894)). React Native is getting more stable, and maybe we’ll get a v1.0 one day?\n- 📜 [Best Practices for reducing lag in Expo apps](https://expo.dev/blog/best-practices-for-reducing-lag-in-expo-apps): Highlight React renders directly from the devtools, React Compiler, React 19, and multi-threading.\n- 📜 [Offline Text Recognition on Mobile: How We Brought EasyOCR to React Native ExecuTorch](https://blog.swmansion.com/bringing-easyocr-to-react-native-executorch-2401c09c2d0c)\n- 📜 [How to build universal app voice agents with Expo & ElevenLabs](https://expo.dev/blog/how-to-build-universal-app-voice-agents-with-expo-and-elevenlabs)\n- 📜 [Out with the old, in with the New Architecture (by default)](https://expo.dev/blog/out-with-the-old-in-with-the-new-architecture)\n- 📦 [React Native Brownfield 1.0](https://github.com/callstack/react-native-brownfield/releases/tag/v1.0.0): Adds support for SwiftUI, Jetpack Compose, and packaging as a framework.\n- 📦 [typegpu-confetti](https://github.com/software-mansion-labs/typegpu-confetti): Confetti animations for React Native, computed and rendered exclusively on the GPU with `react-native-webgpu` and TypeGPU.\n- 🎥 [Expo Router Tutorial](https://www.youtube.com/playlist?list=PLsXDmrmFV_AT17JDf-otXSNE_eH7s0uDD): The first 5 videos are available. It covers layout files, Stack & Tab navigators, modals, and Auth Flow.\n- 🎙️ [RNR 328 \\- Flashlight with Alexandre Moureaux](https://infinite.red/react-native-radio/rnr-328-flashlight-with-alexandre-moureaux)\n- 🎙️ [Rocket Ship 65 \\- Expo SDK 53 Preview, RevenueCat Paywalls, AI Images & Gemini](https://www.youtube.com/watch?v=evGUO_CN1Fc)",
+      "source_content_hash": "a46960213bc9834eafad648ed8de820f3ae6184bfc9d88e80c5198f3ede8bb5a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [PostHog - Comment configurer la relecture de session React Native](https://go.posthog.com/twir-apr23)\n- 🐦 [Prototype de Module Federation fonctionnant avec Metro Bundler](https://x.com/_jbroma/status/1912903068464594993)\n- 🐦 [Une expérimentation de support CSS dans React Native, incluant le layout grid](https://x.com/mani3xis/status/1912947427864441144)\n- 📖 [Politique de versionnement de React Native](https://reactnative.dev/contributing/versioning-policy) : Cette nouvelle page détaille le schéma de versionnement basé sur le motif `0.x.y`. Plus important encore, elle explique également le processus de publication et ce qui constitue un changement cassant. Cela s'inscrit dans un effort continu pour clarifier la surface d'API publique et même la réduire (voir le [RFC sur la suppression des imports profonds](https://github.com/react-native-community/discussions-and-proposals/pull/894)). React Native devient plus stable, et peut-être aurons-nous une v1.0 un jour ?\n- 📜 [Bonnes pratiques pour réduire la latence dans les apps Expo](https://expo.dev/blog/best-practices-for-reducing-lag-in-expo-apps) : Met en lumière le rendu React directement depuis les devtools, le compilateur React, React 19 et le multithreading.\n- 📜 [Reconnaissance de texte hors ligne sur mobile : Comment nous avons intégré EasyOCR à React Native ExecuTorch](https://blog.swmansion.com/bringing-easyocr-to-react-native-executorch-2401c09c2d0c)\n- 📜 [Comment créer des agents vocaux d'applications universelles avec Expo & ElevenLabs](https://expo.dev/blog/how-to-build-universal-app-voice-agents-with-expo-and-elevenlabs)\n- 📜 [Fin de l'ancien, place à la Nouvelle Architecture (par défaut)](https://expo.dev/blog/out-with-the-old-in-with-the-new-architecture)\n- 📦 [React Native Brownfield 1.0](https://github.com/callstack/react-native-brownfield/releases/tag/v1.0.0) : Ajoute le support de SwiftUI, Jetpack Compose et l'empaquetage en tant que framework.\n- 📦 [typegpu-confetti](https://github.com/software-mansion-labs/typegpu-confetti) : Animations de confettis pour React Native, calculées et rendues exclusivement sur le GPU avec `react-native-webgpu` et TypeGPU.\n- 🎥 [Tutoriel Expo Router](https://www.youtube.com/playlist?list=PLsXDmrmFV_AT17JDf-otXSNE_eH7s0uDD) : Les 5 premières vidéos sont disponibles. Cela couvre les fichiers de mise en page, les navigateurs Stack & Tab, les modales et le flux d'authentification.\n- 🎙️ [RNR 328 - Flashlight avec Alexandre Moureaux](https://infinite.red/react-native-radio/rnr-328-flashlight-with-alexandre-moureaux)\n- 🎙️ [Rocket Ship 65 - Aperçu d'Expo SDK 53, RevenueCat Paywalls, images IA & Gemini](https://www.youtube.com/watch?v=evGUO_CN1Fc)",
+        "en": "- 💸 [PostHog - Comment configurer la relecture de session React Native](https://go.posthog.com/twir-apr23)\n- 🐦 [Prototype de Module Federation fonctionnant avec Metro Bundler](https://x.com/_jbroma/status/1912903068464594993)\n- 🐦 [Une expérimentation du support CSS dans React Native, incluant le layout en grille](https://x.com/mani3xis/status/1912947427864441144)\n- 📖 [Politique de versionnage de React Native](https://reactnative.dev/contributing/versioning-policy): Cette nouvelle page détaille le schéma de versionnage basé sur le motif `0.x.y`. Encore plus important, elle explique aussi le processus de publication et ce qui est considéré comme un changement cassant. Cela s'inscrit dans un effort continu pour clarifier la surface d'API publique et même la réduire (voir le [RFC sur la suppression des imports profonds](https://github.com/react-native-community/discussions-and-proposals/pull/894)). React Native devient plus stable, et nous aurons peut-être une v1.0 un jour ?\n- 📜 [Bonnes pratiques pour réduire la latence dans les apps Expo](https://expo.dev/blog/best-practices-for-reducing-lag-in-expo-apps): Met en avant les rendus React directement depuis les outils de dev, React Compiler, React 19, et le multithreading.\n- 📜 [Reconnaissance de texte hors ligne sur mobile : Comment nous avons intégré EasyOCR à React Native ExecuTorch](https://blog.swmansion.com/bringing-easyocr-to-react-native-executorch-2401c09c2d0c)\n- 📜 [Comment créer des agents vocaux universels avec Expo & ElevenLabs](https://expo.dev/blog/how-to-build-universal-app-voice-agents-with-expo-and-elevenlabs)\n- 📜 [Place à l'ancienne, place à la Nouvelle Architecture (par défaut)](https://expo.dev/blog/out-with-the-old-in-with-the-new-architecture)\n- 📦 [React Native Brownfield 1.0](https://github.com/callstack/react-native-brownfield/releases/tag/v1.0.0): Ajoute le support de SwiftUI, Jetpack Compose, et l'empaquetage en tant que framework.\n- 📦 [typegpu-confetti](https://github.com/software-mansion-labs/typegpu-confetti): Animations de confettis pour React Native, calculées et rendues exclusivement sur le GPU avec `react-native-webgpu` et TypeGPU.\n- 🎥 [Tutoriel Expo Router](https://www.youtube.com/playlist?list=PLsXDmrmFV_AT17JDf-otXSNE_eH7s0uDD): Les 5 premières vidéos sont disponibles. Elles couvrent les fichiers de layout, les navigateurs Stack & Tab, les modaux et les flux d'authentification.\n- 🎙️ [RNR 328 - Flashlight avec Alexandre Moureaux](https://infinite.red/react-native-radio/rnr-328-flashlight-with-alexandre-moureaux)\n- 🎙️ [Rocket Ship 65 - Aperçu d'Expo SDK 53, Paywalls RevenueCat, Images IA & Gemini](https://www.youtube.com/watch?v=evGUO_CN1Fc)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51e8baf4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "734d40d8",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6892c8d2",
+      "source_content": "- 📣 [TC39 meeting 107th \\- ECMA Proposal Updates](https://ecmascript-daily.github.io/ecmascript/2025/04/19/ecmascript-proposal-update): Summarizes the proposals that progressed last week. Sad to see Records & Tuples withdraw, but we also have new interesting proposals to watch, such as Enums and Composites.\n- 📊 [State of AI 2025 \\- Survey results](https://2025.stateofai.dev)\n- 📜 [Optimizing Node.js Performance: V8 Memory Management & GC Tuning](https://blog.platformatic.dev/optimizing-nodejs-performance-v8-memory-management-and-gc-tuning)\n- 📜 [Launching the first ever State of Devs survey](https://dev.to/sachagreif/launching-the-first-ever-state-of-devs-survey-23il)\n- 📜 [Securing Your GitHub Actions](https://blog.rafaelgss.dev/securing-github-actions)\n- 📜 [An Introduction to JavaScript Bundler Rspack](https://blog.appsignal.com/2025/04/16/an-introduction-to-javascript-bundler-rspack.html)\n- 📦 [tsdown \\- The Elegant Library Bundler \\- Powered by Rolldown](https://tsdown.dev/)\n- 📦 [Node 22.15](https://nodejs.org/en/blog/release/v22.15.0)",
+      "source_content_hash": "b9f44cd155d796445617f3529b1b6418e1b1d2dc4c1e8d58ca3eef43163d1470",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📣 [TC39 meeting 107th - ECMA Proposal Updates](https://ecmascript-daily.github.io/ecmascript/2025/04/19/ecmascript-proposal-update) : Résume les propositions ayant progressé la semaine dernière. Dommage de voir Records & Tuples se retirer, mais nous avons aussi de nouvelles propositions intéressantes à suivre, comme Enums et Composites.\n- 📊 [State of AI 2025 - Survey results](https://2025.stateofai.dev)\n- 📜 [Optimizing Node.js Performance: V8 Memory Management & GC Tuning](https://blog.platformatic.dev/optimizing-nodejs-performance-v8-memory-management-and-gc-tuning)\n- 📜 [Lancement de la toute première enquête State of Devs](https://dev.to/sachagreif/launching-the-first-ever-state-of-devs-survey-23il)\n- 📜 [Sécuriser vos GitHub Actions](https://blog.rafaelgss.dev/securing-github-actions)\n- 📜 [Introduction au bundler JavaScript Rspack](https://blog.appsignal.com/2025/04/16/an-introduction-to-javascript-bundler-rspack.html)\n- 📦 [tsdown - L'élégant bundler de bibliothèques - Propulsé par Rolldown](https://tsdown.dev/)\n- 📦 [Node 22.15](https://nodejs.org/en/blog/release/v22.15.0)",
+        "en": "- 📣 [TC39 meeting 107th - ECMA Proposal Updates](https://ecmascript-daily.github.io/ecmascript/2025/04/19/ecmascript-proposal-update) : Résume les propositions qui ont progressé la semaine dernière. C'est triste de voir Records & Tuples se retirer, mais nous avons également de nouvelles propositions intéressantes à suivre, telles que Enums et Composites.\n- 📊 [State of AI 2025 - Survey results](https://2025.stateofai.dev)\n- 📜 [Optimizing Node.js Performance: V8 Memory Management & GC Tuning](https://blog.platformatic.dev/optimizing-nodejs-performance-v8-memory-management-and-gc-tuning)\n- 📜 [Lancement de la toute première enquête State of Devs](https://dev.to/sachagreif/launching-the-first-ever-state-of-devs-survey-23il)\n- 📜 [Sécuriser vos GitHub Actions](https://blog.rafaelgss.dev/securing-github-actions)\n- 📜 [Introduction au bundler JavaScript Rspack](https://blog.appsignal.com/2025/04/16/an-introduction-to-javascript-bundler-rspack.html)\n- 📦 [tsdown - Le bundleur de bibliothèque élégant - Propulsé par Rolldown](https://tsdown.dev/)\n- 📦 [Node 22.15](https://nodejs.org/en/blog/release/v22.15.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7057b5fb",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2f2d5f01",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "[![React Compiler RC meme - shows a cat in a React Compiler RollerCoaster](/emails/issues/231/meme0.jpg)](https://x.com/potetotes/status/1914855126348480850)",
+      "source_content_hash": "e42c113f7b01cf99a8de233954a15b2f237086497e3773545818355f94a85b2e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Mème du React Compiler RC - montre un chat dans des montagnes russes du React Compiler](/emails/issues/231/meme0.jpg)](https://x.com/potetotes/status/1914855126348480850)",
+        "en": "[![Mème du React Compiler RC - montre un chat dans un rollercoaster du React Compiler](/emails/issues/231/meme0.jpg)](https://x.com/potetotes/status/1914855126348480850)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "[![Evan Bacon - Coming back to Expo after spending an hour in Android Studio - Photo of Katy Perry kissing the ground after returning from her space flight](/emails/issues/231/meme1.jpg)](https://x.com/Baconbrix/status/1913353166483058931)",
+      "source_content_hash": "a59894ad339bfa815c97e25483407108c769f02182a48ca82e4c7c53d8003de0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Evan Bacon - Revenir à Expo après avoir passé une heure dans Android Studio - Photo de Katy Perry embrassant le sol après son retour de son vol spatial](/emails/issues/231/meme1.jpg)](https://x.com/Baconbrix/status/1913353166483058931)",
+        "en": "[![Evan Bacon - Retour à Expo après une heure dans Android Studio - Photo de Katy Perry embrassant le sol après son vol spatial](/emails/issues/231/meme1.jpg)](https://x.com/Baconbrix/status/1913353166483058931)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "[![A huge vertical screen with \"package.json\" deps and huge horizontall screen with \"tailwind class names\"](/emails/issues/231/meme2.jpg)](https://x.com/trashh_dev/status/1893339204710539265)",
+      "source_content_hash": "8e9f29b083c208673e855e0afd8857b3e09d6e11f7038bd184bd2a7fe0265eb1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Un énorme écran vertical avec les dépendances \"package.json\" et un énorme écran horizontal avec les noms de classes \"tailwind\"](/emails/issues/231/meme2.jpg)](https://x.com/trashh_dev/status/1893339204710539265)",
+        "en": "[![Écran vertical géant avec les dépendances \"package.json\" et écran horizontal géant avec les noms de classes Tailwind](/emails/issues/231/meme2.jpg)](https://x.com/trashh_dev/status/1893339204710539265)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/231/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.214174+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "7c46803c61c65dd2e239daf78aabae1847cd0573c44cdf3f367c84594292c93e",
+    "en": "7c46803c61c65dd2e239daf78aabae1847cd0573c44cdf3f367c84594292c93e"
+  }
+}

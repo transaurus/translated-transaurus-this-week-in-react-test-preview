@@ -1,0 +1,186 @@
+---
+slug: /150
+title: "This Week In React #150: Next.js, Skew Protection, Portals, Remix Dev Server, Shadcn UI, AI, React-Aria, SWR, visionOS, tvOS, MiniSim, MMKV..."
+authors: [slorber]
+date: 06-27-2023
+---
+
+Bonjour à tous !
+
+Cette semaine, nous avons eu des nouvelles concernant Next.js, qui a récemment fait l'objet de nombreuses critiques. Remix publie également son nouveau serveur de développement avec revalidation à chaud des données.
+
+Du côté de React-Native, les développeurs s'amusent à exécuter la dernière version sur Vision Pro.
+
+Découvrez [React Jam](https://reactjam.com/?utm_source=thisweekinreact) : un concours pour créer des jeux vidéo en React qui commence le 20 juillet. Je fais partie du jury.
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- Interface d'édition pour vos fichiers Markdown
+- Interface pour les composants MDX
+- Prend en charge le rendu statique (SSG) et côté serveur (SSR)
+- Option d'édition visuelle (prévisualisation en direct)
+- Construction avec des blocs réutilisables
+
+Testez un site de démarrage
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)
+- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)
+
+Ou exécutez `npx create-tina-app@latest` puis visitez `localhost:3000/admin`
+
+Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## ⚛️ React {#react}
+
+[![](/emails/issues/150/nextjs-update.jpg)](https://nextjs.org/blog/june-2023-update)
+
+**[Mise à jour du routeur d'applications Next.js - Priorités](https://nextjs.org/blog/june-2023-update)**
+
+L'équipe Next.js partage du contexte sur le nouveau routeur d'applications. Ils ont récemment reçu beaucoup de critiques et sont bien conscients des bogues et autres problèmes avec la DX actuelle. Ils détaillent ce sur quoi ils travaillent en priorité :
+
+- Performances : exécution locale, de build et serveur
+- Bogues et instabilités
+- Éducation et documentation
+
+---
+
+[![](/emails/issues/150/skew-protection.jpg)](https://vercel.com/blog/version-skew-protection)
+
+**[Vercel - Présentation de la protection contre le décalage](https://vercel.com/blog/version-skew-protection)**
+
+Nouvelle fonctionnalité de Vercel qui atténue la désynchronisation back/front pouvant survenir lors d'un nouveau déploiement : les requêtes des clients avec état peuvent désormais être acheminées vers le déploiement de serveur immuable périmé approprié. Particulièrement utile pour ceux qui font du déploiement continu. Disponible expérimentalement dans Next.js 13.4.7, qui appliquera automatiquement les en-têtes HTTP corrects.
+
+---
+
+[![](/emails/issues/150/shadcnui.jpg)](https://ui.shadcn.com/docs/changelog)
+
+**[Mise à jour de Shadcn UI - juin 2023](https://ui.shadcn.com/docs/changelog)**
+
+Cette collection de composants Tailwind + Radix gagne en popularité. L'auteur vient de publier une mise à jour majeure avec une CLI offrant déjà une excellente DX, et s'apprête à ajouter des [fonctionnalités IA impressionnantes](https://twitter.com/shadcn/status/1673055193968287744) dans un futur proche. Kent C. Dodds [explique](https://twitter.com/kentcdodds/status/1673806183935909888) pourquoi il l'a adoptée dans sa stack Remix.
+
+---
+
+- 🐦 [Fred K Schott - "React.js canary is _not_ stable and probably shouldn't be used in production."](https://twitter.com/FredKSchott/status/1673722399278403584): a debate that is particularly animating the community this week. I also shared [my opinion](https://twitter.com/sebastienlorber/status/1673802036666589185) and think it's OK to use a canary React release in a framework.
+- 💬 [Stitches is not longer maintained](https://github.com/stitchesjs/stitches/discussions/1149#discussioncomment-6223090)
+- 👀 [React Jam - Build and play games together!](https://reactjam.com/?utm_source=thisweekinreact)
+- 👀 [Remotion 4.0 launches next week](https://twitter.com/JNYBGR/status/1673641398539546625)
+- 💡 [Refresh React Server Component on Focus](https://buildui.com/recipes/refresh-react-server-component-on-focus): tip for reproducing a popular React-Query/SWR feature.
+- 📜 [Teleportation in React: Positioning, Stacking Context, and Portals](https://www.developerway.com/posts/positioning-and-portals-in-react): great interactive article for those struggling with z-index. Explains well the concept of stacking context, and how creating a React portal can simplify your life.
+- 📜 [GitHub - Crafting a better, faster code view](https://github.blog/2023-06-21-crafting-a-better-faster-code-view/): feedback on the implementation of GitHub's new Code View in React, and on the fancy techniques used for scaling with the number of code lines to be displayed.
+- 📜 [Our experience adding Edge Runtime to Next.js SDK](https://blog.logto.io/next-edge/): feedback from Logto on the changes needed to their SDK to support the Next.js Edge Runtime.
+- 📜 [Things you might not know about Next Image](https://pixelpoint.io/blog/next-image/): a good resource on how Next.js' Image component works, with a few pragmatic tips to help you optimise your Lighthouse score.
+- 📜 [Using useMutation to make an advanced toggle in React](https://www.propelauth.com/post/using-usemutation-to-make-an-advanced-toggle-in-react): uses React-Query's useMutation callbacks to give animated feedback to the user.
+- 📜 [Storybook - Zero-config support for Tailwind, MUI, styled-components, and Emotion](https://twitter.com/storybookjs/status/1671907527422795776): the styling-addon is now able to configure itself for several popular UI libs.
+- 📜 [A16z - The Getting Started with AI Stack for JavaScript](https://a16z.com/2023/06/21/the-getting-started-with-ai-stack-for-javascript/): VCs from Andreessen Horowitz present an AI starter based on a React and Next.js stack.
+- 📜 [SwiftUI stole the best parts of React…and my heart](https://www.mux.com/blog/swiftui-against-react)
+- 📦 [Remix 1.18 - Stable V2 Dev Server, JSON/Text Submission...](https://github.com/remix-run/remix/releases/tag/remix%401.18.0): see also the [video series](https://www.youtube.com/watch?v=2c2OeqOX72s) which explains how the Dev Server works and the concept of Hot Data Revalidation.
+- 📦 [AI.JSX - AI Application Framework for Javascript](https://github.com/fixie-ai/ai-jsx): a solution for creating AI applications based on JSX. Does not use React directly, but integrates particularly well with ([details](https://docs.ai-jsx.com/is-it-react)).
+- 📦 [Medusa Product Module](https://medusajs.com/recap/): the open-source e-commerce solution is offering a new module for Next.js and other serverless environments.
+- 📦 [React Aria - June 27 Release](https://twitter.com/devongovett/status/1673764872117714944): StrictMode support added, no need for SSRProvider anymore, and various other new features: Calendar, DatePicker, TagGroup...
+- 📦 [Next.js 13.4.7](https://github.com/vercel/next.js/releases/tag/v13.4.7)
+- 📦 [SWR 2.2](https://github.com/vercel/swr/releases/tag/v2.2.0)
+- 🎥 [Single Line React Performance Boost with Million](https://www.youtube.com/watch?v=x-aNifu9RNw)
+- 🎥 [Don't Follow This Bad React Advice!](https://www.youtube.com/watch?v=YlU9vznPWIk)
+- 🎥 [Make Your Own Next.js](https://www.youtube.com/watch?v=3RzhNYhjVAw)
+- 🎥 [The Ultimate Guide to Server Actions in NextJs 13](https://www.youtube.com/watch?v=sdKFEo6978U)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Porkbun.com - Le meilleur registraire de noms de domaine](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)
+
+**[Porkbun.com - Le meilleur registraire de noms de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**
+
+Porkbun propose des centaines d'extensions de domaine pour les développeurs React et React-Native, de .dev et .app à .cloud, .xyz et .ai — toutes aux **prix les plus bas du marché !** Chaque nom de domaine chez Porkbun inclut **des tonnes de fonctionnalités gratuites** comme :
+
+- Certificats SSL
+- Confidentialité WHOIS
+- DNS
+- Redirection d'URL
+- Essais d'hébergement Web et Email
+
+Découvrez notre **outil de recherche généré par IA** qui révolutionne la recherche de noms de domaine. Le tout soutenu par **un support exceptionnel 365 jours par an** et des milliers d'avis cinq étoiles sur Trustpilot.
+
+Cliquez sur le lien et [obtenez 1 $ de réduction sur votre prochaine inscription de nom de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023) chez Porkbun.com !
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 0.72 et Expo SDK 49 fonctionnant sur visionOS](/emails/issues/150/visionpro.jpg)](https://twitter.com/donadeldev/status/1671643367246032897)
+
+**[React Native 0.72 et Expo SDK 49 fonctionnant sur visionOS](https://twitter.com/donadeldev/status/1671643367246032897)**
+
+Suite à la sortie de React-Native 0.72 et du [SDK Apple visionOS](https://developer.apple.com/visionos/), plusieurs démos ([1](https://twitter.com/donadeldev/status/1671643367246032897), [2](https://twitter.com/CipolleschiR/status/1671829763650904064), [3](https://twitter.com/piaskowyk/status/1672560913730117634)) ont démontré l'exécution de React-Native sur visionOS et Vision Pro. [3 pull-requests](https://twitter.com/donadeldev/status/1673186295831568385) ajoutent la cible visionOS à CocoaPods.
+
+---
+
+- 📜 [Comment écrire un moteur de mise en page Flexbox](https://tchayen.com/how-to-write-a-flexbox-layout-engine) : un développeur Expo démystifiant le fonctionnement d'un moteur de mise en page, similaire à ce que fait Yoga pour React-Native.
+- 📜 [Révolutionner la gestion du focus dans les applications TV avec React Native](https://medium.com/xite-engineering/revolutionizing-focus-management-in-tv-applications-with-react-native-10ba69bd90) : retour d'expérience de XITE sur l'implémentation de la navigation spatiale avec React-Native tvOS. Défi : les plateformes Apple/Android TV ont des comportements natifs différents de gestion du focus.
+- 📜 [NativeScript avec des modules React Native](https://twitter.com/NativeScript/status/1671873172952567808) : met en lumière la capacité de NativeScript à réutiliser du code de l'écosystème React-Native grâce à [Open Native](https://github.com/OpenNative/open-native).
+- 📜 [Tendances du développement mobile issues de Chain React](https://ionic.io/blog/mobile-development-trends-from-chain-react) : analyse des conférences et comparaison avec Ionic/Capacitor.
+- 🧵 [Maestro sur React Native Pager View](https://twitter.com/jaworek3211/status/1672230720545386496) : retour positif sur l'utilisation du framework de tests e2e mobile.
+- 📦 [MiniSim - Application de barre de menu macOS pour lancer des émulateurs iOS/Android](https://github.com/okwasniewski/minisim) : une app particulièrement appréciée pour sa capacité à [démarrer un émulateur Android sans son](https://twitter.com/ariel_is_dev/status/1672250640704184321) 😄. Supporte déjà [VisionOS](https://twitter.com/o_kwasniewski/status/1672257084379783174).
+- 📦 [React-Native MMKV 2.10 - Support des groupes d'applications iOS](https://twitter.com/mrousavy/status/1672184227813642241)
+- 🎙️ [React Native Radio 270 - Plongée dans React Native 0.72 avec Lorenzo Sciandra et Riccardo Cipolleschi](https://reactnativeradio.com/episodes/diving-into-react-native-072-with-lorenzo-sciandra-and-riccardo-cipolleschi)
+- 🎙️ [The React Native Show Podcast #23 - React Native à grande échelle avec Matt Hargett](https://www.youtube.com/watch?v=60iOEg-vWjw)
+- 🎥 [Redux-Toolkit et Bluetooth Low Energy dans React-Native](https://www.youtube.com/watch?v=IWEAepFC0eo)
+
+---
+
+## 🧑‍💻 Emplois {#jobs}
+
+🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - 160k€+, Berlin/distant**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, réseaux sociaux et newsletters. Rejoignez-nous pour construire un outil permettant aux créateurs mondiaux de développer des activités évolutives et durables.
+
+🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement distant, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)
+
+Souhaitez-vous travailler sur les applications les plus utilisées au monde ? Aimeriez-vous co-créer la technologie React Native ? Rejoignez l'équipe de leaders React & React Native de Callstack. Consultez notre site pour plus de détails. Nous attendons votre candidature - montrez-nous ce que vous savez faire !
+
+🧑‍💼 [**G2i - Emplois React Native 100% distants**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k$ plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Contactez [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.
+
+💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 Autres {#other}
+
+- [Une introduction au streaming sur le Web](https://vercel.com/blog/an-introduction-to-streaming-on-the-web)
+- [CSS futuriste : State Container Queries](https://ishadeed.com/article/css-state-queries/)
+- [Svelte 4](https://svelte.dev/blog/svelte-4)
+- [Réflexions sur Svelte(Kit) après un an et 3 milliards de requêtes](https://claudioholanda.ch/en/blog/svelte-kit-after-3-billion-requests/)
+- [Placeholders d'arguments de type : fonctionnalité la plus discutée de TypeScript 5.2](https://www.totaltypescript.com/type-argument-placeholders-typescript-5-2-most-discussed-feature)
+- [Vite 4.4 bêta - prise en charge expérimentale de Lightning CSS](https://twitter.com/vite_js/status/1671510085820882946)
+- [Un aperçu du vérificateur d'Ezno](https://kaleidawave.github.io/posts/a-preview-of-the-checker/)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![alt](/emails/issues/150/meme.jpg)](https://twitter.com/cesarzagonel/status/1671584136115494928)
+
+À bientôt ! 👋

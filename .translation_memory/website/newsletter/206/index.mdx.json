@@ -1,0 +1,589 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/206/index.mdx",
+  "source_file_content_hash": "966c7525b04580edce7ced0b4f1539dc973071a205b2b62715fd64783e8d0643",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /206\ntitle: \"This Week In React #206: Next.js, Compiler, DevTools, State Of React, nuqs, Chakra UI, Remix, shadcn/ui, Turbopack, Microfrontends, Fumadocs, NewArch, react-native-mmkv, whip-whep, Svelte, Hono...\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 10-23-2024\n---",
+      "source_content_hash": "f5ed931cabf72606ba6b6cfafb46e8216b322c8c1da421893356bbf50a83fb52",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from [Theodo Apps (formerly BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) here 👋, standing in for Seb to bring you the latest news from the React and React Native worlds.",
+      "source_content_hash": "5589332c676d181a8eb3a621126785f713bf890d84868e4d69aa4ec90c6adae5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cyril et Matthieu de [Theodo Apps (anciennement BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) ici 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles des écosystèmes React et React Native.",
+        "en": "Cyril et Matthieu de [Theodo Apps (anciennement BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles des mondes React et React Native."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Big updates this week for the React world! Next.js 15 is officially out with key changes around caching and performance, plus the React Compiler has hit beta — lots to look forward to there.",
+      "source_content_hash": "d4f14f8a32b2dae75dec3815440e9bad69ad93b1bc82e59cf83c8eff89e90ce2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "De grandes nouveautés cette semaine dans le monde React ! Next.js 15 est officiellement sorti avec des changements clés sur le caching et les performances, et le React Compiler est en version bêta — plein de choses à découvrir.",
+        "en": "De grandes mises à jour cette semaine pour React ! Next.js 15 est officiellement sorti avec des changements clés autour du cache et des performances, et le React Compiler est en version bêta - il y a beaucoup à attendre."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "We’ve got a bunch of great articles too, from optimizing state with React Cache to a deep dive into React Native's new architecture.",
+      "source_content_hash": "c8bd12b8d771fcc5e1712f3e0da915b1aa1f52730f429a5ca3b9baa8cb52fa81",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons aussi une série d'articles passionnants, de l'optimisation d'état avec React Cache à une exploration approfondie de la nouvelle architecture React Native.",
+        "en": "Nous avons aussi une série d'articles intéressants, de l'optimisation d'état avec React Cache à une plongée approfondie dans la nouvelle architecture de React Native."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Speaking of React Native, v0.76 is coming very soon! A major milestone as it's the first version to activate the New Architecture by default, the culmination of years of work that deserves to be celebrated! 🥳️",
+      "source_content_hash": "7af641c4c0e9720ef5cb345c54e25a776187d31381116b247163a529a3fd2ee5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En parlant de React Native, la v0.76 arrive très bientôt ! Une étape majeure : première version activant la Nouvelle Architecture par défaut, aboutissement d'années de travail à célébrer ! 🥳️",
+        "en": "En parlant de React Native, la v0.76 arrive très bientôt ! Une étape majeure car c'est la première version activant la Nouvelle Architecture par défaut, l'aboutissement de années de travail qui mérite d'être célébré ! 🥳️"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "The [State of React 2024 survey](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react) is now open and waiting your answers.",
+      "source_content_hash": "9e73f1a63737108e8b95d0e3e2656f218da40fc63c0a36692e0dc2df9f6d8435",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le [sondage State of React 2024](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react) est désormais ouvert et attend vos réponses.",
+        "en": "Le [sondage State of React 2024](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react) est désormais ouvert et attend vos réponses."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "Let’s dive in!",
+      "source_content_hash": "08efc17accdc215a2f85715584ab8720a7e5b37900040827a8f6bc348be59631",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Plongeons dans le vif du sujet !",
+        "en": "Plongeons dedans !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ea978e4d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_ea978e4d",
+        "en": "@@untranslatable_placeholder_ea978e4d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd6b8019",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_cd6b8019",
+        "en": "@@untranslatable_placeholder_cd6b8019"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "599822a5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_599822a5",
+        "en": "@@untranslatable_placeholder_599822a5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2b88bb9d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "[![Handsontable: Advanced data grid for your React app](/emails/issues/206/handsontable.jpg)](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)",
+      "source_content_hash": "7439149ebc62a8a9d32e97aa154c940c88e22e222754847f7f601b8387e0461f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Handsontable : Grille de données avancée pour votre app React](/emails/issues/206/handsontable.jpg)](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)",
+        "en": "[![Handsontable : Grille de données avancée pour votre application React](/emails/issues/206/handsontable.jpg)](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "**[Handsontable: Advanced data grid for your React app](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)**",
+      "source_content_hash": "3dac11911a85b43bad9673ba4cbe0c1dfc315fd56f89e370e068be40ebcbed15",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Handsontable : Grille de données avancée pour votre app React](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)**",
+        "en": "**[Handsontable : Grille de données avancée pour votre application React](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "Handsontable is [a feature-rich data grid](https://handsontable.com/demo?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11) designed for React developers who need a powerful, customizable, and accessible solution to manage complex data.",
+      "source_content_hash": "167cb30b99554331bec76afc4059af2bf7a416499147b0cd555e0629189ecb29",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Handsontable est [une grille de données riche en fonctionnalités](https://handsontable.com/demo?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11) conçue pour les développeurs React ayant besoin d'une solution puissante, personnalisable et accessible pour gérer des données complexes.",
+        "en": "Handsontable est [une grille de données riche en fonctionnalités](https://handsontable.com/demo?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11) conçue pour les développeurs React ayant besoin d'une solution puissante, personnalisable et accessible pour gérer des données complexes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8612da05",
+      "source_content": "- A unique **spreadsheet-like interface** with sorting, filtering, and CRUD operations\n- Advanced operations like conditional formatting and **400 built-in formulas**, similar to Excel\n- **Customizable editors and renderers**, allowing dropdowns, menus or custom components within grid cells to fit specific use cases\n- **Optimized performance** for smooth and responsive interactions\n- **Accessibility with WCAG 2.1 compliance** for better support for users with disabilities",
+      "source_content_hash": "02940bd8caefcd870648845f3a31a7afd36844366cbfd25f69dd07761aab946b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Une **interface unique de type tableur** avec tri, filtrage et opérations CRUD\n- Des opérations avancées comme la mise en forme conditionnelle et **400 formules intégrées**, similaires à Excel\n- **Éditeurs et rendus personnalisables**, permettant des menus déroulants ou composants personnalisés dans les cellules\n- **Performances optimisées** pour des interactions fluides\n- **Accessibilité conforme WCAG 2.1** pour une meilleure prise en charge des utilisateurs en situation de handicap",
+        "en": "- Une **interface type tableur** unique avec tri, filtrage et opérations CRUD\n- Opérations avancées comme le formatage conditionnel et **400 formules intégrées**, similaires à Excel\n- **Éditeurs et rendus personnalisables**, permettant des menus déroulants ou composants personnalisés dans les cellules\n- **Performances optimisées** pour des interactions fluides et réactives\n- **Accessibilité conforme WCAG 2.1** pour un meilleur support des utilisateurs handicapés"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "Handsontable adapts to various use cases, from enterprise applications to simple websites, offering performance and flexibility trusted by companies worldwide.",
+      "source_content_hash": "16f6720369084efdc41b41407c76fa4fd07ebe7da5c343b444ab411dafc9c429",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Handsontable s'adapte à divers cas d'usage, des applications d'entreprise aux sites simples, offrant performances et flexibilité appréciées mondialement.",
+        "en": "Handsontable s'adapte à divers cas d'usage, des applications d'entreprise aux sites simples, offrant performances et flexibilité approuvées mondialement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[Get started today!](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)",
+      "source_content_hash": "128c2b9a30b1551c8184786960a50b58936642fc7ca13f1ea2a5ed74de312234",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Commencez dès aujourd'hui !](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)",
+        "en": "[Commencez dès aujourd'hui !](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e0a17c0d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "60410af6",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "[![Next.js 15](/emails/issues/206/nextjs-15.png)](https://nextjs.org/blog/next-15)",
+      "source_content_hash": "52d00953fdf010a91acfeb0da8a0c0802ba4e740c6bad17f10c87629d7835f18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Next.js 15](/emails/issues/206/nextjs-15.png)](https://nextjs.org/blog/next-15)",
+        "en": "[![Next.js 15](/emails/issues/206/nextjs-15.png)](https://nextjs.org/blog/next-15)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "[**Next.js 15**](https://nextjs.org/blog/next-15)",
+      "source_content_hash": "d68510132d81db27b06895fdbc8d34ccc0c90ad1322a9f7120e5db10dfc2fdf3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Next.js 15**](https://nextjs.org/blog/next-15)",
+        "en": "[**Next.js 15**](https://nextjs.org/blog/next-15)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "Just in time for Next.js conf, Next.js 15 is officially released. There are no major changes since RC2, just a few stability fixes. In this v15:",
+      "source_content_hash": "565a21c0e55e325b062058714300b2e375a93c692b21171ed72df2aab70a746b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Sorti juste avant Next.js Conf, Next.js 15 est officiellement publié. Aucun changement majeur depuis RC2, seulement des corrections de stabilité. Dans cette v15 :",
+        "en": "Sorti juste à temps pour la conf Next.js, Next.js 15 est officiellement publié. Aucun changement majeur depuis RC2, seulement quelques correctifs de stabilité. Dans cette v15 :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "24c174ca",
+      "source_content": "- The caching behavior is flipped with most things (eg `fetch` requests) not cached by default anymore.\n- App router uses React 19 RC, pages router stays on React 18\n- Using turbopack dev is now recommended (webpack is still supported)\n- There are breaking changes such as existing APIs going async, and `@next/codemod upgrade` facilitates the upgrade",
+      "source_content_hash": "abf3cac355308ec6f12b5a40d7b8301ab28965302a7415e5ba5e0fea3af66d41",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Le comportement de cache est inversé : la plupart des éléments (ex: requêtes `fetch`) ne sont plus cachés par défaut\n- Le routeur App utilise React 19 RC, le routeur Pages reste sur React 18\n- Turbopack pour le dev est maintenant recommandé (webpack toujours supporté)\n- Changements cassants comme des APIs devenant asynchrones, facilités par `@next/codemod upgrade`",
+        "en": "- Le comportement de cache est inversé : la plupart des éléments (ex: requêtes `fetch`) ne sont plus mis en cache par défaut\n- L'App Router utilise React 19 RC, le Pages Router reste sur React 18\n- L'utilisation de Turbopack en dev est maintenant recommandée (webpack reste supporté)\n- Des changements cassants comme des API devenues asynchrones, et `@next/codemod upgrade` facilite la migration"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0bb95128",
+      "source_content": "There’s of course a slew of other DX, security and performance improvements.",
+      "source_content_hash": "37fd1fdf8351019a149c6989b3ac09d68790baa4c68fe6a707ad62792155fdc0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bien sûr, une multitude d'autres améliorations DX, sécurité et performances.",
+        "en": "Il y a bien sûr une foule d'autres améliorations DX, sécurité et performances."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "379d3a5b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "af6ca965",
+      "source_content": "- 💸 [Omlet – Scan your repos and measure how and where components are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-oct-2024)\n- 📊 [State of React 2024 - Survey is open](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react): Please don't forget to fill this year's survey. Seb has contributed to its design. We would appreciate if you answer that you read This Week In React at the end 😇.\n- 📜 [Server Side State management in NextJS: a deep dive into React Cache](https://www.yoseph.tech/posts/nextjs/server-side-state-management-in-nextjs-a-deep-dive-into-react-cache): using `cache`, `unstable_cache`, and `patched fetch`, explaining how these tools can optimize state handling, reduce prop drilling, and simplify server-side code.\n- 📜 [Framer Sites Now Become Interactive 50% Faster](https://www.framer.com/blog/sites-interactive-faster/): Faster hydration with granular Suspense.\n- 📜 [Remix Todo App](https://www.udohjeremiah.com/blog/remix-todo-app-part-1-building-the-app-layout-and-structure): A detailed guide in 6 parts.\n- 📜 [How Vercel adopted microfrontends](https://vercel.com/blog/how-vercel-adopted-microfrontends)\n- 📜 [Perfectly Fitting Text to Container in React](https://sentry.engineering/blog/perfectly-fitting-text-to-container-in-react)\n- 📜 [Creating a Keyboard Shortcut Hook in React](https://www.taniarascia.com/keyboard-shortcut-hook-react/)\n- 📦 [React Compiler beta](https://react.dev/blog/2024/10/21/react-compiler-beta-release): It’s already in use in tens of thousands of components at Meta, they now want community feedback. This release adds official support for React 17 and 18. You can already add the ESLint plugin to prepare your codebase. Library authors are advised to pre-compile their libs.\n- 📦 [React DevTools 6.0.1 - React Server Components support](https://github.com/facebook/react/blob/main/packages/react-devtools/CHANGELOG.md#601): The React team fixed a few v6 bugs and then finally published this new version to the stores so that we can all easily install it.\n- 📦 [Turbopack Dev stable](https://nextjs.org/blog/turbopack-for-development-stable): A slow dev server has been a usual pain point when working with Next.js. Vercel has been working on a rust-based webpack replacement for 2 years, and it’s finally safe to use on all projects that don’t rely on unusual webpack plugins.\n- 📦 [nuqs 2.0 - Type-safe search params state manager](https://nuqs.47ng.com/blog/nuqs-2): Initially a Next.js query-string library, it is now opening up to other React frameworks with support for Remix, React Router... and also the brand new Next.js 15.\n- 📦 [Chakra UI 3.0](https://www.chakra-ui.com/blog/00-announcing-v3): A full rewrite, with more components, semantic tokens and better performance.\n- 📦 [react-render-stream-testing-library](https://github.com/testing-library/react-render-stream-testing-library): To make detailed, render-per-render assertions when testing components and hooks. In many cases it amounts to testing implementation details but it will be very useful for library authors or in perf-sensitive scenarios.\n- 📦 [shadcn/ui - Sidebar component](https://ui.shadcn.com/docs/components/sidebar)\n- 📦 [next-intl 3.22 - Incrementally moving forward](https://next-intl-docs.vercel.app/blog/next-intl-3-22)\n- 📦 [Fumadocs 14 - Docs framework that works on Next.js 15 App Router](https://fumadocs.vercel.app/blog/v14)\n- 🎥 [Theo - Next.js is hiding something...](https://www.youtube.com/watch?v=g4g2YUtjh9g): Early sneak peek of upcoming features not even mentioned in the Next.js 15 release post, including the `'use cache'` directive, `cacheTag()` and `cacheLife` APIs.\n- 🎥 [Tanner Linsley - An Early Glimpse of TanStack Start](https://www.youtube.com/watch?v=AuHqwQsf64o)\n- 🎥 [Jack Herrington - What I Discovered When I Compared React and NextJS for Astro 5's Server Islands](https://www.youtube.com/watch?v=rCkhCG7n8sA)\n- 🔗 [NextMaster - Highly performant replica of McMaster-Carr using Next.js](https://github.com/ethanniser/NextMaster): McMaster-Carr (US supply company) website has been trending on Twitter as being very fast. This repo is a modern Next.js 15 port, even faster.",
+      "source_content_hash": "b7093c179867041b5bada30d9a0c0a08f71d7953263c1b2d9b70792a1ea3b299",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_af6ca965",
+        "en": "@@untranslatable_placeholder_af6ca965"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ef748d1",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2ef748d1",
+        "en": "@@untranslatable_placeholder_2ef748d1"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b805e2c6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b10963d7",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Parrainage {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "[![Workshop: Implementing Clean Architecture in Next.js](/emails/issues/206/sentry.jpg)](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)",
+      "source_content_hash": "e7da2d8ab883ff675e52185b887828755930f052f2dd4f403b0334d310986eb3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Atelier : Mettre en œuvre l'architecture propre dans Next.js](/emails/issues/206/sentry.jpg)](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)",
+        "en": "[![Atelier : Mettre en œuvre une architecture propre dans Next.js](/emails/issues/206/sentry.jpg)](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "**[Workshop: Implementing Clean Architecture in Next.js](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)**",
+      "source_content_hash": "6f6bde4e3f1d84cf797360d04671633cf3c66aa212ca939fcf66692f78b8b9b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Atelier : Mettre en œuvre l'architecture propre dans Next.js](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)**",
+        "en": "**[Atelier : Mettre en œuvre une architecture propre dans Next.js](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "Lazar Nikolov and Sarah Guthals are hosting a free workshop on [Implementing Clean Architecture in Next.js](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp). It will dive deep into what clean architecture _actually_ is, what problems it solves, and how to implement it in a Next.js application with Sentry.",
+      "source_content_hash": "5bdbb7f709059f2b345518ac4c16464f71b179de46e26238ab92019d172be26e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Lazar Nikolov et Sarah Guthals animent un atelier gratuit sur [la mise en œuvre de l'architecture propre dans Next.js](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp). Il explorera en profondeur ce qu'est réellement l'architecture propre, les problèmes qu'elle résout et comment la mettre en œuvre dans une application Next.js avec Sentry.",
+        "en": "Lazar Nikolov et Sarah Guthals animent un atelier gratuit sur [la mise en œuvre d'une architecture propre dans Next.js](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp). Ils exploreront ce qu'est réellement une architecture propre, les problèmes qu'elle résout, et comment la mettre en œuvre dans une application Next.js avec Sentry."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "664ad8b1",
+      "source_content": "- 💸 [Stay up-to-date with React Native & Expo News with notJust Newsletter](https://www.notjust.dev/newsletter?utm_source=twir&utm_medium=email&utm_campaign=newsletter)\n- 👀 [React Native PR - Support for CSS `display: contents`](https://github.com/facebook/react-native/pull/46584): Define views that have zero impact on the layout but to which you can still attach event handlers. One possible usage is in `GestureDetector` from `react-native-gesture-handler`, which relies on direct native views to handle touch gestures without affecting layout, to fix issues like automatic collapsing of views in components.\n- 📖 [React Native Docs - New 0.76 DevTools](https://reactnative.dev/docs/next/react-native-devtools)\n- 📜 [React Native’s New Architecture, The Tricky Parts](https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-1-2-bb0c16950f2d): View flattening, View recycling, libraries support.\n- 📜 [PostHog - How we built mobile replay (and why it took so long)](https://posthog.com/blog/mobile-session-replay): Their React Native SDK 3.2 now has support for session replay (beta).\n- 📜 [Hacking Expo SQLite into React Native MacOS](https://coolsoftware.dev/blog/hacking-expo-sqlite-into-react-native-macos/)\n- 📜 [How to bring your React Native apps to life using sensors](https://expo.dev/blog/how-to-bring-your-react-native-apps-to-life-using-sensors)\n- 📜 [How Kraken fixed performance issues via incremental adoption of the React Native New Architecture](https://blog.kraken.com/product/engineering/how-kraken-fixed-performance-issues-via-incremental-adoption-of-the-react-native-new-architecture)\n- 📦 [react-native-mmkv 3.1 - GC-safe autotrim, readOnly mode](https://github.com/mrousavy/react-native-mmkv/releases/tag/v3.1.0)\n- 📦 [react-native-whip-whep - WebRTC PeerConnection](https://blog.swmansion.com/introducing-react-native-whip-whep-ac9e5588d4da?source=rss----e003bf129483---4)\n- 📦 [expo-in-app-updates - Native in-app updates for Android and iOS](https://github.com/SohelIslamImran/expo-in-app-updates)\n- 📦 [expo-import-cost - VSCode extension displaying dependency import cost](https://github.com/SohelIslamImran/expo-import-cost)\n- 🎥 [Catalin Miron - TikTok incoming messages animation](https://www.youtube.com/watch?v=dFUaYZ_AXcc)",
+      "source_content_hash": "09c6ee12dafca6c2bde43d6977e2411f9380b0b59c71aefe061b61b9135879f6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Restez informé des actualités React Native & Expo avec la newsletter notJust](https://www.notjust.dev/newsletter?utm_source=twir&utm_medium=email&utm_campaign=newsletter)\n- 👀 [PR React Native - Prise en charge de CSS `display: contents`](https://github.com/facebook/react-native/pull/46584) : Définit des vues qui n'ont aucun impact sur la mise en page mais auxquelles vous pouvez toujours attacher des gestionnaires d'événements. Un usage possible est dans `GestureDetector` de `react-native-gesture-handler`, qui repose sur des vues natives directes pour gérer les gestes tactiles sans affecter la mise en page, afin de résoudre des problèmes comme l'affaissement automatique des vues dans les composants.\n- 📖 [Documentation React Native - Nouveaux DevTools 0.76](https://reactnative.dev/docs/next/react-native-devtools)\n- 📜 [La nouvelle architecture de React Native, les aspects délicats](https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-1-2-bb0c16950f2d) : Aplatissement des vues, recyclage des vues, support des bibliothèques.\n- 📜 [PostHog - Comment nous avons construit le replay mobile (et pourquoi ça a pris si longtemps)](https://posthog.com/blog/mobile-session-replay) : Leur SDK React Native 3.2 prend désormais en charge le replay de session (bêta).\n- 📜 [Intégration d'Expo SQLite dans React Native MacOS](https://coolsoftware.dev/blog/hacking-expo-sqlite-into-react-native-macos/)\n- 📜 [Comment animer vos applications React Native avec des capteurs](https://expo.dev/blog/how-to-bring-your-react-native-apps-to-life-using-sensors)\n- 📜 [Comment Kraken a résolu les problèmes de performance via l'adoption progressive de la nouvelle architecture React Native](https://blog.kraken.com/product/engineering/how-kraken-fixed-performance-issues-via-incremental-adoption-of-the-react-native-new-architecture)\n- 📦 [react-native-mmkv 3.1 - Autotrim sécurisé par GC, mode readOnly](https://github.com/mrousavy/react-native-mmkv/releases/tag/v3.1.0)\n- 📦 [react-native-whip-whep - Connexion WebRTC Peer](https://blog.swmansion.com/introducing-react-native-whip-whep-ac9e5588d4da?source=rss----e003bf129483---4)\n- 📦 [expo-in-app-updates - Mises à jour natives in-app pour Android et iOS](https://github.com/SohelIslamImran/expo-in-app-updates)\n- 📦 [expo-import-cost - Extension VSCode affichant le coût d'import des dépendances](https://github.com/SohelIslamImran/expo-import-cost)\n- 🎥 [Catalin Miron - Animation de messages entrants TikTok](https://www.youtube.com/watch?v=dFUaYZ_AXcc)",
+        "en": "- 💸 [Restez informé des actualités React Native & Expo avec la newsletter notJust](https://www.notjust.dev/newsletter?utm_source=twir&utm_medium=email&utm_campaign=newsletter)\n- 👀 [PR React Native - Prise en charge de CSS `display: contents`](https://github.com/facebook/react-native/pull/46584) : Définit des vues sans impact sur le layout auxquelles on peut attacher des gestionnaires d'événements. Utilisation possible dans `GestureDetector` de `react-native-gesture-handler` pour gérer les gestes tactiles sans affecter le layout.\n- 📖 [Documentation React Native - Nouveaux DevTools 0.76](https://reactnative.dev/docs/next/react-native-devtools)\n- 📜 [La nouvelle architecture de React Native, les aspects délicats](https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-1-2-bb0c16950f2d) : Aplatissement des vues, recyclage des vues, support des bibliothèques.\n- 📜 [PostHog - Comment nous avons construit le replay mobile (et pourquoi ça a pris si longtemps)](https://posthog.com/blog/mobile-session-replay) : Leur SDK React Native 3.2 prend désormais en charge le replay de session (bêta).\n- 📜 [Intégrer Expo SQLite dans React Native MacOS](https://coolsoftware.dev/blog/hacking-expo-sqlite-into-react-native-macos/)\n- 📜 [Comment animer vos apps React Native avec des capteurs](https://expo.dev/blog/how-to-bring-your-react-native-apps-to-life-using-sensors)\n- 📜 [Comment Kraken a résolu les problèmes de performance via l'adoption progressive de la nouvelle architecture React Native](https://blog.kraken.com/product/engineering/how-kraken-fixed-performance-issues-via-incremental-adoption-of-the-react-native-new-architecture)\n- 📦 [react-native-mmkv 3.1 - Autotrim sécurisé pour GC, mode readOnly](https://github.com/mrousavy/react-native-mmkv/releases/tag/v3.1.0)\n- 📦 [react-native-whip-whep - Connexion WebRTC PeerConnection](https://blog.swmansion.com/introducing-react-native-whip-whep-ac9e5588d4da?source=rss----e003bf129483---4)\n- 📦 [expo-in-app-updates - Mises à jour natives dans l'app pour Android et iOS](https://github.com/SohelIslamImran/expo-in-app-updates)\n- 📦 [expo-import-cost - Extension VSCode affichant le coût d'importation des dépendances](https://github.com/SohelIslamImran/expo-import-cost)\n- 🎥 [Catalin Miron - Animation de messages entrants TikTok](https://www.youtube.com/watch?v=dFUaYZ_AXcc)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "862bb4be",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ed644f52",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40a587f3",
+      "source_content": "- 📜 [The story of web framework Hono](https://blog.cloudflare.com/the-story-of-web-framework-hono-from-the-creator-of-hono/): \"In contrast to the Next.js framework, which started from the client-side with React, Hono is trying to become a full-stack framework starting from the server-side\"\n- 📜 [Does JavaScript require a compiler soon? - TC39 JSSugar proposal](https://bleepbloop.studio/posts/new-tc39-proposal-does-javascript-require-a-compiler-soon)\n- 📜 [Why I’m skeptical of rewriting JavaScript tools in “faster” languages](https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/)\n- 📜 [View Transitions Staggering](https://frontendmasters.com/blog/view-transitions-staggering/)\n- 📜 [Brisa Framework - Server Actions have been fixed](https://brisa.build/blog/server-actions-have-been-fixed)\n- 📦 [Turborepo v2.2 - Experimental repository querying with GraphQL, cache safety warnings, automatic GitHub action comparisons](https://turbo.build/blog/turbo-2-2-0)\n- 📦 [is-my-node-vulnerable - Package that checks if your Node.js installation is vulnerable to known security vulnerabilities](https://github.com/RafaelGSS/is-my-node-vulnerable)\n- 📦 [Svelte v5](https://svelte.dev/blog/svelte-5-release-candidate)",
+      "source_content_hash": "0055b0ecfcb1516b9166091fa4f526c566d7936721baf33bacfd211b62d1c8ab",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [L'histoire du framework web Hono](https://blog.cloudflare.com/the-story-of-web-framework-hono-from-the-creator-of-hono/): \"Contrairement au framework Next.js qui a commencé côté client avec React, Hono tente de devenir un framework full-stack en partant du côté serveur\"\n- 📜 [JavaScript nécessitera-t-il bientôt un compilateur ? - Proposition TC39 JSSugar](https://bleepbloop.studio/posts/new-tc39-proposal-does-javascript-require-a-compiler-soon)\n- 📜 [Pourquoi je suis sceptique face à la réécriture des outils JavaScript dans des langages « plus rapides »](https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/)\n- 📜 [Échelonnement des transitions de vue](https://frontendmasters.com/blog/view-transitions-staggering/)\n- 📜 [Brisa Framework - Les Server Actions ont été corrigées](https://brisa.build/blog/server-actions-have-been-fixed)\n- 📦 [Turborepo v2.2 - Interrogation expérimentale de dépôt avec GraphQL, avertissements de sécurité du cache, comparaisons automatiques d'actions GitHub](https://turbo.build/blog/turbo-2-2-0)\n- 📦 [is-my-node-vulnerable - Package vérifiant si votre installation Node.js est vulnérable aux failles de sécurité connues](https://github.com/RafaelGSS/is-my-node-vulnerable)\n- 📦 [Svelte v5](https://svelte.dev/blog/svelte-5-release-candidate)",
+        "en": "- 📜 [L'histoire du framework web Hono](https://blog.cloudflare.com/the-story-of-web-framework-hono-from-the-creator-of-hono/): \"Contrairement au framework Next.js qui a démarré côté client avec React, Hono tente de devenir un framework full-stack en commençant côté serveur\"\n- 📜 [JavaScript nécessite-t-il bientôt un compilateur ? - Proposition TC39 JSSugar](https://bleepbloop.studio/posts/new-tc39-proposal-does-javascript-require-a-compiler-soon)\n- 📜 [Pourquoi je suis sceptique quant à la réécriture des outils JavaScript dans des langages 'plus rapides'](https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/)\n- 📜 [Échelonnement des transitions de vue](https://frontendmasters.com/blog/view-transitions-staggering/)\n- 📜 [Brisa Framework - Les Server Actions ont été corrigées](https://brisa.build/blog/server-actions-have-been-fixed)\n- 📦 [Turborepo v2.2 - Requêtage expérimental de dépôt avec GraphQL, avertissements de sécurité du cache, comparaisons automatiques d'actions GitHub](https://turbo.build/blog/turbo-2-2-0)\n- 📦 [is-my-node-vulnerable - Package vérifiant si votre installation Node.js est vulnérable à des failles de sécurité connues](https://github.com/RafaelGSS/is-my-node-vulnerable)\n- 📦 [Svelte v5](https://svelte.dev/blog/svelte-5-release-candidate)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "[![head body knees and toes html](/emails/issues/206/meme2.jpg)](https://x.com/mrousavy/status/1846497922675810533)",
+      "source_content_hash": "bec40c4842e747d7934679ceb940a6748851b7d2e48947534ce22574b8ecb539",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![tête corps genoux orteils html](/emails/issues/206/meme2.jpg)](https://x.com/mrousavy/status/1846497922675810533)",
+        "en": "[![tête épaules genoux pieds html](/emails/issues/206/meme2.jpg)](https://x.com/mrousavy/status/1846497922675810533)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "534ac82e",
+      "source_content": "Shameless repost for Next.js 15 release 😄",
+      "source_content_hash": "943738c8b6da528270c3b051dadb7d817d3c28810f0573659359994d0e3e7c98",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Repostage impudente pour la sortie de Next.js 15 😄",
+        "en": "Repostage impudent pour la sortie de Next.js 15 😄"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "[![async functions contagion](/emails/issues/206/meme.jpg)](https://x.com/sebastienlorber/status/1848743816162869640)",
+      "source_content_hash": "36267add9b7bdbecd34881a4f792907149d41183d633c7bfcf25d7d6b657f158",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![contagion des fonctions async](/emails/issues/206/meme.jpg)](https://x.com/sebastienlorber/status/1848743816162869640)",
+        "en": "[![contagion des fonctions async](/emails/issues/206/meme.jpg)](https://x.com/sebastienlorber/status/1848743816162869640)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/206/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.207958+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "966c7525b04580edce7ced0b4f1539dc973071a205b2b62715fd64783e8d0643",
+    "en": "966c7525b04580edce7ced0b4f1539dc973071a205b2b62715fd64783e8d0643"
+  }
+}

@@ -1,0 +1,581 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/235/index.mdx",
+  "source_file_content_hash": "ca2c56844b4b9b139be1f97c7328141109156ca5064fbe580883c3165bd922fc",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /235\ntitle: \"This Week In React #235: React Router, createStore, SuspenseList, Transition Indicator, Compiler, RenderHooks, Waku, React-Scan | Expo, Lava, Fortnite, Skia, AI, Lynx | TC39, using, Zod, Node, Deno\"\nauthors: [slorber]\ndate: 05-21-2025\n---",
+      "source_content_hash": "2787a5b4a1495087da4b151343e19f7cbda58d831ad3163940d795f4f03d24cc",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week, we're delighted to finally have a preview of React Server Components support in React Router. I've also found some very interesting PRs on the React repo, and give you a glimpse of what could be coming soon!",
+      "source_content_hash": "0a3bd73039895e98cb38dfa03d1d970ff865e43f726c26387c4fce43178e6476",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, nous sommes ravis d'avoir enfin un aperçu de la prise en charge des React Server Components dans React Router. J'ai également trouvé des PR très intéressantes sur le dépôt React, et je vous donne un aperçu de ce qui pourrait arriver bientôt !",
+        "en": "Cette semaine, nous sommes ravis d'avoir enfin un aperçu du support des React Server Components dans React Router. J'ai également trouvé des PR très intéressantes sur le dépôt React, et je vous donne un aperçu de ce qui pourrait arriver bientôt !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The React Native ecosystem is surprisingly calm, but no doubt they keep everything secret for [App.js Conf](https://appjs.co/) next week!",
+      "source_content_hash": "e100adf706b5f63de4a964885d9479e67cb28765b09e550f204efaf9e0dbc2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'écosystème React Native est étonnamment calme, mais sans aucun doute, ils gardent tout secret pour la [App.js Conf](https://appjs.co/) la semaine prochaine !",
+        "en": "L'écosystème React Native est étonnamment calme, mais sans aucun doute, ils gardent tout secret pour [App.js Conf](https://appjs.co/) la semaine prochaine !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "By the way, I would really appreciate your support. Now that I'm automatically removing cold subscribers, the newsletter is decreasing over time 😅. Any retweet, like, engagement, or testimonial really helps me! Please convince your friends to subscribe ❤️",
+      "source_content_hash": "ec4e5f826488c0212c7fc3dc6e8789a692ad714632612d7bdac7a35b445a877c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Au fait, j'apprécierais vraiment votre soutien. Maintenant que je supprime automatiquement les abonnés inactifs, la newsletter diminue au fil du temps 😅. Tout retweet, like, engagement ou témoignage m'aide énormément ! Convainquez vos amis de s'abonner ❤️",
+        "en": "Au fait, j'apprécierais vraiment votre soutien. Maintenant que je supprime automatiquement les abonnés inactifs, la newsletter diminue au fil du temps 😅. Tout retweet, like, engagement ou témoignage m'aide vraiment ! S'il vous plaît, convainquez vos amis de s'abonner ❤️"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6c991806",
+        "en": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_8f488ab5",
+        "en": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![Cut React Code Review Time & Bugs in Half](/emails/issues/233/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)",
+      "source_content_hash": "48ccaeb060483a22fb130743d4bd2ee00b4f5fa9de31cff7549295705bcf8e3c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Réduisez de moitié le temps de revue de code React et les bugs](/emails/issues/233/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)",
+        "en": "[![Réduisez le temps de revue de code React et les bugs de moitié](/emails/issues/233/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[Cut React Code Review Time & Bugs in Half](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)**",
+      "source_content_hash": "1af4216e99d7f078d7225e205e8e84ca8caa86709a47067ccdd54f9c8e067f95",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Réduisez de moitié le temps de revue de code React et les bugs](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)**",
+        "en": "**[Réduisez le temps de revue de code React et les bugs de moitié](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Code reviews are critical but time-consuming. CodeRabbit acts as your AI co-pilot, providing instant Code review comments and potential impacts of every pull request.",
+      "source_content_hash": "d4dc5c87a27dd428494b18f89be3724778a83dbe9473b5d56ddd68f24b02e365",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les revues de code sont cruciales mais chronophages. CodeRabbit agit comme votre copilote IA, fournissant des commentaires de revue instantanés et les impacts potentiels de chaque pull request.",
+        "en": "Les revues de code sont cruciales mais chronophages. CodeRabbit agit comme votre copilote IA, fournissant des commentaires de revue de code instantanés et les impacts potentiels de chaque pull request."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Beyond just flagging issues, CodeRabbit provides one-click fix suggestions and lets you define custom code quality rules using AST Grep patterns, catching subtle issues that traditional static analysis tools might miss.",
+      "source_content_hash": "52c2493f49ddd9a07ffdd56b9b8d9489dd7702c05c5fe106c8c1ac89c80cb6d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Au-delà du signalement des problèmes, CodeRabbit propose des corrections en un clic et vous permet de définir des règles de qualité de code personnalisées avec des motifs AST Grep, détectant des problèmes subtils que les outils d'analyse statique traditionnels pourraient manquer.",
+        "en": "Au-delà de simplement signaler les problèmes, CodeRabbit propose des suggestions de correction en un clic et vous permet de définir des règles de qualité de code personnalisées à l'aide de motifs AST Grep, capturant ainsi des problèmes subtils que les outils d'analyse statique traditionnels pourraient manquer."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "CodeRabbit has so far reviewed more than 5 million PRs, installed on 1 million repositories, and used by 50 thousand Open-source projects. CodeRabbit is free for all open-source repo's. [Get started today!](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)",
+      "source_content_hash": "6d9cf1b1a0da514b65a08166d3e063c3d087af1c98831af6d4a18124834a1eba",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "CodeRabbit a déjà examiné plus de 5 millions de PR, est installé sur 1 million de dépôts et utilisé par 50 000 projets open source. Il est gratuit pour tous les dépôts open source. [Commencez dès aujourd'hui !](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)",
+        "en": "CodeRabbit a jusqu'à présent examiné plus de 5 millions de PRs, est installé sur 1 million de dépôts et utilisé par 50 000 projets open source. CodeRabbit est gratuit pour tous les dépôts open source. [Commencez dès aujourd'hui !](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[![React Router RSC Preview](/emails/issues/235/rr.jpg)](https://remix.run/blog/rsc-preview)",
+      "source_content_hash": "4a11f6267da47a0ebd0e038ef0e1fe26e5ababe7ada769b19eef317455565084",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Aperçu des RSC dans React Router](/emails/issues/235/rr.jpg)](https://remix.run/blog/rsc-preview)",
+        "en": "[![Aperçu de React Router RSC](/emails/issues/235/rr.jpg)](https://remix.run/blog/rsc-preview)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "**[React Router RSC Preview](https://remix.run/blog/rsc-preview)**",
+      "source_content_hash": "5c74ef5ea6cd29f372c92e4f04120b9d466f19c79579955e73ec60bc1127851d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Aperçu des RSC dans React Router](https://remix.run/blog/rsc-preview)**",
+        "en": "**[Aperçu de React Router RSC](https://remix.run/blog/rsc-preview)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "The React Router team unveiled a preview of React Server Components support using the Parcel bundler. Stable support is blocked until Vite officially supports RSCs, but the good news is that React Router is becoming more framework-agnostic, and they expect to support other bundlers in the future with minimal effort.",
+      "source_content_hash": "bcf258b9dbfe1298fd32d8ffa2746c99c607fc524a1bcca9d13b23c2a6ae4d08",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'équipe React Router a dévoilé un aperçu de la prise en charge des React Server Components avec le bundler Parcel. Le support stable est bloqué jusqu'à ce que Vite prenne officiellement en charge les RSC, mais React Router devient plus agnostique aux frameworks et prévoit de supporter d'autres bundlers avec un effort minimal.",
+        "en": "L'équipe React Router a dévoilé un aperçu du support des React Server Components utilisant le bundler Parcel. Le support stable est bloqué jusqu'à ce que Vite prenne officiellement en charge les RSC, mais la bonne nouvelle est que React Router devient plus agnostique vis-à-vis des frameworks, et ils prévoient de supporter d'autres bundlers à l'avenir avec un effort minimal."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "The feature is designed to be both incrementally adoptable by returning JSX in loaders/actions, but also to feel good on new greenfield projects looking to go all-in with Server Component Routes, `’use client’` and `’use server’` directives. They also explain how to solve the N+1 query problem in RSCs, inspired by GraphQL/DataLoader.",
+      "source_content_hash": "557177325291d06e37091c02d0a754083eb213cdb82e4ffc6ec1d0b4ea233fa2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "en": "La fonctionnalité est conçue pour être adoptée de manière incrémentielle en renvoyant du JSX dans les loaders/actions, mais aussi pour être agréable sur les nouveaux projets greenfield souhaitant aller à fond avec les Server Component Routes, les directives `’use client’` et `’use server’`. Ils expliquent également comment résoudre le problème de requête N+1 dans les RSC, inspiré par GraphQL/DataLoader."
+      },
+      "invalid_translations": {
+        "fr": {
+          "translation": "La fonctionnalité est conçue pour une adoption progressive via le retour de JSX dans les loaders/actions, mais aussi pour les nouveaux projets souhaitant utiliser intensivement les Server Component Routes et les directives `'use client'`/`'use server'`. Ils expliquent également comment résoudre le problème des requêtes N+1 dans les RSC, inspiré par GraphQL/DataLoader.",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`’use client’`', Translation: '`'use client'`'.",
+          "timestamp": "2025-06-24T15:50:44.524085+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[![Render Hooks](/emails/issues/235/renderhook.jpg)](https://github.com/brandonmcconnell/render-hooks)",
+      "source_content_hash": "e8bf5743dd91ce535003244532fad6b57adce9c483c634472ead0f003efd34cf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Render Hooks](/emails/issues/235/renderhook.jpg)](https://github.com/brandonmcconnell/render-hooks)",
+        "en": "[![Render Hooks](/emails/issues/235/renderhook.jpg)](https://github.com/brandonmcconnell/render-hooks)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "**[Render Hooks](https://github.com/brandonmcconnell/render-hooks) and [With React](https://github.com/jacobparis/with-react)**",
+      "source_content_hash": "86c9ef535a49201ffd17d1c57b0da93905cee1930ad4f9af261e6d049d367ae3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Render Hooks](https://github.com/brandonmcconnell/render-hooks) et [With React](https://github.com/jacobparis/with-react)**",
+        "en": "**[Render Hooks](https://github.com/brandonmcconnell/render-hooks) et [With React](https://github.com/jacobparis/with-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "Looks like the Render Props pattern is making a comeback, with 2 new projects proposing to expose React core hooks in a render callback. This is a convenient trick in some situations, allowing you to \"inline\" a component while still respecting the rules of hooks, but it does not really solve any problem that can’t be solved by extracting a custom component. An interesting pattern to use sparingly.",
+      "source_content_hash": "b97a02b21e3e0dd2dbe7778facf955737f92b3063fd0b37e698ff5527a0faf33",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le pattern Render Props semble faire son retour, avec 2 nouveaux projets exposant les hooks React de base via un callback de rendu. C'est une astuce pratique dans certains cas pour \"inliner\" un composant tout en respectant les règles des hooks, mais elle ne résout pas de problème insoluble par un composant personnalisé. Un pattern intéressant à utiliser avec parcimonie.",
+        "en": "Il semble que le pattern Render Props fasse son retour, avec 2 nouveaux projets proposant d'exposer les hooks React de base dans un callback de rendu. C'est une astuce pratique dans certaines situations, vous permettant d'\"inliner\" un composant tout en respectant les règles des hooks, mais cela ne résout pas vraiment de problème qui ne pourrait être résolu en extrayant un composant personnalisé. Un pattern intéressant à utiliser avec parcimonie."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "716da8e8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e3321a43",
+      "source_content": "- 💸 [Product for Engineers - What engineers get wrong about communication](https://go.posthog.com/twir-may21)\n- 👀 [React Core PR \\- `createStore()` skeleton API](https://github.com/facebook/react/pull/33215): Initial scaffolding work to implement the Concurrent Stores feature mentioned in the latest React Labs update. There’s no implementation yet, but I still find it interesting to check the signature/types of this upcoming API that should support both ad-hoc state updates and the reducer/actions pattern. What strikes me the most is that you can’t access the store value directly, apart from using the `use(store)` API, and this totally makes sense in a concurrent world. Remember, this is a work in progress, and things may change.\n- 👀 [React Core PRs \\- `<SuspenseList>` being actively worked on](https://github.com/search?q=repo%3Afacebook%2Freact+SuspenseList&type=pullrequests&s=created&o=desc): It’s been a while since we last heard of this upcoming component that we thought would be in React 18\\. It allows to coordinate Suspense boundaries and control their “reveal order” (forwards/backwards/together).\n- 👀 [React Core PR \\- Transition indicator \\+ `onDefaultTransitionIndicator` API](https://github.com/facebook/react/pull/33162): A feature being worked on should allow giving user feedback while React transitions are in progress. The default React-DOM implementation should show a native browser spinner, but it’s possible to opt out or provide a custom feedback.\n- 👀 [SWC PR \\- Initialize `@swc/react-compiler`](https://github.com/swc-project/swc/pull/10475): A new package to integrate the React Compiler for all SWC-based projects is coming. It will still use Babel under the hood ([details](https://github.com/oxc-project/oxc/issues/10048#issuecomment-2837628965)), but it’s possible to optimize by only running it on relevant files (see what [Next.js is doing](https://nextjs.org/docs/app/api-reference/config/next-config-js/reactCompiler)), potentially using parallelization.\n- 👀 [Next.js PR \\- Initial Segment Explorer devtool](https://github.com/vercel/next.js/pull/78858): The Next.js team started working on a tool to help you visualize parallel and interception route segments.\n- 🔐 [Next.js Race Condition to Cache Poisoning \\- CVE-2025-32421](https://github.com/advisories/GHSA-qpjv-v59x-3qc4): Low-severity Pages Router vulnerability, already patched.\n- 📣 [Appwrite Sites: The open-source Vercel alternative](https://appwrite.io/blog/post/announcing-appwrite-sites): The AppWrite cloud platform can now deploy full-stack React meta-frameworks. It positions itself as a direct Vercel competitor, although there are differences (containers vs serverless). It’s a paid cloud product, but you can also self-host it for free.\n- 📜 [Concurrent Rendering](https://ui.dev/c/react/concurrent-rendering): Free interactive lesson on React transitions from the ui.dev course.\n- 📜 [Correctly infers from initial props](https://rena.to/blog/13): You don’t need to explicitly type your context value and can leverage type inference instead.\n- 📜 [Making Next.js Navigation Fast af](https://upstash.com/blog/fast-nextjs): Using React Router within your Next.js app works, but I doubt it’s a good idea, doesn’t permit you to use RSCs, and is likely to cause trouble if you use different routers on different pages.\n- 📜 [Mastering Focus Management in React with `flushSync`](https://www.epicreact.dev/mastering-focus-management-in-react-with-flush-sync-f5b38): By default, React uses batching and doesn’t flush state updates immediately to the DOM, and you can opt out of this behavior when needed.\n- 📜 [Preserving and Resetting State in React](https://www.epicreact.dev/preserving-and-resetting-state-in-react-l2dxl): Explains why conditionally wrapping a component may make it reset its state.\n- 📜 [Just F\\*\\*\\*ing Use React](https://justfuckingusereact.com/): Entertaining read, also exists in a less profane [Just Use React](https://www.epicreact.dev/just-use-react-dk4e0) variant.\n- 📜 [The Past and Future of Render Optimization with React Context](https://newsletter.daishikato.com/p/the-past-and-future-of-render-optimization-with-react-context)\n- 💸 [Full-Stack Upgrade – Build real apps with auth, orgs & file uploads: The Road to Next is your next step as a full-stack React developer.](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1)\n- 📦 [Waku 0.23 \\- Fine-grained component render modes](https://waku.gg/blog/fine-grained-router-components): Makes it possible to statically pre-render parts of a dynamic page. I find the API a bit confusing, but the idea looks cool and simpler than Next.js Partial Pre-Rendering.\n- 📦 [React-Scan 0.3.4 \\- Scan for React performance issues](https://github.com/aidenybai/react-scan/releases/tag/v0.3.4): A release that takes the opportunity to announce upcoming features and the availability of the [extension on the Chrome store](https://chromewebstore.google.com/detail/react-scan/anmmhkomejbdklkhoiloeaehppaffmdf).\n- 📦 [React Aria \\- May 19 Release](https://react-spectrum.adobe.com/releases/2025-05-19.html)\n- 📦 [React-Admin \\- May 2025 Update \\- 5.7 & 5.8](https://marmelab.com/blog/2025/05/21/react-admin-may-2025-update.html)\n- 📦 [StyleX 0.13 \\- New `defineConsts` and `positionTry` APIs](https://stylexjs.com/blog/v0.13.0)\n- 📦 [Shopify Hydrogen 2025.05 \\- Upgrades to React Router 7](https://hydrogen.shopify.dev/update/may-2025)\n- 🎥 [Theo \\- React Is the last framework](https://www.youtube.com/watch?v=P1FLEnKZTAE): Probably a quite controversial point of view that React runtime/syntax is less likely to change now (mainly due to AI). Innovation is moving an abstraction layer above with the React Compiler.\n- 🎥 [Alem Tuzlak \\- Server Componets (RSC) in react-router are... actually good?](http://epicweb.dev/tips/server-componets-rsc-in-react-router-are-actually-good~n3u4j)\n- 🎙️ [Syntax 902 \\- Fullstack Cloudflare with React and Vite \\- RedwoodSDK with Peter Pistorius](https://syntax.fm/show/902/fullstack-cloudflare-with-react-and-vite-redwood-sdk)\n- 🎙️ [Front-end Fire 95 \\-TanStack DB & The Rise of the Tannerverse](https://front-end-fire.com/episodes/95/)",
+      "source_content_hash": "6ee7688c9e5f92b7477db1a086d7a6b6b060125c9eb42e501007ad4540f5c403",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_e3321a43",
+        "en": "@@untranslatable_placeholder_e3321a43"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "057a9dd8",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_057a9dd8",
+        "en": "@@untranslatable_placeholder_057a9dd8"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "be625c00",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3a8d2b95",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "[![Add loyalty logic to your product — with just one API.](/emails/issues/235/ReactNewsletterAd3.jpg)](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)",
+      "source_content_hash": "92463e18795feea6bcdd93f7b9b429b1a7bec22caa9ea1b5f8a1ac28ecb482d9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Ajoutez une logique de fidélisation à votre produit — avec une seule API.](/emails/issues/235/ReactNewsletterAd3.jpg)](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)",
+        "en": "[![Ajoutez une logique de fidélisation à votre produit — avec une seule API.](/emails/issues/235/ReactNewsletterAd3.jpg)](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "**[Add loyalty logic to your product — with just one API.](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)**",
+      "source_content_hash": "77e6dba3f2be987bb99d86b91226c384956080e98863a6dc1cf03642f160bd0f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Ajoutez une logique de fidélisation à votre produit — avec une seule API.](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)**",
+        "en": "**[Ajoutez une logique de fidélisation à votre produit — avec une seule API.](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "**Why build loyalty from scratch when you can plug it in with Dynamo?**",
+      "source_content_hash": "24edc8ba02d30e31cfd65b076b784c800643afab51059ae189e7a8fc354db9bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Pourquoi développer une solution de fidélisation de zéro quand vous pouvez l'intégrer avec Dynamo ?**",
+        "en": "**Pourquoi créer un système de fidélisation à partir de zéro quand vous pouvez l'intégrer avec Dynamo ?**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "Dynamo is the API-first headless loyalty engine used by product teams at leading fintech and consumer apps to embed rewards, tiers, and behavior-based engagement — without writing it all from zero.",
+      "source_content_hash": "b0852187e559b05e84a75fda5e38bcb8bb860ad02fc75e249bbea6bf328f8dba",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dynamo est le moteur de fidélisation headless API-first utilisé par les équipes produit des principales applications fintech et grand public pour intégrer des récompenses, niveaux et engagements basés sur le comportement — sans tout réécrire à partir de zéro.",
+        "en": "Dynamo est le moteur de fidélisation headless axé API utilisé par les équipes produit des applications fintech et grand public leaders pour intégrer récompenses, paliers et engagement comportemental — sans tout développer à partir de zéro."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "With 250+ cloud data integrations, a **React and React Native SDK**, **plus a clean sandbox trial**, you can improve your retention now in days not months.",
+      "source_content_hash": "8a8b8ca1018606cac8db547ca939e9fe0482c322af6179442a156096955c8180",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec 250+ intégrations de données cloud, un **SDK React et React Native**, **plus un sandbox d'essai propre**, vous pouvez améliorer votre rétention dès maintenant en jours plutôt qu'en mois.",
+        "en": "Avec 250+ intégrations de données cloud, un **SDK React et React Native**, **plus un environnement sandbox propre**, vous pouvez améliorer votre rétention en quelques jours plutôt qu'en mois."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "→ [Launch demo and get free sandbox access now.](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)",
+      "source_content_hash": "aca8c82bd5e1b3b44ee9cf481088d1917cbb208b98f9f83676adac08a14e9a4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "→ [Lancer la démo et obtenir un accès sandbox gratuit maintenant.](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)",
+        "en": "→ [Lancez la démo et obtenez un accès gratuit au sandbox dès maintenant.](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4c30a6aa",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "54bafb10",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6db2c30",
+      "source_content": "- 💸 [Radon IDE – All-in-one tool for React Native & Expo development. Meet the Radon IDE team next week at App.js Conf!](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 🐦 [Fortnite is back on the App Store in the U.S. on iPhones and iPads... and on the Epic Games Store and AltStore in the E.U\\!](https://x.com/Fortnite/status/1924949632628523199): Major news for the whole mobile industry, Apple is finally complying with the court ruling, and allows mobile apps to use alternative web-based payment methods to bypass the 30% fee on in-app purchases.\n- 🐦 [Airbnb Lava preview](https://x.com/ramon_fritsch/status/1922358206862397478): Not open source yet, but Airbnb invented a new lightweight media format to embed animations and micro-interaction icons across platforms. A possible successor of Lottie?\n- 📜 [Real-time audio processing with Expo and native code](https://expo.dev/blog/real-time-audio-processing-with-expo-and-native-code)\n- 📜 [Expo \\+ IoT: Device provisioning with HTTPS via WiFi](https://expo.dev/blog/expo-iot-device-provisioning-with-https-via-wifi)\n- 📜 [How to Run LLMs on-device in React Native with Vercel AI SDK](https://www.callstack.com/blog/meet-react-native-ai-llms-running-on-mobile-for-real)\n- 📦 [Lynx 3.2 \\- Testing Library, new CSS features, improve microtasks and console support](https://lynxjs.org/blog/lynx-3-2.html)\n- 📦 [React Native Skia 2.0.1 \\- Wide gamut colors on iOS](https://github.com/Shopify/react-native-skia/releases/tag/v2.0.1)\n- 🎥 [Beto \\- How to upgrade from Expo SDK 52 to 53](https://www.youtube.com/watch?v=HBPyP4OxVgs)\n- 🎥 [Simon Grimm \\- React Native Drawer Navigation with Expo Router](https://www.youtube.com/watch?v=65xmaJNpZVY)\n- 🎙️ [Rocket Ship 69 \\- Expo Router v5, Skia WebGPU, App Updates & Galaxies Lifetime](https://share.transistor.fm/s/51ee3a99)\n- 🎙️ [React Native Radio 332 \\- Codemagic \\+ React Native with Martin Remmelgas](https://infinite.red/react-native-radio/rnr-332-codemagic-react-native-with-martin-remmelgas)",
+      "source_content_hash": "18961ccfb9045806bba69414f940e63493663d4e8039e10cb3e4619cb94d025d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Radon IDE – Outil tout-en-un pour le développement React Native & Expo. Rencontrez l'équipe Radon IDE la semaine prochaine à App.js Conf !](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 🐦 [Fortnite est de retour sur l'App Store aux États-Unis sur iPhone et iPad... et sur l'Epic Games Store et AltStore dans l'UE !](https://x.com/Fortnite/status/1924949632628523199) : Une nouvelle majeure pour toute l'industrie mobile, Apple se conforme enfin à la décision de justice et permet aux applications mobiles d'utiliser des méthodes de paiement alternatives basées sur le web pour contourner la commission de 30% sur les achats intégrés.\n- 🐦 [Aperçu d'Airbnb Lava](https://x.com/ramon_fritsch/status/1922358206862397478) : Pas encore open source, mais Airbnb a inventé un nouveau format média léger pour intégrer des animations et icônes de micro-interactions multiplateformes. Un successeur potentiel de Lottie ?\n- 📜 [Traitement audio en temps réel avec Expo et du code natif](https://expo.dev/blog/real-time-audio-processing-with-expo-and-native-code)\n- 📜 [Expo + IoT : Provisionnement d'appareils via HTTPS sur WiFi](https://expo.dev/blog/expo-iot-device-provisioning-with-https-via-wifi)\n- 📜 [Comment exécuter des LLMs sur appareil dans React Native avec Vercel AI SDK](https://www.callstack.com/blog/meet-react-native-ai-llms-running-on-mobile-for-real)\n- 📦 [Lynx 3.2 - Bibliothèque de tests, nouvelles fonctionnalités CSS, amélioration des micro-tâches et support de la console](https://lynxjs.org/blog/lynx-3-2.html)\n- 📦 [React Native Skia 2.0.1 - Couleurs à large gamme sur iOS](https://github.com/Shopify/react-native-skia/releases/tag/v2.0.1)\n- 🎥 [Beto - Comment mettre à jour d'Expo SDK 52 à 53](https://www.youtube.com/watch?v=HBPyP4OxVgs)\n- 🎥 [Simon Grimm - Navigation par tiroir dans React Native avec Expo Router](https://www.youtube.com/watch?v=65xmaJNpZVY)\n- 🎙️ [Rocket Ship 69 - Expo Router v5, Skia WebGPU, Mises à jour d'applications & Galaxies Lifetime](https://share.transistor.fm/s/51ee3a99)\n- 🎙️ [React Native Radio 332 - Codemagic + React Native avec Martin Remmelgas](https://infinite.red/react-native-radio/rnr-332-codemagic-react-native-with-martin-remmelgas)",
+        "en": "- 💸 [Radon IDE – Outil tout-en-un pour le développement React Native & Expo. Rencontrez l'équipe Radon IDE la semaine prochaine à App.js Conf !](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 🐦 [Fortnite revient sur l'App Store aux États-Unis sur iPhone et iPad... et sur l'Epic Games Store et AltStore dans l'UE !](https://x.com/Fortnite/status/1924949632628523199) : Actualité majeure pour toute l'industrie mobile, Apple se conforme enfin à la décision judiciaire et autorise les applications mobiles à utiliser des méthodes de paiement alternatives basées sur le web pour contourner la commission de 30% sur les achats intégrés.\n- 🐦 [Aperçu d'Airbnb Lava](https://x.com/ramon_fritsch/status/1922358206862397478) : Pas encore open source, mais Airbnb a inventé un nouveau format média léger pour intégrer des animations et icônes de micro-interactions multiplateformes. Un successeur potentiel de Lottie ?\n- 📜 [Traitement audio en temps réel avec Expo et code natif](https://expo.dev/blog/real-time-audio-processing-with-expo-and-native-code)\n- 📜 [Expo + IoT : Provisionnement d'appareils avec HTTPS via WiFi](https://expo.dev/blog/expo-iot-device-provisioning-with-https-via-wifi)\n- 📜 [Comment exécuter des LLMs sur l'appareil dans React Native avec le SDK Vercel AI](https://www.callstack.com/blog/meet-react-native-ai-llms-running-on-mobile-for-real)\n- 📦 [Lynx 3.2 - Bibliothèque de tests, nouvelles fonctionnalités CSS, amélioration des micro-tâches et support de la console](https://lynxjs.org/blog/lynx-3-2.html)\n- 📦 [React Native Skia 2.0.1 - Couleurs à large gamme sur iOS](https://github.com/Shopify/react-native-skia/releases/tag/v2.0.1)\n- 🎥 [Beto - Comment mettre à jour d'Expo SDK 52 à 53](https://www.youtube.com/watch?v=HBPyP4OxVgs)\n- 🎥 [Simon Grimm - Navigation par tiroir dans React Native avec Expo Router](https://www.youtube.com/watch?v=65xmaJNpZVY)\n- 🎙️ [Rocket Ship 69 - Expo Router v5, Skia WebGPU, Mises à jour d'apps & Galaxies Lifetime](https://share.transistor.fm/s/51ee3a99)\n- 🎙️ [React Native Radio 332 - Codemagic + React Native avec Martin Remmelgas](https://infinite.red/react-native-radio/rnr-332-codemagic-react-native-with-martin-remmelgas)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "513f3dff",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cbd60296",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f93a1bb7",
+      "source_content": "- 👀 [TC39 \\- Agenda for the 108th meeting](https://github.com/tc39/agendas/blob/main/2025/05.md): Next week, another set of interesting proposals for JS could progress, some of them could become part of the standard: `using` keyword, `Error.isError()`.\n- 📜 [JavaScript's New Superpower: Explicit Resource Management](https://v8.dev/features/explicit-resource-management): Describes the `using` keyword mentioned above, already available in Chrome, and more importantly, in Node 24\\.\n- 📜 [The Future of MCP is GraphQL](https://www.apollographql.com/blog/the-future-of-mcp-is-graphql): Apollo announcing their MCP server, explaining the alignment between GraphQL and AI needs.\n- 📜 [I think the ergonomics of generators is growing on me](https://macarthur.me/posts/generators/)\n- 📜 [Reports of Deno's Demise Have Been Greatly Exaggerated](https://deno.com/blog/greatly-exaggerated)\n- 📦 [Node 22.16 \\- `node.config.json` support (experimental)](https://nodejs.org/en/blog/release/v22.16.0)\n- 📦 [Zod 4.0 \\- faster, slimmer, more tsc-efficient, new Zod Mini export, localization and more](https://zod.dev/v4)\n- 📦 [Remotion Media Parser \\- Universal lib based on WebCodecs to parse/decode/encode videos](https://www.remotion.dev/blog/media-parser)",
+      "source_content_hash": "6e9fdff61e1e6e9eff676a980f3cd8d882934129a315be4f67ffe05dadc0ac8f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [TC39 - Ordre du jour de la 108e réunion](https://github.com/tc39/agendas/blob/main/2025/05.md) : La semaine prochaine, un nouvel ensemble de propositions intéressantes pour JS pourrait progresser, certaines pouvant intégrer le standard : mot-clé `using`, `Error.isError()`.\n- 📜 [Le nouveau super-pouvoir de JavaScript : la gestion explicite des ressources](https://v8.dev/features/explicit-resource-management) : Décrit le mot-clé `using` mentionné ci-dessus, déjà disponible dans Chrome, et surtout dans Node 24\\.\n- 📜 [L'avenir du MCP est GraphQL](https://www.apollographql.com/blog/the-future-of-mcp-is-graphql) : Apollo annonce son serveur MCP, expliquant l'alignement entre GraphQL et les besoins de l'IA.\n- 📜 [L'ergonomie des générateurs commence à me séduire](https://macarthur.me/posts/generators/)\n- 📜 [Les annonces de la disparition de Deno sont grandement exagérées](https://deno.com/blog/greatly-exaggerated)\n- 📦 [Node 22.16 - Prise en charge de `node.config.json` (expérimental)](https://nodejs.org/en/blog/release/v22.16.0)\n- 📦 [Zod 4.0 - Plus rapide, plus léger, plus efficace avec tsc, nouvelle exportation Zod Mini, localisation et plus](https://zod.dev/v4)\n- 📦 [Remotion Media Parser - Librairie universelle basée sur WebCodecs pour analyser/décoder/encoder des vidéos](https://www.remotion.dev/blog/media-parser)",
+        "en": "- 👀 [TC39 - Agenda for the 108th meeting](https://github.com/tc39/agendas/blob/main/2025/05.md): La semaine prochaine, une nouvelle série de propositions intéressantes pour JS pourrait progresser, certaines pourraient devenir partie intégrante du standard : mot-clé `using`, `Error.isError()`.\n- 📜 [JavaScript's New Superpower: Explicit Resource Management](https://v8.dev/features/explicit-resource-management): Décrit le mot-clé `using` mentionné ci-dessus, déjà disponible dans Chrome, et plus important encore, dans Node 24\\.\n- 📜 [The Future of MCP is GraphQL](https://www.apollographql.com/blog/the-future-of-mcp-is-graphql): Apollo annonce son serveur MCP, expliquant l'alignement entre GraphQL et les besoins de l'IA.\n- 📜 [I think the ergonomics of generators is growing on me](https://macarthur.me/posts/generators/)\n- 📜 [Reports of Deno's Demise Have Been Greatly Exaggerated](https://deno.com/blog/greatly-exaggerated)\n- 📦 [Node 22.16 - `node.config.json` support (experimental)](https://nodejs.org/en/blog/release/v22.16.0)\n- 📦 [Zod 4.0 - faster, slimmer, more tsc-efficient, new Zod Mini export, localization and more](https://zod.dev/v4)\n- 📦 [Remotion Media Parser - Universal lib based on WebCodecs to parse/decode/encode videos](https://www.remotion.dev/blog/media-parser)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d53c8ed4",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1ecf0882",
+      "source_content": "[![alt](/emails/issues/235/meme.jpg)](https://x.com/copyjosh/status/1924294150905614762)",
+      "source_content_hash": "aac5bb346505ca88c45e6553d6054b933b53156bb926891d1e92a9df771cfbc0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/235/meme.jpg)](https://x.com/copyjosh/status/1924294150905614762)",
+        "en": "[![alt](/emails/issues/235/meme.jpg)](https://x.com/copyjosh/status/1924294150905614762)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e77cf7c6",
+      "source_content": "[![alt](/emails/issues/235/meme2.jpg)](https://x.com/sebastienlorber/status/1922935190080372837)",
+      "source_content_hash": "8a7130f60e07943218c0ef531d40bc86195168d4600d93a3df2737019406b998",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/235/meme2.jpg)](https://x.com/sebastienlorber/status/1922935190080372837)",
+        "en": "[![alt](/emails/issues/235/meme2.jpg)](https://x.com/sebastienlorber/status/1922935190080372837)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus tard ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/235/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.216948+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "ca2c56844b4b9b139be1f97c7328141109156ca5064fbe580883c3165bd922fc",
+    "en": "ca2c56844b4b9b139be1f97c7328141109156ca5064fbe580883c3165bd922fc"
+  }
+}

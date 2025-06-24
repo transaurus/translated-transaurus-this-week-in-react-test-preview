@@ -1,0 +1,558 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/225/index.mdx",
+  "source_file_content_hash": "b71bec387068cd68be11bd80c352de081577b01bdd4ab67e52851e82db10f2fd",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /225\ntitle: \"This Week In React #225: React Router, React Aria, Ark, moveBefore(), Ark | JSC, Lynx, Metro, Reanimated, AI, Radon, Galeria, Zeego, Legal | TypeScript, Deno, Web Almanac\"\nauthors: [slorber]\ndate: 03-12-2025\n---",
+      "source_content_hash": "903de9a06a7514f6b87c7f10a396274a4089512b018e6813bde9aab12d54c673",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we have:",
+      "source_content_hash": "a6352a9b027570377cc0a88e9522887265e6d3f6c6f031ce612f64761e19d181",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, nous avons :",
+        "en": "Cette semaine, nous avons :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "143e51c1",
+      "source_content": "- **React**: A good variety of articles, and great releases from React Router and React Aria.\n- **React Native**: Lots of cool things happening, and the community reacting to Lynx.\n- **Other**: TypeScript announcing an exciting port to Go.",
+      "source_content_hash": "30ea41c1f4d903d12d8519f811e111c0d11f0d3f5258d4331d66d441f3116a20",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- **React** : Une belle variété d'articles et d'excellentes sorties de React Router et React Aria.\n- **React Native** : Beaucoup de choses intéressantes, et la communauté réagit à Lynx.\n- **Autre** : TypeScript annonce un portage passionnant vers Go.",
+        "en": "- **React** : Une bonne variété d'articles et d'excellentes sorties de React Router et React Aria.\n- **React Native** : Beaucoup d'activités intéressantes, et la communauté réagit à Lynx.\n- **Autre** : TypeScript annonce un portage passionnant vers Go."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Check our partner conf 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) \\- 🇫🇮 Espoo - 26-28 May. A single track conference in Finland to give you a glimpse of the future!",
+      "source_content_hash": "b0fb174179dbf02d1e12eacddd3ce77d592fb33d966de0a07bc4bccf861c55ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Découvrez notre conférence partenaire 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 Espoo - 26-28 mai. Une conférence monothématique en Finlande pour vous donner un aperçu du futur !",
+        "en": "Découvrez notre conférence partenaire 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) \\- 🇫🇮 Espoo - 26-28 mai. Une conférence à programme unique en Finlande pour vous donner un aperçu du futur !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_45c63027",
+        "en": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_92f4ea84",
+        "en": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5dfba1c3",
+        "en": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Cut React Code Review Time & Bugs in Half](/emails/issues/225/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)",
+      "source_content_hash": "6cf7b39b1b3d60412cca3bd676d90a5ea2a7815bb401033f690db77adcd21c46",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Réduisez de moitié le temps de relecture de code React et les bugs](/emails/issues/225/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)",
+        "en": "[![Réduisez de moitié le temps de relecture du code React et les bugs](/emails/issues/225/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Cut React Code Review Time & Bugs in Half](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)**",
+      "source_content_hash": "1af4216e99d7f078d7225e205e8e84ca8caa86709a47067ccdd54f9c8e067f95",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "en": "**[Réduisez de moitié le temps de relecture du code React et les bugs](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)**"
+      },
+      "invalid_translations": {
+        "fr": {
+          "translation": "**[Réduisez de moitié le temps de relecture de code React et les bugs](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_ampaign=this_week_in_react_mar25)**",
+          "reason": "URL for a 'link' was changed from 'https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25' to 'https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_ampaign=this_week_in_react_mar25'.",
+          "timestamp": "2025-06-24T15:50:44.529571+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Code reviews are critical but time-consuming. CodeRabbit acts as your AI co-pilot, providing instant Code review comments and potential impacts of every pull request.",
+      "source_content_hash": "d4dc5c87a27dd428494b18f89be3724778a83dbe9473b5d56ddd68f24b02e365",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les revues de code sont cruciales mais chronophages. CodeRabbit agit comme votre copilote IA, fournissant instantanément des commentaires de revue de code et les impacts potentiels de chaque pull request.",
+        "en": "Les relectures de code sont cruciales mais chronophages. CodeRabbit agit comme votre copilote IA, fournissant des commentaires de revue instantanés et l'impact potentiel de chaque pull request."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Beyond just flagging issues, CodeRabbit provides one-click fix suggestions and lets you define custom code quality rules using AST Grep patterns, catching subtle issues that traditional static analysis tools might miss.",
+      "source_content_hash": "52c2493f49ddd9a07ffdd56b9b8d9489dd7702c05c5fe106c8c1ac89c80cb6d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Au-delà du simple signalement des problèmes, CodeRabbit propose des corrections en un clic et vous permet de définir des règles de qualité de code personnalisées avec des motifs AST Grep, détectant des problèmes subtils que les outils d'analyse statique traditionnels pourraient manquer.",
+        "en": "Au-delà du simple signalement des problèmes, CodeRabbit propose des corrections en un clic et vous permet de définir des règles de qualité de code personnalisées avec des motifs AST Grep, détectant des problèmes subtils que les outils d'analyse statique traditionnels pourraient manquer."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "CodeRabbit has so far reviewed more than 5 million PRs, installed on 1 million repositories, and used by 50 thousand Open-source projects. CodeRabbit is free for all open-source repo's. [Get started today!](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)",
+      "source_content_hash": "6d9cf1b1a0da514b65a08166d3e063c3d087af1c98831af6d4a18124834a1eba",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "CodeRabbit a déjà examiné plus de 5 millions de PR, est installé sur 1 million de dépôts et utilisé par 50 000 projets open-source. CodeRabbit est gratuit pour tous les dépôts open-source. [Commencez dès aujourd'hui !](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)",
+        "en": "CodeRabbit a déjà relu plus de 5 millions de PR, est installé sur 1 million de dépôts et utilisé par 50 000 projets open source. CodeRabbit est gratuit pour tous les dépôts open source. [Commencez dès aujourd'hui !](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![React Router 7.3 - Route Middleware](/emails/issues/225/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)",
+      "source_content_hash": "1f1a6c7c264cdd2c70d1d0fd7e7358bee0933a5b731a967576546bb25faecbbe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Router 7.3 - Middleware de route](/emails/issues/225/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)",
+        "en": "[![React Router 7.3 - Middleware de route](/emails/issues/225/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "**[React Router 7.3 \\- Route Middleware](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)**",
+      "source_content_hash": "4c781b8dad3e231503d480e365b6f749a4d73f455b7f4076df744d3bc4b5eb5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Router 7.3 \\- Middleware de route](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)**",
+        "en": "**[React Router 7.3 \\- Middleware de route](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "This React Router release introduces a major new middleware feature. It’s not production-ready yet but you can turn it on with the `future.unstable_middleware` future flag. You can use it in framework or library mode. There’s a distinction between client and server middleware. You can use it to implement logging, authentication, and other cross-cutting concerns.",
+      "source_content_hash": "62901f9819c047263a03ee0d56cd7acb39be213a1a878876a5dbbb682e567663",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette version de React Router introduit une nouvelle fonctionnalité majeure de middleware. Elle n'est pas encore prête pour la production, mais vous pouvez l'activer avec le drapeau expérimental `future.unstable_middleware`. Vous pouvez l'utiliser en mode framework ou bibliothèque. Il existe une distinction entre middleware client et serveur. Vous pouvez l'utiliser pour implémenter la journalisation, l'authentification et d'autres préoccupations transversales.",
+        "en": "Cette version de React Router introduit une nouvelle fonctionnalité majeure de middleware. Elle n'est pas encore prête pour la production, mais vous pouvez l'activer avec le drapeau expérimental `future.unstable_middleware`. Utilisable en mode framework ou bibliothèque, elle distingue middleware client et serveur. Idéal pour implémenter journalisation, authentification et autres préoccupations transversales."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "Additional related community resources:",
+      "source_content_hash": "b652b3b5a32bf7ee1959f29b6e7feed45aadc7b45033a6c4c098258a5ce2ee0b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ressources communautaires supplémentaires :",
+        "en": "Ressources communautaires supplémentaires :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "- 📜 [Use middleware in React Router](https://sergiodxa.com/tutorials/use-middleware-in-react-router)\n- 📜 [Test Middleware in React Router](https://sergiodxa.com/tutorials/test-middleware-in-react-router)\n- 📜 [How to Create a Per-Request Singleton with React Router Middleware](https://sergiodxa.com/tutorials/create-a-per-request-singleton-with-react-router-middleware)\n- 🎥 [Alem Tuzlak \\- React Router middleware is here\\!](https://www.youtube.com/watch?v=H9WmtBchWtQ)",
+      "source_content_hash": "f0104ba210f9f271823a509e58ec266595f0124be0f99046f6ccbc4bf7aa6e1c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Utiliser le middleware dans React Router](https://sergiodxa.com/tutorials/use-middleware-in-react-router)\n- 📜 [Tester le middleware dans React Router](https://sergiodxa.com/tutorials/test-middleware-in-react-router)\n- 📜 [Comment créer un singleton par requête avec le middleware React Router](https://sergiodxa.com/tutorials/create-a-per-request-singleton-with-react-router-middleware)\n- 🎥 [Alem Tuzlak \\- Le middleware React Router est arrivé !](https://www.youtube.com/watch?v=H9WmtBchWtQ)",
+        "en": "- 📜 [Utiliser le middleware dans React Router](https://sergiodxa.com/tutorials/use-middleware-in-react-router)\n- 📜 [Tester le middleware dans React Router](https://sergiodxa.com/tutorials/test-middleware-in-react-router)\n- 📜 [Créer un singleton par requête avec le middleware React Router](https://sergiodxa.com/tutorials/create-a-per-request-singleton-with-react-router-middleware)\n- 🎥 [Alem Tuzlak \\- Le middleware React Router est arrivé !](https://www.youtube.com/watch?v=H9WmtBchWtQ)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51029da6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "- 💸 [Product for Engineers - WTF is activation and why should engineers care?](https://dub.link/twir-mar12)\n- 👀 [React `moveBefore()` \\+ `<ViewTransition>` demo](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3lk6phwfik226): This exciting browser feature permits to move/reorder DOM nodes while preserving their state (useful for video players, iframes…). It has been recently added to the DOM Living Standard, is supported in Chrome 133, and has just been enabled in the React DOM reconciler (experimental release only for now). I made a demo to see it in action combined with the upcoming ViewTransition component.\n- 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 03 April - 3 weeks left before dotJS! Chat 1:1 with top contributors who are rarely in Europe – Ryan Dahl, Wes Bos and more. Secure your spot now and get 15% off tickets with code \"TWIR”.\n- 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 13 May. Don't miss our keynote speaker reveal : Sébastien Chopin, Matt Kane, Haris Ali Khan ! Get a 10% discount with code \"TWIR\".\n- 📜 [React Router \\- Split Route Modules](https://remix.run/blog/split-route-modules): Explains how a new future flag enables React Router 7.2 to split a route module into multiple parts to avoid network waterfalls.\n- 📜 [Beyond React.memo: Smarter Ways to Optimize Performance](https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/): Before reaching for memoization, try to restructure your app and embrace composition.\n- 📜 [Server Actions with Toast Feedback (useActionState)](https://www.robinwieruch.de/react-server-actions-toast-useactionstate/): Exploring multiple ways to display a toast notification after a Server Action. I prefer this version, not relying on `useEffect`.\n- 📜 [React Router error reporting from scratch](https://programmingarehard.com/2025/03/11/react-router-error-reporting.html/): A pretty cool article showing how to send React Router loader errors to an email address with a great DX, reading source maps and displaying original source code around the error for each stack frame. Lessons are applicable in other JS contexts.\n- 📜 [How The New York Times systematically migrated from Enzyme into React Testing Library](https://open.nytimes.com/how-the-new-york-times-systematically-migrated-from-enzyme-into-react-testing-library-b3ea538d001c): Using an incremental migration strategy, starting with the simplest tests so that contributors have templates to get inspired from.\n- 📜 [Rails views, web components, React. Why make a choice?](https://www.aha.io/engineering/articles/rails-views-web-components-react): Each technology has its sweet spot. They use React only for rich, stateful interactions.\n- 📜 [How much traffic can a pre-rendered Next.js site really handle?](https://martijnhols.nl/blog/how-much-traffic-can-a-pre-rendered-nextjs-site-handle): Author load testing his self-hosted Next.js blog with pre-rendering and SSR to see how many requests per second it can handle.\n- 💸 [VS Code extension: Visualize how and where components (and their props) are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n- 📦 [React Aria \\- March 5, 2025 Release \\- Toast, Tree, Virtualizer, Tailwind 4, improved Autocomplete, Command Palette, DatePicker RTL, fix `usePress`, and more](https://react-spectrum.adobe.com/releases/2025-03-05.html)\n- 📦 [Ark UI 5.0 \\- Cross-framework headless UI library \\- Now faster and smaller](https://ark-ui.com/react/docs/overview/changelog#:~:text=.-,%5B5.0.0%5D%20%2D%202025%2D03%2D06)\n- 🎥 [Jack Herrington \\- React/Solid-JS Module Federation on TanStack\\!](https://www.youtube.com/watch?v=e8yY9ZgPozw)\n- 🎙️ [Front-end Fire 84 \\- TanStack Form v1, ByteDance Debuts Lynx, & VS Code AI Levels Up](https://front-end-fire.com/episodes/84/)",
+      "source_content_hash": "772fca4c656c45ef103c615a4fbb209b7ac7c791c85941daf90161be0f5580f1",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_36ab8340",
+        "en": "@@untranslatable_placeholder_36ab8340"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "68209f5c",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_68209f5c",
+        "en": "@@untranslatable_placeholder_68209f5c"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fe5fa73a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98355e36",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "[![Rethink your React apps' UX with Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)",
+      "source_content_hash": "804609ec6328a8526330cfc5adad935be6f942c9f6bea83ca6b8e73fae6136fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Repensez l'UX de vos apps React avec Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)",
+        "en": "[![Repensez l'UX de vos applications React avec Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "**[Rethink your React apps' UX with Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**",
+      "source_content_hash": "f7b9f2aa5aa41fe9981609c34e5443470e14f2d217842e63a917f26b83c5fe9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Repensez l'UX de vos apps React avec Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**",
+        "en": "**[Repensez l'UX de vos applications React avec Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "Reactile is an UI/UX turnkey framework which features an out-of-the-box, intuitive tiling display with workspaces. It encourages parallel workloads for large web solutions within a single browser tab. Implement your own view containers, widgets and logic using React and let Reactile handle the display for you.",
+      "source_content_hash": "df73b3ca217de2b962e5f9e6cd04001a923739eb32f5ef2c9f7e34d980f99a23",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Reactile est un framework UI/UX clé en main proposant un affichage en tuiles intuitif avec espaces de travail. Il facilite les charges de travail parallèles pour les solutions web complexes dans un seul onglet de navigateur. Implémentez vos propres conteneurs de vue, widgets et logique avec React, et laissez Reactile gérer l'affichage pour vous.",
+        "en": "Reactile est un framework clé en main pour l'UI/UX qui propose un affichage en tuiles intuitif prêt à l'emploi avec des espaces de travail. Il encourage les charges de travail parallèles pour les solutions web volumineuses au sein d'un seul onglet de navigateur. Implémentez vos propres conteneurs de vue, widgets et logique en utilisant React et laissez Reactile gérer l'affichage pour vous."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "On top of that, Reactile also offers:",
+      "source_content_hash": "c71c565a82c8c75ce60dc4fa8883e82871fe706100891d309b282c994e5f5106",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En plus, Reactile offre également :",
+        "en": "En plus de cela, Reactile offre également :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "887c863e",
+      "source_content": "- A promise-based persistence mechanism which permits a uniform workflow across time and on multiple devices.\n- The possibility to use nested tabs for your tiles.\n- A simplified global search mechanism.\n- CSS @container based responsiveness.\n- And much more.",
+      "source_content_hash": "42dde46b8aa1c52356856bf6d8e4d69ce853e6976dee7b06d748d400f975600d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Un mécanisme de persistance basé sur les promesses permettant un flux de travail uniforme dans le temps et sur plusieurs appareils.\n- La possibilité d'utiliser des onglets imbriqués pour vos tuiles.\n- Un mécanisme de recherche globale simplifié.\n- Une réactivité basée sur CSS @container.\n- Et bien plus encore.",
+        "en": "- Un mécanisme de persistance basé sur les promesses permettant un flux de travail uniforme dans le temps et sur plusieurs appareils.\n- La possibilité d'utiliser des onglets imbriqués pour vos tuiles.\n- Un mécanisme de recherche globale simplifié.\n- Une réactivité basée sur CSS @container.\n- Et bien plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "Version 2 coming out soon. Get started with your unique 30-day free trial. Learn more about it on reactile.net.",
+      "source_content_hash": "67c06d71c49f49d579b37262a90ca57cbc84ba8a53365d4b68cfd595d40324e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La version 2 sort bientôt. Commencez avec votre essai gratuit unique de 30 jours. Découvrez-en plus sur reactile.net.",
+        "en": "La version 2 arrive bientôt. Commencez avec votre essai gratuit unique de 30 jours. Apprenez-en plus sur reactile.net."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[Reactile - The new React UI management system](https://www.reactile.net/price?utm_source=ThisweekinReact)",
+      "source_content_hash": "ab4c3876551f7d8cd91e51fc877e8f8c6ce9cc36641b0f39ded9e98c4305f5b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Reactile - Le nouveau système de gestion UI pour React](https://www.reactile.net/price?utm_source=ThisweekinReact)",
+        "en": "[Reactile - Le nouveau système de gestion d'interface utilisateur React](https://www.reactile.net/price?utm_source=ThisweekinReact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ab3df6e6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c19de48a",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2d15468d",
+      "source_content": "- 💸 [Introducing native Passkeys support for Expo - Unlock one of the fastest growing auth strategies for your next project](https://go.clerk.com/I4o9cHy)\n- 🧵 [Callstack’s Lynx Deep Dive \\- The takeaways from a 3h livestream](https://threadreaderapp.com/thread/1898114457634500692.html)\n- 📜 [How React Native Reanimated Updates the Styles](https://blog.swmansion.com/how-react-native-reanimated-updates-the-styles-a-deep-dive-338ab22e9f21): A deep dive explaining how UI and native props are handled differently\n- 📜 [Local LLMs on Mobile Are a Gimmick—For Now](https://www.callstack.com/blog/local-llms-on-mobile-are-a-gimmick): An overview of the challenges running AI models on-device, such as model size/format, CPU/battery consumption, and quality/speed tradeoffs.\n- 📜 [Transitive Dependencies and React Native Autolinking](https://shift.infinite.red/transitive-dependencies-and-react-native-autolinking-d4d4b7a651cf): Transitive dependencies are not auto-linked for good reasons, and you need to declare them explicitly as `peerDependencies`.\n- 📜 [How to build a solid test harness for Expo apps](https://expo.dev/blog/how-to-build-a-solid-test-harness-for-expo-apps): Helps you adopt the right mindset to test your RN apps.\n- 📜 [React Native vs Lynx JS](https://shift.infinite.red/react-native-vs-lynx-js-b1fffb0f0152)\n- 📜 [An Android Developer's Guide to React Native](https://dev.to/amazonappdev/an-android-developers-guide-to-react-native-j66)\n- 📦 [React Native JavaScriptCore](https://github.com/react-native-community/javascriptcore): The Hermes runtime is widely used now, and the React Native team is extracting the JSC engine to a separate community repository. If you want to use JSC over Hermes, you can opt-in for it in RN 0.79. The built-in JSC will be removed in RN 0.81 or 0.82.\n- 📦 [Metro 0.82 \\- Enables `package.json#exports` resolution and lazy file hashing](https://github.com/facebook/metro/releases/tag/v0.82.0): Upgrade included in RN 0.79.\n- 📦 [React Native Worklets 0.1](https://github.com/software-mansion/react-native-reanimated/tree/main/packages/react-native-worklets): Software Mansion is extracting its Reanimated worklet system to a standalone multithreading library. WIP, we’ll probably know more soon.\n- 📦 [Galeria 1.0 \\- Universal image viewer](https://github.com/nandorojo/galeria/releases/tag/v1.0.0): Supports New Arch, Web, and works with any image component.\n- 📦 [Zeego 3.0 \\- Universal menus/dropdowns](https://github.com/nandorojo/zeego/releases/tag/v3.0.1): Supports New Arch, RN 0.77, Expo 52\n- 📦 [React Native Legal \\- Automagically generate dependency/license acknowledgment screens](https://github.com/callstackincubator/react-native-legal)\n- 📦 [React Native Executorch 0.3 \\- On-device AI experiences \\- Speech to Text, OCR](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.3.0)\n- 📦 [Radon IDE 1.4 \\- React Query DevTools, React Scan re-render outliner, JS sampling profiler](https://github.com/software-mansion/radon-ide/releases/tag/v1.4.0)\n- 📦 [Testing Library 13.1 \\- React 19 / React Native 0.78 support](https://github.com/callstack/react-native-testing-library/releases/tag/v13.1.0)\n- 📦 [React Native Emoji Popup \\- using native primitives \\- MCEmojiPicker on iOS, Emoji2 on Android](https://github.com/okwasniewski/react-native-emoji-popup)\n- 🎥 [Theo \\- Lynx is incredible (deep dive into Tiktok's React Native killer)](https://www.youtube.com/watch?v=No0k-TMRuMA)\n- 🎥 [Simon Grimm \\- Is React Native in trouble? (Lynx, React Native Framework & Vercel)](https://www.youtube.com/watch?v=aqgQatFPNSw)\n- 🎥 [Catalin Miron \\- Circular Carousel with Reanimated](https://www.youtube.com/watch?v=6Va1yBFdUxI)\n- 🎙️ [React Native Radio 324 \\- Migrating to Expo with Alfred Lieth Årøe](https://infinite.red/react-native-radio/rnr-324-migrating-to-expo-with-alfred-lieth-are)\n- 🎙️ [Rocket Ship 62 \\- Navigation, Styling & The State of React Native with Beto](https://share.transistor.fm/s/6a224b64)",
+      "source_content_hash": "58a9093fd920fae67e86f8d50469c08b8d0db54715dda8189d6e96840c47a5c6",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2d15468d",
+        "en": "@@untranslatable_placeholder_2d15468d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3d477c19",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36d6c3de",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres sujets {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9b1e67e",
+      "source_content": "- 📜 [Microsoft \\- A 10x Faster TypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/): The compiler is being ported to Go, should become 10x and land in TS 7.0. Learn more in this [Syntax.fm podcast](https://www.youtube.com/watch?v=ZlGza4oIleY) interview with the TypeScript team, notably why they choose to use Go over Rust.\n- 📜 [Web Almanac 2024 \\- JavaScript](https://almanac.httparchive.org/en/2024/javascript): The final chapter (JS) just dropped. React was found on 10% of pages (+25%) but still tiny compared to JQuery (74%).\n- 📜 [Node just added TypeScript support. What does that mean for Deno?](https://deno.com/blog/typescript-in-node-vs-deno): The 2 runtimes support TS in different ways. For example, Deno has built-in type-checking and JSX/TSX support.\n- 📜 [Inline rendering with document​.currentScript](https://leanrada.com/notes/inline-rendering-currentscript/)\n- 📜 [Reproducibility vs. Provenance: Trusting the JavaScript Supply Chain](https://blog.vlt.sh/blog/reproducibility)\n- 📦 [Fast-check 4.0 \\- Property-based testing framework](https://fast-check.dev/blog/2025/03/10/whats-new-in-fast-check-4-0-0/)",
+      "source_content_hash": "1ff4052a0c8791915b66a418d6cb9596b756fb1deadfde0f30d4623d4d60de82",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Microsoft - Un TypeScript 10x plus rapide](https://devblogs.microsoft.com/typescript/typescript-native-port/) : Le compilateur est porté vers Go, devrait devenir 10x plus rapide et arriver dans TS 7.0. En savoir plus dans ce [podcast Syntax.fm](https://www.youtube.com/watch?v=ZlGza4oIleY) avec l'équipe TypeScript, notamment pourquoi ils ont choisi Go plutôt que Rust.\n- 📜 [Web Almanac 2024 - JavaScript](https://almanac.httparchive.org/en/2024/javascript) : Le chapitre final (JS) vient de paraître. React est présent sur 10% des pages (+25%) mais reste minuscule comparé à JQuery (74%).\n- 📜 [Node vient d'ajouter le support TypeScript. Qu'est-ce que cela signifie pour Deno ?](https://deno.com/blog/typescript-in-node-vs-deno) : Les 2 runtimes gèrent TS différemment. Par exemple, Deno a une vérification de types intégrée et un support JSX/TSX.\n- 📜 [Rendu inline avec document​.currentScript](https://leanrada.com/notes/inline-rendering-currentscript/)\n- 📜 [Reproductibilité vs Provenance : Faire confiance à la chaîne d'approvisionnement JavaScript](https://blog.vlt.sh/blog/reproducibility)\n- 📦 [Fast-check 4.0 - Framework de tests basés sur les propriétés](https://fast-check.dev/blog/2025/03/10/whats-new-in-fast-check-4-0-0/)",
+        "en": "- 📜 [Microsoft \\- A 10x Faster TypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/) : Le compilateur est en cours de portage vers Go, devrait devenir 10 fois plus rapide et arriver dans TS 7.0. Apprenez-en plus dans cet entretien [Syntax.fm podcast](https://www.youtube.com/watch?v=ZlGza4oIleY) avec l'équipe TypeScript, notamment pourquoi ils ont choisi d'utiliser Go plutôt que Rust.\n- 📜 [Web Almanac 2024 \\- JavaScript](https://almanac.httparchive.org/en/2024/javascript) : Le dernier chapitre (JS) vient de paraître. React a été trouvé sur 10% des pages (+25%) mais reste minuscule comparé à JQuery (74%).\n- 📜 [Node just added TypeScript support. What does that mean for Deno?](https://deno.com/blog/typescript-in-node-vs-deno) : Les 2 runtimes prennent en charge TS de différentes manières. Par exemple, Deno dispose d'une vérification de types intégrée et de la prise en charge de JSX/TSX.\n- 📜 [Inline rendering with document​.currentScript](https://leanrada.com/notes/inline-rendering-currentscript/)\n- 📜 [Reproducibility vs. Provenance: Trusting the JavaScript Supply Chain](https://blog.vlt.sh/blog/reproducibility)\n- 📦 [Fast-check 4.0 \\- Property-based testing framework](https://fast-check.dev/blog/2025/03/10/whats-new-in-fast-check-4-0-0/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6868a9f",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "[![alt](/emails/issues/225/meme.jpg)](https://x.com/schlimmson/status/1895489183101440486)",
+      "source_content_hash": "50a3c87ecf154d9922a363d816add60d4eeda06a456bdfeaeef29e6c9d9eb9b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/225/meme.jpg)](https://x.com/schlimmson/status/1895489183101440486)",
+        "en": "[![alt](/emails/issues/225/meme.jpg)](https://x.com/schlimmson/status/1895489183101440486)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "[![alt](/emails/issues/225/meme2.jpg)](https://x.com/sebastienlorber/status/1899482883472961833)",
+      "source_content_hash": "c4e706ab43caf4aea2e1227ca32feee159bd90b2268a365a4b552026ef7d350f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/225/meme2.jpg)](https://x.com/sebastienlorber/status/1899482883472961833)",
+        "en": "[![alt](/emails/issues/225/meme2.jpg)](https://x.com/sebastienlorber/status/1899482883472961833)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/225/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.226714+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "b71bec387068cd68be11bd80c352de081577b01bdd4ab67e52851e82db10f2fd",
+    "en": "b71bec387068cd68be11bd80c352de081577b01bdd4ab67e52851e82db10f2fd"
+  }
+}

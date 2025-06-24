@@ -1,0 +1,176 @@
+---
+slug: /210
+title: "This Week In React #210: React 19 pre-warming, Next.js, IDE, TanStack, React Scan, MistCSS, PayloadCMS, Expo Workflows, Universal RSC, use dom, Yoga JSI, Skia, Turbo Haptics, TV, FastIO, SwiftUI, Angular 19..."
+authors: [matthieugicquel, cyrilbo]
+date: 11-20-2024
+---
+
+Bonjour à tous !
+
+Cyril et Matthieu de Theodo Apps (anciennement BAM) ici 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles de React et React Native !
+
+Grande nouvelle du monde React cette semaine ! React 19 est de retour en RC, six mois après le report de sa sortie initiale. Le suspense autour de Suspense s'atténue enfin avec l'introduction du préchauffage.
+
+Expo fait des vagues lors de son lancement et l'excitation ne cesse de croître ! 🚀
+
+Les nouveautés annoncées, **Expo Workflows**, promettent de révolutionner le CI/CD pour les applications React Native avec des travaux pré-packagés, une sélection intelligente des machines et une automatisation transparente — rationalisant ainsi l'ensemble du processus de publication.
+
+Par ailleurs, les **Universal React Server Components** dans Expo Router sont entrés en bêta, marquant une étape majeure dans le parcours vers un **développement React Native server-first**.
+
+Et la fête n'est pas encore terminée ! 🎉 Restez à l'écoute pour le numéro de la semaine prochaine, où nous plongerons dans encore plus d'annonces de la célébration en cours d'Expo.
+
+Consultez également notre conférence partenaire [React Paris 2025](https://react.paris/?utm_source=Newsletter&utm_medium=thisweekinreact) (🇫🇷 Paris - 20 & 21 mars). Lancez votre année avec l'une des premières conférences dev de 2025 ! Les intervenants incluent Dominik 'TkDodo' Dorfmeister, Kent C. Dodds et Aurora Scharff. Les CFP sont ouverts, et vous pouvez obtenir 20% de réduction sur les billets avec le code "TWIR" !
+
+Nous vous serions très reconnaissants si vous partagiez cette newsletter ou nous souteniez ici :
+
+- [X / Twitter](https://slo.im/last/x)
+- [Bluesky](https://slo.im/last/b)
+- [LinkedIn](https://slo.im/last/l)
+
+Plongeons-nous dedans ! 🚀
+
+<!-- truncate -->
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Handsontable : Grille de données avancée pour votre application React](/emails/issues/206/handsontable.jpg)](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirnov20)
+
+**[Handsontable : Grille de données avancée pour votre application React](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirnov20)**
+
+Handsontable est [une grille de données riche en fonctionnalités](https://handsontable.com/demo?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirnov20) conçue pour les développeurs React qui ont besoin d'une solution puissante, personnalisable et accessible pour gérer des données complexes.
+
+- Une interface unique **semblable à un tableur** avec tri, filtrage et opérations CRUD
+- Des opérations avancées comme la mise en forme conditionnelle et **400 formules intégrées**, similaires à Excel
+- **Éditeurs et rendus personnalisables**, permettant des menus déroulants, des menus ou des composants personnalisés dans les cellules de la grille pour s'adapter à des cas d'utilisation spécifiques
+- **Performance optimisée** pour des interactions fluides et réactives
+- **Accessibilité avec conformité WCAG 2.1** pour une meilleure prise en charge des utilisateurs en situation de handicap
+
+Handsontable s'adapte à divers cas d'utilisation, des applications d'entreprise aux sites web simples, offrant des performances et une flexibilité appréciées par les entreprises du monde entier.
+
+[Commencez dès aujourd'hui !](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirnov20)
+
+---
+
+## ⚛️ React {#react}
+
+[![React 19 RC1](/emails/issues/210/react19.jpg)](https://github.com/facebook/react/issues/29898#issuecomment-2477449973)
+
+[**React 19 RC1 - Préchargement des composants frères**](https://github.com/facebook/react/issues/29898#issuecomment-2477449973)
+
+Nous avions expliqué comment la sortie initiale de React 19 avait été annulée à cause d'un changement dans Suspense qui aurait provoqué des cascades de chargement dans les applications utilisant Suspense sans démarrer les récupérations de données dans les gestionnaires d'événements.  
+L'équipe React a travaillé dur pour réintroduire le prérendu des composants frères avec Suspense sans causer de régressions de performances pour les applications qui démarrent les récupérations tôt. Leur solution est maintenant prête et s'appelle le [préchargement (pre-warming)](https://react.dev/blog/2024/04/25/react-19-upgrade-guide#improvements-to-suspense). Dominik, le mainteneur de React Query qui avait alerté sur ce problème, [a confirmé être satisfait du correctif](https://bsky.app/profile/tkdodo.eu/post/3layw6wk5bs2b).  
+Comme d'habitude, les nouvelles fonctionnalités étaient déjà disponibles dans Next.JS (qui utilise la version canary de React). Elles incluent les composants serveur et les actions, le nouveau hook `use`, des améliorations pour la gestion des formulaires (`useFormStatus` et `useOptimistic`), et un petit changement longtemps attendu : `forwardRef` n'est plus nécessaire !
+
+---
+
+- 💸 [Omlet – Scan your repo and measure how and where React components are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-nov-2024)
+- 👀 [Next.js segment cache initial implementation](https://github.com/vercel/next.js/pull/72875): A rewrite of App Router's client caching implementation, designed with PPR and "use cache" in mind. Not production-ready at all, but in the future Next will cache by route segment instead of by full URL.
+- 👀 [React Query may soon have a unified staleTime per query](https://github.com/TanStack/query/pull/8313) instead of one per “observer” (e.g. each `useQuery`). This will be less flexible but certainly easier to reason about.
+- 👀 [React IDE](https://youtu.be/C8Mg-NSyqWg?t=14452): Mofei (React Compiler team) unveils at React Summit the plan to work on a VSCode extension powered by the compiler. Don't get too excited, because we don't know much about it yet!
+- 👀 [TanStack Start is officially in beta](https://bsky.app/profile/tannerlinsley.com/post/3lbdl4zp2ns2n)
+- 📖 [The Road to Next](https://www.road-to-next.com/): Robin Wieruch launched his paid Next.js 15 course with early access discounts.
+- 🗓️ [React Day Berlin](https://reactday.berlin/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇩🇪 Berlin - 13 & 16 December - Hurry and grab your ticket to the conference as prices are about to go up! And don’t forget your discount with code “TWIR”.
+- 📜 [Essential Typescript for React](https://www.jacobparis.com/content/react-ts): A concise article on the most valuable tips to be productive.
+- 📜 [Be careful with useSyncExternalStore](https://www.nico.fyi/blog/be-careful-with-usesyncexternalstore): implementation of a `useLocalStorage` hook using `useSyncExternalStore` and `superjson`.
+- 📜 [5 differences between React server components and server-side rendering](https://www.tymzap.com/blog/5-differences-between-react-server-components-and-server-side-rendering): At this point you already know that they are not at all the same. This recaps the concrete differences between the two.
+- 📜 [Design System: from scratch or from the shelf?](https://www.voorhoede.nl/en/blog/design-system-from-scratch-from-the-shelf/)
+- 📜 [What are React Portals?](https://techhub.iodigital.com/articles/what-are-react-portals)
+- 📜 [Creating your own React design system analytics tool with react-scanner](https://alexocallaghan.com/creating-your-own-react-design-system-analytics-tool)
+- 📜 [Quick Guide to Building a PWA with Next.js](https://playfulprogramming.com/posts/pwa-nextjs-guide)
+- 📜 [Vercel - Skew Protection is now enabled by default for new projects](https://vercel.com/changelog/skew-protection-is-now-enabled-by-default-for-new-projects)
+- 📜 [React Anti-Pattern: Stop Passing Setters Down the Components Tree](https://matanbobi.dev/posts/stop-passing-setter-functions-to-components)
+- 📦 [react-scan](https://github.com/aidenybai/react-scan): The MillionJS team released a new tool to find performance issues (re-renders) in React apps.
+- 📦 [PayloadCMS 3.0 \- Seamless integration with Next.js app router](https://github.com/payloadcms/payload/releases/tag/v3.0.0): The CMS can now run seamlessly within your existing Next.js app, exposing a `withPayload()` plugin.
+- 📦 [MistCSS 1.0](https://github.com/typicode/mistcss): Instead of generating full React components from CSS, the library now bets on generating types to enhance intrinsic React JSX elements. Interesting idea!
+- 🎥 [Jack Herrington - “use cache” NextJS’s latest take on data caching](https://www.youtube.com/watch?v=ZDRGEewXkrs)
+- 🎥 [Theo - How To Avoid Big Serverless Bills](https://www.youtube.com/watch?v=jsuNjCAngnQ): Various tips for Vercel or Next.js users.
+- 🎥 [React Summit US - Live Stream](https://www.youtube.com/watch?v=C8Mg-NSyqWg)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Libérez la puissance des documents dans vos apps React !](/emails/issues/209/nutrient.jpg)](https://www.nutrient.io/sdk/web)
+
+**[Libérez la puissance des documents dans vos apps React !](https://www.nutrient.io/sdk/web)**
+
+À l'attention des passionnés de React : PSPDFKit est désormais **Nutrient** ! 👋 Nous avons peut-être un nouveau nom, mais notre SDK Web reste le choix premium que vous connaissez pour visualiser, annoter et éditer des PDF et autres types de documents.
+
+- 🏎️ Démarrez rapidement avec un essai gratuit et une documentation exhaustive
+- ⏱️ Gagnez du temps en développement en exploitant l'interface élégante intégrée et **Baseline-UI**, notre nouveau système de design
+- 🛠️ Tirez parti d'APIs étendues pour le traitement et la personnalisation
+- 🆘 Bénéficiez de notre équipe de support et d'ingénierie pour obtenir l'aide d'experts du domaine
+
+Nous vous couvrons sur **toutes les plateformes**, du mobile au backend.
+
+Vous voulez résoudre des problèmes complexes et avoir un **impact sur des centaines d'applications** ? Consultez nos postes ouverts comme [Développeur Frontend Senior](https://www.nutrient.io/company/careers/web-frontend).
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo Workflows](/emails/issues/210/workflows.jpg)](https://expo.dev/blog/expo-workflows-automate-your-release-process)
+
+[**Expo Workflows**](https://expo.dev/blog/expo-workflows-automate-your-release-process)
+Expo a annoncé "Workflows", un nouvel outil CI/CD pour les applications React Native et Expo qui simplifie et accélère les publications d'apps avec des jobs pré-packagés (comme des tests E2E utilisant Maestro), des workflows automatisés et une sélection intelligente de machines pour des performances optimales. Bien que ce ne soit pas un remplacement direct des solutions CI/CD plus générales comme GitHub Actions, il promet des améliorations passionnantes à explorer.
+
+🎉 La [Expo Launch Party](https://expo.dev/launch-party) est toujours en cours. Ne manquez pas leurs annonces !
+
+- 📣 [Expo - Présentation de la mise en pause des canaux pour EAS Update : Mettez vos canaux en pause via la page web ou la CLI eas](https://expo.dev/changelog/2024/11-14-channel-pausing)
+- 📜 [Composants serveur React universels dans Expo Router (en bêta)](https://expo.dev/blog/universal-react-server-components-developer-preview) : Expo Router introduit pour la première fois des composants serveur React universels, permettant le rendu côté serveur dans les applications natives et web. Bien que non prêt pour la production en raison de l'indisponibilité des exports de production et principalement destiné aux auteurs de bibliothèques, c'est un développement passionnant car il permet un accès direct côté serveur à des ressources comme les secrets, les bases de données et les systèmes de fichiers, simplifiant le développement et améliorant les performances en éliminant les allers-retours client-serveur.
+- 📜 [La magie des composants DOM d'Expo](https://expo.dev/blog/the-magic-of-expo-dom-components) : Les composants DOM d'Expo facilitent l'intégration de fonctionnalités web dans les applications React Native, en combinant la rapidité des WebViews avec une migration native progressive. Bien que limités par les performances des WebViews et la compatibilité avec certaines fonctionnalités d'Expo, les futures mises à jour visent à améliorer l'intégration native et à optimiser les performances.
+
+---
+
+- 💸 [notJust Hack - le meilleur hackathon en ligne pour les développeurs React Native. Ce décembre - construisez, lancez, rivalisez et gagnez des prix !](https://bit.ly/4fDgOXX)
+- 📖 [Maîtriser le grand écran : Guide React Native pour la télévision](https://www.callstack.com/ebook/mastering-the-big-screen-react-native-for-tv-guidebook)
+- 🐦 [Oskar a réalisé un POC de navigation adaptive Jetpack Compose pour react-native-bottom-tabs](https://x.com/o_kwasniewski/status/1858620684706214095)
+- 🐦 [Mike a démontré un téléchargement de fichier de 1,2 Go sur le réseau avec React Native FastIO](https://x.com/grabbou/status/1858920818744389947)
+- 🐦 [Jay prépare un nouveau composant List, nom de code Legend List, qui pourrait être encore plus rapide que FlashList](https://x.com/jmeistrich/status/1855663310386958840)
+- 🐦 [Composant SwiftUI MeshGradient dans React Native grâce à une nouvelle fonctionnalité des Expo Modules pas encore annoncée dans Expo SDK 52](https://bsky.app/profile/tsapeta.dev/post/3lbf2kw75t22y)
+- 📜 [Comment intégrer React Native à une application existante](https://www.callstack.com/blog/how-to-integrate-react-native-with-an-existing-app)
+- 📦 [React Native 0.76.2](https://github.com/facebook/react-native/releases/tag/v0.76.2)
+- 📦 [React Native Executorch 0.1 \- Exécutez des modèles d'IA sur l'appareil, propulsé par ExecuTorch](https://blog.swmansion.com/introducing-react-native-executorch-2bdb87592884)
+- 📦 [React Native SVG 15.9 \- Nouveaux filtres FeDropShadow et FeComposite](https://github.com/software-mansion/react-native-svg/releases/tag/v15.9.0)
+- 📦 [React Native Gesture Handler 2.21 \- Geste de panoramique à deux doigts sur le web, nouveau composant `ReanimatedDrawerLayout`](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.21.0)
+- 📦 [React Native Screens 4.1 & 4.2 \- Correction des problèmes d'animation des modales iOS sur l'ancienne architecture, prise en charge de l'en-tête large transparent sur iOS](https://github.com/software-mansion/react-native-screens/releases/tag/4.2.0)
+- 📦 [React Native Video 6.8 \- Prise en charge du Web et mise en cache vidéo HLS](https://github.com/TheWidlarzGroup/react-native-video/releases/tag/v6.8.0)
+- 📦 [React Native Skia 1.5.4 \- Backend Graphite (Vulkan/Metal) expérimental via un flag de compilation](https://github.com/Shopify/react-native-skia/releases/tag/v1.5.4)
+- 📦 [React Native Turbo Haptics \- Retour haptique rapide et compatible avec les worklets](https://github.com/christianbaroni/react-native-turbo-haptics)
+- 📦 [React Native Yoga JSI 0.1](https://github.com/Swami-Laxmikant/react-native-yoga-jsi) : Cette bibliothèque expérimentale vous donne accès aux API Yoga côté JS. Elle peut être utilisée avec des bibliothèques comme React Native Skia pour disposer des éléments sur un canvas.
+- 🎙️ [Rocket Ship 54 \- Jeu musical React Native avec Kim Chouard (Skia, NativeWind, Expo AV)](https://share.transistor.fm/s/34b8c9fc)
+- 🎥 [Simon Grimm \- Expo SDK 52 : DOM, RSC, Router, New Architecture & Packages](https://www.youtube.com/watch?v=OROMGU3jq6E)
+
+---
+
+## 🔀 Autre {#other}
+
+- 👀 [Deno - Prise en charge de l'importation de modules wasm](https://github.com/denoland/deno/issues/2552)
+- 👀 [Proposition ES TC39 `import.sync()` en étape 0](https://github.com/guybedford/proposal-import-sync)
+- 📜 [Programmes exécutables autonomes avec Deno Compile](https://deno.com/blog/deno-compile-executable-programs)
+- 📜 [Annoter les traces directement dans le panneau Performance des Chrome DevTools](https://developer.chrome.com/blog/devtools-annotations?hl=en)
+- 📜 [Dependencies vs. devDependencies pour les applications JavaScript](https://angelika.me/2024/11/11/dependencies-vs-dev-dependencies-javascript-apps/)
+- 📦 [Angular 19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84)
+- 📦 [Bun v1.1.35](https://bun.sh/blog/bun-v1.1.35)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![React 19 arrive](/emails/issues/210/meme2.jpg)](https://bsky.app/profile/sebastienlorber.com/post/3lay3dhefgc2o)
+
+[![Les fonctions inlinées cassent la mémoïsation](/emails/issues/210/meme1.jpg)](https://x.com/shuding_/status/1844678879748723059)
+
+[![Bien joué Angular](/emails/issues/210/meme3.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3lbfdts6p6c27)
+
+À bientôt ! 👋

@@ -1,0 +1,673 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/158/index.mdx",
+  "source_file_content_hash": "c0aa5c4c174aaa3e01adde1a698420f2699a91e1a3a94ae7c75c7394f2d7c826",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /158\ntitle: \"This Week In React #158: Astro, Server Components, VisionCamera, Owner Tree, Props Drilling, Next.js, Remix, Chakra, TypeScript, Skia, Biome, CSS, Node.js...\"\nauthors: [slorber]\ndate: 09-06-2023\n---",
+      "source_content_hash": "707714d5c6a99bd33b774f1fbe76d9b5f1956624ee365c1bd1e84c56476585a5",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Salut à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "We're covering 2 weeks of news, including 2 great releases: Astro 3.0 and VisionCamera 3.0. There have also been a lot of interesting articles, so I've had to filter a bit!",
+      "source_content_hash": "43e6fb994183c928d60506b9f5f12d6a5ce77dbb9e70354db38ec340f7527c89",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous couvrons deux semaines d'actualités, dont deux grandes sorties : Astro 3.0 et VisionCamera 3.0. Il y a également eu de nombreux articles intéressants, j'ai donc dû effectuer une sélection !",
+        "en": "Nous couvrons 2 semaines d'actualités, dont 2 grandes versions : Astro 3.0 et VisionCamera 3.0. Il y a également eu beaucoup d'articles intéressants, j'ai donc dû faire une sélection !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Bun 1.0 coming out tonight. I'm curious to see what they have planned. Having tested it on unit tests as a replacement for Jest, it's really very fast.",
+      "source_content_hash": "4ba05450aae9b384a0293d5a189ad376143d7453fb294d5a99adc5a01c80f54f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bun 1.0 sort ce soir. Je suis curieux de voir ce qu'ils ont prévu. L'ayant testé sur des tests unitaires en remplacement de Jest, c'est vraiment très rapide.",
+        "en": "Bun 1.0 sort ce soir. Je suis curieux de voir ce qu'ils ont prévu. L'ayant testé sur des tests unitaires en remplacement de Jest, c'est vraiment très rapide."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The React-Native EU conference kicks off today. I spotted some [🐦 very interesting talks](https://twitter.com/sebastienlorber/status/1696837186677530813), particularly the one on Static Hermes.",
+      "source_content_hash": "8898bb130a18b75ba14ccdb751538ec607d27b53ede4cf3fa24f6bdca1ecfb91",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La conférence React-Native EU commence aujourd'hui. J'ai repéré [🐦 des conférences très intéressantes](https://twitter.com/sebastienlorber/status/1696837186677530813), notamment celle sur Static Hermes.",
+        "en": "La conférence React-Native EU démarre aujourd'hui. J'ai repéré [🐦 des présentations très intéressantes](https://twitter.com/sebastienlorber/status/1696837186677530813), en particulier celle sur Static Hermes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "For those who want to visit Italy, go to [reactjsday](https://2023.reactjsday.it/) in Verona on 27 October 27. The conference is offering [-10% on tickets](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) and 2 online/remote tickets to our readers, which I'm giving away to the first 2 people who reply to this email and claim them.",
+      "source_content_hash": "3bc9e5e40179434784059f69955c8c0b626e9bbc469b4bcd1d3e6cd2ea2300ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pour ceux qui souhaitent visiter l'Italie, rendez-vous au [reactjsday](https://2023.reactjsday.it/) à Vérone le 27 octobre. La conférence offre [-10% sur les billets](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) et 2 billets en ligne/à distance à nos lecteurs, que j'offre aux deux premières personnes qui répondront à cet email et les réclameront.",
+        "en": "Pour ceux qui veulent visiter l'Italie, rendez-vous à [reactjsday](https://2023.reactjsday.it/) à Vérone le 27 octobre. La conférence offre [-10% sur les billets](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) et 2 billets en ligne/distance à nos lecteurs, que je donne aux 2 premières personnes qui répondent à cet e-mail et les réclament."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "I often forget to mention it here, but I \"build in public\". You can check out my latest [monthly Indie Hackers report](https://www.indiehackers.com/product/french-react-newsletter) and [🐦 more Twitter details](https://twitter.com/sebastienlorber/status/1699065823959421109).",
+      "source_content_hash": "ae5b4935ed192c5d90726efd5e44d569a28d54e7265cef301b34d02d9e0143c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'oublie souvent de le mentionner ici, mais je \"construis en public\". Vous pouvez consulter mon dernier [rapport mensuel Indie Hackers](https://www.indiehackers.com/product/french-react-newsletter) et [🐦 plus de détails sur Twitter](https://twitter.com/sebastienlorber/status/1699065823959421109).",
+        "en": "J'oublie souvent de le mentionner ici, mais je \"construis en public\". Vous pouvez consulter mon [dernier rapport mensuel Indie Hackers](https://www.indiehackers.com/product/french-react-newsletter) et [🐦 plus de détails sur Twitter](https://twitter.com/sebastienlorber/status/1699065823959421109)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c6da205d",
+        "en": "@@untranslatable_placeholder_c6da205d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf4363fc",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_cf4363fc",
+        "en": "@@untranslatable_placeholder_cf4363fc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2a3434e4",
+        "en": "@@untranslatable_placeholder_2a3434e4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2b28cb1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)",
+      "source_content_hash": "e96aeff1c184cfddd36951dcd8b9dcd5e7ea04446488676a8b1e507fe2251a9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)",
+        "en": "[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "**[FrontendMasters – Complete React.js Learning Path to Senior React Developer](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**",
+      "source_content_hash": "096b3d9bc3d7b486e46be5772b2705462e0dc3d5e9d9acc07c30f6f2d93e6ace",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[FrontendMasters – Parcours d'apprentissage complet React.js pour développeur React senior](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**",
+        "en": "**[FrontendMasters – Parcours d'apprentissage complet React.js pour devenir développeur React senior](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Learn React.js from the ground up to advanced topics like performance, testing, and code quality. Start by building a real-world app in the Complete Introduction to React. Continue with Intermediate React, integrating the most popular tools from the ecosystem. Then learn performance, TypeScript, and even Next.js, the fullstack React framework!",
+      "source_content_hash": "e17c755b1aba7ee0aa6d9a6d04fb708ada63619379555fc2d4d852b7115f5723",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Apprenez React.js depuis les bases jusqu'aux sujets avancés comme les performances, les tests et la qualité du code. Commencez par créer une application réelle dans l'introduction complète à React. Poursuivez avec React intermédiaire en intégrant les outils les plus populaires de l'écosystème. Puis étudiez les performances, TypeScript et même Next.js, le framework React fullstack !",
+        "en": "Apprenez React.js depuis les bases jusqu'aux sujets avancés comme les performances, les tests et la qualité du code. Commencez par construire une application réelle dans l'Introduction Complète à React. Continuez avec React Intermédiaire, en intégrant les outils les plus populaires de l'écosystème. Puis apprenez les performances, TypeScript, et même Next.js, le framework React fullstack !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![Astro 3.0](/emails/issues/158/astro3.jpg)](https://astro.build/blog/astro-3/)",
+      "source_content_hash": "e0707c3158c4412dbb699a5d49af01842b21d71a70e1a6bfb4b9cc3bb50ea646",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Astro 3.0](/emails/issues/158/astro3.jpg)](https://astro.build/blog/astro-3/)",
+        "en": "[![Astro 3.0](/emails/issues/158/astro3.jpg)](https://astro.build/blog/astro-3/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[**Astro 3.0**](https://astro.build/blog/astro-3/)",
+      "source_content_hash": "393bd24581d90e8ada9680cde4e167ea5f9dd351c14a79243d635aced67b278f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Astro 3.0**](https://astro.build/blog/astro-3/)",
+        "en": "[**Astro 3.0**](https://astro.build/blog/astro-3/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "This new version of Astro innovates in particular through the use of the new View Transition API, and the ability to navigate fluidly and animatedly from one page to another, while preserving the state of the components displayed. This reduces the need for a SPA in many use cases.",
+      "source_content_hash": "748404677976d886fce88f58a699d21db3e100e99c751d8e9a40ca4e0e97abba",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette nouvelle version d'Astro innove notamment grâce à l'utilisation de la nouvelle View Transition API, permettant une navigation fluide et animée entre les pages tout en préservant l'état des composants affichés. Cela réduit le besoin d'une SPA dans de nombreux cas d'usage.",
+        "en": "Cette nouvelle version d'Astro innove notamment par l'utilisation de la nouvelle API View Transition, et la capacité à naviguer de manière fluide et animée d'une page à l'autre, tout en préservant l'état des composants affichés. Cela réduit le besoin d'une SPA dans de nombreux cas d'usage."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "Other notable improvements include:",
+      "source_content_hash": "ba3bcd3f41729d5aeb0c3f75bbdff97656ae4dbc440e086ce56f849068c4fe36",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Autres améliorations notables :",
+        "en": "Autres améliorations notables :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "- Image Optimization stable\n- Faster Rendering Performance: Astro components render 30-75% faster.\n- SSR Enhancements for Serverless: New ways to connect to your hosting platform.\n- HMR Enhancements for JSX: Fast Refresh support for React and Preact.\n- Optimized Build Output: Cleaner and more performant HTML.",
+      "source_content_hash": "51860e44aa1de5031293377ad96eb3853bbf3831dd8d81570f85e93daf6ad609",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Optimisation d'images stable\n- Performances de rendu accrues : les composants Astro rendent 30 à 75% plus vite\n- Améliorations SSR pour Serverless : nouvelles méthodes de connexion à votre plateforme d'hébergement\n- Améliorations HMR pour JSX : prise en charge de Fast Refresh pour React et Preact\n- Sortie de build optimisée : HTML plus propre et performant",
+        "en": "- Optimisation d'image stable\n- Performances de rendu plus rapides : les composants Astro rendent 30 à 75 % plus vite.\n- Améliorations SSR pour Serverless : De nouvelles façons de se connecter à votre plateforme d'hébergement.\n- Améliorations HMR pour JSX : Prise en charge de Fast Refresh pour React et Preact.\n- Sortie de build optimisée : HTML plus propre et plus performant."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e2fed468",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "[![Making Sense of React Server Components](/emails/issues/158/rsc.jpg)](https://www.joshwcomeau.com/react/server-components/)",
+      "source_content_hash": "6cc9fc45315c88896d3b474362b2bbb62fc217be08b57eac90e2abfa815dfda4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Making Sense of React Server Components](/emails/issues/158/rsc.jpg)](https://www.joshwcomeau.com/react/server-components/)",
+        "en": "[![Making Sense of React Server Components](/emails/issues/158/rsc.jpg)](https://www.joshwcomeau.com/react/server-components/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "[**Making Sense of React Server Components**](https://www.joshwcomeau.com/react/server-components/)",
+      "source_content_hash": "7994f509b6759c9fe2e05636f238df9a48b3708c72fdcd8f63d935d7af79fb0c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Comprendre les React Server Components**](https://www.joshwcomeau.com/react/server-components/)",
+        "en": "[**Comprendre les React Server Components**](https://www.joshwcomeau.com/react/server-components/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "Josh Comeau is back with a great introduction to React Server Components, taken from his [course](https://www.joyofreact.com/) that should become available next week. The many animated diagrams make it easy to understand this new React paradigm.",
+      "source_content_hash": "09b5307f3e21493ba1a1998f28455364217feaf950d06865d4f55504866276bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Josh Comeau est de retour avec une excellente introduction aux Composants Serveur React, extraite de son [cours](https://www.joyofreact.com/) qui devrait être disponible la semaine prochaine. Les nombreux diagrammes animés facilitent la compréhension de ce nouveau paradigme React.",
+        "en": "Josh Comeau revient avec une excellente introduction aux React Server Components, tirée de son [cours](https://www.joyofreact.com/) qui devrait être disponible la semaine prochaine. Les nombreux diagrammes animés facilitent la compréhension de ce nouveau paradigme React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e874d9e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "- 💸 [Zero To Shipped - Master Fast-Paced Fullstack Development and **Finally** ship that product](https://www.zerotoshipped.com/)\n- 🐦 [Remix v2 pre-release](https://twitter.com/remix_run/status/1696525340640936190): if you have already enabled [future flags v2](https://remix.run/blog/future-flags), you should be able to upgrade easily and remove these flags.\n- 🐦 [Dan Abramov joins Bluesky](https://twitter.com/dan_abramov/status/1695566446007386214): Dan has left Meta and joined this Twitter competitor based on a cross-platform Expo app. I think this is great news, we may have gained a great evangelist [to promote cross-platform and Expo](https://twitter.com/dan_abramov/status/1699476986727399933).\n- 🐦 [WIP testing docs for Next.js App Router](https://twitter.com/leeerob/status/1698758756924825723)\n- 🧑‍🎓 [Next.js App Router - Forms and Mutations docs](https://nextjs.org/docs/app/building-your-application/data-fetching/forms-and-mutations): new doc page explaining the use of Server Actions and the React `useFormStatus` and `useOptimistic` hooks.\n- 💬 [Next.js Tim Neutkens' Deep Dive - Caching and Revalidating](https://github.com/vercel/next.js/discussions/54075)\n- 📜 [Parents & Owners in React: Data Flow](https://julesblom.com/writing/parents-owners-data-flow): original interactive and visual article, explaining the problem of props drilling and how to avoid it with slotted components. Explains the concepts of parent tree and owner tree. The props drilling problem becomes clearly visible in the diagrams.\n- 📜 [Challenging Established Norms: Making Component Fetching the Exception](https://jjenzz.com/making-component-fetching-the-exception/): an interesting thought that encourages you to run your queries at route level to avoid waterfalls, and use composition to avoid props drilling.\n- 📜 [Rust Server Components](https://anto.pt/articles/rust-server-components): proposes to partially reproduce RSC, MDX and Suspense using Rust, HTMX and a few other libs. \"the Rust equivalent of T3 Stack\". Nice to read, even though I don't do Rust. Not convinced that the end result solves all the problems RSCs do.\n- 📜 [Chakra, Panda and Ark - What's the plan?](https://www.adebayosegun.com/blog/chakra-panda-ark-whats-the-plan): Segun answers a number of questions about his libraries. Chakra v3 arrives in Q4, but will still use Emotion. The addition of \"use client\" makes it easier to use in RSCs. Adoption of the Radix `asChild` pattern.\n- 📜 [How to Pass a Component as a Prop in React](https://www.totaltypescript.com/pass-component-as-prop-react): Matt shares some TypeScript + React typing tips. The type to implement \"as\" prop is quite scary 😬.\n- 📜 [Handling type-safe toast notifications with zod in Remix applications](https://alemtuzlak.hashnode.dev/handling-toasts-in-remix): explains how to use the Remix flash session to give feedback after an action.\n- 📜 [Optimizing Next.js cold starts for Vercel](https://holocron.so/blog/optimizing-next.js-cold-starts-for-vercel)\n- 📜 [Strongly Typing React Props with TypeScript](https://www.totaltypescript.com/react-props-typescript)\n- 📜 [You Might Not Need A useEffectAsync Hook](https://krassnig.dev/blog/you-might-not-need-a-use-effect-async-hook.html)\n- 📜 [Web Developers, CSS-in-JS is Ruining Your Product](https://cord.com/blog/migrating-from-css-in-js-to-vanilla-extract)\n- 📜 [Build your own headless UI components](https://www.jacobparis.com/content/react-headless-submenus)\n- 📜 [Building a toast component](https://emilkowal.ski/ui/building-a-toast-component)\n- 📦 [next-flat-routes](https://github.com/ifyio/next-flat-routes)\n- 📦 [Puck - Self-hosted drag and drop editor for React](https://github.com/measuredco/puck)\n- 📦 [react-prod-sourcemaps](https://github.com/markerikson/react-prod-sourcemaps)\n- 📦 [Reshaped 2.2 - Now available on NPM](https://reshaped.so/content/blog/2.2)\n- 👥 [reactjsday](https://2023.reactjsday.it/) (Verona 🇮🇹, Octobre 27, 2023) is offering us [-10% on conference tickets](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) with code \"media_TWIR\"",
+      "source_content_hash": "7858262517c249d901fe4a8eee938ea3d0ed80bcb70f9459741e1ba0b12d748d",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_645e08e3",
+        "en": "@@untranslatable_placeholder_645e08e3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9cb0b344",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_9cb0b344",
+        "en": "@@untranslatable_placeholder_9cb0b344"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cb0bf89b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5baf88e2",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Partenaire {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "[![A Non-Cloud Alternative to Google Forms that has it all](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)",
+      "source_content_hash": "9d06d7f1c0eb344879cf9f225aa0f8c69ceb29f2b0cc01c6ab33c401ccb9fd8d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Une alternative non-cloud à Google Forms qui a tout pour plaire](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)",
+        "en": "[![A Non-Cloud Alternative to Google Forms that has it all](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "**[A Non-Cloud Alternative to Google Forms that has it all](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**",
+      "source_content_hash": "3cf735c90f1e64ebbaadd40cbca7c1e97fb9ce688c88a0419e11d5219a842106",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Une alternative non-cloud à Google Forms qui a tout pour plaire](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**",
+        "en": "**[Une alternative non-cloud à Google Forms qui a tout pour plaire](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "If you are looking to set up a robust form management system fully integrated in your IT infrastructure that allows you to retain full control over the data flow, and you don’t want to spend months and thousands of dollars to get it up and running, then SurveyJS is the way to go!",
+      "source_content_hash": "9b65e3311009ca0dcdaf514fcb31fc043c9dfce07b4c4d6da60ea71fa738cd1c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Si vous cherchez à mettre en place un système robuste de gestion de formulaires entièrement intégré à votre infrastructure informatique, vous permettant de conserver un contrôle total sur le flux de données, sans passer des mois ni dépenser des milliers de dollars pour le déployer, alors SurveyJS est la solution idéale !",
+        "en": "Si vous cherchez à mettre en place un système robuste de gestion de formulaires entièrement intégré à votre infrastructure informatique, vous permettant de conserver le contrôle total du flux de données, et que vous ne voulez pas passer des mois et dépenser des milliers de dollars pour le mettre en place, alors SurveyJS est la solution !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "SurveyJS is a product suite of four open-source JavaScript libraries that allow you to create and edit multiple dynamic JSON-based forms in a drag-and-drop form builder, render them in your React app and store sensitive survey data within your in-house infrastructure. You can then render your custom surveys and forms as editable PDF files in a browser and visualize survey results with interactive charts and tables. [Learn more now](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email).",
+      "source_content_hash": "300205df37634d8ea4dd8f062be0e9a07b1df492da9e7a8b92377e55bf7a7328",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "SurveyJS est une suite de quatre bibliothèques JavaScript open-source qui permettent de créer et modifier plusieurs formulaires dynamiques basés sur JSON via un constructeur par glisser-déposer, de les afficher dans votre application React et de stocker les données sensibles des enquêtes au sein de votre propre infrastructure. Vous pouvez ensuite afficher vos enquêtes et formulaires personnalisés sous forme de fichiers PDF modifiables dans un navigateur et visualiser les résultats avec des graphiques et tableaux interactifs. [En savoir plus](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email).",
+        "en": "SurveyJS est une suite produit de quatre bibliothèques JavaScript open-source qui vous permettent de créer et modifier plusieurs formulaires dynamiques basés sur JSON dans un constructeur de formulaires par glisser-déposer, de les afficher dans votre application React et de stocker les données sensibles des enquêtes dans votre infrastructure interne. Vous pouvez ensuite afficher vos enquêtes et formulaires personnalisés sous forme de fichiers PDF modifiables dans un navigateur et visualiser les résultats d'enquête avec des graphiques et tableaux interactifs. [En savoir plus maintenant](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "05765487",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1f4b3b94",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "[![VisionCamera 3.0](/emails/issues/158/visioncamera3.jpg)](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)",
+      "source_content_hash": "b566c565e76f9348085f4f48f7582af51ab3d2772aa21aaad3bc08fb4a57119b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![VisionCamera 3.0](/emails/issues/158/visioncamera3.jpg)](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)",
+        "en": "[![VisionCamera 3.0](/emails/issues/158/visioncamera3.jpg)](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "[**VisionCamera 3.0**](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)",
+      "source_content_hash": "65b205e9238b81bd53739769f72de6a5df541e4a8edc406263688a717d64dabb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**VisionCamera 3.0**](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)",
+        "en": "[**VisionCamera 3.0**](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "The new version of VisionCamera has just been released. Highlights:",
+      "source_content_hash": "833245e83a21031739f0b2a20acb6bf48c56dbff14d88682b9e282505cca9611",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La nouvelle version de VisionCamera vient de sortir. Points forts :",
+        "en": "La nouvelle version de VisionCamera vient de sortir. Points forts :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d56fc0d",
+      "source_content": "- Full Android Camera2 rewrite\n- Custom GPU OpenGL Video Pipeline\n- New Camera Features\n- New Frame Processor Engine (react-native-worklets-core)\n- New Frame Processor Plugin API",
+      "source_content_hash": "4ff98787522d11cfb4224c9fb5e4c5927b354a08b98c99d50c575768e8ef9d24",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Réécriture complète d'Android Camera2\n- Pipeline vidéo OpenGL GPU personnalisé\n- Nouvelles fonctionnalités de caméra\n- Nouveau moteur de traitement d'images (react-native-worklets-core)\n- Nouvelle API de plugin de traitement d'images",
+        "en": "- Réécriture complète d'Android Camera2\n- Pipeline vidéo OpenGL GPU personnalisé\n- Nouvelles fonctionnalités de caméra\n- Nouveau moteur de traitement d'images (react-native-worklets-core)\n- Nouvelle API de plugin de traitement d'images"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "Marc took the decision to finally [remove the integration with Skia](https://github.com/mrousavy/react-native-vision-camera/pull/1740) to keep the code size and complexity reasonable on VisionCamera.",
+      "source_content_hash": "006133b646c838b61325941df84f1224df4252ffc09a5eab92764b4764ea2130",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Marc a pris la décision de finalement [supprimer l'intégration avec Skia](https://github.com/mrousavy/react-native-vision-camera/pull/1740) pour maintenir une taille de code et une complexité raisonnables dans VisionCamera.",
+        "en": "Marc a pris la décision de finalement [supprimer l'intégration avec Skia](https://github.com/mrousavy/react-native-vision-camera/pull/1740) pour maintenir une taille de code et une complexité raisonnables sur VisionCamera."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f38d1cb0",
+      "source_content": "In [**Pose Detection using VisionCamera V3, TFLite and Skia**](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite), he explains what is possible with such integration. The results are very impressive.",
+      "source_content_hash": "8bbaff63e176881dc86901e60425c961bd95ac2b6cf5aed6d0d72b5bc6e30fae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dans [**Détection de poses avec VisionCamera V3, TFLite et Skia**](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite), il explique ce qu'il est possible de réaliser avec une telle intégration. Les résultats sont très impressionnants.",
+        "en": "Dans [**Détection de pose avec VisionCamera V3, TFLite et Skia**](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite), il explique ce qui est possible avec une telle intégration. Les résultats sont très impressionnants."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "[![Pose Detection using VisionCamera V3, TFLite and Skia](/emails/issues/158/frame-processing-skia.jpg)](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite)",
+      "source_content_hash": "baee5593d3860e3d5ebfe43e35f1119bf6ae5c12f637ba4a778449ceddcf3402",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Détection de poses avec VisionCamera V3, TFLite et Skia](/emails/issues/158/frame-processing-skia.jpg)](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite)",
+        "en": "[![Détection de pose avec VisionCamera V3, TFLite et Skia](/emails/issues/158/frame-processing-skia.jpg)](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ce5ba214",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9b1e67e",
+      "source_content": "- 📜 [Things to look forward to in React Native](https://buttondown.email/whatever_jamie/archive/things-to-look-forward-to-in-react-native/): offers a good overview of what we can expect from React-Native in the years to come. Web Conformance, Static Hermes, Node-API, React Server Components...\n- 📜 [React Native Performance Measuring and Monitoring Tools](https://semaphoreci.com/blog/react-native-performance-measuring-monitoring-tools)\n- 🧵 [All gestures from React Native Gesture Handler explained with real-world examples](https://twitter.com/kacperkapusciak/status/1698719844089160189)\n- 👀 [Expo - Understand your users and grow your app with EAS Insights](https://expo.dev/changelog/2023/08-22-insights)\n- 📦 [expo-ahap - Apple Haptic and Audio Pattern](https://github.com/EvanBacon/expo-ahap)\n- 📦 [react-native-z-view](https://github.com/intergalacticspacehighway/react-native-z-view)\n- 📦 [Universal Medusa - E-commerce starter using Expo, Solito, Next.js, Nativewind, Medusa](https://github.com/bidah/universal-medusa/)\n- 🔗 [Awesome Universal React - Universal frameworks, libraries, design systems, apps and resources](https://github.com/axeldelafosse/awesome-universal-react)\n- 🎥 [Experimental Blur Gradient in React Native](https://www.youtube.com/watch?v=oboF_H1MApo)\n- 🎥 [iPhone wallpapers, but in React Native Skia](https://www.youtube.com/watch?v=Apqd749v34I)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław 🇵🇱, September 7–8) is offering us [-15% on conference tickets](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) with code \"thisweekinreact15\".",
+      "source_content_hash": "41b9315c140bbc0910fb8c449d6c65a4595b5f26bbd7c54a031328f3c0c5f540",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Things to look forward to in React Native](https://buttondown.email/whatever_jamie/archive/things-to-look-forward-to-in-react-native/) : offre un bon aperçu de ce que nous pouvons attendre de React Native dans les années à venir. Conformité Web, Hermes Statique, Node-API, Composants Serveur React...\n- 📜 [Outils de mesure et de surveillance des performances React Native](https://semaphoreci.com/blog/react-native-performance-measuring-monitoring-tools)\n- 🧵 [Tous les gestes de React Native Gesture Handler expliqués avec des exemples concrets](https://twitter.com/kacperkapusciak/status/1698719844089160189)\n- 👀 [Expo - Comprenez vos utilisateurs et développez votre application avec EAS Insights](https://expo.dev/changelog/2023/08-22-insights)\n- 📦 [expo-ahap - Modèles haptiques et audio Apple](https://github.com/EvanBacon/expo-ahap)\n- 📦 [react-native-z-view](https://github.com/intergalacticspacehighway/react-native-z-view)\n- 📦 [Universal Medusa - Starter e-commerce utilisant Expo, Solito, Next.js, Nativewind, Medusa](https://github.com/bidah/universal-medusa/)\n- 🔗 [Awesome Universal React - Frameworks universels, bibliothèques, systèmes de conception, applications et ressources](https://github.com/axeldelafosse/awesome-universal-react)\n- 🎥 [Dégradé de flou expérimental dans React Native](https://www.youtube.com/watch?v=oboF_H1MApo)\n- 🎥 [Fonds d'écran iPhone, mais en React Native Skia](https://www.youtube.com/watch?v=Apqd749v34I)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław 🇵🇱, 7–8 septembre) nous offre [-15% sur les billets de conférence](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) avec le code \"thisweekinreact15\".",
+        "en": "- 📜 [Things to look forward to in React Native](https://buttondown.email/whatever_jamie/archive/things-to-look-forward-to-in-react-native/) : propose une bonne vue d'ensemble de ce que nous pouvons attendre de React-Native dans les années à venir. Web Conformance, Static Hermes, Node-API, React Server Components...\n- 📜 [React Native Performance Measuring and Monitoring Tools](https://semaphoreci.com/blog/react-native-performance-measuring-monitoring-tools)\n- 🧵 [All gestures from React Native Gesture Handler explained with real-world examples](https://twitter.com/kacperkapusciak/status/1698719844089160189)\n- 👀 [Expo - Understand your users and grow your app with EAS Insights](https://expo.dev/changelog/2023/08-22-insights)\n- 📦 [expo-ahap - Apple Haptic and Audio Pattern](https://github.com/EvanBacon/expo-ahap)\n- 📦 [react-native-z-view](https://github.com/intergalacticspacehighway/react-native-z-view)\n- 📦 [Universal Medusa - E-commerce starter using Expo, Solito, Next.js, Nativewind, Medusa](https://github.com/bidah/universal-medusa/)\n- 🔗 [Awesome Universal React - Universal frameworks, libraries, design systems, apps and resources](https://github.com/axeldelafosse/awesome-universal-react)\n- 🎥 [Experimental Blur Gradient in React Native](https://www.youtube.com/watch?v=oboF_H1MApo)\n- 🎥 [iPhone wallpapers, but in React Native Skia](https://www.youtube.com/watch?v=Apqd749v34I)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław 🇵🇱, 7–8 septembre) nous offre [-15% sur les billets de conférence](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) avec le code \"thisweekinreact15\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8144f6e8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0d5321b7",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17ca27eb",
+      "source_content": "- 📊 [State of CSS 2023 - Survey Results](https://2023.stateofcss.com/)\n- 📜 [My Node.js is a bit Rusty](https://gal.hagever.com/posts/my-node-js-is-a-bit-rusty)\n- 📜 [Announcing Biome - The official fork of Rome (unmaintained)](https://biomejs.dev/blog/annoucing-biome)\n- 📜 [View Transitions Break Incremental Rendering](https://ericportis.com/posts/2023/view-transitions-break-incremental-rendering/)\n- 📜 [Use web components for what they’re good at](https://nolanlawson.com/2023/08/23/use-web-components-for-what-theyre-good-at/)\n- 📜 [Type safe CSS design systems with @property](https://nerdy.dev/cant-break-this-design-system)\n- 👀 [TypeScript 5.3 Iteration Plan](https://github.com/microsoft/TypeScript/issues/55486)\n- 📦 [Announcing TypeScript 5.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/)\n- 📦 [Node 20.6 - Built-in .env file support](https://nodejs.org/en/blog/release/v20.6.0)\n- 📦 [Firefox 117 - CSS Nesting is now widely available](https://www.mozilla.org/en-US/firefox/117.0/releasenotes/)\n- 📦 [Espresso Build - Experimental next-gen package registry, package manager, and toolchain](https://espresso.build/)",
+      "source_content_hash": "7a1d59966a0aff3097c97da153a430c4037cd2c561855de23d81d8419963401d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📊 [State of CSS 2023 - Résultats de l'enquête](https://2023.stateofcss.com/)\n- 📜 [Mon Node.js est un peu rouillé](https://gal.hagever.com/posts/my-node-js-is-a-bit-rusty)\n- 📜 [Annonce de Biome - Le fork officiel de Rome (non maintenu)](https://biomejs.dev/blog/annoucing-biome)\n- 📜 [Les transitions de vue brisent le rendu incrémental](https://ericportis.com/posts/2023/view-transitions-break-incremental-rendering/)\n- 📜 [Utilisez les Web Components pour ce pour quoi ils sont bons](https://nolanlawson.com/2023/08/23/use-web-components-for-what-theyre-good-at/)\n- 📜 [Systèmes de conception CSS avec typage fort via @property](https://nerdy.dev/cant-break-this-design-system)\n- 👀 [Plan d'itération TypeScript 5.3](https://github.com/microsoft/TypeScript/issues/55486)\n- 📦 [Annonce de TypeScript 5.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/)\n- 📦 [Node 20.6 - Prise en charge intégrée des fichiers .env](https://nodejs.org/en/blog/release/v20.6.0)\n- 📦 [Firefox 117 - L'imbrication CSS est désormais largement disponible](https://www.mozilla.org/en-US/firefox/117.0/releasenotes/)\n- 📦 [Espresso Build - Registre de paquets nouvelle génération expérimental, gestionnaire de paquets et chaîne d'outils](https://espresso.build/)",
+        "en": "- 📊 [State of CSS 2023 - Survey Results](https://2023.stateofcss.com/)\n- 📜 [My Node.js is a bit Rusty](https://gal.hagever.com/posts/my-node-js-is-a-bit-rusty)\n- 📜 [Announcing Biome - The official fork of Rome (unmaintained)](https://biomejs.dev/blog/annoucing-biome)\n- 📜 [View Transitions Break Incremental Rendering](https://ericportis.com/posts/2023/view-transitions-break-incremental-rendering/)\n- 📜 [Use web components for what they’re good at](https://nolanlawson.com/2023/08/23/use-web-components-for-what-theyre-good-at/)\n- 📜 [Type safe CSS design systems with @property](https://nerdy.dev/cant-break-this-design-system)\n- 👀 [TypeScript 5.3 Iteration Plan](https://github.com/microsoft/TypeScript/issues/55486)\n- 📦 [Announcing TypeScript 5.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/)\n- 📦 [Node 20.6 - Built-in .env file support](https://nodejs.org/en/blog/release/v20.6.0)\n- 📦 [Firefox 117 - CSS Nesting is now widely available](https://www.mozilla.org/en-US/firefox/117.0/releasenotes/)\n- 📦 [Espresso Build - Experimental next-gen package registry, package manager, and toolchain](https://espresso.build/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a19e2d81",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531ec0bb",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "[![alt](/emails/issues/158/meme.jpg)](https://twitter.com/sebastienlorber/status/1687456078198394882)",
+      "source_content_hash": "cdc366ff9206989897f949071eb4c0bedfb287e7f9ea0ca3be3dfb282747709b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/158/meme.jpg)](https://twitter.com/sebastienlorber/status/1687456078198394882)",
+        "en": "[![alt](/emails/issues/158/meme.jpg)](https://twitter.com/sebastienlorber/status/1687456078198394882)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/158/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.166713+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "c0aa5c4c174aaa3e01adde1a698420f2699a91e1a3a94ae7c75c7394f2d7c826",
+    "en": "c0aa5c4c174aaa3e01adde1a698420f2699a91e1a3a94ae7c75c7394f2d7c826"
+  }
+}

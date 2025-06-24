@@ -1,0 +1,645 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/208/index.mdx",
+  "source_file_content_hash": "ff5f6b27533356f6a5063f959f451102c81e25ae37d4f32133c3c6de434e6154",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /208\ntitle: \"This Week In React #208: Compiler, Next.js, Docusaurus, TanStack, nuqs, Storybook, StyleX, React Navigation, Shopify, Reanimated, Nitro, BottomTabs, CocoaPods, Maestro, Rolldown, Container Queries...\"\nauthors: [slorber]\ndate: 11-06-2024\n---",
+      "source_content_hash": "e9c529fde826d78d3e9c023911ce3e7b776af69f4fe471feb7ed6ba6a74642ea",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "No major React announcements this week, probably due to the US presidential election.",
+      "source_content_hash": "d0c22c63be40debc745fa16505fbe6fbda35debbe5a3697200523bd296d31285",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pas d'annonces majeures de React cette semaine, probablement en raison des élections présidentielles américaines.",
+        "en": "Pas d'annonces majeures de React cette semaine, probablement en raison des élections présidentielles américaines."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "But we still had a bunch of exciting React and React Native and great community articles. I'm particularly excited about the React Compiler direction, and the release of React Navigation 7 with a new screen preloading API. Shopify's React Native endorsement is also great news for our ecosystem. Of course, I'm happy to unveil what I've been working on for months on Docusaurus too!",
+      "source_content_hash": "630da4336925dc3ef0d6e6f0a2af1b1b60746aa041bf650c4262a9066c3eb07a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Mais nous avons tout de même eu des articles passionnants sur React, React Native et une excellente communauté. Je suis particulièrement enthousiaste concernant la direction du compilateur React, et la sortie de React Navigation 7 avec sa nouvelle API de préchargement d'écrans. L'approbation de React Native par Shopify est également une excellente nouvelle pour notre écosystème. Bien sûr, je suis ravi de dévoiler ce sur quoi j'ai travaillé pendant des mois sur Docusaurus !",
+        "en": "Mais nous avons tout de même eu des articles passionnants sur React, React Native et une grande communauté. Je suis particulièrement enthousiaste concernant la direction du Compilateur React, et la sortie de React Navigation 7 avec sa nouvelle API de préchargement d'écrans. L'approbation de React Native par Shopify est également une excellente nouvelle pour notre écosystème. Bien sûr, je suis ravi de dévoiler ce sur quoi j'ai travaillé pendant des mois sur Docusaurus !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Don't forget to answer the [State of React 2024 survey](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react). It's closing next week, and we still have less answers than last year so far. If you have an audience, please help spread the word, and add a [`?source=my_name` parameter](https://github.com/Devographics/surveys/issues/250#issuecomment-2423485429) so that survey bias can be tracked.",
+      "source_content_hash": "7a50071f361ce8eb7b8d58aef8a474735285407fe143f1d9bed40d993aa618b4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "fr": {
+          "translation": "N'oubliez pas de répondre à [l'enquête State of React 2024](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react). Elle se clôture la semaine prochaine, et nous avons moins de réponses que l'année dernière pour l'instant. Si vous avez une audience, aidez-nous à relayer l'information, et ajoutez un paramètre [`?source=mon_nom`](https://github.com/Devographics/surveys/issues/250#issuecomment-2423485429) pour permettre le suivi des biais d'enquête.",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`?source=my_name`', Translation: '`?source=mon_nom`'.",
+          "timestamp": "2025-06-24T15:50:44.531915+00:00"
+        },
+        "en": {
+          "translation": "N'oubliez pas de répondre à l'[enquête State of React 2024](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react). Elle ferme la semaine prochaine, et nous avons pour l'instant moins de réponses que l'année dernière. Si vous avez une audience, aidez-nous à relayer l'information et ajoutez un paramètre [`?source=mon_nom`](https://github.com/Devographics/surveys/issues/250#issuecomment-2423485429) pour permettre le suivi des biais d'enquête.",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`?source=my_name`', Translation: '`?source=mon_nom`'.",
+          "timestamp": "2025-06-24T15:57:01.444337+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Commanditaire {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![AG Grid: The best React Table in the world](/emails/issues/208/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-3)",
+      "source_content_hash": "a7d349e76b491d9a39f7cce65667350d49bed406be3cecc3ec9ede383780dead",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![AG Grid : La meilleure table React au monde](/emails/issues/208/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-3)",
+        "en": "[![AG Grid : La meilleure table React au monde](/emails/issues/208/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-3)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[AG Grid: The best React Table in the world](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-3)**",
+      "source_content_hash": "7a2d49ef09611a3296b3bf33fecf1de8f76df6a99e399311a98c18dd5632ddd4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[AG Grid : La meilleure table React au monde](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-3)**",
+        "en": "**[AG Grid : La meilleure table React au monde](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-3)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "AG Grid is a fast, free and fully customisable React Table. Used by **90% of the Fortune 500**, AG Grid is **100% open source** with over **4 million npm downloads per month**:",
+      "source_content_hash": "c91e892d9d47042d72cefc4e1b38623f6937cebceeffcbff506e1b987cbd046e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "AG Grid est une table React rapide, gratuite et entièrement personnalisable. Utilisée par **90% du Fortune 500**, AG Grid est **100% open source** avec plus de **4 millions de téléchargements npm mensuels** :",
+        "en": "AG Grid est une table React rapide, gratuite et entièrement personnalisable. Utilisée par **90% du Fortune 500**, AG Grid est **100% open source** avec plus de **4 millions de téléchargements npm par mois** :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- 🆓 **Free:** Access 100s of features such as **Sorting**, **Filtering**, **Pagination**, **Cell Editing** and more, all for **free** - forever.\n- **🚀 Fast:** Display **millions of cells** out of the box, without compromising on performance.\n- **🎨 Customisable:** Add your own components to cells, rows & columns and use the **Theming API** to build & customise Themes.\n- 🏢 **Enterprise Features:** Purchase a licence for lifetime access to advanced features including **Pivoting**, **Grouping**, **Master / Detail** and **Integrated Charts** (powered by our React Charting Library, [AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)). Try it for free - no trial license required.",
+      "source_content_hash": "126450b9ed485b2700599ad73e1deee212ab13e74025da32258b437d3c18da2e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🆓 **Gratuit** : Accédez à des centaines de fonctionnalités comme **le tri**, **le filtrage**, **la pagination**, **l'édition de cellules** et plus encore, **gratuitement** - pour toujours.\n- **🚀 Rapide** : Affichez **des millions de cellules** sans compromettre les performances.\n- **🎨 Personnalisable** : Ajoutez vos propres composants aux cellules, lignes et colonnes et utilisez **l'API de thème** pour créer et personnaliser des thèmes.\n- 🏢 **Fonctionnalités Entreprise** : Achetez une licence pour accéder à vie à des fonctionnalités avancées incluant **le pivotage**, **le regroupement**, **Master/Detail** et **les graphiques intégrés** (alimentés par notre bibliothèque de graphiques React, [AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)). Essayez gratuitement - aucune licence d'essai requise.",
+        "en": "- 🆓 **Gratuit** : Accédez à des centaines de fonctionnalités comme le **tri**, le **filtrage**, la **pagination**, l'**édition de cellules** et plus encore, **gratuitement** - à vie.\n- **🚀 Rapide** : Affichez **des millions de cellules** sans compromettre les performances.\n- **🎨 Personnalisable** : Ajoutez vos propres composants aux cellules, lignes et colonnes, et utilisez l'**API de thème** pour créer et personnaliser des thèmes.\n- 🏢 **Fonctionnalités Entreprise** : Obtenez une licence pour un accès à vie aux fonctionnalités avancées incluant le **pivotage**, le **regroupement**, le **détail/maître** et les **graphiques intégrés** (alimentés par notre bibliothèque de graphiques React, [AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)). Essayez gratuitement - sans licence d'essai requise."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "Learn More: [ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)",
+      "source_content_hash": "cd49af871211ee25d99578ef29ec8b6b5b3ef563831b4bcb54b61286021f196f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En savoir plus : [ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)",
+        "en": "En savoir plus : [ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![Sathya Gunasekaran - What's next for the React Compiler?](/emails/issues/208/compiler.jpg)](https://www.youtube.com/watch?v=qd5yk2gxbtg)",
+      "source_content_hash": "54b4e6ef3243398dd6afe23581017e329517f58fd703b93ab5e7ee914ab9161f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Sathya Gunasekaran - Quelle est la suite pour le compilateur React ?](/emails/issues/208/compiler.jpg)](https://www.youtube.com/watch?v=qd5yk2gxbtg)",
+        "en": "[![Sathya Gunasekaran - Quel avenir pour le Compilateur React ?](/emails/issues/208/compiler.jpg)](https://www.youtube.com/watch?v=qd5yk2gxbtg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "🎥 [**Sathya Gunasekaran \\- What's next for the React Compiler?**](https://www.youtube.com/watch?v=qd5yk2gxbtg)",
+      "source_content_hash": "d5d9cfdb771da1f3f80b219f66ef81d9642f76b3de881711ac68fbed2c861ea2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🎥 [**Sathya Gunasekaran \\- Quelle est la suite pour le compilateur React ?**](https://www.youtube.com/watch?v=qd5yk2gxbtg)",
+        "en": "🎥 [**Sathya Gunasekaran \\- Quel avenir pour le Compilateur React ?**](https://www.youtube.com/watch?v=qd5yk2gxbtg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "I finally caught up with this great talk that announced the [React compiler beta](https://react.dev/blog/2024/10/21/react-compiler-beta-release), but also unveiled a few other interesting. The compiler is not just about auto-memoization, but is a platform to build more optimizations on. 3 upcoming features presented:",
+      "source_content_hash": "88468497c65cb56a791546c1b36f43e7b7d7d54b4b88d09acf7bd8fa687ef4a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'ai enfin pris le temps de regarder cette excellente conférence qui annonce la [version bêta du compilateur React](https://react.dev/blog/2024/10/21/react-compiler-beta-release), mais dévoile également d'autres aspects intéressants. Le compilateur ne se limite pas à la mémoïsation automatique, mais constitue une plateforme pour développer davantage d'optimisations. Trois fonctionnalités à venir ont été présentées :",
+        "en": "J'ai enfin pris le temps de regarder cette excellente conférence annonçant la [bêta du compilateur React](https://react.dev/blog/2024/10/21/react-compiler-beta-release), qui dévoile également d'autres aspects intéressants. Le compilateur ne se limite pas à la mémoïsation automatique, mais constitue une plateforme pour développer davantage d'optimisations. 3 fonctionnalités à venir ont été présentées :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "310e47b7",
+      "source_content": "- Type config: You can help the compiler do a better job by providing extra type information.\n- JSX Inlining: The compiler can remove useless JSX runtime calls, replace them with pre-built JSX objects. `jsx('div')` becomes `{type: 'div'}`.\n- JSX Outlining: The compiler can extract subcomponents automatically, that can then be optimized independently. This is particularly useful for list elements when using `array.map` and inlined JSX, the compiler can create an `<Item>` component (see the talk screenshot, otherwise [this PR](https://github.com/facebook/react/pull/30956) explains it well).",
+      "source_content_hash": "65d75ee3af66dc9005d7407275a0b65057171341f968064166b3042a436d7aa6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Configuration des types : Vous pouvez aider le compilateur à mieux fonctionner en fournissant des informations de type supplémentaires.\n- JSX Inlining : Le compilateur peut supprimer les appels JSX inutiles et les remplacer par des objets JSX préconstruits. `jsx('div')` devient `{type: 'div'}`.\n- JSX Outlining : Le compilateur peut extraire automatiquement les sous-composants, qui peuvent ensuite être optimisés indépendamment. Cela est particulièrement utile pour les éléments de liste lors de l'utilisation de `array.map` et de JSX intégré ; le compilateur peut créer un composant `<Item>` (voir la capture d'écran de la présentation, sinon [cette PR](https://github.com/facebook/react/pull/30956) l'explique bien).",
+        "en": "- Configuration des types : Vous pouvez aider le compilateur à mieux fonctionner en fournissant des informations de type supplémentaires.\n- Inlining JSX : Le compilateur peut supprimer les appels d'exécution JSX inutiles, les remplacer par des objets JSX préconstruits. `jsx('div')` devient `{type: 'div'}`.\n- Outlining JSX : Le compilateur peut extraire automatiquement des sous-composants, qui peuvent ensuite être optimisés indépendamment. Ceci est particulièrement utile pour les éléments de liste lors de l'utilisation de `array.map` et de JSX intégré, le compilateur peut créer un composant `<Item>` (voir la capture d'écran du talk, sinon [cette PR](https://github.com/facebook/react/pull/30956) l'explique bien)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6e9a41d8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- 💸 [Omlet – Scan your repos and measure how and where components are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-oct-2024)\n- 📜 [Managing Advanced Search Param Filtering in the Next.js App Router](https://aurorascharff.no/posts/managing-advanced-search-param-filtering-next-app-router/): Great interactive article showing that lifting state to the URL is not so easy when using RSC-based routing. To obtain a good UX, you have to use startTransition and useOptimistic. The nuqs library can help simplify.\n- 📜 [Two ways to the two Reacts](https://bobaekang.com/blog/two-ways-to-the-two-reacts/): Interesting thoughts on the different visions that Next.js and TanStack Start are adopting to integrate modern React features. TanStack Start is more client-centric and less disruptive.\n- 📜 [How to (not) reset a form after a Server Action in React](https://www.robinwieruch.de/react-server-action-reset-form/): React Actions automatically reset the uncontrolled form inputs, but it might not be what you want on action errors.\n- 📜 [Storybook Test sneak peek](https://storybook.js.org/blog/storybook-test-sneak-peek/): Testing components and stories in your browsers.\n- 📜 [Upgrading React with micro-frontend](https://alexocallaghan.com/upgrading-react-with-microfrontends): Using a Module Federation React bridge to allow using different React versions.\n- 📜 [React Router Brand Update](https://remix.run/blog/react-router-brand-update): Updating the logo/wordmark for the upcoming v7 release.\n- 📜 [How headless components became the future for building UI libraries](https://www.subframe.com/blog/how-headless-components-became-the-future-for-building-ui-libraries): In particular focusing on Radix.\n- 📜 [Integrating Large Language Models into Frontends](https://www.manuelsanchezdev.com/blog/integrating-llm-frontend)\n- 📜 [XState in React: Look Ma, no useState or useEffect\\!](https://www.frontendundefined.com/posts/monthly/xstate-in-react/)\n- 📜 [How To Build And Deploy A Headless WordPress With Next.js?](https://scientyficworld.org/how-to-deploy-headless-wordpress-with-next-js/)\n- 📜 [On Crafting Painterly Shaders (React Three Fiber)](https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders/)\n- 📜 [Preact \\- Simplifying Islands Architecture](https://preactjs.com/blog/simplifying-islands-arch/)\n- 📦 [Docusaurus 3.6 \\- Docusaurus Faster](https://docusaurus.io/blog/releases/3.6): The project I’ve been working on for a few months now, upgrading Docusaurus to Rust tooling (Rspack, SWC, LightningCSS) makes it 3x faster to build your static site\\!\n- 📦 [next-validate-link \\- Validate Your Markdown Links with Ease](https://next-validate-link.vercel.app/): It understands Next.js (App Router) conventions and reports broken links/anchors found in MD/MDX files.\n- 📦 [StyleX 0.9.3 \\- Improves theming APIs and dynamic styles](https://stylexjs.com/blog/v0.9.3)\n- 📦 [nuqs 2.1 \\- Type-safe search params \\- Vitest 2 support, parseAsISODate, serializer urlKeys and clearAsDefaults](https://github.com/47ng/nuqs/releases/tag/v2.1.0)\n- 📦 [uikit 0.8 \\- Performant 3D user interfaces using React-Three-Fiber and Yoga](https://github.com/pmndrs/uikit/releases/tag/v0.8.0)\n- 📦 [Quicky \\- Deploy Next.js and Node.js to your own server](https://quicky.dev/)\n- 📦 [Shopify Hydrogen \\- October 2024 release \\- Storefront API](https://hydrogen.shopify.dev/update/october-2024-release-storefront-api-2024-10)\n- 📦 [Monicon \\- Universal Icon Library](https://monicon-docs.vercel.app/)\n- 🎥 [Ethan Niser \\- The secret to why React feels so fast](https://www.youtube.com/watch?v=vtotu8p9DWw): More about functional programming than React but still worth watching to understand the underlying techniques that allow Concurrent React to split work into smaller chunks and regularly yield to the main thread.\n- 🎥 [Delba \\- Next.js 'use cache' in 100 seconds](https://www.youtube.com/watch?v=OWmRn74CQKY)\n- 🎙️ [This Month in React \\- React Devtools, RN 0.76, Web Components...](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-10-React-DevTools-update--React-Native-0-76-new-architecture-dropped--Web-Components-arent-the-future-e2qi6bb)",
+      "source_content_hash": "49200079a0a49e23fe7d6426ff032b0034f119bc359a8edf9711b0c6a0e81661",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_30193704",
+        "en": "@@untranslatable_placeholder_30193704"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8b4b41",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_3e8b4b41",
+        "en": "@@untranslatable_placeholder_3e8b4b41"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c46c3e3d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2e771fd0",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "[![Introducing @clerk/nextjs v6 - Next.js 15 compatible](/emails/issues/208/clerk.jpg)](https://go.clerk.com/763LGC2)",
+      "source_content_hash": "8740555536b98bdbc794781589ec84b0697b114765d969e6f6e1247dff92f0aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Introducing @clerk/nextjs v6 - Next.js 15 compatible](/emails/issues/208/clerk.jpg)](https://go.clerk.com/763LGC2)",
+        "en": "[![Présentation de @clerk/nextjs v6 - Compatible Next.js 15](/emails/issues/208/clerk.jpg)](https://go.clerk.com/763LGC2)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "**[Introducing @clerk/nextjs v6 - Next.js 15 compatible](https://go.clerk.com/763LGC2)**",
+      "source_content_hash": "6b7fdd3ce5c84205a2db8ddf801d0a93cb1ea569cbdc1ecef77cc845588e3378",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Présentation de @clerk/nextjs v6 - Compatible avec Next.js 15](https://go.clerk.com/763LGC2)**",
+        "en": "**[Présentation de @clerk/nextjs v6 - Compatible Next.js 15](https://go.clerk.com/763LGC2)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "The Next.js team has announced the stable release of Next.js 15, and Clerk is continuing the tradition of (nearly) same-day support for new major Next.js releases with the release of `@clerk/nextjs` v6. With v6, the `auth()` helper is now asynchronous, `<ClerkProvider>` defaults to static rendering instead of dynamic, and support for partial pre-rendering has been introduced.",
+      "source_content_hash": "caba099e488bc97be156969a8fcd2bb71711a14bae7e20e934147af8093a4392",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'équipe Next.js a annoncé la sortie stable de Next.js 15, et Clerk poursuit la tradition d'un support (presque) le jour même pour les nouvelles versions majeures de Next.js avec la sortie de `@clerk/nextjs` v6. Avec la v6, l'assistant `auth()` est désormais asynchrone, `<ClerkProvider>` utilise par défaut le rendu statique au lieu du rendu dynamique, et la prise en charge du pré-rendu partiel a été introduite.",
+        "en": "L'équipe Next.js a annoncé la version stable de Next.js 15, et Clerk poursuit la tradition d'un support quasi le jour même pour les nouvelles versions majeures de Next.js avec la sortie de `@clerk/nextjs` v6. Avec la v6, l'assistant `auth()` est désormais asynchrone, `<ClerkProvider>` utilise par défaut le rendu statique au lieu du rendu dynamique, et le pré-rendu partiel est pris en charge."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4f2104fa",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f8edb6d2",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "[![React Navigation 7.0](/emails/issues/208/reactnavigation7.jpg)](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)",
+      "source_content_hash": "6c714eef3656779d4a1c6fca250448612e60c87d1ad8f4dabbf868f184bdec18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Navigation 7.0](/emails/issues/208/reactnavigation7.jpg)](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)",
+        "en": "[![React Navigation 7.0](/emails/issues/208/reactnavigation7.jpg)](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "[**React Navigation 7.0**](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)",
+      "source_content_hash": "81cd086771c948621f0737767e503aaa841568727caeaf55436e2edbb82b8fd8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**React Navigation 7.0**](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)",
+        "en": "[**React Navigation 7.0**](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "React Navigation v7 is now out and should power the upcoming Expo Router v4 coming with Expo SDK 52, both in beta. My favorite highlights are:",
+      "source_content_hash": "f8d57754c10c24f76ac7711278a0a35dce62b2eaed6a1f08bfb7f56dfd55dcc9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React Navigation v7 est désormais disponible et devrait alimenter le prochain Expo Router v4 livré avec Expo SDK 52, tous deux en version bêta. Mes points forts préférés sont :",
+        "en": "React Navigation v7 est désormais disponible et devrait alimenter le prochain Expo Router v4 livré avec Expo SDK 52, tous deux en version bêta. Mes points forts préférés sont :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd1d0fe2",
+      "source_content": "- Screen preloading: You can prepare screens ahead of time prior to navigating to them and improve the perceived performance. This one is really exciting and might be able to use Concurrent React features in the future.\n- Static API: Simplifies the navigator configuration, and makes it easier to work with TypeScript and deep linking.",
+      "source_content_hash": "62965ba322cd02b9ea7f17680d4d6dd76dae75662560b832e7f909f9db9ca69c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Préchargement des écrans : Vous pouvez préparer les écrans à l'avance avant d'y naviguer et améliorer les performances perçues. Celui-ci est vraiment excitant et pourrait utiliser les fonctionnalités Concurrent React à l'avenir.\n- API Statique : Simplifie la configuration du navigateur et facilite l'utilisation avec TypeScript et le deep linking.",
+        "en": "- Préchargement des écrans : Vous pouvez préparer les écrans à l'avance avant d'y naviguer et améliorer les performances perçues. Celui-ci est vraiment passionnant et pourrait utiliser les fonctionnalités Concurrent React à l'avenir.\n- API statique : Simplifie la configuration du navigateur et facilite l'utilisation de TypeScript et du deep linking."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "[**We've just finished migrating the Shopify mobile app to React Native**](https://threadreaderapp.com/thread/1853619638141071573.html)",
+      "source_content_hash": "a7f9ae08193a7fb30bd0bfdc90b6b5c13324af388ee13de5255fdf1624c755b6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Nous venons de terminer la migration de l'application mobile Shopify vers React Native**](https://threadreaderapp.com/thread/1853619638141071573.html)",
+        "en": "[**Nous venons de terminer la migration de l'application mobile Shopify vers React Native**](https://threadreaderapp.com/thread/1853619638141071573.html)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "Mustafa (Director of Engineering) announced on X that Shopify finished migrating their flagship app with 586 screens to React Native, with very positive results. I hope we'll get a detailed blog post soon.",
+      "source_content_hash": "3667670021ca0d1b06c1f272317e614b5eb5ce2eb40d51444bd2fc9cb783968a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Mustafa (directeur de l'ingénierie) a annoncé sur X que Shopify a terminé la migration de son application phare avec 586 écrans vers React Native, avec des résultats très positifs. J'espère que nous aurons bientôt un article de blog détaillé.",
+        "en": "Mustafa (Directeur de l'ingénierie) a annoncé sur X que Shopify a terminé la migration de son application phare avec 586 écrans vers React Native, avec des résultats très positifs. J'espère que nous aurons bientôt un article de blog détaillé."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0422e2e2",
+      "source_content": "- 1.8 millions of lines of code removed\n- 86% of code sharing between iOS and Android\n- 59% faster screen loading\n- 44% faster app launch\n- 63% faster webviews\n- Reducing app crashes\n- Improving apps store ratings",
+      "source_content_hash": "79fd6e92472681aa804079bb1b03be35f1fcf3d392f216e76d9ca7e1d5d7b3ad",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 1,8 million de lignes de code supprimées\n- 86 % de partage de code entre iOS et Android\n- 59 % de chargement d'écran plus rapide\n- 44 % de lancement d'application plus rapide\n- 63 % de webviews plus rapides\n- Réduction des plantages d'application\n- Amélioration des notes des applications dans les stores",
+        "en": "- 1,8 million de lignes de code supprimées\n- 86 % de partage de code entre iOS et Android\n- Chargement des écrans 59 % plus rapide\n- Lancement de l'application 44 % plus rapide\n- Webviews 63 % plus rapides\n- Réduction des plantages d'application\n- Amélioration des notations sur les stores d'applications"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "862bb4be",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82abb0a4",
+      "source_content": "- 💸 [Create a customizable PDF viewer in React using Puppeteer. Learn to generate styled PDFs easily with Node and any JavaScript framework.](https://apryse.com/blog/react/react-to-pdf?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1106)\n- 💬 [Replace CocoaPods with Tuist instead of Swift Package Manager](https://github.com/react-native-community/discussions-and-proposals/issues/587#issuecomment-2457647318): The creator of the iOS toolchain Tuist raises potential problems adopting SPM in React Native and suggests an alternative.\n- 📜 [Getting started with Nitro](https://www.renanmav.com/blog/getting-started-with-nitro)\n- 📜 [My plan to port Electron app CSS themes into React Native](https://www.devas.life/my-plan-to-port-electron-app-css-themes-into-react-native/)\n- 📜 [The architecture of a conference application built with Expo](https://expo.dev/blog/the-architecture-of-a-conference-application-built-with-expo)\n- 📦 [Reanimated 3.16 \\- RN 0.76, new React-Compiler-safe get/set APIs, logging](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.16.0)\n- 📦 [Nitro 0.14 \\- RN 0.76, getHybridObjectConstructor](https://github.com/mrousavy/nitro/releases/tag/v0.14.0)\n- 📦 [Bottom Tabs 0.3 \\- haptic feedback, Android back behavior props, preventDefault()](https://github.com/okwasniewski/react-native-bottom-tabs/releases)\n- 📦 [Vision Camera 4.6 \\- RN 0.76, videoBitRate for Android, CameraX upgrade](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.6.0)\n- 📦 [Skia 1.5.1 \\- ProMotion 120 fps](https://github.com/Shopify/react-native-skia/releases/tag/v1.5.1)\n- 📦 [Screens 3.35 \\- RN 0.76, add RSC ‘use client’, dynamic frameworks, blurEffect](https://github.com/software-mansion/react-native-screens/releases/tag/3.35.0)\n- 📦 [Safe Area Context 4.14 \\- macOS support](https://github.com/th3rdwave/react-native-safe-area-context/releases/tag/v4.13.0)\n- 📦 [Maests \\- Write and compose Maestro flows in TypeScript](https://github.com/shoma-mano/maests)\n- 🎥 [Expo \\- How to run end to end tests on EAS Build](https://www.youtube.com/watch?v=-o-bfIRrg9U)\n- 🎥 [Simon Grimm \\- Tailwind is going Mobile](https://www.youtube.com/watch?v=I_o17M30m5I)\n- 🎥 [Catalin Miron \\- Wallpaper Reanimated Carousel](https://www.youtube.com/watch?v=qaGRabISXwI)\n- 🎥 [Beto \\- Sending Over-the-Air (OTA) Updates with EAS Update](https://www.youtube.com/watch?v=DWpcD6bvTRA)\n- 🎙️ [Rocket Ship 53 \\- Why Accessibility in React Native matters with Britta Evans-Fenton](https://share.transistor.fm/s/ccfd5491)",
+      "source_content_hash": "8fe86fbe169877f8a3a78b5cb8e8c5be21c8d1395e0285d4e88b1458b7daac51",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Créer une visionneuse PDF personnalisable dans React avec Puppeteer. Apprenez à générer facilement des PDF stylisés avec Node et n'importe quel framework JavaScript.](https://apryse.com/blog/react/react-to-pdf?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1106)\n- 💬 [Remplacer CocoaPods par Tuist au lieu de Swift Package Manager](https://github.com/react-native-community/discussions-and-proposals/issues/587#issuecomment-2457647318) : Le créateur de la chaîne d'outils iOS Tuist soulève les problèmes potentiels de l'adoption de SPM dans React Native et propose une alternative.\n- 📜 [Premiers pas avec Nitro](https://www.renanmav.com/blog/getting-started-with-nitro)\n- 📜 [Mon plan pour porter les thèmes CSS d'applications Electron dans React Native](https://www.devas.life/my-plan-to-port-electron-app-css-themes-into-react-native/)\n- 📜 [L'architecture d'une application de conférence construite avec Expo](https://expo.dev/blog/the-architecture-of-a-conference-application-built-with-expo)\n- 📦 [Reanimated 3.16 \\- RN 0.76, nouvelles API get/set sûres pour React-Compiler, journalisation](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.16.0)\n- 📦 [Nitro 0.14 \\- RN 0.76, getHybridObjectConstructor](https://github.com/mrousavy/nitro/releases/tag/v0.14.0)\n- 📦 [Bottom Tabs 0.3 \\- retour haptique, propriétés de comportement retour Android, preventDefault()](https://github.com/okwasniewski/react-native-bottom-tabs/releases)\n- 📦 [Vision Camera 4.6 \\- RN 0.76, videoBitRate pour Android, mise à niveau de CameraX](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.6.0)\n- 📦 [Skia 1.5.1 \\- ProMotion 120 ips](https://github.com/Shopify/react-native-skia/releases/tag/v1.5.1)\n- 📦 [Screens 3.35 \\- RN 0.76, ajout de RSC 'use client', frameworks dynamiques, blurEffect](https://github.com/software-mansion/react-native-screens/releases/tag/3.35.0)\n- 📦 [Safe Area Context 4.14 \\- prise en charge de macOS](https://github.com/th3rdwave/react-native-safe-area-context/releases/tag/v4.13.0)\n- 📦 [Maests \\- Écrire et composer des flux Maestro en TypeScript](https://github.com/shoma-mano/maests)\n- 🎥 [Expo \\- Comment exécuter des tests de bout en bout sur EAS Build](https://www.youtube.com/watch?v=-o-bfIRrg9U)\n- 🎥 [Simon Grimm \\- Tailwind passe au mobile](https://www.youtube.com/watch?v=I_o17M30m5I)\n- 🎥 [Catalin Miron \\- Carrousel de fond d'écran animé avec Reanimated](https://www.youtube.com/watch?v=qaGRabISXwI)\n- 🎥 [Beto \\- Envoyer des mises à jour Over-the-Air (OTA) avec EAS Update](https://www.youtube.com/watch?v=DWpcD6bvTRA)\n- 🎙️ [Rocket Ship 53 \\- Pourquoi l'accessibilité dans React Native compte avec Britta Evans-Fenton](https://share.transistor.fm/s/ccfd5491)",
+        "en": "- 💸 [Créer une visionneuse PDF personnalisable dans React avec Puppeteer. Apprenez à générer facilement des PDF stylisés avec Node et n'importe quel framework JavaScript.](https://apryse.com/blog/react/react-to-pdf?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1106)\n- 💬 [Remplacer CocoaPods par Tuist au lieu de Swift Package Manager](https://github.com/react-native-community/discussions-and-proposals/issues/587#issuecomment-2457647318): Le créateur de l'outillage iOS Tuist soulève des problèmes potentiels liés à l'adoption de SPM dans React Native et propose une alternative.\n- 📜 [Premiers pas avec Nitro](https://www.renanmav.com/blog/getting-started-with-nitro)\n- 📜 [Mon plan pour porter des thèmes CSS d'applications Electron vers React Native](https://www.devas.life/my-plan-to-port-electron-app-css-themes-into-react-native/)\n- 📜 [L'architecture d'une application de conférence construite avec Expo](https://expo.dev/blog/the-architecture-of-a-conference-application-built-with-expo)\n- 📦 [Reanimated 3.16 \\- RN 0.76, nouvelles API get/set compatibles React-Compiler, journalisation](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.16.0)\n- 📦 [Nitro 0.14 \\- RN 0.76, getHybridObjectConstructor](https://github.com/mrousavy/nitro/releases/tag/v0.14.0)\n- 📦 [Bottom Tabs 0.3 \\- retour haptique, propriétés de comportement retour Android, preventDefault()](https://github.com/okwasniewski/react-native-bottom-tabs/releases)\n- 📦 [Vision Camera 4.6 \\- RN 0.76, videoBitRate pour Android, mise à niveau CameraX](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.6.0)\n- 📦 [Skia 1.5.1 \\- ProMotion 120 ips](https://github.com/Shopify/react-native-skia/releases/tag/v1.5.1)\n- 📦 [Screens 3.35 \\- RN 0.76, ajout RSC 'use client', frameworks dynamiques, blurEffect](https://github.com/software-mansion/react-native-screens/releases/tag/3.35.0)\n- 📦 [Safe Area Context 4.14 \\- prise en charge macOS](https://github.com/th3rdwave/react-native-safe-area-context/releases/tag/v4.13.0)\n- 📦 [Maests \\- Écrire et composer des flux Maestro en TypeScript](https://github.com/shoma-mano/maests)\n- 🎥 [Expo \\- Comment exécuter des tests end-to-end sur EAS Build](https://www.youtube.com/watch?v=-o-bfIRrg9U)\n- 🎥 [Simon Grimm \\- Tailwind passe au mobile](https://www.youtube.com/watch?v=I_o17M30m5I)\n- 🎥 [Catalin Miron \\- Carrousel animé de fonds d'écran](https://www.youtube.com/watch?v=qaGRabISXwI)\n- 🎥 [Beto \\- Envoyer des mises à jour over-the-air (OTA) avec EAS Update](https://www.youtube.com/watch?v=DWpcD6bvTRA)\n- 🎙️ [Rocket Ship 53 \\- Pourquoi l'accessibilité dans React Native compte avec Britta Evans-Fenton](https://share.transistor.fm/s/ccfd5491)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c63467a3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73776161",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b304caa",
+      "source_content": "- 📜 [A Friendly Introduction to Container Queries](https://www.joshwcomeau.com/css/container-queries-introduction/)\n- 📜 [What's a Single-Page App?](https://jakelazaroff.com/words/whats-a-single-page-app/)\n- 📜 [Should masonry be part of CSS grid?](https://ishadeed.com/article/css-grid-masonry/)\n- 📜 [Your CSS reset should be layered](https://www.mayank.co/blog/css-reset-layer/)\n- 📜 [New to the web platform in October](https://web.dev/blog/web-platform-10-2024?hl=en)\n- 📦 [Lightning CSS 1.28](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.28.0)\n- 📦 [Rolldown 0.14](https://github.com/rolldown/rolldown/releases/tag/v0.14.0): The upcoming Rollup-compatible Rust bundler for Vite is feature-complete, v1 beta is expected by the end of the year.",
+      "source_content_hash": "61c3e4a370472f6f4b507cbd90bdb4b18281d4af8cdb3998af996f94b0e758dd",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Une introduction conviviale aux Container Queries](https://www.joshwcomeau.com/css/container-queries-introduction/)\n- 📜 [Qu'est-ce qu'une application monopage ?](https://jakelazaroff.com/words/whats-a-single-page-app/)\n- 📜 [La disposition en mosaïque devrait-elle faire partie de CSS Grid ?](https://ishadeed.com/article/css-grid-masonry/)\n- 📜 [Votre réinitialisation CSS devrait être superposée](https://www.mayank.co/blog/css-reset-layer/)\n- 📜 [Nouveautés de la plateforme web en octobre](https://web.dev/blog/web-platform-10-2024?hl=en)\n- 📦 [Lightning CSS 1.28](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.28.0)\n- 📦 [Rolldown 0.14](https://github.com/rolldown/rolldown/releases/tag/v0.14.0): Le futur bundler Rust compatible Rollup pour Vite est complet en fonctionnalités, la bêta v1 est prévue pour fin d'année.",
+        "en": "- 📜 [Une introduction conviviale aux requêtes de conteneur](https://www.joshwcomeau.com/css/container-queries-introduction/)\n- 📜 [Qu'est-ce qu'une application monopage ?](https://jakelazaroff.com/words/whats-a-single-page-app/)\n- 📜 [La disposition Masonry devrait-elle faire partie du CSS Grid ?](https://ishadeed.com/article/css-grid-masonry/)\n- 📜 [Votre réinitialisation CSS devrait être superposée](https://www.mayank.co/blog/css-reset-layer/)\n- 📜 [Nouveautés sur la plateforme web en octobre](https://web.dev/blog/web-platform-10-2024?hl=en)\n- 📦 [Lightning CSS 1.28](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.28.0)\n- 📦 [Rolldown 0.14](https://github.com/rolldown/rolldown/releases/tag/v0.14.0): Le futur bundler Rust compatible avec Rollup pour Vite est complet en fonctionnalités, la version bêta v1 est prévue pour la fin de l'année."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "70a662e2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97afbaf0",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "[![alt](/emails/issues/208/meme.jpg)](https://bsky.app/profile/brophdawg11.bsky.social/post/3l7ookbysyq2h)",
+      "source_content_hash": "97323faf99236113e95cb9377f098ba0e8034768fd05f033625138595226edeb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/208/meme.jpg)](https://bsky.app/profile/brophdawg11.bsky.social/post/3l7ookbysyq2h)",
+        "en": "[![alt](/emails/issues/208/meme.jpg)](https://bsky.app/profile/brophdawg11.bsky.social/post/3l7ookbysyq2h)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "[![alt](/emails/issues/208/meme2.jpg)](https://x.com/sebastienlorber/status/1854177504891650303)",
+      "source_content_hash": "4b3cce080ece9eb05269558e11d8fe348d64161f3d37d786c6e91241b51899d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/208/meme2.jpg)](https://x.com/sebastienlorber/status/1854177504891650303)",
+        "en": "[![alt](/emails/issues/208/meme2.jpg)](https://x.com/sebastienlorber/status/1854177504891650303)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "[![alt](/emails/issues/208/meme3.jpg)](https://x.com/bunjavascript/status/1854005887817699831)",
+      "source_content_hash": "d03f0cd061f280fb20d4b13bc67933d3c63ceb9a12b574042ac1bbc5374fbcca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/208/meme3.jpg)](https://x.com/bunjavascript/status/1854005887817699831)",
+        "en": "[![alt](/emails/issues/208/meme3.jpg)](https://x.com/bunjavascript/status/1854005887817699831)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/208/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.444398+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "ff5f6b27533356f6a5063f959f451102c81e25ae37d4f32133c3c6de434e6154",
+    "en": "ff5f6b27533356f6a5063f959f451102c81e25ae37d4f32133c3c6de434e6154"
+  }
+}

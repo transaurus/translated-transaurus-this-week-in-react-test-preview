@@ -1,0 +1,797 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/130/index.mdx",
+  "source_file_content_hash": "95b40e345b04255a9c8aec6b0fe1e35e7b1e0e4f6fd4ff5d050cf659bcbdca57",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /130\ntitle: \"This Week In React #130: Next.js, callback ref, Zod, Redux, React-Hook-Form, Redux, mdxjs-rs, Tamagui, Skia, Shopify, Solid, Bun...\"\nauthors: [slorber]\ndate: 01-03-2023\n---",
+      "source_content_hash": "f5f009ef56f7a9325a9637eab77478b03e8f3e0effce44cafd8699e4c4cf6ea3",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone and happy new year 2023 🍾🥂🥳️",
+      "source_content_hash": "5ddf2297d72ddeb63cf1fa1f16b47fedd7359ac232357bacfa7cbb8494e09d58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous et bonne année 2023 🍾🥂🥳️",
+        "en": "Bonjour à tous et bonne année 2023 🍾🥂🥳️"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "In this holiday season, there was still quite a bit of activity with a Next.js release and some great React articles. And the React-Native ecosystem has been particularly active as well, with Tamagui, TypeScript support and 2 Shopify articles.",
+      "source_content_hash": "9e458bc496a9e381d9d0f08a131e5528409eba79b8b42f8da70e4ba1fee89f0a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En cette période de fêtes, l'activité a été soutenue avec une version de Next.js et d'excellents articles React. L'écosystème React Native a également été particulièrement actif avec Tamagui, le support TypeScript et deux articles Shopify.",
+        "en": "En cette période de fêtes, il y a eu pas mal d'activité avec une version de Next.js et de super articles sur React. Et l'écosystème React Native a été particulièrement actif également, avec Tamagui, le support TypeScript et deux articles de Shopify."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "You are now over **15000 subscribers** reading me every week 😍",
+      "source_content_hash": "4f1e2f3b40c547f5bb17822b37e2a8ad2180b4cbaf4109457a52de97c769bbe2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous êtes désormais plus de **15 000 abonnés** à me lire chaque semaine 😍",
+        "en": "Vous êtes désormais plus de **15000 abonnés** à me lire chaque semaine 😍"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Thanks for your loyalty and contribution to the growth of this project. I'll be doing a 2022 retrospective soon to reveal everything. In the meantime, you'll find lots of info on my [Indie Hackers page](https://www.indiehackers.com/product/french-react-newsletter).",
+      "source_content_hash": "8764df5bc3c198541e09f452abe114710794e555005e6653201f5d6e2e1fa767",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Merci pour votre fidélité et votre contribution à la croissance de ce projet. Je ferai bientôt une rétrospective 2022 pour tout révéler. En attendant, vous trouverez de nombreuses informations sur ma [page Indie Hackers](https://www.indiehackers.com/product/french-react-newsletter).",
+        "en": "Merci pour votre fidélité et votre contribution à la croissance de ce projet. Je ferai bientôt une rétrospective 2022 pour tout révéler. En attendant, vous trouverez beaucoup d'informations sur ma [page Indie Hackers](https://www.indiehackers.com/product/french-react-newsletter)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "The newsletter is back early: I postponed my ski week, because there is not much snow 😅\nNext edition on January 17th.",
+      "source_content_hash": "c5e2bb9fe23e7aa00488fff101ce348b7f3de27c9a6a43c8ab68e4a846684bc6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La newsletter revient plus tôt : j'ai reporté ma semaine de ski par manque de neige 😅\nProchaine édition le 17 janvier.",
+        "en": "La newsletter revient plus tôt : j'ai reporté ma semaine de ski, car il n'y a pas beaucoup de neige 😅 Prochaine édition le 17 janvier."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6168993",
+      "source_content": "Oh, and I finally managed to create a [viral meme](https://twitter.com/sebastienlorber/status/1610243388174991360) 🥲",
+      "source_content_hash": "850ad396a13795a223e2cd52d06726680a66a81788774e69e64c76f252c558ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Oh, et j'ai enfin réussi à créer un [mème viral](https://twitter.com/sebastienlorber/status/1610243388174991360) 🥲",
+        "en": "Ah, et j'ai enfin réussi à créer un [mème viral](https://twitter.com/sebastienlorber/status/1610243388174991360) 🥲"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1ba7fe10",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_1ba7fe10",
+        "en": "@@untranslatable_placeholder_1ba7fe10"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eaf571f0",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a0cc3209",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_a0cc3209",
+        "en": "@@untranslatable_placeholder_a0cc3209"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9329e3e0",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_9329e3e0",
+        "en": "@@untranslatable_placeholder_9329e3e0"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5b5d0360",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0037ff70",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "[![React Bricks is a CMS with visual editing based on React components](/emails/issues/128/reactbricks.png)](https://reactbricks.com/?utm_source=this_week_in_react)",
+      "source_content_hash": "1336db439afe3a0f910533280ec49d79016e04af19dcf565b5f234619116c4e8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Bricks est un CMS avec édition visuelle basé sur des composants React](/emails/issues/128/reactbricks.png)](https://reactbricks.com/?utm_source=this_week_in_react)",
+        "en": "[![React Bricks est un CMS avec édition visuelle basé sur les composants React](/emails/issues/128/reactbricks.png)](https://reactbricks.com/?utm_source=this_week_in_react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "**[React Bricks is a CMS with visual editing based on React components](https://reactbricks.com/?utm_source=this_week_in_react)**",
+      "source_content_hash": "c377fff8305b4b74fc4daa1f43624d2791eae460a5288e648cc1bb06ccb781f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Bricks est un CMS avec édition visuelle basé sur des composants React](https://reactbricks.com/?utm_source=this_week_in_react)**",
+        "en": "**[React Bricks est un CMS avec édition visuelle basé sur les composants React](https://reactbricks.com/?utm_source=this_week_in_react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "**It's flexible for Developers**: create your own design system using React components, add Visual editing in your JSX and add sidebar controls to edit props like the background color. Choose Next.js, Gatsby or Remix and any CSS framework you like!",
+      "source_content_hash": "3299709700bd3a2db217d1cf0a40075af59466c48b1c7048480c61bbf17bb5f7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Flexible pour les développeurs** : créez votre propre design system avec des composants React, ajoutez l'édition visuelle dans votre JSX et des contrôles latéraux pour modifier les props comme la couleur de fond. Choisissez Next.js, Gatsby ou Remix et n'importe quel framework CSS !",
+        "en": "**Flexible pour les développeurs** : créez votre propre système de design en utilisant des composants React, ajoutez l'édition visuelle dans votre JSX et ajoutez des contrôles dans la barre latérale pour modifier les props comme la couleur de fond. Choisissez Next.js, Gatsby ou Remix et n'importe quel framework CSS que vous préférez !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "**It's easy for Content editors** who can directly edit in a visual way without breaking the design system: much easier than editing abstract entities using gray fields, as in a headless CMS. **And you save time**, as Content editors are autonomous!",
+      "source_content_hash": "4d493a7f33d37e42ba26d986eee293d43a39ebf1b9101399b394811a245c5c1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Simple pour les éditeurs de contenu** qui peuvent éditer visuellement sans briser le design system : bien plus facile qu'avec des champs abstraits dans un CMS headless. **Et vous gagnez du temps** car les éditeurs sont autonomes !",
+        "en": "**Simple pour les éditeurs de contenu** qui peuvent éditer directement de manière visuelle sans casser le système de design : bien plus facile que de modifier des entités abstraites avec des champs gris, comme dans un CMS headless. **Et vous gagnez du temps**, car les éditeurs de contenu sont autonomes !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "**It's enterprise-ready** with Collaboration, Time-machine, Single Sign-on, GDPR-compliant datacenters, Global CDN for optimized images, E-commerce integration, Scheduled publishing and more.",
+      "source_content_hash": "b8fcbb194ccc5b7b6026a7d9d6cbe78f9ff34f7ba91cce3dc172116fe1dd50a3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Prêt pour l'entreprise** avec Collaboration, Time-machine, Single Sign-on, centres de données conformes RGPD, CDN global pour images optimisées, intégration e-commerce, publication planifiée et plus encore.",
+        "en": "**Prêt pour l'entreprise** avec Collaboration, Time-machine, Single Sign-on, des datacenters conformes au RGPD, CDN global pour les images optimisées, intégration e-commerce, publication planifiée et plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Get started here: [ReactBricks.com](https://reactbricks.com/?utm_source=this_week_in_react)",
+      "source_content_hash": "45f1ff32c8758480b9fefcea835e332852b57051d60e35b7e2a0531bbae03fab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Commencez ici : [ReactBricks.com](https://reactbricks.com/?utm_source=this_week_in_react)",
+        "en": "Commencez ici : [ReactBricks.com](https://reactbricks.com/?utm_source=this_week_in_react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "94f98fb8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6f930b2f",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[![Next.js 13.1](/emails/issues/130/nextjs-13.1.jpg)](https://nextjs.org/blog/next-13-1)",
+      "source_content_hash": "0e30e3236ca02d89ea9a879a522f8e4a5245e5dc7adb31221c4352d86bf7b789",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Next.js 13.1](/emails/issues/130/nextjs-13.1.jpg)](https://nextjs.org/blog/next-13-1)",
+        "en": "[![Next.js 13.1](/emails/issues/130/nextjs-13.1.jpg)](https://nextjs.org/blog/next-13-1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "**[Next.js 13.1](https://nextjs.org/blog/next-13-1)**",
+      "source_content_hash": "8cb135656b07fb6000a9420e879e88542f8c0ed15c0afbd95af9a8c0a4da8bae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Next.js 13.1](https://nextjs.org/blog/next-13-1)**",
+        "en": "**[Next.js 13.1](https://nextjs.org/blog/next-13-1)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "A new minor version with a lot of improvements, including:",
+      "source_content_hash": "1d7b5220eb57eba9567c5922ee6bb7798b618336e5e574cbeaa5b20d2c7dacdc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Une nouvelle version mineure avec de nombreuses améliorations, notamment :",
+        "en": "Une nouvelle version mineure avec de nombreuses améliorations, notamment :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "- app directory improvements and bugfixes\n- TypeScript plugin, great DX\n- Module transpilation\n- Turbopack and benchmarks improvements\n- SWC plugin to transform imports\n- Edge runtime now stable for API routes, and advanced middleware",
+      "source_content_hash": "136f412f45483b7a68e825cc91d4eaa8977560ace9b4089f3547db8dc30ad190",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Améliorations et corrections du répertoire app\n- Plugin TypeScript, excellente DX\n- Transpilation de modules\n- Améliorations de Turbopack et des benchmarks\n- Plugin SWC pour transformer les imports\n- Runtime Edge désormais stable pour les routes API et middleware avancé",
+        "en": "- Améliorations et corrections de bugs du répertoire app\n- Plugin TypeScript, excellente DX\n- Transpilation des modules\n- Améliorations de Turbopack et des benchmarks\n- Plugin SWC pour transformer les imports\n- Runtime Edge désormais stable pour les routes API, et middleware avancé"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bcda0ab1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2eb5ba30",
+      "source_content": "- 📖 Beta docs [useEffectEvent](https://beta.reactjs.org/learn/separating-events-from-effects#declaring-an-effect-event): some updated doc for the newly renamed React hook. The [new site is coming in January](https://twitter.com/dan_abramov/status/1606646280649904131)!\n- 📖 Redux docs [Side Effects Approaches](https://twitter.com/acemarke/status/1607869290715222016): new docs page with recommendations, and comparing thunks, sagas, observables, listeners, RTQ Query...\n- 📜 [React ref Callback Use–Cases](https://julesblom.com/writing/ref-callback-use-cases): complete article about callback refs which allow to trigger side effects related to DOM elements. Jules presents many use cases: portals, measuring a DOM element...\n- 📜 [The Ultimate Form Abstraction](https://www.brendonovich.dev/blog/the-ultimate-form-abstraction): explains how to use React-Hook-Form with a Zod resolver. Leverage the brand new Zod type-coercion feature for number inputs. Gradually build a great form abstraction with a good DX and typesafety.\n- 📜 [A React Developer’s First Take on Solid](https://jakelazaroff.com/words/a-react-developers-first-take-on-solid/): an interesting comparison between Solid and React, then SolidStart and Next.js/Remix. Jake also lists things he doesn't like in Solid.\n- 📜 [A Review of UltraJS, Mixing React and Deno in a Single Framework](https://blog.bitsrc.io/a-review-of-ultrajs-mixing-react-and-deno-in-a-single-framework-8e4dd41ea076): this React framework for Deno pushes the latest innovations forward (ES without bundling, ImportMaps...).\n- 📜 [Turbocharging Next.js: How Remote Caching decreased publish times by 80%](https://vercel.com/blog/turborepo-remote-cache-nextjs-publish-times-80-percent): feedback from Vercel, using Turborepo and Remote Caching to reduce Next.js build times, especially the native SWC binary build.\n- 📜 [Hello React, Goodbye useEffect (I Hope)](https://blog.imam.dev/post/hello-react-18-goodbye-useffect): well documented article about useEffect, probably too much used in our codebases. It is above all a synchronization tool. Some inconsistencies, but worth reading.\n- 📜 [Simplifying React Three Fiber with Entity Component System](https://douges.dev/blog/simplifying-r3f-with-ecs)\n- 📜 [Everything you need to know about Concurrent React (with a little bit of Suspense)](https://blog.codeminer42.com/everything-you-need-to-know-about-concurrent-react-with-a-little-bit-of-suspense/)\n- 🤔 [Bun + new JSX 2.0 Syntax](https://twitter.com/jarredsumner/status/1609025481684422659): add support to the `<User {user} />)` syntax. A news that does not please everyone because the spec of JSX 2.0 is not finalized.\n- 👀 [Remix - CSS Modules support](https://github.com/remix-run/remix/pull/4852): PR has been merged, should be released soon.\n- 📦 [mdxjs-rs](https://github.com/wooorm/mdxjs-rs): a Rust implementation of MDX 👌\n- 📦 [react-wrap-balancer](https://github.com/shuding/react-wrap-balancer): a component to balance the text of your titles on several lines (impossible in CSS). It inlines JavaScript to avoid layout shifts.\n- 📦 [react-resizable-panels](https://github.com/bvaughn/react-resizable-panels) ([demo](https://twitter.com/brian_d_vaughn/status/1605751430542925827)): a new lib from Brian Vaughn that allows you to resize elements of a layout.\n- 📦 [gltfjsx v6](https://twitter.com/0xca0a/status/1605566666066124802): optimizations on the GLTF 3D model loader.\n- 📦 [react-ts-form](https://github.com/iway1/react-ts-form): Zod and React-Hook-Form based form lib\n- 📦 [Gatsby 5.3](https://www.gatsbyjs.com/docs/reference/release-notes/v5.3/)\n- 📊 [Mobile Performance of Next.js Sites](https://calendar.perfplanet.com/2022/mobile-performance-of-next-js-sites/)\n- 🎥 [3 React Mistakes, 1 App Killer](https://www.youtube.com/watch?v=QuLfCUh-iwI)\n- 🎥 [Learn with Jason - TanStack Query v4 with Dominik Dorfmeister](https://www.learnwithjason.dev/tanstack-query-v4)\n- 🎥 [Learn How I Built a Twitter UI with TypeScript, Qwik, SolidJS, and React in Mitosis](https://www.youtube.com/watch?v=07UW3REM6k8)\n- 🎥 [Remotion - The Rust journey begins](https://twitter.com/JNYBGR/status/1610273808820363265)\n- 👥 [Storybook Day user conference](https://storybook.js.org/blog/storybook-day/): online conference on March 14, launch of Storybook 7.0",
+      "source_content_hash": "c3ce1f33937b253d218f17ee783a3478b64d2e8c031af67cc69df9f9bfb6c4ee",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2eb5ba30",
+        "en": "@@untranslatable_placeholder_2eb5ba30"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3ca4b8b0",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_3ca4b8b0",
+        "en": "@@untranslatable_placeholder_3ca4b8b0"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "945bf499",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e33a2404",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "[![Developer Nation Survey - Do you want to make an impact on the developer ecosystem?](/emails/issues/128/dn-survey.png)](https://developereconomics.net/?member_id=thisweekinreact)",
+      "source_content_hash": "f4311dbb9a7ce7ff5c275b9ebdeb38da4ae7e6d166396a1765ede0b13e3ce8a4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Sondage Developer Nation - Souhaitez-vous influencer l'écosystème des développeurs ?](/emails/issues/128/dn-survey.png)](https://developereconomics.net/?member_id=thisweekinreact)",
+        "en": "[![Sondage Developer Nation - Voulez-vous avoir un impact sur l'écosystème des développeurs ?](/emails/issues/128/dn-survey.png)](https://developereconomics.net/?member_id=thisweekinreact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "**[Do you want to make an impact on the developer ecosystem?](https://developereconomics.net/?member_id=thisweekinreact)**",
+      "source_content_hash": "7809d6202ddfc6b61fb9e9a4b67d6524a42cb3ce7179a7244899edcd29dda9c4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Souhaitez-vous influencer l'écosystème des développeurs ?](https://developereconomics.net/?member_id=thisweekinreact)**",
+        "en": "**[Voulez-vous avoir un impact sur l'écosystème des développeurs ?](https://developereconomics.net/?member_id=thisweekinreact)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Based on the latest State of the Developer Nation report, React is by far the most popular client-side library as it is used by 58% of web developers who use client-side web frameworks. What are your thoughts?",
+      "source_content_hash": "a5c10f7470ed9e9fc762e044bbbf8b51f94c71dc5b0cba8ce6015014c1d448e8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "D'après le dernier rapport State of the Developer Nation, React est de loin la bibliothèque côté client la plus populaire, car elle est utilisée par 58 % des développeurs web qui utilisent des frameworks web côté client. Qu'en pensez-vous ?",
+        "en": "Selon le dernier rapport State of the Developer Nation, React est de loin la bibliothèque côté client la plus populaire, utilisée par 58 % des développeurs web qui emploient des frameworks côté client. Qu'en pensez-vous ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "Take part in the most complete [survey](https://developereconomics.net/?member_id=thisweekinreact) Developer Nation has ever created, shape the key trends among developers for 2023 and win amazing prizes! 🎁",
+      "source_content_hash": "1d31b539e66751de0cc2508be442316574341b406d609a374016024a37a736cd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Participez à l'[enquête](https://developereconomics.net/?member_id=thisweekinreact) la plus complète jamais créée par Developer Nation, façonnez les tendances clés parmi les développeurs pour 2023 et gagnez des prix incroyables ! 🎁",
+        "en": "Participez à l'[enquête](https://developereconomics.net/?member_id=thisweekinreact) la plus complète jamais créée par Developer Nation, façonnez les tendances clés parmi les développeurs pour 2023 et gagnez des prix exceptionnels ! 🎁"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "Upon completion you will get free access to our Virtual Goody Bag. Don't forget to sign up to enter the weekly draws. Among the 250 prizes you can find a ThinkPad L15 Gen 3, an Intel NUC 10 Performance Mini PC, IoT kits, an iPad Air, gift cards, Udemy courses, tech accessories, and many more.",
+      "source_content_hash": "a0901dd0cc22851dbc228a952913031b1718d2743fd847c51019636f3ac8c446",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À la fin, vous obtiendrez un accès gratuit à notre Virtual Goody Bag. N'oubliez pas de vous inscrire pour participer aux tirages hebdomadaires. Parmi les 250 prix, vous trouverez un ThinkPad L15 Gen 3, un Mini PC Intel NUC 10 Performance, des kits IoT, un iPad Air, des cartes-cadeaux, des cours Udemy, des accessoires tech et bien plus encore.",
+        "en": "À l'issue du questionnaire, vous bénéficierez d'un accès gratuit à notre Virtual Goody Bag. N'oubliez pas de vous inscrire pour participer aux tirages hebdomadaires. Parmi les 250 prix, vous pourrez trouver un ThinkPad L15 Gen 3, un mini PC Intel NUC 10 Performance, des kits IoT, un iPad Air, des cartes-cadeaux, des cours Udemy, des accessoires tech et bien plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "[Start here](https://developereconomics.net/?member_id=thisweekinreact)!",
+      "source_content_hash": "f8c15150d03d45973f99a4f93c9380545d3e9f1ff213b27136ced8909305038e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Commencez ici](https://developereconomics.net/?member_id=thisweekinreact) !",
+        "en": "[Commencez ici](https://developereconomics.net/?member_id=thisweekinreact) !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d1f76d04",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "[![Tamagui 1.0](/emails/issues/130/tamagui.jpg)](https://tamagui.dev/blog/version-one)",
+      "source_content_hash": "123467f1c167661aff2c04906506eb998933c42cdd3c7665f0808d545acb385f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Tamagui 1.0](/emails/issues/130/tamagui.jpg)](https://tamagui.dev/blog/version-one)",
+        "en": "[![Tamagui 1.0](/emails/issues/130/tamagui.jpg)](https://tamagui.dev/blog/version-one)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "**[Tamagui 1.0](https://tamagui.dev/blog/version-one)**",
+      "source_content_hash": "8f0641fce57f0872436cbdc0232d70598b993030ca45a42410f4f331b80a198b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Tamagui 1.0](https://tamagui.dev/blog/version-one)**",
+        "en": "**[Tamagui 1.0](https://tamagui.dev/blog/version-one)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "Tamagui is officially out of beta, and makes it easy to create cross-platform projects (web and mobile) based on the same codebase in React, without losing on DX or performance. The project is divided into 3 parts:",
+      "source_content_hash": "05b8c7ebc6e9a57fe86ce28cc2e10e0fcda12092364a0674dc57252ca7a88cd1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Tamagui est officiellement sorti de la version bêta et facilite la création de projets multiplateformes (web et mobile) basés sur la même base de code en React, sans sacrifier la DX ou les performances. Le projet est divisé en 3 parties :",
+        "en": "Tamagui est officiellement sorti de la version bêta et facilite la création de projets multiplateformes (web et mobile) basés sur la même base de code en React, sans compromettre la DX ou les performances. Le projet est divisé en 3 parties :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ddd26d5",
+      "source_content": "- Tamagui Core: a CSS-in-JS runtime on top of React-Native and [React-Native-Web-Lite](https://www.npmjs.com/package/react-native-web-lite)\n- Tamagui Static: a Babel-based compiler and Node pre-evaluation that supports view flattening and atomic CSS style extraction\n- Tamagui UI: a library of React components and hooks for ease of use",
+      "source_content_hash": "431609c6adabdfa6948b5f65f6a4f79552e594997c084fdaaf2a0d3027a48b2a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Tamagui Core : un runtime CSS-in-JS basé sur React-Native et [React-Native-Web-Lite](https://www.npmjs.com/package/react-native-web-lite)\n- Tamagui Static : un compilateur basé sur Babel et une pré-évaluation Node qui prend en charge l'aplatissement des vues et l'extraction de styles CSS atomiques\n- Tamagui UI : une bibliothèque de composants React et de hooks pour faciliter l'utilisation",
+        "en": "- Tamagui Core : un runtime CSS-in-JS basé sur React-Native et [React-Native-Web-Lite](https://www.npmjs.com/package/react-native-web-lite)\n- Tamagui Static : un compilateur basé sur Babel et une pré-évaluation Node qui prend en charge l'aplatissement des vues et l'extraction de styles CSS atomiques\n- Tamagui UI : une bibliothèque de composants React et de hooks pour faciliter l'utilisation"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "Tamagui is an innovative project with positive feedback from styling and cross-platform thought leaders. It could be interesting even if you only target one platform. The support of React 18 features like Server Components, Concurrent Mode is already there. Worth giving it a try!",
+      "source_content_hash": "54d8c2fc782194574f3744cc51fa3baa2423134ff226fc16460aec10f0ef1f43",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Tamagui est un projet innovant avec des retours positifs de leaders d'opinion en matière de styling et de multiplateforme. Il pourrait être intéressant même si vous ne ciblez qu'une seule plateforme. La prise en charge des fonctionnalités de React 18 comme les Server Components et le Concurrent Mode est déjà présente. Cela vaut le coup d'essayer !",
+        "en": "Tamagui est un projet innovant salué par les leaders d'opinion en matière de stylisation et de multiplateforme. Il peut s'avérer intéressant même si vous ne ciblez qu'une seule plateforme. La prise en charge des fonctionnalités de React 18 comme les Server Components et le Concurrent Mode est déjà intégrée. Cela vaut le coup d'essayer !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "[![React Native Skia: A Year in Review and a Look Ahead](/emails/issues/130/skia.jpg)](https://shopify.engineering/react-native-skia-2022)",
+      "source_content_hash": "61410f18ec06784e24ce0efaa02148b878761888bae8f2c8a0fe0aaf58bbe507",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Native Skia : Bilan d'une année et perspectives](/emails/issues/130/skia.jpg)](https://shopify.engineering/react-native-skia-2022)",
+        "en": "[![React Native Skia : Rétrospective d'une année et perspectives](/emails/issues/130/skia.jpg)](https://shopify.engineering/react-native-skia-2022)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "**[React Native Skia: A Year in Review and a Look Ahead](https://shopify.engineering/react-native-skia-2022)**",
+      "source_content_hash": "0bfed08efdc66d40bb44d7494d3cda557b8ab1181cbd81f04efee626c4a8dea8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Native Skia : Bilan d'une année et perspectives](https://shopify.engineering/react-native-skia-2022)**",
+        "en": "**[React Native Skia : Rétrospective d'une année et perspectives](https://shopify.engineering/react-native-skia-2022)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "William Candillon makes a nice retrospective of the React-Native-Skia project. As a reminder, [Skia](https://skia.org/) is Google's 2D engine, used by Chrome, Android, Flutter... They have significantly improved the performance with UI Thread Rendering and a new declarative Skia DOM API. The library is flexible and can be extended (Skottie, VisionCamera frame processing). In 2023, we can expect to see animations via worklets, a more powerful integration with Reanimated, or text layout.",
+      "source_content_hash": "fad0ba7869ffd12786d6f67a1f41371b5cff74c00f47160ad14e8333f832c28a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "William Candillon dresse un beau bilan rétrospectif du projet React-Native-Skia. Pour rappel, [Skia](https://skia.org/) est le moteur 2D de Google, utilisé par Chrome, Android, Flutter... Ils ont considérablement amélioré les performances avec le rendu sur le thread UI et une nouvelle API déclarative Skia DOM. La bibliothèque est flexible et peut être étendue (Skottie, traitement d'images VisionCamera). En 2023, nous pouvons nous attendre à voir des animations via des worklets, une intégration plus puissante avec Reanimated ou la mise en page de texte.",
+        "en": "William Candillon propose une belle rétrospective du projet React-Native-Skia. Pour rappel, [Skia](https://skia.org/) est le moteur 2D de Google, utilisé par Chrome, Android, Flutter... Les performances ont été significativement améliorées avec le rendu sur le thread UI et une nouvelle API déclarative Skia DOM. La bibliothèque est flexible et extensible (Skottie, traitement d'images VisionCamera). En 2023, on peut s'attendre à des animations via les worklets, une intégration renforcée avec Reanimated ou la mise en page de texte."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6409152f",
+      "source_content": "- 📊 [State of React-Native 2022](https://twitter.com/swmansion/status/1605957585684799493): the survey is open. I'll send a dedicated email soon because it's important that you answer it 😜\n- 📜 [First-class Support for TypeScript](https://reactnative.dev/blog/2023/01/03/typescript-first): React-Native 0.71 should be released very soon with full TypeScript support by default: type definitions, documentation and starter template.\n- 📜 [Shopify - Migrating our Largest Mobile App to React Native](https://shopify.engineering/migrating-our-largest-mobile-app-to-react-native): Shopify is in the process of incrementally migrating their main app to React-Native. It's a 6 years old app with more than 300 screens, with no particular technical debt. A very interesting feedback on this ongoing migration (still in the beginning, around 10% done). The first approach (new features in React-Native) had not worked. They finally opted to convert the root of the app first.\n- 📜 [Implementing CSS Style Inheritance in React Native](https://www.builder.io/blog/implementing-css-style-inheritance-in-react-native): explains how to reproduce the CSS cascade in React-Native, a CSS behavior not implemented for good reasons. This is especially useful for integration with a CMS, which often assumes that you can apply text styling to a parent View, like it's possible on the web.\n- 📜 [Google Drive auto-backup for React Native on Android](https://dev.to/retyui/google-drive-auto-backup-for-react-native-on-android-254a): to persist the async storage (or whatever) from one phone to another.\n- 🎥 [How to use Bluetooth Low Energy ( BLE ) Beacons with React-Native](https://www.youtube.com/watch?v=1hYM_sdQcBU)",
+      "source_content_hash": "41ebfe70162557ac36d1a60a07a543e08178dc55dcabd46d8178fe9f561a272c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📊 [State of React-Native 2022](https://twitter.com/swmansion/status/1605957585684799493) : l'enquête est ouverte. J'enverrai bientôt un email dédié car il est important que vous y répondiez 😜\n- 📜 [First-class Support for TypeScript](https://reactnative.dev/blog/2023/01/03/typescript-first) : React-Native 0.71 devrait être publié très prochainement avec un support TypeScript complet par défaut : définitions de types, documentation et modèle de démarrage.\n- 📜 [Shopify - Migrating our Largest Mobile App to React Native](https://shopify.engineering/migrating-our-largest-mobile-app-to-react-native) : Shopify est en train de migrer progressivement son application principale vers React-Native. Il s'agit d'une application vieille de 6 ans avec plus de 300 écrans, sans dette technique particulière. Un retour très intéressant sur cette migration en cours (encore à ses débuts, environ 10% terminée). La première approche (nouvelles fonctionnalités en React-Native) n'avait pas fonctionné. Ils ont finalement opté pour convertir d'abord la racine de l'application.\n- 📜 [Implementing CSS Style Inheritance in React Native](https://www.builder.io/blog/implementing-css-style-inheritance-in-react-native) : explique comment reproduire la cascade CSS dans React-Native, un comportement CSS non implémenté pour de bonnes raisons. C'est particulièrement utile pour l'intégration avec un CMS, qui suppose souvent que vous pouvez appliquer un style de texte à une View parente, comme c'est possible sur le web.\n- 📜 [Google Drive auto-backup for React Native on Android](https://dev.to/retyui/google-drive-auto-backup-for-react-native-on-android-254a) : pour persister le stockage asynchrone (ou autre) d'un téléphone à un autre.\n- 🎥 [How to use Bluetooth Low Energy ( BLE ) Beacons with React-Native](https://www.youtube.com/watch?v=1hYM_sdQcBU)"
+      },
+      "invalid_translations": {
+        "en": {
+          "translation": "- 📊 [State of React-Native 2022](https://twitter.com/swmansion/status/1605957585684799493) : l'enquête est ouverte. J'enverrai bientôt un email dédié car il est important que vous y répondiez 😜\n- 📜 [Support de première classe pour TypeScript](https://reactnative.dev/blog/2023/01/03/typescript-first) : React-Native 0.71 devrait sortir très bientôt avec un support TypeScript complet par défaut : définitions de types, documentation et modèle de démarrage.\n- 📜 [Shopify - Migration de notre plus grande application mobile vers React Native](https://shopify.engineering/migrating-our-largest-mobile-app-to-react-native) : Shopify est en train de migrer progressivement leur application principale vers React-Native. C'est une application de 6 ans avec plus de 300 écrans, sans dette technique particulière. Un retour très intéressant sur cette migration en cours (encore au début, environ 10% terminée). La première approche (nouvelles fonctionnalités en React-Native) n'avait pas fonctionné. Ils ont finalement opté pour convertir d'abord la racine de l'application.\n- 📜 [Implémenter l'héritage de style CSS dans React Native](https://www.builder.io/blog/implementing-css-style-inheritance-in-react-native) : explique comment reproduire la cascade CSS dans React-Native, un comportement CSS non implémenté pour de bonnes raisons. C'est particulièrement utile pour l'intégration avec un CMS, qui suppose souvent qu'on peut appliquer un style de texte à une View parente, comme c'est possible sur le web.\n- 📜 [Sauvegarde automatique Google Drive pour React Native sur Android](https://dev.to/retyui/google-drive-auto-backup-for-react-native-on-android) : pour conserver le stockage asynchrone (ou autre) d'un téléphone à un autre.\n- 🎥 [Comment utiliser les balises Bluetooth Low Energy (BLE) avec React-Native](https://www.youtube.com/watch?v=1hYM_sdQcBU)",
+          "reason": "URL for a 'link' was changed from 'https://dev.to/retyui/google-drive-auto-backup-for-react-native-on-android-254a' to 'https://dev.to/retyui/google-drive-auto-backup-for-react-native-on-android'.",
+          "timestamp": "2025-06-24T15:57:01.440561+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "8144f6e8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0d5321b7",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Emplois {#jobs}",
+        "en": "## 🧑‍💻 Emplois {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "🧑‍💼 [**Product Engineer at Causal, Remote/London/NY, $150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)",
+      "source_content_hash": "382f1c3a48ba67f7413a1d09e0e17ee63d0ecea0499e9a0f1bf0a58963fdf7ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Ingénieur Produit chez Causal, Remote/Londres/NY, $150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)",
+        "en": "🧑‍💼 [**Ingénieur Produit chez Causal, Remote/Londres/NY, 150-250 k$**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "Causal is a Series A Startup (backed by Coatue/Accel) building an all-in-one tool for working with numbers and visualizing data. We're looking for strong React engineers who can solve difficult UX/performance challenges.",
+      "source_content_hash": "20bfaa3d377f2ddf3a9abbf4f1ce455c376710731cb5f7e58785d6741fc6377f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Causal est une startup en série A (soutenue par Coatue/Accel) qui construit un outil tout-en-un pour travailler avec des nombres et visualiser des données. Nous recherchons des ingénieurs React solides capables de résoudre des défis UX/performances difficiles.",
+        "en": "Causal est une startup de Série A (soutenue par Coatue/Accel) qui construit un outil tout-en-un pour travailler avec des nombres et visualiser des données. Nous recherchons des ingénieurs React solides capables de résoudre des défis UX/performance difficiles."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement à distance, PLN 21-32k net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)",
+        "en": "🧑‍💼 [**Callstack - Développeur React Native Senior - Télétravail complet, 21-32k PLN net sur B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous attendons avec impatience votre candidature - montrez-nous ce que vous savez faire !",
+        "en": "Vous voulez travailler sur les applications les plus utilisées au monde ? Vous aimeriez co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous avons hâte de voir votre candidature - montrez-nous ce que vous savez faire !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42d9ca67",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération d'environ 160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.",
+        "en": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k $ plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6796530",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ee213c98",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "93fcd90c",
+      "source_content": "- [JavaScript Frameworks - Heading into 2023](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2023-nln)\n- [2022 CSS Updates](https://12daysofweb.dev/2022/2022-css-updates/)\n- [Nx 15.4 — Vite 4 Support, a new Nx Watch Command, and more!](https://blog.nrwl.io/nx-15-4-vite-4-support-a-new-nx-watch-command-and-more-77cbf6c9a711)\n- [Jamstack Trends: How will we develop in 2023?](https://www.netlify.com/blog/jamstack-trend-predictions-2023/)\n- [How We Improved monday.com Board’s Scroll Performance](https://engineering.monday.com/how-we-improved-monday-com-boards-scroll-performance-a-case-study-on-boosting-fps-by-50/)\n- [Bun 0.4.0](https://twitter.com/jarredsumner/status/1606345309050634240)\n- [bunx - 100x faster than npx](https://twitter.com/jarredsumner/status/1606163655527059458)\n- [pretty-cache-header](https://github.com/jjenzz/pretty-cache-header): parses human readable time strings into seconds.\n- [HTTP/3 Prioritization Demystified](https://calendar.perfplanet.com/2022/http-3-prioritization-demystified/)",
+      "source_content_hash": "2bf0c2c0b4ba8f03eab84d16da1ac363390af1047045536bf8ce866e814ab6d4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Les frameworks JavaScript - Cap sur 2023](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2023-nln)\n- [Mises à jour CSS 2022](https://12daysofweb.dev/2022/2022-css-updates/)\n- [Nx 15.4 — Prise en charge de Vite 4, nouvelle commande Nx Watch et plus !](https://blog.nrwl.io/nx-15-4-vite-4-support-a-new-nx-watch-command-and-more-77cbf6c9a711)\n- [Tendances Jamstack : Comment développerons-nous en 2023 ?](https://www.netlify.com/blog/jamstack-trend-predictions-2023/)\n- [Comment nous avons amélioré les performances de défilement des tableaux monday.com](https://engineering.monday.com/how-we-improved-monday-com-boards-scroll-performance-a-case-study-on-boosting-fps-by-50/)\n- [Bun 0.4.0](https://twitter.com/jarredsumner/status/1606345309050634240)\n- [bunx - 100x plus rapide que npx](https://twitter.com/jarredsumner/status/1606163655527059458)\n- [pretty-cache-header](https://github.com/jjenzz/pretty-cache-header): analyse les chaînes temporelles lisibles en secondes.\n- [Priorisation HTTP/3 démystifiée](https://calendar.perfplanet.com/2022/http-3-prioritization-demystified/)",
+        "en": "- [Frameworks JavaScript - Direction 2023](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2023-nln)\n- [Mises à jour CSS 2022](https://12daysofweb.dev/2022/2022-css-updates/)\n- [Nx 15.4 — Prise en charge de Vite 4, une nouvelle commande Nx Watch et plus encore !](https://blog.nrwl.io/nx-15-4-vite-4-support-a-new-nx-watch-command-and-more-77cbf6c9a711)\n- [Tendances Jamstack : Comment développerons-nous en 2023 ?](https://www.netlify.com/blog/jamstack-trend-predictions-2023/)\n- [Comment nous avons amélioré les performances de défilement du tableau de monday.com](https://engineering.monday.com/how-we-improved-monday-com-boards-scroll-performance-a-case-study-on-boosting-fps-by-50/)\n- [Bun 0.4.0](https://twitter.com/jarredsumner/status/1606345309050634240)\n- [bunx - 100 fois plus rapide que npx](https://twitter.com/jarredsumner/status/1606163655527059458)\n- [pretty-cache-header](https://github.com/jjenzz/pretty-cache-header) : analyse les chaînes de temps lisibles par un humain en secondes.\n- [La priorisation HTTP/3 démystifiée](https://calendar.perfplanet.com/2022/http-3-prioritization-demystified/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ae25b606",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6b29dc7",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dc72fd20",
+      "source_content": "[![alt](/emails/issues/130/meme.jpg)](https://twitter.com/sebastienlorber/status/1610243388174991360)",
+      "source_content_hash": "d763e12c0a898669be1c80d22e5e085e086f176a2087611d07963413a7b51e2c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/130/meme.jpg)](https://twitter.com/sebastienlorber/status/1610243388174991360)",
+        "en": "[![alt](/emails/issues/130/meme.jpg)](https://twitter.com/sebastienlorber/status/1610243388174991360)"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/130/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.440597+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "95b40e345b04255a9c8aec6b0fe1e35e7b1e0e4f6fd4ff5d050cf659bcbdca57",
+    "en": "95b40e345b04255a9c8aec6b0fe1e35e7b1e0e4f6fd4ff5d050cf659bcbdca57"
+  }
+}

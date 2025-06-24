@@ -1,0 +1,119 @@
+---
+slug: /114
+title: "This Week In React #114: 🎉 official launch of Docusaurus 2.0 🥳️"
+authors: [slorber]
+date: 08-01-2022
+---
+
+This Week In React #114 : 🎉 lancement officiel de Docusaurus 2.0 🥳️
+
+<!-- truncate -->
+
+Bonjour à tous !
+
+🎉 C'est le [**lancement officiel de Docusaurus 2.0**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) !
+
+C'est le projet **Meta Open Source (Facebook)** que je maintiens : un générateur de site statique pour documentation, basé sur Node.js et React. Il vous permet de vous concentrer sur le contenu : il suffit d'écrire des fichiers Markdown. Docusaurus est véritablement personnalisable et respecte l'image de marque de votre entreprise. Il alimente déjà de nombreux sites de documentation que vous connaissez : React-Native, Supabase, Redux, Tauri, Electron, Courier, Ionic, Figma, Snapchat, Prettier, Babel, Solana, Cardano...
+
+🙏 Nous lançons également sur [**ProductHunt**](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), [**Hacker News**](https://news.ycombinator.com/item?id=32303052&utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) et [**Twitter**](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : si vous aimez le projet, merci de **voter** et de partager votre avis 😃
+
+🎙️ Mon podcast sur Docusaurus avec [The Developer's Bakery](https://thebakery.dev/39/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) vient également de sortir 😉
+
+---
+
+[![](https://s3.amazonaws.com/revue/items/images/017/224/019/mail/social-card.png?1659345670)](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+**Remarque** : assurez-vous de lire le post officiel [**Annonce de Docusaurus 2.0**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0) : il est plus détaillé que celui-ci, qui est mon résumé personnel.
+
+## Qu'est-ce que Docusaurus ?
+
+Meta a de nombreux projets internes/externes, qui doivent chacun être documentés. Écrire de la documentation est déjà assez difficile, et si vous devez personnaliser un site à chaque fois, cela devient une perte de temps.
+
+En 2017, ils ont commencé à copier/coller un modèle Jekyll pour chaque projet, mais cela est rapidement devenu difficile à maintenir.
+
+En 2017, ils ont décidé de créer Docusaurus, un générateur de site statique basé sur React en Node.js, qui "cache" la pile technique du site et permet de **se concentrer sur le contenu** : écrire des fichiers **Markdown**. C'est un peu comme Create-React-App, mais pour créer des sites de contenu : documentation, blog, pages de destination...
+
+La v1 de Docusaurus est rapidement devenue populaire, utilisée par React-Native, Jest, Babel, Prettier...
+
+![Sites utilisant Docusaurus v1](https://s3.amazonaws.com/revue/items/images/017/224/025/original/v1.gif?1659345706)
+
+---
+
+## Vers Docusaurus v2
+
+Suite à la sortie de la v1, Meta a constaté certaines limitations de la v1 :
+
+- utilise React uniquement côté serveur : pas d'hydratation ni de navigation en application monopage
+- le dépôt était assez monolithique, difficile à maintenir et tester
+- peu extensible, absence de système de plugins
+- le thème était relativement limité, les sites v1 se ressemblaient beaucoup
+
+En 2018, Meta a décidé de **recréer Docusaurus à partir de zéro**, avec une architecture entièrement nouvelle :
+
+- React utilisé côté client et serveur (comme Next.js, Remix, Gatsby...)
+- Système de plugins : permet à la communauté de contribuer des fonctionnalités utiles (intégration OpenAPI, moteur de recherche local, support Sass...)
+- Système de thèmes bien plus flexible : possibilité de surcharger tout composant React du thème
+- MDX (Markdown + React) pour rendre votre documentation interactive
+
+Docusaurus 2.0 est resté en alpha/bêta pendant **4 ans** 🤪, et nous avons enfin publié la **première version stable** ! Nous avons retardé cette sortie car il n'était pas évident de respecter le versionnage sémantique auparavant.
+
+Aujourd'hui, Docusaurus v2 est disponible avec de nombreuses fonctionnalités difficiles à toutes lister : docs, blog, gestion de versions, thèmes, mode sombre, i18n, a11y, SEO, TypeScript, PWA, Algolia DocSearch, MDX...
+
+---
+
+## Qui utilise Docusaurus 2.0 ?
+
+De nombreuses entreprises ont adopté Docusaurus 2.0 malgré son statut bêta. La v2 est déjà bien plus populaire que la v1, avec près de la moitié des téléchargements npm de Gatsby !
+
+![npm growth](https://s3.amazonaws.com/revue/items/images/017/224/035/mail/npm-downloads.png?1659345822)
+
+Notre [**vitrine de sites**](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) recense déjà près de 300 sites.
+
+Elle reste loin d'être exhaustive avec de nombreux sites non encore ajoutés : [Figma](https://www.figma.com/plugin-docs/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), [Snapchat](https://docs.snap.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), [Courier](https://www.courier.com/docs/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), [1Password](https://developer.1password.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)...
+
+Sans compter les nombreux sites internes d'entreprises comme Microsoft, LinkedIn, Shopify...
+
+Quelques exemples :
+
+- **Big tech** : Microsoft, Snapchat, Shopify, LinkedIn, Meta, SAP, ByteDance, Lacework, Palo Alto Network...
+- **Startups** : Supabase, Ionic, Hasura, Figma, Courier, CodeSandbox, StackBlitz, Redis, Algolia, Hashnode...
+- **OSS** : React-Native, Redux, React-Navigation, Jest, Testing Library, Gulp, Babel, Lerna, pnpm, Electron, Tauri...
+- **Web3** : Iota, Solana, Cardano, Neo, SushiSwap...
+
+Nous comptons aussi de nombreux sites avec des personnalisations élégantes respectant parfaitement l'identité de marque.
+
+![Sites using Docusaurus v2](https://s3.amazonaws.com/revue/items/images/017/224/051/original/showcase-2.gif?1659345869)
+
+---
+
+## Quel est mon rôle dans tout cela ?
+
+Il y a deux ans, alors que je parcourais Twitter, je suis tombé sur ceci :
+
+[![](https://user-images.githubusercontent.com/749374/182660849-cc39d9d0-85ad-481c-a681-743a9c5b20c7.png)](https://twitter.com/sebastienlorber/status/1232059882091749376)
+
+**Conseil pro** : rejoignez Twitter et soyez ouvert 😄 Cela peut mener à des opportunités de carrière intéressantes !
+
+J'ai vu là une formidable opportunité : travailler pour Facebook en tant que freelance sur un projet open-source n'arrive pas tous les jours. Initialement prévue pour 3 mois, cette mission s'est finalement prolongée : je travaille sur Docusaurus depuis plus de 2 ans maintenant !
+
+J'ai la chance de travailler avec une grande flexibilité et autonomie, ce qui me permet aussi de gérer cette newsletter en parallèle.
+
+C'est vraiment gratifiant de voir Docusaurus gagner en popularité, je sens que mon travail a un impact concret. J'espère vous avoir donné envie d'essayer cet outil et j'ai hâte de découvrir les sites que vous créerez ! N'oubliez pas de les soumettre à notre [site showcase](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) !
+
+---
+
+## Aidez-nous
+
+J'apprécierais vraiment votre aide pour **faire de ce lancement un succès**. Un vote positif, retweet ou commentaire nous aide énormément !
+
+Les principales plateformes où nous lançons :
+
+- [Twitter](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- [Product Hunt](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- [Hacker News](https://news.ycombinator.com/item?id=32303052&utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Merci et à bientôt pour des nouvelles fraîches de React :)
+
+![Notre mascotte la plus mignonne Slash 💕](https://s3.amazonaws.com/revue/items/images/017/224/190/mail/CleanShot_2022-08-01_at_11.08.03_402x.png?1659346116)
+
+Notre mascotte la plus mignonne Slash 💕

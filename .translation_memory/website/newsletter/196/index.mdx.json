@@ -1,0 +1,657 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/196/index.mdx",
+  "source_file_content_hash": "6ed8508e7775cc6ebd01eeb5cbb352955fb3a7291ad94482f03df351543341d6",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /196\ntitle: \"This Week In React #196: Forms, Jotai, DI, Electron, Docusaurus, Signals, Plunk, React-Server, Switchboard, React-Call, RN WebGPU, Nitro Modules, use dom, macOS, Screens, Autolinking, Cocoapods, Corepack, Node.js, TypeScript...\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 08-14-2024\n---",
+      "source_content_hash": "443939ca28b40e45e769d48cefb414325d332343e930f262c5e312ed36995e7e",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week, we welcome **2 new contributors** to help **ensure the continuity of the newsletter** throughout the year, even when Seb takes a break.",
+      "source_content_hash": "96ce3a5d192aa2d3b22701280fc9918d914052540051fbaed8ae78cde9c1526b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, nous accueillons **2 nouveaux contributeurs** pour aider à **assurer la continuité de la newsletter** tout au long de l'année, même lorsque Seb prend une pause.",
+        "en": "Cette semaine, nous accueillons **2 nouveaux contributeurs** pour aider à **assurer la continuité de la newsletter** tout au long de l'année, même lorsque Seb prend une pause."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "**Cyril and Matthieu from [Theodo Apps (formerly BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact)** here 👋, filling in to bring you the latest news from the React and React Native worlds.",
+      "source_content_hash": "59c8c362dce288dc4a1d70c0be0a2412ea44feaa2058bd2863d4b3d9b3c933f1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Cyril et Matthieu de [Theodo Apps (anciennement BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact)** ici 👋, nous vous apportons les dernières nouvelles des mondes React et React Native.",
+        "en": "**Cyril et Matthieu de [Theodo Apps (anciennement BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact)** ici 👋, nous vous apportons les dernières nouvelles des univers React et React Native."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "It’s a relatively calm week for React, with some ongoing discussions about the Suspense drama in React 19.",
+      "source_content_hash": "aad639ba37410c58c2ab6d0dafe1296a6099d1fb2f7c91e8d52ad0b54aedc7bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "C'est une semaine relativement calme pour React, avec des discussions en cours concernant le problème Suspense dans React 19.",
+        "en": "C'est une semaine relativement calme pour React, avec quelques discussions en cours concernant le drame de Suspense dans React 19."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**But React Native? That’s where the real action is!**\\\nFrom Expo demoing a way to integrate React DOM components to the exciting launch of React Native WebGPU, there’s plenty to talk about. Plus, we’re diving into new approaches to native module development that are sure to shake things up. And React Native 0.75 is around the corner, we'll cover it next week!",
+      "source_content_hash": "ef9da37430986b5147288e44fd8db67d9ef81817bab2f6bc1f3c44e65ab225ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Mais React Native ? C'est là que l'action se trouve !**\\\nDepuis la démonstration d'Expo sur l'intégration de composants React DOM jusqu'au lancement passionnant de React Native WebGPU, il y a beaucoup à dire. De plus, nous explorons de nouvelles approches pour le développement de modules natifs qui vont bousculer les choses. Et React Native 0.75 arrive bientôt, nous le couvrirons la semaine prochaine !",
+        "en": "**Mais React Native ? C'est là que l'action se trouve !**\\\nD'Expo qui démontre une manière d'intégrer des composants React DOM au lancement passionnant de React Native WebGPU, il y a beaucoup à dire. De plus, nous explorons de nouvelles approches de développement de modules natifs qui ne manqueront pas de bousculer les choses. Et React Native 0.75 est à nos portes, nous le couvrirons la semaine prochaine !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6168993",
+      "source_content": "Our partner conf **[reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact)** (🇮🇹 Verona - 25 October) is celebrating its 10th year by upgrading to 2 tracks (16 talks). Get a 10% discount with code \"TWIR\". Great speakers have already been announced: Matheus Albuquerque, Aurora Scharff, Dani Coll, and more!",
+      "source_content_hash": "f4c8c4f2e69eccab92156c8ec844beac93b4380973e0a2cddffffa7d47f825f9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Notre conférence partenaire **[reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact)** (🇮🇹 Vérone - 25 octobre) célèbre ses 10 ans en passant à 2 pistes (16 conférences). Obtenez 10% de réduction avec le code \"TWIR\". D'excellents intervenants ont déjà été annoncés : Matheus Albuquerque, Aurora Scharff, Dani Coll, et plus encore !",
+        "en": "Notre conférence partenaire **[reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact)** (🇮🇹 Vérone - 25 octobre) célèbre sa 10e année en passant à 2 tracks (16 conférences). Obtenez 10% de réduction avec le code \"TWIR\". De grands intervenants ont déjà été annoncés : Matheus Albuquerque, Aurora Scharff, Dani Coll et plus encore !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1ba7fe10",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_1ba7fe10",
+        "en": "@@untranslatable_placeholder_1ba7fe10"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eaf571f0",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a0cc3209",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_a0cc3209",
+        "en": "@@untranslatable_placeholder_a0cc3209"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9329e3e0",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_9329e3e0",
+        "en": "@@untranslatable_placeholder_9329e3e0"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5b5d0360",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0037ff70",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "[![Make the most of your design system with StackBlitz](/emails/issues/196/StackBlitz.jpg)](https://stackblitz.com/design-systems?utm_source=twir&utm_medium=primary)",
+      "source_content_hash": "9e601dc6b4c67b01a9b0e5c53a4b91a02a8fd677a5d16aea666e877906451097",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Tirez le meilleur parti de votre système de design avec StackBlitz](/emails/issues/196/StackBlitz.jpg)](https://stackblitz.com/design-systems?utm_source=twir&utm_medium=primary)",
+        "en": "[![Tirez le meilleur parti de votre système de design avec StackBlitz](/emails/issues/196/StackBlitz.jpg)](https://stackblitz.com/design-systems?utm_source=twir&utm_medium=primary)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "**[Make the most of your design system with StackBlitz](https://stackblitz.com/design-systems?utm_source=twir&utm_medium=primary)**",
+      "source_content_hash": "4e192e70804283ae3c85cc7b2780165f7fe6e23cb7671445659b4b1472b77fa9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Tirez le meilleur parti de votre système de design avec StackBlitz](https://stackblitz.com/design-systems?utm_source=twir&utm_medium=primary)**",
+        "en": "**[Tirez le meilleur parti de votre système de design avec StackBlitz](https://stackblitz.com/design-systems?utm_source=twir&utm_medium=primary)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "Your design system makes web development more efficient and consistent, but we know that building and maintaining it comes with no shortage of challenges. [**StackBlitz**](https://stackblitz.com/) **makes design systems easier to _evangelize_, _maintain_, and _evolve_**. With StackBlitz you can:",
+      "source_content_hash": "2a2bdfc625c4f3ae44cbb8bf5282faa48d86b53552ef873c59951e6f911b76c9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Votre système de design rend le développement web plus efficace et cohérent, mais nous savons que sa construction et sa maintenance présentent de nombreux défis. [**StackBlitz**](https://stackblitz.com/) **rend les systèmes de design plus faciles à _promouvoir_, _maintenir_ et _faire évoluer_**. Avec StackBlitz vous pouvez :",
+        "en": "Votre système de design rend le développement web plus efficace et cohérent, mais nous savons que sa construction et sa maintenance ne sont pas sans défis. [**StackBlitz**](https://stackblitz.com/) **rend les systèmes de design plus faciles à _évangéliser_, _maintenir_ et _faire évoluer_**. Avec StackBlitz, vous pouvez :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8a01ee7b",
+      "source_content": "- 📈 **Increase adoption rates**: Provide one-click instant environments your team can use to try internal libraries.\n- 💻 **Elevate developer experience:** Include live code examples in your documentation.\n- 🐛 **Improve bug reporting**: Instantly filter out true issues and never spin up heavy local installations for a simple bug report _ever again_.\n- 🤝 **Simplify collaboration**: Facilitate seamless collaborations across engineering, design, and other departments.",
+      "source_content_hash": "098ddf53507c290b5135be5c86894cd8950ed1883d4d69245efa9b681b8fda9a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📈 **Augmenter les taux d'adoption** : Fournissez des environnements instantanés en un clic que votre équipe peut utiliser pour tester les bibliothèques internes.\n- 💻 **Améliorer l'expérience développeur** : Incluez des exemples de code en direct dans votre documentation.\n- 🐛 **Optimiser le signalement des bugs** : Filtrez instantanément les vrais problèmes et ne lancez plus jamais d'installations locales lourdes pour un simple rapport de bug.\n- 🤝 **Simplifier la collaboration** : Facilitez les collaborations transparentes entre l'ingénierie, le design et les autres départements.",
+        "en": "- 📈 **Augmenter les taux d'adoption** : Fournissez des environnements instantanés en un clic que votre équipe peut utiliser pour tester des bibliothèques internes.\n- 💻 **Améliorer l'expérience développeur** : Incluez des exemples de code en direct dans votre documentation.\n- 🐛 **Améliorer le signalement des bugs** : Filtrez instantanément les vrais problèmes et ne lancez plus jamais d'installations locales lourdes pour un simple rapport de bug.\n- 🤝 **Simplifier la collaboration** : Facilitez les collaborations transparentes entre l'ingénierie, le design et d'autres départements."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "**Ready to transform your design system workflow?** [Get started now](https://stackblitz.com/design-systems)!",
+      "source_content_hash": "ebf4cc0b56db4b01d2cbf78b34de9fb7b8e350327a41b3f4911183daa3cc138f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Prêt à transformer votre flux de travail pour les systèmes de design ?** [Commencez dès maintenant](https://stackblitz.com/design-systems) !",
+        "en": "**Prêt à transformer votre flux de travail de système de design ?** [Commencez dès maintenant](https://stackblitz.com/design-systems) !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "- 💸 [Chromatic – Visual testing for Storybook, Playwright, and Cypress. Catch UI bugs that functional tests miss. Lightning-fast & zero flake.](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=quick_link&utm_campaign=q3_2024)\n- 👀 [React 19 - Disabling prerendering siblings of suspended components breaking common pattern](https://github.com/facebook/react/issues/29898): The React team is working on reversing this change that was planned to be included in React 19 but would have degraded the performance of lots of SPAs. No ETA yet, it may take some time to get a stable React 19 release\n- 🐦 [Matt Pocock has a suggestion for a new approach to library typings](https://x.com/mattpocockuk/status/1821124980043636841): React could for instance expose `useState` types with TypeScript namespaces\n- 🐦 [Matt](https://x.com/mattpocockuk/status/1821926395380986219) [Pocock](https://x.com/mattpocockuk/status/1821124980043636841)['s tip to add auto-completion to your component props](https://x.com/mattpocockuk/status/1821926395380986219): Using `string & {}`\n- 📜 [A deep dive on forms with modern React](https://www.epicreact.dev/react-forms): Kent explains how to use the new hooks `​​useFormStatus`, `useActionState` and `useOptimistic`\n- 📜 [How Jotai was born](https://blog.axlight.com/posts/how-jotai-was-born/): Daishi Kato recaps his multiple iterations on state management libraries before creating Jotai\n- 📜 [Why using dependency injection in your app can lead to cleaner and easier to maintain code](https://codedrivendevelopment.com/posts/dependency-injection-in-react): A valuable article that encourages thoughtful consideration of DI in frontend development, especially for those working on more complex React projects\n- 📜 [Building an App with Next.js and Electron with Server Components Support](https://www.saybackend.com/blog/03-electron-nextjs-ssr): Explains how to hijack Next.js to run an RSC server in an Electron app\n- 📜 [Optimizing SPA load times with async chunks preloading](https://mmazzarolo.com/blog/2024-08-13-async-chunk-preloading-on-load/)\n- 📜 [What is a Component Library and Should You Build Your Own?](https://component-odyssey.com/articles/10-what-is-a-library-should-you-build-your-own)\n- 📦 [Docusaurus 3.5 - Authors pages and many new blogging features](https://docusaurus.io/blog/releases/3.5)\n- 📦 [Impact-React in RC - Signals for React, by CodeSandbox](https://impact-react.dev)\n- 📦 [Plunk - New OSS email platform, with react-email and jsx-email integrations](https://www.useplunk.com/)\n- 📦 [react-switchboard - Quickly create custom DevTools for your apps](https://github.com/coryhouse/react-switchboard)\n- 📦 [react-call - Imperatively display React Components and await their result](https://github.com/desko27/react-call): An interesting idea to simplify implementing confirmation dialogs, toasters…\n- 📦 [@lazarv/react-server - An alternative framework with Server Components](https://react-server.dev/)\n- 🎙️ [Syntax.fm - We React to State of React Survey](https://syntax.fm/show/805/we-react-to-state-of-react-survey)\n- 🎙️ [Syntax.fm - CSS Components: Tailwind, Panda, Scoped, Modules, Classes, Variables, CSS-in-JS and Sprinkles!](https://syntax.fm/show/807/css-components-tailwind-panda-scoped-modules-classes-variables-css-in-js-and-sprinkles)\n- 🎥 [Sam Selikoff - Avoid premature abstraction with Unstyled Components](https://www.youtube.com/watch?v=9iJK-Vl6PhE)",
+      "source_content_hash": "42483ca7aefe6fd3bc70fd3b1c04dd4b392d39047bc56cce3a53a4f6f76f39b9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "fr": {
+          "translation": "- 💸 [Chromatic – Tests visuels pour Storybook, Playwright et Cypress. Détectez les bugs UI que les tests fonctionnels manquent. Ultra-rapide & zéro faux positif.](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=quick_link&utm_campaign=q3_2024)\n- 👀 [React 19 - La désactivation du prérendu des composants frères suspendus casse un pattern courant](https://github.com/facebook/react/issues/29898): L'équipe React travaille à annuler ce changement prévu dans React 19 qui dégraderait les performances de nombreuses SPA. Pas encore d'ETA, la sortie stable de React 19 pourrait prendre du temps\n- 🐦 [Matt Pocock propose une nouvelle approche pour le typage des bibliothèques](https://x.com/mattpocockuk/status/1821124980043636841): React pourrait par exemple exposer les types de `useState` via les namespaces TypeScript\n- 🐦 [L'astuce de Matt Pocock pour ajouter l'auto-complétion aux props de vos composants](https://x.com/mattpocockuk/status/1821926395380986219): Utiliser `string & {}`\n- 📜 [Plongée approfondie sur les formulaires avec React moderne](https://www.epicreact.dev/react-forms): Kent explique comment utiliser les nouveaux hooks `useFormStatus`, `useActionState` et `useOptimistic`\n- 📜 [Comment Jotai est né](https://blog.axlight.com/posts/how-jotai-was-born/): Daishi Kato revient sur ses multiples itérations de bibliothèques de state management avant de créer Jotai\n- 📜 [Pourquoi l'injection de dépendances dans votre app peut mener à un code plus propre et maintenable](https://codedrivendevelopment.com/posts/dependency-injection-in-react): Un article précieux qui encourage une réflexion sur la DI dans le frontend, surtout pour les projets React complexes\n- 📜 [Construire une app avec Next.js et Electron avec support des Server Components](https://www.saybackend.com/blog/03-electron-nextjs-ssr): Explique comment détourner Next.js pour exécuter un serveur RSC dans une app Electron\n- 📜 [Optimiser les temps de chargement des SPA avec le préchargement de chunks asynchrones](https://mmazzarolo.com/blog/2024-08-13-async-chunk-preloading-on-load/)\n- 📜 [Qu'est-ce qu'une bibliothèque de composants et devriez-vous créer la vôtre ?](https://component-odyssey.com/articles/10-what-is-a-library-should-you-build-your-own)\n- 📦 [Docusaurus 3.5 - Pages auteurs et nouvelles fonctionnalités de blogging](https://docusaurus.io/blog/releases/3.5)\n- 📦 [Impact-React en RC - Signals pour React, par CodeSandbox](https://impact-react.dev)\n- 📦 [Plunk - Nouvelle plateforme email open source avec intégrations react-email et jsx-email](https://www.useplunk.com/)\n- 📦 [react-switchboard - Créer rapidement des DevTools personnalisés](https://github.com/coryhouse/react-switchboard)\n- 📦 [react-call - Afficher impérativement des composants React et attendre leur résultat](https://github.com/desko27/react-call): Idée intéressante pour simplifier les boîtes de confirmation, toasters...\n- 📦 [@lazarv/react-server - Framework alternatif avec Server Components](https://react-server.dev/)\n- 🎙️ [Syntax.fm - Notre réaction au State of React Survey](https://syntax.fm/show/805/we-react-to-state-of-react-survey)\n- 🎙️ [Syntax.fm - Composants CSS: Tailwind, Panda, Scoped, Modules, Classes, Variables, CSS-in-JS et Sprinkles !](https://syntax.fm/show/807/css-components-tailwind-panda-scoped-modules-classes-variables-css-in-js-and-sprinkles)\n- 🎥 [Sam Selikoff - Éviter l'abstraction prématurée avec les composants non-stylés](https://www.youtube.com/watch?v=9iJK-Vl6PhE)",
+          "reason": "The number of special elements (links, code, variables) differs. Source has 26, translation has 24.",
+          "timestamp": "2025-06-24T15:50:44.527873+00:00"
+        },
+        "en": {
+          "translation": "- 💸 [Chromatic – Tests visuels pour Storybook, Playwright et Cypress. Détectez les bugs UI que les tests fonctionnels manquent. Rapide comme l'éclair & sans faux positifs.](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=quick_link&utm_campaign=q3_2024)\n- 👀 [React 19 - La désactivation du prérendu des composants frères suspendus casse un pattern courant](https://github.com/facebook/react/issues/29898) : L'équipe React travaille à annuler ce changement prévu pour React 19 qui aurait dégradé les performances de nombreuses SPA. Pas encore d'ETA, la sortie stable de React 19 pourrait prendre du temps\n- 🐦 [Matt Pocock propose une nouvelle approche pour le typage des bibliothèques](https://x.com/mattpocockuk/status/1821124980043636841) : React pourrait par exemple exposer les types de `useState` avec les namespaces TypeScript\n- 🐦 [L'astuce de Matt Pocock pour ajouter l'auto-complétion aux props de vos composants](https://x.com/mattpocockuk/status/1821926395380986219) : Utiliser `string & {}`\n- 📜 [Plongée approfondie dans les formulaires avec React moderne](https://www.epicreact.dev/react-forms) : Kent explique comment utiliser les nouveaux hooks `useFormStatus`, `useActionState` et `useOptimistic`\n- 📜 [Comment Jotai est né](https://blog.axlight.com/posts/how-jotai-was-born/) : Daishi Kato retrace ses multiples itérations sur les bibliothèques de gestion d'état avant de créer Jotai\n- 📜 [Pourquoi l'injection de dépendances dans votre app peut mener à un code plus propre et plus facile à maintenir](https://codedrivendevelopment.com/posts/dependency-injection-in-react) : Un article précieux qui encourage à considérer sérieusement l'ID dans le développement frontend, surtout pour les projets React complexes\n- 📜 [Construire une app avec Next.js et Electron avec support des Server Components](https://www.saybackend.com/blog/03-electron-nextjs-ssr) : Explique comment détourner Next.js pour exécuter un serveur RSC dans une app Electron\n- 📜 [Optimiser les temps de chargement des SPA avec le préchargement de chunks asynchrones](https://mmazzarolo.com/blog/2024-08-13-async-chunk-preloading-on-load/)\n- 📜 [Qu'est-ce qu'une bibliothèque de composants et devriez-vous créer la vôtre ?](https://component-odyssey.com/articles/10-what-is-a-library-should-you-build-your-own)\n- 📦 [Docusaurus 3.5 - Pages d'auteurs et nombreuses nouvelles fonctionnalités de blogging](https://docusaurus.io/blog/releases/3.5)\n- 📦 [Impact-React en RC - Signals pour React, par CodeSandbox](https://impact-react.dev)\n- 📦 [Plunk - Nouvelle plateforme email open source, avec intégrations react-email et jsx-email](https://www.useplunk.com/)\n- 📦 [react-switchboard - Créez rapidement des DevTools personnalisés pour vos apps](https://github.com/coryhouse/react-switchboard)\n- 📦 [react-call - Afficher impérativement des composants React et attendre leur résultat](https://github.com/desko27/react-call) : Une idée intéressante pour simplifier l'implémentation des boîtes de dialogue de confirmation, toasters…\n- 📦 [@lazarv/react-server - Un framework alternatif avec Server Components](https://react-server.dev/)\n- 🎙️ [Syntax.fm - Nous réagissons au State of React Survey](https://syntax.fm/show/805/we-react-to-state-of-react-survey)\n- 🎙️ [Syntax.fm - Composants CSS : Tailwind, Panda, Scoped, Modules, Classes, Variables, CSS-in-JS et Sprinkles !](https://syntax.fm/show/807/css-components-tailwind-panda-scoped-modules-classes-variables-css-in-js-and-sprinkles)\n- 🎥 [Sam Selikoff - Évitez l'abstraction prématurée avec les composants non stylisés](https://www.youtube.com/watch?v=9iJK-Vl6PhE)",
+          "reason": "The number of special elements (links, code, variables) differs. Source has 26, translation has 24.",
+          "timestamp": "2025-06-24T15:57:01.438795+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "5b035b90",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5b035b90",
+        "en": "@@untranslatable_placeholder_5b035b90"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b051b70c",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "[![Statsig: Ship, Measure, Repeat](/emails/issues/196/statsig.jpg)](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)",
+      "source_content_hash": "79c3d976f76922bbb32808781bd3a60cd7729e9bcd661bfb3c66be5c26b40edf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Statsig: Ship, Measure, Repeat](/emails/issues/196/statsig.jpg)](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)",
+        "en": "[![Statsig : Livrez, Mesurez, Répétez](/emails/issues/196/statsig.jpg)](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "**[Statsig: Ship, Measure, Repeat](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)**",
+      "source_content_hash": "c531e4a840754d7eba32291f7ad41caa24e107db374849496b88c9386ff6d924",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Statsig : Déployer, Mesurer, Répéter](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)**",
+        "en": "**[Statsig : Livrez, Mesurez, Répétez](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "The feature management, A/B testing, and product analytics tools used by OpenAI, Notion, & Brex. Build better products by measuring everything you ship 🚀",
+      "source_content_hash": "da09545bd3c28087fd5102b7180891b808ddbd1fbfca902a3cb39ffed1930a13",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les outils de gestion de fonctionnalités, de tests A/B et d'analyse de produits utilisés par OpenAI, Notion et Brex. Construisez de meilleurs produits en mesurant tout ce que vous déployez 🚀",
+        "en": "Les outils de gestion de fonctionnalités, tests A/B et analytiques produits utilisés par OpenAI, Notion et Brex. Créez de meilleurs produits en mesurant tout ce que vous livrez 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "Install Statsig once and get:",
+      "source_content_hash": "64182d5aef1811b2d79057490f69f661db223ad8ac153d6a7caf00cbc233a14d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Installez Statsig une fois et obtenez :",
+        "en": "Installez Statsig une fois et obtenez :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "🧪 **A/B Testing:** Automated experiments with advanced stats. Ship only the features that work",
+      "source_content_hash": "798619315643b578deb481ca4fb11e3b04d25cdbe2f5b63283405e06400769f6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧪 **Tests A/B :** Expériences automatisées avec statistiques avancées. Déployez uniquement les fonctionnalités efficaces",
+        "en": "🧪 **Tests A/B :** Expérimentations automatisées avec statistiques avancées. Livrez uniquement les fonctionnalités qui fonctionnent"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "🚩 **Feature Flags:** Unlimited free flags and turn any flag into an A/B test with one click",
+      "source_content_hash": "e020080b580571cd6ab46df151fa3da7b09ee0390e287ee8cab5b4a0b1470f0e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🚩 **Drapeaux de fonctionnalités :** Drapeaux gratuits illimités et transformez n'importe quel drapeau en test A/B en un clic",
+        "en": "🚩 **Feature Flags :** Drapeaux gratuits illimités et transformez n'importe quel drapeau en test A/B en un clic"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "🥇 **Product Analytics:** Track growth and measure feature impact. Conduct analysis by feature flag or A/B test group",
+      "source_content_hash": "a147aeb4c575e44f11223977987de5af727b68b7c47d27dbebdd8a795c394b40",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🥇 **Analyse produit :** Suivez la croissance et mesurez l'impact des fonctionnalités. Analysez par drapeau ou groupe de test A/B",
+        "en": "🥇 **Analytiques Produit :** Suivez la croissance et mesurez l'impact des fonctionnalités. Analysez par feature flag ou groupe de test A/B"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "🎥 **Session Replays:** Replay user interactions to understand experiences and frictions",
+      "source_content_hash": "07cf13d113209007a35207a31c7035bcc45c5b07b2ba5ac58daf944bb6decb18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🎥 **Relectures de session :** Rejouez les interactions utilisateur pour comprendre les expériences et frictions",
+        "en": "🎥 **Replays de session :** Rejouez les interactions utilisateur pour comprendre les expériences et frictions"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "🌐 **Web Analytics:** Drop a JS snippet for essential website metrics and dashboards",
+      "source_content_hash": "af1732db8357ce0ec4aa969bb99b42531b4ee5e9274fe7ff13ffcbf96bd4ddd7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🌐 **Analyse Web :** Ajoutez un extrait JS pour des métriques et tableaux de bord essentiels",
+        "en": "🌐 **Analytiques Web :** Ajoutez un extrait JS pour les métriques et tableaux de bord essentiels du site"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "Get up to 2M free-tier events and 10K session recordings — [**all for free**](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)**!**",
+      "source_content_hash": "fbd0ce825a7c3a4b730e919e000937e78f464041cf0d409923b5798e6051baff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Obtenez jusqu'à 2M d'événements en version gratuite et 10K enregistrements de session — [**totalement gratuit**](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)**!**",
+        "en": "Obtenez jusqu'à 2M d'événements en version gratuite et 10K enregistrements de session — [**totalement gratuit**](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)** !**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ab3df6e6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c19de48a",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "[![React Native WebGPU](/emails/issues/196/rn-webgpu.jpg)](https://www.youtube.com/watch?v=i-DGY98cTjk)",
+      "source_content_hash": "f674564a82413b63a02defa72bf438459c9dff73694c1d0b88cf16ea29c166b6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Native WebGPU](/emails/issues/196/rn-webgpu.jpg)](https://www.youtube.com/watch?v=i-DGY98cTjk)",
+        "en": "[![React Native WebGPU](/emails/issues/196/rn-webgpu.jpg)](https://www.youtube.com/watch?v=i-DGY98cTjk)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "**🎥 [React Native WebGPU](https://www.youtube.com/watch?v=i-DGY98cTjk)**",
+      "source_content_hash": "425b2ad6c04bd8e3f3162b077e829b368f38bff19be35cb92c96c6aa2f887567",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**🎥 [React Native WebGPU](https://www.youtube.com/watch?v=i-DGY98cTjk)**",
+        "en": "**🎥 [React Native WebGPU](https://www.youtube.com/watch?v=i-DGY98cTjk)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "React Native WebGPU has just launched, offering a unified API to leverage the GPU for advanced graphics and computation in React Native! By reusing the Web API standard, we will be able to easily integrate existing WebGPU code samples and libraries, such as ThreeJS, directly into React Native.\nBeyond just graphics, React Native WebGPU can be used for tasks like matrix computations, making it interesting for on-device machine learning algorithms. It's built using Nitro Modules for smooth Typescript to C++ interoperability. Currently, it's available in technical preview, signaling exciting developments ahead!",
+      "source_content_hash": "0cff99a5a36592564b44b7428800603815e81b27efd7207ca3c60b900f64664a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React Native WebGPU vient de sortir, offrant une API unifiée pour exploiter le GPU dans React Native pour des graphiques et calculs avancés ! En réutilisant le standard des API Web, nous pourrons intégrer facilement des exemples de code et bibliothèques WebGPU existants comme ThreeJS directement dans React Native.\nAu-delà des graphismes, React Native WebGPU peut être utilisé pour des calculs matriciels, le rendant intéressant pour les algorithmes de machine learning sur appareil. Construit avec Nitro Modules pour une interopérabilité fluide TypeScript/C++. Actuellement en préversion technique, annonçant des développements passionnants !",
+        "en": "React Native WebGPU vient de sortir, proposant une API unifiée pour exploiter le GPU pour des graphismes avancés et des calculs dans React Native ! En réutilisant le standard Web API, nous pourrons facilement intégrer des exemples de code WebGPU existants et des bibliothèques comme ThreeJS directement dans React Native.\nAu-delà des graphismes, React Native WebGPU peut être utilisé pour des tâches comme les calculs matriciels, ce qui le rend intéressant pour les algorithmes de machine learning sur appareil. Il est construit avec Nitro Modules pour une interopérabilité fluide entre TypeScript et C++. Actuellement en préversion technique, cela annonce des développements passionnants à venir !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "**The Future of React Native Modules**",
+      "source_content_hash": "a8a2a08c7b0183f16fc24e765dd385d7eb2a84e71bb7c061023f83aa59b34ddf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**L'avenir des modules React Native**",
+        "en": "**L'avenir des modules React Native**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "Exciting times for React Native developers! Marc Rousavy is shaking things up with NitroModules, a new way to write native code 📦 [that’s blowing away existing solutions in speed tests](https://github.com/mrousavy/NitroBenchmarks). He's encountered some limitations with JSI in VisionCamera. The project is already stable on the C++ side and is already being used in various projects like 🐦 [react-native-unistyles](https://x.com/jpudysz/status/1822541758137303233) and react-native-webgpu, with Swift and Kotlin bindings still in progress.",
+      "source_content_hash": "7339c467f5149731a9333c99bf584f395d921dbc6a5678bf435184832208c9a2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Des moments passionnants pour les développeurs React Native ! Marc Rousavy révolutionne avec NitroModules, une nouvelle façon d'écrire du code natif 📦 [qui surpasse les solutions existantes en tests de vitesse](https://github.com/mrousavy/NitroBenchmarks). Il a rencontré des limites avec JSI dans VisionCamera. Le projet est déjà stable côté C++ et utilisé dans 🐦 [react-native-unistyles](https://x.com/jpudysz/status/1822541758137303233) et react-native-webgpu, avec les liaisons Swift/Kotlin en cours.",
+        "en": "Des temps passionnants pour les développeurs React Native ! Marc Rousavy bouleverse les choses avec NitroModules, une nouvelle façon d'écrire du code natif 📦 [qui surpasse les solutions existantes dans les tests de vitesse](https://github.com/mrousavy/NitroBenchmarks). Il a rencontré certaines limites avec JSI dans VisionCamera. Le projet est déjà stable côté C++ et est utilisé dans divers projets comme 🐦 [react-native-unistyles](https://x.com/jpudysz/status/1822541758137303233) et react-native-webgpu, avec les liaisons Swift et Kotlin encore en cours."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "👀 [Meanwhile, a new proposal to push the use of Swift for TurboModules has landed.](https://github.com/okwasniewski/discussions-and-proposals/blob/22edd2c7853aaf2ee654b57f4521e43d668103fb/proposals/0000-swift-turbo-modules.md) These changes will ease native modules development by moving away from Objective-C and C++. With these updates, building native modules is about to get a whole lot better!",
+      "source_content_hash": "46cb488130f29c24146eb5b30b396d53342caa544c54bf87cdb0ad9241a11980",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "👀 [Parallèlement, une nouvelle proposition pour pousser Swift dans les TurboModules est apparue.](https://github.com/okwasniewski/discussions-and-proposals/blob/22edd2c7853aaf2ee654b57f4521e43d668103fb/proposals/0000-swift-turbo-modules.md) Ces changements faciliteront le développement des modules natifs en abandonnant Objective-C/C++. Ces mises à jour amélioreront considérablement la création de modules natifs !",
+        "en": "👀 [Parallèlement, une nouvelle proposition pour promouvoir l'utilisation de Swift pour TurboModules est apparue.](https://github.com/okwasniewski/discussions-and-proposals/blob/22edd2c7853aaf2ee654b57f4521e43d668103fb/proposals/0000-swift-turbo-modules.md) Ces changements faciliteront le développement de modules natifs en abandonnant Objective-C et C++. Avec ces mises à jour, la création de modules natifs va s'améliorer considérablement !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "510c9c5b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ddd26d5",
+      "source_content": "- 💸 [Galaxies.dev - Become an expert React Native Developer & Save $65 before price increases next Tuesday!](https://galaxies.dev/subscription?utm_campaign=announcement&utm_medium=price-updates&utm_source=thisweekinreact.com)\n- 👀 [React Native 0.76 will likely bump the minimum iOS version to 15.1](https://github.com/react-native-community/discussions-and-proposals/discussions/812)\n- 👀 [“use dom” - Expo is working on a way to seamlessly integrate React Web components in React Native apps](https://docs.expo.dev/guides/dom-components/): New experimental Expo feature allows importing React DOM components, communicating with them with props and callbacks! The components are rendered with webviews and not native views, so it will probably be most useful for migrations or secondary features\n- 👀 [React Native Screens 4.0 beta](https://github.com/software-mansion/react-native-screens/releases/tag/4.0.0-beta.0): With iOS custom detents & Android form sheets\n- 👀 [Upcoming Autolinking performance benefits shipping in React Native 0.75 & Expo SDK 51](https://github.com/react-native-community/discussions-and-proposals/discussions/814)\n- 📖 [Expo Docs update - Unit testing with Jest](https://docs.expo.dev/develop/unit-testing/): Now explains how to set up jest-expo and React Native Testing Library\n- 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) -  🇵🇱 Wrocław - Sept 5-6. Get a 10% discount with code \"TWIR\". Speakers: Dan Abramov, Evan Bacon, Kent C. Dodds, Delba Oliveira...\n- 📜 [Cocoapods is officially in maintenance mode](https://blog.cocoapods.org/CocoaPods-Support-Plans/): React Native will need to migrate at some point\n- 📦 [react-native-macos support for RN 0.74 is out](https://github.com/microsoft/react-native-macos/releases/tag/v0.74.1)\n- 🎥 [Reactiiive - Building a Story List UI with Reanimated (React Native)](https://www.youtube.com/watch?v=NNRym_f8JsA)\n- 🎥 [Simon Grimm - React Native Firebase Authentication with Expo Router](https://www.youtube.com/watch?v=BsOik6ycGqk)\n- 🎙️ [RNR 303 - Stories from Chain React 2024](https://www.reactnativeradio.com/episodes/rnr-303-stories-from-chain-react-2024)",
+      "source_content_hash": "be1256939aab8967b059884471cb3e5d6448878a61581c62b74d4ed5161f3abb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Galaxies.dev - Devenez un expert développeur React Native et économisez 65 $ avant l'augmentation des prix mardi prochain !](https://galaxies.dev/subscription?utm_campaign=announcement&utm_medium=price-updates&utm_source=thisweekinreact.com)\n- 👀 [React Native 0.76 va probablement relever la version minimale d'iOS à 15.1](https://github.com/react-native-community/discussions-and-proposals/discussions/812)\n- 👀 [\"use dom\" - Expo travaille sur un moyen d'intégrer de manière transparente les composants React Web dans les applications React Native](https://docs.expo.dev/guides/dom-components/) : Nouvelle fonctionnalité expérimentale d'Expo permettant d'importer des composants React DOM, de communiquer avec eux via des props et callbacks ! Les composants sont rendus avec des webviews et non des vues natives, donc ce sera probablement plus utile pour les migrations ou fonctionnalités secondaires\n- 👀 [React Native Screens 4.0 bêta](https://github.com/software-mansion/react-native-screens/releases/tag/4.0.0-beta.0) : Avec les détentes personnalisées iOS et les feuilles de formulaire Android\n- 👀 [Bénéfices de performance à venir pour l'autolinking livrés dans React Native 0.75 & Expo SDK 51](https://github.com/react-native-community/discussions-and-proposals/discussions/814)\n- 📖 [Mise à jour de la documentation Expo - Tests unitaires avec Jest](https://docs.expo.dev/develop/unit-testing/) : Explique maintenant comment configurer jest-expo et React Native Testing Library\n- 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 Wrocław - 5-6 sept. Obtenez 10% de réduction avec le code \"TWIR\". Intervenants : Dan Abramov, Evan Bacon, Kent C. Dodds, Delba Oliveira...\n- 📜 [Cocoapods est officiellement en mode maintenance](https://blog.cocoapods.org/CocoaPods-Support-Plans/) : React Native devra migrer à un moment donné\n- 📦 [Le support de react-native-macos pour RN 0.74 est disponible](https://github.com/microsoft/react-native-macos/releases/tag/v0.74.1)\n- 🎥 [Reactiiive - Construire une interface de liste d'histoires avec Reanimated (React Native)](https://www.youtube.com/watch?v=NNRym_f8JsA)\n- 🎥 [Simon Grimm - Authentification Firebase React Native avec Expo Router](https://www.youtube.com/watch?v=BsOik6ycGqk)\n- 🎙️ [RNR 303 - Récits de Chain React 2024](https://www.reactnativeradio.com/episodes/rnr-303-stories-from-chain-react-2024)",
+        "en": "- 💸 [Galaxies.dev - Devenez un expert développeur React Native et économisez 65 $ avant l'augmentation de prix mardi prochain !](https://galaxies.dev/subscription?utm_campaign=announcement&utm_medium=price-updates&utm_source=thisweekinreact.com)\n- 👀 [React Native 0.76 augmentera probablement la version minimale d'iOS à 15.1](https://github.com/react-native-community/discussions-and-proposals/discussions/812)\n- 👀 [« use dom » - Expo travaille sur une intégration transparente des composants Web React dans les apps React Native](https://docs.expo.dev/guides/dom-components/) : Nouvelle fonctionnalité expérimentale Expo permettant d'importer des composants React DOM, de communiquer via props et callbacks ! Les composants sont rendus via des webviews (non des vues natives), utile pour les migrations ou fonctionnalités secondaires\n- 👀 [React Native Screens 4.0 bêta](https://github.com/software-mansion/react-native-screens/releases/tag/4.0.0-beta.0) : Avec détentes personnalisées iOS et feuilles de formulaire Android\n- 👀 [Bénéfices de performance de l'Autolinking à venir dans React Native 0.75 & Expo SDK 51](https://github.com/react-native-community/discussions-and-proposals/discussions/814)\n- 📖 [Mise à jour de la doc Expo - Tests unitaires avec Jest](https://docs.expo.dev/develop/unit-testing/) : Explique désormais comment configurer jest-expo et React Native Testing Library\n- 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 Wrocław - 5-6 sept. Bénéficiez de 10% de réduction avec le code \"TWIR\". Intervenants : Dan Abramov, Evan Bacon, Kent C. Dodds, Delba Oliveira...\n- 📜 [Cocoapods passe officiellement en mode maintenance](https://blog.cocoapods.org/CocoaPods-Support-Plans/) : React Native devra migrer à terme\n- 📦 [Le support de react-native-macos pour RN 0.74 est disponible](https://github.com/microsoft/react-native-macos/releases/tag/v0.74.1)\n- 🎥 [Reactiiive - Construire une UI de liste d'histoires avec Reanimated (React Native)](https://www.youtube.com/watch?v=NNRym_f8JsA)\n- 🎥 [Simon Grimm - Authentification Firebase React Native avec Expo Router](https://www.youtube.com/watch?v=BsOik6ycGqk)\n- 🎙️ [RNR 303 - Récits de Chain React 2024](https://www.reactnativeradio.com/episodes/rnr-303-stories-from-chain-react-2024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44f53186",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f1c1cd6",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7ff42af",
+      "source_content": "- 👀 [Node.js - Add Support for transpiling typescript enums & namespaces](https://github.com/nodejs/node/pull/54283)\n- 📜 [Node.js Takes Steps Towards Removing Corepack](https://socket.dev/blog/node-js-takes-steps-towards-removing-corepack?utm_medium=feed)\n- 📜 [Animating entry effects with CSS is now in baseline after it was added to Firefox 129](https://web.dev/blog/baseline-entry-animations?hl=en)\n- 📜 [Common Causes of Memory Leaks in JavaScript](https://www.trevorlasn.com/blog/common-causes-of-memory-leaks-in-javascript/)\n- 📜 [An approach to optimizing TypeScript type checking performance](https://www.edgedb.com/blog/an-approach-to-optimizing-typescript-type-checking-performance#how-do-we-quantify-the-type-checker-s-workload)\n- 📜 [Exploring the Possibilities of Native JavaScript Decorators](https://frontendmasters.com/blog/exploring-the-possibilities-of-native-javascript-decorators/?ref=cms.macarthur.me)\n- 📜 [Animating Figma's SVG Exports](https://courses.nan.fyi/blog/svg/animating-figma-exports)\n- 📦 [Cheerio 1.0 - Finally stable after 7 years of RC](https://cheerio.js.org/blog/cheerio-1.0)\n- 🔗 [e18e - An initiative for performance in the JS ecosystem](https://e18e.dev/)",
+      "source_content_hash": "a5e75a5a143d28afd68893ca5e8daa50c1069e0b6bbb466c2a35b43e77f91689",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Node.js - Ajouter la prise en charge de la transpilation des enums et namespaces TypeScript](https://github.com/nodejs/node/pull/54283)\n- 📜 [Node.js prend des mesures pour supprimer Corepack](https://socket.dev/blog/node-js-takes-steps-towards-removing-corepack?utm_medium=feed)\n- 📜 [L'animation des effets d'entrée avec CSS est désormais dans la baseline après son ajout dans Firefox 129](https://web.dev/blog/baseline-entry-animations?hl=en)\n- 📜 [Causes courantes des fuites de mémoire en JavaScript](https://www.trevorlasn.com/blog/common-causes-of-memory-leaks-in-javascript/)\n- 📜 [Une approche pour optimiser les performances de vérification de type TypeScript](https://www.edgedb.com/blog/an-approach-to-optimizing-typescript-type-checking-performance#how-do-we-quantify-the-type-checker-s-workload)\n- 📜 [Explorer les possibilités des décorateurs JavaScript natifs](https://frontendmasters.com/blog/exploring-the-possibilities-of-native-javascript-decorators/?ref=cms.macarthur.me)\n- 📜 [Animer les exports SVG de Figma](https://courses.nan.fyi/blog/svg/animating-figma-exports)\n- 📦 [Cheerio 1.0 - Enfin stable après 7 ans de RC](https://cheerio.js.org/blog/cheerio-1.0)\n- 🔗 [e18e - Une initiative pour la performance dans l'écosystème JS](https://e18e.dev/)",
+        "en": "- 👀 [Node.js - Ajout du support pour la transpilation des enums & namespaces TypeScript](https://github.com/nodejs/node/pull/54283)\n- 📜 [Node.js avance vers la suppression de Corepack](https://socket.dev/blog/node-js-takes-steps-towards-removing-corepack?utm_medium=feed)\n- 📜 [Les animations d'effets d'entrée CSS sont désormais en baseline après leur ajout dans Firefox 129](https://web.dev/blog/baseline-entry-animations?hl=en)\n- 📜 [Causes courantes des fuites mémoire en JavaScript](https://www.trevorlasn.com/blog/common-causes-of-memory-leaks-in-javascript/)\n- 📜 [Une approche pour optimiser les performances de vérification de types TypeScript](https://www.edgedb.com/blog/an-approach-to-optimizing-typescript-type-checking-performance#how-do-we-quantify-the-type-checker-s-workload)\n- 📜 [Explorer les possibilités des décorateurs JavaScript natifs](https://frontendmasters.com/blog/exploring-the-possibilities-of-native-javascript-decorators/?ref=cms.macarthur.me)\n- 📜 [Animer les exports SVG de Figma](https://courses.nan.fyi/blog/svg/animating-figma-exports)\n- 📦 [Cheerio 1.0 - Enfin stable après 7 ans de RC](https://cheerio.js.org/blog/cheerio-1.0)\n- 🔗 [e18e - Une initiative pour la performance dans l'écosystème JS](https://e18e.dev/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8bc5aad7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dd4905a4",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "[![alt](/emails/issues/196/meme.jpg)](https://x.com/DavidKPiano/status/1822633099433316504)",
+      "source_content_hash": "aaf4ac6d1715bf81580dd7f7565b6f24e94b16495bc0b6e30b172c10027e24e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/196/meme.jpg)](https://x.com/DavidKPiano/status/1822633099433316504)",
+        "en": "[![alt](/emails/issues/196/meme.jpg)](https://x.com/DavidKPiano/status/1822633099433316504)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/196/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.438836+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "6ed8508e7775cc6ebd01eeb5cbb352955fb3a7291ad94482f03df351543341d6",
+    "en": "6ed8508e7775cc6ebd01eeb5cbb352955fb3a7291ad94482f03df351543341d6"
+  }
+}

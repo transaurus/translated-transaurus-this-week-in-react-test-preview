@@ -1,0 +1,517 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/157/index.mdx",
+  "source_file_content_hash": "63acbbe7e2f4a44812f622927c2d1cf5fe139b75725c8412252d4c18eeb21de9",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /157\ntitle: \"This Week In React #157: Concurrent Mode, RSC DevTools Extension, Gatsby, Radix asChild, Suspense, hydration, useMemo, React-Redux, Fresh, TinyBase, Worklets, TFLite, local_modules, Bootsplash...\"\nauthors: [slorber]\ndate: 08-22-2023\n---",
+      "source_content_hash": "d5b62ad92807573cf9708c9c1f1b371d4004f1e76727355c1e44fadd5d0f45fd",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "It's been pretty quiet on the React front this week, but we've still got a few nice articles to read.",
+      "source_content_hash": "a69abaa183d88d47d200d2e3ac96e406d57b662c878f5c2b262513165fc18892",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "C'est assez calme du côté de React cette semaine, mais nous avons tout de même quelques bons articles à lire.",
+        "en": "C'est assez calme du côté de React cette semaine, mais nous avons tout de même quelques bons articles à lire."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "On the React-Native side, Marc Rousavy is on fire, publishing a number of packages that seem to herald the imminent arrival of VisionCamera v3.",
+      "source_content_hash": "e0aa6bac6a8868ffb998a7f0d814443e81c10de4139e7dad9740317a6a27d8a4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Du côté de React-Native, Marc Rousavy est en feu, publiant une série de packages qui semblent annoncer l'arrivée imminente de VisionCamera v3.",
+        "en": "Du côté de React Native, Marc Rousavy est en feu, publiant plusieurs packages qui semblent annoncer l'arrivée imminente de VisionCamera v3."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "We should have some nice releases soon, like [🐦 Bun 1.0](https://twitter.com/jarredsumner/status/1693657906917585359), [🐦 Astro 3.0](https://twitter.com/astrodotbuild/status/1693655809711108456) and [🐦 TanStack Router](https://twitter.com/tannerlinsley/status/1691936709498552654).",
+      "source_content_hash": "85ad41136401267d1030793e33b7afa5cf8c8436397fbf96c5c498d14e88e379",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous devrions avoir de belles sorties prochainement, comme [🐦 Bun 1.0](https://twitter.com/jarredsumner/status/1693657906917585359), [🐦 Astro 3.0](https://twitter.com/astrodotbuild/status/1693655809711108456) et [🐦 TanStack Router](https://twitter.com/tannerlinsley/status/1691936709498552654).",
+        "en": "Nous devrions bientôt avoir de belles sorties, comme [🐦 Bun 1.0](https://twitter.com/jarredsumner/status/1693657906917585359), [🐦 Astro 3.0](https://twitter.com/astrodotbuild/status/1693655809711108456) et [🐦 TanStack Router](https://twitter.com/tannerlinsley/status/1691936709498552654)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "I'm taking a short break next week, so I'll see you on 6 September 👋",
+      "source_content_hash": "885a5d98de4975958d89e0b5b78db0797211a2bb5d9fefac1617d8441611c43a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je prends une courte pause la semaine prochaine, donc je vous retrouve le 6 septembre 👋",
+        "en": "Je prends une courte pause la semaine prochaine, donc on se retrouve le 6 septembre 👋"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_45c63027",
+        "en": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_0adfe0aa",
+        "en": "@@untranslatable_placeholder_0adfe0aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_1941846d",
+        "en": "@@untranslatable_placeholder_1941846d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Partenaire {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)",
+      "source_content_hash": "7903a362c22115134a45f2f385a44ccaa3b70d0b9502be736c51dcdcde1704ce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)",
+        "en": "[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "**[Enterprise UI Development (With React): Testing & Code Quality](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**",
+      "source_content_hash": "ebcb74ca66469ab981d9f337dc249ddd7dea364c157b06465ebd873507ed93ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Développement d'interface utilisateur d'entreprise (avec React) : Tests et qualité du code](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**",
+        "en": "**[Développement d'UI d'entreprise (avec React) : Tests et qualité du code](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Managing or migrating large apps and codebases? This video course covers what you need to know to scale efficiently whilst maintaining code quality. Covers unit testing, CI pipelines, mocking, code coverage, and more.",
+      "source_content_hash": "34571df72e771004268e4090d9f668c8c0a06c7474381d884b76a207e02360a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous gérez ou migrez de grandes applications et bases de code ? Ce cours vidéo couvre ce que vous devez savoir pour évoluer efficacement tout en maintenant la qualité du code. Aborde les tests unitaires, les pipelines CI, le mocking, la couverture de code, et plus encore.",
+        "en": "Vous gérez ou migrez de grosses applications et bases de code ? Ce cours vidéo couvre ce que vous devez savoir pour évoluer efficacement tout en maintenant la qualité du code. Inclut les tests unitaires, les pipelines CI, le mocking, la couverture de code, et plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![The underlying mechanisms of React’s concurrent mode](/emails/issues/157/concurrentmode.jpg)](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)",
+      "source_content_hash": "4e13d87f89b72f6afae1c147682ddde800942e861a770a00e8d3763f0ebcd9d9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Les mécanismes sous-jacents du mode concurrent de React](/emails/issues/157/concurrentmode.jpg)](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)",
+        "en": "[![Les mécanismes sous-jacents du mode concurrent de React](/emails/issues/157/concurrentmode.jpg)](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[**The underlying mechanisms of React’s concurrent mode**](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)",
+      "source_content_hash": "163ea4beefb656386d3b116b532f356cc4c29e74b038e17b8f69cd6ab7acba75",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Les mécanismes sous-jacents du mode concurrent de React**](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)",
+        "en": "[**Les mécanismes sous-jacents du mode concurrent de React**](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "A quite technical but greatly educational article that study the React codebase. Explains well how `startTransition` works and how it differs from the synchronous rendering mode. I learned how React uses the `MessageChannel` API recursively to periodically hand over to the main thread.",
+      "source_content_hash": "58a6f777d5c1b1e2814546c8f8779f84efe2041d1f245bf28fda32403f0826aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Un article assez technique mais très instructif qui étudie le codebase de React. Explique bien comment `startTransition` fonctionne et en quoi il diffère du mode de rendu synchrone. J'ai appris comment React utilise l'API `MessageChannel` de manière récursive pour passer périodiquement le relais au thread principal.",
+        "en": "Un article assez technique mais très instructif qui étudie le codebase de React. Explique bien comment `startTransition` fonctionne et en quoi il diffère du mode de rendu synchrone. J'ai appris comment React utilise récursivement l'API `MessageChannel` pour céder périodiquement le contrôle au thread principal."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "- 💸 [Zero To Shipped - Master Fast-Paced Fullstack Development and **Finally** ship that product](https://www.zerotoshipped.com/)\n- 🐦 [Is Gatsby Dead?](https://twitter.com/sebastienlorber/status/1694392101281190224): not officially, but its future does not look super promising.\n- 🎮 [React Jam - Summer 2023 Winners](https://reactjam.com/summer-2023-winners): the React-based video games creation challenge for which I was a member of the jury, just announced the winners.\n- 📜 [Implement Radix's asChild pattern in React](https://www.jacobparis.com/content/react-as-child): explains how the `asChild` pattern, popularised by Radix, works as a good alternative to the `as` props for customising the underlying component.\n- 📜 [A11y-Driven Development](https://www.simplethread.com/a11y-driven-development/): interesting proposal to split and name React components according to their accessibility role.\n- 📜 [React Suspense in three different architectures](https://elanmed.dev/blog/suspense-in-different-architectures): presents 4 different `<Suspense>` use cases for 3 different architectures (CSR, SSR, RSC).\n- 📜 [How to solve hydration error in Next.js](https://chirag-gupta.hashnode.dev/how-to-solve-hydration-error-in-nextjs): highlights some common problems that can lead to hydration problems, such as using browser APIs like `localStorage` to initialise your state, or using an invalid HTML markup.\n- 📜 [Using PostHog with the Next.js App Router and Vercel](https://vercel.com/guides/posthog-nextjs-vercel-feature-flags-analytics)\n- 📜 [useMemo overdose](https://edvins.io/usememo-overdose)\n- 📦 [RSC Devtools - Chrome Extension](https://chrome.google.com/webstore/detail/rsc-devtools/jcejahepddjnppkhomnidalpnnnemomn): the unofficial extension is now available in the Chrome store. It lets you navigate and analyse a timeline of RSC payloads over time. Read the article [Devtools for React Server Components](https://www.alvar.dev/blog/creating-devtools-for-react-server-components) for details.\n- 📦 [Fresh 1.4 – Faster Page Loads, Layouts and More](https://deno.com/blog/fresh-1.4)\n- 📦 [TinyBase 4.1 - New ui-react-dom module](https://tinybase.org/guides/releases/)\n- 📦 [NextUI 2.1 - Select, Listbox, ScrollShadow](https://nextui.org/blog/v2.1.0)\n- 📦 [React-Redux 9.0 alpha](https://github.com/reduxjs/react-redux/releases/tag/v9.0.0-alpha.0)\n- 🎥 [tRPC + NextJS App Router = Simple Typesafe APIs](https://www.youtube.com/watch?v=qCLV0Iaq9zU)\n- 🎥 [Remotion Lambda - Tutorial Playlist](https://www.youtube.com/playlist?list=PLRHdymbhXiIRgAeAUpMxe7l7BNliHfWUq)\n- 🎥 [React Query is Secretly an Amazing State Manager](https://www.youtube.com/watch?v=0X3TlVklT-A)",
+      "source_content_hash": "1c36f596557059a1f1d17eebd727cf4247d13c6fe7828dcc7b3f6cccd4e8ca41",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Zero To Shipped - Maîtrisez le développement fullstack rapide et **enfin** livrez ce produit](https://www.zerotoshipped.com/)\n- 🐦 [Gatsby est-il mort ?](https://twitter.com/sebastienlorber/status/1694392101281190224) : pas officiellement, mais son avenir ne semble pas très prometteur.\n- 🎮 [React Jam - Lauréats été 2023](https://reactjam.com/summer-2023-winners) : le défi de création de jeux vidéo basé sur React pour lequel j'étais membre du jury vient d'annoncer les gagnants.\n- 📜 [Implémenter le modèle asChild de Radix en React](https://www.jacobparis.com/content/react-as-child) : explique comment le modèle `asChild`, popularisé par Radix, fonctionne comme une bonne alternative aux props `as` pour personnaliser le composant sous-jacent.\n- 📜 [Développement piloté par l'accessibilité (A11y-Driven Development)](https://www.simplethread.com/a11y-driven-development/) : proposition intéressante pour découper et nommer les composants React selon leur rôle d'accessibilité.\n- 📜 [React Suspense dans trois architectures différentes](https://elanmed.dev/blog/suspense-in-different-architectures) : présente 4 cas d'utilisation différents de `<Suspense>` pour 3 architectures (CSR, SSR, RSC).\n- 📜 [Comment résoudre les erreurs d'hydratation dans Next.js](https://chirag-gupta.hashnode.dev/how-to-solve-hydration-error-in-nextjs) : met en lumière des problèmes courants pouvant causer des erreurs d'hydratation, comme l'utilisation d'API navigateur (`localStorage`) pour initialiser l'état ou un balisage HTML non valide.\n- 📜 [Utiliser PostHog avec le routeur App de Next.js et Vercel](https://vercel.com/guides/posthog-nextjs-vercel-feature-flags-analytics)\n- 📜 [Surdose de useMemo](https://edvins.io/usememo-overdose)\n- 📦 [RSC Devtools - Extension Chrome](https://chrome.google.com/webstore/detail/rsc-devtools/jcejahepddjnppkhomnidalpnnnemomn) : l'extension non officielle est désormais disponible sur le Chrome Store. Elle permet de naviguer et d'analyser une chronologie des charges utiles RSC. Lisez l'article [Outils de développement pour React Server Components](https://www.alvar.dev/blog/creating-devtools-for-react-server-components) pour plus de détails.\n- 📦 [Fresh 1.4 – Chargement de pages plus rapide, layouts et plus](https://deno.com/blog/fresh-1.4)\n- 📦 [TinyBase 4.1 - Nouveau module ui-react-dom](https://tinybase.org/guides/releases/)\n- 📦 [NextUI 2.1 - Select, Listbox, ScrollShadow](https://nextui.org/blog/v2.1.0)\n- 📦 [React-Redux 9.0 alpha](https://github.com/reduxjs/react-redux/releases/tag/v9.0.0-alpha.0)\n- 🎥 [tRPC + NextJS App Router = APIs typesafe simplifiées](https://www.youtube.com/watch?v=qCLV0Iaq9zU)\n- 🎥 [Remotion Lambda - Playlist tutoriel](https://www.youtube.com/playlist?list=PLRHdymbhXiIRgAeAUpMxe7l7BNliHfWUq)\n- 🎥 [React Query est secrètement un gestionnaire d'état incroyable](https://www.youtube.com/watch?v=0X3TlVklT-A)",
+        "en": "- 💸 [Zero To Shipped - Maîtrisez le développement Fullstack rapide et **enfin** livrez ce produit](https://www.zerotoshipped.com/)\n- 🐦 [Gatsby est-il mort ?](https://twitter.com/sebastienlorber/status/1694392101281190224): pas officiellement, mais son avenir ne semble pas très prometteur.\n- 🎮 [React Jam - Lauréats de l'été 2023](https://reactjam.com/summer-2023-winners): le défi de création de jeux vidéo basé sur React, dont j'étais membre du jury, vient d'annoncer les gagnants.\n- 📜 [Implémenter le motif asChild de Radix dans React](https://www.jacobparis.com/content/react-as-child): explique comment le motif `asChild`, popularisé par Radix, fonctionne comme une bonne alternative aux props `as` pour personnaliser le composant sous-jacent.\n- 📜 [Développement piloté par l'accessibilité (A11y-Driven Development)](https://www.simplethread.com/a11y-driven-development/): proposition intéressante pour découper et nommer les composants React selon leur rôle d'accessibilité.\n- 📜 [React Suspense dans trois architectures différentes](https://elanmed.dev/blog/suspense-in-different-architectures): présente 4 cas d'utilisation différents de `<Suspense>` pour 3 architectures (CSR, SSR, RSC).\n- 📜 [Comment résoudre les erreurs d'hydratation dans Next.js](https://chirag-gupta.hashnode.dev/how-to-solve-hydration-error-in-nextjs): souligne des problèmes courants pouvant causer des erreurs d'hydratation, comme l'utilisation d'API navigateur (`localStorage`) pour initialiser l'état, ou un balisage HTML invalide.\n- 📜 [Utiliser PostHog avec le routeur App de Next.js et Vercel](https://vercel.com/guides/posthog-nextjs-vercel-feature-flags-analytics)\n- 📜 [Surdosage de useMemo](https://edvins.io/usememo-overdose)\n- 📦 [RSC Devtools - Extension Chrome](https://chrome.google.com/webstore/detail/rsc-devtools/jcejahepddjnppkhomnidalpnnnemomn): l'extension non officielle est désormais disponible sur le Chrome Store. Elle permet de naviguer et d'analyser une chronologie des charges utiles RSC. Lisez l'article [Devtools pour les React Server Components](https://www.alvar.dev/blog/creating-devtools-for-react-server-components) pour plus de détails.\n- 📦 [Fresh 1.4 – Chargements de page plus rapides, Layouts et plus](https://deno.com/blog/fresh-1.4)\n- 📦 [TinyBase 4.1 - Nouveau module ui-react-dom](https://tinybase.org/guides/releases/)\n- 📦 [NextUI 2.1 - Select, Listbox, ScrollShadow](https://nextui.org/blog/v2.1.0)\n- 📦 [React-Redux 9.0 alpha](https://github.com/reduxjs/react-redux/releases/tag/v9.0.0-alpha.0)\n- 🎥 [tRPC + NextJS App Router = APIs Typesafe Simples](https://www.youtube.com/watch?v=qCLV0Iaq9zU)\n- 🎥 [Remotion Lambda - Playlist de tutoriels](https://www.youtube.com/playlist?list=PLRHdymbhXiIRgAeAUpMxe7l7BNliHfWUq)\n- 🎥 [React Query est secrètement un gestionnaire d'état incroyable](https://www.youtube.com/watch?v=0X3TlVklT-A)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c537a3d3",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c537a3d3",
+        "en": "@@untranslatable_placeholder_c537a3d3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a635fada",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "047c2395",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "[![Porkbun.com - The Best Domain Name Registrar](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)",
+      "source_content_hash": "b586358be6d238b132e1a5975adfc67156975cd356917f8af356f2a985ba08eb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Porkbun.com - Le meilleur bureau d'enregistrement de noms de domaine](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)",
+        "en": "[![Porkbun.com - The Best Domain Name Registrar](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "**[Porkbun.com - The Best Domain Name Registrar](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**",
+      "source_content_hash": "87a8346f1a38b708044b7ec0f18247f4ebdbc25f5f5ea8611f146537004b681b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Porkbun.com - Le meilleur bureau d'enregistrement de noms de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**",
+        "en": "**[Porkbun.com - The Best Domain Name Registrar](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "Porkbun offers hundreds of domain extensions for React and React-Native developers from .dev and .app to .cloud, .xyz, and .ai — all at the **lowest prices around!** Every domain name at Porkbun comes with **tons of free features** like:",
+      "source_content_hash": "a9ddb05490e57e8f08339518b5a217fdcc60d350b46a09d386315c03861533fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Porkbun propose des centaines d'extensions de domaine pour les développeurs React et React-Native, du .dev et .app au .cloud, .xyz et .ai — **tous aux prix les plus bas du marché !** Chaque nom de domaine chez Porkbun inclut **de nombreuses fonctionnalités gratuites** comme :",
+        "en": "Porkbun propose des centaines d'extensions de domaine pour les développeurs React et React-Native, du .dev et .app au .cloud, .xyz et .ai — le tout aux **prix les plus bas du marché !** Chaque nom de domaine chez Porkbun comprend **une multitude de fonctionnalités gratuites** comme :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ca1573da",
+      "source_content": "- SSL Certificates\n- WHOIS Privacy\n- DNS\n- URL Forwarding\n- Web and Email Hosting Trials",
+      "source_content_hash": "37ae2fc5df7013fc0c3e53e6f42795837327a3e6946776e76984fe95f8c4ae81",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Certificats SSL\n- Confidentialité WHOIS\n- DNS\n- Redirection d'URL\n- Essais d'hébergement Web et Email",
+        "en": "- Certificats SSL\n- Confidentialité WHOIS\n- DNS\n- Redirection d'URL\n- Essais d'hébergement Web et Email"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "Check out our **AI Generated Search tool** that’s changing the way people look for domain names. All this is backed by **incredible support 365 days a year** plus thousands of real five-star reviews on Trustpilot.",
+      "source_content_hash": "f8d12b2a974839f1cd2a9cc88a7ef05ceee5bbbccdd4a55b27851b9e4149328a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Découvrez notre **outil de recherche généré par IA** qui révolutionne la recherche de noms de domaine. Le tout est soutenu par **un support incroyable 365 jours par an** et des milliers d'avis réels cinq étoiles sur Trustpilot.",
+        "en": "Découvrez notre **outil de recherche généré par IA** qui révolutionne la recherche de noms de domaine. Le tout est soutenu par **un support incroyable 365 jours par an** et des milliers d'avis cinq étoiles authentiques sur Trustpilot."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "Click the link and [get $1 off your next domain name registration](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023) at Porkbun.com!",
+      "source_content_hash": "1af5731ab9994757c3892a323cd71ed233b5e72bf3562bba6e3828191f38909a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cliquez sur le lien et [obtenez 1 $ de réduction sur votre prochaine inscription de nom de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023) chez Porkbun.com !",
+        "en": "Cliquez sur le lien et [obtenez 1$ de réduction sur votre prochaine inscription de nom de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023) sur Porkbun.com !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "233bb60e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "023197ab",
+      "source_content": "- 💬 [React-Native RFC - Autolinking local modules](https://github.com/react-native-community/discussions-and-proposals/pull/702): proposes to make it easier to create local native modules, in a `local_modules` folder, using the `create-react-native-library` CLI.\n- 💬 [React-Native-Testing-Library RFC - Jest Native matchers migration](https://github.com/callstack/react-native-testing-library/issues/1468)\n- 🐦 [The top 100 Sports apps in the Apple App Store - React-Native 33/100](https://twitter.com/Baconbrix/status/1692215896029212847)\n- 👀 [Expo Preview - Static Font Optimization with Expo Router](https://twitter.com/Baconbrix/status/1692990529800167441)\n- 📜 [Simplify Your iOS Brownfield Integration with React Native Host](https://www.callstack.com/blog/simplify-your-ios-brownfield-integration-with-react-native-host)\n- 📦 [react-native-worklets-core](https://github.com/margelo/react-native-worklets-core): a standalone worklet runner, inspired by the one in Reanimated 2+, and designed to be used by various libraries such as VisionCamera, WishList and Skia.\n- 📦 [react-native-fast-tflite - High-performance TensorFlow Lite with GPU acceleration](https://github.com/mrousavy/react-native-fast-tflite)\n- 📦 [Realm JavaScript v12: complete rewrite without surprises](https://medium.com/realm/realm-javascript-v12-complete-rewrite-without-surprises-62eea2a2e8ae)\n- 📦 [react-native-bootsplash 5.0.0 - Dark mode, Brand image, Web support...](https://github.com/zoontek/react-native-bootsplash/releases/tag/5.0.0)\n- 📦 [clean-rn - Clean all React Native caches](https://github.com/mrousavy/clean-rn)\n- 🎥 [Instagram Stickers - “Can it be done in React Native?”](https://www.youtube.com/watch?v=5yM4NPcTwY4)\n- 🎥 [Flutter vs React Native and Reanimated with @Reactiive](https://www.youtube.com/watch?v=A19-UEUrg6A)\n- 🎙️ [React Native Radio 273 - Gluestack with Sanket Sahu](https://react-native-radio.simplecast.com/episodes/rnr-273-gluestack-with-sanket-sahu)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław, September 7–8, 2023) is offering us [-15% on conference tickets](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) with code \"thisweekinreact15\".",
+      "source_content_hash": "fbdb9c211c59a259a37ff176f240803c2591ccd4316b21fca7dd457b19037210",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💬 [RFC React-Native - Autoliaison des modules locaux](https://github.com/react-native-community/discussions-and-proposals/pull/702) : propose de faciliter la création de modules natifs locaux dans un dossier `local_modules`, en utilisant le CLI `create-react-native-library`.\n- 💬 [RFC React-Native-Testing-Library - Migration des matchers Jest Native](https://github.com/callstack/react-native-testing-library/issues/1468)\n- 🐦 [Les 100 meilleures applications Sport sur l'Apple App Store - React-Native 33/100](https://twitter.com/Baconbrix/status/1692215896029212847)\n- 👀 [Aperçu Expo - Optimisation des polices statiques avec Expo Router](https://twitter.com/Baconbrix/status/1692990529800167441)\n- 📜 [Simplifiez votre intégration brownfield iOS avec React Native Host](https://www.callstack.com/blog/simplify-your-ios-brownfield-integration-with-react-native-host)\n- 📦 [react-native-worklets-core](https://github.com/margelo/react-native-worklets-core) : un exécuteur worklet autonome, inspiré de celui de Reanimated 2+, conçu pour être utilisé par diverses bibliothèques comme VisionCamera, WishList et Skia.\n- 📦 [react-native-fast-tflite - TensorFlow Lite haute performance avec accélération GPU](https://github.com/mrousavy/react-native-fast-tflite)\n- 📦 [Realm JavaScript v12 : réécriture complète sans surprises](https://medium.com/realm/realm-javascript-v12-complete-rewrite-without-surprises-62eea2a2e8ae)\n- 📦 [react-native-bootsplash 5.0.0 - Mode sombre, image de marque, support Web...](https://github.com/zoontek/react-native-bootsplash/releases/tag/5.0.0)\n- 📦 [clean-rn - Nettoyer tous les caches React Native](https://github.com/mrousavy/clean-rn)\n- 🎥 [Stickers Instagram - « Peut-on le faire en React Native ? »](https://www.youtube.com/watch?v=5yM4NPcTwY4)\n- 🎥 [Flutter vs React Native et Reanimated avec @Reactiive](https://www.youtube.com/watch?v=A19-UEUrg6A)\n- 🎙️ [React Native Radio 273 - Gluestack avec Sanket Sahu](https://react-native-radio.simplecast.com/episodes/rnr-273-gluestack-with-sanket-sahu)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław, 7-8 septembre 2023) nous offre [-15% sur les billets de conférence](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) avec le code \"thisweekinreact15\".",
+        "en": "- 💬 [RFC React-Native - Autolinking des modules locaux](https://github.com/react-native-community/discussions-and-proposals/pull/702): propose de faciliter la création de modules natifs locaux dans un dossier `local_modules`, en utilisant le CLI `create-react-native-library`.\n- 💬 [RFC React-Native-Testing-Library - Migration des matchers Jest Native](https://github.com/callstack/react-native-testing-library/issues/1468)\n- 🐦 [Top 100 des applications Sport sur l'Apple App Store - React-Native 33/100](https://twitter.com/Baconbrix/status/1692215896029212847)\n- 👀 [Aperçu Expo - Optimisation statique des polices avec Expo Router](https://twitter.com/Baconbrix/status/1692990529800167441)\n- 📜 [Simplifiez votre intégration Brownfield iOS avec React Native Host](https://www.callstack.com/blog/simplify-your-ios-brownfield-integration-with-react-native-host)\n- 📦 [react-native-worklets-core](https://github.com/margelo/react-native-worklets-core): un exécuteur worklet autonome, inspiré de celui de Reanimated 2+, conçu pour être utilisé par diverses bibliothèques comme VisionCamera, WishList et Skia.\n- 📦 [react-native-fast-tflite - TensorFlow Lite haute performance avec accélération GPU](https://github.com/mrousavy/react-native-fast-tflite)\n- 📦 [Realm JavaScript v12 : réécriture complète sans surprises](https://medium.com/realm/realm-javascript-v12-complete-rewrite-without-surprises-62eea2a2e8ae)\n- 📦 [react-native-bootsplash 5.0.0 - Mode sombre, image de marque, support Web...](https://github.com/zoontek/react-native-bootsplash/releases/tag/5.0.0)\n- 📦 [clean-rn - Nettoyer tous les caches React Native](https://github.com/mrousavy/clean-rn)\n- 🎥 [Stickers Instagram - \"Peut-on le faire en React Native ?\"](https://www.youtube.com/watch?v=5yM4NPcTwY4)\n- 🎥 [Flutter vs React Native et Reanimated avec @Reactiive](https://www.youtube.com/watch?v=A19-UEUrg6A)\n- 🎙️ [React Native Radio 273 - Gluestack avec Sanket Sahu](https://react-native-radio.simplecast.com/episodes/rnr-273-gluestack-with-sanket-sahu)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław, 7-8 septembre 2023) nous offre [-15% sur les billets de conférence](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) avec le code \"thisweekinreact15\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d1f76d04",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0465fca",
+      "source_content": "- 👀 [Upcoming Node 20.6 - built-in .env file support](https://github.com/nodejs/node/pull/49185)\n- 🐦 [requestIdleCallback coming to Safari and soon in every browser?](https://twitter.com/sebastienlorber/status/1694260312986227187)\n- 📜 [`Array<T>` vs `T[]`: Which is better?](https://www.totaltypescript.com/array-types-in-typescript)\n- 📜 [Shadow DOM: Not by Default](https://begin.com/blog/posts/2023-08-18-shadow-dom-not-by-default)\n- 📜 [Dropbox - How we reduced the size of our JavaScript bundles by 33%](https://dropbox.tech/frontend/how-we-reduced-the-size-of-our-javascript-bundles-by-33-percent)\n- 📜 [Four new CSS features for smooth entry and exit animations](https://developer.chrome.com/blog/entry-exit-animations/)\n- 📜 [The ideal viewport doesn’t exist](https://viewports.fyi/)\n- 📜 [TypeScript is Surprisingly OK for Compilers](https://matklad.github.io/2023/08/17/typescript-is-surprisingly-ok-for-compilers.html)\n- 📦 [Chrome 117 Beta](https://developer.chrome.com/blog/chrome-117-beta/)",
+      "source_content_hash": "08afd15db72d4ac50c68274bccf9b0ff1cf820e4b4e3a0c9655da58f88eef3f6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [À venir dans Node 20.6 - prise en charge intégrée des fichiers .env](https://github.com/nodejs/node/pull/49185)\n- 🐦 [requestIdleCallback arrive sur Safari et bientôt dans tous les navigateurs ?](https://twitter.com/sebastienlorber/status/1694260312986227187)\n- 📜 [`Array<T>` vs `T[]` : Lequel est meilleur ?](https://www.totaltypescript.com/array-types-in-typescript)\n- 📜 [Shadow DOM : Pas par défaut](https://begin.com/blog/posts/2023-08-18-shadow-dom-not-by-default)\n- 📜 [Dropbox - Comment nous avons réduit de 33% la taille de nos bundles JavaScript](https://dropbox.tech/frontend/how-we-reduced-the-size-of-our-javascript-bundles-by-33-percent)\n- 📜 [Quatre nouvelles fonctionnalités CSS pour des animations fluides d'entrée et de sortie](https://developer.chrome.com/blog/entry-exit-animations/)\n- 📜 [La fenêtre d'affichage idéale n'existe pas](https://viewports.fyi/)\n- 📜 [TypeScript est étonnamment acceptable pour les compilateurs](https://matklad.github.io/2023/08/17/typescript-is-surprisingly-ok-for-compilers.html)\n- 📦 [Chrome 117 Beta](https://developer.chrome.com/blog/chrome-117-beta/)",
+        "en": "- 👀 [Node 20.6 à venir - prise en charge intégrée des fichiers .env](https://github.com/nodejs/node/pull/49185)\n- 🐦 [requestIdleCallback arrive sur Safari et bientôt dans tous les navigateurs ?](https://twitter.com/sebastienlorber/status/1694260312986227187)\n- 📜 [`Array<T>` vs `T[]` : Lequel est meilleur ?](https://www.totaltypescript.com/array-types-in-typescript)\n- 📜 [Shadow DOM : Pas par défaut](https://begin.com/blog/posts/2023-08-18-shadow-dom-not-by-default)\n- 📜 [Dropbox - Comment nous avons réduit de 33% la taille de nos bundles JavaScript](https://dropbox.tech/frontend/how-we-reduced-the-size-of-our-javascript-bundles-by-33-percent)\n- 📜 [Quatre nouvelles fonctionnalités CSS pour des animations d'entrée/sortie fluides](https://developer.chrome.com/blog/entry-exit-animations/)\n- 📜 [Le viewport idéal n'existe pas](https://viewports.fyi/)\n- 📜 [TypeScript est étonnamment adapté pour les compilateurs](https://matklad.github.io/2023/08/17/typescript-is-surprisingly-ok-for-compilers.html)\n- 📦 [Chrome 117 Beta](https://developer.chrome.com/blog/chrome-117-beta/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "862bb4be",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ed644f52",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 😄 Fun {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "[![alt](/emails/issues/157/meme.jpg)](https://twitter.com/BHolmesDev/status/1693624114097909851)",
+      "source_content_hash": "dfaf6ec8cb3a57680536609aace582caaf6efa7d236c45725e070585b243ff43",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/157/meme.jpg)](https://twitter.com/BHolmesDev/status/1693624114097909851)",
+        "en": "[![texte alt](/emails/issues/157/meme.jpg)](https://twitter.com/BHolmesDev/status/1693624114097909851)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/157/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.186165+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "63acbbe7e2f4a44812f622927c2d1cf5fe139b75725c8412252d4c18eeb21de9",
+    "en": "63acbbe7e2f4a44812f622927c2d1cf5fe139b75725c8412252d4c18eeb21de9"
+  }
+}

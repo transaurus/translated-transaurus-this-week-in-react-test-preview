@@ -1,0 +1,552 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/199/index.mdx",
+  "source_file_content_hash": "2e099a59d6f32840e7043c00b8729089f74bbff1d0e14fcc30ed2f281f925401",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /199\ntitle: \"This Week In React #199: shadcn, Next.js, TanStack, Remix, MDX, Astro, Storybook, @svg-use, MSW, RAG, RN-WebGPU, React-Three-Fiber, Re.Pack, Super Apps, RN-macOS, EAS, Node.jx, Stage 2.7, AggregateError, Style-Observer...\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 09-04-2024\n---",
+      "source_content_hash": "b13a2434172181d9de69f9d9a6d99ab59f04a2361740d0d40b84415358c8e873",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from [Theodo Apps (formerly BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) here 👋, standing in for Seb to bring you the latest news from the React and React Native worlds.",
+      "source_content_hash": "5589332c676d181a8eb3a621126785f713bf890d84868e4d69aa4ec90c6adae5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cyril et Matthieu de [Theodo Apps (anciennement BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) ici 👋, remplaçant Seb pour vous apporter les dernières nouvelles des écosystèmes React et React Native.",
+        "en": "Cyril et Matthieu de [Theodo Apps (anciennement BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles des mondes React et React Native."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "This week, shadcn has released a new CLI, and we've noticed other nice things that are currently cooking, like support for the `use()` hook in React Query.",
+      "source_content_hash": "979591bf15d3153d5fcc10c9d0f6120bfa0d4929f56301f726172717325dd617",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, shadcn a sorti un nouveau CLI, et nous avons remarqué d'autres développements intéressants en cours, comme le support du hook `use()` dans React Query.",
+        "en": "Cette semaine, shadcn a lancé un nouveau CLI, et nous avons remarqué d'autres développements intéressants en cours, comme le support du hook `use()` dans React Query."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The React Universe Conf starts tomorrow, we're expecting React Native announcements that we will discuss next week!",
+      "source_content_hash": "d88a3ac0d7adbc54a90367582530a83e1091b6f4c244ff3207e73f933e0fdc33",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La conférence React Universe débute demain, nous attendons des annonces React Native que nous aborderons la semaine prochaine !",
+        "en": "La conférence React Universe débute demain, nous nous attendons à des annonces React Native que nous aborderons la semaine prochaine !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![[Live Workshop] Debugging Next.js w/ Examples](/emails/issues/199/sentry.jpg)](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)",
+      "source_content_hash": "eecb22dc8593c17745282c64cd4153c91d96ffe76f3114fe0bcf727288dd8db1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![[Atelier en direct] Débogage de Next.js avec exemples](/emails/issues/199/sentry.jpg)](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)",
+        "en": "[![[Atelier en direct] Déboguer Next.js avec exemples](/emails/issues/199/sentry.jpg)](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[[Live Workshop] Debugging Next.js w/ Examples](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)**",
+      "source_content_hash": "334eec1ba40594e896fccbc0d1447b40e0e45ac38705ce7fde01f0d4d28c38c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[[Atelier en direct] Débogage de Next.js avec exemples](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)**",
+        "en": "**[[Atelier en direct] Déboguer Next.js avec exemples](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Join us on September 15th for a hands-on workshop with Dan Mindru, co-host of the Morning Maker show, where he'll share how he shaved 22.3 seconds off an API call using Sentry. You'll pick up practical tips on how to debug errors and performance issues using Sentry’s Tracing and Session Replay—RSVP to save your spot.",
+      "source_content_hash": "2be47bfc469dd0150aa9b4eeeaf4793aaa0618ed8fc7c6005e8c889b8d147e3c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Rejoignez-nous le 15 septembre pour un atelier pratique avec Dan Mindru, co-animateur de Morning Maker, où il partagera comment il a réduit de 22,3 secondes un appel API grâce à Sentry. Vous apprendrez des conseils pratiques pour déboguer erreurs et problèmes de performance avec le Tracing et Session Replay de Sentry — RSVP pour réserver votre place.",
+        "en": "Rejoignez-nous le 15 septembre pour un atelier pratique avec Dan Mindru, co-animateur de Morning Maker, où il partagera comment il a réduit de 22,3 secondes un appel API avec Sentry. Vous découvrirez des conseils pratiques pour déboguer erreurs et problèmes de performance en utilisant le Tracing et Session Replay de Sentry — Réservez votre place."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[![Shadcn introduces a new CLI](/emails/issues/199/shadcn.jpg)](https://ui.shadcn.com/docs/changelog)",
+      "source_content_hash": "8fadd96b732925e60554d3f5bf65cdbb57396df0aff5e3aafd67ba08eb14adcc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Shadcn présente un nouveau CLI](/emails/issues/199/shadcn.jpg)](https://ui.shadcn.com/docs/changelog)",
+        "en": "[![Shadcn présente un nouveau CLI](/emails/issues/199/shadcn.jpg)](https://ui.shadcn.com/docs/changelog)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "**[Shadcn introduces a new CLI](https://ui.shadcn.com/docs/changelog)**",
+      "source_content_hash": "504be88c77e74d055b0dde10eedcdde2cd31315190bee01dccf1d8ad6f6e7b82",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Shadcn présente un nouveau CLI](https://ui.shadcn.com/docs/changelog)**",
+        "en": "**[Shadcn présente un nouveau CLI](https://ui.shadcn.com/docs/changelog)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "It’s significantly more powerful and flexible:",
+      "source_content_hash": "0475d9866decd85d979aea340ffa018bc8f57c6986e2189a7949e307ef94d65d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Il est nettement plus puissant et flexible :",
+        "en": "Il est nettement plus puissant et flexible :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- `shadcn add` can now install components, themes, hooks, utils, dependencies…\n- It supports for multiple React frameworks (Next.js, Remix, Vite, Laravel)\n- It can update your tailwind config instead of overriding it\n- Components can be imported directly from urls",
+      "source_content_hash": "f9304555e77ac579fb34d77768651dfa163b93a9ae5e96f458eb94363c9a2f2c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- `shadcn add` peut désormais installer composants, thèmes, hooks, utilitaires, dépendances…\n- Support de multiples frameworks React (Next.js, Remix, Vite, Laravel)\n- Mise à jour de votre configuration Tailwind au lieu de la remplacer\n- Import direct de composants depuis des URLs",
+        "en": "- `shadcn add` peut désormais installer composants, thèmes, hooks, utils, dépendances…\n- Support multi-frameworks React (Next.js, Remix, Vite, Laravel)\n- Met à jour votre config Tailwind au lieu de la remplacer\n- Les composants peuvent être importés directement depuis des URLs"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "More details in 🐦 [this twitter thread](https://x.com/shadcn/status/1829646528149143992).",
+      "source_content_hash": "a9663e9bddd06aa0a776968c72e3a6612f41ab73cef3bfe7a5e773177c5e562c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Plus de détails dans 🐦 [ce fil Twitter](https://x.com/shadcn/status/1829646528149143992).",
+        "en": "Plus de détails dans 🐦 [ce thread Twitter](https://x.com/shadcn/status/1829646528149143992)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f01394b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c94a9c0e",
+      "source_content": "- 💸 [React Component Analytics — Omlet Scans Your Codebase to Measure Component Usage to Increase Code Quality and Design Systems Adoption](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-aug-2024)\n- 👀 [TanStack Query PR - Add support for `React.use()`](https://github.com/TanStack/query/pull/7988): React Query plans to return a promise that you can `use()`, making it easier to integrate with Suspense in a performant way. It’s more convenient than `usePrefetchQuery` and more parallel than `useSuspenseQuery`.\n- 👀 [Remix Route Convention Evolution](https://github.com/brookslybrand/route-convention-evolution): The new `routes.ts` we evoked last week will allow you to skip filesystem-based routing, or simplify using the convention of your choice.\n- 🐦 [Next.js 15 may be released soon](https://x.com/feedthejim/status/1829569083777437745) without waiting for React 19 to be stable, and without requiring React 19 for the pages router. It will include major Turbopack improvements.\n- 🐦 [Render on Fetch vs Fetch on Render](https://x.com/t3dotgg/status/1829988532489793957): Theo shares a graphical visualization of different React rendering patterns. An associated video is available to deep dive.\n- 📜 [Introducing @svg-use](https://fotis.xyz/posts/introducing-svg-use/): Greatly explains how SVG-in-JS (notably SVGR in React) is convenient for theming and distribution, but is not ideal in terms of performance and duplication. The `<use href>` pattern is a good alternative but requires manual plumbing, so the author created a toolchain to automate it.\n- 📜 [Build-time Components](https://codehike.org/blog/build-time-components): Greatly illustrated article explains the benefits of React Server Components for MDX users looking to make their content interactive. Client components and build-time Remark/Rehype plugins have limitations, and RSCs offer the best of both.\n- 📜 [Using Server Functions and TanStack Query](https://www.brenelz.com/posts/using-server-functions-and-tanstack-query/): TanStack Start is almost ready to use, and has a compelling data fetching approach, with “server fns” integrated with react-query and routing (for prefetching), fully typesafe of course.\n- 📜 [What the heck is atomic state management?](https://www.frontendundefined.com/posts/monthly/jotai-atomic-state-management/): A refresher on how to use Jotai “the right way” and the benefits it brings.\n- 📜 [Component testing in Storybook](https://storybook.js.org/blog/component-testing/): Storybook promotes component testing as a complement to end-to-end testing, offering speed and reliability with browser fidelity for better UI test coverage.\n- 📜 [The Complete Developer Guide to React 19:](https://www.callstack.com/blog/the-complete-developer-guide-to-react-19-part-1-async-handling) A 2-part series on what’s coming in React 19, including useTransition, useActionState, useOptimistic, use, Server Components, Server Actions, ref as a prop, Diffs for Hydration Errors, Improved error reporting, Context as a provider, useDeferredValue initial value & more.\n- 📜 [Easy RAG for TypeScript and React Apps](https://edspencer.net/2024/9/2/easy-rag-for-typescript-and-react-apps): Build a RAG system in TypeScript and React by processing text documents, generating embeddings, and utilizing a vector database for semantic search to answer user queries.\n- 📜 [Blending Markdown and React components in NextJS](https://edspencer.net/2024/8/28/using-markdown-with-nextjs)\n- 📜 [Higher Order Components (HOCs) in React: What They Are and How To Use Them](https://www.reactsquad.io/blog/higher-order-components-hocs-in-react)\n- 📜 [Comprehensive React Testing: Handling API Calls with Mock Service Worker](https://www.trevorlasn.com/blog/react-testing-mock-service-worker/)\n- 📜 [Using the inert attribute in React](https://www.mayank.co/notes/inert-in-react)\n- 📜 [Authoring CSS in modern JavaScript apps](https://www.alexchantastic.com/modern-css-authoring)\n- 📦 [Midday V1 - Starter kit based on Next.js, Turborepo, Shadcn & more](https://github.com/midday-ai/v1)\n- 📦 [Bulletproof-React - scalable React architecture repo - now updated with Next.js examples](https://github.com/alan2207/bulletproof-react)\n- 📦 [Astro 4.15 - Astro Actions, Use rewrites for i18n fallbacks, libSQL remotes in @astrojs/db, Timeout option in client:idle, Swap helpers for ViewTransitions](https://astro.build/blog/astro-4150/)\n- 🎥 [Lee Robinson - Build anything with v0 (3D games, interactive apps)](https://www.youtube.com/watch?v=zA-eCGFBXjM)\n- 🎥 [Jack Herrington - Using AI Structured Output with NextJS & React](https://www.youtube.com/watch?v=_Rb4SpWRHC8)",
+      "source_content_hash": "7ad077dbef1d8b2b7d016090190d0fca617c55cbd5f53455278a43826be48a7e",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c94a9c0e",
+        "en": "@@untranslatable_placeholder_c94a9c0e"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95729a46",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_95729a46",
+        "en": "@@untranslatable_placeholder_95729a46"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0170c674",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8a9b6c26",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "[![Run GitHub Actions up to 2x faster at half the cost](/emails/issues/199/blacksmith.jpg)](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)",
+      "source_content_hash": "149c2ea32eebf2ed3c3d10decd9d7c103b6374d84885a3b2284cb5bee53729b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Exécutez GitHub Actions jusqu'à 2x plus vite pour moitié moins cher](/emails/issues/199/blacksmith.jpg)](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)",
+        "en": "[![Exécutez GitHub Actions 2x plus vite à moitié prix](/emails/issues/199/blacksmith.jpg)](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "**[Run GitHub Actions up to 2x faster at half the cost](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)**",
+      "source_content_hash": "ca83fdc1a6b7a136bb641119675d68ad2cac99f8725e0057638e7406c551596c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Exécutez GitHub Actions jusqu'à 2x plus vite pour moitié moins cher](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)**",
+        "en": "**[Exécutez GitHub Actions 2x plus vite à moitié prix](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "Blacksmith runs your GitHub Actions substantially faster by running them on modern gaming CPUs. Integrating Blacksmith is a one-line code change. 100+ companies like Ashby, GitBook, Superblocks, and Slope use Blacksmith to help developers merge code faster.",
+      "source_content_hash": "e91be491078bfeaf09aac05154b108b47d2d6e4a7f4153a5e2a0dc928658c17e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Blacksmith exécute vos GitHub Actions nettement plus rapidement sur des CPUs gaming modernes. L'intégration nécessite une seule ligne de code. 100+ entreprises comme Ashby, GitBook, Superblocks et Slope utilisent Blacksmith pour accélérer les fusions de code.",
+        "en": "Blacksmith exécute vos GitHub Actions nettement plus vite grâce à des CPU gaming modernes. L'intégration de Blacksmith est un changement d'une ligne de code. 100+ entreprises comme Ashby, GitBook, Superblocks et Slope utilisent Blacksmith pour aider les développeurs à merger du code plus rapidement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "233bb60e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "[![React Universe](/emails/issues/199/react-universe.jpg)](https://www.reactuniverseconf.com/)",
+      "source_content_hash": "f1a03832adf6b38f33b9cb9107a5a8baf2bf2ed79c3360cc851a17a96581b5c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Universe](/emails/issues/199/react-universe.jpg)](https://www.reactuniverseconf.com/)",
+        "en": "[![L'Univers React](/emails/issues/199/react-universe.jpg)](https://www.reactuniverseconf.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "At the time we’re writing this, the React Native Core Contributor Summit is happening in Wrocław.",
+      "source_content_hash": "c66d8b10f990b45a8fc8bbe0adbd069e9ddfe0ac84834820ea555eb40cf222de",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Au moment où nous écrivons ces lignes, le sommet des contributeurs principaux de React Native se déroule à Wrocław.",
+        "en": "Au moment où nous écrivons, le sommet des contributeurs principaux de React Native se déroule à Wrocław."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "It will be followed by the React Universe conf on Thursday and Friday. A lot of exciting talks are planned, and [you can follow along on Youtube](https://www.youtube.com/watch?v=b48Lax2-jOQ). Some highlights: A new debugger, The New Architecture, Expo DOM Components, Static Hermes.",
+      "source_content_hash": "c9fffac4013e17d877818d3e37bfa5b49df0411d47d93755e2104a95a19d1f3c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Il sera suivi par la conférence React Universe jeudi et vendredi. De nombreuses présentations passionnantes sont prévues, et [vous pouvez suivre en direct sur YouTube](https://www.youtube.com/watch?v=b48Lax2-jOQ). Parmi les points forts : un nouveau débogueur, la nouvelle architecture, les composants DOM d'Expo, Static Hermes.",
+        "en": "Il sera suivi par la conférence React Universe jeudi et vendredi. De nombreuses présentations passionnantes sont prévues, et [vous pouvez suivre en direct sur YouTube](https://www.youtube.com/watch?v=b48Lax2-jOQ). Parmi les temps forts : un nouveau débogueur, la Nouvelle Architecture, les composants DOM d'Expo et Hermes statique."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "So we will probably have more React Native news for you next week!",
+      "source_content_hash": "f7a934427267ca269378702a358cc7e9135064845e4bce9b3816db789846c67a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous aurons donc probablement plus de nouvelles sur React Native pour vous la semaine prochaine !",
+        "en": "Nous aurons donc probablement plus d'actualités React Native pour vous la semaine prochaine !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "647304fd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "936011bd",
+      "source_content": "- 💸 [React Native Mastery - The only course you need to Master React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 👀 [Re.Pack is adding support for Rspack](https://github.com/callstack/repack/pull/720): The alternative, webpack-compatible bundler for React Native will probably see major speed gains with this change.\n- 🐦 [React Native IDE will integrate Storybook into IDE's preview mode](https://x.com/kzzzf/status/1829262449541062716)\n- 🐦 [React Three Fiber running on react-native-webgpu](https://x.com/aarongrider/status/1830629528005460016): We’ve seen examples of Three.js running with react-native-webgpu. Aaron Grider from SpaceX is currently working on React Three Fiber support, bringing its declarative API to React Native land.\n- 📜 [Create and run fast end-to-end tests using Moropo and Expo: with Maestro](https://expo.dev/blog/create-and-run-fast-end-to-end-tests-using-moropo-and-expo)\n- 📜 [How to Develop a Super App with React Native?](https://medium.com/@xayilmaz/how-to-develop-a-super-app-with-react-native-fe18fbe002c5): Use of a custom native module for communication between mini-apps differs from the Repack approach, which leverages Webpack to generate modular and independent JavaScript bundles for each mini-app.\n- 📖 [Expo documentation update](https://x.com/amanhimself/status/1828545129499750498): Local First Architecture, DOM Components, Native project upgrade helper for SDK 51.\n- 📖 [Expo Application Services (EAS) Pricing](https://expo.dev/pricing#update): EAS Update and Build concurrencies get cheaper as of September 1st.\n- 📦 [react-native-macos 0.75](https://www.npmjs.com/package/react-native-macos/v/0.75.2)\n- 🎥 [Minute React Native - React Native WebGPU Explained in under 2 Minutes](https://www.youtube.com/watch?v=DQrO2LFnrOw)\n- 🎥 [Dan’s Lab - How to build a QR Code Scanner with Expo](https://www.youtube.com/watch?v=PZIEqcdFjpQ)\n- 🎥 [Simon Grimm - Expo DOM Components are Wild](https://www.youtube.com/watch?v=BWA8KY5QEPk)\n- 🎥 [Chain React 2024 - YouTube playlist available](https://www.youtube.com/playlist?list=PLE7tQUdRKcyb81ybEVsrk6PfxXu7pJs1i#chainreact2024)",
+      "source_content_hash": "437b92ce5ea83a045abbf2705b8fd65c5e40f2d324b4b830755882638af010bd",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [React Native Mastery - Le seul cours dont vous avez besoin pour maîtriser React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 👀 [Re.Pack ajoute le support de Rspack](https://github.com/callstack/repack/pull/720) : Le bundler alternatif compatible Webpack pour React Native devrait gagner considérablement en vitesse grâce à ce changement.\n- 🐦 [L'IDE React Native intégrera Storybook dans son mode de prévisualisation](https://x.com/kzzzf/status/1829262449541062716)\n- 🐦 [React Three Fiber fonctionnant sur react-native-webgpu](https://x.com/aarongrider/status/1830629528005460016) : Nous avons vu des démonstrations de Three.js avec react-native-webgpu. Aaron Grider de SpaceX travaille actuellement sur le support React Three Fiber, apportant son API déclarative à l'écosystème React Native.\n- 📜 [Créer et exécuter des tests de bout en bout rapides avec Moropo et Expo : avec Maestro](https://expo.dev/blog/create-and-run-fast-end-to-end-tests-using-moropo-and-expo)\n- 📜 [Comment développer une super application avec React Native ?](https://medium.com/@xayilmaz/how-to-develop-a-super-app-with-react-native-fe18fbe002c5) : L'utilisation d'un module natif personnalisé pour la communication entre mini-apps diffère de l'approche Repack, qui exploite Webpack pour générer des bundles JavaScript modulaires et indépendants pour chaque mini-app.\n- 📖 [Mise à jour de la documentation Expo](https://x.com/amanhimself/status/1828545129499750498) : Architecture Local First, composants DOM, assistant de mise à niveau de projet natif pour le SDK 51.\n- 📖 [Tarification des Expo Application Services (EAS)](https://expo.dev/pricing#update) : Les concurrences de mise à jour et de build EAS deviennent moins chères à partir du 1er septembre.\n- 📦 [react-native-macos 0.75](https://www.npmjs.com/package/react-native-macos/v/0.75.2)\n- 🎥 [Minute React Native - React Native WebGPU expliqué en moins de 2 minutes](https://www.youtube.com/watch?v=DQrO2LFnrOw)\n- 🎥 [Le laboratoire de Dan - Comment construire un scanner de code QR avec Expo](https://www.youtube.com/watch?v=PZIEqcdFjpQ)\n- 🎥 [Simon Grimm - Les composants DOM d'Expo sont impressionnants](https://www.youtube.com/watch?v=BWA8KY5QEPk)\n- 🎥 [Chain React 2024 - Playlist YouTube disponible](https://www.youtube.com/playlist?list=PLE7tQUdRKcyb81ybEVsrk6PfxXu7pJs1i#chainreact2024)",
+        "en": "- 💸 [React Native Mastery - Le seul cours dont vous avez besoin pour maîtriser React Native et Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 👀 [Re.Pack ajoute le support de Rspack](https://github.com/callstack/repack/pull/720) : Le bundleur alternatif compatible avec webpack pour React Native devrait gagner considérablement en vitesse avec ce changement.\n- 🐦 [L'IDE React Native intégrera Storybook dans son mode de prévisualisation](https://x.com/kzzzf/status/1829262449541062716)\n- 🐦 [React Three Fiber fonctionnant sur react-native-webgpu](https://x.com/aarongrider/status/1830629528005460016) : Nous avons vu des exemples de Three.js avec react-native-webgpu. Aaron Grider de SpaceX travaille actuellement sur le support de React Three Fiber, apportant son API déclarative à React Native.\n- 📜 [Créer et exécuter des tests de bout en bout rapides avec Moropo et Expo : avec Maestro](https://expo.dev/blog/create-and-run-fast-end-to-end-tests-using-moropo-and-expo)\n- 📜 [Comment développer une super application avec React Native ?](https://medium.com/@xayilmaz/how-to-develop-a-super-app-with-react-native-fe18fbe002c5) : L'utilisation d'un module natif personnalisé pour la communication entre mini-apps diffère de l'approche Repack, qui utilise Webpack pour générer des bundles JavaScript modulaires et indépendants.\n- 📖 [Mise à jour de la documentation Expo](https://x.com/amanhimself/status/1828545129499750498) : Architecture Local First, Composants DOM, Assistant de mise à niveau de projet natif pour le SDK 51.\n- 📖 [Tarification des Expo Application Services (EAS)](https://expo.dev/pricing#update) : Les concurrences EAS Update et Build deviennent moins chères à partir du 1er septembre.\n- 📦 [react-native-macos 0.75](https://www.npmjs.com/package/react-native-macos/v/0.75.2)\n- 🎥 [Minute React Native - React Native WebGPU expliqué en moins de 2 minutes](https://www.youtube.com/watch?v=DQrO2LFnrOw)\n- 🎥 [Le Lab de Dan - Comment construire un scanneur de code QR avec Expo](https://www.youtube.com/watch?v=PZIEqcdFjpQ)\n- 🎥 [Simon Grimm - Les composants DOM Expo sont dingues](https://www.youtube.com/watch?v=BWA8KY5QEPk)\n- 🎥 [Chain React 2024 - Playlist YouTube disponible](https://www.youtube.com/playlist?list=PLE7tQUdRKcyb81ybEVsrk6PfxXu7pJs1i#chainreact2024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "638efb88",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "10e4f9ca",
+      "source_content": "- 📜 [Inside ECMAScript: JavaScript Standard Gets an Extra Stage](https://thenewstack.io/inside-ecmascript-javascript-standard-gets-an-extra-stage/)\n- 📜 [The web's clipboard, and how it stores data of different types](https://alexharri.com/blog/clipboard)\n- 📜 [JavaScript Generators Explained, But On A Senior-Level](https://www.reactsquad.io/blog/understanding-generators-in-javascript)\n- 📜 [AggregateError in JavaScript](https://www.trevorlasn.com/blog/aggregate-error-in-javascript/)\n- 📦 [ThreeJS 168](https://github.com/mrdoob/three.js/releases/tag/r168)\n- 📦 [Style-observer \\- A MutationObserver for CSS](https://www.bram.us/2024/08/31/introducing-bramus-style-observer-a-mutationobserver-for-css/)\n- 📦 [Effect 3.7 \\- With HttpApi, a declarative way to define api endpoints](https://effect.website/blog/effect-3.7)\n- 📦 [Node 22.8](https://nodejs.org/en/blog/release/v22.8.0) \\- module.enableCompileCache(), vm.createContext() with freezable globalThis, coverage thresholds\n- 📦 [Sherif 1.0 \\- Opinionated, zero-config linter for JavaScript monorepos](https://github.com/QuiiBz/sherif)\n- 📦 [Safari Technology Preview 202 \\- Lots of CSS features](https://webkit.org/blog/15798/release-notes-for-safari-technology-preview-202/)\n- 📦 [i-html \\- inline-html import element](https://www.keithcirkel.co.uk/i-html/)",
+      "source_content_hash": "0ba8a91e25a7b1ee3804826522fab50a69a49691f7cc857a8abd40a5d78dc12b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Inside ECMAScript : la norme JavaScript obtient une étape supplémentaire](https://thenewstack.io/inside-ecmascript-javascript-standard-gets-an-extra-stage/)\n- 📜 [Le presse-papiers du web, et comment il stocke des données de différents types](https://alexharri.com/blog/clipboard)\n- 📜 [Les générateurs JavaScript expliqués, mais de manière senior](https://www.reactsquad.io/blog/understanding-generators-in-javascript)\n- 📜 [AggregateError en JavaScript](https://www.trevorlasn.com/blog/aggregate-error-in-javascript/)\n- 📦 [ThreeJS 168](https://github.com/mrdoob/three.js/releases/tag/r168)\n- 📦 [Style-observer - Un MutationObserver pour CSS](https://www.bram.us/2024/08/31/introducing-bramus-style-observer-a-mutationobserver-for-css/)\n- 📦 [Effect 3.7 - Avec HttpApi, une manière déclarative de définir les points de terminaison d'API](https://effect.website/blog/effect-3.7)\n- 📦 [Node 22.8 - module.enableCompileCache(), vm.createContext() avec globalThis gelable, seuils de couverture](https://nodejs.org/en/blog/release/v22.8.0)\n- 📦 [Sherif 1.0 - Linter opiniâtre sans configuration pour les monorepos JavaScript](https://github.com/QuiiBz/sherif)\n- 📦 [Safari Technology Preview 202 - De nombreuses fonctionnalités CSS](https://webkit.org/blog/15798/release-notes-for-safari-technology-preview-202/)\n- 📦 [i-html - élément d'importation inline-html](https://www.keithcirkel.co.uk/i-html/)",
+        "en": "- 📜 [À l'intérieur d'ECMAScript : la norme JavaScript obtient une étape supplémentaire](https://thenewstack.io/inside-ecmascript-javascript-standard-gets-an-extra-stage/)\n- 📜 [Le presse-papiers du web, et comment il stocke des données de différents types](https://alexharri.com/blog/clipboard)\n- 📜 [Les générateurs JavaScript expliqués, mais de manière experte](https://www.reactsquad.io/blog/understanding-generators-in-javascript)\n- 📜 [AggregateError en JavaScript](https://www.trevorlasn.com/blog/aggregate-error-in-javascript/)\n- 📦 [ThreeJS 168](https://github.com/mrdoob/three.js/releases/tag/r168)\n- 📦 [Style-observer \\- Un MutationObserver pour CSS](https://www.bram.us/2024/08/31/introducing-bramus-style-observer-a-mutationobserver-for-css/)\n- 📦 [Effect 3.7 \\- Avec HttpApi, une manière déclarative de définir des points de terminaison d'API](https://effect.website/blog/effect-3.7)\n- 📦 [Node 22.8](https://nodejs.org/en/blog/release/v22.8.0) \\- module.enableCompileCache(), vm.createContext() avec globalThis gelable, seuils de couverture\n- 📦 [Sherif 1.0 \\- Linter opinionné sans configuration pour les monorepos JavaScript](https://github.com/QuiiBz/sherif)\n- 📦 [Safari Technology Preview 202 \\- De nombreuses fonctionnalités CSS](https://webkit.org/blog/15798/release-notes-for-safari-technology-preview-202/)\n- 📦 [i-html \\- Élément d'importation inline-html](https://www.keithcirkel.co.uk/i-html/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f539b80c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c83259bb",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "[![The life of a programmer in 2024](/emails/issues/199/meme.jpg)](https://x.com/daboigbae/status/1828778118888452572)",
+      "source_content_hash": "61af9e0993fd7ab6a5b566db56a5b02624e84a9d31857b9a49497099963553f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![La vie d'un programmeur en 2024](/emails/issues/199/meme.jpg)](https://x.com/daboigbae/status/1828778118888452572)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/199/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.193426+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "2e099a59d6f32840e7043c00b8729089f74bbff1d0e14fcc30ed2f281f925401",
+    "en": "2e099a59d6f32840e7043c00b8729089f74bbff1d0e14fcc30ed2f281f925401"
+  }
+}

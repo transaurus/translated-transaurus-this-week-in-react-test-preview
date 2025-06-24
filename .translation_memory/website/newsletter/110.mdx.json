@@ -1,0 +1,625 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/110.mdx",
+  "source_file_content_hash": "23aac4d09b5cfaa45862bec7fd81a6e53215225a58b0b3a2f58a6588849423c1",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /110\ntitle: \"This Week In React #110: Fresh, Hydrogen, Next.js, Remix, Storybook, useEffect, MJML, MDX, React-Native, ES2022...\"\nauthors: [slorber]\ndate: 06-29-2022\n---",
+      "source_content_hash": "eb0852e4097fabaa59e73ad7cab5da613213f3fbe6e9719191c28fcf76b94323",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "This Week In React #110: Fresh, Hydrogen, Next.js, Remix, Storybook, useEffect, MJML, MDX, React-Native, ES2022...",
+      "source_content_hash": "48903927d6cc9840594607b5f61e8a369238b73f788e9738e7bfece227f4b5f0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine dans React #110 : Fresh, Hydrogen, Next.js, Remix, Storybook, useEffect, MJML, MDX, React-Native, ES2022...",
+        "en": "This Week In React #110 : Fresh, Hydrogen, Next.js, Remix, Storybook, useEffect, MJML, MDX, React-Native, ES2022..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fc91ee08",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fc91ee08",
+        "en": "@@untranslatable_placeholder_fc91ee08"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9fcbdce9",
+      "source_content": "# This Week In React #110: Fresh, Hydrogen, Next.js, Remix, Storybook, useEffect, MJML, MDX, React-Native, ES2022...",
+      "source_content_hash": "2a2ec0b290674c2ada67ebd22dbc2995a2f7d07c19e5dad7f25d4b7b1cb7faaf",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "# Cette semaine dans React #110 : Fresh, Hydrogen, Next.js, Remix, Storybook, useEffect, MJML, MDX, React-Native, ES2022...",
+        "en": "# This Week In React #110 : Fresh, Hydrogen, Next.js, Remix, Storybook, useEffect, MJML, MDX, React-Native, ES2022..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Salut à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Another busy week with lots of releases 🤪 Hydrogen 1.0, Fresh 1.0, Next.js 12.2, React-Native 0.69...",
+      "source_content_hash": "b35ebe4a6736dbec4754532b6097dc1f22ad1553451a4dbd03a91e2636db2c52",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Encore une semaine chargée avec de nombreuses sorties 🤪 Hydrogen 1.0, Fresh 1.0, Next.js 12.2, React-Native 0.69...",
+        "en": "Une autre semaine chargée avec de nombreuses sorties 🤪 Hydrogen 1.0, Fresh 1.0, Next.js 12.2, React-Native 0.69..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "I liked Josh Comeau's article on MDX-based emailing: this is exactly the setup I want to adopt for this newsletter 👌.",
+      "source_content_hash": "9ce6982893695588a08d37d1995d8421cd00c74b27d37914ec9a6d3972bd2d5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'ai aimé l'article de Josh Comeau sur l'envoi d'emails basé sur MDX : c'est exactement la configuration que je souhaite adopter pour cette newsletter 👌.",
+        "en": "J'ai apprécié l'article de Josh Comeau sur l'emailing basé sur MDX : c'est exactement la configuration que je souhaite adopter pour cette newsletter 👌."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "Speaking of this newsletter, I'm still looking for a solution to make the content more \"digestible\". What do you think about the idea of a daily newsletter? That means a more frequent email, but also a much shorter one.",
+      "source_content_hash": "1347979656b0d93a611a363f9927c1d4c1e2ef49c7fc0e42dea828b5216dc724",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En parlant de cette newsletter, je cherche toujours une solution pour rendre le contenu plus \"digeste\". Que pensez-vous de l'idée d'une newsletter quotidienne ? Cela signifie un email plus fréquent, mais aussi beaucoup plus court.",
+        "en": "En parlant de cette newsletter, je cherche toujours une solution pour rendre le contenu plus \"digeste\". Que pensez-vous de l'idée d'une newsletter quotidienne ? Cela signifierait un email plus fréquent, mais aussi beaucoup plus court."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "🙏 **Support the newsletter:**",
+      "source_content_hash": "4fc3b759dd0a0c9b9dcd437d20e58b46953b21abb566437fe5d1da169a9a3705",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🙏 **Soutenez la newsletter :**",
+        "en": "🙏 **Soutenez la newsletter :**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8cf6d045",
+      "source_content": "- 😘 **Recommend it to your friends**: it really helps!\n- 💸 [**Sponsor This Week In React**](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)\n- 😍 [**Write testimonials on Twitter**](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)\n- 🧵 [**Retweet the latest Twitter thread**](https://slo.im/thread?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)\n- 📨 Reply to this [**email**](mailto:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter): feedback is welcome\n- 👥 Follow on [**LinkedIn**](https://www.linkedin.com/company/this-week-in-react/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "4caf493b1b73b688d17541d1870bd404839613aab9d5c1e0a81ad2597522f817",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 😘 **Recommandez-la à vos amis** : cela aide vraiment !\n- 💸 **[Sponsoriser This Week In React](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)**\n- 😍 **[Écrivez des témoignages sur Twitter](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)**\n- 🧵 **[Retweetez le dernier fil Twitter](https://slo.im/thread?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)**\n- 📨 Répondez à cet **[email](mailto:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)** : les retours sont les bienvenus\n- 👥 Suivez sur **[LinkedIn](https://www.linkedin.com/company/this-week-in-react/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)**",
+        "en": "- 😘 **Recommandez-la à vos amis** : cela aide vraiment !\n- 💸 [**Sponsorisez This Week In React**](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)\n- 😍 [**Écrivez des témoignages sur Twitter**](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)\n- 🧵 [**Retweetez le dernier fil Twitter**](https://slo.im/thread?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)\n- 📨 Répondez à cet [**email**](mailto:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter) : les retours sont les bienvenus\n- 👥 Suivez sur [**LinkedIn**](https://www.linkedin.com/company/this-week-in-react/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5b5d0360",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0037ff70",
+      "source_content": "## React",
+      "source_content_hash": "edb6a832c9103dac6b2ec4cdc016c6223a9b51b066bd79fca21501a9b9fc5c2c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## React",
+        "en": "## React"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "[Fresh 1.0](https://deno.com/blog/fresh-is-stable?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "15d2f879e4ca1ba4e97b7a417812a364871fd77f10f3f1f14a37ebeaae563716",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Fresh 1.0](https://deno.com/blog/fresh-is-stable?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[Fresh 1.0](https://deno.com/blog/fresh-is-stable?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "The Preact framework officially supported by Deno is now v1 and considered production-ready. Fresh reminds me of a mix between Remix and Astro: no JS by default, progressive enhancement, multi-page app with islands architecture. There is no build step: you deploy directly your TypeScript/Deno app to the Edge in a few seconds.",
+      "source_content_hash": "0689eeb90a8a260bc5f6797c5426eb503610706cbc67301e2237ff2aa9420d74",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le framework Preact officiellement supporté par Deno est maintenant en version 1 et considéré comme prêt pour la production. Fresh me rappelle un mélange entre Remix et Astro : pas de JS par défaut, amélioration progressive, application multi-pages avec architecture en îlots. Il n'y a pas d'étape de build : vous déployez directement votre application TypeScript/Deno sur le Edge en quelques secondes.",
+        "en": "Le framework Preact officiellement supporté par Deno est maintenant en v1 et considéré comme prêt pour la production. Fresh me rappelle un mélange entre Remix et Astro : pas de JS par défaut, amélioration progressive, application multi-pages avec architecture islands. Aucune étape de build : vous déployez directement votre application TypeScript/Deno sur le Edge en quelques secondes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "[How We Built Hydrogen](https://shopify.engineering/how-we-built-hydrogen?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "a7673525492b870096d42ccef00f3b5a13fe247a2db24c87665ce1c25e29a151",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Comment nous avons construit Hydrogen](https://shopify.engineering/how-we-built-hydrogen?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[Comment nous avons construit Hydrogen](https://shopify.engineering/how-we-built-hydrogen?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "Hydrogen, Shopify's React meta-framework for building e-commerce stores, just went v1.0 and was one of the first to rely on React Server Components. This article is an interesting feedback on the creation of the framework, detailing various choices made over time: React Server Components, Vite, Tailwind, preloading/waterfall, GraphQL fragments...",
+      "source_content_hash": "e4c46ed1cbdbb7c2a7e59fc970f244553362e2174eeff4c538a593f7ca68b104",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Hydrogen, le méta-framework React de Shopify pour construire des boutiques e-commerce, vient de passer en v1.0 et a été l'un des premiers à s'appuyer sur les React Server Components. Cet article présente un retour intéressant sur la création du framework, détaillant divers choix effectués au fil du temps : React Server Components, Vite, Tailwind, préchargement/waterfall, fragments GraphQL...",
+        "en": "Hydrogen, le méta-framework React de Shopify pour créer des boutiques e-commerce, vient de passer en v1.0 et fut l'un des premiers à s'appuyer sur les React Server Components. Cet article est un retour intéressant sur la création du framework, détaillant divers choix effectués au fil du temps : React Server Components, Vite, Tailwind, préchargement/waterfall, fragments GraphQL..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "[Next.js 12.2](https://nextjs.org/blog/next-12-2?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "b44553e4ebe551fab5b869bb1ede6d4eeafa8ce540c2688db3970c29428ad9ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Next.js 12.2](https://nextjs.org/blog/next-12-2?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[Next.js 12.2](https://nextjs.org/blog/next-12-2?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Latest version of Next.js. The main theme is the gradual adoption of the Edge and standardized web APIs: middleware, but also API routes and SSR. There are also improvements on images, and a system of SWC plugins in WebAssembly.",
+      "source_content_hash": "3e0bdd2835cfbf042f8e1bc3d828757b81379e1a1efe8217ca9b81e79af9005b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dernière version de Next.js. Le thème principal est l'adoption progressive du Edge et des API web standardisées : middleware, mais aussi les routes API et le SSR. On note également des améliorations sur les images et un système de plugins SWC en WebAssembly.",
+        "en": "Dernière version de Next.js. Le thème principal est l'adoption progressive du Edge et des API web standardisées : middleware, mais aussi routes API et SSR. Il y a également des améliorations sur les images et un système de plugins SWC en WebAssembly."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[My Wonderful HTML Email Workflow](https://www.joshwcomeau.com/react/wonderful-emails-with-mjml-and-mdx/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "6ce588739d59fb2ccbd86aeadbb1e2c41f0de95863a85252a275e127a099493a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Mon merveilleux workflow d'emails HTML](https://www.joshwcomeau.com/react/wonderful-emails-with-mjml-and-mdx/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[Mon flux de travail fantastique pour les emails HTML](https://www.joshwcomeau.com/react/wonderful-emails-with-mjml-and-mdx/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "Josh Comeau explains how he writes his emails with MDX, then uses MJML, React and Next.js to create the final HTML output that will work in all email clients, sent through ConvertKit, and will also be available on the web.",
+      "source_content_hash": "2ddd4db9e5d6ceb1e7bc9674a8647c78d61be01f205755fc2a20a69c4cd246ed",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Josh Comeau explique comment il rédige ses emails avec MDX, puis utilise MJML, React et Next.js pour générer le rendu HTML final compatible avec tous les clients de messagerie, envoyé via ConvertKit, et également disponible sur le web.",
+        "en": "Josh Comeau explique comment il rédige ses emails avec MDX, puis utilise MJML, React et Next.js pour générer le rendu HTML final compatible avec tous les clients de messagerie, envoyé via ConvertKit, et également disponible sur le web."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[Data Flow in Remix](https://remix.run/blog/remix-data-flow?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "9db8043df0e0bb333e17ee135db6acc77a8675a1f31d99be31ab3bf9dc5c4417",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Flux de données dans Remix](https://remix.run/blog/remix-data-flow?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[Flux de données dans Remix](https://remix.run/blog/remix-data-flow?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "The initial model of React can be summarized as `ui = f(state)`. The problem is that this model does not really take into account network synchronization (i.e. API calls). Jim explains how Remix takes the React model and includes the network, thus reducing the need for local state management.",
+      "source_content_hash": "f3029c89d2dce06f2031af9af43976db48105a4759e81ad6363045324bdb1846",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le modèle initial de React peut se résumer par `ui = f(state)`. Le problème est que ce modèle ne prend pas vraiment en compte la synchronisation réseau (c.-à-d. les appels API). Jim explique comment Remix intègre le réseau au modèle React, réduisant ainsi le besoin de gestion d'état local.",
+        "en": "Le modèle initial de React peut être résumé par `ui = f(state)`. Le problème est que ce modèle ne prend pas vraiment en compte la synchronisation réseau (c'est-à-dire les appels API). Jim explique comment Remix intègre le réseau au modèle React, réduisant ainsi le besoin de gestion d'état local."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "[You Might Not Need an Effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "43d544ecb9757e44400f22afe7e83688eb275f988bdeafa0321d92ca11cfcc15",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Vous n'avez peut-être pas besoin d'un Effet](https://beta.reactjs.org/learn/you-might-not-need-an-effect?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[Vous n'avez peut-être pas besoin d'un Effet](https://beta.reactjs.org/learn/you-might-not-need-an-effect?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "New doc page written by Dan Abramov, just merged to the beta site. Effects exist for synchronization with an external system. Many anti-patterns are presented with concrete examples and even challenges. Even experienced devs should read it. Some things may surprise: like [using setState while rendering](https://twitter.com/sebastienlorber/status/1541793224561463297?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 😱. I particularly liked the `useSyncExternalStore` example.",
+      "source_content_hash": "fc4585932dcc177dff511780a91f9eecfb666850b6f8abdc8c7ba588f390fad3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nouvelle page de documentation écrite par Dan Abramov, récemment fusionnée dans la version bêta du site. Les Effets existent pour synchroniser avec des systèmes externes. De nombreux anti-patterns sont présentés avec des exemples concrets et même des défis. Même les développeurs expérimentés devraient la lire. Certaines choses peuvent surprendre : comme [utiliser setState pendant le rendu](https://twitter.com/sebastienlorber/status/1541793224561463297?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 😱. J'ai particulièrement apprécié l'exemple avec `useSyncExternalStore`.",
+        "en": "Nouvelle page de documentation écrite par Dan Abramov, récemment fusionnée sur le site bêta. Les Effets existent pour la synchronisation avec un système externe. De nombreux anti-patterns sont présentés avec des exemples concrets et même des défis. Même les développeurs expérimentés devraient le lire. Certaines choses peuvent surprendre : comme [l'utilisation de setState pendant le rendu](https://twitter.com/sebastienlorber/status/1541793224561463297?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 😱. J'ai particulièrement apprécié l'exemple avec `useSyncExternalStore`."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "[What is the recommended way to load data for React 18?](https://www.reddit.com/r/reactjs/comments/vi6q6f/what_is_the_recommended_way_to_load_data_for/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "8d7fcb5e99155a7203f9ee7a807994104be0d4843fe1114bb7d34ad937b63162",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Quelle est la méthode recommandée pour charger des données dans React 18 ?](https://www.reddit.com/r/reactjs/comments/vi6q6f/what_is_the_recommended_way_to_load_data_for/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[Quelle est la méthode recommandée pour charger des données dans React 18 ?](https://www.reddit.com/r/reactjs/comments/vi6q6f/what_is_the_recommended_way_to_load_data_for/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "Dan Abramov explains on Reddit why data fetching via useEffect is not ideal. However, there is no need to rewrite your application on the spot if it doesn't have any UX issue: those problems are not new in React 18, just better documented. See also comments on React-Native data-fetching.",
+      "source_content_hash": "a526ed2f721b70b6278108eb8bd7c567cba40e4a29942e04ff64f0f2cbe25969",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dan Abramov explique sur Reddit pourquoi la récupération de données via useEffect n'est pas idéale. Cependant, il n'est pas nécessaire de réécrire immédiatement votre application si elle ne présente aucun problème UX : ces problèmes ne sont pas nouveaux dans React 18, simplement mieux documentés. Voir aussi les commentaires sur la récupération de données dans React-Native.",
+        "en": "Dan Abramov explique sur Reddit pourquoi la récupération de données via useEffect n'est pas idéale. Cependant, il n'est pas nécessaire de réécrire immédiatement votre application si elle ne présente aucun problème d'expérience utilisateur : ces problèmes ne sont pas nouveaux dans React 18, simplement mieux documentés. Voir aussi les commentaires sur la récupération de données dans React-Native."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "**Extras:**",
+      "source_content_hash": "bb404c372116a106603db9e68d4654a92b41346dea83ace9cb66f1837f27e81a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Suppléments :**",
+        "en": "**Extras :**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35f6931b",
+      "source_content": "- 📜 [How to add a theme switcher to Storybook](https://storybook.js.org/blog/how-to-add-a-theme-switcher-to-storybook/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): shows how to leverage Storybook toolbar to add a theme switch. Convenient tip: displays component in both light/dark mode.\n- 📜 [React Query FAQs](https://tkdodo.eu/blog/react-query-fa-qs?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Dominik from React-Query answers the 3 most common questions.\n- 📜 [The React core team finally have opinions about CSS](https://dev.to/hypeddev/the-react-core-team-finally-have-opinions-about-css-16f0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): good summary of current trends: increasing use of no-runtime CSS-in-JS.\n- 📜 [Cut build times with Gatsby Runner](https://www.netlify.com/blog/cut-build-times-with-gatsby-runner/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): new experimental Netlify plugin to reduce Gatsby build time by delaying image processing.\n- 📜 [State Machines on the Edge](https://erikras.com/blog/remixconf-2022?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) + [Modeling React in XState](https://erikras.com/blog/modeling-react-in-xstate?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📜 [Demystifying The New Gatsby Framework](https://www.smashingmagazine.com/2022/06/demystifying-gatsby4-framework/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📜 [Should we use Lexical to edit our legal graph?](https://medium.com/doctrine/should-we-use-lexical-to-edit-our-legal-graph-61aa9cfab096?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🎥 [Storybook in 100 Seconds](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=gdlTFPebzAU)\n- 📈 [Front-end frameworks popularity (React, Vue, Angular and Svelte)](https://gist.github.com/tkrotoff/b1caa4c3a185629299ec234d2314e190?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📜 [Verbum](https://github.com/ozanyurtsever/verbum?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): text editor based on React and Lexical (new Facebook project to replace Draft.js)\n- 📦 [Storybook Variants Addon](https://twitter.com/winkerVSbecks/status/1541078873949048838?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): convenient addon: add toolbar dropdown to display all variants of a story at once. No extra code needed: based on Controls.\n- 📦 [Create-T3-App](https://github.com/nexxeln/create-t3-app?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): modern stack to start a project: Next.js, Prisma, TypeScript, tRPC, Tailwind...\n- 📦 [Gatsby 4.17](https://www.gatsbyjs.com/docs/reference/release-notes/v4.17/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): perf improvements\n- 📦 [Recoil Sync 0.1](https://recoiljs.org/blog/2022/06/21/recoil-sync-0.1.0-release?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) + [Refine 0.1](https://recoiljs.org/blog/2022/06/21/refine-0.1.0-release?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📦[Vavite: Develop server-side applications with Vite](https://github.com/cyco130/vavite?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🐦 [Preact will compile out unused class components](https://twitter.com/_developit/status/1541516098939543552?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🐦 [Qwik-React is coming](https://twitter.com/QwikDev/status/1540667422402920448?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "5ccef96157b69a74f17774efcdc46cac99ac3d2b09d4487647d433863a3ab11c",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_35f6931b",
+        "en": "@@untranslatable_placeholder_35f6931b"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "## 💸 Sponsors",
+      "source_content_hash": "6e72131adb635749060ed7f009446c2112893d8b08ec39d1d1df26606f31495d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsors",
+        "en": "## 💸 Sponsors"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "💡 [How to sponsor this newsletter](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "18847e73777e9f7e4799aa50aa87d438d2590ef24a50cebe80b6c43cf77223ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment sponsoriser cette newsletter](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "💡 [Comment sponsoriser cette newsletter](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "[**Storetasker: Freelance Shopify Devs network**](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact&utm_medium=thisweekinreact&utm_source=thisweekinreact)",
+      "source_content_hash": "17aac423f89920b609ec56388d4c89d1c50d0fb54a5969611be49b4076e3ab12",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Storetasker : Réseau de développeurs Shopify freelance**](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact&utm_medium=thisweekinreact&utm_source=thisweekinreact)",
+        "en": "[**Storetasker : Réseau de développeurs Shopify freelances**](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact&utm_medium=thisweekinreact&utm_source=thisweekinreact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "Hey! This is Tim from Storetasker. We run the best Shopify dev freelance network. I would love for you to apply if you enjoy building Shopify sites or are excited about leveraging Shopify's **cutting-edge React framework** for building custom storefronts: [**Hydrogen**](https://hydrogen.shopify.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter).",
+      "source_content_hash": "e748314d07eb3bc2cfd716c915c0354e5c7b61a9cd1b4ee7d2605adff7189812",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour ! Je suis Tim de Storetasker. Nous gérons le meilleur réseau de développeurs Shopify freelance. J'aimerais que vous postuliez si vous aimez créer des sites Shopify ou si vous êtes enthousiaste à l'idée d'utiliser **le framework React de pointe de Shopify** pour créer des storefronts personnalisés : [**Hydrogen**](https://hydrogen.shopify.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter).",
+        "en": "Bonjour ! Ici Tim de Storetasker. Nous gérons le meilleur réseau de développeurs Shopify freelances. J'adorerais que vous postuliez si vous aimez créer des sites Shopify ou si vous êtes enthousiaste à l'idée d'utiliser le **framework React de pointe** de Shopify pour créer des vitrines personnalisées : [**Hydrogen**](https://hydrogen.shopify.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Accepted devs on the network work on a freelance basis, and we present them with great opportunities to work on some of the best Shopify brands (Alo Yoga, Chubbies, JUDY & many many more).",
+      "source_content_hash": "033f90e3349a9e9e72f6023d52771c97844533cb75772acff05ba0a5be9c6702",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les développeurs acceptés sur le réseau travaillent en freelance et nous leur présentons d'excellentes opportunités de travailler pour les meilleures marques Shopify (Alo Yoga, Chubbies, JUDY et bien d'autres).",
+        "en": "Les développeurs acceptés sur le réseau travaillent en freelance, et nous leur présentons d'excellentes opportunités de travailler avec certaines des meilleures marques Shopify (Alo Yoga, Chubbies, JUDY et bien d'autres)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "The great thing about Storetasker is that devs aren't in competition with each other - they just pick up the jobs that match their interests. Beyond that - it's a very tight-knit community.",
+      "source_content_hash": "ca65c6a22cc916cf1a290a57efcea196300fdf6c56a8f8ee7cee3d306ce101fc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'avantage de Storetasker est que les développeurs ne sont pas en concurrence entre eux - ils sélectionnent simplement les missions qui correspondent à leurs centres d'intérêt. Au-delà de cela, c'est une communauté très soudée.",
+        "en": "L'avantage de Storetasker est que les développeurs ne sont pas en concurrence entre eux - ils choisissent simplement les missions qui correspondent à leurs centres d'intérêt. Au-delà de cela - c'est une communauté très soudée."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "Feel free to apply directly via this [link](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact&utm_medium=thisweekinreact&utm_source=thisweekinreact) to join.",
+      "source_content_hash": "1e5584594d4c72ee4eff2635a8aeef15631e400bf665838c4b8c424a1d38aa38",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "N'hésitez pas à postuler directement via ce [lien](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact&utm_medium=thisweekinreact&utm_source=thisweekinreact) pour nous rejoindre.",
+        "en": "N'hésitez pas à postuler directement via ce [lien](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact&utm_medium=thisweekinreact&utm_source=thisweekinreact) pour nous rejoindre."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "[**TechTree - Introducing This Week in React Bounty Board**](https://techtree.dev/t/sHBrozirH3xSY8jP3M7gGv?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "e6b109f4d56237c486f7e61fea27a7ba4d9292e866da95ac24eb5c8d63f5782d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**TechTree - Présentation du tableau de récompenses This Week in React**](https://techtree.dev/t/sHBrozirH3xSY8jP3M7gGv?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[**TechTree - Présentation du Tableau de Primes This Week in React**](https://techtree.dev/t/sHBrozirH3xSY8jP3M7gGv?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "TechTree is building the first **social-economic platform for developers** - a place to help you unlock the real value of your knowledge and network!",
+      "source_content_hash": "9548c3fbc493da8b5176c54dd56c3ede0c3812d583c0ed6a1a8da7075ab80033",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "TechTree construit la première **plateforme socio-économique pour développeurs** - un lieu pour vous aider à libérer la vraie valeur de vos connaissances et de votre réseau !",
+        "en": "TechTree construit la première **plateforme socio-économique pour développeurs** - un endroit pour vous aider à libérer la vraie valeur de vos connaissances et de votre réseau !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "The first major feature on TechTree is Bounties, a tool to help you **earn money by referring your friends** to open roles at top VC backed tech startups or find a job that might be right for you!",
+      "source_content_hash": "a2678810e301dcc1e962acbadecc9aecd91a57d3c928d6fae4c111bcb20ff640",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La première fonctionnalité majeure de TechTree est Bounties, un outil pour vous aider à **gagner de l'argent en référant vos amis** à des postes ouverts dans des startups tech soutenues par des VC de premier plan ou à trouver un emploi qui pourrait vous convenir !",
+        "en": "La première fonctionnalité majeure de TechTree est Bounties, un outil pour vous aider à **gagner de l'argent en recommandant vos amis** pour des postes ouverts dans des startups technologiques soutenues par des VC de premier plan ou à trouver un emploi qui pourrait vous convenir !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "To help show you around, I have gone ahead and created my very own Bounty board - **a selection of remote, React related roles for you to apply to or refer your network to**. There has been over $300k worth of Bounties claimed on TechTree so far!",
+      "source_content_hash": "9f56b5f9f58837817454716818096e8f650e09b67d5ec852f07970397038bfb2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pour vous aider à découvrir la plateforme, j'ai créé mon propre tableau de récompenses - **une sélection de rôles à distance liés à React pour postuler ou référer votre réseau**. Plus de 300 000 $ de récompenses ont déjà été réclamées sur TechTree !",
+        "en": "Pour vous aider à vous familiariser, j'ai créé mon propre tableau de primes - **une sélection de rôles à distance liés à React auxquels postuler ou que vous pouvez recommander à votre réseau**. Plus de 300 000 $ de primes ont été réclamées sur TechTree jusqu'à présent !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "Looking to hire React developers? You can post Bounties of your own to be featured on my Bounty board! Read more and get started [here](https://www.notion.so/techtreedev/Share-your-jobs-on-my-Bounty-board-c51d2d97d9f3421bab103c42097907ae?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter).",
+      "source_content_hash": "0e09e4e847453d6e3fa48283541dcdc51442b52b80c215732f5e2cefa8dc3a95",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous cherchez à embaucher des développeurs React ? Vous pouvez publier vos propres récompenses pour figurer sur mon tableau ! En savoir plus et commencer [ici](https://www.notion.so/techtreedev/Share-your-jobs-on-my-Bounty-board-c51d2d97d9f3421bab103c42097907ae?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter).",
+        "en": "Vous cherchez à embaucher des développeurs React ? Vous pouvez publier vos propres primes pour être présentés sur mon tableau de primes ! En savoir plus et commencer [ici](https://www.notion.so/techtreedev/Share-your-jobs-on-my-Bounty-board-c51d2d97d9f3421bab103c42097907ae?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d1f76d04",
+      "source_content": "## React-Native",
+      "source_content_hash": "b4a23b1428a9f635063a161c4fcc664e936d747b5144ab4031d9d9d270785072",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## React-Native",
+        "en": "## React-Native"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "[**Announcing React Native 0.69**](https://reactnative.dev/blog/2022/06/21/version-069?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "eb712c79597334ea277d166ca571d9b235f071bc20b5ae914254253d0e40f5e2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Annonce de React Native 0.69**](https://reactnative.dev/blog/2022/06/21/version-069?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "[**Annonce de React Native 0.69**](https://reactnative.dev/blog/2022/06/21/version-069?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "First version of React-Native to support React 18. To use the new features of Concurrent React, you will have to migrate to the new architecture first. The Hermes distribution mode has also changed: each version of React-Native will be associated with a Hermes version guaranteed compatible.",
+      "source_content_hash": "c687d02547eeb2102607ffab3557b33f12024777ea0a015648607741930816a4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Première version de React Native à supporter React 18. Pour utiliser les nouvelles fonctionnalités de React Concurrent, vous devrez d'abord migrer vers la nouvelle architecture. Le mode de distribution d'Hermes a également changé : chaque version de React Native sera associée à une version d'Hermes garantie compatible.",
+        "en": "Première version de React-Native à prendre en charge React 18. Pour utiliser les nouvelles fonctionnalités de Concurrent React, vous devrez d'abord migrer vers la nouvelle architecture. Le mode de distribution d'Hermes a également changé : chaque version de React-Native sera associée à une version d'Hermes garantie compatible."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "**Extras:**",
+      "source_content_hash": "bb404c372116a106603db9e68d4654a92b41346dea83ace9cb66f1837f27e81a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Autres :**",
+        "en": "**Autres :**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ddd26d5",
+      "source_content": "- 📦 [react-native-zephyr](https://github.com/FormidableLabs/react-native-zephyr?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Formidable Labs published a new React-Native type-safe styling solution inspired by Tailwind. Focusing on mobile usage, not [cross-platform](https://twitter.com/sebastienlorber/status/1541820495603064832?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) for now.\n- 📦 [react-native-app-clip](https://github.com/bndkt/react-native-app-clip?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Expo config plugin to create an iOS App Clip, permitting to users to test your app without even installing it ([demo](https://twitter.com/bndkt/status/1539606675291639808?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)).\n- 📦 [react-native-safari-extension](https://github.com/andrew-levy/react-native-safari-extension?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📦 [link-native-assets-expo-config-plugin](https://twitter.com/Baconbrix/status/1539885820622110720?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🎙️ [RNR 240 - What's New in Expo SDK 45](https://reactnativeradio.com/episodes/rnr-240-whats-new-in-expo-sdk-45?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📈 [React-Native vs Flutter popularity](https://gist.github.com/tkrotoff/93f5278a4e8df7e5f6928eff98684979?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🐦 [Reanimated useAnimatedSensor() demo](https://twitter.com/swmansion/status/1541433419107733505?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🎉 [Reanimated PR: reduce bundle size on Web by 80%](https://github.com/software-mansion/react-native-reanimated/pull/3278?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "2c55dc2ce62602bada4a9607e2bc7a319487508fa9c5379e669faca251afa32f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📦 [react-native-zephyr](https://github.com/FormidableLabs/react-native-zephyr?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Formidable Labs a publié une nouvelle solution de style type-safe pour React Native inspirée par Tailwind. Se concentre sur l'usage mobile, pas encore [multi-plateforme](https://twitter.com/sebastienlorber/status/1541820495603064832?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) pour le moment.\n- 📦 [react-native-app-clip](https://github.com/bndkt/react-native-app-clip?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Plugin de configuration Expo pour créer un iOS App Clip, permettant aux utilisateurs de tester votre application sans même l'installer ([démo](https://twitter.com/bndkt/status/1539606675291639808?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)).\n- 📦 [react-native-safari-extension](https://github.com/andrew-levy/react-native-safari-extension?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📦 [link-native-assets-expo-config-plugin](https://twitter.com/Baconbrix/status/1539885820622110720?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🎙️ [RNR 240 - Quoi de neuf dans Expo SDK 45](https://reactnativeradio.com/episodes/rnr-240-whats-new-in-expo-sdk-45?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📈 [Popularité React-Native vs Flutter](https://gist.github.com/tkrotoff/93f5278a4e8df7e5f6928eff98684979?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🐦 [Démo useAnimatedSensor() de Reanimated](https://twitter.com/swmansion/status/1541433419107733505?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🎉 [PR Reanimated : réduction de 80% de la taille du bundle sur le Web](https://github.com/software-mansion/react-native-reanimated/pull/3278?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "- 📦 [react-native-zephyr](https://github.com/FormidableLabs/react-native-zephyr?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : Formidable Labs a publié une nouvelle solution de style type-safe pour React Native inspirée par Tailwind. Concentrée sur l'usage mobile, pas encore [multiplateforme](https://twitter.com/sebastienlorber/status/1541820495603064832?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter).\n- 📦 [react-native-app-clip](https://github.com/bndkt/react-native-app-clip?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : Plugin de configuration Expo pour créer un App Clip iOS, permettant aux utilisateurs de tester votre application sans l'installer ([démo](https://twitter.com/bndkt/status/1539606675291639808?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)).\n- 📦 [react-native-safari-extension](https://github.com/andrew-levy/react-native-safari-extension?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📦 [link-native-assets-expo-config-plugin](https://twitter.com/Baconbrix/status/1539885820622110720?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🎙️ [RNR 240 - Nouveautés d'Expo SDK 45](https://reactnativeradio.com/episodes/rnr-240-whats-new-in-expo-sdk-45?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 📈 [Popularité React-Native vs Flutter](https://gist.github.com/tkrotoff/93f5278a4e8df7e5f6928eff98684979?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🐦 [Démo de useAnimatedSensor() de Reanimated](https://twitter.com/swmansion/status/1541433419107733505?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- 🎉 [PR Reanimated : réduction de 80% de la taille du bundle sur le Web](https://github.com/software-mansion/react-native-reanimated/pull/3278?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36d6c3de",
+      "source_content": "## Other",
+      "source_content_hash": "eab2781685ddc89805cb158dfec33ea8cff4e064715bdc57e3659647bfcae967",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## Autres",
+        "en": "## Autres"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9b1e67e",
+      "source_content": "- [ES2022 Features](https://h3manth.com/ES2022/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Ecma International just validated the ES2022 spec. Overview of all the features included: `.at()`, Error Cause, top-level await...\n- [Defensive CSS](https://defensivecss.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): CSS tips to make your CSS more robust.\n- [Style Queries](https://una.im/style-queries/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): CSS Container Queries is not just about layouts.\n- [StackOverflow Developer Survey 2022](https://survey.stackoverflow.co/2022/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): React remains very used and liked. Svelte and Phoenix are good challengers.\n- [Histoire: A new way to write stories](https://histoire.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Storybook challenger coming from the Vue ecosystem.\n- [FnApi](https://twitter.com/kdy1dev/status/1540673590282326018?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): new project from Donny (swc creator) to reduce API calls boilerplate\n- [Prisma 4.0](https://twitter.com/prisma/status/1541866761552908289?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [Turborepo 1.3](https://turborepo.org/blog/turbo-1-3-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [SPAs: theory versus practice](https://nolanlawson.com/2022/06/27/spas-theory-versus-practice/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "de6948b3386a1da114942a981dc0226ee6079cc6499af89261231a730e0f6771",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Fonctionnalités ES2022](https://h3manth.com/ES2022/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : Ecma International vient de valider la spécification ES2022. Aperçu de toutes les fonctionnalités incluses : `.at()`, Error Cause, top-level await...\n- [CSS défensif](https://defensivecss.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : Astuces CSS pour rendre vos feuilles de style plus robustes.\n- [Requêtes de style](https://una.im/style-queries/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : Les CSS Container Queries ne concernent pas que les mises en page.\n- [Enquête StackOverflow 2022](https://survey.stackoverflow.co/2022/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : React reste très utilisé et apprécié. Svelte et Phoenix sont de sérieux challengers.\n- [Histoire : Une nouvelle façon d'écrire des stories](https://histoire.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : Un concurrent à Storybook issu de l'écosystème Vue.\n- [FnApi](https://twitter.com/kdy1dev/status/1540673590282326018?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) : Nouveau projet de Donny (créateur de swc) pour réduire le boilerplate des appels API.\n- [Prisma 4.0](https://twitter.com/prisma/status/1541866761552908289?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [Turborepo 1.3](https://turborepo.org/blog/turbo-1-3-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [SPA : théorie vs pratique](https://nolanlawson.com/2022/06/27/spas-theory-versus-practice/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+        "en": "- [Fonctionnalités ES2022](https://h3manth.com/ES2022/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Ecma International vient de valider la spécification ES2022. Aperçu de toutes les fonctionnalités incluses : `.at()`, Error Cause, top-level await...\n- [CSS Défensif](https://defensivecss.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Conseils CSS pour rendre votre CSS plus robuste.\n- [Requêtes de style](https://una.im/style-queries/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Les CSS Container Queries ne concernent pas seulement les mises en page.\n- [Enquête StackOverflow des développeurs 2022](https://survey.stackoverflow.co/2022/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): React reste très utilisé et apprécié. Svelte et Phoenix sont de bons challengers.\n- [Histoire : Une nouvelle façon d'écrire des stories](https://histoire.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Challenger de Storybook issu de l'écosystème Vue.\n- [FnApi](https://twitter.com/kdy1dev/status/1540673590282326018?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): nouveau projet de Donny (créateur de swc) pour réduire le boilerplate des appels API.\n- [Prisma 4.0](https://twitter.com/prisma/status/1541866761552908289?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [Turborepo 1.3](https://turborepo.org/blog/turbo-1-3-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [SPA : théorie contre pratique](https://nolanlawson.com/2022/06/27/spas-theory-versus-practice/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f523b45",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "534ac82e",
+      "source_content": "![](https://user-images.githubusercontent.com/749374/176402711-1255046e-fa8b-4de4-9cbe-0632d356cef0.png)",
+      "source_content_hash": "942a7b4a2be03efe42cba815bb33bef45838a2f59c3470ac6e495d3f0f4f1f9e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "![](https://user-images.githubusercontent.com/749374/176402711-1255046e-fa8b-4de4-9cbe-0632d356cef0.png)",
+        "en": "![](https://user-images.githubusercontent.com/749374/176402711-1255046e-fa8b-4de4-9cbe-0632d356cef0.png)"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/110.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.148495+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "23aac4d09b5cfaa45862bec7fd81a6e53215225a58b0b3a2f58a6588849423c1",
+    "en": "23aac4d09b5cfaa45862bec7fd81a6e53215225a58b0b3a2f58a6588849423c1"
+  }
+}

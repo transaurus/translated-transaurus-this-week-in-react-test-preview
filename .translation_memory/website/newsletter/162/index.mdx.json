@@ -1,0 +1,613 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/162/index.mdx",
+  "source_file_content_hash": "fce806a70196ae1c7e6c0218eef417f3294faf52b1434a5459a957db072c60a3",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /162\ntitle: \"This Week In React #162: Lit-React, Remix, Next.js, Fresh, next-safe-actions, Starlight, RN 0.73 RC, RCTText, canvaskit-js, vxrn, Rolldown, Vite, Japa, Prisma...\"\nauthors: [slorber]\ndate: 10-11-2023\n---",
+      "source_content_hash": "490f553958af9d3de164b300b0f8ada662166e681e5658b15b3c3f9580ad28f4",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week, I've been looking at the release of Lit 3.0 to see if the use of Web Components has become easier with React.",
+      "source_content_hash": "6f67eb29d2eb5f793b6135430b63fa0c1ada883c47c7039e0cf9b4f75a65bfea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, j'ai examiné la sortie de Lit 3.0 pour voir si l'utilisation des Web Components est devenue plus simple avec React.",
+        "en": "Cette semaine, j'ai examiné la sortie de Lit 3.0 pour voir si l'utilisation des Web Components est devenue plus facile avec React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "On the React-Native side, version 0.73 is in release candidate with a number of DX improvements. There's also interesting activity regarding the possible optimisation of the Text and View components. Canvaskit-js makes it possible to run Skia on the web for just 20kb!",
+      "source_content_hash": "30e6abd5f558e9349f13ca81f99cf0ac1db5a740b816e4ae397f40e2a588932e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Côté React-Native, la version 0.73 est en release candidate avec plusieurs améliorations DX. On observe aussi une activité intéressante concernant l'optimisation potentielle des composants Text et View. Canvaskit-js permet d'exécuter Skia sur le web pour seulement 20ko !",
+        "en": "Côté React-Native, la version 0.73 est en candidate de publication avec plusieurs améliorations pour l'expérience développeur. On observe aussi des activités intéressantes concernant l'optimisation potentielle des composants Text et View. Canvaskit-js permet d'exécuter Skia sur le web pour seulement 20kb !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "There were some interesting announcements at ViteConf last week. Notably a Rust port of Rollup, and the usage of Vite with Remix and React-Native.",
+      "source_content_hash": "66598d7072a7c16e91ba27cdb0d77dc68cb7c3b4efb37b419a29e47f7fc8f1df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Il y a eu des annonces intéressantes lors de ViteConf la semaine dernière. Notamment un portage Rust de Rollup, et l'utilisation de Vite avec Remix et React-Native.",
+        "en": "Il y a eu des annonces intéressantes à la ViteConf la semaine dernière. Notamment un portage de Rollup en Rust, et l'utilisation de Vite avec Remix et React-Native."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![highlight.io](/emails/issues/162/highlight.jpg)](https://www.highlight.io/)",
+      "source_content_hash": "fa1257d3402e3a61c2a5931244dc83c73929ce82de90a544abb003f97ca068a2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![highlight.io](/emails/issues/162/highlight.jpg)](https://www.highlight.io/)",
+        "en": "[![highlight.io](/emails/issues/162/highlight.jpg)](https://www.highlight.io/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[highlight.io - The open-source, full-stack monitoring Platform](https://www.highlight.io/)**",
+      "source_content_hash": "3dc7c02076927aff7127a2e05be9f70c36336fea9d2cbe7b2819a10ef5e79f96",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[highlight.io - La plateforme open-source de monitoring full-stack](https://www.highlight.io/)**",
+        "en": "**[highlight.io - La plateforme open-source de monitoring full-stack](https://www.highlight.io/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[**highlight.io**](http://highlight.io) is a truly open-source application monitoring solution. They support Session Replay, Error Monitoring, and Logging platform; a perfect solution for your next project.",
+      "source_content_hash": "907e6f47c8a85be6a18ef9c09fc3613e39cf3d2bcd63d29f9e7aa8a467787d89",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**highlight.io**](http://highlight.io) est une solution open-source de monitoring d'applications. Ils proposent Session Replay, Error Monitoring et une plateforme de logs : une solution parfaite pour votre prochain projet.",
+        "en": "[**highlight.io**](http://highlight.io) est une solution open-source de monitoring d'applications. Ils proposent Session Replay, Error Monitoring et une plateforme de logging ; une solution parfaite pour votre prochain projet."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Don't waste time trying to guess why a bug happens. Use highlight and get a clear picture of your browser and server-side application.",
+      "source_content_hash": "8b81321b33c2e5a3dc820c51b8ac28e2201724e31385fba6ebf03dba966a506b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ne perdez plus de temps à deviner pourquoi un bug survient. Utilisez highlight pour obtenir une vision claire de vos applications côté navigateur et serveur.",
+        "en": "Ne perdez plus de temps à deviner pourquoi un bug survient. Utilisez highlight et obtenez une vision claire de votre application côté navigateur et serveur."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "It is super easy to install in your favorite framework: [React.js,](https://www.highlight.io/docs/getting-started/client-sdk/reactjs) [Next.js,](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js) [Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix), or anything else!",
+      "source_content_hash": "893e0b51e284af646b945fe0f9951bc28f6e3c50fbd495e39bac60bf88edf59f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'installation est ultra simple dans votre framework préféré : [React.js](https://www.highlight.io/docs/getting-started/client-sdk/reactjs), [Next.js](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js), [Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix) ou tout autre !",
+        "en": "L'installation est extrêmement simple dans votre framework préféré : [React.js,](https://www.highlight.io/docs/getting-started/client-sdk/reactjs) [Next.js,](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js) [Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix) ou tout autre !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![Lit React v1.0](/emails/issues/162/lit.jpg)](https://www.npmjs.com/package/@lit/react)",
+      "source_content_hash": "efa797ee16f97b527dece7af8d8638ad5e3ba35db34f249242ccd7941cb31c4c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Lit React v1.0](/emails/issues/162/lit.jpg)](https://www.npmjs.com/package/@lit/react)",
+        "en": "[![Lit React v1.0](/emails/issues/162/lit.jpg)](https://www.npmjs.com/package/@lit/react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[**Lit React v1.0**](https://www.npmjs.com/package/@lit/react)",
+      "source_content_hash": "30c43d2e2e82850f3eafd48985629ed2e6009d5c634875e9fed7879a4a2ba14b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Lit React v1.0**](https://www.npmjs.com/package/@lit/react)",
+        "en": "[**Lit React v1.0**](https://www.npmjs.com/package/@lit/react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "Google's Web Components framework [Lit has just been released in v3.0](https://lit.dev/blog/2023-10-10-lit-3.0/). In addition to improvements to the framework (decorators, template compiler, Preact Signals), there is in particular the `@lit/react` integration package, which has graduated from the Lab, is now stable and in v1.0.",
+      "source_content_hash": "fce114b4ccd2539c7edbaa44fe766e23508393c0542b37bbb8e2e02e8b65d85f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le framework Web Components de Google [Lit vient d'être publié en v3.0](https://lit.dev/blog/2023-10-10-lit-3.0/). Outre des améliorations du framework (décorateurs, compilateur de templates, Preact Signals), on note particulièrement le package d'intégration `@lit/react`, désormais stable en v1.0.",
+        "en": "Le framework Web Components de Google [Lit vient d'être publié en v3.0](https://lit.dev/blog/2023-10-10-lit-3.0/). En plus d'améliorations du framework (décorateurs, compilateur de templates, Preact Signals), on trouve notamment le package d'intégration `@lit/react` qui a quitté le Lab, est désormais stable et en v1.0."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "This integration facilitates the use of Web Components in a React app (or Preact) by creating a wrapper that maps React props to the properties of the custom element, manages event handlers and facilitates TypeScript typing. It fills certain gaps in React 18, which does not integrate easily with Web Components: props are mapped to attributes rather than properties. See the [documentation for the React framework](https://lit.dev/docs/frameworks/react/).",
+      "source_content_hash": "3637dfdfe1eda4fb6ee18c2eb432f9606fce115b2ad9b928cd5fab907996b512",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette intégration facilite l'utilisation des Web Components dans une app React (ou Preact) en créant un wrapper qui mappe les props React vers les propriétés du custom element, gère les gestionnaires d'événements et facilite le typage TypeScript. Elle comble certaines lacunes de React 18 qui n'intègre pas facilement les Web Components : les props sont mappés en attributs plutôt qu'en propriétés. Voir la [documentation pour le framework React](https://lit.dev/docs/frameworks/react/).",
+        "en": "Cette intégration facilite l'utilisation des Web Components dans une app React (ou Preact) en créant un wrapper qui mappe les props React aux propriétés du custom element, gère les gestionnaires d'événements et facilite le typage TypeScript. Elle comble certaines lacunes de React 18 qui n'intègre pas facilement les Web Components : les props sont mappées vers des attributs plutôt que des propriétés. Voir la [documentation pour le framework React](https://lit.dev/docs/frameworks/react/)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "But can a modern React dev use all this easily? Lit offers experimental packages [@lit-labs/ssr](https://www.npmjs.com/package/@lit-labs/ssr), [@lit-labs/ssr-react](https://www.npmjs.com/package/@lit-labs/ssr-react) and [@lit-labs/nextjs](https://www.npmjs.com/package/@lit-labs/nextjs) but support is limited and won't work with Next.js App Router. The [Declarative Shadow DOM](https://developer.chrome.com/articles/declarative-shadow-dom/), which allows SSR, is not yet implemented in Firefox, but a polyfill exists. In short, Lit should work well on a CRA app, but still feels a bit risky if you need SSR and SEO.",
+      "source_content_hash": "d4f7c11783040ba92cda504429e6b60f80771c7dd5a400de5cf237162d24297c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Mais un développeur React moderne peut-il utiliser tout cela facilement ? Lit propose des packages expérimentaux [@lit-labs/ssr](https://www.npmjs.com/package/@lit-labs/ssr), [@lit-labs/ssr-react](https://www.npmjs.com/package/@lit-labs/ssr-react) et [@lit-labs/nextjs](https://www.npmjs.com/package/@lit-labs/nextjs) mais le support est limité et ne fonctionne pas avec Next.js App Router. Le [Declarative Shadow DOM](https://developer.chrome.com/articles/declarative-shadow-dom/) permettant le SSR n'est pas encore implémenté dans Firefox, mais un polyfill existe. En bref, Lit devrait bien fonctionner sur une app CRA, mais reste un peu risqué si vous avez besoin de SSR et SEO.",
+        "en": "Mais un développeur React moderne peut-il utiliser tout cela facilement ? Lit propose des packages expérimentaux [@lit-labs/ssr](https://www.npmjs.com/package/@lit-labs/ssr), [@lit-labs/ssr-react](https://www.npmjs.com/package/@lit-labs/ssr-react) et [@lit-labs/nextjs](https://www.npmjs.com/package/@lit-labs/nextjs) mais le support est limité et ne fonctionnera pas avec Next.js App Router. Le [Shadow DOM déclaratif](https://developer.chrome.com/articles/declarative-shadow-dom/), qui permet le SSR, n'est pas encore implémenté dans Firefox, mais un polyfill existe. Bref, Lit devrait bien fonctionner sur une app CRA, mais semble encore un peu risqué si vous avez besoin de SSR et SEO."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "49d8fe2a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9b797309",
+      "source_content": "- 💸 [Create collaborative applications like Figma and Miro in a few lines of code with Ably's in-app collaboration SDK](https://hubs.la/Q023nqgg0)\n- 👀 [Remix PR - Add experimental Vite support](https://github.com/remix-run/remix/pull/7590)\n- 👀 [Remix PR - Add startViewTransition support](https://github.com/remix-run/react-router/pull/10916)\n- 👀 [Next.js PR - Document Server Actions `.bind` method](https://github.com/vercel/next.js/pull/56164): the [Next.js doc](https://nextjs.org/docs/app/api-reference/functions/server-actions#binding-arguments) now recommends using `myAction.bind(null, myArg)` to pass additional arguments to a Server Action. The returned function will then also be a Server Action.\n- 📜 [UI Composition - AKA taking a step back to take a step forward](https://kyleshevlin.com/ui-composition): article presenting an example of a Card component that has too much responsibility. Suggests splitting it and using composition to make it more maintainable.\n- 📜 [Server-side pagination with Remix](https://www.jacobparis.com/content/remix-pagination): I found this implementation very interesting, with no `onClick` listener or JS to manipulate the query string. It relies solely on the native behaviour of forms and is therefore compatible with progressive enhancement. My reservation: impossible to open a page in a new tab 😅.\n- 📜 [Access the Loader Data in Remix](https://sergiodxa.com/tutorials/access-loaders-data-in-remix): presents different ways of using `useLoaderData` or `useRouteLoaderData` and their tradeoffs, depending on where they are used.\n- 📜 [Why I love Remix, And why you should too](https://alemtuzlak.hashnode.dev/why-i-love-remix)\n- 📜 [Making React Apps Memory Efficient - Million.js Beyond Speed](https://dev.to/ricardonunezio/millionjs-beyond-speed-making-react-apps-memory-efficient-2amn)\n- 📜 [Test your React Libraries Locally with Yalc](https://www.propelauth.com/post/test-your-react-libraries-with-yalc)\n- 📜 [Why we still use React HOCs](https://www.propelauth.com/post/why-we-have-both-react-hooks-and-hocs)\n- 📜 [Progressively Enhanced WebGL Lens Refraction](https://tympanus.net/codrops/2023/10/10/progressively-enhanced-webgl-lens-refraction/)\n- 📦 [Fresh v1.5 - Partials, client side navigation and more](https://deno.com/blog/fresh-1.5): the Preact framework implements client-side navigation based on \"Partials\", which permits to preserve some state during navigation. View Transitions support is on the way.\n- 📦 [next-safe-action v4 - Typesafe Server Actions in your Next.js 13 app](https://next-safe-action.dev/): input validation with Zod. Note: a similar project [Zact](https://github.com/pingdotgg/zact) is deprecated in favour of `next-safe-action`.\n- 📦 [Astro Starlight v0.11](https://github.com/withastro/starlight/releases/tag/%40astrojs%2Fstarlight%400.11.0): adds support for [component overrides](https://starlight.astro.build/guides/overriding-components/) to customize docs.\n- 📦 [React-Query 5.0.0 RC.10](https://github.com/TanStack/query/releases/tag/v5.0.0-rc.10): the latest RCs bring significant improvements to [🐦 devtools](https://twitter.com/TkDodo/status/1711297673934848388) and [🐦 TypeScript](https://twitter.com/TkDodo/status/1711635656642855297).\n- 🔗 [ServerComponents.dev](https://servercomponents.dev/): a fun interactive resource to find out more about Server Components.\n- 🎥 [What's new in Remotion – September 2023](https://www.youtube.com/watch?v=Ol-571DOPDY)\n- 📅 [React Jam - October 19-29th - React devs create and play games in 10 days](https://reactjam.com/)\n- 👥 [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact) (London 🇬🇧, Octobre 20-23) is offering us [\\-10% - code \"REACT10\"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)",
+      "source_content_hash": "e1dfa5b2b1d156f729f2c91864a26b5cb135498ff90a128a43c1f725c7b24662",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_9b797309",
+        "en": "@@untranslatable_placeholder_9b797309"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "568a7359",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_568a7359",
+        "en": "@@untranslatable_placeholder_568a7359"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f51aebdd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b936dd6a",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "[![Drop-in Authentication & User Management for React](/emails/issues/162/clerk1.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)",
+      "source_content_hash": "0a35bb31582b16e7dcc727b86d1d7d70807e681ed5675e0f45a1dbf735ac3fc5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Authentification et gestion des utilisateurs prêtes à l'emploi pour React](/emails/issues/162/clerk1.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)",
+        "en": "[![Authentification et gestion des utilisateurs prêtes à l'emploi pour React](/emails/issues/162/clerk1.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "**[Drop-in Authentication & User Management for React](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)**",
+      "source_content_hash": "f6f70b8ba47bb1d64d521c33724418b86e6df5d15762073aefa6142fb0febfb0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Authentification et gestion des utilisateurs prêtes à l'emploi pour React](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)**",
+        "en": "**[Authentification et gestion des utilisateurs prêtes à l'emploi pour React](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "Clerk is the easiest way to add authentication and user management to your React app. It’s purpose-built for the modern web and designed to get you up and running in minutes.",
+      "source_content_hash": "43ca5430d014dada2c1a90bb58760dc1ae6f6e2025fbb0fbcde99a9b55fd4b86",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Clerk est le moyen le plus simple d'ajouter l'authentification et la gestion des utilisateurs à votre application React. Il est conçu spécialement pour le web moderne et vous permet d'être opérationnel en quelques minutes.",
+        "en": "Clerk est la solution la plus simple pour ajouter l'authentification et la gestion des utilisateurs à votre application React. Conçu spécifiquement pour le web moderne, il vous permet d'être opérationnel en quelques minutes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "With Clerk you get:",
+      "source_content_hash": "2bd15aee3b2d17d1b853e92cd7313f6c27a49ae71860f74d610458829c40eb03",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec Clerk, vous obtenez :",
+        "en": "Avec Clerk, vous bénéficiez :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "49f9f337",
+      "source_content": "- 💅 Pre-built UI components for sign-in, sign-up, user profiles, and organizations\n\n- 📦 SDKs for React, React Native, Next.js, Redwood, Remix, and other frameworks\n\n- ⚡ Integrations with Firebase, Supabase, Convex, and other BaaS providers\n\n- 🎁 User management, social login, magic links, MFA, and more out of the box",
+      "source_content_hash": "05de27091ea37b043cfb91e87832f772b085d459b833d3046a2490b0d5e3f107",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💅 Composants d'interface pré-construits pour la connexion, l'inscription, les profils utilisateurs et les organisations\n- 📦 SDK pour React, React Native, Next.js, Redwood, Remix et autres frameworks\n- ⚡ Intégrations avec Firebase, Supabase, Convex et autres fournisseurs BaaS\n- 🎁 Gestion des utilisateurs, connexion sociale, liens magiques, MFA et plus encore prêts à l'emploi",
+        "en": "- 💅 Composants d'interface prédéfinis pour la connexion, l'inscription, les profils utilisateurs et les organisations\n\n- 📦 SDKs pour React, React Native, Next.js, Redwood, Remix et autres frameworks\n\n- ⚡ Intégrations avec Firebase, Supabase, Convex et autres fournisseurs BaaS\n\n- 🎁 Gestion des utilisateurs, connexion sociale, liens magiques, MFA et plus encore, prêts à l'emploi"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "Get started with Clerk’s [quickstarts and tutorials](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023) 🚀",
+      "source_content_hash": "99d0ce9f7c7ed09972541487ab1c0ead19187a6817332b45e972f1df7535a93b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Commencez avec les [guides de démarrage rapide et tutoriels de Clerk](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023) 🚀",
+        "en": "Démarrez avec les [guides rapides et tutoriels](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023) de Clerk 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fc25fa9c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "94145a94",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "[![Using RCTView & RCTText in React Native for Performance Gains](/emails/issues/162/rnperf.jpg)](https://blog.theodo.com/2023/10/native-views-rn-performance/)",
+      "source_content_hash": "d12123e72e1d34cbd9eef0ffbd0125f5b0886970746edd9a6518828b68b45f92",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Utilisation de RCTView et RCTText dans React Native pour des gains de performance](/emails/issues/162/rnperf.jpg)](https://blog.theodo.com/2023/10/native-views-rn-performance/)",
+        "en": "[![Utilisation de RCTView et RCTText dans React Native pour des gains de performance](/emails/issues/162/rnperf.jpg)](https://blog.theodo.com/2023/10/native-views-rn-performance/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "[**Using RCTView & RCTText in React Native for Performance Gains**](https://blog.theodo.com/2023/10/native-views-rn-performance/)",
+      "source_content_hash": "a2f61fb787b8e55cb6134c29698f017b0fd6c0893660a876ed57cd613c072ef3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Utilisation de RCTView et RCTText dans React Native pour des gains de performance**](https://blog.theodo.com/2023/10/native-views-rn-performance/)",
+        "en": "[**Utilisation de RCTView et RCTText dans React Native pour des gains de performance**](https://blog.theodo.com/2023/10/native-views-rn-performance/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "At the moment, React-Native devs are talking a lot [on Twitter](https://twitter.com/FernandoTheRojo/status/1707762822015267219) about the perf of the `Text` and `View` components, which are JS wrappers and add overhead compared to the respective native `RCTText` and `RCTView` elements. William Candillon had already 🎥 [explained this problem](https://www.youtube.com/watch?v=1D78Tc46Xqo&t=1156s) in 2021, with the possibility of optimising Text rendering. It is possible to optimize as long as you don't need a few features like `onPress` listeners. This article presents a benchmark and measures the impact of using the native components instead of regular components, and reports a gain of around 15%, with variations depending on the platform and architecture.",
+      "source_content_hash": "9ec4cf8f86918f165b30ad18c20040f403a5534b152b7b5a275917ebbf014cb9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Actuellement, les développeurs React-Native discutent beaucoup [sur Twitter](https://twitter.com/FernandoTheRojo/status/1707762822015267219) des performances des composants `Text` et `View`, qui sont des wrappers JS ajoutant une surcharge comparé aux éléments natifs `RCTText` et `RCTView`. William Candillon avait déjà 🎥 [expliqué ce problème](https://www.youtube.com/watch?v=1D78Tc46Xqo&t=1156s) en 2021, évoquant la possibilité d'optimiser le rendu du texte. Cette optimisation est possible tant qu'on n'a pas besoin de fonctionnalités comme les écouteurs `onPress`. Cet article présente un benchmark mesurant l'impact de l'utilisation des composants natifs, rapportant un gain d'environ 15%, avec des variations selon la plateforme et l'architecture.",
+        "en": "Actuellement, les développeurs React-Native discutent beaucoup [sur Twitter](https://twitter.com/FernandoTheRojo/status/1707762822015267219) des performances des composants `Text` et `View`, qui sont des wrappers JS ajoutant une surcharge par rapport aux éléments natifs `RCTText` et `RCTView`. William Candillon avait déjà 🎥 [expliqué ce problème](https://www.youtube.com/watch?v=1D78Tc46Xqo&t=1156s) en 2021, évoquant l'optimisation possible du rendu texte. Cette optimisation est réalisable tant que certaines fonctionnalités comme les écouteurs `onPress` ne sont pas nécessaires. L'article présente un benchmark mesurant l'impact des composants natifs versus réguliers, rapportant un gain d'environ 15%, avec des variations selon la plateforme et l'architecture."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "Now that this trick became mainstream, React-Native devs are keen to take advantage of it. We can note the creation of [react-native-fast-text](https://github.com/peterpme/react-native-fast-text), or the POC of a Babel plugin [react-native-optimizer](https://github.com/marklawlor/react-native-optimizer) which would apply this optimisation automatically.",
+      "source_content_hash": "7be71527d393857ecf15ba83bf2b992d6fb555a70bf5ad7287da1033804549be",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Maintenant que cette technique se généralise, les développeurs cherchent à en profiter. On note la création de [react-native-fast-text](https://github.com/peterpme/react-native-fast-text) ou le POC d'un plugin Babel [react-native-optimizer](https://github.com/marklawlor/react-native-optimizer) qui appliquerait automatiquement cette optimisation.",
+        "en": "Cette technique devenant mainstream, les développeurs React-Native cherchent à en profiter. On note la création de [react-native-fast-text](https://github.com/peterpme/react-native-fast-text) ou le POC d'un plugin Babel [react-native-optimizer](https://github.com/marklawlor/react-native-optimizer) appliquant automatiquement cette optimisation."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42bfcc5d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": ""
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0422e2e2",
+      "source_content": "- 💸 [Blitz - Build React Native Apps Faster for iOS, Android, and Web!](https://www.blitz-rn.com/)\n- 🐦 [Expo docs updates - Bun, local dev, iOS capabilities...](https://twitter.com/amanhimself/status/1710254359274037263)\n- 📜 [How to measure React Native performance with Flashlight](https://www.bam.tech/article/measuring-react-native-performance-with-flashlight): shows an example of using Flashlight to compare the scrolling performance of FlatList and Flashlist on Android. You can use ADB or Maestro commands to simulate scrolling.\n- 📜 [Remote controls for React TV apps: a declarative approach with react-tv-space-navigation 1.0!](https://www.bam.tech/article/handling-remote-controls-in-tv-apps-the-react-way-with-react-tv-space-navigation-1-0): details leading to the creation of [react-tv-space-navigation](https://github.com/bamlab/react-tv-space-navigation), a cross-platform, agnostic spatial navigation solution that works on React TV apps, both web-based and native.\n- 📦 [React-Native v0.73 RC.2](https://github.com/facebook/react-native/releases/tag/v0.73.0-rc.2): v0.73 has just been released in RC. You'll have to check out the [🎥 Keynote at React-Native-EU](https://www.youtube.com/watch?v=-rCRgbsJumk) to see all the highlights. These include one-click debug flow and stable symlinks support!\n- 📦 [vxrn - The magic of Vite, meet React Native](https://vxrn.dev/): new experimental project wants to use Vite for cross-platform React-Native development, contrary to Expo, betting on Metro.\n- 📦 [Vision-Camera 3.3 - QR-code/Barcode scanner](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.3.0)\n- 📦 [Vision-Camera-Barcode-Scanner](https://github.com/mgcrea/vision-camera-barcode-scanner)\n- 📦 [Create-Expo-Stack CLI v2](https://expostack.dev/)\n- 🎥 [Back to the Web](https://www.youtube.com/watch?v=3p3NI1yIgcM): William Candillon unveils an experimental polyfill for Skia `canvaskit-js` that lets you run React-Native-Skia on the web in just 20kb, instead of 3mb! Flutter demos already run pretty well with it. You can use it in a Create-React-App without depending on React-Native-Web.\n- 🎥 [What’s the Best React Native Storage Option?](https://www.youtube.com/watch?v=wVNPmxntwKQ)\n- 🎙️ [React-Native-Radio 277 - Expo Launch Party](https://reactnativeradio.com/episodes/rnr-277-expo-launch-party)\n- 🎙 [The React Native Show Podcast 28 - Improving Developer Experience with Expo](https://www.youtube.com/watch?v=4PPDAvgfLHk)",
+      "source_content_hash": "910ba9dce6a8d6fd2892ef792b8081376d68c1ba86571d3e44e8e00ce941c358",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Blitz - Créez des applications React Native plus rapidement pour iOS, Android et le Web !](https://www.blitz-rn.com/)\n- 🐦 [Mises à jour de la documentation Expo - Bun, développement local, capacités iOS...](https://twitter.com/amanhimself/status/1710254359274037263)\n- 📜 [Comment mesurer les performances de React Native avec Flashlight](https://www.bam.tech/article/measuring-react-native-performance-with-flashlight) : montre un exemple d'utilisation de Flashlight pour comparer les performances de défilement de FlatList et Flashlist sur Android. Vous pouvez utiliser les commandes ADB ou Maestro pour simuler le défilement.\n- 📜 [Télécommandes pour applications TV React : une approche déclarative avec react-tv-space-navigation 1.0 !](https://www.bam.tech/article/handling-remote-controls-in-tv-apps-the-react-way-with-react-tv-space-navigation-1-0) : détaille la création de [react-tv-space-navigation](https://github.com/bamlab/react-tv-space-navigation), une solution de navigation spatiale multiplateforme et agnostique fonctionnant sur les applications TV React, à la fois web et natives.\n- 📦 [React-Native v0.73 RC.2](https://github.com/facebook/react-native/releases/tag/v0.73.0-rc.2) : la version 0.73 vient d'être publiée en RC. Regardez le [🎥 Keynote à React-Native-EU](https://www.youtube.com/watch?v=-rCRgbsJumk) pour découvrir les points forts. Ils incluent un flux de débogage en un clic et un support stable des liens symboliques !\n- 📦 [vxrn - La magie de Vite rencontre React Native](https://vxrn.dev/) : nouveau projet expérimental qui utilise Vite pour le développement multiplateforme React-Native, contrairement à Expo qui mise sur Metro.\n- 📦 [Vision-Camera 3.3 - Scanner de codes QR/barres](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.3.0)\n- 📦 [Vision-Camera-Barcode-Scanner](https://github.com/mgcrea/vision-camera-barcode-scanner)\n- 📦 [Create-Expo-Stack CLI v2](https://expostack.dev/)\n- 🎥 [Retour vers le Web](https://www.youtube.com/watch?v=3p3NI1yIgcM) : William Candillon dévoile un polyfill expérimental pour Skia `canvaskit-js` permettant d'exécuter React-Native-Skia sur le web en seulement 20ko au lieu de 3Mo ! Les démos Flutter fonctionnent déjà plutôt bien avec. Utilisable dans une Create-React-App sans dépendre de React-Native-Web.\n- 🎥 [Quelle est la meilleure option de stockage pour React Native ?](https://www.youtube.com/watch?v=wVNPmxntwKQ)\n- 🎙️ [React-Native-Radio 277 - Expo Launch Party](https://reactnativeradio.com/episodes/rnr-277-expo-launch-party)\n- 🎙 [The React Native Show Podcast 28 - Améliorer l'expérience développeur avec Expo](https://www.youtube.com/watch?v=4PPDAvgfLHk)",
+        "en": "- 💸 [Blitz - Créez des applications React Native plus rapidement pour iOS, Android et le Web !](https://www.blitz-rn.com/)\n- 🐦 [Mises à jour de la documentation d'Expo - Bun, développement local, fonctionnalités iOS...](https://twitter.com/amanhimself/status/1710254359274037263)\n- 📜 [Comment mesurer les performances de React Native avec Flashlight](https://www.bam.tech/article/measuring-react-native-performance-with-flashlight) : montre un exemple d'utilisation de Flashlight pour comparer les performances de défilement de FlatList et Flashlist sur Android. Vous pouvez utiliser les commandes ADB ou Maestro pour simuler le défilement.\n- 📜 [Télécommandes pour les applications TV React : une approche déclarative avec react-tv-space-navigation 1.0 !](https://www.bam.tech/article/handling-remote-controls-in-tv-apps-the-react-way-with-react-tv-space-navigation-1-0) : détaille le processus ayant conduit à la création de [react-tv-space-navigation](https://github.com/bamlab/react-tv-space-navigation), une solution de navigation spatiale multiplateforme et agnostique qui fonctionne sur les applications TV React, à la fois web et natives.\n- 📦 [React-Native v0.73 RC.2](https://github.com/facebook/react-native/releases/tag/v0.73.0-rc.2) : v0.73 vient d'être publiée en version candidate. Consultez la [🎥 Keynote à React-Native-EU](https://www.youtube.com/watch?v=-rCRgbsJumk) pour découvrir les nouveautés, dont le flux de débogage en un clic et la prise en charge stable des liens symboliques !\n- 📦 [vxrn - La magie de Vite rencontre React Native](https://vxrn.dev/) : nouveau projet expérimental visant à utiliser Vite pour le développement React Native multiplateforme, s'opposant à l'approche Metro d'Expo.\n- 📦 [Vision-Camera 3.3 - Scanner de codes QR/codes-barres](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.3.0)\n- 📦 [Vision-Camera-Barcode-Scanner](https://github.com/mgcrea/vision-camera-barcode-scanner)\n- 📦 [Create-Expo-Stack CLI v2](https://expostack.dev/)\n- 🎥 [Retour au Web](https://www.youtube.com/watch?v=3p3NI1yIgcM) : William Candillon présente un polyfill expérimental pour Skia `canvaskit-js` permettant d'exécuter React-Native-Skia sur le web en 20ko au lieu de 3 Mo ! Les démos Flutter fonctionnent déjà bien. Utilisable dans Create-React-App sans dépendre de React-Native-Web.\n- 🎥 [Quelle est la meilleure option de stockage pour React Native ?](https://www.youtube.com/watch?v=wVNPmxntwKQ)\n- 🎙️ [React-Native-Radio 277 - Fête de lancement d'Expo](https://reactnativeradio.com/episodes/rnr-277-expo-launch-party)\n- 🎙 [Le podcast The React Native Show 28 - Améliorer l'expérience développeur avec Expo](https://www.youtube.com/watch?v=4PPDAvgfLHk)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "- 🐦 [Evan You - \"we are working on Rolldown, a rust port of Rollup\"](https://twitter.com/youyuxi/status/1709943106215530867)\n- 📜 [Speeding up the JavaScript ecosystem - The barrel file debacle](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-7/)\n- 📜 [Hydration, the Saboteur of Lazy Loading](https://www.builder.io/blog/hydration-sabotages-lazy-loading)\n- 📜 [Limit the reach of your selectors with the CSS @scope at-rule](https://developer.chrome.com/articles/at-scope/)\n- 📜 [Strong static typing, a hill I'm willing to die on...](https://www.svix.com/blog/strong-typing-hill-to-die-on/)\n- 📜 [Photoshop is now on the web!](https://medium.com/@addyosmani/photoshop-is-now-on-the-web-38d70954365a)\n- 📜 [Write your own Zod](https://zackoverflow.dev/writing/write-your-own-zod)\n- 📜 [This technique makes Valibot’s bundle size 10x smaller than Zod’s!](https://www.builder.io/blog/valibot-bundle-size)\n- 📜 [An Interactive Intro to CRDTs](https://jakelazaroff.com/words/an-interactive-intro-to-crdts/)\n- 📜 [ESLint Flat config rollout plans - By default in v9](https://eslint.org/blog/2023/10/flat-config-rollout-plans/)\n- 📦 [Japa v3 - Testing framework for Node.js](https://japa.dev/)\n- 📦 [Prisma v5.4 - Serverless database drivers preview](https://github.com/prisma/prisma/releases/tag/5.4.0)\n- 🎥 [ViteConf 2023 Replay](https://viteconf.org/23/replay)",
+      "source_content_hash": "77bd9fd663fda9bde13935dada06715adb0c7054d8d48887424246ac46141b96",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🐦 [Evan You - \"nous travaillons sur Rolldown, un portage de Rollup en Rust\"](https://twitter.com/youyuxi/status/1709943106215530867)\n- 📜 [Accélérer l'écosystème JavaScript - Le fiasco des fichiers barils](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-7/)\n- 📜 [L'hydratation, le saboteur du chargement paresseux](https://www.builder.io/blog/hydration-sabotages-lazy-loading)\n- 📜 [Limitez la portée de vos sélecteurs avec la règle CSS @scope](https://developer.chrome.com/articles/at-scope/)\n- 📜 [Le typage statique fort, une colline sur laquelle je suis prêt à mourir...](https://www.svix.com/blog/strong-typing-hill-to-die-on/)\n- 📜 [Photoshop est désormais sur le web !](https://medium.com/@addyosmani/photoshop-is-now-on-the-web-38d70954365a)\n- 📜 [Écrivez votre propre Zod](https://zackoverflow.dev/writing/write-your-own-zod)\n- 📜 [Cette technique réduit la taille du bundle de Valibot à 10x celle de Zod !](https://www.builder.io/blog/valibot-bundle-size)\n- 📜 [Une introduction interactive aux CRDTs](https://jakelazaroff.com/words/an-interactive-intro-to-crdts/)\n- 📜 [Plans de déploiement de la configuration plate d'ESLint - Par défaut dans la v9](https://eslint.org/blog/2023/10/flat-config-rollout-plans/)\n- 📦 [Japa v3 - Framework de test pour Node.js](https://japa.dev/)\n- 📦 [Prisma v5.4 - Préversion des pilotes de base de données serverless](https://github.com/prisma/prisma/releases/tag/5.4.0)\n- 🎥 [Replay de la ViteConf 2023](https://viteconf.org/23/replay)",
+        "en": "- 🐦 [Evan You - \"Nous travaillons sur Rolldown, un portage Rust de Rollup\"](https://twitter.com/youyuxi/status/1709943106215530867)\n- 📜 [Accélérer l'écosystème JavaScript - Le fiasco des fichiers barils](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-7/)\n- 📜 [Hydratation, le saboteur du chargement paresseux](https://www.builder.io/blog/hydration-sabotages-lazy-loading)\n- 📜 [Limitez la portée de vos sélecteurs avec la règle CSS @scope](https://developer.chrome.com/articles/at-scope/)\n- 📜 [Typage statique fort, une colline sur laquelle je suis prêt à mourir...](https://www.svix.com/blog/strong-typing-hill-to-die-on/)\n- 📜 [Photoshop est désormais disponible sur le web !](https://medium.com/@addyosmani/photoshop-is-now-on-the-web-38d70954365a)\n- 📜 [Écrivez votre propre Zod](https://zackoverflow.dev/writing/write-your-own-zod)\n- 📜 [Cette technique réduit la taille du bundle de Valibot à 10 fois celle de Zod !](https://www.builder.io/blog/valibot-bundle-size)\n- 📜 [Une introduction interactive aux CRDTs](https://jakelazaroff.com/words/an-interactive-intro-to-crdts/)\n- 📜 [Plans de déploiement de la configuration plate d'ESLint - Par défaut dans la v9](https://eslint.org/blog/2023/10/flat-config-rollout-plans/)\n- 📦 [Japa v3 - Framework de test pour Node.js](https://japa.dev/)\n- 📦 [Prisma v5.4 - Aperçu des pilotes de base de données serverless](https://github.com/prisma/prisma/releases/tag/5.4.0)\n- 🎥 [Replay de ViteConf 2023](https://viteconf.org/23/replay)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "294e85af",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b448c8b",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad3e22c6",
+      "source_content": "[![alt](/emails/issues/162/meme.jpg)](https://twitter.com/Hacksore/status/1710826658863702314)",
+      "source_content_hash": "d34b7ac4af617b6c948c32c2e897c93b991a1e892837f0e7019d69b3062d60a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/162/meme.jpg)](https://twitter.com/Hacksore/status/1710826658863702314)",
+        "en": "[![alt](/emails/issues/162/meme.jpg)](https://twitter.com/Hacksore/status/1710826658863702314)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8f45da",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À la prochaine ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/162/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.171852+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "fce806a70196ae1c7e6c0218eef417f3294faf52b1434a5459a957db072c60a3",
+    "en": "fce806a70196ae1c7e6c0218eef417f3294faf52b1434a5459a957db072c60a3"
+  }
+}

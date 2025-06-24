@@ -1,0 +1,131 @@
+---
+slug: /228
+title: "This Week In React #228: React 19.1, Next.js deployment, React-Email, Triplex, Tinybase, Rspack, i18n-check, React-Admin | 0.79 Golden RC, ExecuTorch, Unistyles, Xcode 16.3, macOS, Screens, Gesture Handler | TypeScript, TC39, WebKit, Intl.Collator, Vitest 3.1"
+authors: [matthieugicquel, cyrilbo]
+date: 04-02-2025
+---
+
+Bonjour à tous !
+
+Cyril et Matthieu ici de [Theodo Apps](https://apps.theodo.com/) 👋 avec votre dose hebdomadaire d'actualités React et React Native, pendant que Seb profite de la conférence [React Native Connection](https://reactnativeconnection.io/) !
+
+React 19.1 vient de sortir avec une meilleure gestion des erreurs et une intégration approfondie des Server Components dans Parcel. Parallèlement, Tailwind CSS 4.1 est sur le point de sortir, et la communauté s'agite avec des avis passionnés sur CSS-in-JS. Du côté React Native, la version candidate finale de la 0.79 est disponible, et ExecuTorch v0.4.0 arrive bientôt avec des fonctionnalités IA passionnantes.
+
+Entrons dans le vif du sujet ! 🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Commanditaire {#sponsor1}
+
+[![Bit : 10 ans de composabilité célébrés](/emails/issues/228/bit.jpg)](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)
+
+**[Bit : 10 ans de composabilité célébrés](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)**
+
+Pendant une décennie, nous avons navigué les complexités des systèmes déconnectés, affrontant les difficultés d'intégration et les défis de mise à l'échelle. Notre quête pour construire efficacement à grande échelle nous a menés à une percée : [**Harmony**](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability/).
+
+Découvrez notre histoire de 10 ans de pionnier en architecture composable et comment Harmony a enfin concrétisé la simplicité monolithique et la puissance distribuée que nous avions toujours envisagée, transformant notre développement de la lutte en progrès exponentiel.
+
+[**Lisez notre histoire**](https://bit.dev/blog/telling-the-bit-story-celebrating-10-years-of-composability/?utm_source=ThisWeekInReact&utm_id=9&utm_medium=newsletter)
+
+---
+
+## ⚛️ React {#react}
+
+[![React 19.1](/emails/issues/228/react_19_1.jpg)](https://github.com/facebook/react/releases/tag/v19.1.0)
+
+**[React 19.1](https://github.com/facebook/react/releases/tag/v19.1.0)**
+
+React 19.1 a été publié cette semaine, les changements les plus notables étant :
+
+- Une nouvelle API [`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack) qui sera utilisée par les frameworks pour fournir de meilleures informations d'erreur en développement. Elle diffère des piles de composants existantes dans sa gestion des `children` et des nœuds DOM.
+- Le côté "React" de la prise en charge des Server Components dans Parcel, fonctionnant de concert avec les nouvelles fonctionnalités de Parcel 2.14.
+- Un `unstable_prerender()` expérimental pour le prérendu des Server Components React sur le serveur.
+
+Cette version inclut également une multitude de changements mineurs et correctifs, principalement liés aux Server Components ou aux limites `Suspense`.
+
+---
+
+- 💸 [Strapi - Gestion de contenu headless open-source, désormais avec un hébergement PaaS généreux, entièrement géré tout en restant flexible et personnalisable. ](https://strapi.link/twir)
+- 📜 [Le CSS-in-JS est-il toujours d'actualité ?](https://fullystacked.net/css-in-js-still-a-thing/) Ce n'est plus très tendance (du moins sans compilateur pour éviter la pénalité de performance) mais reste largement utilisé.
+- 📜 [Défis de déploiement Next.js : Pourquoi les plateformes ont besoin d'une meilleure collaboration open source](https://www.netlify.com/blog/how-we-run-nextjs/) : Netlify explique pourquoi Next.js est compliqué à déployer en dehors de Vercel (absence de support d'adaptateur, documentation manquante, manque de visibilité…) et ce qu'ils aimeraient changer.
+- 📜 [Streaming vidéo adaptatif avec Dash.js dans React](https://www.smashingmagazine.com/2025/03/adaptive-video-streaming-dashjs-react/) : Vous ne construirez probablement pas ce genre de chose tous les jours, mais il s'avère que le streaming adaptatif n'est pas si compliqué grâce au standard DASH
+- 📜 [i18n-check : Tests end-to-end d'i18n pour React](https://lingual.dev/blog/i18n-check-end-to-end-react-i18n-testing/)
+- 📜 [Maîtriser les coûts lors de l'hébergement de Next.js sur Vercel](https://www.thisdot.co/blog/keeping-costs-in-check-when-hosting-next-js-on-vercel)
+- 📜 [Compromis d'architecture React : SPA, SSR ou RSC](https://reacttraining.com/blog/react-architecture-spa-ssr-rsc)
+- 📜 [Comprendre les SPA et leurs limites](https://reacttraining.com/blog/problems-you-face-with-spas)
+- 💸 [Extension VS Code : Obtenez des insights sur l'utilisation des composants React dans VS Code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+- 📦 [React Email 4.0](https://resend.com/blog/react-email-4) : ajoute des outils utiles (linter, score de spam, vérificateur de compatibilité) et quelques composants
+- 📦 [Triplex bêta](https://triplex.dev/blog/triplex-for-vscode) : Une extension VS Code pour développer des applications React visuellement. Initialement conçue pour React Three Fiber, elle prend désormais en charge n'importe quel composant React
+- 📦 [Rspack 1.3](https://rspack.dev/blog/announcing-1-3) : peut être utilisé pour construire des applications React Router v7
+- 📦 [Tinybase 6.0](https://github.com/tinyplex/tinybase/releases/tag/v6.0.0) : compatible avec React 19
+- 📦 [vike-server 1.0](https://vike.dev/blog/vike-server) : simplifie l'exécution et le déploiement côté serveur des applications construites avec Vite, et gère le HMR en développement
+- 📦 [React-Admin 5.7](https://github.com/marmelab/react-admin/releases/tag/v5.7.0)
+- 🎙️ [Front-End Fire : Vulnérabilité de sécurité de Next.js, Remix abandonne les RSC, et Rsdoctor 1.0](https://front-end-fire.com/episodes/87/)
+- 🎙️ [Ce mois-ci dans React 2025-03 : Next avait une vulnérabilité d'authentification, TypeScript se porte sur Golang](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-03-Next-had-an-auth-vulnerability--TypeScript-is-porting-to-Golang-e30tvf5/a-abs3i7h)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Commanditaire {#sponsor2}
+
+[![Livrez des tableaux de bord en quelques minutes — pas en sprints](/emails/issues/228/semaphor.jpg)](https://semaphor.cloud)
+
+**[Livrez des tableaux de bord en quelques minutes — pas en sprints](https://semaphor.cloud)**
+
+Semaphor est un SDK basé sur React pour déployer des tableaux de bord entièrement interactifs dans vos produits client.
+
+Semaphor vous aide à découpler les analyses de votre code produit, afin que vous puissiez itérer rapidement et livrer de nouvelles informations indépendamment — sans avoir à redéployer votre application.
+
+Le CPO de TalentsConnect résume cela parfaitement :
+
+"Semaphor a transformé le flux de travail de notre équipe produit et données. Ils peuvent désormais prototyper et tester plus rapidement de nouveaux cas d'utilisation directement dans notre application avec nos clients, réduisant considérablement le temps du cycle de retour. De plus, les options de style de Semaphor sont exceptionnelles, s'intégrant parfaitement au design de notre produit"
+
+---
+
+## 📱 React-Native {#react-native}
+
+Cela a été une semaine calme dans la communauté React Native — peut-être parce que tous les regards sont tournés vers la React Native Connection qui se déroule actuellement à Paris. Espérons que nous aurons de nombreux sujets passionnants à explorer la semaine prochaine 🤗
+
+- 💸 [Radon IDE – Outil tout-en-un pour le développement React Native & Expo. Maintenant avec Network Inspector et Outline Renders !](https://ide.swmansion.com/?utm_source=thisweekinreact.com)
+- 🐦 [Belle SplashScreen animée utilisant Expo SplashScreen et RN Masked View.](https://x.com/S0LARIN/status/1905829104600875025)
+- 🐦 [React Native ExecuTorch 0.4 annoncé pour fin mai](https://x.com/swmansion/status/1907086132828934414) : avec Universal LLM Runner, support de LLM supplémentaires, modèles d'embedding, Whisper multilingue, OCR, segmentation d'images…
+- 👀 [React Native 0.79 Golden RC](https://github.com/facebook/react-native/releases/tag/v0.79.0-rc.4) : Nous devrions avoir une version stable la semaine prochaine.
+- 👀 [Lynx explore des solutions pour le développement de plugins natifs](https://github.com/lynx-family/lynx/discussions/1#discussioncomment-12660488)
+- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Cracovie - 28-30 mai. Nous sommes ravis d'annoncer les premiers intervenants pour App.js Conf 2025 : Charlie Cheever, Enzo Manuel Mangano & Delphine Bugner ! Obtenez votre billet maintenant avec 15% de réduction en utilisant le code "TWIR".
+- 📜 [Correctifs SDK 52 pour Xcode 16.3](https://expo.dev/changelog/xcode-16-3-patches) : Si vous avez rencontré des problèmes de build lors de la mise à niveau vers Xcode 16.3, vous devrez peut-être installer le dernier correctif SDK 52 et RN0.77. Ou revenir à Xcode 16.2 🫠
+- 📜 [React Native : 10 ans](https://shift.infinite.red/react-native-10-years-db9eb36c5af6) : Infinite Red célèbre l'anniversaire.
+- 📦 [React Native Screens 4.10](https://github.com/software-mansion/react-native-screens/releases/tag/4.10.0) : Version iOS minimale prise en charge passée à v15.1, support expérimental de l'en-tête scrollview avec formSheet, nombreux correctifs Android.
+- 📦 [Unistyles 3.0 RC.1](https://github.com/jpudysz/react-native-unistyles/releases/tag/v3.0.0-rc.1) : Annoncé lors de la conférence React Native Connection, la bibliothèque entre en RC. Outre les fonctionnalités de style, cette version est passionnante car elle gère de nombreux éléments dans l'"Arbre d'ombre" de React Native en utilisant du C++, permettant d'implémenter des styles dynamiques sans nécessiter de nouveau rendu React côté JS lors des changements de dépendances (thème, signal, taille/orientation d'écran, etc.). Cela rappelle le fonctionnement du CSS sur le web : pas besoin de rendu React pour traverser un point de rupture.
+- 📦 [React Native MacOS 0.78](https://github.com/microsoft/react-native-macos/releases/tag/v0.78.0) : La bibliothèque s'est mise à jour. Elle supporterait maintenant Skia et WebGPU.
+- 📦 [React Native Builder Bob 0.39 - Mise à niveau vers ESLint v9](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.39.0)
+- 📦 [React Native Gesture Handler 2.25](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.25.0)
+- 🎥 [William Candillon - The Shader's Gambit](https://www.youtube.com/watch?v=wUsFNlas620) : Ne vous attendez pas à beaucoup de paroles, mais cela montre jusqu'où on peut aller avec react-native-skia.
+- 🎥 [Theo - Android vient de changer pour toujours](https://www.youtube.com/watch?v=ucZx1ArrIVQ)
+- 🎙️ [RNR 326 - React Native fête ses 10 ans 🎉](https://infinite.red/react-native-radio/rnr-326-react-native-turns-10)
+
+---
+
+## 🔀 Autre {#other}
+
+- 👀 [PR sur TypeScript par le mainteneur d'ArkType](https://github.com/microsoft/TypeScript/pull/61505) : Un énorme gain de performance pourrait arriver pour les bases de code utilisant massivement des "schémas" comme Zod ou ArkType.
+- 📜 [Fonctionnalités WebKit dans Safari 18.4](https://webkit.org/blog/16574/webkit-features-in-safari-18-4/) : Livre diverses fonctionnalités incluant 3 propositions TC39. Iterator Helpers est désormais disponible dans tous les navigateurs et Node.js !
+- 📜 [Résumé de la plénière TC39 de février 2025](https://blogs.igalia.com/compilers/2025/03/27/summary-of-the-february-2025-tc39-plenary/)
+- 📜 [Tri de chaînes plus rapide avec Intl.Collator](https://claritydev.net/blog/faster-string-sorting-intl-collator)
+- 📜 [En-têtes de requête interdits](https://macarthur.me/posts/forbidden-request-headers/)
+- 📜 [Vulnérabilités de sécurité dans les API Node.js avec traversée de chemin dans files-bucket-server](https://www.nodejs-security.com/blog/nodejs-api-security-vulnerabilities-path-traversal-files-bucket-server/)
+- 📦 [Vitest 3.1](https://github.com/vitest-dev/vitest/releases/tag/v3.1.0)
+
+---
+
+## 🤭 Amusant {#fun}
+
+[![alt](/emails/issues/228/next_burn.jpg)](https://x.com/aidenybai/status/1904294570533572817)
+
+À plus ! 👋

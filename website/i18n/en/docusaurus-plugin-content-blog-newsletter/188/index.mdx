@@ -1,0 +1,135 @@
+---
+slug: /188
+title: "This Week In React #188: React 19 RC0, Data Fetching, Framer Motion, Compiler, Astro, Zod, Remix, Docusaurus, React-Query,, Memory Leaks, Spline, Module Mocking, Slow Networks, MS Edge, RN Security Guide, RN 0.74.2, Reanimated 3.12, Turborepo 2, Biome 1.8..."
+authors: [bndkt]
+date: 06-06-2024
+---
+
+Salut,
+
+C'est [Benedikt](https://twitter.com/bndkt) cette semaine, qui remplace Sébastien en pause newsletter.
+
+React 19 approche de sa sortie finale, avec la première RC publiée cette semaine. Hormis cela, peu d'activités de publication dans les communautés React et React Native. J'ai donc choisi de mettre en avant deux excellents contenus : un article fondateur de 10 000 mots sur les modèles de récupération de données dans les SPA par Juntao Qiu, et une superbe vue d'ensemble vidéo des différentes méthodes de construction d'apps React Native avec Expo par Simon Grimm.
+
+Je profite de l'occasion pour souligner l'effort que Sébastien et moi consacrons à sélectionner les meilleurs contenus pour les sections React et React Native. Si vous publiez quelque chose d'intéressant qui nous échappe, n'hésitez pas à nous le signaler !
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsorisé {#sponsor1}
+
+[![Développez vos compétences produit](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)
+
+**[Développez vos compétences produit](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**
+
+[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog aidant les ingénieurs à améliorer leurs compétences produit. Découvrez les questions à poser aux utilisateurs, comment créer des fonctionnalités appréciées, et le chemin vers le product market fit.
+
+[**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils triés sur la création de produits, les leçons (et erreurs) du développement de PostHog, et des analyses des stratégies des startups leaders.
+
+---
+
+## ⚛️ React {#react}
+
+📜 **[Modèles de récupération de données dans les applications monopages](https://martinfowler.com/articles/data-fetch-spa.html)**
+
+Lecture longue (~10k mots) mais exceptionnelle ! Le titre ne rend pas justice à la richesse du contenu : concepts React de base, Suspense, gestion d'état asynchrone, découpage de code, préchargement et récupération parallèle pour éviter les cascades. Dans un contexte de débats sur les performances web (Rails vs. React, décision MS Edge), cet article rafraîchit parfaitement les bases pour une UX optimale !
+
+- 💸 [Meilisearch - Build search as you type for React](https://www.meilisearch.com/with/react?utm_campaign=sponsoring&utm_source=thisweekinreact)
+- 👀 [React Router PR - defineRoute API](https://github.com/remix-run/react-router/pull/11596)
+- 🐦 [shadcn/ui is working on adding charts](https://x.com/shadcn/status/1795920488797188525)
+- 🐦 [Remix working inside a Cloudflare Durable Object 🤯](https://x.com/threepointone/status/1796223745243119890)
+- 🐦 [React 19.0.0-rc.0](https://x.com/acdlite/status/1797668537349328923): Andrew Clark says “This is the exact build we'll release as 19.0, unless an issue is reported that requires a breaking change.”
+- 🐦 [Upcoming Spline (3D rendering) and NextJS RSC integration](https://x.com/rauchg/status/1798021886657650711)
+- 📜 [I tried React Compiler today, and guess what …](https://www.developerway.com/posts/i-tried-react-compiler): A super interesting and detailed article about React Compiler and real-world use cases. Seems like we’re not at the point yet where we can just ignore everything about memoization because the Compiler takes care of it, and apart from this conclusion the article is also a great reminder of how memoization works exactly.
+- 📜 [Do you still need Framer Motion?](https://motion.dev/blog/do-you-still-need-framer-motion): The creator of the popular React animation library explains you might not need his library anymore thanks to 5 great new/upcoming CSS features.
+- 📜 [Sneaky React Memory Leaks II: Closures Vs. React Query](https://schiener.io/2024-05-29/react-query-leaks): This follows up on last week's great article. This time it shows how React Query might be affected as well by memory leaks, and how to fix them. Using custom hooks looks like a good general solution to this problem.
+- 📜 [An even faster Microsoft Edge](https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge/): Microsoft was using React for some elements of the UI in its Edge browser and is now abandoning this approach. See the video linked below for more context.
+- 📜 [Speeding up the JavaScript ecosystem - Server Side JSX](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-9/): The JSX runtime of React can lead to many object allocations. Marvin (Preact/Deno) shows it's possible to precompile JSX to improve server rendering of JSX and reduce GC. Maybe React could use that as well?
+- 📜 [Type-safe module mocking in Storybook](https://storybook.js.org/blog/type-safe-module-mocking/): Very elegant way to leverage subpath imports for module mocking.
+- 📜 [Multiple action handlers with Zod in Remix](https://www.jacobparis.com/content/zod-actions-remix): If you target one action endpoint from multiple components, this article shows you how to combine the different Zod schemas via discriminated union.
+- 📜 [Embracing Slow Networks: Improving User Experience](https://www.epicweb.dev/embracing-slow-networks-improving-user-experience)
+- 📜 [Cleaner components with useSuspenseQuery](https://swizec.com/blog/cleaner-components-with-use-suspense-query/) & [Why useSuspenseQuery works](https://swizec.com/blog/why-use-suspense-query-works/)
+- 📜 [Explore new hooks coming up in React 19](https://blog.saeloun.com/2024/06/05/new-hooks-in-react-19/)
+- 📦 [React 19.0.0-rc.0](https://www.npmjs.com/package/react/v/19.0.0-rc.0): Andrew Clark said "This is the exact build we'll release as 19.0, unless an issue is reported that requires a breaking change."
+- 📦 [Docusaurus 3.4](https://docusaurus.io/blog/releases/3.4): A new way to centrally manage tags (great for consistency), an experimental hash router (great for offline browsing without a web server), and an option to use namespaces for local storage (useful if you’re deploying multiple instances of Docusaurus on the same domain).
+- 🎙 [This Month in React, May 2024 - Updates from React Conf](https://www.reactiflux.com/transcripts/tmir-2024-05)
+- 🎥 [Jack Herrington - Beware of "auto" Mode in the NextJS App Router](https://www.youtube.com/watch?v=bU3Px8bHjPA)
+- 🎥 [Theo - Microsoft Regrets Using React (For Edge)](https://www.youtube.com/watch?v=Bm8Ga07BOnI)
+- 🎥 [Stephanie Dietz - How to Use React's `useOptimistic` Hook](https://www.youtube.com/watch?v=ChF9-P4Bjs4)
+- 🎥 [UI Engineering - Why 95% of Modals should be Local (in React)](https://www.youtube.com/watch?v=iMoAviG_ZUE)
+- 🎥 [Aaron Francis - Laravel vs React](https://www.youtube.com/watch?v=gRtv-BVkwA4)
+- 🎥 [Theo - How React Query Won](https://www.youtube.com/watch?v=xIflplz925Y)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsorisé {#sponsor2}
+
+[![WorkOS : authentification professionnelle en minutes](/emails/issues/188/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)
+
+**[WorkOS : authentification professionnelle en minutes](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**
+
+🔐 WorkOS propose une solution complète de gestion utilisateurs avec **SSO, SCIM, RBAC & FGA**.
+
+🗂️ Contrairement aux solutions centrées utilisateur, WorkOS adopte une **modélisation organisationnelle** pour le SaaS B2B.
+
+🏗️ Les API sont **flexibles, faciles à utiliser et modulaires**. Choisissez ce dont vous avez besoin et intégrez en quelques minutes.
+
+✨ La gestion des utilisateurs est **gratuite jusqu'à 1 million d'utilisateurs actifs mensuels (MAU)** et inclut la protection contre les bots, l'usurpation d'identité, l'authentification multi-facteurs (MFA), etc.
+
+🤝 WorkOS est utilisé par des centaines de startups leaders comme **Perplexity**, **Vercel** et **Webflow**.
+
+Future-proof votre pile d'authentification avec [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+![Simon Grimm : Développer React Native avec Expo](/emails/issues/188/rn188.jpg)
+
+🎥 **[Toutes les façons de construire votre application React Native avec Expo](https://www.youtube.com/watch?v=cs-zgHjt5RQ)**
+
+Tous les chemins mènent à Rome, et il semble qu'il y ait presque autant de façons de construire une application Expo. Cela nous donne beaucoup de puissance et de liberté en tant que développeurs, mais peut parfois aussi prêter à confusion - pas seulement pour les débutants ! Heureusement, Simon a réalisé une excellente vidéo comparant les différentes approches via Expo Go, Expo Prebuild, Xcode, Android Studio et EAS. C'est aussi l'occasion de féliciter Expo pour avoir atteint [30k étoiles sur GitHub !](https://x.com/expo/status/1796262781584654492)
+
+- 💸 [React Native Mastery - Le seul cours dont vous avez besoin pour maîtriser React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 🐦 [La démo d'application IA la plus puissante, avec RSC via Expo Router](https://x.com/Baconbrix/status/1795804445738963283) : Nous avons déjà parlé de la démo RSC d'Evan Bacon. Ce thread sur X résume bien la promesse et inclut une vidéo comparative montrant à quel point l'UI mobile peut être performante, notamment dans le contexte des applications de chat LLM.
+- 📜 [Guide de sécurité React Native](https://ospfranco.com/react-native-security-guide/) : Oscar aborde un sujet trop peu discuté. Une bonne introduction couvrant les secrets (TLDR : Ne les stockez pas sur un appareil) et le chiffrement des données utilisateur (y compris l'utilisation des biométriques).
+- 📜 [Transitions fluides : Du natif à React Native](https://commerce.nearform.com/blog/2024/seamless-transitions-from-native-to-react-native) : Des pistes pour le développement brownfield : Comme RN crée de véritables applications natives, l'introduction de RN dans une application existante ou la migration vers RN peut être transparente pour les utilisateurs finaux.
+- 📦 [React Native 0.74.2](https://github.com/facebook/react-native/releases/tag/v0.74.2) : Version corrective mettant à jour certaines dépendances (typescript-eslint, CLI) et corrigeant des bugs.
+- 📦 [React Native Reanimated 3.12.0](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.12.0) : Introduit un nouveau hook useComposedEventHandler qui simplifie la fusion de plusieurs gestionnaires d'événements.
+- 🎙️ [RNR 298 - Create Expo Stack, NativeWind UI, & Plugin Pro avec Dan Stepanov](https://reactnativeradio.com/episodes/rnr-298-create-expo-stack-nativewind-ul-plugin-pro-with-dan-stepanov)
+- 🎥 [Rocket Ship 42 - React Native est vivant ! Retour sur App.js avec Áron Berezkin](https://www.youtube.com/watch?v=GeUfrojkoo0)
+- 🎥 [Expo - Comment démarrer votre premier projet Expo en 2 minutes](https://www.youtube.com/watch?v=yOUAEfDuI44)
+
+---
+
+## 🔀 Autres {#other}
+
+- 🐦 [Détecter les problèmes de mémoire avec les outils de développement Chrome](https://x.com/addyosmani/status/1796527052306419820)
+- 👀 [Mode navigateur de Vitest](https://github.com/vitest-dev/vitest/discussions/5828)
+- 📜 [10 fonctionnalités modernes du runtime Node.js à utiliser en 2024](https://snyk.io/blog/10-modern-node-js-runtime-features/)
+- 📜 [Types en direct dans un monorepo TypeScript - arrêtez d'écrire du TypeScript mort](https://colinhacks.com/essays/live-types-typescript-monorepo)
+- 📜 [Comment utiliser Corepack](https://www.totaltypescript.com/how-to-use-corepack)
+- 📜 [Les Promises depuis les bases](https://www.joshwcomeau.com/javascript/promises/)
+- 📜 [Zero - Repenser un moteur de synchronisation local-first polyvalent pour le web](https://zerosync.dev/)
+- 📦 [Turborepo 2.0 - Nouvelle interface terminal, mode watch, documentation entièrement nouvelle](https://turbo.build/blog/turbo-2-0)
+- 📦 [Biome 1.8 - Prise en charge CSS, nouveaux rapports, améliorations CLI...](https://x.com/biomejs/status/1797963672004043040)
+- 📦 [Deno 1.44 - Registres npm privés, compatibilité Node.js améliorée et gains de performance](https://deno.com/blog/v1.44)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![Merci JavaScript](/emails/issues/188/meme.jpg)](https://x.com/fireship_dev/status/1796526654183059925)
+
+À plus ! 👋

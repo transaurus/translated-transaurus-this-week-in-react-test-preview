@@ -1,0 +1,618 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/187/index.mdx",
+  "source_file_content_hash": "5911980549fde06255bb55ec55361ccafb1244dc80620d98d403dd2f30d5cda8",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /187\ntitle: \"This Week In React #187: Next.js, Expo, Popover, rethrow, SWR, React-Query, Astro, PPR, tRPC, zsa, Memory leaks, INP, RN IDE, Skia, WebGPU, RNSC, Atlas, Re.Pack, Prisma, SwiftUI, Flutter, Angular...\"\nauthors: [slorber, bndkt]\ndate: 05-29-2024\n---",
+      "source_content_hash": "789d8d085b77fce2ffc0b645a4902d59da27faec3fbed765d24fa419adef325e",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Last week we got great announcements from Vercel Ship and App.js conferences.",
+      "source_content_hash": "5fa710e2cf99382463b137e8eec757d5d6b2b3dd37e5555b0990b0480f23af1d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La semaine dernière, nous avons eu d'excellentes annonces des conférences Vercel Ship et App.js.",
+        "en": "La semaine dernière, nous avons eu d'excellentes annonces des conférences Vercel Ship et App.js."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "I also found the community blog posts very interesting this week! There's a lot of good content to read here. The one about memory leak is quite scary 😅.",
+      "source_content_hash": "b9688d495c0733eb5bb23b9a416bd677224015853f7cbd7f1856133efd38a200",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'ai également trouvé les articles de blog communautaires très intéressants cette semaine ! Il y a beaucoup de contenu de qualité à lire ici. Celui sur les fuites mémoire est assez effrayant 😅.",
+        "en": "J'ai également trouvé les articles de blog de la communauté très intéressants cette semaine ! Il y a beaucoup de bon contenu à lire ici. Celui sur les fuites mémoire est assez effrayant 😅."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "I have been wondering lately: is it still useful to write a [Twitter thread](https://slo.im/thread)? I've [asked the question on Twitter](https://x.com/sebastienlorber/status/1795377678918554072) and feel like nobody reads it anymore, apart a few people. I'm considering stopping. What do you think? 🤔",
+      "source_content_hash": "074630988e54c749905d742e0dfa1dab6580851c09513c6116bb60a4bf693abd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je me demande dernièrement : est-ce encore utile d'écrire un [thread Twitter](https://slo.im/thread) ? J'ai [posé la question sur Twitter](https://x.com/sebastienlorber/status/1795377678918554072) et j'ai l'impression que presque personne ne le lit, à part quelques personnes. Je pense arrêter. Qu'en pensez-vous ? 🤔",
+        "en": "Je me demande dernièrement : est-il encore utile d'écrire un [thread Twitter](https://slo.im/thread) ? J'ai [posé la question sur Twitter](https://x.com/sebastienlorber/status/1795377678918554072) et j'ai l'impression que presque personne ne les lit, à part quelques personnes. Je pense arrêter. Qu'en pensez-vous ? 🤔"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![React-admin: The Open-Source Framework for B2B apps](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)",
+      "source_content_hash": "d5cec28489d305898e6708c3f03590161bc0590d1998cb09d20d6166251ff225",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React-admin : Le framework open-source pour les applications B2B](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)",
+        "en": "[![React-admin : Le framework open-source pour les apps B2B](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[React-admin: The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/)**",
+      "source_content_hash": "134eba9a0d54cccd0c26001e8ef40db0ca57b4aed3b5964db5fa48be482c2b51",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React-admin : Le framework open-source pour les applications B2B](https://marmelab.com/react-admin/)**",
+        "en": "**[React-admin : Le framework open-source pour les apps B2B](https://marmelab.com/react-admin/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "👩🏻‍💻 **For developers, by developers**: React-admin is a free, low-code library that accelerates the development of internal tools, admins or B2B apps. Unlike no-code tools, you use code, ensuring you’re never limited by the framework.",
+      "source_content_hash": "a05239d03a07c1b3679f8a524c98dbae83cfd7b6b2992c012c54b70eb59597ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "👩🏻‍💻 **Par des développeurs, pour des développeurs** : React-admin est une bibliothèque gratuite low-code qui accélère le développement d'outils internes, d'admins ou d'applications B2B. Contrairement aux outils no-code, vous utilisez du code, garantissant de ne jamais être limité par le framework.",
+        "en": "👩🏻‍💻 **Par des développeurs, pour des développeurs** : React-admin est une bibliothèque gratuite low-code qui accélère le développement d'outils internes, d'interfaces d'administration ou d'applications B2B. Contrairement aux outils no-code, vous utilisez du code, garantissant de ne jamais être limité par le framework."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "🔌 **Flexible Integration**: React-admin supports any API format (REST or GraphQL) and various authentication backends, including Auth0, Cognito, Google Auth, Active Directory, and Keycloak. You control the server, so there are no extra costs for Single Sign-On (SSO) capabilities. It's fully themeable, allowing you to customize it with your company's colors.",
+      "source_content_hash": "af55e13175397b9c5d7969ae2b68e9180995c471a08725ae289c8d87edff16bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🔌 **Intégration flexible** : React-admin prend en charge n'importe quel format d'API (REST ou GraphQL) et divers backends d'authentification, dont Auth0, Cognito, Google Auth, Active Directory et Keycloak. Vous contrôlez le serveur, donc aucun coût supplémentaire pour les capacités Single Sign-On (SSO). Il est entièrement personnalisable avec les couleurs de votre entreprise.",
+        "en": "🔌 **Intégration flexible** : React-admin prend en charge n'importe quel format d'API (REST ou GraphQL) et divers backends d'authentification, notamment Auth0, Cognito, Google Auth, Active Directory et Keycloak. Vous contrôlez le serveur, donc aucun coût supplémentaire pour l'authentification unique (SSO). Entièrement personnalisable, vous pouvez l'adapter aux couleurs de votre entreprise."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "🚀 **Proven Success**: Over 25,000 companies have built single-page applications with React-admin. For your next project, save weeks of development time by using react-admin. [Try react-admin now](https://marmelab.com/react-admin/).",
+      "source_content_hash": "bd9723d9e7ea85f27f3318cb9a48d22c9577c717e8bbb3c4a9d1d8f0a995f1bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🚀 **Succès avéré** : Plus de 25 000 entreprises ont construit des applications monopage avec React-admin. Pour votre prochain projet, économisez des semaines de développement en utilisant react-admin. [Essayez react-admin maintenant](https://marmelab.com/react-admin/).",
+        "en": "🚀 **Succès avéré** : Plus de 25 000 entreprises ont créé des applications monopage avec React-admin. Pour votre prochain projet, économisez des semaines de développement en utilisant react-admin. [Essayez react-admin maintenant](https://marmelab.com/react-admin/)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![Next.js 15 RC](/emails/issues/187/nextjs.jpg)](https://nextjs.org/blog/next-15-rc)",
+      "source_content_hash": "39aaf035b2c56a663b442e1daca6174c3b823b2648699701657fe1d585368496",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Next.js 15 RC](/emails/issues/187/nextjs.jpg)](https://nextjs.org/blog/next-15-rc)",
+        "en": "[![Next.js 15 RC](/emails/issues/187/nextjs.jpg)](https://nextjs.org/blog/next-15-rc)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "**[Next.js 15 RC](https://nextjs.org/blog/next-15-rc)**",
+      "source_content_hash": "1426a4ea7b68cbf2dc2a4305d998902a6dcadf7336e1dc0f364c99cc64dd7c6b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Next.js 15 RC](https://nextjs.org/blog/next-15-rc)**",
+        "en": "**[Next.js 15 RC](https://nextjs.org/blog/next-15-rc)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "A new major version of Next.js dropped in RC at Vercel Ship last week. The highlights of this version are:",
+      "source_content_hash": "c4497c189d87e5bb67702c4cfda158bfe8591b753ad6e63159c3204a95d59f15",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Une nouvelle version majeure de Next.js est sortie en RC lors de Vercel Ship la semaine dernière. Les points forts de cette version sont :",
+        "en": "Une nouvelle version majeure de Next.js est sortie en RC lors de Vercel Ship la semaine dernière. Les points forts de cette version sont :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "- React 19 RC support\n- React Compiler support (experimental) through the Babel plugin (this might increase build time)\n- Hydration error improvements, displaying the diff mismatch\n- Less aggressive caching, now opt-in: `fetch` and Route Handlers are no longer cached by default\n- Incrementally adopt Partial Prerendering with a new `experimental_ppr` route config option\n- New `create-next-app` design, prompting for Turbo usage in dev, and ability to create projects\n- next/after (experimental), a new API useful to defer analytics tasks and keep responses fast\n- Optimizing bundling of external packages (`serverExternalPackages`) now stable",
+      "source_content_hash": "6fa0a33708e36c7b1f17c26d436728f268b78b5ed1505fb2f263297f1fc5476d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Support de React 19 RC\n- Support expérimental du React Compiler via le plugin Babel (peut augmenter le temps de build)\n- Améliorations des erreurs d'hydratation affichant les différences\n- Moins de cache agressif, désormais optionnel : `fetch` et les gestionnaires de route ne sont plus mis en cache par défaut\n- Adoption progressive du Prerendering Partiel avec l'option `experimental_ppr` dans la configuration de route\n- Nouveau design pour `create-next-app`, proposant Turbo en dev et création de projets\n- next/after (expérimental), nouvelle API utile pour reporter les tâches analytiques et garder des réponses rapides\n- Optimisation du bundle des packages externes (`serverExternalPackages`) désormais stable",
+        "en": "- Support de React 19 RC\n- Support expérimental du React Compiler via le plugin Babel (peut augmenter le temps de build)\n- Améliorations des erreurs d'hydratation affichant les différences\n- Cache moins agressif, désormais opt-in : `fetch` et les Route Handlers ne sont plus mis en cache par défaut\n- Adoption progressive du Prerendering Partiel avec une nouvelle option de configuration de route `experimental_ppr`\n- Nouveau design de `create-next-app`, proposant Turbo en dev et capacité à créer des projets\n- next/after (expérimental), nouvelle API utile pour différer les tâches analytiques et maintenir des réponses rapides\n- Optimisation du bundling des packages externes (`serverExternalPackages`) désormais stable"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "Other interesting things were announced at Vercel Ship. Additional resources to look at:",
+      "source_content_hash": "ec3eecf0303199f0ce8a0d01c1d8bdbe956401dd7237ab09ae574619cd70d3a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "D'autres éléments intéressants ont été annoncés à Vercel Ship. Ressources supplémentaires à consulter :",
+        "en": "D'autres éléments intéressants ont été annoncés à Vercel Ship. Ressources supplémentaires à consulter :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3df4f066",
+      "source_content": "- 📜 [Vercel Ship 2024 recap](https://vercel.com/blog/vercel-ship-2024)\n- 📜 [Introducing deeper integrations for feature flags in Vercel](https://vercel.com/blog/feature-flags)\n- 📜 [Introducing the Vercel Web Application Firewall](https://vercel.com/blog/introducing-the-vercel-waf)\n- 🎥 [Jack Herrington - NextJS 15: React 19, Less Caching, Turbopack, Better Hydration Errors and more from Vercel Ship!](https://www.youtube.com/watch?v=N2LzvfM2R5M)",
+      "source_content_hash": "2b2b1ecc113fcfdfbe866335b30fbf129d323a41191f3b7c5f08dd975cc0eff5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Récap de Vercel Ship 2024](https://vercel.com/blog/vercel-ship-2024)\n- 📜 [Présentation d'intégrations approfondies pour les feature flags dans Vercel](https://vercel.com/blog/feature-flags)\n- 📜 [Présentation du Pare-feu d'Applications Web Vercel](https://vercel.com/blog/introducing-the-vercel-waf)\n- 🎥 [Jack Herrington - NextJS 15 : React 19, moins de cache, Turbopack, meilleures erreurs d'hydratation et plus encore de Vercel Ship !](https://www.youtube.com/watch?v=N2LzvfM2R5M)",
+        "en": "- 📜 [Récapitulatif de Vercel Ship 2024](https://vercel.com/blog/vercel-ship-2024)\n- 📜 [Présentation des intégrations approfondies pour les feature flags dans Vercel](https://vercel.com/blog/feature-flags)\n- 📜 [Présentation du pare-feu d'applications web de Vercel](https://vercel.com/blog/introducing-the-vercel-waf)\n- 🎥 [Jack Herrington - NextJS 15 : React 19, moins de cache, Turbopack, meilleures erreurs d'hydratation et plus encore de Vercel Ship !](https://www.youtube.com/watch?v=N2LzvfM2R5M)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e874d9e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "- 💸 [Build AI apps with React and JavaScript — Frontend and UI for any LLM](https://docs.nlkit.com/nlux/?utm_source=twir-my24-3)\n- 👀 [React Core PR - Throw if React and React DOM versions don't match](https://github.com/facebook/react/pull/29236): React 19 will be stricter and require that the renderer version (DOM or RN) uses the exact same version as the core React package.\n- 👀 [React DOM PR - Add support for Popover API](https://github.com/facebook/react/pull/27981): This new API is now available in all major browsers, and React just merged support for it.\n- 👀 [Next.js PR - `unstable_rethrow`](https://github.com/vercel/next.js/pull/65831): Upcoming Next.js API to avoid catching internal errors thrown by Next.js (such as redirect/notFound errors).\n- 🐦 [Latest SWR beta can seamlessly move data fetching between client-side and server-side](https://x.com/shuding_/status/1794461568505352693). And [React-Query](https://x.com/TkDodo/status/1794801851671695533) + [Apollo Client](https://x.com/phry/status/1795777518944784450) also implemented similar features.\n- 🗓 [React Rally](https://reactrally.com/?utm_source=thisweekinreact) - 🇺🇸 Utah - 12-13, August - Get a 10% discount with code \"TWIR\". There’s an advanced React [workshop](https://reactrally.com/workshop) with Cory House.\n- 📜 [Sneaky React Memory Leaks: How useCallback and closures can bite you](https://schiener.io/2024-03-03/react-closures): A great article simplifying a real production app memory leak to explain it. This surprised me, I couldn’t guess such React code would leak memory, and pretty sure my apps contain memory leaks now 😅. Good news though: the app wouldn't leak memory when using the new React Compiler.\n- 📜 [Automatic Query Invalidation after Mutations](https://tkdodo.eu/blog/automatic-query-invalidation-after-mutations): React Query is un-opinionated about how you invalidate cached resources and instead lets you implement a custom strategy on top of flexible primitives. For example, you can invalidate queries by tags.\n- 📜 [Migrating from Radix to React Aria: Improving Accessibility and UX](https://argos-ci.com/blog/react-aria-migration): After having used alternatives such as Reakit or Radix, Greg gives good reasons for adopting React Aria. The migration feedback is positive, but some challenges were encountered. React Aria is quite “strict” at ensuring your components remain accessible.\n- 📜 [On Laravel, Full-Stack JavaScript, and Productive Frameworks](https://www.jplhomer.org/posts/on-laravel-full-stack-javascript-and-productive-frameworks/): Josh created 2 React meta-frameworks (including Shopify Hydrogen) and also uses Laravel extensively. He shares an interesting perspective on the pros/cons of the Laravel vs React ecosystem.\n- 📜 [A virtual DOM in 200 lines of JavaScript](https://lazamar.github.io/virtual-dom/): This greatly explains how a virtual DOM (like the one from React) works under the hood, by creating a small library that can run a TodoMVC app.\n- 📜 [Design System Retrospective](https://kyleshevlin.com/design-system-retrospective/): Interesting perspective on the successfulness of implementing a Chakra-like design system (tokens as props). The average dev struggled to understand how to compose primitives. Tailwind might be a better fit for them.\n- 📜 [Combining React Server Components with react-query for Easy Data Management](https://frontendmasters.com/blog/combining-react-server-components-with-react-query-for-easy-data-management/): A good read explaining limits RSCs. Server Actions run serially, and you need to wait for RSCs to re-render which might be slow without proper caching. Using React-Query with prefetching might slightly increase bundle size and produce more roundtrips, but overall that could give a faster UX.\n- 📜 [Using Server Actions with tRPC](https://trpc.io/blog/trpc-actions): Server Actions are similar to tRPC but come barebone. tRPC maintainer explains things that tRPC enables on top, such as auth, input validation, observability, rate-limiting, and other possible middleware. Note there are alternatives to consider such as next-server-action and zsa.\n- 📜 [Optimizing INP for a React App & Performance Learnings](https://www.iamtk.co/optimizing-inp-for-a-react-app-and-performance-learnings): A long feedback on optimizing responsiveness on a React 18 prod app. Various takeaways include deferring work and analytics, or being careful of useless re-renders.\n- 📜 [Partial Prerendering without a framework](https://developers.netlify.com/guides/partial-prerendering-without-a-framework/): Demo from Netlify CEO shows how to implement “vanilla PPR” (without Next.js which has this as an experimental feature).\n- 📜 [Behind the ‘as’ prop: polymorphism done well](https://www.kripod.dev/blog/behind-the-as-prop-polymorphism-done-well/): Also explains how to type it properly.\n- 📜 [Redwood - Using Middleware: RSS and Sitemap](https://redwoodjs.com/blog/using-middleware-rss-and-sitemap)\n- 📜 [Structured logging for Next.js - Using the Pino logging library](https://blog.arcjet.com/structured-logging-in-json-for-next-js/)\n- 📜 [Facebook just updated its relationship status with web components](https://www.mux.com/blog/facebook-just-updated-it-s-relationship-status-with-web-components)\n- 📜 [Authentication with WorkOS in Next.js: A Comprehensive Guide](https://www.nirtamir.com/articles/authentication-with-workos-in-next-js-a-comprehensive-guide)\n- 📜 [The Next.js \\<Image> Component](https://www.premieroctet.com/blog/en/next-image-component)\n- 📜 [How To Dockerize A React App](https://scientyficworld.org/how-to-dockerize-a-react-app/)\n- 📦 [Astro 4.9 - React 19 support for Astro Actions](https://astro.build/blog/astro-490/): Adds new withState/getActionState APIs to integrate Astro with React 19 useActionState, including progressive enhancement.\n- 📦 [Storybook 8.1 - typesafe mocking, Unit testing React Server Components](https://storybook.js.org/blog/storybook-8-1/)\n- 📦 [NextUI 2.4](https://nextui.org/blog/v2.4.0)\n- 📦 [Ark UI 3.0](https://ark-ui.com/react/docs/overview/changelog#300---2024-05-24)\n- 📦 [React-Query 5.39 - Supports React 19](https://github.com/TanStack/query/releases/tag/v5.39.0)\n- 📦 [Redwood 7.6 - React Compiler experimental flag](https://github.com/redwoodjs/redwood/releases/tag/v7.6.0)\n- 📦 [zsa 0.1 - Typesafe Server Actions for Next.js](http://next.js)\n- 📦 [React-Executor - Asynchronous task execution and state management for React](https://github.com/smikhalevski/react-executor)\n- 🎥 [UI Engineering - Portals Can Share State Between Windows](https://www.youtube.com/watch?v=jZx33FPMXzc): It's a pretty cool idea to use React portals to integrate seamlessly between windows and might also be useful for the upcoming browser Picture-in-Picture API.\n- 🎥 [Theo - I Was Wrong About React Router.](https://www.youtube.com/watch?v=m86HssTKExU)\n- 🎥 [James Quick - Astro Launches Actions Similar like Next.js](https://www.youtube.com/watch?v=8mIUIhp2YGQ)",
+      "source_content_hash": "8a5b1402a1d5bebe434d5a0319884b449f1c1860489f667bb094912fc9990706",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_645e08e3",
+        "en": "@@untranslatable_placeholder_645e08e3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "de88dabe",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_de88dabe",
+        "en": "@@untranslatable_placeholder_de88dabe"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "[![Next.js auth tutorial with RSCs and Server Actions](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)",
+      "source_content_hash": "b9a1f8c4dfc955504c7ed99ca88f7c639f76ed9f8904ff3f92bffef69194197a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Tutoriel d'authentification Next.js avec RSC et Server Actions](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)",
+        "en": "[![Tutoriel d'authentification Next.js avec RSC et Server Actions](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "**[Next.js auth tutorial with RSCs and Server Actions](https://www.youtube.com/watch?v=aoRG1q_kVo8)**",
+      "source_content_hash": "8516cfb9e4239ea47ad4a8cfd74efe8c3803e2c5d60a34f27b2165a3efe63c74",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Tutoriel d'authentification Next.js avec RSC et Server Actions](https://www.youtube.com/watch?v=aoRG1q_kVo8)**",
+        "en": "**[Tutoriel d'authentification Next.js avec RSC et Server Actions](https://www.youtube.com/watch?v=aoRG1q_kVo8)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "The latest tutorial with WorkOS and Sam Selikoff shows how you can easily add AuthKit's hosted login box to a Next.js app:",
+      "source_content_hash": "19515a91b38ffb6e00d075291b03db7e9bd8c665e03aab2171ef25b829f43cb2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le dernier tutoriel avec WorkOS et Sam Selikoff montre comment vous pouvez facilement ajouter la boîte de connexion hébergée d'AuthKit à une application Next.js :",
+        "en": "Le dernier tutoriel avec WorkOS et Sam Selikoff montre comment ajouter facilement la boîte de connexion hébergée d'AuthKit à une application Next.js :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "📚 Get started using the Authkit \\<> Next.js [integration library](https://github.com/workos/authkit-nextjs)  \n🤖 Set up environment variables, configure the callback route and middleware, and implement signIn and signOut functionalities  \n⚙️ Protect routes in the Next.js app from unauthenticated users with the getUser function",
+      "source_content_hash": "fbad362fbd4c436e82c1e94edad9aab726db69fd16fee1a76a614a6dce23a277",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "📚 Commencez avec la [bibliothèque d'intégration](https://github.com/workos/authkit-nextjs) AuthKit \\<> Next.js  \n🤖 Configurez les variables d'environnement, la route de callback et le middleware, et implémentez les fonctionnalités de connexion et de déconnexion  \n⚙️ Protégez les routes de l'application Next.js contre les utilisateurs non authentifiés avec la fonction getUser"
+      },
+      "invalid_translations": {
+        "en": {
+          "translation": "📚 Commencez à utiliser la [bibliothèque d'intégration](https://github.com/workos/authkit-nextjs) AuthKit <> Next.js  \n🤖 Configurez les variables d'environnement, la route de callback et le middleware, et implémentez les fonctionnalités de connexion et déconnexion  \n⚙️ Protégez les routes de l'application Next.js contre les utilisateurs non authentifiés avec la fonction getUser",
+          "reason": "Parsing failed: Expected a closing tag for `<>` (1:107-1:109) before the end of `paragraph`",
+          "timestamp": "2025-06-24T15:57:01.434373+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "AuthKit can be used with WorkOS User Management, which supports MFA, identity linking, email verification, user impersonation, and more.",
+      "source_content_hash": "0adfa6ff75ed44a0b04ee10f909a70d2e97a0fe9a0ab9cb1a29a8db4277f2e58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "AuthKit peut être utilisé avec la gestion des utilisateurs WorkOS, qui prend en charge la MFA, la liaison d'identités, la vérification par e-mail, l'emprunt d'identité utilisateur, et plus encore.",
+        "en": "AuthKit peut être utilisé avec la gestion des utilisateurs WorkOS, qui prend en charge la MFA, la liaison d'identité, la vérification par e-mail, l'usurpation d'utilisateur et plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "Best of all, it's **free up to 1,000,000 MAUs 🚀**",
+      "source_content_hash": "f9dfa9abad3d07a70293d049c6a21e6658744e0b86e49b56486b9566e398bc22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le meilleur : c'est **gratuit jusqu'à 1 000 000 d'utilisateurs actifs mensuels 🚀**",
+        "en": "Le meilleur : c'est **gratuit jusqu'à 1 000 000 d'utilisateurs mensuels actifs 🚀**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "862bb4be",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ed644f52",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette section est rédigée par [Benedikt](https://twitter.com/bndkt).",
+        "en": "Cette section est rédigée par [Benedikt](https://twitter.com/bndkt)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "![screenshot of 4 App.js slides](/emails/issues/187/rn.jpg)",
+      "source_content_hash": "f63b5e3cc2594f222edb4c4acb170548c93458553a84e7dcf49b199530e95c95",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "![capture d'écran de 4 diapositives App.js](/emails/issues/187/rn.jpg)",
+        "en": "![capture d'écran de 4 diapositives App.js](/emails/issues/187/rn.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "The dry season of everyone saving their announcements for upcoming conferences is over, with last week’s App.js Conf dropping another bucket of amazing content and exciting announcements on us! Expo announced the aptly named Atlas, which acts as a map to explore the wilderness of Bundler land. If you ever wanted to understand how code goes in and comes out of your app, this is the tool for it. It’s especially useful to reduce bundle size, but also just to get a better understanding of how your app works. In the ORM space, Drizzle launched their Studio as an Expo dev tools plugin and Prisma announced that they’ll be adding React Native support. The React Native IDE is now in open beta and you can download it in the VS Code extension marketplace and finally, William Candillon announced video support coming to RN Skia, as well as WebGPU in React Native! Of course, we remain super excited by Universal React Server Components that we already mentioned last week. Make sure to catch up and watch the [App.js Conf Live stream](http://app.js).",
+      "source_content_hash": "671e0e48522500e135071ca1cd2c8faa155332976dfab5d3e9128c67eab39a40",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La période creuse où chacun gardait ses annonces pour les prochaines conférences est terminée, avec la conférence App.js de la semaine dernière qui nous a déversé un nouveau flot de contenu passionnant et d'annonces majeures ! Expo a dévoilé Atlas, nommé à juste titre, qui sert de carte pour explorer le territoire sauvage des Bundlers. Si vous avez déjà voulu comprendre comment le code entre et sort de votre application, c'est l'outil idéal. Il est particulièrement utile pour réduire la taille du bundle, mais aussi simplement pour mieux comprendre le fonctionnement de votre application. Dans l'espace des ORM, Drizzle a lancé son Studio en tant que plugin d'outils de développement Expo et Prisma a annoncé son support à venir pour React Native. L'IDE React Native est désormais en bêta ouverte et vous pouvez le télécharger sur le marketplace des extensions VS Code. Enfin, William Candillon a annoncé le support vidéo à venir pour RN Skia, ainsi que WebGPU dans React Native ! Bien sûr, nous restons très enthousiastes concernant les Universal React Server Components que nous avons déjà mentionnés la semaine dernière. Assurez-vous de rattraper le [stream en direct de la conférence App.js](http://app.js).",
+        "en": "La saison creuse où tout le monde gardait ses annonces pour les conférences à venir est terminée, avec la conférence App.js de la semaine dernière qui nous a déversé un nouveau flot de contenu incroyable et d'annonces passionnantes ! Expo a annoncé Atlas, nommé à propos, qui sert de carte pour explorer le territoire sauvage du Bundler. Si vous avez toujours voulu comprendre comment le code entre et sort de votre application, c'est l'outil qu'il vous faut. Il est particulièrement utile pour réduire la taille du bundle, mais aussi simplement pour mieux comprendre le fonctionnement de votre application. Dans l'espace ORM, Drizzle a lancé son Studio en tant que plugin d'outils de développement Expo et Prisma a annoncé qu'ils ajouteraient la prise en charge de React Native. L'IDE React Native est désormais en bêta ouverte et vous pouvez le télécharger sur le marketplace d'extensions VS Code. Enfin, William Candillon a annoncé la prise en charge vidéo à venir pour RN Skia, ainsi que WebGPU dans React Native ! Bien sûr, nous restons très enthousiastes à propos des Universal React Server Components que nous avons déjà mentionnés la semaine dernière. Assurez-vous de rattraper et de regarder le [flux en direct de la conférence App.js](http://app.js)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6409152f",
+      "source_content": "- 💸 [WithFrame - Pre-Built React Native Components](https://withfra.me/components?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--1)\n- 🐦 [Re.Pack V5 will be based on Rspack instead of Webpack](https://x.com/_jbroma/status/1793286546008981933): This brings significant performance improvements (Cold start 15s → 2.5s, build 10s → 2s, HMR 450ms → 100ms).\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 Portland, OR - July 17-19. The U.S. React Native Conference is back with engaging talks and hands-on workshops! Get 15% off your ticket with code “TWIR”\n- 📜 [Introducing Expo Atlas](https://expo.dev/blog/introducing-expo-atlas): The Expo team used this internally to work on a faster Metro resolver, improve their Babel config, as well as for their work on RSC. Now you can use it to better understand and optimize your app as well!\n- 📜 [RNW 0.74 Launches: A Gallery Glow-up and Fabric Foundations! React Native](https://devblogs.microsoft.com/react-native/2024-05-24-improved-gallery-fabric-0-74/): Something new I learned from this announcement is the React Native Gallery app, basically a kitchen sink demo app for RN on Windows.\n- 📜 [Bringing Prisma ORM to React Native and Expo](https://www.prisma.io/blog/bringing-prisma-orm-to-react-native-and-expo): Prisma, including reactive queries, is now available in RN (in beta). And it seems they’re also working on a local-first sync solution.\n- 📜 [Using React-Admin With React Native](https://marmelab.com/blog/2024/05/22/using-react-admin-with-react-native.html): React-Admin is a framework for quickly building CRUD apps. This article shows how to leverage its headless architecture to use it with RN.\n- 📜 [Fluttering in the sky](https://www.celest.dev/blog/fluttering-in-the-sky): Not React Native but worth mentioning that a company is working on the equivalent of React Native Server Components for Flutter.\n- 📦 [React Native IDE is now in open beta](https://ide.swmansion.com/): Simply download as a VS Code extension from the VS Code marketplace.\n- 📦 [SwiftUI-React-Native 6.0](https://github.com/andrew-levy/swiftui-react-native): Use SwiftUI features directly from React Native.\n- 📦 [React Native Skia 1.3.0](https://github.com/Shopify/react-native-skia/releases/tag/v1.3.0): Skia can now render videos.\n- 📦 [Drizzle Studio is now available for Expo SQLite via dev tools plugin](https://github.com/drizzle-team/drizzle-studio-expo/tree/main): This is super handy! No more finding the Simulator’s file system folder on your Mac to open the sqlite-file in a separate GUI for debugging purposes.\n- 🎥 [Simon Grimm - 10 Takeaways for React Native Devs from the App.js conference](https://www.youtube.com/watch?v=mhos9givltA)",
+      "source_content_hash": "bab1c4650f8f72fbc098fc5423744cf687ca91ca70599273457a47dccc9ff5e0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [WithFrame - Composants React Native Pré-construits](https://withfra.me/components?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--1)\n- 🐦 [Re.Pack V5 sera basé sur Rspack au lieu de Webpack](https://x.com/_jbroma/status/1793286546008981933): Cela apporte des améliorations de performances significatives (Démarrage à froid 15s → 2.5s, build 10s → 2s, HMR 450ms → 100ms).\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 Portland, OR - 17-19 juillet. La conférence américaine React Native est de retour avec des talks captivants et des ateliers pratiques ! Obtenez 15% de réduction avec le code \"TWIR\"\n- 📜 [Présentation d'Expo Atlas](https://expo.dev/blog/introducing-expo-atlas): L'équipe Expo l'a utilisé en interne pour travailler sur un résolveur Metro plus rapide, améliorer leur configuration Babel, et pour leurs travaux sur RSC. Maintenant, vous pouvez l'utiliser pour mieux comprendre et optimiser votre application !\n- 📜 [RNW 0.74 sort : Une remise à niveau de la galerie et les fondations de Fabric ! React Native](https://devblogs.microsoft.com/react-native/2024-05-24-improved-gallery-fabric-0-74/): Une nouveauté que j'ai apprise est l'application React Native Gallery, essentiellement une application de démonstration complète pour RN sur Windows.\n- 📜 [Apport de Prisma ORM à React Native et Expo](https://www.prisma.io/blog/bringing-prisma-orm-to-react-native-and-expo): Prisma, y compris les requêtes réactives, est désormais disponible dans RN (en bêta). Et il semble qu'ils travaillent aussi sur une solution de synchronisation local-first.\n- 📜 [Utiliser React-Admin avec React Native](https://marmelab.com/blog/2024/05/22/using-react-admin-with-react-native.html): React-Admin est un framework pour créer rapidement des applications CRUD. Cet article montre comment tirer parti de son architecture headless pour l'utiliser avec RN.\n- 📜 [Flottant dans le ciel](https://www.celest.dev/blog/fluttering-in-the-sky): Pas React Native mais mérite d'être mentionné qu'une entreprise travaille sur l'équivalent des React Server Components pour Flutter.\n- 📦 [L'IDE React Native est maintenant en bêta ouverte](https://ide.swmansion.com/): Téléchargeable simplement comme extension VS Code depuis le marketplace.\n- 📦 [SwiftUI-React-Native 6.0](https://github.com/andrew-levy/swiftui-react-native): Utilisez les fonctionnalités SwiftUI directement depuis React Native.\n- 📦 [React Native Skia 1.3.0](https://github.com/Shopify/react-native-skia/releases/tag/v1.3.0): Skia peut désormais afficher des vidéos.\n- 📦 [Drizzle Studio est désormais disponible pour Expo SQLite via un plugin dev tools](https://github.com/drizzle-team/drizzle-studio-expo/tree/main): Très pratique ! Plus besoin de trouver le dossier du système de fichiers du Simulateur sur votre Mac pour ouvrir le fichier SQLite dans une GUI séparée.\n- 🎥 [Simon Grimm - 10 points à retenir pour les devs React Native de la conférence App.js](https://www.youtube.com/watch?v=mhos9givltA)",
+        "en": "- 💸 [WithFrame - Composants React Native pré-construits](https://withfra.me/components?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--1)\n- 🐦 [Re.Pack V5 sera basé sur Rspack au lieu de Webpack](https://x.com/_jbroma/status/1793286546008981933): Cela apporte des améliorations significatives de performance (Démarrage à froid : 15s → 2.5s, build : 10s → 2s, HMR : 450ms → 100ms).\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 Portland, OR - 17-19 juillet. La conférence américaine React Native est de retour avec des présentations captivantes et des ateliers pratiques ! Obtenez 15% de réduction sur votre billet avec le code « TWIR »\n- 📜 [Présentation d'Expo Atlas](https://expo.dev/blog/introducing-expo-atlas): L'équipe Expo a utilisé cet outil en interne pour travailler sur un résolveur Metro plus rapide, améliorer leur configuration Babel, ainsi que pour leur travail sur RSC. Maintenant, vous pouvez l'utiliser pour mieux comprendre et optimiser votre application !\n- 📜 [RNW 0.74 lancé : Une amélioration de la Galerie et les fondations de Fabric ! React Native](https://devblogs.microsoft.com/react-native/2024-05-24-improved-gallery-fabric-0-74/): Une nouveauté que j'ai découverte dans cette annonce est l'application React Native Gallery, essentiellement une application de démonstration complète pour RN sur Windows.\n- 📜 [Apporter l'ORM Prisma à React Native et Expo](https://www.prisma.io/blog/bringing-prisma-orm-to-react-native-and-expo): Prisma, y compris les requêtes réactives, est désormais disponible sur RN (en version bêta). Et il semble qu'ils travaillent également sur une solution de synchronisation locale-first.\n- 📜 [Utiliser React-Admin avec React Native](https://marmelab.com/blog/2024/05/22/using-react-admin-with-react-native.html): React-Admin est un framework pour construire rapidement des applications CRUD. Cet article montre comment tirer parti de son architecture headless pour l'utiliser avec RN.\n- 📜 [Fluttering in the sky](https://www.celest.dev/blog/fluttering-in-the-sky): Non React Native mais mérite d'être mentionné qu'une entreprise travaille sur l'équivalent des React Native Server Components pour Flutter.\n- 📦 [L'IDE React Native est désormais en bêta ouverte](https://ide.swmansion.com/): Téléchargez-le simplement comme une extension VS Code depuis le marketplace de VS Code.\n- 📦 [SwiftUI-React-Native 6.0](https://github.com/andrew-levy/swiftui-react-native): Utilisez les fonctionnalités SwiftUI directement depuis React Native.\n- 📦 [React Native Skia 1.3.0](https://github.com/Shopify/react-native-skia/releases/tag/v1.3.0): Skia peut désormais afficher des vidéos.\n- 📦 [Drizzle Studio est désormais disponible pour Expo SQLite via un plugin d'outils de développement](https://github.com/drizzle-team/drizzle-studio-expo/tree/main): C'est super pratique ! Plus besoin de chercher le dossier du système de fichiers du Simulateur sur votre Mac pour ouvrir le fichier sqlite dans une interface graphique séparée à des fins de débogage.\n- 🎥 [Simon Grimm - 10 points à retenir pour les développeurs React Native de la conférence App.js](https://www.youtube.com/watch?v=mhos9givltA)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a627a446",
+      "source_content": "- 📜 [What We Learned From the First State of HTML Survey](https://frontendmasters.com/blog/state-of-html-2023-results-2/)\n- 📜 [\"Web components\" considered harmful](https://www.mayank.co/blog/web-components-considered-harmful/)\n- 📦 [Angular 18.0 - Zoneless, Material 3, deferrable views…](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe)\n- 📦 [TypeScript-ESLint v8 beta - ESLint 9 support](https://typescript-eslint.io/blog/announcing-typescript-eslint-v8-beta/)\n- 📦 [fnm 1.36 - fast Node.js version manager](https://github.com/Schniz/fnm/releases/tag/v1.36.0)\n- 📦 [rsbuild 0.7](https://rsbuild.dev/community/releases/v0-7)",
+      "source_content_hash": "87e4dfbd45674300d7c1f4fd42ffce0474b0a09bc51bbc38474168e1b78e543b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Ce que nous avons appris de la première enquête State of HTML](https://frontendmasters.com/blog/state-of-html-2023-results-2/)\n- 📜 [Les \"Web components\" considérés comme nuisibles](https://www.mayank.co/blog/web-components-considered-harmful/)\n- 📦 [Angular 18.0 - Zoneless, Material 3, vues différées…](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe)\n- 📦 [TypeScript-ESLint v8 bêta - Support ESLint 9](https://typescript-eslint.io/blog/announcing-typescript-eslint-v8-beta/)\n- 📦 [fnm 1.36 - gestionnaire de versions Node.js rapide](https://github.com/Schniz/fnm/releases/tag/v1.36.0)\n- 📦 [rsbuild 0.7](https://rsbuild.dev/community/releases/v0-7)",
+        "en": "- 📜 [Ce que nous avons appris de la première enquête State of HTML](https://frontendmasters.com/blog/state-of-html-2023-results-2/)\n- 📜 [Les « Web components » considérés comme nuisibles](https://www.mayank.co/blog/web-components-considered-harmful/)\n- 📦 [Angular 18.0 - Zoneless, Material 3, vues différées…](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe)\n- 📦 [TypeScript-ESLint v8 bêta - Support d'ESLint 9](https://typescript-eslint.io/blog/announcing-typescript-eslint-v8-beta/)\n- 📦 [fnm 1.36 - gestionnaire de versions Node.js rapide](https://github.com/Schniz/fnm/releases/tag/v1.36.0)\n- 📦 [rsbuild 0.7](https://rsbuild.dev/community/releases/v0-7)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6796530",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ee213c98",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "[![alt](/emails/issues/187/meme.jpg)](https://x.com/jamonholmgren/status/1791255201774719178)",
+      "source_content_hash": "86596d55ada1c48803ef7a47660bfa55b3209678eb460e1ef1ccc59148a1df31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/187/meme.jpg)](https://x.com/jamonholmgren/status/1791255201774719178)",
+        "en": "[![alt](/emails/issues/187/meme.jpg)](https://x.com/jamonholmgren/status/1791255201774719178)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/187/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.434415+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "5911980549fde06255bb55ec55361ccafb1244dc80620d98d403dd2f30d5cda8",
+    "en": "5911980549fde06255bb55ec55361ccafb1244dc80620d98d403dd2f30d5cda8"
+  }
+}

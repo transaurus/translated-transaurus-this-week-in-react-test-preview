@@ -1,0 +1,805 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/155/index.mdx",
+  "source_file_content_hash": "236143e808d0fa1a6691081b9f53e1e13be89462c1620c1b32d2fff4a9ee153e",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /155\ntitle: \"This Week In React #155: RSC DevTools, Next.js Caching, Radix Themes, Expo Party, Graph Gallery, Astro, Apollo, Storybook, Remix, Reanimated, Apple Settings, Stable Diffusion...\"\nauthors: [slorber]\ndate: 08-08-2023\n---",
+      "source_content_hash": "5a859e639ce4e590ea52b2c687112565141666dbd6c01859f4331810460a8c22",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "I thought this week was going to be pretty quiet, but I found a lot of interesting stuff, both on the React and React-Native side!",
+      "source_content_hash": "619c8f8eaffb24336e96e7daa73a383311df992cbf96ea76ddafa534cc8e6f1a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je pensais que cette semaine serait plutôt calme, mais j'ai trouvé beaucoup de choses intéressantes, à la fois sur React et React Native !",
+        "en": "Je pensais que cette semaine serait assez calme, mais j'ai trouvé beaucoup de choses intéressantes, à la fois côté React et React-Native !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The newsletter has just [passed 25,000 subscribers](https://twitter.com/sebastienlorber/status/1689285394855022592)! Thank you for reading me every week and allowing me to continue this adventure.",
+      "source_content_hash": "ddf8936ce8178546eea0671366b66403d746ffb5aa0fc3d1e2eac39d4475b88b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La newsletter vient de [dépasser les 25 000 abonnés](https://twitter.com/sebastienlorber/status/1689285394855022592) ! Merci de me lire chaque semaine et de me permettre de poursuivre cette aventure.",
+        "en": "La newsletter vient de [dépasser les 25 000 abonnés](https://twitter.com/sebastienlorber/status/1689285394855022592) ! Merci de me lire chaque semaine et de me permettre de continuer cette aventure."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_e883b2cc",
+        "en": "@@untranslatable_placeholder_e883b2cc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_92f4ea84",
+        "en": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5dfba1c3",
+        "en": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Drop-in Authentication & User Management for React](/emails/issues/155/clerk.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)",
+      "source_content_hash": "3a88b6d9fef0071eb2a602808753befd41e74b8db5f128c15ff429c5f1b6e3de",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Authentification et gestion d'utilisateurs clés en main pour React](/emails/issues/155/clerk.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)",
+        "en": "[![Authentification et gestion des utilisateurs prête à l'emploi pour React](/emails/issues/155/clerk.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Drop-in Authentication & User Management for React](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)**",
+      "source_content_hash": "f6f70b8ba47bb1d64d521c33724418b86e6df5d15762073aefa6142fb0febfb0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Authentification et gestion d'utilisateurs clés en main pour React](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)**",
+        "en": "**[Authentification et gestion des utilisateurs prête à l'emploi pour React](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Clerk is the easiest way to add authentication and user management to your React app. It’s purpose-built for the modern web and designed to get you up and running in minutes.",
+      "source_content_hash": "43ca5430d014dada2c1a90bb58760dc1ae6f6e2025fbb0fbcde99a9b55fd4b86",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Clerk est le moyen le plus simple d'ajouter l'authentification et la gestion d'utilisateurs à votre application React. Conçu pour le web moderne, il vous permet d'être opérationnel en quelques minutes.",
+        "en": "Clerk est le moyen le plus simple d'ajouter l'authentification et la gestion des utilisateurs à votre application React. Il est conçu pour le web moderne et vous permet d'être opérationnel en quelques minutes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "With Clerk you get:",
+      "source_content_hash": "2bd15aee3b2d17d1b853e92cd7313f6c27a49ae71860f74d610458829c40eb03",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec Clerk, vous obtenez :",
+        "en": "Avec Clerk, vous obtenez :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- 💅 Pre-built UI components for sign-in, sign-up, user profiles, and organizations\n- 📦 SDKs for React, React Native, Next.js, Redwood, Remix, and other frameworks\n- ⚡ Integrations with Firebase, Supabase, Convex, and other BaaS providers\n- 🎁 User management, social login, magic links, MFA, and more out of the box",
+      "source_content_hash": "51beaca7102a5d30f09e8483e3184c0ba1e070481a43d4df1424990e3790c9f0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💅 Composants UI prédéfinis pour la connexion, l'inscription, les profils utilisateurs et les organisations\n- 📦 SDKs pour React, React Native, Next.js, Redwood, Remix et autres frameworks\n- ⚡ Intégrations avec Firebase, Supabase, Convex et autres fournisseurs de BaaS\n- 🎁 Gestion des utilisateurs, connexion sociale, liens magiques, MFA et plus encore prêts à l'emploi",
+        "en": "- 💅 Composants d'interface utilisateur pré-construits pour la connexion, l'inscription, les profils utilisateurs et les organisations\n- 📦 SDK pour React, React Native, Next.js, Redwood, Remix et d'autres frameworks\n- ⚡ Intégrations avec Firebase, Supabase, Convex et d'autres fournisseurs de BaaS\n- 🎁 Gestion des utilisateurs, connexion sociale, liens magiques, MFA et plus encore, prêts à l'emploi"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "Get started with Clerk’s [quickstarts and tutorials](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023) 🚀",
+      "source_content_hash": "99d0ce9f7c7ed09972541487ab1c0ead19187a6817332b45e972f1df7535a93b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Commencez avec les [guides rapides et tutoriels de Clerk](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023) 🚀",
+        "en": "Démarrez avec les [guides de démarrage rapide et tutoriels de Clerk](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023) 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![Devtools for React Server Components](/emails/issues/155/rscdevtools.jpg)](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)",
+      "source_content_hash": "52102eb6226e0b2bd0ac3a23d4e1fb1aa80a3bee8104053e6a843451fedf5c4a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Devtools pour les React Server Components](/emails/issues/155/rscdevtools.jpg)](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)",
+        "en": "[![Outils de développement pour React Server Components](/emails/issues/155/rscdevtools.jpg)](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "[**Devtools for React Server Components**](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)",
+      "source_content_hash": "53b965115749961e40b680a3ecdb1843625b708b4cd66ffb467440db8defbbcb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Devtools pour les React Server Components**](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)",
+        "en": "[**Outils de développement pour React Server Components**](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "Following the release of the React Server Components, Alvar noticed that network communication between client and server used a format that was difficult to decipher. So he started work on a website [RSC Parser](https://rsc-parser.vercel.app/) that allows payloads to be inspected more conveniently. It worked, but the UX wasn't ideal. Since then, he's been working on a real browser extension that works a bit like Chrome's Network DevTools, with a timeline that shows payloads over time and even supports streaming with Suspense. This tool has already enabled him to detect overly large payloads on his blog and optimise them.",
+      "source_content_hash": "c60a2489bac1e9cef42f34e4217fc90a60466f11bc16bcc40e72c5916f6d8603",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Suite à la sortie des React Server Components, Alvar a remarqué que la communication réseau entre client et serveur utilisait un format difficile à déchiffrer. Il a donc commencé à travailler sur un site [RSC Parser](https://rsc-parser.vercel.app/) permettant d'inspecter plus facilement les payloads. Cela fonctionnait, mais l'expérience utilisateur n'était pas idéale. Depuis, il développe une véritable extension navigateur fonctionnant comme les DevTools Réseau de Chrome, avec une chronologie montrant les payloads dans le temps et prenant même en charge le streaming avec Suspense. Cet outil lui a déjà permis de détecter des payloads trop volumineux sur son blog et de les optimiser.",
+        "en": "Suite à la sortie des React Server Components, Alvar a remarqué que la communication réseau entre client et serveur utilisait un format difficile à déchiffrer. Il a donc commencé à travailler sur un site web [RSC Parser](https://rsc-parser.vercel.app/) permettant d'inspecter plus facilement les payloads. Cela fonctionnait, mais l'expérience utilisateur n'était pas idéale. Depuis, il travaille sur une véritable extension de navigateur qui fonctionne un peu comme les Network DevTools de Chrome, avec une chronologie montrant les payloads au fil du temps et prenant même en charge le streaming avec Suspense. Cet outil lui a déjà permis de détecter des payloads trop volumineux sur son blog et de les optimiser."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "It's a promising tool, still under development and worth keeping an eye on. The extension is not yet available in the browser stores, but will be soon. A few video demos in this [Twitter thread](https://twitter.com/sebastienlorber/status/1689203357368365056).",
+      "source_content_hash": "c11683ad870e2d58cbb25244b34cba78009967b59b99f1c4263af45d50470042",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "C'est un outil prometteur, encore en développement et à surveiller. L'extension n'est pas encore disponible dans les boutiques de navigateurs, mais le sera bientôt. Quelques démos vidéo dans ce [fil Twitter](https://twitter.com/sebastienlorber/status/1689203357368365056).",
+        "en": "C'est un outil prometteur, encore en développement et à suivre. L'extension n'est pas encore disponible dans les stores des navigateurs, mais le sera bientôt. Quelques démonstrations vidéo dans ce [fil Twitter](https://twitter.com/sebastienlorber/status/1689203357368365056)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51029da6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "[![Caching in Next.js](/emails/issues/155/cachinginnextjs.jpg)](https://nextjs.org/docs/app/building-your-application/caching)",
+      "source_content_hash": "da613d6ca4a0fc8708855a38749accf3ff6cd4fc5cf2d5532f5b8391bdf8fa4f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Mise en cache dans Next.js](/emails/issues/155/cachinginnextjs.jpg)](https://nextjs.org/docs/app/building-your-application/caching)",
+        "en": "[![Mise en cache dans Next.js](/emails/issues/155/cachinginnextjs.jpg)](https://nextjs.org/docs/app/building-your-application/caching)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "[**Caching in Next.js**](https://nextjs.org/docs/app/building-your-application/caching)",
+      "source_content_hash": "475cfbab8afba95305637bd62146034f48440a6d2c1cac526ad71fbe7d3d9f4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Mise en cache dans Next.js**](https://nextjs.org/docs/app/building-your-application/caching)",
+        "en": "[**Mise en cache dans Next.js**](https://nextjs.org/docs/app/building-your-application/caching)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "A new Next.js documentation page provides a comprehensive explanation of how the 4 levels of caching work, why they exist and how to bypass them:",
+      "source_content_hash": "fecede9c33dd6171b524b719a1db009fca57bbdda050b296215754b3957fac70",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Une nouvelle page de documentation Next.js explique en détail le fonctionnement des 4 niveaux de cache, leur raison d'être et comment les contourner :",
+        "en": "Une nouvelle page de documentation Next.js fournit une explication complète du fonctionnement des 4 niveaux de cache, pourquoi ils existent et comment les contourner :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "- Request Memoization\n- Data Cache\n- Full Route Cache\n- Router Cache",
+      "source_content_hash": "6c88ce820eb0eacd6f889ef2952095f4b7753a81ae8ff8849fb3533ed25ba146",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Mémorisation des requêtes\n- Cache de données\n- Cache de route complet\n- Cache du routeur",
+        "en": "- Mémoïsation des requêtes\n- Cache de données\n- Cache de route complet\n- Cache du routeur"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "It is not possible to bypass the Router cache: a problem that is highlighted in [this video](https://www.youtube.com/watch?v=_yhSh4g0NSk).",
+      "source_content_hash": "378c7704721343c58c7655f5a1f7b16d411203f0049cd93b75e8874081d039a2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Il n'est pas possible de contourner le cache du routeur : un problème mis en évidence dans [cette vidéo](https://www.youtube.com/watch?v=_yhSh4g0NSk).",
+        "en": "Il n'est pas possible de contourner le cache du routeur : un problème mis en lumière dans [cette vidéo](https://www.youtube.com/watch?v=_yhSh4g0NSk)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a635fada",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "[![Radix UI Themes](/emails/issues/155/radix.jpg)](https://www.radix-ui.com/)",
+      "source_content_hash": "23d9346a84264649d8e7f0ed803bcc42aa1d980d236dceaf68e0a216a85105bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Radix UI Themes](/emails/issues/155/radix.jpg)](https://www.radix-ui.com/)",
+        "en": "[![Thèmes Radix UI](/emails/issues/155/radix.jpg)](https://www.radix-ui.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "[**Radix UI Themes**](https://www.radix-ui.com/)",
+      "source_content_hash": "e6ca65ac51e09192e4c487927a5298ef971e279c476a777e33c13a9ead2b645c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Thèmes Radix UI**](https://www.radix-ui.com/)",
+        "en": "[**Thèmes Radix UI**](https://www.radix-ui.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "Radix UI is a headless React library that's been getting a lot of praise lately, not least for the elegant design of its API. They've just announced with a nice trailer ([on Twitter](https://twitter.com/radix_ui/status/1688889619314585600)) that Radix now offers a set of styled components in addition to their primitive ones.",
+      "source_content_hash": "b42d5528acea210b53c298ee7875e841a281dad7708b5f5146839d9b568089ec",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Radix UI est une bibliothèque React sans tête qui reçoit beaucoup d'éloges récemment, notamment pour la conception élégante de son API. Ils viennent d'annoncer avec une bande-annonce soignée ([sur Twitter](https://twitter.com/radix_ui/status/1688889619314585600)) que Radix propose désormais un ensemble de composants stylisés en complément de leurs primitives.",
+        "en": "Radix UI est une bibliothèque React sans tête (headless) qui a reçu beaucoup d'éloges récemment, notamment pour la conception élégante de son API. Ils viennent d'annoncer avec une belle bande-annonce ([sur Twitter](https://twitter.com/radix_ui/status/1688889619314585600)) que Radix propose désormais un ensemble de composants stylisés en plus de leurs primitives."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "254ea949",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ca1573da",
+      "source_content": "- 💬 [What happened to Meta's stylex?](https://www.reddit.com/r/reactjs/comments/13akbvu/what_happened_to_metas_stylex/): the release of the CSS-in-JS lib has been delayed for various reasons, but should be out soon.\n- 📜 [The React Graph Gallery](https://datavizuniverse.substack.com/p/the-react-graph-gallery): Yan advise us not to use an npm charting lib, but rather to take inspiration from the many React + D3 examples available on his site. In the current trend towards using Recipe Kits: Shadcn UI, Tailwind Catalyst...\n- 📜 [Migrating my blog from Gatsby to Astro](https://sapegin.me/blog/gatsby-to-astro/): migration to Astro and Vanilla-Extract, but not very happy with the latter.\n- 📜 [Sending UI over APIs](https://www.builder.io/blog/ui-over-apis): presentation of the Server-Driven UI concept, with a few React examples. For me, RSCs fall into this category.\n- 📜 [My Experience Modernizing Packages to ESM](https://blog.isquaredsoftware.com/2023/08/esm-modernization-lessons/): Mark Erikson details the complexity of providing ESM support for Redux packages. The introduction of RSCs doesn't help.\n- 📜 [Achieving Clean and Maintainable React Component Tests](https://medium.com/globant/achieving-clean-and-maintainable-react-component-tests-b3d5e0483307)\n- 📜 [Use createStateContext to share a useState hook](https://www.jacobparis.com/content/use-state-context)\n- 📜 [Do Contexts in Next.js 13 Make the Whole App Render on the Client?](https://www.perssondennis.com/articles/do-contexts-in-nextjs-13-make-the-whole-app-render-on-the-client)\n- 📜 [Building an email automation system with React Flow and Resend](https://novu.co/blog/building-an-email-automation-system-with-react-flow-and-resend/)\n- 📜 [Markprompt + Algolia: combining prompts with instant search for docs](https://markprompt.com/blog/algolia)\n- 📜 [Forging Leptos Query - TanStack Query in Rust](https://www.nicoburniske.com/thoughts/forging_leptos_query)\n- 📦 [Astro 2.10: Persistent State in View Transitions](https://astro.build/blog/astro-2100/): Astro is pushing back its limits even further by introducing the possibility of persisting state across navigations on stateful islands. Astro v3 is now in beta.\n- 📦 [Next.js Commerce 2.0](https://vercel.com/blog/introducing-next-js-commerce-2-0): e-commerce template with App Router support from Vercel, with official Shopify integration. Detailed article explaining how this template achieves excellent performance.\n- 📦 [Apollo Client 3.8 - React Suspense Integration](https://www.apollographql.com/blog/announcement/frontend/wait-for-it-announcing-apollo-client-3-8-with-react-suspense-integration/): several new features, including 3 new hooks to integrate with Suspense and a Link to remove the GraphQL `__typename`.\n- 📦 [Storybook - Visual Tests addon sneak peek - using Chromatic](https://storybook.js.org/blog/visual-tests-addon-sneak-peek/)\n- 📦 [Remix Dev Tools v2.0 - New settings tab](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v2.0.0)\n- 📦 [Remix-Workers-POC - Run loaders/actions in a Service Workers, enable offline-first support](https://github.com/scandinavianairlines/remix-workers-poc)\n- 🎥 [HTMX: The Game-Changing Alternative to React](https://www.youtube.com/watch?v=DuGyH5RvfbY)\n- 🎥 [What's new in Remotion – July 2023](https://www.youtube.com/watch?v=ABQErIOxUNg)\n- 🎥 [What is Radix UI?](https://www.youtube.com/watch?v=1JnwJBtg4VA)\n- 🎙️ [Software Engineering Daily - Simplifying Documentation with Sébastien Lorber](https://softwareengineeringdaily.com/2023/08/03/simplifying-documentation/)",
+      "source_content_hash": "6ca5e648b63ce5687373d41ff19bde63157ed065c1f19f0e90103acd70255456",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💬 [What happened to Meta's stylex?](https://www.reddit.com/r/reactjs/comments/13akbvu/what_happened_to_metas_stylex/) : la sortie de la bibliothèque CSS-in-JS a été retardée pour diverses raisons, mais devrait bientôt être disponible.\n- 📜 [The React Graph Gallery](https://datavizuniverse.substack.com/p/the-react-graph-gallery) : Yan nous conseille de ne pas utiliser une bibliothèque de graphiques npm, mais plutôt de s'inspirer des nombreux exemples React + D3 disponibles sur son site. Dans la tendance actuelle vers l'utilisation de kits de recettes : Shadcn UI, Tailwind Catalyst...\n- 📜 [Migrating my blog from Gatsby to Astro](https://sapegin.me/blog/gatsby-to-astro/) : migration vers Astro et Vanilla-Extract, mais pas très satisfait de ce dernier.\n- 📜 [Sending UI over APIs](https://www.builder.io/blog/ui-over-apis) : présentation du concept d'UI pilotée par le serveur, avec quelques exemples React. Pour moi, les RSC entrent dans cette catégorie.\n- 📜 [My Experience Modernizing Packages to ESM](https://blog.isquaredsoftware.com/2023/08/esm-modernization-lessons/) : Mark Erikson détaille la complexité de fournir un support ESM pour les packages Redux. L'introduction des RSC n'arrange rien.\n- 📜 [Achieving Clean and Maintainable React Component Tests](https://medium.com/globant/achieving-clean-and-maintainable-react-component-tests-b3d5e0483307)\n- 📜 [Use createStateContext to share a useState hook](https://www.jacobparis.com/content/use-state-context)\n- 📜 [Do Contexts in Next.js 13 Make the Whole App Render on the Client?](https://www.perssondennis.com/articles/do-contexts-in-nextjs-13-make-the-whole-app-render-on-the-client)\n- 📜 [Building an email automation system with React Flow and Resend](https://novu.co/blog/building-an-email-automation-system-with-react-flow-and-resend/)\n- 📜 [Markprompt + Algolia: combining prompts with instant search for docs](https://markprompt.com/blog/algolia)\n- 📜 [Forging Leptos Query - TanStack Query in Rust](https://www.nicoburniske.com/thoughts/forging_leptos_query)\n- 📦 [Astro 2.10: Persistent State in View Transitions](https://astro.build/blog/astro-2100/) : Astro repousse encore ses limites en introduisant la possibilité de persister l'état entre les navigations sur les îlots avec état. Astro v3 est maintenant en version bêta.\n- 📦 [Next.js Commerce 2.0](https://vercel.com/blog/introducing-next-js-commerce-2-0) : modèle d'e-commerce avec support App Router de Vercel, avec intégration officielle Shopify. Article détaillé expliquant comment ce modèle obtient d'excellentes performances.\n- 📦 [Apollo Client 3.8 - React Suspense Integration](https://www.apollographql.com/blog/announcement/frontend/wait-for-it-announcing-apollo-client-3-8-with-react-suspense-integration/) : plusieurs nouvelles fonctionnalités, dont 3 nouveaux hooks pour s'intégrer à Suspense et un Link pour supprimer le `__typename` GraphQL.\n- 📦 [Storybook - Visual Tests addon sneak peek - using Chromatic](https://storybook.js.org/blog/visual-tests-addon-sneak-peek/)\n- 📦 [Remix Dev Tools v2.0 - New settings tab](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v2.0.0)\n- 📦 [Remix-Workers-POC - Run loaders/actions in a Service Workers, enable offline-first support](https://github.com/scandinavianairlines/remix-workers-poc)\n- 🎥 [HTMX: The Game-Changing Alternative to React](https://www.youtube.com/watch?v=DuGyH5RvfbY)\n- 🎥 [What's new in Remotion – July 2023](https://www.youtube.com/watch?v=ABQErIOxUNg)\n- 🎥 [What is Radix UI?](https://www.youtube.com/watch?v=1JnwJBtg4VA)\n- 🎙️ [Software Engineering Daily - Simplifying Documentation with Sébastien Lorber](https://softwareengineeringdaily.com/2023/08/03/simplifying-documentation/)",
+        "en": "- 💬 [Qu'est-il arrivé à stylex de Meta ?](https://www.reddit.com/r/reactjs/comments/13akbvu/what_happened_to_metas_stylex/) : la sortie de la bibliothèque CSS-in-JS a été retardée pour diverses raisons, mais devrait bientôt arriver.\n- 📜 [La Galerie de Graphiques React](https://datavizuniverse.substack.com/p/the-react-graph-gallery) : Yan nous conseille de ne pas utiliser une bibliothèque de graphiques npm, mais plutôt de s'inspirer des nombreux exemples React + D3 disponibles sur son site. Dans la tendance actuelle vers l'utilisation de kits de recettes : Shadcn UI, Tailwind Catalyst...\n- 📜 [Migration de mon blog de Gatsby vers Astro](https://sapegin.me/blog/gatsby-to-astro/) : migration vers Astro et Vanilla-Extract, mais pas très satisfait de ce dernier.\n- 📜 [Envoyer des UI via des API](https://www.builder.io/blog/ui-over-apis) : présentation du concept Server-Driven UI, avec quelques exemples React. Pour moi, les RSCs entrent dans cette catégorie.\n- 📜 [Mon expérience de modernisation des paquets vers ESM](https://blog.isquaredsoftware.com/2023/08/esm-modernization-lessons/) : Mark Erikson détaille la complexité de la prise en charge ESM pour les paquets Redux. L'introduction des RSCs n'arrange rien.\n- 📜 [Atteindre des tests de composants React propres et maintenables](https://medium.com/globant/achieving-clean-and-maintainable-react-component-tests-b3d5e0483307)\n- 📜 [Utiliser createStateContext pour partager un hook useState](https://www.jacobparis.com/content/use-state-context)\n- 📜 [Les Contextes dans Next.js 13 rendent-ils toute l'application côté client ?](https://www.perssondennis.com/articles/do-contexts-in-nextjs-13-make-the-whole-app-render-on-the-client)\n- 📜 [Construire un système d'automatisation d'emails avec React Flow et Resend](https://novu.co/blog/building-an-email-automation-system-with-react-flow-and-resend/)\n- 📜 [Markprompt + Algolia : combiner les invites avec la recherche instantanée pour la documentation](https://markprompt.com/blog/algolia)\n- 📜 [Forger Leptos Query - TanStack Query en Rust](https://www.nicoburniske.com/thoughts/forging_leptos_query)\n- 📦 [Astro 2.10 : État persistant dans les transitions de vue](https://astro.build/blog/astro-2100/) : Astro repousse encore ses limites en introduisant la possibilité de persister l'état entre les navigations sur des îlots stateful. Astro v3 est désormais en bêta.\n- 📦 [Next.js Commerce 2.0](https://vercel.com/blog/introducing-next-js-commerce-2-0) : template e-commerce avec support d'App Router par Vercel, avec intégration officielle Shopify. Article détaillé expliquant comment ce template atteint d'excellentes performances.\n- 📦 [Apollo Client 3.8 - Intégration React Suspense](https://www.apollographql.com/blog/announcement/frontend/wait-for-it-announcing-apollo-client-3-8-with-react-suspense-integration/) : plusieurs nouvelles fonctionnalités, dont 3 nouveaux hooks pour intégrer Suspense et un Link pour supprimer le `__typename` GraphQL.\n- 📦 [Storybook - Aperçu de l'addon Visual Tests - utilisant Chromatic](https://storybook.js.org/blog/visual-tests-addon-sneak-peek/)\n- 📦 [Remix Dev Tools v2.0 - Nouvel onglet de paramètres](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v2.0.0)\n- 📦 [Remix-Workers-POC - Exécuter les loaders/actions dans un Service Worker, activer le support offline-first](https://github.com/scandinavianairlines/remix-workers-poc)\n- 🎥 [HTMX : L'alternative révolutionnaire à React](https://www.youtube.com/watch?v=DuGyH5RvfbY)\n- 🎥 [Quoi de neuf dans Remotion - Juillet 2023](https://www.youtube.com/watch?v=ABQErIOxUNg)\n- 🎥 [Qu'est-ce que Radix UI ?](https://www.youtube.com/watch?v=1JnwJBtg4VA)\n- 🎙️ [Software Engineering Daily - Simplifier la documentation avec Sébastien Lorber](https://softwareengineeringdaily.com/2023/08/03/simplifying-documentation/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6060e09",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c6060e09",
+        "en": "@@untranslatable_placeholder_c6060e09"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dd8754e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7c92a79",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Commanditaire {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "[![A Non-Cloud Alternative to Google Forms that has it all](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)",
+      "source_content_hash": "9d06d7f1c0eb344879cf9f225aa0f8c69ceb29f2b0cc01c6ab33c401ccb9fd8d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Une alternative non-cloud à Google Forms qui a tout](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)",
+        "en": "[![Une alternative non-cloud à Google Forms qui a tout pour plaire](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "**[A Non-Cloud Alternative to Google Forms that has it all](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**",
+      "source_content_hash": "3cf735c90f1e64ebbaadd40cbca7c1e97fb9ce688c88a0419e11d5219a842106",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Une alternative non-cloud à Google Forms qui a tout](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**",
+        "en": "**[Une alternative non-cloud à Google Forms qui a tout pour plaire](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "If you are looking to set up a robust form management system fully integrated in your IT infrastructure that allows you to retain full control over the data flow, and you don’t want to spend months and thousands of dollars to get it up and running, then SurveyJS is the way to go!",
+      "source_content_hash": "9b65e3311009ca0dcdaf514fcb31fc043c9dfce07b4c4d6da60ea71fa738cd1c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Si vous cherchez à mettre en place un système robuste de gestion de formulaires entièrement intégré à votre infrastructure informatique, vous permettant de conserver un contrôle total sur le flux de données, sans passer des mois ni dépenser des milliers de dollars pour le déployer, alors SurveyJS est la solution idéale !",
+        "en": "Si vous cherchez à mettre en place un système robuste de gestion de formulaires entièrement intégré à votre infrastructure informatique, qui vous permet de conserver un contrôle total sur le flux de données, sans passer des mois ni dépenser des milliers de dollars pour le déployer, alors SurveyJS est la solution idéale !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "SurveyJS is a product suite of four open-source JavaScript libraries that allow you to create and edit multiple dynamic JSON-based forms in a drag-and-drop form builder, render them in your React app and store sensitive survey data within your in-house infrastructure. You can then render your custom surveys and forms as editable PDF files in a browser and visualize survey results with interactive charts and tables. [Learn more now](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email).",
+      "source_content_hash": "300205df37634d8ea4dd8f062be0e9a07b1df492da9e7a8b92377e55bf7a7328",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "SurveyJS est une suite produit de quatre bibliothèques JavaScript open-source permettant de créer et modifier plusieurs formulaires dynamiques basés sur JSON via un constructeur drag-and-drop, de les afficher dans votre application React et de stocker les données sensibles d'enquêtes au sein de votre infrastructure interne. Vous pouvez ensuite générer vos enquêtes personnalisées sous forme de PDF modifiables dans un navigateur et visualiser les résultats via des graphiques et tableaux interactifs. [En savoir plus dès maintenant](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email).",
+        "en": "SurveyJS est une suite produit composée de quatre bibliothèques JavaScript open-source permettant de créer et modifier plusieurs formulaires dynamiques basés sur JSON via un créateur de formulaires par glisser-déposer, de les afficher dans votre application React et de stocker les données sensibles des enquêtes au sein de votre infrastructure interne. Vous pouvez ensuite générer vos enquêtes et formulaires personnalisés sous forme de fichiers PDF modifiables dans un navigateur et visualiser les résultats avec des graphiques et tableaux interactifs. [En savoir plus maintenant](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55c9cb00",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f8614e13",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "[![Expo Launch Party](/emails/issues/155/expolaunchparty.jpg)](https://expo.dev/launch-party)",
+      "source_content_hash": "dff88ae680f3f948ac678eee1002f6a5c99028748ae0737ff362502da26e121f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Expo Launch Party](/emails/issues/155/expolaunchparty.jpg)](https://expo.dev/launch-party)",
+        "en": "[![Expo Launch Party](/emails/issues/155/expolaunchparty.jpg)](https://expo.dev/launch-party)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "[**Expo Launch Party**](https://expo.dev/launch-party)",
+      "source_content_hash": "aa8ccc6110baf223a72eb003c1baad1a95f3a1f2335d236393c864a1142be2ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Expo Launch Party**](https://expo.dev/launch-party)",
+        "en": "[**Expo Launch Party**](https://expo.dev/launch-party)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f38d1cb0",
+      "source_content": "This week, Expo will be announcing many new great things. For the moment, we have:",
+      "source_content_hash": "6cae1efbcda46f953f56b618ca1ac98d430d4cec297219f2d192b06baa3b9dcc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, Expo annoncera de nombreuses nouveautés. Pour l'instant, nous avons :",
+        "en": "Cette semaine, Expo annoncera de nombreuses nouveautés. Pour l'instant, nous avons :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0aa939cf",
+      "source_content": "- [Feature Preview: Single Sign-On (SSO)](https://blog.expo.dev/feature-preview-single-sign-on-sso-9c1a7d50c1a9)\n- [Feature Preview: Rollouts for EAS Update](https://blog.expo.dev/feature-preview-rollouts-for-eas-update-4eac28596470)\n- [useUpdates() API for expo-updates](https://expo.dev/changelog/2023/08-08-use-updates-api)\n- [Expo Orbit: Download and launch builds](https://expo.dev/changelog/2023/08-09-orbit)",
+      "source_content_hash": "0bebe5ef94b8026a3017c307ff65c79364be320e9e8dc5f958d10c7caaef7951",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Aperçu de fonctionnalité : Authentification unique (SSO)](https://blog.expo.dev/feature-preview-single-sign-on-sso-9c1a7d50c1a9)\n- [Aperçu de fonctionnalité : Déploiements progressifs pour EAS Update](https://blog.expo.dev/feature-preview-rollouts-for-eas-update-4eac28596470)\n- [API useUpdates() pour expo-updates](https://expo.dev/changelog/2023/08-08-use-updates-api)\n- [Expo Orbit : Télécharger et lancer les builds](https://expo.dev/changelog/2023/08-09-orbit)",
+        "en": "- [Aperçu fonctionnel : Single Sign-On (SSO)](https://blog.expo.dev/feature-preview-single-sign-on-sso-9c1a7d50c1a9)\n- [Aperçu fonctionnel : Déploiements progressifs pour EAS Update](https://blog.expo.dev/feature-preview-rollouts-for-eas-update-4eac28596470)\n- [API useUpdates() pour expo-updates](https://expo.dev/changelog/2023/08-08-use-updates-api)\n- [Expo Orbit : Télécharger et lancer des builds](https://expo.dev/changelog/2023/08-09-orbit)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "75603060",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "- 💬 [Help us Kotlin-ify React Native tests - Round 2](https://github.com/facebook/react-native/issues/38825): the React-Native devs are once again inviting us to contribute to the codebase conversion effort from Java to Kotlin.\n- 🐦 [Upcoming support for Reanimated worklets background tasks?](https://twitter.com/tomekzaw_/status/1688565879456350208)\n- 🐦 [Wishlist Update - Launching soon](https://twitter.com/margelo_io/status/1689270087583195136)\n- 📜 [How to Create AI-Generated Images on iOS in React Native Using Stable Diffusion](https://andreizgirvaci.com/blog/how-to-create-ai-generated-images-on-ios-in-react-native-using-stable-diffusion): Andrei explains how you can generate AI images locally, directly from your iPhone, with his new [expo-stable-diffusion](https://github.com/andrei-zgirvaci/expo-stable-diffusion) package.\n- 📜 [Using Rust in React Native - Article and video tutorial](https://ospfranco.notion.site/Rust-in-React-Native-43316cdc499f43b48e9bc014074d3f72)\n- 📦 [Expo Config Plugins - Apple Settings](https://github.com/expo/config-plugins/tree/main/packages/apple-settings)\n- 📦 [React-Native Testing Library v12.2.0 - New User Event API](https://callstack.github.io/react-native-testing-library/docs/user-event)\n- 📦 [React-Native-Wireframe-UI - Wireframe UI kit for React Native](https://github.com/rborn/react-native-wireframe-ui)\n- 📦 [React-Native-Bootsplash v5 beta - Bye AndroidX, dark mode + brand image support, useHideAnimation hook, etc](https://github.com/zoontek/react-native-bootsplash/pull/475)\n- 🎥 [Make or port your SDK to react native](https://www.youtube.com/watch?v=A0JtWXt75yw)\n- 🎥 [How to make an Animated Gradient Picker with React Native Reanimated](https://www.youtube.com/watch?v=_FehNLxxpRY)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław, September 7–8, 2023) is offering us [-15% on conference tickets](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) with code \"thisweekinreact15\".",
+      "source_content_hash": "8770c3bf2826bc535620b64605294b1cffda5f1a9de2cbedc1dd2d6a98bec9c8",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💬 [Aidez-nous à convertir les tests React Native en Kotlin - Round 2](https://github.com/facebook/react-native/issues/38825) : les développeurs React Native nous invitent à nouveau à contribuer à l'effort de conversion de la base de code de Java vers Kotlin.\n- 🐦 [Prise en charge prochaine des tâches en arrière-plan des worklets de Reanimated ?](https://twitter.com/tomekzaw_/status/1688565879456350208)\n- 🐦 [Mise à jour de la liste de souhaits - Lancement prochain](https://twitter.com/margelo_io/status/1689270087583195136)\n- 📜 [Comment créer des images générées par IA sur iOS dans React Native avec Stable Diffusion](https://andreizgirvaci.com/blog/how-to-create-ai-generated-images-on-ios-in-react-native-using-stable-diffusion) : Andrei explique comment générer des images IA localement, directement depuis votre iPhone, avec son nouveau package [expo-stable-diffusion](https://github.com/andrei-zgirvaci/expo-stable-diffusion).\n- 📜 [Utiliser Rust dans React Native - Article et tutoriel vidéo](https://ospfranco.notion.site/Rust-in-React-Native-43316cdc499f43b48e9bc014074d3f72)\n- 📦 [Expo Config Plugins - Paramètres Apple](https://github.com/expo/config-plugins/tree/main/packages/apple-settings)\n- 📦 [React-Native Testing Library v12.2.0 - Nouvelle API User Event](https://callstack.github.io/react-native-testing-library/docs/user-event)\n- 📦 [React-Native-Wireframe-UI - Kit d'interface filaire pour React Native](https://github.com/rborn/react-native-wireframe-ui)\n- 📦 [React-Native-Bootsplash v5 beta - Adieu AndroidX, mode sombre + support de l'image de marque, hook useHideAnimation, etc](https://github.com/zoontek/react-native-bootsplash/pull/475)\n- 🎥 [Créer ou porter votre SDK vers React Native](https://www.youtube.com/watch?v=A0JtWXt75yw)\n- 🎥 [Créer un sélecteur de dégradé animé avec React Native Reanimated](https://www.youtube.com/watch?v=_FehNLxxpRY)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław, 7–8 septembre 2023) nous offre [-15% sur les billets de conférence](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) avec le code \"thisweekinreact15\".",
+        "en": "- 💬 [Aidez-nous à transformer React Native en Kotlin pour les tests - Round 2](https://github.com/facebook/react-native/issues/38825) : les développeurs de React Native nous invitent à nouveau à contribuer à l'effort de conversion de la base de code de Java vers Kotlin.\n- 🐦 [Prise en charge prochaine des tâches en arrière-plan pour les worklets Reanimated ?](https://twitter.com/tomekzaw_/status/1688565879456350208)\n- 🐦 [Mise à jour de la liste de souhaits - Lancement imminent](https://twitter.com/margelo_io/status/1689270087583195136)\n- 📜 [Comment créer des images générées par IA sur iOS dans React Native avec Stable Diffusion](https://andreizgirvaci.com/blog/how-to-create-ai-generated-images-on-ios-in-react-native-using-stable-diffusion) : Andrei explique comment générer des images IA localement, directement depuis votre iPhone, avec son nouveau package [expo-stable-diffusion](https://github.com/andrei-zgirvaci/expo-stable-diffusion).\n- 📜 [Utiliser Rust dans React Native - Article et tutoriel vidéo](https://ospfranco.notion.site/Rust-in-React-Native-43316cdc499f43b48e9bc014074d3f72)\n- 📦 [Expo Config Plugins - Paramètres Apple](https://github.com/expo/config-plugins/tree/main/packages/apple-settings)\n- 📦 [React-Native Testing Library v12.2.0 - Nouvelle API User Event](https://callstack.github.io/react-native-testing-library/docs/user-event)\n- 📦 [React-Native-Wireframe-UI - Kit d'interface filaire pour React Native](https://github.com/rborn/react-native-wireframe-ui)\n- 📦 [React-Native-Bootsplash v5 bêta - Adieu AndroidX, mode sombre + support d'image de marque, hook useHideAnimation, etc](https://github.com/zoontek/react-native-bootsplash/pull/475)\n- 🎥 [Créer ou porter votre SDK vers React Native](https://www.youtube.com/watch?v=A0JtWXt75yw)\n- 🎥 [Comment créer un sélecteur de dégradé animé avec React Native Reanimated](https://www.youtube.com/watch?v=_FehNLxxpRY)\n- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław, 7-8 septembre 2023) nous offre [-15% sur les billets de conférence](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) avec le code \"thisweekinreact15\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8bc5aad7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dd4905a4",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Emplois {#jobs}",
+        "en": "## 🧑‍💻 Emplois {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - 160k€+, Berlin/distanciel**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+        "en": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/télétravail**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Réseaux Sociaux et Newsletters. Rejoignez-nous pour construire un outil permettant aux créateurs mondiaux de développer des activités évolutives et durables.",
+        "en": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, réseaux sociaux et newsletters. Rejoignez-nous pour construire un outil permettant aux créateurs mondiaux de bâtir des entreprises évolutives et durables."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42d9ca67",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Callstack - Développeur React Native Senior - 100% distant, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)",
+        "en": "🧑‍💼 [**Callstack - Développeur React Native Senior - Télétravail complet, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Souhaitez-vous travailler sur les applications les plus utilisées au monde ? Contribuer à co-créer la technologie React Native ? Rejoignez l'équipe de leaders React & React Native chez Callstack. Consultez notre site pour plus de détails. Nous attendons votre candidature avec impatience - montrez-nous votre talent !",
+        "en": "Souhaitez-vous travailler sur les applications les plus utilisées au monde ? Contribuer à co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature avec impatience - montrez-nous votre talent !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% distanciel**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes pour développeurs spécialisés en React Native ! Rémunération ~160k + 10% de bonus. Expérience en production RN requise et résidence aux États-Unis. Contactez [@gabe_g2i](https://twitter.com/gabe_g2i) pour plus d'infos en mentionnant This Week in React.",
+        "en": "Nous avons plusieurs postes ouverts pour développeurs spécialisés en React Native ! Rémunération ~160k + 10% de bonus. Expérience en production RN requise et résidence aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et mentionnez This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a0d6d6c7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5905b07",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccb70509",
+      "source_content": "- 👀 [Project IDX - Google's new browser-based code environment with AI assistance](https://idx.dev/)\n- 📜 [Atlassian - Rendering like Butter – a Confluence Whiteboards Story](https://www.atlassian.com/engineering/rendering-like-butter-a-confluence-whiteboards-story)\n- 📜 [We’ve built TypeScript ORM for 821 days then this happened](https://medium.com/@aleksandrblokh/weve-built-typescript-orm-for-821-days-then-this-happened-71282a8b0206)\n- 📜 [Bringing Sharp to WebAssembly and WebContainers](https://blog.stackblitz.com/posts/bringing-sharp-to-wasm-and-webcontainers/)\n- 📜 [Unraveling the magic of Pattern Matching](https://www.swan.io/blog-posts/unraveling-the-magic-of-pattern-matching)\n- 📦 [VitePress v1.0 RC](https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md)\n- 📦 [Deno 1.36: More flexible security and expanded testing APIs](https://deno.com/blog/v1.36)\n- 📦 [Dioxus 0.4 - Library for building React-like user interface in Rust](https://dioxuslabs.com/blog/release-040)",
+      "source_content_hash": "bf465ac6f81a1bb561b7ac96094538bcbab7be39811f007d3e2007cf3e9e7965",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Project IDX - Le nouvel environnement de code basé navigateur de Google avec assistance IA](https://idx.dev/)\n- 📜 [Atlassian - Rendu fluide comme du beurre - L'histoire des tableaux blancs Confluence](https://www.atlassian.com/engineering/rendering-like-butter-a-confluence-whiteboards-story)\n- 📜 [Nous avons construit un ORM TypeScript pendant 821 jours puis ceci est arrivé](https://medium.com/@aleksandrblokh/weve-built-typescript-orm-for-821-days-then-this-happened-71282a8b0206)\n- 📜 [Portage de Sharp vers WebAssembly et WebContainers](https://blog.stackblitz.com/posts/bringing-sharp-to-wasm-and-webcontainers/)\n- 📜 [Démystifier la magie du Pattern Matching](https://www.swan.io/blog-posts/unraveling-the-magic-of-pattern-matching)\n- 📦 [VitePress v1.0 RC](https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md)\n- 📦 [Deno 1.36 : Sécurité plus flexible et API de test étendues](https://deno.com/blog/v1.36)\n- 📦 [Dioxus 0.4 - Bibliothèque pour construire des interfaces utilisateur de type React en Rust](https://dioxuslabs.com/blog/release-040)",
+        "en": "- 👀 [Project IDX - Nouvel environnement de code basé navigateur avec assistance IA de Google](https://idx.dev/)\n- 📜 [Atlassian - Rendu comme du beurre : l'histoire des tableaux blancs Confluence](https://www.atlassian.com/engineering/rendering-like-butter-a-confluence-whiteboards-story)\n- 📜 [Nous avons construit un ORM TypeScript pendant 821 jours puis ceci est arrivé](https://medium.com/@aleksandrblokh/weve-built-typescript-orm-for-821-days-then-this-happened-71282a8b0206)\n- 📜 [Apporter Sharp à WebAssembly et WebContainers](https://blog.stackblitz.com/posts/bringing-sharp-to-wasm-and-webcontainers/)\n- 📜 [Démêler la magie du Pattern Matching](https://www.swan.io/blog-posts/unraveling-the-magic-of-pattern-matching)\n- 📦 [VitePress v1.0 RC](https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md)\n- 📦 [Deno 1.36 : Sécurité plus flexible et API de test étendues](https://deno.com/blog/v1.36)\n- 📦 [Dioxus 0.4 - Bibliothèque pour créer des interfaces utilisateur de type React en Rust](https://dioxuslabs.com/blog/release-040)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4b6c0556",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a75f8411",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39c48ff7",
+      "source_content": "[![alt](/emails/issues/155/meme.jpg)](https://twitter.com/fireship_dev/status/1687106416614764547)",
+      "source_content_hash": "8a87a0b600d13226385224ff9b5a7750887f2147d88645e3d2bab2901b6ac304",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/155/meme.jpg)](https://twitter.com/fireship_dev/status/1687106416614764547)",
+        "en": "[![alt](/emails/issues/155/meme.jpg)](https://twitter.com/fireship_dev/status/1687106416614764547)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e29bd639",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus tard ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/155/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.167220+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "236143e808d0fa1a6691081b9f53e1e13be89462c1620c1b32d2fff4a9ee153e",
+    "en": "236143e808d0fa1a6691081b9f53e1e13be89462c1620c1b32d2fff4a9ee153e"
+  }
+}

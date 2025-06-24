@@ -1,0 +1,198 @@
+---
+slug: /152
+title: "This Week In React #152: React 18, RSC, Kuma UI, Expo 49, Next.js, Remix DevTools, Fresh, React-Query, Redwood, Catalyst, Million, MDXEditor, Ariakit, Rewind, TC39, Prettier..."
+authors: [slorber]
+date: 07-18-2023
+---
+
+Bonjour à tous !
+
+Je reviens tout juste de vacances en Bretagne française 😎, donc nous couvrons deux semaines d'actualités dans cette édition.
+
+Je pensais que ce serait un été calme, mais il y a eu pas mal de sorties et beaucoup d'articles sur les Server Components ! 😄
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- Interface d'édition pour vos fichiers Markdown
+- Interface pour les composants MDX
+- Prend en charge le rendu statique (SSG) et côté serveur (SSR)
+- Option pour l'édition visuelle (prévisualisation en direct)
+- Construction avec blocs réutilisables
+
+Testez un site de démarrage
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)
+- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)
+
+Ou exécutez `npx create-tina-app@latest` puis visitez `localhost:3000/admin`
+
+Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## ⚛️ React {#react}
+
+[![Comment React 18 améliore les performances des applications](/emails/issues/152/react18perf.jpg)](https://vercel.com/blog/how-react-18-improves-application-performance)
+
+**[Comment React 18 améliore les performances des applications](https://vercel.com/blog/how-react-18-improves-application-performance)**
+
+Article complet et bien illustré sur React 18 et son impact sur les performances. Explique le fonctionnement du Concurrent React et son influence sur des métriques comme le Total Blocking Time et l'Interaction to Next Paint. Présente également d'autres nouvelles fonctionnalités comme l'API Transition, les React Server Components, Suspense et le nouveau cache React.
+
+---
+
+[![Kuma UI](/emails/issues/152/kuma.jpg)](https://www.kuma-ui.com/)
+
+**[Kuma UI](https://www.kuma-ui.com/)**
+
+Nouvelle bibliothèque CSS-in-JS inspirée par la DX offerte par Chakra UI, et compatible avec les React Server Components. La bibliothèque repose sur une méthode hybride unique combinant le meilleur des solutions CSS-in-JS sans runtime et des solutions runtime traditionnelles. Nous devrons étudier tout cela et voir comment cette bibliothèque se compare à [Panda CSS](https://panda-css.com/) de l'équipe Chakra.
+
+---
+
+- 🐦 [Matt Carroll, responsable des relations développeurs, a rejoint l'équipe React](https://twitter.com/mattcarrollcode/status/1681342638816112641)
+- 👀 [Comment configurer les composants serveur expérimentaux de Redwood](https://community.redwoodjs.com/t/react-server-components-rsc/5081)
+- 👀 [React-Query-Nextjs](https://twitter.com/TkDodo/status/1680153231853223938) : Prise en charge expérimentale de React-Query pour le répertoire App de Next.js.
+- 📜 [Mon avis sur la controverse actuelle autour des composants serveur de React](https://phryneas.de/react-server-components-controversy) : Lenz adore les composants serveur de React mais explique sa frustration en tant que mainteneur d'Apollo Client et de Redux Toolkit.
+- 📜 [Démystifier les composants serveur de React avec le routeur App de NextJS 13](https://demystifying-rsc.vercel.app/) : une superbe application de démonstration avec des notes bien illustrées expliquant le fonctionnement des composants serveur, incluant de nombreux exemples de code et de charges utiles réseau.
+- 📜 [5 pièges courants avec les composants serveur dans Next13 (avec exemples)](https://www.propelauth.com/post/5-common-pitfalls-with-server-components-in-next13-with-examples) : un article bien illustré présentant les erreurs les plus courantes lors de l'utilisation des composants serveur.
+- 📜 [Ajuster la typographie avec Capsize](https://www.skovy.dev/blog/using-capsize-with-stitches) : explique comment ajuster et normaliser les espaces blancs autour de vos polices pour faciliter l'alignement, dans un contexte React.
+- 📜 [SvelteJS : Mon écosystème est plus grand que le vôtre](https://hackmd.io/@roguegpu/r1RKQMdt3) : une critique intéressante de React en faveur de Svelte, qui n'a pas besoin d'autant d'écosystème.
+- 📜 [Pourquoi les composants serveur - Une brève histoire du Web](https://www.perssondennis.com/articles/why-server-components-a-brief-history-of-web)
+- 📜 [Un guide visuel du préchargement dans Next.js 13](https://www.builder.io/blog/prefetching-nextjs-visual-guide)
+- 📜 [Sauvegarde automatique des champs de formulaire avec Remix](https://www.jacobparis.com/content/remix-form-autosave)
+- 📜 [Ariakit est désormais stable](https://newsletter.ariakit.org/p/stable)
+- 📜 [Un modèle pour enchaîner les middlewares nextjs](https://raphael.badia.cc/posts/a-pattern-for-chaining-middlewares)
+- 📜 [Adopter le polymorphisme pour des composants flexibles](https://brightinventions.pl/blog/embracing-polymorphism-for-flexible-components/)
+- 📦 [Fresh 1.3 – Composants de route simplifiés et plus encore](https://twitter.com/deno_land/status/1681340646723039232)
+- 📦 [Next.js 13.4.10](https://github.com/vercel/next.js/releases/tag/v13.4.10)
+- 📦 [Million.js 2.5 - Macros au moment de la compilation](https://twitter.com/aidenybai/status/1679698685603774464)
+- 📦 [Outils de développement Remix](https://twitter.com/AlemTuzlak59192/status/1680538200702369794)
+- 📦 [Remix-Hono](https://github.com/sergiodxa/remix-hono)
+- 📦 [Remix-JSON-Routes](https://github.com/brophdawg11/remix-json-routes)
+- 📦 [Vercel Platforms Starter Kit - Modèle pour créer des applications multi-locataires en utilisant le routeur App de Next.js](https://vercel.com/blog/platforms-starter-kit)
+- 📦 [MDX Editor - Composant React WYSIWYG pour l'édition Markdown](https://mdxeditor.dev/)
+- 📦 [Rewind-UI - Bibliothèque de composants React-TailwindCSS](https://rewind-ui.dev/)
+- 📦 [Featurevisor - Feature flags basés sur Git, avec des liaisons React](https://github.com/fahad19/featurevisor)
+- 🎥 [Tailwind Connect 2023 — Keynote](https://www.youtube.com/watch?v=CLkxRnRQtDE) : annonce de Catalyst, un React UI kit
+- 🎥 [Legend : Le gestionnaire d'état React ultime ?](https://www.youtube.com/watch?v=E4TH77SMOG8)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Porkbun.com - Le meilleur registraire de noms de domaine](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)
+
+**[Porkbun.com - Le meilleur registraire de noms de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**
+
+Porkbun propose des centaines d'extensions de domaine pour les développeurs React et React-Native, de .dev et .app à .cloud, .xyz et .ai — toutes aux **prix les plus bas du marché !** Chaque nom de domaine chez Porkbun est accompagné de **tonnes de fonctionnalités gratuites** comme :
+
+- Certificats SSL
+- Confidentialité WHOIS
+- DNS
+- Redirection d'URL
+- Essais d'hébergement Web et Email
+
+Découvrez notre **outil de recherche généré par IA** qui change la façon dont les gens cherchent des noms de domaine. Tout cela est soutenu par un **support incroyable 365 jours par an** ainsi que des milliers d'avis réels cinq étoiles sur Trustpilot.
+
+Cliquez sur le lien et [obtenez 1$ de réduction sur votre prochaine inscription de nom de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023) chez Porkbun.com !
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo SDK 49](/emails/issues/152/expo49.jpg)](https://blog.expo.dev/expo-sdk-49-c6d398cdf740)
+
+**[Expo SDK 49](https://blog.expo.dev/expo-sdk-49-c6d398cdf740)**
+
+Le nouveau SDK 49 vient d'être publié. De nombreuses fonctionnalités ont été annoncées, dont mes préférées :
+
+- React Native 0.72.3, React Native Web 0.19.6
+- Expo Router v2.0
+- Débogage réseau, débogage VS Code
+- React devtools intégrés
+- Variables d'environnement
+- Modules Expo locaux
+- EAS Insights
+
+---
+
+[![Annonce d'Expo Router v2](/emails/issues/152/exporouter2.jpg)](https://blog.expo.dev/introducing-expo-router-v2-3850fd5c3ca1)
+
+**[Annonce d'Expo Router v2](https://blog.expo.dev/introducing-expo-router-v2-3850fd5c3ca1)**
+
+Parallèlement au SDK 49, Expo annonce également la sortie d'Expo Router v2 avec de nombreuses améliorations, notamment :
+
+- Prise en charge de TypeScript
+- Routes statiques, SEO, métadonnées Head
+- Routes asynchrones
+- Universal Linking, handoff
+- CSS et style
+
+---
+
+- 📜 [Réflexions sur le partage de code entre React et React Native](https://matthewwolfe.github.io/blog/code-sharing-react-and-react-native)
+- 📜 [Une nouvelle approche du développement React Native et de la composition d'équipe](https://itnext.io/a-new-approach-to-react-native-development-and-team-composition-d6e3e3eb5184)
+- 📦 [React-Native 0.72.3](https://github.com/facebook/react-native/releases/tag/v0.72.3)
+- 📦 [Flashlight 0.8 - commande measure](https://twitter.com/almouro/status/1676202443346944000)
+- 📦 [react-native-image-colors 2.3 - prise en charge d'Expo 49](https://github.com/osamaqarem/react-native-image-colors)
+- 📦 [react-native-android-widget 0.7 - prise en charge d'Expo 49](https://github.com/sAleksovski/react-native-android-widget)
+- 🎙️ [RNR 271 - React Native du point de vue d'un développeur Flutter](https://reactnativeradio.com/episodes/rnr-271-rn-from-a-flutter-devs-perspective)
+- 🎥 [Expo SDK 49 : Nouvelles fonctionnalités et améliorations](https://www.youtube.com/watch?v=1CVlTqHW5xQ)
+- 🎥 [Theo sur la fin de React Native chez Airbnb](https://www.youtube.com/watch?v=ZM8lJIJb2Q4)
+- 🎥 [Top 9 des bibliothèques de composants UI React Native en 2023](https://www.youtube.com/watch?v=SfJGBbv-qQw)
+
+---
+
+## 🧑‍💻 Emplois {#jobs}
+
+🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - 160k€+, Berlin/distanciel**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, podcasts, réseaux sociaux et newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de développer des activités évolutives et durables.
+
+🧑‍💼 [**Callstack - Développeur React Native Senior - 100% distanciel, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)
+
+Souhaitez-vous travailler sur les applications les plus utilisées au monde ? Aimeriez-vous co-créer la technologie React Native ? Rejoignez l'équipe de Callstack, leader React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature - montrez-nous ce que vous savez faire !
+
+🧑‍💼 [**G2i - Emplois React Native 100% distanciel**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k$ plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Contactez [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.
+
+💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 Autres {#other}
+
+- [Mises à jour de la 97e réunion du TC39](https://dev.to/hemanth/updates-from-the-97th-tc39-meeting-1cnj)
+- [Quoi de neuf pour JavaScript : les nouvelles fonctionnalités à venir](https://thenewstack.io/whats-next-for-javascript-new-features-to-look-forward-to/)
+- [Prisma 5 : Plus rapide par défaut](https://www.prisma.io/blog/prisma-5-f66prwkjx72s)
+- [Deno 1.35 : un moyen rapide et pratique de construire des serveurs web](https://deno.com/blog/v1.35)
+- [Prettier 3.0](https://prettier.io/blog/2023/07/05/3.0.0.html)
+- [TypeScript-ESLint v6](https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/)
+- [Node v20.4](https://nodejs.org/en/blog/release/v20.4.0)
+- [Vite 4.4](https://twitter.com/vite_js/status/1676886213771264002)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![alt](/emails/issues/152/meme.jpg)](https://twitter.com/jantimon/status/1681275581629964300)
+
+À la prochaine ! 👋

@@ -1,0 +1,160 @@
+---
+slug: /148
+title: "This Week In React #148: Remix Routing, Hydration, React.FC, Vite + RSC, Zedux, Astro, Tremor, Valhalla, Reanimated, Expo-Apple-Targets, XCode 15..."
+authors: [slorber]
+date: 06-13-2023
+---
+
+Bonjour à tous !
+
+Eh bien, Dan Abramov est [en vacances](https://twitter.com/dan_abramov/status/1666459095979753477), ce qui explique probablement pourquoi il ne s'est pas passé grand-chose cette semaine dans notre écosystème bien-aimé 😅.
+
+Nous avons cependant quelques articles intéressants et un package officiel potentiel pour intégrer les React Server Components avec Vite.
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- Interface d'édition pour vos fichiers Markdown
+- Interface pour les composants MDX
+- Prise en charge du rendu statique (SSG) et côté serveur (SSR)
+- Option pour l'édition visuelle (prévisualisation en direct)
+- Construction avec des blocs réutilisables
+
+Testez un site de démarrage
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)
+- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)
+
+Ou exécutez  `npx create-tina-app@latest` puis visitez `localhost:3000/admin`
+
+Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## ⚛️ React {#react}
+
+[![Colocalisez vos routes dans des dossiers de fonctionnalités avec Remix Custom Routes](/emails/issues/148/remix-routing.jpg)](https://www.jacobparis.com/content/remix-custom-routes)
+
+**[Colocalisez vos routes dans des dossiers de fonctionnalités avec Remix Custom Routes](https://www.jacobparis.com/content/remix-custom-routes)**
+
+Explique comment le routage par fichiers plats de Remix v2 améliorera la colocalisation du code par fonctionnalité. Cela peut être activé dès Remix v1 avec un flag de fonctionnalité. Avec Remix, vous pouvez créer vos propres conventions de routage : Jacob propose d'améliorer encore la colocalisation avec [remix-custom-routes](https://github.com/jacobparis-insiders/remix-custom-routes) et une convention de nommage utilisant le suffixe `.route.tsx`.
+
+---
+
+[![L'hydratation est un arbre, la reprise est une carte](/emails/issues/148/hydration.jpg)](https://www.builder.io/blog/hydration-tree-resumability-map)
+
+**[L'hydratation est un arbre, la reprise est une carte](https://www.builder.io/blog/hydration-tree-resumability-map)**
+
+Propose un modèle mental intéressant pour comprendre la différence entre l'hydratation (React) et la reprise (Qwik). Avec la reprise, tous les composants sont considérés comme statiques, et les gestionnaires d'événements sont le point d'entrée pour l'interactivité. Il n'est pas nécessaire de parcourir un arbre (`O(n)`) : avec la reprise, l'évolutivité est bonne, comme une recherche dans une table de hachage (`O(1)`).
+
+---
+
+- 👀 [react-server-dom-vite](https://twitter.com/nkSaraf98/status/1667934636297650179) : PR React core en cours de révision pour ajouter un package officiel d'intégration Vite pour les React Server Components, prenant en charge la nature paresseuse et ESM du bundler.
+- 👤 [Sophie Alpert looking for a job](https://twitter.com/sebastienlorber/status/1668562588781748224) : opportunité unique d'embaucher l'une des plus grandes contributrices React de tous les temps.
+- 📜 [You Can Stop Hating React.FC](https://www.totaltypescript.com/you-can-stop-hating-react-fc) : pour Matt Pocock, `React.FC` n'est plus un anti-patron à partir de TypeScript 5.1 et React 18, mais il recommande de s'en tenir à l'annotation des props.
+- 📜 [Better Images in Astro](https://astro.build/blog/images/) : Astro v2.6 apporte un nouveau composant d'image optimisée (expérimental). Il utilise webp, évite les décalages de mise en page, prend en charge les chemins relatifs Markdown et les services d'images externes.
+- 📜 [Zedux: Is this the one?](https://omnistac.github.io/zedux/blog/zedux-is-this-the-one) : introduction à Zedux, un nouveau gestionnaire d'état React basé sur les atomes et la composition. Il existe de nombreux gestionnaires d'état React, et j'ai pensé que celui-ci se démarquait et valait la peine d'être examiné : liste impressionnante de fonctionnalités, documentation soignée, et reprend le meilleur des solutions existantes.
+- 📜 [React: how to debug the source code](https://andreigatej.dev/blog/react-debugging-the-source-code/) : quelques conseils de configuration si vous souhaitez déboguer les tests Jest de la base de code React.
+- 📜 [Netlify Connect](https://twitter.com/ascorbic/status/1668586011117465600) : intégration de la couche de données GraphQL Gatsby Valhalla dans Netlify, suite à l'acquisition du framework React.
+- 📜 [Add Drizzle ORM to a Remix app](https://www.jacobparis.com/content/remix-drizzle)
+- 📜 [A Visual Guide to the new App Router in Next.js 13](https://www.builder.io/blog/next-13-app-router)
+- 🔗 [Thinking in React Query](https://tkdodo.eu/blog/thinking-in-react-query) : diapositives du talk React-Summit. React-Query est un gestionnaire d'état asynchrone, pas seulement une solution de récupération de données.
+- 📦 [Shadcn UI CLI](https://twitter.com/shadcn/status/1666861850091458560) : nouveau CLI configurable pour la collection de composants Shadcn UI basée sur Radix/Tailwind.
+- 📦 [Hiber 3D](https://hiberworld.com/developer) : nouveau framework pour créer des mondes 3D interactifs, basé sur React.
+- 📦 [NakedJSX](https://nakedjsx.org/) : outil CLI simple pour générer des sites statiques en JSX.
+- 📦 [rad-event-listener](https://github.com/JLarky/rad-event-listener) : API alternative pour ajouter des écouteurs. Retourne une fonction de nettoyage : utile pour réduire le boilerplate React.
+- 📦 [Tremor v3 - React library to build dashboards](https://twitter.com/tremorlabs/status/1666706183409860610)
+- 📦 [React-Redux 8.1](https://github.com/reduxjs/react-redux/releases/tag/v8.1.0)
+- 🎙️ [This Month in React – May 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--May-2023-e25flvh) : notre podcast mensuel avec Reactiflux.
+- 🎥 [Does Lock-In Even Matter Anymore?](https://www.youtube.com/watch?v=rtgjFEJaFI8) : réflexion intéressante sur le lock-in potentiel (ou non) de Vercel lors de l'utilisation de certaines fonctionnalités Next.js.
+- 🎥 [Is Next.js App Router Slow? Performance Deep Dive](https://www.youtube.com/watch?v=HbUDiNlU6Yw)
+- 🎥 [From Pages to the App Directory in Next.js 13 (Nested Layouts)](https://www.youtube.com/watch?v=QkntFWb_V8k)
+- 🎥 [High-school student makes React a million times faster](https://www.youtube.com/watch?v=VkezQMb1DHw)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![React Bricks est un CMS avec édition visuelle pour Next.js, Remix et Gatsby.](/emails/issues/148/reactbricks.png)](https://reactbricks.com/?utm_source=thisweekinreact)
+
+**[React Bricks est un CMS avec édition visuelle pour Next.js, Remix et Gatsby.](https://reactbricks.com/?utm_source=thisweekinreact)**
+
+**Flexible pour les développeurs** : avec des composants React, vous pouvez créer votre propre système de design. Ajoutez une véritable édition visuelle en ligne à votre JSX et des contrôles latéraux pour modifier des props comme la couleur d'arrière-plan. Vous pouvez choisir Next.js, Remix ou Gatsby et n'importe quel framework CSS !
+
+**Les éditeurs de contenu** peuvent facilement modifier le contenu en ligne sans compromettre le système de design. Aussi simple qu'utiliser Word ou Pages, leur permettant de créer des pages d'atterrissage en minutes sans dépendre des ressources développeurs.
+
+**Prêt pour l'entreprise** avec Collaboration, Machine à remonter le temps, Authentification unique, centres de données conformes RGPD, CDN global pour images optimisées, intégration e-commerce, permissions granulaires, publication planifiée et plus encore.
+
+**Commencez ici : [https://reactbricks.com](https://reactbricks.com/?utm_source=thisweekinreact)**
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 📦 [React-Native 0.72.0-RC.6](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.6) : nouvelle RC Gold corrigeant des bugs et ajoutant la prise en charge de XCode 15.
+- 📦 [React-Native 0.71.10](https://github.com/facebook/react-native/releases/tag/v0.71.10) : prise en charge de XCode 15, également disponible pour v0.70 et v0.69.
+- 📦 [Reanimated 3.3](https://twitter.com/swmansion/status/1668640779923849216) : prend en charge React-Native v0.72 et React Native Web v0.19.
+- 📦 [Expo-Apple-Targets](https://github.com/EvanBacon/expo-apple-targets) : Plugin de configuration pour créer des cibles Apple (Extension de partage, Widgets, App Watch...). Ne gère que la génération et le lien des cibles, pas un moyen de [développer ces cibles avec React-Native](https://twitter.com/Baconbrix/status/1668001651922223104).
+- 📜 [Exécuter des tests UI Maestro dans une Expo Development Build](https://blog.mobile.dev/running-maestro-ui-tests-in-an-expo-development-builds-1ca443ab2a30)
+- 🎙️ [React-Native-Radio 268 - Démarrer avec Expo SDK 48](https://reactnativeradio.com/episodes/rnr-268-embarking-on-expo-sdk-48)
+- 🎥 [Construire une app MacOS avec React Native : Est-ce possible ?](https://www.youtube.com/watch?v=xkYy_6kje9E)
+- 🎥 [Quelle est la meilleure technologie cross-platform en 2023](https://www.youtube.com/watch?v=lYfgGgJgHB0) : belle rétrospective du cross-platform de 2010 à 2023 et des principaux acteurs en 2023.
+- 🎥 [Transitions d'éléments partagés dans React Native avec Reanimated 3](https://www.youtube.com/watch?v=tsleLxbvxe0)
+
+---
+
+## 🧑‍💻 Emplois {#jobs}
+
+🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/télétravail**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Réseaux Sociaux et Newsletters. Rejoignez-nous pour construire un outil permettant aux créateurs mondiaux de bâtir des entreprises scalables et durables.
+
+🧑‍💼 [**Callstack - Développeur React Native Senior - Télétravail complet, PLN 21-32k net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)
+
+Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack, leader en React et React Native. Consultez notre site web pour plus de détails. Nous avons hâte de voir votre candidature - montrez-nous ce que vous savez faire !
+
+🧑‍💼 [**G2i - Emplois React Native 100% distants**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k USD plus 10% de bonus. Une expérience en production avec RN est requise, et vous devez être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour plus d'informations et n'oubliez pas de mentionner This Week in React.
+
+💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 Autres {#other}
+
+- [Polywasm - Un polyfill pour WebAssembly](https://github.com/evanw/polywasm)
+- [Wasmati - une bibliothèque TypeScript pour écrire du Wasm au niveau de l'instruction](https://www.zksecurity.xyz/blog/posts/wasmati/)
+- [Ezno compilateur/vérificateur de type open-sourcé](https://github.com/kaleidawave/ezno/discussions/21)
+- [Pourquoi nous devrions arrêter d'utiliser JavaScript selon Douglas Crockford](https://www.youtube.com/watch?v=lc5Np9OqDHU)
+- [Applications Web sur macOS Sonoma 14 Beta](https://blog.tomayac.com/2023/06/07/web-apps-on-macos-sonoma-14-beta/)
+- [CSS moderne dans la vie réelle](https://chriscoyier.net/2023/06/06/modern-css-in-real-life/)
+- [CSS moderne pour une architecture dynamique basée sur les composants](https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/)
+- [Lightning CSS 1.21](https://twitter.com/devongovett/status/1666476856990908416)
+- [ts-patterns 5.0](https://github.com/gvergnaud/ts-pattern/releases/tag/v5.0.0)
+- [Quoi de neuf dans DevTools (Chrome 115)](https://developer.chrome.com/blog/new-in-devtools-115/)
+
+---
+
+## 🤭 Amusant {#fun}
+
+[![alt](/emails/issues/148/meme.jpg)](https://twitter.com/adamwathan/status/1666939669311901696)
+
+À bientôt ! 👋

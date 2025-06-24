@@ -1,0 +1,589 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/216/index.mdx",
+  "source_file_content_hash": "d6c34e836ebb8069ae4b04045cd8c07a5c0172873e330213c11b5bd99768ccb8",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /216\ntitle: \"This Week In React #216: Next.js, ViewTransition, RSC, Compiler, React Router, Recoil, Bippy, Docusaurus, A11y, Static Hermes, Nitro, Radon, SQLite, Edge-to-Edge, Node, TypeScript, pnpm, htmx...\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 01-08-2025\n---",
+      "source_content_hash": "2e09241db8ce721272e478777b59603b0149f38d98114a3016fe7c5eb0b8f83d",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from Theodo Apps here 👋, standing in for Seb to bring you the latest news from React and React Native!",
+      "source_content_hash": "14de49c7eb993dc53c935185eedc431b2f00bf1dbab56ff42ddb0a2b9d516651",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cyril et Matthieu des applications Theodo ici 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles de React et React Native !",
+        "en": "Cyril et Matthieu des Apps Theodo ici 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles de React et React Native !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The previous edition was last Friday, so this one will be a bit shorter than usual. We’re resuming the usual pace of one newsletter every week after the holidays.",
+      "source_content_hash": "dc78d07acf7672cbc8d558cd22acf600b5912be54425fa5fe10159851bdba0d3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'édition précédente était vendredi dernier, donc celle-ci sera un peu plus courte que d'habitude. Nous reprenons le rythme habituel d'une newsletter par semaine après les vacances.",
+        "en": "L'édition précédente était vendredi dernier, donc celle-ci sera un peu plus courte que d'habitude. Nous reprenons le rythme habituel d'une newsletter par semaine après les vacances."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The [2024 edition of JS rising stars](https://risingstars.js.org/2024/en) is out, you can start by having a look at which libraries performed well on this flawed but still useful metric of GitHub starts. Spoiler: `shadcn/ui` gained the most stars (again). Sébastien commented the [Tooling section](https://risingstars.js.org/2024/en#section-build).",
+      "source_content_hash": "4c7b3b40c697aafa729b6d4bd09b7c6ae9b5bbfe8e8c1058aac37a3d7671914b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'[édition 2024 de JS rising stars](https://risingstars.js.org/2024/en) est sortie, vous pouvez commencer par regarder quelles bibliothèques ont bien performé selon cette métrique imparfaite mais toujours utile des étoiles GitHub. Spoiler : `shadcn/ui` a gagné le plus d'étoiles (encore une fois). Sébastien a commenté la [section Tooling](https://risingstars.js.org/2024/en#section-build).",
+        "en": "La [édition 2024 de JS rising stars](https://risingstars.js.org/2024/en) est sortie, vous pouvez commencer par regarder quelles bibliothèques ont bien performé sur cette métrique imparfaite mais toujours utile des étoiles GitHub. Spoiler : `shadcn/ui` a gagné le plus d'étoiles (encore une fois). Sébastien a commenté la [section Outils](https://risingstars.js.org/2024/en#section-build)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Make sure to check our partner 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 February - Full speaker line up just dropped! Join Mateusz Burzyński, Elise Patrikainen and David Rousset! Get 20% off tickets with code \"TWIR\"!",
+      "source_content_hash": "a0ba22fa08e8548cc0494ccd86582a41172739f2291cb73e83f66e3a2601d47b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Assurez-vous de consulter notre partenaire 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 février - La liste complète des intervenants vient d'être dévoilée ! Rejoignez Mateusz Burzyński, Elise Patrikainen et David Rousset ! Obtenez 20% de réduction sur les billets avec le code \"TWIR\" !",
+        "en": "Assurez-vous de consulter notre partenaire 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 février - La liste complète des intervenants vient d'être dévoilée ! Rejoignez Mateusz Burzyński, Elise Patrikainen et David Rousset ! Bénéficiez de 20% de réduction sur les billets avec le code \"TWIR\" !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_45c63027",
+        "en": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_92f4ea84",
+        "en": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5dfba1c3",
+        "en": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![PropelAuth: Make Authentication Your Advantage](/emails/issues/216/PropelAuth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)",
+      "source_content_hash": "461a8acd76e713e0452417e531c30fd0c2c7d8d20fe804adc4e78e7788e797b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![PropelAuth : Faites de l'authentification votre atout](/emails/issues/216/PropelAuth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)",
+        "en": "[![PropelAuth : Faites de l'authentification votre avantage](/emails/issues/216/PropelAuth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[PropelAuth: Make Authentication Your Advantage](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)**",
+      "source_content_hash": "f97473254e83b3832577c2edb430568de02dda31c0101a31c8173abb2d8414b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[PropelAuth : Faites de l'authentification votre atout](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)**",
+        "en": "**[PropelAuth : Faites de l'authentification votre avantage](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "If your authentication isn't **helping you grow**, it's **holding you back**.",
+      "source_content_hash": "13283f8ffc10fea8fca2f5222c5608db8bdb71c19c338937dc97a18d06bf6b31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Si votre authentification ne vous **aide pas à grandir**, elle **vous retient**.",
+        "en": "Si votre authentification ne vous **aide pas à grandir**, elle **vous retient**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "With [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024), you get everything you need to launch and scale your B2B product:",
+      "source_content_hash": "374933ea16a0be2682d15ce5664c5ff5ceede02983dd2ab2c9438e9078277964",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024), vous obtenez tout ce dont vous avez besoin pour lancer et développer votre produit B2B :",
+        "en": "Avec [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024), vous obtenez tout ce dont vous avez besoin pour lancer et faire évoluer votre produit B2B :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- **Easy to understand** [documentation](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024) and **friendly, fast support**.\n- **UIs that cover all your use cases** - signup, login, MFA, organization management and more.\n- **User impersonation** so you can provide top-notch support to your users.\n- **Enterprise SAML/SSO** and **advanced security features** so you can be upmarket-ready.\n- **User insights** to help you strategize and expand.",
+      "source_content_hash": "0cdc67833ec53abab0d7d813932463e99bd3b2e9ccc57cfecf6c1234842868d0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Une **documentation** [facile à comprendre](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024) et un **support amical et rapide**.\n- **Des interfaces utilisateur qui couvrent tous vos cas d'utilisation** - inscription, connexion, MFA, gestion des organisations et plus encore.\n- **L'usurpation d'utilisateur** pour que vous puissiez offrir un support de premier ordre à vos utilisateurs.\n- **SAML/SSO d'entreprise** et des **fonctionnalités de sécurité avancées** pour que vous soyez prêt pour le marché haut de gamme.\n- **Des insights utilisateurs** pour vous aider à élaborer des stratégies et à vous développer.",
+        "en": "- **Documentation** [facile à comprendre](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024) et **support amical et rapide**.\n- **Des interfaces utilisateur couvrant tous vos cas d'usage** - inscription, connexion, MFA, gestion d'organisation et plus encore.\n- **Usurpation d'identité** pour fournir un support premium à vos utilisateurs.\n- **SAML/SSO entreprise** et **fonctionnalités de sécurité avancées** pour être prêt pour le haut de gamme.\n- **Insights utilisateurs** pour vous aider à stratégier et à vous développer."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[Get started today](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)",
+      "source_content_hash": "1d4ab75bfee3ef7c05123cf768f2c98cab80b0ba9911838af3c2e36310177b3c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Commencez dès aujourd'hui](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)",
+        "en": "[Commencez dès aujourd'hui](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![Composable Caching with Next.js](/emails/issues/216/nextjscache.jpg)](https://nextjs.org/blog/composable-caching)",
+      "source_content_hash": "1e0f6b0473c6e9cbf1819ce91ae65441c7b4c73c03ee5d18e3963e6ea27ff12d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Mise en cache composable avec Next.js](/emails/issues/216/nextjscache.jpg)](https://nextjs.org/blog/composable-caching)",
+        "en": "[![Mise en cache composable avec Next.js](/emails/issues/216/nextjscache.jpg)](https://nextjs.org/blog/composable-caching)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**[Composable Caching with Next.js](https://nextjs.org/blog/composable-caching)**",
+      "source_content_hash": "75719b47ea81da706fdde61c81d773ffd7b53b9512993a2308e90b1b57bd22bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Mise en cache composable avec Next.js](https://nextjs.org/blog/composable-caching)**",
+        "en": "**[Mise en cache composable avec Next.js](https://nextjs.org/blog/composable-caching)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Explains what Next.js is trying to accomplish, and why `”use cache”` is a compiler directive and not a function (to be able to analyze closures and determine the right cache key).",
+      "source_content_hash": "30036f32b72807701c7ae3d4d46d2194fa8667fd972981ddaaea34553a452f98",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Explique ce que Next.js tente d'accomplir, et pourquoi `”use cache”` est une directive du compilateur et non une fonction (pour pouvoir analyser les fermetures et déterminer la bonne clé de cache).",
+        "en": "Explique ce que Next.js cherche à accomplir, et pourquoi `”use cache”` est une directive de compilation et non une fonction (pour pouvoir analyser les fermetures et déterminer la bonne clé de cache)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "49d8fe2a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "[![React Core PR - Add `<ViewTransition>` Component](/emails/issues/216/viewTransitions.jpg)](https://github.com/facebook/react/pull/31975)",
+      "source_content_hash": "66600aff7d7e15c8c92684ce1257c128075d7e997ae06e0ebf001948e3f70034",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![PR React Core - Ajouter le composant `<ViewTransition>`](/emails/issues/216/viewTransitions.jpg)](https://github.com/facebook/react/pull/31975)",
+        "en": "[![PR React Core - Ajout du composant `<ViewTransition>`](/emails/issues/216/viewTransitions.jpg)](https://github.com/facebook/react/pull/31975)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "**[React Core PR - Add `<ViewTransition>` Component](https://github.com/facebook/react/pull/31975)**",
+      "source_content_hash": "1ce8d91d7b83a238d80e8056af025333dab5308b72fc84d9f19b6e4a40b9cc4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[PR React Core - Ajouter le composant `<ViewTransition>`](https://github.com/facebook/react/pull/31975)**",
+        "en": "**[PR React Core - Ajout du composant `<ViewTransition>`](https://github.com/facebook/react/pull/31975)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "React is adding support for View transitions with a `<ViewTransition />` component that integrates with all the async features like Suspense and `startTransition`.",
+      "source_content_hash": "a233602ad846db47fa4e07c169b72dfa6075cb3da91b6ae44c2329bc92d0780d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React ajoute la prise en charge des transitions de vue avec un composant `<ViewTransition />` qui s'intègre à toutes les fonctionnalités asynchrones comme Suspense et `startTransition`.",
+        "en": "React ajoute la prise en charge des transitions de vue avec un composant `<ViewTransition />` qui s'intègre à toutes les fonctionnalités asynchrones comme Suspense et `startTransition`."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "158e1f5d",
+      "source_content": "- 💸 [daily.dev: Your personal dev news feed. Free!](https://daily.dev/w/this-week-in-react)\n- 🐦 [Recoil (state manager by meta) has been archived](https://x.com/dai_shi/status/1875910305802514649)\n- 📜 [RSC and Server Action Bundle Practice](https://github.com/orgs/web-infra-dev/discussions/23): An Rspack maintainer shared a comprehensive deep dive on how bundlers implement React Server Components in practice, notably webpack and Turbopack.\n- 📜 [Automated Accessibility Testing at Slack](https://slack.engineering/automated-accessibility-testing-at-slack/): They tried to do it with testing-library but ended up using Playwright.\n- 📜 [Thoughts on State Management Libraries in the React Compiler Era](https://blog.axlight.com/posts/thoughts-on-state-management-libraries-in-the-react-compiler-era/): The compiler makes React Context much more attractive, are they still useful?\n- 📜 [All kinds of state management in React](https://www.typeonce.dev/article/all-kinds-of-state-management-in-react): url state, server state, client state…\n- 📜 [React Router 7 Tutorial](https://www.robinwieruch.de/react-router/): A 3-part series covering the introduction, descendent routes and search params.\n- 📜 [How React's Render, Effects and Refs work under the hood](https://tigerabrodi.blog/how-reacts-render-effects-and-refs-work-under-the-hood)\n- 📜 [Redux Saga Is Hard Until You Look Under The Hood](https://janhesters.com/blog/redux-saga-is-hard-until-you-look-under-the-hood)\n- 📦 [Bippy \\- A toolkit to hack into react internals](https://www.bippy.dev/): It’s what [react-scan](https://github.com/aidenybai/react-scan) uses under the hood to access the Fiber tree.\n- 📦 [Docusaurus 3.7](https://docusaurus.io/blog/releases/3.7) adds support for React 19 and a new svgr plugin.\n- 📦 [React Admin 5.4 (and 5.3)](https://marmelab.com/blog/2025/01/08/react-admin-january-2025-update.html)\n- 🎥 [Cosden \\- The Biggest Mistake Intermediate React Developers Make](https://www.youtube.com/watch?v=jqcbIgQBn34)\n- 🎥 [Alem Tuzlak \\- The Benefits of React Router V7 Nobody Told You About](https://www.youtube.com/watch?v=EGuYKL8puRI)\n- 🎥 [Theo \\- Inertia 2.0: It's like Next but better (and you can use React\\!)](https://www.youtube.com/watch?v=OpXLWJd2iO0)\n- 🎙️ [Syntax.fm - 2025 Web Development Predictions](https://syntax.fm/show/866/2025-web-development-predictions)",
+      "source_content_hash": "0cda0062cb948ea53691e172c6d70b1cded6cf715b5e80cb585975c46ad40ae0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [daily.dev : Votre fil d'actualités dev personnel. Gratuit !](https://daily.dev/w/this-week-in-react)\n- 🐦 [Recoil (gestionnaire d'état par Meta) a été archivé](https://x.com/dai_shi/status/1875910305802514649)\n- 📜 [Pratiques de bundling pour RSC et Server Actions](https://github.com/orgs/web-infra-dev/discussions/23) : Un mainteneur de Rspack partage une plongée approfondie sur la mise en œuvre pratique des React Server Components par les bundlers, notamment webpack et Turbopack.\n- 📜 [Tests d'accessibilité automatisés chez Slack](https://slack.engineering/automated-accessibility-testing-at-slack/) : Ils ont tenté avec testing-library mais ont fini par utiliser Playwright.\n- 📜 [Réflexions sur les bibliothèques de gestion d'état à l'ère du compilateur React](https://blog.axlight.com/posts/thoughts-on-state-management-libraries-in-the-react-compiler-era/) : Le compilateur rend React Context bien plus attrayant. Sont-elles encore utiles ?\n- 📜 [Tous les types de gestion d'état dans React](https://www.typeonce.dev/article/all-kinds-of-state-management-in-react) : état d'URL, état serveur, état client...\n- 📜 [Tutoriel React Router 7](https://www.robinwieruch.de/react-router/) : Une série en 3 parties couvrant l'introduction, les routes descendantes et les paramètres de recherche.\n- 📜 [Fonctionnement interne du rendu, des effets et des refs dans React](https://tigerabrodi.blog/how-reacts-render-effects-and-refs-work-under-the-hood)\n- 📜 [Redux Saga est difficile jusqu'à ce que vous regardiez sous le capot](https://janhesters.com/blog/redux-saga-is-hard-until-you-look-under-the-hood)\n- 📦 [Bippy - Une boîte à outils pour hacker les internes de React](https://www.bippy.dev/) : C'est ce que [react-scan](https://github.com/aidenybai/react-scan) utilise sous le capot pour accéder à l'arbre Fiber.\n- 📦 [Docusaurus 3.7](https://docusaurus.io/blog/releases/3.7) ajoute le support de React 19 et un nouveau plugin svgr.\n- 📦 [React Admin 5.4 (et 5.3)](https://marmelab.com/blog/2025/01/08/react-admin-january-2025-update.html)\n- 🎥 [Cosden - La plus grosse erreur que font les développeurs React intermédiaires](https://www.youtube.com/watch?v=jqcbIgQBn34)\n- 🎥 [Alem Tuzlak - Les avantages méconnus de React Router V7](https://www.youtube.com/watch?v=EGuYKL8puRI)\n- 🎥 [Theo - Inertia 2.0 : C'est comme Next mais en mieux (et vous pouvez utiliser React !)](https://www.youtube.com/watch?v=OpXLWJd2iO0)\n- 🎙️ [Syntax.fm - Prédictions pour le développement web en 2025](https://syntax.fm/show/866/2025-web-development-predictions)",
+        "en": "- 💸 [daily.dev : Votre fil d'actualités dev personnel. Gratuit !](https://daily.dev/w/this-week-in-react)\n- 🐦 [Recoil (gestionnaire d'état par Meta) a été archivé](https://x.com/dai_shi/status/1875910305802514649)\n- 📜 [Pratiques de bundle pour RSC et Server Actions](https://github.com/orgs/web-infra-dev/discussions/23) : Un mainteneur de Rspack partage une analyse approfondie de l'implémentation pratique des React Server Components par les bundlers, notamment webpack et Turbopack.\n- 📜 [Tests d'accessibilité automatisés chez Slack](https://slack.engineering/automated-accessibility-testing-at-slack/) : Ils ont tenté d'utiliser testing-library mais ont fini par employer Playwright.\n- 📜 [Réflexions sur les bibliothèques de gestion d'état à l'ère du React Compiler](https://blog.axlight.com/posts/thoughts-on-state-management-libraries-in-the-react-compiler-era/) : Le compilateur rend React Context bien plus attrayant, ces bibliothèques sont-elles encore utiles ?\n- 📜 [Tous les types de gestion d'état dans React](https://www.typeonce.dev/article/all-kinds-of-state-management-in-react) : état d'URL, état serveur, état client...\n- 📜 [Tutoriel React Router 7](https://www.robinwieruch.de/react-router/) : Une série en 3 parties couvrant l'introduction, les routes descendantes et les paramètres de recherche.\n- 📜 [Fonctionnement interne du rendu, des effets et des refs dans React](https://tigerabrodi.blog/how-reacts-render-effects-and-refs-work-under-the-hood)\n- 📜 [Redux Saga est complexe jusqu'à ce qu'on regarde sous le capot](https://janhesters.com/blog/redux-saga-is-hard-until-you-look-under-the-hood)\n- 📦 [Bippy - Une boîte à outils pour explorer les internals de React](https://www.bippy.dev/) : C'est ce qu'utilise [react-scan](https://github.com/aidenybai/react-scan) sous le capot pour accéder à l'arbre Fiber.\n- 📦 [Docusaurus 3.7](https://docusaurus.io/blog/releases/3.7) ajoute le support de React 19 et un nouveau plugin svgr.\n- 📦 [React Admin 5.4 (et 5.3)](https://marmelab.com/blog/2025/01/08/react-admin-january-2025-update.html)\n- 🎥 [Cosden - La plus grosse erreur des développeurs React intermédiaires](https://www.youtube.com/watch?v=jqcbIgQBn34)\n- 🎥 [Alem Tuzlak - Les avantages méconnus de React Router V7](https://www.youtube.com/watch?v=EGuYKL8puRI)\n- 🎥 [Theo - Inertia 2.0 : Comme Next mais mieux (et vous pouvez utiliser React !)](https://www.youtube.com/watch?v=OpXLWJd2iO0)\n- 🎙️ [Syntax.fm - Prédictions pour le développement web en 2025](https://syntax.fm/show/866/2025-web-development-predictions)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2128cb26",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2128cb26",
+        "en": "@@untranslatable_placeholder_2128cb26"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "[![Rethink your React apps' UX with Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)",
+      "source_content_hash": "804609ec6328a8526330cfc5adad935be6f942c9f6bea83ca6b8e73fae6136fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Repensez l'UX de vos applications React avec Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)",
+        "en": "[![Repensez l'UX de vos applications React avec Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "**[Rethink your React apps' UX with Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**",
+      "source_content_hash": "f7b9f2aa5aa41fe9981609c34e5443470e14f2d217842e63a917f26b83c5fe9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Repensez l'UX de vos applications React avec Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**",
+        "en": "**[Repensez l'UX de vos applications React avec Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "Reactile is an UI/UX turnkey framework which features an out-of-the-box, intuitive tiling display with workspaces. It encourages parallel workloads for large web solutions within a single browser tab. Implement your own view containers, widgets and logic using React and let Reactile handle the display for you.",
+      "source_content_hash": "df73b3ca217de2b962e5f9e6cd04001a923739eb32f5ef2c9f7e34d980f99a23",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Reactile est un framework UI/UX clé en main proposant un affichage en tuiles intuitif avec espaces de travail prêt à l'emploi. Il encourage les charges de travail parallèles pour les solutions web complexes dans un seul onglet navigateur. Implémentez vos propres conteneurs de vue, widgets et logique en React et laissez Reactile gérer l'affichage.",
+        "en": "Reactile est un framework UI/UX clé en main proposant un affichage en mosaïque intuitif et prêt à l'emploi avec des espaces de travail. Il encourage les charges de travail parallèles pour les solutions web complexes dans un seul onglet de navigateur. Implémentez vos propres conteneurs de vue, widgets et logique en utilisant React, et laissez Reactile gérer l'affichage pour vous."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "On top of that, Reactile also offers:",
+      "source_content_hash": "c71c565a82c8c75ce60dc4fa8883e82871fe706100891d309b282c994e5f5106",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En plus, Reactile offre :",
+        "en": "En plus de cela, Reactile offre également :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0dbe2f3",
+      "source_content": "- A promise-based persistence mechanism which permits a uniform workflow across time and on multiple devices.\n- The possibility to use nested tabs for your tiles.\n- A simplified global search mechanism.\n- CSS @container based responsiveness.\n- And much more.",
+      "source_content_hash": "42dde46b8aa1c52356856bf6d8e4d69ce853e6976dee7b06d748d400f975600d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Un mécanisme de persistance basé sur les promesses permettant un workflow uniforme dans le temps et sur plusieurs appareils.\n- La possibilité d'utiliser des onglets imbriqués pour vos tuiles.\n- Un mécanisme de recherche globale simplifié.\n- Une réactivité basée sur CSS @container.\n- Et bien plus encore.",
+        "en": "- Un mécanisme de persistance basé sur les promesses permettant un workflow uniforme dans le temps et sur plusieurs appareils.\n- La possibilité d'utiliser des onglets imbriqués pour vos tuiles.\n- Un mécanisme de recherche globale simplifié.\n- Une réactivité basée sur CSS @container.\n- Et bien plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Version 2 coming out soon. Get started with your unique 30-day free trial. Learn more about it on reactile.net.",
+      "source_content_hash": "67c06d71c49f49d579b37262a90ca57cbc84ba8a53365d4b68cfd595d40324e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La version 2 sort bientôt. Démarrez avec votre essai gratuit unique de 30 jours. En savoir plus sur reactile.net.",
+        "en": "La version 2 sort bientôt. Commencez avec votre essai gratuit unique de 30 jours. Apprenez-en plus sur reactile.net."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "[Reactile - The new React UI management system](https://www.reactile.net/price?utm_source=ThisweekinReact)",
+      "source_content_hash": "ab4c3876551f7d8cd91e51fc877e8f8c6ce9cc36641b0f39ded9e98c4305f5b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Reactile - Le nouveau système de gestion d'interface React](https://www.reactile.net/price?utm_source=ThisweekinReact)",
+        "en": "[Reactile - Le nouveau système de gestion d'interface React](https://www.reactile.net/price?utm_source=ThisweekinReact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "664ad8b1",
+      "source_content": "- 💸 [PostHog - How to set up React Native session replay](https://dub.link/twir-jan8)\n- 🐦 [Nitro Views will be released along with React Native 0.78](https://x.com/mrousavy/status/1876559810784833930)\n- 🐦 [Network debugging tools will land in Radon IDE](https://x.com/kzzzf/status/1875211071231025353)\n- 👀 [React Native PR - Static Hermes for React Native](https://github.com/facebook/react-native/pull/48531): The integration of the new Hermes implementation has started! The initial benchmarks shows a great 30%+ perf improvement, but it's not even using typed code or JIT yet, which should give even more significant numbers.\n- 📖 [You can highlight live re-renders in React Native DevTools](https://reactnative.dev/docs/react-native-devtools#react-components)\n- 📜 [Modern SQLite for React Native apps - DrizzleORM with expo-sqlite setup, type-safe queries, live queries, migrations, Drizzle Studio Expo Dev Tool Plugin.](https://expo.dev/blog/modern-sqlite-for-react-native-apps)\n- 📦 [React Native 0.77.0-rc.6](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.6) is the golden RC and a stable release is scheduled for next week.\n- 📦 [React Native Edge to Edge 1.2](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.2.0) adds support for light theme variants on android.\n- 🎥 [React Universe On Air 45 - Evan Bacon on Universal React Native Apps, DOM & React Server Components](https://www.youtube.com/watch?v=rA7E3rGKSZw)",
+      "source_content_hash": "d057e98c03f4ada5927f29708dabd68004f26cb5ec66575c81bb56c532faf25e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [PostHog - Comment configurer le replay de session React Native](https://dub.link/twir-jan8)\n- 🐦 [Nitro Views sera publié avec React Native 0.78](https://x.com/mrousavy/status/1876559810784833930)\n- 🐦 [Les outils de débogage réseau arriveront dans Radon IDE](https://x.com/kzzzf/status/1875211071231025353)\n- 👀 [PR React Native - Hermes statique pour React Native](https://github.com/facebook/react-native/pull/48531) : L'intégration de la nouvelle implémentation d'Hermes a commencé ! Les benchmarks initiaux montrent une amélioration de performance de plus de 30%, et ce n'est même pas encore avec du code typé ou JIT, ce qui devrait donner des gains encore plus significatifs.\n- 📖 [Vous pouvez mettre en évidence les re-rendus en direct dans React Native DevTools](https://reactnative.dev/docs/react-native-devtools#react-components)\n- 📜 [SQLite moderne pour les apps React Native - Configuration de DrizzleORM avec expo-sqlite, requêtes type-safe, requêtes live, migrations, plugin Drizzle Studio Expo Dev Tool.](https://expo.dev/blog/modern-sqlite-for-react-native-apps)\n- 📦 [React Native 0.77.0-rc.6](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.6) est la version candidate finale et une release stable est prévue pour la semaine prochaine.\n- 📦 [React Native Edge to Edge 1.2](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.2.0) ajoute le support des variantes de thème clair sur Android.\n- 🎥 [React Universe On Air 45 - Evan Bacon sur les apps React Native universelles, DOM & React Server Components](https://www.youtube.com/watch?v=rA7E3rGKSZw)",
+        "en": "- 💸 [PostHog - Comment configurer la relecture de session React Native](https://dub.link/twir-jan8)\n- 🐦 [Nitro Views sera publié avec React Native 0.78](https://x.com/mrousavy/status/1876559810784833930)\n- 🐦 [Les outils de débogage réseau arriveront dans Radon IDE](https://x.com/kzzzf/status/1875211071231025353)\n- 👀 [PR React Native - Hermes statique pour React Native](https://github.com/facebook/react-native/pull/48531) : L'intégration de la nouvelle implémentation d'Hermes a commencé ! Les benchmarks initiaux montrent une amélioration de performance de plus de 30%, et ce n'est même pas encore avec du code typé ou JIT, ce qui devrait donner des gains encore plus significatifs.\n- 📖 [Vous pouvez mettre en évidence les re-rendus en direct dans React Native DevTools](https://reactnative.dev/docs/react-native-devtools#react-components)\n- 📜 [SQLite moderne pour les applications React Native - Configuration de DrizzleORM avec expo-sqlite, requêtes type-safe, requêtes en direct, migrations, Plugin Drizzle Studio Expo Dev Tool.](https://expo.dev/blog/modern-sqlite-for-react-native-apps)\n- 📦 [React Native 0.77.0-rc.6](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.6) est la RC finale et une version stable est prévue pour la semaine prochaine.\n- 📦 [React Native Edge to Edge 1.2](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.2.0) ajoute la prise en charge des variantes de thème clair sur Android.\n- 🎥 [React Universe On Air 45 - Evan Bacon sur les applications React Native universelles, DOM & React Server Components](https://www.youtube.com/watch?v=rA7E3rGKSZw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9673e622",
+      "source_content": "- 📜 [JavaScript Frameworks - Heading into 2025](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2025-hkb)\n- 📜 [The future of htmx](https://htmx.org/essays/future/): (almost) no new features\n- 📜 [Relatively New Things You Should Know about HTML Heading Into 2025](https://frontendmasters.com/blog/bone-up-html-2025/)\n- 📜 [Testing Accessibility with Screen Readers](https://www.epicweb.dev/testing-accessibility-with-screen-readers)\n- 📜 [Balancing Text In CSS](https://ishadeed.com/article/balancing-text-css/)\n- 📜 [Using Forced Reflows, the Event Loop, and the Repaint Cycle to Slide Open a Box](https://macarthur.me/posts/box/)\n- 📜 [Node’s new built-in support for TypeScript](https://2ality.com/2025/01/nodejs-strip-type.html)\n- 📦 [Node 23.6](https://nodejs.org/en/blog/release/v23.6.0) with TS types stripping, and [Node 22.13 (LTS)](https://nodejs.org/en/blog/release/v22.13.0) with stable security model.\n- 📦 [pnpm 10.0 - Increased security, `onlyBuiltDependencies`](https://github.com/pnpm/pnpm/releases/tag/v10.0.0)\n- 📦 [Prisma 6.2 - omit, SQLite json/enum fields](https://github.com/prisma/prisma/releases/tag/6.2.0)",
+      "source_content_hash": "d788f24e8f31e281a2a64ad7be596f82789ce8e34709943d70e5c83275fc3115",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Frameworks JavaScript - Tendances pour 2025](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2025-hkb)\n- 📜 [Le futur d'htmx](https://htmx.org/essays/future/) : (presque) pas de nouvelles fonctionnalités\n- 📜 [Nouveautés HTML à connaître pour 2025](https://frontendmasters.com/blog/bone-up-html-2025/)\n- 📜 [Tester l'accessibilité avec les lecteurs d'écran](https://www.epicweb.dev/testing-accessibility-with-screen-readers)\n- 📜 [Équilibrer le texte en CSS](https://ishadeed.com/article/balancing-text-css/)\n- 📜 [Utiliser les reflows forcés, la boucle d'événements et le cycle de repaint pour ouvrir une boîte](https://macarthur.me/posts/box/)\n- 📜 [Le nouveau support natif de TypeScript dans Node](https://2ality.com/2025/01/nodejs-strip-type.html)\n- 📦 [Node 23.6](https://nodejs.org/en/blog/release/v23.6.0) avec le stripping des types TS, et [Node 22.13 (LTS)](https://nodejs.org/en/blog/release/v22.13.0) avec un modèle de sécurité stable.\n- 📦 [pnpm 10.0 - Sécurité renforcée, `onlyBuiltDependencies`](https://github.com/pnpm/pnpm/releases/tag/v10.0.0)\n- 📦 [Prisma 6.2 - omit, champs json/enum SQLite](https://github.com/prisma/prisma/releases/tag/6.2.0)",
+        "en": "- 📜 [Frameworks JavaScript - Tendances pour 2025](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2025-hkb)\n- 📜 [Le futur d'htmx](https://htmx.org/essays/future/) : (presque) aucune nouvelle fonctionnalité\n- 📜 [Nouveautés relatives à HTML que vous devriez connaître pour 2025](https://frontendmasters.com/blog/bone-up-html-2025/)\n- 📜 [Tester l'accessibilité avec les lecteurs d'écran](https://www.epicweb.dev/testing-accessibility-with-screen-readers)\n- 📜 [Équilibrage du texte en CSS](https://ishadeed.com/article/balancing-text-css/)\n- 📜 [Utilisation des reflows forcés, de la boucle d'événements et du cycle de repaint pour ouvrir une boîte](https://macarthur.me/posts/box/)\n- 📜 [Nouvelle prise en charge native de TypeScript dans Node](https://2ality.com/2025/01/nodejs-strip-type.html)\n- 📦 [Node 23.6](https://nodejs.org/en/blog/release/v23.6.0) avec suppression des types TS, et [Node 22.13 (LTS)](https://nodejs.org/en/blog/release/v22.13.0) avec modèle de sécurité stable.\n- 📦 [pnpm 10.0 - Sécurité accrue, `onlyBuiltDependencies`](https://github.com/pnpm/pnpm/releases/tag/v10.0.0)\n- 📦 [Prisma 6.2 - omit, champs json/enum SQLite](https://github.com/prisma/prisma/releases/tag/6.2.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f539b80c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c83259bb",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "[![alt](/emails/issues/216/meme.jpg)](https://x.com/jordwalke/status/1875336115009573268)",
+      "source_content_hash": "c806989f1afac9ee72875afe4fe0ed9aad779bf0cf9cc396d174ada5c8ddcce2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/216/meme.jpg)](https://x.com/jordwalke/status/1875336115009573268)",
+        "en": "[![alt](/emails/issues/216/meme.jpg)](https://x.com/jordwalke/status/1875336115009573268)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/216/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.222181+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "d6c34e836ebb8069ae4b04045cd8c07a5c0172873e330213c11b5bd99768ccb8",
+    "en": "d6c34e836ebb8069ae4b04045cd8c07a5c0172873e330213c11b5bd99768ccb8"
+  }
+}

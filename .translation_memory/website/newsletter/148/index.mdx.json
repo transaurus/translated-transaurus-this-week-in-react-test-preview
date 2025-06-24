@@ -1,0 +1,697 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/148/index.mdx",
+  "source_file_content_hash": "ae39763298b07e3d7fad7fc0651c8ea5fa9f79c8c296ab7eb60547b8c230d543",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /148\ntitle: \"This Week In React #148: Remix Routing, Hydration, React.FC, Vite + RSC, Zedux, Astro, Tremor, Valhalla, Reanimated, Expo-Apple-Targets, XCode 15...\"\nauthors: [slorber]\ndate: 06-13-2023\n---",
+      "source_content_hash": "a372c7b01922014bf33aa199686c7a5b37371fcb5f1ffcbc2921ca84a956de60",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Well, Dan Abramov is [on holiday](https://twitter.com/dan_abramov/status/1666459095979753477), which is probably why there hasn't been much happening this week in our beloved ecosystem 😅.",
+      "source_content_hash": "90c14c1b332d50df7b10299eaf8aa6f7ba68a6e36e66dcd3895e300223e95b87",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Eh bien, Dan Abramov est [en vacances](https://twitter.com/dan_abramov/status/1666459095979753477), ce qui explique probablement pourquoi il ne s'est pas passé grand-chose cette semaine dans notre écosystème bien-aimé 😅.",
+        "en": "Eh bien, Dan Abramov est [en vacances](https://twitter.com/dan_abramov/status/1666459095979753477), ce qui explique probablement pourquoi il ne s'est pas passé grand-chose cette semaine dans notre écosystème bien-aimé 😅."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "We do, however, have a few interesting articles and a potential official package for integrating React Server Components with Vite.",
+      "source_content_hash": "ad604e2599d72a1e3b363cd0e0269931f361cd2e1bdd0ee24969f3380efa5c3d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons cependant quelques articles intéressants et un package officiel potentiel pour intégrer les React Server Components avec Vite.",
+        "en": "Nous avons cependant quelques articles intéressants et un package officiel potentiel pour intégrer les React Server Components avec Vite."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_e883b2cc",
+        "en": "@@untranslatable_placeholder_e883b2cc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_92f4ea84",
+        "en": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5dfba1c3",
+        "en": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Tina.io is a headless CMS for Markdown-powered sites](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)",
+      "source_content_hash": "d07d67b40382ffe752cafb4d03574ec5e0348f7991f13c5fd7a07d59ea0908aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)",
+        "en": "[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Tina.io is a headless CMS for Markdown-powered sites](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**",
+      "source_content_hash": "8daaebad6e0f00c8c4faf2c3d04fabcc8992451ab583bfb3838238fb941d5ec7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**",
+        "en": "**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b525ab",
+      "source_content": "- Editing UI for your Markdown files\n- UI for MDX components\n- Supports static (SSG) and server-side rendering (SSR)\n- Option for visual editing (live-preview)\n- Build with reusable blocks",
+      "source_content_hash": "cb5d921a7fe229312ad7e31fa01a28654568a7604897dcb86fe0ecaa88d5a4c0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Interface d'édition pour vos fichiers Markdown\n- Interface pour les composants MDX\n- Prend en charge le rendu statique (SSG) et côté serveur (SSR)\n- Option d'édition visuelle (prévisualisation en direct)\n- Construction avec blocs réutilisables",
+        "en": "- Interface d'édition pour vos fichiers Markdown\n- Interface pour les composants MDX\n- Prise en charge du rendu statique (SSG) et côté serveur (SSR)\n- Option pour l'édition visuelle (prévisualisation en direct)\n- Construction avec des blocs réutilisables"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Test a starter site",
+      "source_content_hash": "00cfdd6dfc445a7df446241a49f872dd69eae76fb2b91f1adce9cd97ccd3a228",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Testez un site de démonstration",
+        "en": "Testez un site de démarrage"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7bc8c38",
+      "source_content": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind with visual editing](https://github.com/tinacms/tina-cloud-starter) (Github)",
+      "source_content_hash": "de7a40ae87efb6c6ab4417e89bb39524a8e8daca4f792ef09ca756319a654e0b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)",
+        "en": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "Or run  `npx create-tina-app@latest` then visit `localhost:3000/admin`",
+      "source_content_hash": "3c38b4e8e7ed89fb82c1d7a4781a5edfb7e4fda07b6616777408937de6748b5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ou exécutez  `npx create-tina-app@latest` puis visitez `localhost:3000/admin`",
+        "en": "Ou exécutez  `npx create-tina-app@latest` puis visitez `localhost:3000/admin`"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Watch the [4-min demo video](https://www.youtube.com/watch?v=zRkeKSZjlyw)",
+      "source_content_hash": "2a28b2aaced7040bc5de34214f8661699eb64901ddd6ce54922fe7b3e0a3a4b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Regardez la [vidéo de démo de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)",
+        "en": "Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "94f98fb8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6f930b2f",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[![Colocate your routes into feature folders with Remix Custom Routes](/emails/issues/148/remix-routing.jpg)](https://www.jacobparis.com/content/remix-custom-routes)",
+      "source_content_hash": "e5c3c02dd2535c85fbd9c9945cb091707927477c4719a37c3b36580d51248234",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Colocalisez vos routes dans des dossiers fonctionnels avec Remix Custom Routes](/emails/issues/148/remix-routing.jpg)](https://www.jacobparis.com/content/remix-custom-routes)",
+        "en": "[![Colocalisez vos routes dans des dossiers de fonctionnalités avec Remix Custom Routes](/emails/issues/148/remix-routing.jpg)](https://www.jacobparis.com/content/remix-custom-routes)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "**[Colocate your routes into feature folders with Remix Custom Routes](https://www.jacobparis.com/content/remix-custom-routes)**",
+      "source_content_hash": "efa97798c92a374940c4845e580879e31867e72453e21039cba8fc754a9436c2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Colocalisez vos routes dans des dossiers fonctionnels avec Remix Custom Routes](https://www.jacobparis.com/content/remix-custom-routes)**",
+        "en": "**[Colocalisez vos routes dans des dossiers de fonctionnalités avec Remix Custom Routes](https://www.jacobparis.com/content/remix-custom-routes)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "Explains how Remix v2's flat file routing will improve featured-based code colocation. This can be activated from Remix v1 with a feature flag. With Remix, you can create your own routing conventions: Jacob proposes to improve colocation even further with [remix-custom-routes](https://github.com/jacobparis-insiders/remix-custom-routes) and a naming convention using the `.route.tsx` suffix.",
+      "source_content_hash": "723428bf0fc990949f0a4943ee7ff9de0a03a2a2a26197dbf8321e38f7ad0504",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Explique comment le routage par fichiers plats de Remix v2 améliorera la colocalisation du code par fonctionnalité. Ceci peut être activé depuis Remix v1 avec un flag. Avec Remix, vous pouvez créer vos propres conventions de routage : Jacob propose d'améliorer encore la colocalisation avec [remix-custom-routes](https://github.com/jacobparis-insiders/remix-custom-routes) et une convention de nommage utilisant le suffixe `.route.tsx`.",
+        "en": "Explique comment le routage par fichiers plats de Remix v2 améliorera la colocalisation du code par fonctionnalité. Cela peut être activé dès Remix v1 avec un flag de fonctionnalité. Avec Remix, vous pouvez créer vos propres conventions de routage : Jacob propose d'améliorer encore la colocalisation avec [remix-custom-routes](https://github.com/jacobparis-insiders/remix-custom-routes) et une convention de nommage utilisant le suffixe `.route.tsx`."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6e9a41d8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "[![Hydration is a tree, Resumability is a map](/emails/issues/148/hydration.jpg)](https://www.builder.io/blog/hydration-tree-resumability-map)",
+      "source_content_hash": "bdcf089ada5aee6d3f5821db6a5c31e81264db1a1728644243981b32fda37251",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![L'hydratation est un arbre, la reprise est une carte](/emails/issues/148/hydration.jpg)](https://www.builder.io/blog/hydration-tree-resumability-map)",
+        "en": "[![L'hydratation est un arbre, la reprise est une carte](/emails/issues/148/hydration.jpg)](https://www.builder.io/blog/hydration-tree-resumability-map)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "**[Hydration is a tree, Resumability is a map](https://www.builder.io/blog/hydration-tree-resumability-map)**",
+      "source_content_hash": "d42ecdac320cea97cb6350da3eaef2ea0d24277159b55cce75e6a511a61d3b09",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[L'hydratation est un arbre, la reprise est une carte](https://www.builder.io/blog/hydration-tree-resumability-map)**",
+        "en": "**[L'hydratation est un arbre, la reprise est une carte](https://www.builder.io/blog/hydration-tree-resumability-map)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "Gives an interesting mental model for understanding the difference between hydration (React) and resumability (Qwik). With resumability, all components are considered static, and event handlers are the entry point for interactivity. There is no need to traverse a tree (`O(n)`): with resumability, scalability is good, like the lookup in a hashmap (`O(1)`).",
+      "source_content_hash": "ea8fa6409b415504da54962e2ce982b853f3718ff01e23465d9dcaef386753e8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Propose un modèle mental intéressant pour comprendre la différence entre l'hydratation (React) et la reprise (Qwik). Avec la reprise, tous les composants sont considérés comme statiques, et les gestionnaires d'événements sont le point d'entrée de l'interactivité. Pas besoin de parcourir un arbre (`O(n)`): avec la reprise, l'évolutivité est bonne, comme une recherche dans une table de hachage (`O(1)`).",
+        "en": "Propose un modèle mental intéressant pour comprendre la différence entre l'hydratation (React) et la reprise (Qwik). Avec la reprise, tous les composants sont considérés comme statiques, et les gestionnaires d'événements sont le point d'entrée pour l'interactivité. Il n'est pas nécessaire de parcourir un arbre (`O(n)`) : avec la reprise, l'évolutivité est bonne, comme une recherche dans une table de hachage (`O(1)`)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42c293cc",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "180e9ce9",
+      "source_content": "- 👀 [react-server-dom-vite](https://twitter.com/nkSaraf98/status/1667934636297650179): WIP React core PR being reviewed to add an official Vite integration package for React Server Components, supporting the lazy and ESM nature of the bundler.\n- 👤 [Sophie Alpert looking for a job](https://twitter.com/sebastienlorber/status/1668562588781748224): unique opportunity to hire one of the top React contributors of all time.\n- 📜 [You Can Stop Hating React.FC](https://www.totaltypescript.com/you-can-stop-hating-react-fc): for Matt Pocock, `React.FC` is no longer an anti-pattern starting with TypeScript 5.1 and React 18, but he recommends sticking to annotating props.\n- 📜 [Better Images in Astro](https://astro.build/blog/images/): Astro v2.6 brings a new optimised image component (experimental). It uses webp, avoids layout shifts, supports Markdown relative paths and external image services.\n- 📜 [Zedux: Is this the one?](https://omnistac.github.io/zedux/blog/zedux-is-this-the-one): introduction to Zedux, a new React state manager based on atoms and composition. There are a lot of React state managers out there, and I thought this one stood out and was worth taking a look at: impressive list of features, polished documentation, and takes the best of existing solutions.\n- 📜 [React: how to debug the source code](https://andreigatej.dev/blog/react-debugging-the-source-code/): a few setup tips if you want to debug Jest tests of the React codebase.\n- 📜 [Netlify Connect](https://twitter.com/ascorbic/status/1668586011117465600): integration of the Gatsby Valhalla GraphQL data layer into Netlify, following the acquisition of the React framework.\n- 📜 [Add Drizzle ORM to a Remix app](https://www.jacobparis.com/content/remix-drizzle)\n- 📜 [A Visual Guide to the new App Router in Next.js 13](https://www.builder.io/blog/next-13-app-router)\n- 🔗 [Thinking in React Query](https://tkdodo.eu/blog/thinking-in-react-query): slides from React-Summit talk. React-Query is an Async State Manager, not just a data fetching solution.\n- 📦 [Shadcn UI CLI](https://twitter.com/shadcn/status/1666861850091458560): new configurable CLI for the Radix/Tailwind Shadcn UI component collection.\n- 📦 [Hiber 3D](https://hiberworld.com/developer): new framework for creating interactive 3D worlds, based on React.\n- 📦 [NakedJSX](https://nakedjsx.org/): simple CLI tool to generate static sites in JSX.\n- 📦 [rad-event-listener](https://github.com/JLarky/rad-event-listener): alternative API for adding listeners. Returns a cleanup function: useful for reducing the React boilerplate.\n- 📦 [Tremor v3 - React library to build dashboards](https://twitter.com/tremorlabs/status/1666706183409860610)\n- 📦 [React-Redux 8.1](https://github.com/reduxjs/react-redux/releases/tag/v8.1.0)\n- 🎙️ [This Month in React – May 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--May-2023-e25flvh): our monthly podcast with Reactiflux.\n- 🎥 [Does Lock-In Even Matter Anymore?](https://www.youtube.com/watch?v=rtgjFEJaFI8): interesting reflection on the potential lock-in (or not) of Vercel when using certain Next.js features.\n- 🎥 [Is Next.js App Router Slow? Performance Deep Dive](https://www.youtube.com/watch?v=HbUDiNlU6Yw)\n- 🎥 [From Pages to the App Directory in Next.js 13 (Nested Layouts)](https://www.youtube.com/watch?v=QkntFWb_V8k)\n- 🎥 [High-school student makes React a million times faster](https://www.youtube.com/watch?v=VkezQMb1DHw)",
+      "source_content_hash": "33b705a372912cbf5da027c6c24fe262131139ae577eda9084aa2064271a4a6e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [react-server-dom-vite](https://twitter.com/nkSaraf98/status/1667934636297650179) : PR React core en cours de révision pour ajouter un package officiel d'intégration Vite pour les React Server Components, prenant en charge la nature lazy et ESM du bundler.\n- 👤 [Sophie Alpert à la recherche d'un emploi](https://twitter.com/sebastienlorber/status/1668562588781748224) : opportunité unique d'embaucher l'une des principales contributrices React de tous les temps.\n- 📜 [Vous pouvez arrêter de détester React.FC](https://www.totaltypescript.com/you-can-stop-hating-react-fc) : pour Matt Pocock, `React.FC` n'est plus un anti-pattern à partir de TypeScript 5.1 et React 18, mais il recommande de continuer à annoter les props.\n- 📜 [Meilleures images dans Astro](https://astro.build/blog/images/) : Astro v2.6 apporte un nouveau composant image optimisé (expérimental). Il utilise webp, évite les décalages de mise en page, prend en charge les chemins relatifs Markdown et les services d'images externes.\n- 📜 [Zedux : Est-ce le bon ?](https://omnistac.github.io/zedux/blog/zedux-is-this-the-one) : introduction à Zedux, un nouveau gestionnaire d'état React basé sur les atomes et la composition. Il existe de nombreux gestionnaires d'état React, et j'ai pensé que celui-ci se démarquait et valait le coup d'œil : liste impressionnante de fonctionnalités, documentation soignée, et reprend le meilleur des solutions existantes.\n- 📜 [React : comment déboguer le code source](https://andreigatej.dev/blog/react-debugging-the-source-code/) : quelques conseils de configuration si vous souhaitez déboguer les tests Jest de la base de code React.\n- 📜 [Netlify Connect](https://twitter.com/ascorbic/status/1668586011117465600) : intégration de la couche de données GraphQL Valhalla de Gatsby dans Netlify, suite à l'acquisition du framework React.\n- 📜 [Ajouter Drizzle ORM à une application Remix](https://www.jacobparis.com/content/remix-drizzle)\n- 📜 [Guide visuel du nouveau routeur d'application dans Next.js 13](https://www.builder.io/blog/next-13-app-router)\n- 🔗 [Penser en React Query](https://tkdodo.eu/blog/thinking-in-react-query) : diapositives du talk React Summit. React Query est un gestionnaire d'état asynchrone, pas seulement une solution de récupération de données.\n- 📦 [Shadcn UI CLI](https://twitter.com/shadcn/status/1666861850091458560) : nouveau CLI configurable pour la collection de composants Shadcn UI basée sur Radix/Tailwind.\n- 📦 [Hiber 3D](https://hiberworld.com/developer) : nouveau framework pour créer des mondes 3D interactifs, basé sur React.\n- 📦 [NakedJSX](https://nakedjsx.org/) : outil CLI simple pour générer des sites statiques en JSX.\n- 📦 [rad-event-listener](https://github.com/JLarky/rad-event-listener) : API alternative pour ajouter des écouteurs. Renvoie une fonction de nettoyage : utile pour réduire le boilerplate React.\n- 📦 [Tremor v3 - Bibliothèque React pour créer des tableaux de bord](https://twitter.com/tremorlabs/status/1666706183409860610)\n- 📦 [React-Redux 8.1](https://github.com/reduxjs/react-redux/releases/tag/v8.1.0)\n- 🎙️ [Ce mois-ci dans React – Mai 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--May-2023-e25flvh) : notre podcast mensuel avec Reactiflux.\n- 🎥 [Le verrouillage a-t-il encore de l'importance ?](https://www.youtube.com/watch?v=rtgjFEJaFI8) : réflexion intéressante sur le verrouillage potentiel (ou non) de Vercel lors de l'utilisation de certaines fonctionnalités Next.js.\n- 🎥 [Le routeur d'application Next.js est-il lent ? Plongée dans les performances](https://www.youtube.com/watch?v=HbUDiNlU6Yw)\n- 🎥 [Des pages au répertoire app dans Next.js 13 (layouts imbriqués)](https://www.youtube.com/watch?v=QkntFWb_V8k)\n- 🎥 [Un lycéen rend React un million de fois plus rapide](https://www.youtube.com/watch?v=VkezQMb1DHw)",
+        "en": "- 👀 [react-server-dom-vite](https://twitter.com/nkSaraf98/status/1667934636297650179) : PR React core en cours de révision pour ajouter un package officiel d'intégration Vite pour les React Server Components, prenant en charge la nature paresseuse et ESM du bundler.\n- 👤 [Sophie Alpert looking for a job](https://twitter.com/sebastienlorber/status/1668562588781748224) : opportunité unique d'embaucher l'une des plus grandes contributrices React de tous les temps.\n- 📜 [You Can Stop Hating React.FC](https://www.totaltypescript.com/you-can-stop-hating-react-fc) : pour Matt Pocock, `React.FC` n'est plus un anti-patron à partir de TypeScript 5.1 et React 18, mais il recommande de s'en tenir à l'annotation des props.\n- 📜 [Better Images in Astro](https://astro.build/blog/images/) : Astro v2.6 apporte un nouveau composant d'image optimisée (expérimental). Il utilise webp, évite les décalages de mise en page, prend en charge les chemins relatifs Markdown et les services d'images externes.\n- 📜 [Zedux: Is this the one?](https://omnistac.github.io/zedux/blog/zedux-is-this-the-one) : introduction à Zedux, un nouveau gestionnaire d'état React basé sur les atomes et la composition. Il existe de nombreux gestionnaires d'état React, et j'ai pensé que celui-ci se démarquait et valait la peine d'être examiné : liste impressionnante de fonctionnalités, documentation soignée, et reprend le meilleur des solutions existantes.\n- 📜 [React: how to debug the source code](https://andreigatej.dev/blog/react-debugging-the-source-code/) : quelques conseils de configuration si vous souhaitez déboguer les tests Jest de la base de code React.\n- 📜 [Netlify Connect](https://twitter.com/ascorbic/status/1668586011117465600) : intégration de la couche de données GraphQL Gatsby Valhalla dans Netlify, suite à l'acquisition du framework React.\n- 📜 [Add Drizzle ORM to a Remix app](https://www.jacobparis.com/content/remix-drizzle)\n- 📜 [A Visual Guide to the new App Router in Next.js 13](https://www.builder.io/blog/next-13-app-router)\n- 🔗 [Thinking in React Query](https://tkdodo.eu/blog/thinking-in-react-query) : diapositives du talk React-Summit. React-Query est un gestionnaire d'état asynchrone, pas seulement une solution de récupération de données.\n- 📦 [Shadcn UI CLI](https://twitter.com/shadcn/status/1666861850091458560) : nouveau CLI configurable pour la collection de composants Shadcn UI basée sur Radix/Tailwind.\n- 📦 [Hiber 3D](https://hiberworld.com/developer) : nouveau framework pour créer des mondes 3D interactifs, basé sur React.\n- 📦 [NakedJSX](https://nakedjsx.org/) : outil CLI simple pour générer des sites statiques en JSX.\n- 📦 [rad-event-listener](https://github.com/JLarky/rad-event-listener) : API alternative pour ajouter des écouteurs. Retourne une fonction de nettoyage : utile pour réduire le boilerplate React.\n- 📦 [Tremor v3 - React library to build dashboards](https://twitter.com/tremorlabs/status/1666706183409860610)\n- 📦 [React-Redux 8.1](https://github.com/reduxjs/react-redux/releases/tag/v8.1.0)\n- 🎙️ [This Month in React – May 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--May-2023-e25flvh) : notre podcast mensuel avec Reactiflux.\n- 🎥 [Does Lock-In Even Matter Anymore?](https://www.youtube.com/watch?v=rtgjFEJaFI8) : réflexion intéressante sur le lock-in potentiel (ou non) de Vercel lors de l'utilisation de certaines fonctionnalités Next.js.\n- 🎥 [Is Next.js App Router Slow? Performance Deep Dive](https://www.youtube.com/watch?v=HbUDiNlU6Yw)\n- 🎥 [From Pages to the App Directory in Next.js 13 (Nested Layouts)](https://www.youtube.com/watch?v=QkntFWb_V8k)\n- 🎥 [High-school student makes React a million times faster](https://www.youtube.com/watch?v=VkezQMb1DHw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "897e0025",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_897e0025",
+        "en": "@@untranslatable_placeholder_897e0025"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[![React Bricks is a CMS with visual editing for Next.js, Remix and Gatsby.](/emails/issues/148/reactbricks.png)](https://reactbricks.com/?utm_source=thisweekinreact)",
+      "source_content_hash": "fc6f010367f7ed7f4f5f33c70e763655bda4a1c7ee1ecf6cb26b3a03062c2446",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Bricks est un CMS avec édition visuelle pour Next.js, Remix et Gatsby.](/emails/issues/148/reactbricks.png)](https://reactbricks.com/?utm_source=thisweekinreact)",
+        "en": "[![React Bricks est un CMS avec édition visuelle pour Next.js, Remix et Gatsby.](/emails/issues/148/reactbricks.png)](https://reactbricks.com/?utm_source=thisweekinreact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "**[React Bricks is a CMS with visual editing for Next.js, Remix and Gatsby.](https://reactbricks.com/?utm_source=thisweekinreact)**",
+      "source_content_hash": "9d93c24e02f42437adf4152e2c21c8e94084aabb0d5f81394887f57bff18750f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Bricks est un CMS avec édition visuelle pour Next.js, Remix et Gatsby.](https://reactbricks.com/?utm_source=thisweekinreact)**",
+        "en": "**[React Bricks est un CMS avec édition visuelle pour Next.js, Remix et Gatsby.](https://reactbricks.com/?utm_source=thisweekinreact)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "**It's flexible for Developers**: with React components you can create your own design system. Add true inline Visual editing to your JSX and add sidebar controls to edit props like the background color. You can choose Next.js, Remix or Gatsby and any CSS framework!",
+      "source_content_hash": "2f0efe764c6d0abdf11944a65e44103e3cd5bb64a6111ed83f68366136f3e47c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Flexible pour les développeurs** : avec des composants React, vous pouvez créer votre propre système de design. Ajoutez une véritable édition visuelle en ligne à votre JSX et contrôlez les props comme la couleur de fond via une barre latérale. Vous pouvez choisir Next.js, Remix ou Gatsby et n'importe quel framework CSS !",
+        "en": "**Flexible pour les développeurs** : avec des composants React, vous pouvez créer votre propre système de design. Ajoutez une véritable édition visuelle en ligne à votre JSX et des contrôles latéraux pour modifier des props comme la couleur d'arrière-plan. Vous pouvez choisir Next.js, Remix ou Gatsby et n'importe quel framework CSS !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "**Content editors** can easily edit content inline without breaking the design system. It's as easy as using Word or Pages, allowing them to create landing pages in minutes without relying on developer resources.",
+      "source_content_hash": "5cf82c833c134d0f62a06efdd2d1a6785deaa1c74426d1a257e1a34e223b6d67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Les éditeurs de contenu** peuvent facilement modifier le contenu en ligne sans altérer le système de design. Aussi simple qu'utiliser Word ou Pages, cela leur permet de créer des pages d'atterrissage en minutes sans dépendre des ressources des développeurs.",
+        "en": "**Les éditeurs de contenu** peuvent facilement modifier le contenu en ligne sans compromettre le système de design. Aussi simple qu'utiliser Word ou Pages, leur permettant de créer des pages d'atterrissage en minutes sans dépendre des ressources développeurs."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "**It's enterprise-ready** with Collaboration, Time-machine, Single Sign-on, GDPR-compliant datacenters, Global CDN for optimized images, E-commerce integration, Fine-grained permissions, Scheduled publishing and more.",
+      "source_content_hash": "f2d8cde24bac4532d6a2a43eaabd1b05dbf865b5a65aca9dd3107ae31cf40e38",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Prêt pour l'entreprise** avec des fonctionnalités comme la Collaboration, Time-machine, Single Sign-on, des datacenters conformes au RGPD, CDN global pour les images optimisées, intégration e-commerce, permissions granulaires, publication planifiée et plus encore.",
+        "en": "**Prêt pour l'entreprise** avec Collaboration, Machine à remonter le temps, Authentification unique, centres de données conformes RGPD, CDN global pour images optimisées, intégration e-commerce, permissions granulaires, publication planifiée et plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "**Get started here: [https://reactbricks.com](https://reactbricks.com/?utm_source=thisweekinreact)**",
+      "source_content_hash": "efd46093f93991b2349095ee76b4a99a6f654b9eba80cca58850c7bc169efb58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Commencez ici : [https://reactbricks.com](https://reactbricks.com/?utm_source=thisweekinreact)**",
+        "en": "**Commencez ici : [https://reactbricks.com](https://reactbricks.com/?utm_source=thisweekinreact)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f414353c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f947c8e4",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "- 📦 [React-Native 0.72.0-RC.6](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.6): new Golden RC fixing bugs and bringing XCode 15 support.\n- 📦 [React-Native 0.71.10](https://github.com/facebook/react-native/releases/tag/v0.71.10): XCode 15 support, also available for v0.70 and v0.69.\n- 📦 [Reanimated 3.3](https://twitter.com/swmansion/status/1668640779923849216): supports React-Native v0.72 and React Native Web v0.19.\n- 📦 [Expo-Apple-Targets](https://github.com/EvanBacon/expo-apple-targets): Config Plugin to create Apple targets (Share Extension, Widgets, Watch App...). It only handles target generation and linking, and is not a way to [develop those targets with React-Native](https://twitter.com/Baconbrix/status/1668001651922223104).\n- 📜 [Running Maestro UI Tests in an Expo Development Build](https://blog.mobile.dev/running-maestro-ui-tests-in-an-expo-development-builds-1ca443ab2a30)\n- 🎙️ [React-Native-Radio 268 - Embarking on Expo SDK 48](https://reactnativeradio.com/episodes/rnr-268-embarking-on-expo-sdk-48)\n- 🎥 [Building a MacOS App with React Native: Is it Possible?](https://www.youtube.com/watch?v=xkYy_6kje9E)\n- 🎥 [What’s the best cross-platform technology in 2023](https://www.youtube.com/watch?v=lYfgGgJgHB0): nice retrospective of cross-platform from 2010 to 2023, and the main players in 2023.\n- 🎥 [React Native Shared Element Transitions with Reanimated 3](https://www.youtube.com/watch?v=tsleLxbvxe0)",
+      "source_content_hash": "a511542cc303ca55236694dae1d1ed58271b7c004266179db5eda99613fb9d31",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📦 [React-Native 0.72.0-RC.6](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.6) : nouvelle RC dorée corrigeant des bugs et ajoutant le support de XCode 15.\n- 📦 [React-Native 0.71.10](https://github.com/facebook/react-native/releases/tag/v0.71.10) : support de XCode 15, également disponible pour les versions v0.70 et v0.69.\n- 📦 [Reanimated 3.3](https://twitter.com/swmansion/status/1668640779923849216) : supporte React-Native v0.72 et React Native Web v0.19.\n- 📦 [Expo-Apple-Targets](https://github.com/EvanBacon/expo-apple-targets) : Config Plugin pour créer des cibles Apple (Share Extension, Widgets, Watch App...). Il ne gère que la génération et le linking des cibles, et n'est pas une solution pour [développer ces cibles avec React-Native](https://twitter.com/Baconbrix/status/1668001651922223104).\n- 📜 [Exécuter des tests UI Maestro dans un Expo Development Build](https://blog.mobile.dev/running-maestro-ui-tests-in-an-expo-development-builds-1ca443ab2a30)\n- 🎙️ [React-Native-Radio 268 - Embarking on Expo SDK 48](https://reactnativeradio.com/episodes/rnr-268-embarking-on-expo-sdk-48)\n- 🎥 [Créer une app MacOS avec React Native : est-ce possible ?](https://www.youtube.com/watch?v=xkYy_6kje9E)\n- 🎥 [Quelle est la meilleure technologie cross-platform en 2023](https://www.youtube.com/watch?v=lYfgGgJgHB0) : intéressante rétrospective du cross-platform de 2010 à 2023, et des principaux acteurs en 2023.\n- 🎥 [Transitions d'éléments partagés dans React Native avec Reanimated 3](https://www.youtube.com/watch?v=tsleLxbvxe0)",
+        "en": "- 📦 [React-Native 0.72.0-RC.6](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.6) : nouvelle RC Gold corrigeant des bugs et ajoutant la prise en charge de XCode 15.\n- 📦 [React-Native 0.71.10](https://github.com/facebook/react-native/releases/tag/v0.71.10) : prise en charge de XCode 15, également disponible pour v0.70 et v0.69.\n- 📦 [Reanimated 3.3](https://twitter.com/swmansion/status/1668640779923849216) : prend en charge React-Native v0.72 et React Native Web v0.19.\n- 📦 [Expo-Apple-Targets](https://github.com/EvanBacon/expo-apple-targets) : Plugin de configuration pour créer des cibles Apple (Extension de partage, Widgets, App Watch...). Ne gère que la génération et le lien des cibles, pas un moyen de [développer ces cibles avec React-Native](https://twitter.com/Baconbrix/status/1668001651922223104).\n- 📜 [Exécuter des tests UI Maestro dans une Expo Development Build](https://blog.mobile.dev/running-maestro-ui-tests-in-an-expo-development-builds-1ca443ab2a30)\n- 🎙️ [React-Native-Radio 268 - Démarrer avec Expo SDK 48](https://reactnativeradio.com/episodes/rnr-268-embarking-on-expo-sdk-48)\n- 🎥 [Construire une app MacOS avec React Native : Est-ce possible ?](https://www.youtube.com/watch?v=xkYy_6kje9E)\n- 🎥 [Quelle est la meilleure technologie cross-platform en 2023](https://www.youtube.com/watch?v=lYfgGgJgHB0) : belle rétrospective du cross-platform de 2010 à 2023 et des principaux acteurs en 2023.\n- 🎥 [Transitions d'éléments partagés dans React Native avec Reanimated 3](https://www.youtube.com/watch?v=tsleLxbvxe0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0bee36ce",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9b8694c",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Emplois {#jobs}",
+        "en": "## 🧑‍💻 Emplois {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - 160k€+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+        "en": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/télétravail**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Réseaux Sociaux et Newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de bâtir des entreprises évolutives et durables.",
+        "en": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Réseaux Sociaux et Newsletters. Rejoignez-nous pour construire un outil permettant aux créateurs mondiaux de bâtir des entreprises scalables et durables."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Callstack - Développeur React Native Senior - 100% Remote, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)",
+        "en": "🧑‍💼 [**Callstack - Développeur React Native Senior - Télétravail complet, PLN 21-32k net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Souhaitez-vous travailler sur les applications les plus utilisées au monde ? Voudriez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site web pour plus de détails. Nous attendons avec impatience votre candidature - montrez-nous ce que vous savez faire !",
+        "en": "Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack, leader en React et React Native. Consultez notre site web pour plus de détails. Nous avons hâte de voir votre candidature - montrez-nous ce que vous savez faire !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c9e2b64",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% distants**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% distants**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5c7d994c",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Envoyez un DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.",
+        "en": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k USD plus 10% de bonus. Une expérience en production avec RN est requise, et vous devez être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour plus d'informations et n'oubliez pas de mentionner This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1ecf0882",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8bafd2d7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fff17ff8",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b459cfc1",
+      "source_content": "- [Polywasm - A polyfill for WebAssembly](https://github.com/evanw/polywasm)\n- [Wasmati - a TypeScript library to write Wasm at the instruction level](https://www.zksecurity.xyz/blog/posts/wasmati/)\n- [Ezno compiler/typechecker open-sourced](https://github.com/kaleidawave/ezno/discussions/21)\n- [Why We Should Stop Using JavaScript According to Douglas Crockford](https://www.youtube.com/watch?v=lc5Np9OqDHU)\n- [Web Apps on macOS Sonoma 14 Beta](https://blog.tomayac.com/2023/06/07/web-apps-on-macos-sonoma-14-beta/)\n- [Modern CSS in Real Life](https://chriscoyier.net/2023/06/06/modern-css-in-real-life/)\n- [Modern CSS For Dynamic Component-Based Architecture](https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/)\n- [Lightning CSS 1.21](https://twitter.com/devongovett/status/1666476856990908416)\n- [ts-patterns 5.0](https://github.com/gvergnaud/ts-pattern/releases/tag/v5.0.0)\n- [What's New in DevTools (Chrome 115)](https://developer.chrome.com/blog/new-in-devtools-115/)",
+      "source_content_hash": "a65a06548c2fb7fe4de64458393bd78ac8e03fa1150f0678fbd4e4403eea0008",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Polywasm - Un polyfill pour WebAssembly](https://github.com/evanw/polywasm)\n- [Wasmati - une bibliothèque TypeScript pour écrire du Wasm au niveau instruction](https://www.zksecurity.xyz/blog/posts/wasmati/)\n- [Compilateur/vérificateur de types Ezno rendu open source](https://github.com/kaleidawave/ezno/discussions/21)\n- [Pourquoi nous devrions arrêter d'utiliser JavaScript selon Douglas Crockford](https://www.youtube.com/watch?v=lc5Np9OqDHU)\n- [Applications Web sur macOS Sonoma 14 Beta](https://blog.tomayac.com/2023/06/07/web-apps-on-macos-sonoma-14-beta/)\n- [CSS moderne dans la vraie vie](https://chriscoyier.net/2023/06/06/modern-css-in-real-life/)\n- [CSS moderne pour une architecture dynamique basée sur les composants](https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/)\n- [Lightning CSS 1.21](https://twitter.com/devongovett/status/1666476856990908416)\n- [ts-patterns 5.0](https://github.com/gvergnaud/ts-pattern/releases/tag/v5.0.0)\n- [Nouveautés dans DevTools (Chrome 115)](https://developer.chrome.com/blog/new-in-devtools-115/)",
+        "en": "- [Polywasm - Un polyfill pour WebAssembly](https://github.com/evanw/polywasm)\n- [Wasmati - une bibliothèque TypeScript pour écrire du Wasm au niveau de l'instruction](https://www.zksecurity.xyz/blog/posts/wasmati/)\n- [Ezno compilateur/vérificateur de type open-sourcé](https://github.com/kaleidawave/ezno/discussions/21)\n- [Pourquoi nous devrions arrêter d'utiliser JavaScript selon Douglas Crockford](https://www.youtube.com/watch?v=lc5Np9OqDHU)\n- [Applications Web sur macOS Sonoma 14 Beta](https://blog.tomayac.com/2023/06/07/web-apps-on-macos-sonoma-14-beta/)\n- [CSS moderne dans la vie réelle](https://chriscoyier.net/2023/06/06/modern-css-in-real-life/)\n- [CSS moderne pour une architecture dynamique basée sur les composants](https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/)\n- [Lightning CSS 1.21](https://twitter.com/devongovett/status/1666476856990908416)\n- [ts-patterns 5.0](https://github.com/gvergnaud/ts-pattern/releases/tag/v5.0.0)\n- [Quoi de neuf dans DevTools (Chrome 115)](https://developer.chrome.com/blog/new-in-devtools-115/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7057b5fb",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2f2d5f01",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "[![alt](/emails/issues/148/meme.jpg)](https://twitter.com/adamwathan/status/1666939669311901696)",
+      "source_content_hash": "c11042b8fb55a44e34cfba383de22ab897f47771995da7dc2c12f99ddd70fde8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/148/meme.jpg)](https://twitter.com/adamwathan/status/1666939669311901696)",
+        "en": "[![alt](/emails/issues/148/meme.jpg)](https://twitter.com/adamwathan/status/1666939669311901696)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/148/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.185073+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "ae39763298b07e3d7fad7fc0651c8ea5fa9f79c8c296ab7eb60547b8c230d543",
+    "en": "ae39763298b07e3d7fad7fc0651c8ea5fa9f79c8c296ab7eb60547b8c230d543"
+  }
+}

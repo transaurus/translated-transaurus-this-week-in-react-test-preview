@@ -1,0 +1,188 @@
+---
+slug: /143
+title: "This Week In React #143: RSC Quiz, useFormStatus, Next.js Website, Panda CSS, useLayoutEffect, Million.js, Immer, Super Apps, React-Three-Fiber, Vite..."
+authors: [slorber]
+date: 04-25-2023
+---
+
+Bonjour à tous !
+
+Nous avons beaucoup d'excellents articles sur React cette semaine, ainsi que de belles sorties. J'ai apprécié l'analyse détaillée des animations sur le nouveau site Next.js et la découverte de la nouvelle bibliothèque Panda CSS.
+
+Nous sentons que React devient de plus en plus un framework avec les Server Components. Un nouveau hook expérimental `useFormStatus` arrive 👀.
+
+Callstack nous offre une belle ressource sur les Super Apps en React-Native.
+
+Il y a eu une importante vague de licenciements chez Meta 😓.
+
+Pour info, cette newsletter possède un **[chat Discord](https://thisweekinreact.com/chat)**. Il était initialement uniquement en français, mais je l'ai réorganisé pour vous accueillir tous désormais, alors rejoignez-nous et discutons !
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Commanditaire {#sponsor1}
+
+[![React-admin](/emails/issues/141/react_admin.png)](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[React-admin - Le framework open-source pour applications B2B](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+Êtes-vous en train de développer un panneau d'administration avec React ? Si oui, nous avons d'excellentes nouvelles pour vous ! En utilisant React-admin, un framework open-source pour applications B2B, vous pouvez vous épargner des jours de codage ! 🤩
+
+Avec React-admin, vous pouvez non seulement gagner un temps précieux mais aussi devenir un meilleur développeur ! Ne vous fiez pas uniquement à notre parole : plus de 20 000 développeurs l'utilisent quotidiennement et attestent de son efficacité. Si vous êtes curieux des retours d'expérience, consultez le témoignage de l'ONG [Caritas](https://marmelab.com/blog/2022/07/07/react-admin-caritas.html).
+
+Rejoignez notre communauté dynamique et notre serveur [Discord](https://discord.com/invite/jR3D6SdQ) pour rester informé des dernières mises à jour de React-admin et bénéficier du soutien d'un réseau de développeurs expérimentés.
+
+Alors qu'attendez-vous ? Commencez à utiliser React-admin dès maintenant, c'est gratuit 😉, et faites passer votre développement au niveau supérieur ! 🚀
+
+---
+
+## ⚛️ React {#react}
+
+[![Crafting the Next.js Website](/emails/issues/143/nextjs.jpg)](https://rauno.me/craft/nextjs)
+
+**[La conception du site Next.js](https://rauno.me/craft/nextjs)**
+
+Vous avez peut-être remarqué la [nouvelle page d'accueil de Nextjs.org](https://nextjs.org/) ? Rauno travaille chez Vercel et décortique les subtilités de l'interface utilisateur de cette page. Personnellement, j'adore leur technique de tracé de dégradé ! Une implémentation React intéressante et un excellent résultat.
+
+---
+
+[![Panda CSS – CSS-in-JS sans surcharge à l'exécution](/emails/issues/143/panda.jpg)](https://infinum.com/blog/panda-css-css-in-js-without-runtime-overhead/)
+
+**[Panda CSS – CSS-in-JS sans surcharge à l'exécution](https://infinum.com/blog/panda-css-css-in-js-without-runtime-overhead/)**
+
+Panda CSS est une nouvelle bibliothèque CSS-in-JS sans runtime en cours de développement pour [l'avenir de Chakra UI](https://www.adebayosegun.com/blog/the-future-of-chakra-ui). La documentation de Panda n'est pas encore disponible, mais cet article offre une première vue pragmatique dans un contexte Next.js.
+
+---
+
+- 👥 New wave of layoffs at Meta that also affects open-source tech profiles of our community, including [Mengdi Chen](https://twitter.com/mengdi_en/status/1648718077796786177) (React DevTools), [Robert Balicky](https://twitter.com/StatisticsFTW/status/1648820621252653056) (Relay), [Matt Carroll](https://twitter.com/mattcarrollcode/status/1648770402272018432) (DevRel React, looking for a new job) and [Sean Keegan](https://twitter.com/DevRelSean/status/1649466893806215172) (DevRel React, looking for a new job). Feel free to reach out to those who are looking for a new opportunity.
+- 👀 [React PR - experimental_useFormStatus](https://twitter.com/sebastienlorber/status/1651135782990561280): a new hook `useFormState()` could arrive in React, whose signature is [inspired by Remix](https://twitter.com/sebmarkbage/status/1651191679943049216) `useNavigation()`.
+- 👀 [React.dev translation update](https://twitter.com/dan_abramov/status/1649575563055493120): the translation repositories of the new doc are up to date. It is possible to start translating the new document.
+- 🧵 [Dan Abramov's RSC Quiz](https://twitter.com/dan_abramov/status/1648923232937058304): a very interesting thread that could help you to have a better intuition on how Server Components work.
+- 🧵 [Dan Abramov on the origins / inspirations of React Server Components (PHP/Hack/XHP)](https://twitter.com/dan_abramov/status/1648830869304426500)
+- 🧵 [useLayoutEffect + queueMicrotask](https://twitter.com/sebastienlorber/status/1650829494209466373): my tip got more interest than I thought 😄
+- 🐦 [Dan Abramov on using Preact Signals](https://twitter.com/dan_abramov/status/1650892432119148546): this patches React, which can not guarantee its proper functioning if you decide to use it.
+- 📜 [Why You Don't Need Signals in React](https://blog.axlight.com/posts/why-you-dont-need-signals-in-react/): Daishi explained that signals are characterized by 2 elements: responsiveness, and diffing bypassing. He proposes to use Jotai for reactivity, and not to try to bypass diffing.
+- 📜 [Creative ways of using useReducer](https://www.code-insights.dev/posts/creative-ways-of-using-usereducer): highlights 4 original ways to use `useReducer`: toggle, increment, state formatting and state merge.
+- 📜 [Where to host your Remix app in 2023](https://www.jacobparis.com/guides/where-to-host-remix): good analysis with a comparative matrix to choose your host.
+- 📜 [Securing your Next.js 13 application](https://www.yagiz.co/securing-your-nextjs-13-application): shows how to secure its Next.js app with headers, and proposes a detailed implementation for CSRF.
+- 📜 [Can Rust Beat Javascript in 2023?](https://joshuamo876.bearblog.dev/can-rust-beat-javascript-in-2023/): Web frameworks based on Rust and WebAssembly have progressed well in benchmarks. This also shows that they have a fairly similar model to React.
+- 📜 [Say no to "flickering" UI: useLayoutEffect, painting and browsers story](https://www.developerway.com/posts/no-more-flickering-ui): implements a responsive navigation menu, and explains how a synchronous `useLayoutEffect` can fix a visual glitch of the 1st rendering. For SSR, it's not that simple!
+- 📜 [Display a view counter on your blog with React Server Components](https://scastiel.dev/view-counter-react-server-components): replace SWR with RSC to display a view counter. Adding a Suspense around the counter allows not to block the rendering.
+- 📜 [How we built the Storybook Day 3D animation](https://varun.ca/storybook-day/): explanations on how to create a 3D scene with React-Three-Fiber.
+- 📜 [Storybook Community Showcase 5](https://storybook.js.org/blog/community-showcase-5/)
+- 📜 [The Evolution of React Rendering Architectures & Web Performance](https://www.iamtk.co/the-evolution-of-react-rendering-architectures-and-web-performance)
+- 📜 [Integrating React Flow and the Web Audio API](https://reactflow.dev/blog/react-flow-and-the-web-audio-api/)
+- 📦 [Vite 4.3](https://vitejs.dev/blog/announcing-vite4-3.html): big performance improvements on a benchmark with 1000 React components.
+- 📦 [Redux Toolkit v2.0.0 alpha.5](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0-alpha.5): new `combineSlices` API to lazy-load reducers.
+- 📦 [T3 Env](https://env.t3.gg/): new solution to parse environment variables with Zod, with Next.js integration.
+- 📦 [React-Three-Offscreen](https://github.com/pmndrs/react-three-offscreen): allows React-Three-Fiber 3D rendering in a web worker via an OffscreenCanvas, to avoid blocking the main thread.
+- 📦 [Million.js 2.3.0](https://twitter.com/aidenybai/status/1650406345517199361): Next.js support and optimizer Forgetti integration. A new package [Hundred.js](https://twitter.com/aidenybai/status/1651072640650727424) to understand how the block-based virtual DOM works.
+- 📦 [Immer 10.0](https://github.com/immerjs/immer/releases/tag/v10.0.0): faster, smaller.
+- 📦 [Lingui 4.0](https://github.com/lingui/js-lingui/releases/tag/v4.0.0)
+- 📦 [Micro Frontends Next Generation - A React Server Components Playground](https://github.com/unstubbable/mfng)
+- 📦 [Simple RSC, Deno Edition](https://github.com/itsMapleLeaf/simple-rsc-deno)
+- 🎥 [Next.js Image Component Just Got Way Better](https://www.youtube.com/watch?v=Ow3VsOJcvpM): show the advantages of using Cloudinary in a Next.js app. I take the opportunity to thank James for the [newsletter shoutout](https://www.youtube.com/clip/UgkxZ3ySVUr0oCmNn_VQcBJGOFPdSG2V_h3h) 🤗.
+- 🎥 [React and TypeScript Stopped Fighting?](https://www.youtube.com/watch?v=sr8bwLXDm3U)
+- 🎥 [How To Fix NextJS 13's N+1 Problem](https://www.youtube.com/watch?v=FfHsIio4aCU)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- Interface d'édition pour vos fichiers Markdown
+- Interface pour les composants MDX
+- Prend en charge le rendu statique (SSG) et côté serveur (SSR)
+- Option d'édition visuelle (prévisualisation en direct)
+- Construction avec des blocs réutilisables
+
+Testez un site de démarrage
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)
+- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)
+
+Ou exécutez `npx create-tina-app@latest` puis visitez `localhost:3000/admin`
+
+Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Développement d'applications Super](/emails/issues/143/superapp.jpg)](https://www.callstack.com/super-app-development)
+
+**[Développement d'applications Super](https://www.callstack.com/super-app-development)**
+
+Callstack a publié une excellente ressource sur les Super Apps, qui permettent d'assembler plusieurs mini-applications sous une seule interface mobile. Ils décrivent les avantages commerciaux et organisationnels ainsi que les solutions techniques possibles, et mettent en avant leur solution préférée : Re.Pack et Module Federation. Il y a également un dépôt [Super App Showcase](https://github.com/callstack/super-app-showcase) avec un exemple de Super App à étudier.
+
+Les Super Apps sont populaires en Asie (WeChat, MoMo...) mais gagnent du terrain. Mon intuition me dit que [l'interface utilisateur de la PlayStation 5 pourrait être une Super App React-Native](https://twitter.com/syke/status/1619413099861413889), à confirmer !
+
+---
+
+- 👤 [Mark Lawlor (NativeWind) rejoint Expo](https://twitter.com/mark__lawlor/status/1648834143659384832) : une bonne nouvelle pour la communauté, un développeur supplémentaire pour travailler sur la prise en charge web/cross-platform.
+- 👀 [Bluesky - application Expo universelle](https://twitter.com/Baconbrix/status/1650608419135700993) : Twitter et son nouveau concurrent Bluesky [utilisent tous deux React-Native-Web](https://twitter.com/sebastienlorber/status/1650488087430963204).
+- 💬 [RFC : Prise en charge des Expo Config Plugins dans les apps React Native](https://twitter.com/TMisiukiewicz/status/1649050245106659330) : propose d'intégrer directement les Expo Config Plugins dans le cœur de React-Native pour diverses raisons DX, notamment pour faciliter les mises à niveau. Proposition [contestée par Brent Vatne](https://github.com/react-native-community/discussions-and-proposals/pull/637#issuecomment-1518083817) et la communauté car il n'est pas si difficile d'ajouter le support Config Plugin/Prebuild à un projet React-Native existant.
+- 📜 [Utiliser l'IA pour écrire des tests de composants React](https://www.callstack.com/blog/using-ai-to-write-tests-for-react-components)
+- 📦 [React-Native 0.71.7](https://github.com/facebook/react-native/releases/tag/v0.71.7)
+- 📦 [SkiaAnimationShowcase](https://github.com/friyiajr/SkiaAnimationShowcase)
+- 🎙️ [Syntax FM - Club du Souper × Nate Weinert et Tamagui](https://syntax.fm/show/601/supper-club-nate-weinert-and-tamagui)
+- 🎙️ [RNR 264 - Tests RN avec Detox avec Josh Justice et Jason Grosz](https://reactnativeradio.com/episodes/rnr-264-a-detox-case-study-with-josh-justice-and-jason-grosz)
+- 👥 [App.js](https://appjs.co/) (Cracovie, 10-12 mai) nous offre [-20% sur les ateliers](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (code "ThisWeekinReact20").
+- 👥 [Chain React](https://chainreactconf.com/) (Portland, 18-19 mai) nous offre -10% sur les inscriptions (code "thisweekinreact").
+- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (Paris, 1er juin) nous offre -10% sur les inscriptions (code "REACTHEBDO").
+
+---
+
+## 🧑‍💻 Emplois {#jobs}
+
+🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/distance**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Réseaux Sociaux et Newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de bâtir des entreprises évolutives et durables.
+
+🧑‍💼 [**Callstack - Développeur React Native Senior - Télétravail complet, PLN 21-32k nets en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)
+
+Souhaitez-vous travailler sur les applications les plus utilisées au monde ? Voulez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature - montrez-nous ce que vous savez faire !
+
+🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.
+
+💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 Autres {#other}
+
+- [Comment nous avons accéléré par 9x les démarrages à froid serverless avec Prisma](https://www.prisma.io/blog/prisma-and-serverless-73hbgKnZ6t)
+- [Oracle envoie un avis juridique pour violation de la marque JavaScript](https://twitter.com/sebastienlorber/status/1650502618760839170)
+- [Partykit - Kit pour créer des applications collaboratives en temps réel](https://github.com/partykit/partykit)
+- [Nouveautés dans ECMAScript 2023](https://pawelgrzybek.com/whats-new-in-ecmascript-2023/)
+- [Rich Harris sur les frameworks, le web et l'edge](https://www.youtube.com/watch?v=uXCipjbcQfM)
+- [Présentation de la provenance des packages npm](https://github.blog/2023-04-19-introducing-npm-package-provenance/)
+- [La tromperie du "const"](https://www.joshwcomeau.com/javascript/the-const-deception/)
+- [Choisir le bon outil pour naviguer dans la boucle d'événements JavaScript](https://www.macarthur.me/posts/navigating-the-event-loop)
+- [Badges pour les applications web d'écran d'accueil](https://webkit.org/blog/14112/badging-for-home-screen-web-apps/)
+- [Lightning CSS 1.20](https://twitter.com/devongovett/status/1648818638479142914)
+- [Rspack 0.1.9](https://twitter.com/rspack_dev/status/1650802734248108032)
+
+---
+
+## 🤭 Amusement {#fun}
+
+[![alt](/emails/issues/143/meme.jpg)](https://twitter.com/jacobmparis/status/1649762401263452160)
+
+À bientôt ! 👋

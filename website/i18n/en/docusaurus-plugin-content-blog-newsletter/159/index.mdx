@@ -1,0 +1,167 @@
+---
+slug: /159
+title: "React Hebdo #159: Bun, Static Hermes, Next.js, Redwood, Marz, React Aria Components, Next Nav, visionOS, Reanimated, Flame, Skia Fonts, Stagger, Tamagui, TypeScript, Tauri..."
+authors: [slorber]
+date: 09-13-2023
+---
+
+Bonjour à tous !
+
+Cette semaine, les runtimes sont à l'honneur. Bien sûr, nous parlerons de Bun et de Static Hermes.
+
+Je vous épargnerai les débats houleux sur Twitter cette semaine 😅 restons sur des ondes positives.
+
+Pour les experts React, découvrez la conférence [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact) à Londres du 20 au 23 octobre ([-10% - code "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)).
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Des API de niveau entreprise pour les flux, le chat et la vidéo !](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**Des API de niveau entreprise pour les flux, le chat et la vidéo !**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Stream est le créateur d'**API** et de **SDK** de niveau entreprise qui aident les équipes produit et ingénierie à résoudre deux problèmes courants à grande échelle : le chat en application et les flux d'activité sociale.
+
+Avec Stream, les développeurs peuvent intégrer tout type de messagerie ou d'expérience de flux dans leur application en une fraction du temps nécessaire pour créer ces fonctionnalités à partir de zéro. Stream Chat permet aux développeurs d'intégrer facilement une messagerie riche en temps réel dans leurs applications.
+
+Stream fournit des SDK côté client robustes pour les frameworks populaires tels que [**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22), [**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22), Expo, Flutter, Android, Angular, Compose, Unreal et iOS. Débloquez gratuitement des fonctionnalités, fonctions et composants d'interface utilisateur de niveau entreprise pour votre startup ou projet personnel avec le compte Maker.
+
+[**Essayez le nouveau tutoriel React Video !**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+---
+
+## ⚛️ React {#react}
+
+[![Bun 1.0](/emails/issues/159/bun.jpg)](https://bun.sh/blog/bun-v1.0)
+
+[**Bun 1.0**](https://bun.sh/blog/bun-v1.0)
+
+Impossible de passer à côté cette semaine : Bun vient de sortir en version stable v1.0. Cette nouvelle n'est pas directement liée à React, mais elle affectera sans aucun doute tous les développeurs React à un moment donné.
+
+Bun est une chaîne d'outils complète pour JavaScript et TypeScript basée sur Webkit et écrite en Zig. C'est une alternative ultra-rapide à toute une série d'outils frontend que nous utilisons aujourd'hui : Node.js, npx, Babel, esbuild, swc, webpack, Jest, Vitest, npm, Yarn, pnpm... Les benchmarks sont extrêmement impressionnants et résolument réels.
+
+Sa compatibilité avec les outils existants et sa prise en charge mixte ESM/CJS en font un remplacement facile à adopter. Bun est généralement capable d'exécuter votre code tel quel, sans aucune modification (sinon c'est [🐦 considéré comme un bug](https://twitter.com/jarredsumner/status/1700497869160268155)). Les frameworks React comme Next.js, Remix et Astro sont déjà pris en charge. L'utiliser en remplacement de npm/Yarn/pnpm ou de Jest/Vitest constitue probablement un bon point d'entrée avec un risque limité.
+
+**Autres liens utiles :**
+
+- 📣 [Vercel - L'installation de Bun est désormais prise en charge sans configuration](https://vercel.com/changelog/bun-install-is-now-supported-with-zero-configuration)
+- 👀 [React-Native CLI PR - prise en charge de Bun dans la commande init](https://github.com/react-native-community/cli/pull/2073)
+- 🐦 [La console de Bun prend en charge JSX](https://twitter.com/jarredsumner/status/1701499357080736047)
+- 🐦 [Bun + create-expo-app = initialisation 12x plus rapide](https://twitter.com/notbrent/status/1701044351177244790)
+- 📜 [Matteo Collina - Mes réflexions sur Bun et autres aventures](https://adventures.nodeland.dev/archive/my-thoughts-on-bun/)
+- 📦 [Marz - Un framework React Server Components rapide et léger pour Bun](https://github.com/hex2f/marz)
+- 🎥 [Vidéo de lancement officielle - Bun 1.0 est disponible](https://www.youtube.com/watch?v=BsnCpESUEqM)
+- 🎥 [Fireship - Bun perturbe l'écosystème JavaScript](https://www.youtube.com/watch?v=dWqNgzZwVJQ)
+- 🎥 [Lee Robinson - Mes réflexions sur Bun](https://www.youtube.com/watch?v=z_66kDwxwBI)
+
+---
+
+- 💸 [Zero To Shipped - Maîtrisez le développement fullstack rapide et **enfin** livrez ce produit](https://www.zerotoshipped.com/)
+- 🐦 [Next.js - Redesign de la sortie console](https://twitter.com/leeerob/status/1701775526459756620)
+- 👀 [RedwoodJS - Prise en charge des React Server Actions](https://community.redwoodjs.com/t/react-server-components-rsc/5081/7) : support limité pour l'instant, les actions serveur doivent être placées dans un fichier séparé.
+- 👀 [React.gg](https://react.gg/) et [The Joy of React](https://www.joyofreact.com/) : les 2 cours React les plus attendus viennent de sortir !
+- 📜 [Next.js, mais pourquoi ?](https://pilcrow.vercel.app/blog/nextjs-why)
+- 📜 [Scalabiliser les équipes d'applications frontend avec Relay](https://hasura.io/blog/scaling-frontend-app-teams-using-relay/)
+- 📜 [Panorama complet des tests automatisés dans les apps React](https://reacthandbook.dev/automated-testing)
+- 📜 [Styliser React Select avec Tailwind](https://www.jussivirtanen.fi/writing/styling-react-select-with-tailwind)
+- 📜 [Surmonter la complexité applicative avec des flux personnalisés](https://www.40seas.com/blog/overcoming-application-complexity-with-customized-flows)
+- 📜 [Tests visuels automatiques dans Storybook, + temps de build 2.2x plus rapides pour React+TS](https://storybook.js.org/blog/automatic-visual-tests-plus-2x-faster-react-ts/)
+- 📜 [Peindre avec les maths : une étude douce du Raymarching](https://blog.maximeheckel.com/posts/painting-with-math-a-gentle-study-of-raymarching/)
+- 📦 [React Aria Components - Désormais en bêta](https://react-spectrum.adobe.com/releases/2023-09-07.html)
+- 📦 [Ariakit React 0.3](https://github.com/ariakit/ariakit/releases/tag/@ariakit/react@0.3.0)
+- 📦 [Next Admin - Administration complète pour Next.js et Prisma](https://github.com/premieroctet/next-admin)
+- 📦 [Next Nav - Extension VSCode pour naviguer et créer des routes Next.js](https://www.next-nav.com/)
+- 👥 [reactjsday](https://2023.reactjsday.it/) (Vérone 🇮🇹, 27 octobre) nous offre [-10% - code "media_TWIR"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)
+- 👥 [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact) (Londres 🇬🇧, 20-23 octobre) nous offre [-10% - code "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![highlight.io - La plateforme open-source de monitoring full-stack](/emails/issues/159/highlight.jpg)](http://highlight.io)
+
+[**highlight.io - La plateforme open-source de monitoring full-stack**](http://highlight.io)
+
+[**highlight.io**](http://highlight.io) est une véritable plateforme open-source de Session Replay, Surveillance d'Erreurs et Journalisation pour votre prochain projet.
+
+Ne perdez plus de temps à deviner pourquoi un bug survient. Utilisez plutôt highlight pour obtenir une image claire de tout ce qui se passe dans le navigateur et sur votre application côté serveur.
+
+L'installation est ultra-simple dans votre framework préféré : [React.js,](https://www.highlight.io/docs/getting-started/client-sdk/reactjs) [Next.js,](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js) [Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix) ou tout autre !
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Static Hermes](/emails/issues/159/hermes.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)
+
+[**Static Hermes**](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)
+
+Static Hermes a été annoncé lors de la React-Native EU la semaine dernière. Je n'y étais pas, donc j'essaie d'expliquer ce que j'ai compris en lisant les diapositives, car la vidéo n'est pas encore sur YouTube.
+
+Static Hermes est un projet expérimental qui vous permet de compiler optionnellement une partie de votre code TypeScript (ou Flow) en code natif. Cela offre des gains de performance significatifs (x10-20) par rapport au mode habituel d'Hermes basé sur l'interprétation de bytecode. Il permet également une intégration facile avec les API natives directement depuis votre code TypeScript (FFI à coût nul, 15 à 80 fois plus rapide qu'un wrapper JSI).
+
+Pour activer cela, TypeScript doit d'abord devenir un langage "sound". Static Hermes modifiera la sémantique de JavaScript pour garantir que les types déclarés correspondent aux types à l'exécution. Cette diapositive explique bien le concept :
+
+[![Static Hermes rend TypeScript sound](/emails/issues/159/hermes2.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement?slide=14)
+
+Une idée très intéressante qui pourrait peut-être un jour avoir un impact en dehors de l'écosystème React-Native ?
+
+**Autres liens utiles :**
+
+- 📜 [Comment accélérer un micro-benchmark de 300x sans tricher](https://tmikov.blogspot.com/2023/09/how-to-speed-up-micro-benchmark-300x.html)
+- 🐦 [Prévoir la prise en charge des mises à jour Over-The-Air](https://twitter.com/mdj_dev/status/1700424775116493053)
+
+---
+
+- 💸 [Blitz - Construisez des applications React Native plus rapidement pour iOS, Android et le Web !](https://www.blitz-rn.com/)
+- 🐦 [Plus de 1000 développeurs utilisent React Native chez Microsoft](https://twitter.com/thymikee/status/1700100221940662684)
+- 🐦 [React Native fonctionnant nativement sur la démo du simulateur Apple Vision Pro](https://twitter.com/o_kwasniewski/status/1701626162521190688)
+- 🧵 [Croquis de la React-Native EU](https://twitter.com/DelphineBugner/status/1700077346852622504)
+- 📜 [Introduction des tests de bout en bout dans React Native Core](https://www.callstack.com/blog/introducing-e2e-tests-to-react-native-core)
+- 📜 [Récapitulatif de la soirée de lancement d'Expo](https://blog.expo.dev/expo-launch-party-recap-697d7b7739e8)
+- 📦 [React-Native macOS 0.72](https://github.com/microsoft/react-native-macos/releases/tag/v0.72.0)
+- 📦 [Reanimated 3.5.0 - Prise en charge de Windows/macOS, createWorkletRuntime, reduceMotion...](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.5.0)
+- 📦 [Stagger - Composant Reanimated multiplateforme pour les effets d'étalement](https://github.com/animate-react-native/stagger)
+- 📦 [Flame AI - CLI pour des mises à niveau React Native interactives pilotées par l'IA](https://github.com/infinitered/flame)
+- 📦 [React-Native-Skia - Gestionnaire de polices, prise en charge des polices système et personnalisées](https://shopify.github.io/react-native-skia/docs/text/fonts/)
+- 📦 [react-native-secure-window - Masquer les vues React Native lors de la capture d'écran](https://github.com/bufgix/react-native-secure-window)
+- 📦 [Tamagui 1.62 - Prise en charge sans configuration](https://github.com/tamagui/tamagui/releases/tag/v1.62.0)
+- 🎙️ [React Native Radio 274 - CI React Native et déploiements automatisés](https://reactnativeradio.com/episodes/rnr-274-react-native-ci-automated-deployments)
+
+---
+
+## 🔀 Autre {#other}
+
+- 👀 [Fin de vie de Node.js 16](https://nodejs.org/en/blog/announcements/nodejs16-eol)
+- 📜 [Feuille de route vers Tauri 2.0 - La mise à jour mobile](https://beta.tauri.app/blog/roadmap-to-tauri-2-0/)
+- 📜 [TypeScript empêche les mauvaises choses... et les bonnes choses](https://kyleshevlin.com/typescript-prevents-bad-things-and-good-things)
+- 📜 [Annonce du support natif npm sur Deno Deploy](https://deno.com/blog/npm-on-deno-deploy)
+- 📜 [Vos en-têtes de cache pourraient probablement être plus agressifs](https://www.macarthur.me/posts/more-aggressive-cache-headers)
+- 📜 [Les grands projets abandonnent-ils TypeScript ?](https://www.totaltypescript.com/are-big-projects-ditching-typescript)
+- 📜 [Aperçu de plus de 25 bibliothèques de composants UI en 2023](https://www.builder.io/blog/25-plus-ui-component-libraries)
+- 📜 [Node.js vs. Deno vs. Bun : Comparatif des runtimes JavaScript](https://snyk.io/fr/blog/javascript-runtime-compare-node-deno-bun/)
+- 📜 [Vercel - Utilisation de Zig dans notre migration progressive de Turborepo de Go vers Rust](https://vercel.com/blog/how-we-continued-porting-turborepo-to-rust)
+- 📦 [Chrome 117 - Regroupement de tableaux, sous-grilles CSS, transition-behavior...](https://developer.chrome.com/en/blog/new-in-chrome-117/)
+- 📦 [Skott - Outil pour analyser, rechercher et visualiser les graphes de dépendances JS/TS/Node.js](https://dev.to/antoinecoulon/introducing-skott-the-new-madge-1bfl)
+- 📦 [Vest 5.0 - Framework de validation déclaratif](https://github.com/ealush/vest/releases/tag/vest%405.0.1)
+
+---
+
+## 🤭 Amusant {#fun}
+
+[![alt](/emails/issues/159/meme.jpg)](https://twitter.com/sebastienlorber/status/1701293733822541931)
+
+À plus ! 👋

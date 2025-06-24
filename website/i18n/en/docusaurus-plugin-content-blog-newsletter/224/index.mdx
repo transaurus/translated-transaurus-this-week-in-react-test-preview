@@ -1,0 +1,164 @@
+---
+slug: /224
+title: "This Week In React #224: Next.js, TanStack Form, Astro, RTK, State Machine, Remix, StyleX | Lynx, Entreprise, SwiftUI, VisionOS, Windows, Hermes, Expo | Node.js, TypeScript, ArkType, Nitro, BetterAuth"
+authors: [slorber]
+date: 03-05-2025
+---
+
+Bonjour à tous !
+
+Cette semaine, nous avons :
+
+- **React** : Une version sympa de Next.js améliorant la DX, et TanStack Form qui lance une v1 stable.
+- **React Native** : Le domaine devient plus compétitif avec ByteDance, Callstack et les premiers signaux d'activité mobile chez Vercel.
+- **Autre** : Le support TypeScript continue de s'améliorer !
+
+Découvrez notre conférence partenaire [React-Summit](https://reactsummit.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇳🇱 Amsterdam - 13 & 17 juin - La plus grande conférence React mondiale ! Utilisez le code promo TWIR pour 10% de réduction.
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Partenaire {#sponsor1}
+
+[![Convex : La base de données conçue pour le codage IA](/emails/issues/224/convex.jpg)](https://convex.link/thisweekai)
+
+**[Convex : La base de données conçue pour le codage IA](https://convex.link/thisweekai)**
+
+À l'ère de la génération de code, vous avez besoin d'un backend que vous pouvez générer en toute confiance avec des plateformes IA. Convex est [largement supérieur](https://stack.convex.dev/introducing-fullstack-bench) dans ce domaine.
+
+Cela parce que Convex n'est que du TypeScript, vous permettant d'écrire des [requêtes sous forme de code](https://docs.convex.dev/functions/query-functions/) automatiquement transactionnelles, mises en cache et en temps réel.
+
+Et ce n'est que le début. Avec Convex, vous pouvez :
+
+- Planifier facilement des fonctions et écrire des tâches cron
+- Configurer un stockage de fichiers
+- Écrire des fonctions serveur efficaces
+- Et bien plus encore...
+
+[Essayez un démarrage rapide dès aujourd'hui](https://docs.convex.dev/quickstarts)
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 15.2](/emails/issues/224/next.jpg)](https://nextjs.org/blog/next-15-2)
+
+[**Next.js 15.2**](https://nextjs.org/blog/next-15-2)
+
+Vercel a publié une nouvelle version mineure de Next.js avec des améliorations majeures de la DX. Les points forts incluent :
+
+- Interface d'erreur repensée et traces de pile améliorées : Une expérience de débogage repensée exploitant la nouvelle API React [`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack)
+- Métadonnées en streaming : Les métadonnées asynchrones ne bloqueront plus le rendu des pages ni les transitions côté client
+- Améliorations des performances de Turbopack : Temps de compilation plus rapides et réduction de l'utilisation mémoire
+- Transitions de vue React (expérimental) : Support expérimental de la nouvelle API View Transitions de React
+- Middleware Node.js (expérimental) : Support expérimental de l'utilisation du runtime Node.js dans les Middlewares
+
+---
+
+[![TanStack Form 1.0](/emails/issues/224/form.jpg)](https://tanstack.com/blog/announcing-tanstack-form-v1)
+
+[**TanStack Form 1.0**](https://tanstack.com/blog/announcing-tanstack-form-v1)
+
+Une nouvelle bibliothèque TanStack, des années de développement, vient d'être publiée en version stable. L'article d'annonce met en lumière un sous-ensemble intéressant de ses fonctionnalités :
+
+- Agnostic des frameworks, headless : Supporte 5 frameworks, dont React utilisé dans les exemples de l'article
+- Sécurité de typage extrême : J'avoue que `<form.Field>` est une API plutôt cool
+- Validation par schéma : Support de Zod, Valibot, ArkType, Standard Schema
+- Validation asynchrone, debouncing intégré, AbortSignal
+- Isomorphique, multiplateforme : Partage de la logique de validation client/serveur
+
+---
+
+- 💸 [Clerk - Build session-based authentication with React and Express](https://go.clerk.com/HRqsMAP)
+- 👀 [Rsbuild Plugin React Router \- Epic Stack example](https://github.com/rspack-contrib/rsbuild-plugin-react-router/tree/main/examples/epic-stack): Did you know that Rsbuild can be used as an alternative to Vite for React Router framework mode? Yep, it can even run Kent’s favorite stack.
+- 🗓️ [React Paris 2025](https://react.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 20 & 21 March (2 days) / 19th of March (Workshops) - Last call to join the React Event of the year in Paris. Get 20% off tickets with code "TWIR"!
+- 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 03 April - Last week of regular registration! Secure your spot now to save 200€ until March 11. Join Ryan Dahl, Sarah Drasner, Wes Bos, Angie Jones, Kyle Simpson, Matteo Collina, Eduardo San Martin Morote and more! Get 15% off tickets with code "TWIR”.
+- 📜 [\{transitions} \= f(state)](https://jordaneldredge.com/blog/transitions-f-of-state/): A rather philosophical article explaining that React can be seen as a state machine where the possible state transitions are implicitly defined by its event handlers. The asynchronous/concurrent nature of React makes it possible to introduce invalid state transitions that you should guard against explicitly.
+- 📜 [Building APIs with Next.js](https://nextjs.org/blog/building-apis-with-nextjs): New official guide from Lee Robinson, covering many cases and answering common questions.
+- 📜 [It's probably time to stop recommending Redux](https://www.bennett.ink/its-probably-time-to-stop-recommending-redux): Argues you probably don’t need a global state manager and can go a long way with an API cache \+ `useState`.
+- 📜 [Signals in React? Not a good idea](https://www.felgus.dev/blog/signals-in-react): React doesn’t have first-class signal support on purpose, and relies on raw data.
+- 📜 [React, Solid, htmx: Part 2](https://bobaekang.com/blog/react-solid-htmx-part-2/): The recent evolution of multiple frameworks, all pushing the web forward in their way.
+- 📜 [Building an InertiaJS app with Rails](https://avohq.io/blog/inertia-js-with-rails): A complete example of a seamless integration of a React frontend with a Rails backend through Inertia, without the need for an API.
+- 📜 [How to Show a 404 in React Router](https://sergiodxa.com/tutorials/create-show-a-404-in-react-router)
+- 📦 [XState Store 3.0](https://stately.ai/blog/2025-02-26-xstate-store-v3): I particularly like the new `store.trigger` API that permits using the store more ergonomically, in particular for cases where event-driven indirection is not useful. This new version makes it an interesting alternative to Zustand, still lightweight but more opinionated, and a path toward adopting real XState state machines.
+- 📦 [Isograph 0.3 \- Modern GraphQL framework, support for Relay-style connections, fetch policies](https://isograph.dev/blog/2025/03/03/isograph-0.3.0/)
+- 📦 [Astro 5.4 \- Remote image optimization in Markdown, enhanced security for dev and preview servers](https://astro.build/blog/astro-540)
+- 📦 [React Hook Form Lenses \- Focus on specific parts of your deeply nested form state](https://github.com/react-hook-form/lenses)
+- 📦 [StyleX 0.11 \- Debugging, CLI caching and docs improvements](https://stylexjs.com/blog/v0.11.0)
+- 📦 [Redux Toolkit 2.6 \- Infinite Query support](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.6.0)
+- 📦 [Remix 2.16 \- Vite 6 support](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v2160)
+- 🎥 [Jack Herrington \- React’s New ViewTransition Component Is A Little Flakey](https://www.youtube.com/watch?v=xfzNXa8WYW8)
+- 🎥 [Alem Tuzlak \- React Router just made your apps faster (splitRouteModules)](https://www.youtube.com/watch?v=A96Xkc9GiGY)
+- 🎙️ [This Month in React \- CRA, React Router, RTK, TypeScript, Astro, Standard Schema](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-02-Updated-new-project-docs-e2vj003)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Commanditaire {#sponsor2}
+
+[![Session pratique de débogage : instrumenter, surveiller et corriger](/emails/issues/224/sentry.jpg)](https://dub.sh/debugging-workshop)
+
+**[Session pratique de débogage : instrumenter, surveiller et corriger](https://dub.sh/debugging-workshop)**
+
+Rejoignez Lazar de Sentry pour une session pratique où vous allez construire, casser, déboguer et corriger. Vous configurerez Sentry, suivrez les erreurs, utiliserez Session Replay et Tracing, et exploiterez une bonne dose d'IA pour trouver et corriger les problèmes rapidement.
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Lynx : Débloquez le natif pour plus de possibilités](/emails/issues/224/lynx.jpg)](https://lynxjs.org/blog/lynx-unlock-native-for-more)
+
+[**Lynx : Débloquez le natif pour plus de possibilités**](https://lynxjs.org/blog/lynx-unlock-native-for-more)
+
+ByteDance vient d'annoncer Lynx, sa technologie native multiplateforme. Elle est largement utilisée dans leurs applications de production, dont TikTok ! Avec des liaisons React, c'est un concurrent sérieux à React Native, et le support d'autres frameworks est attendu. Les choix architecturaux sont intéressants, avec un modèle à deux threads et différents runtimes. Elle prend en charge certaines API CSS et Web que React Native n'a toujours pas et utilise des éléments intrinsèques JSX intégrés pratiques comme `<view>`.
+
+L'ensemble de fonctionnalités au lancement est impressionnant, mais il y a aussi des surprises potentiellement déplaisantes comme l'utilisation de React 17 / Preact ou des éléments personnalisés sur le web. Le temps dira si la technologie tient ses promesses et rivalise vraiment avec le leader établi. Quoi qu'il en soit, la concurrence est saine.
+
+---
+
+- 💸 [WithFrame - Modèles React Native préconstruits](https://withfra.me/templates)
+- 👀 [Fernando Rojo rejoint Vercel en tant que responsable mobile](https://x.com/rauchg/status/1896943726486032783) : Intéressant de voir Vercel déployer des ressources dans l'espace mobile/cross-platform React.
+- 👀 [Framework React Native pour les entreprises](https://enterprise-framework.callstack.com/) : Callstack dévoile ses plans pour open sourcer un nouveau framework RN adapté aux besoins des entreprises.
+- 💬 [Riccardo clarifie la confusion autour d'Hermes](https://github.com/facebook/react-native/pull/48531) : La compilation en code natif n'est pas prête pour la production, mais une nouvelle version d'Hermes avec traduction de bytecode devrait arriver en premier.
+- 📜 [Exposition de vues SwiftUI à React Native : Guide d'intégration](https://www.callstack.com/blog/exposing-swiftui-views-to-react-native-an-integration-guide) : Montre comment construire un paywall SwiftUI dans React Native fonctionnant pour les deux architectures.
+- 📜 [Stratégie IA d'Expo](https://expo.dev/ai/strategy) : Démocratiser la création d'applications, élargissant l'audience du framework Expo et EAS aux développeurs humains et agents IA.
+- 📜 [État de React Native 2024 : Nos principales conclusions](https://blog.swmansion.com/wstate-of-react-native-2024-our-key-takeaways-19a7c0039d36)
+- 📜 [4 fonctionnalités indispensables de Radon IDE pour un développement Expo pratique](https://expo.dev/blog/4-must-have-radon-ide-features-for-even-more-convenient-expo-development)
+- 📜 [Mise en œuvre de l'internationalisation dans les applications React Native](https://addjam.com/blog/2025-02-27/implementing-internationalisation-react-native/)
+- 📦 [Re.Pack 5.0 - Microfrontends mobiles, 5x plus rapide, moins de configuration](https://re-pack.dev/blog/repack-5-release) : Ce bundler alternatif vise à remplacer Metro. La nouvelle version supporte Rspack pour la vitesse, Module Federation 2 pour les microfrontends, et inclut des plugins pour Reanimated, Expo Modules, NativeWind.
+- 📦 [Metro 0.81.3 - Prise en charge des sous-chemis d'import package.json](https://github.com/facebook/metro/releases/tag/v0.81.3)
+- 📦 [React Native VisionOS 0.78](https://github.com/callstack/react-native-visionos/releases/tag/v0.78.0-visionos)
+- 📦 [React Native Windows 0.78](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.78.0)
+- 🎥 [Dan's Lab - Construire des layouts Instagram avec Expo et React-Native](https://www.youtube.com/watch?v=MKCUOLapII4)
+- 🎥 [Beto - Maîtriser les routes API d'Expo Router | Gérer requêtes & flux de données](https://www.youtube.com/watch?v=2_UzR1wdimI)
+- 🎥 [Catalin Miron - Animation de confettis interactive - Reanimated, Gestures & Skia !](https://www.youtube.com/watch?v=MPVUL3MhfZ0)
+- 🎙️ [React Native Radio 323 - Hermes statique avec Tzvetan Mikov](https://infinite.red/react-native-radio/rnr-323-static-hermes-with-tzvetan-mikov)
+- 🎙️ [React Universe On Air 49 - Le développement d'apps avec React Native dépasse le mobile](https://www.youtube.com/watch?v=G1_RMxtswsc)
+
+---
+
+## 🔀 Autre {#other}
+
+- 👀 [Node.js PR - Débloquer la prise en charge de TypeScript dans v22](https://github.com/nodejs/node/pull/57298) : La prise en charge de TypeScript devrait arriver dans une version LTS de Node bientôt !
+- 📜 [Async, Sync, in Between](https://antfu.me/posts/async-sync-in-between) : Utiliser des générateurs pour créer des fonctions sans couleur, une approche intéressante qui rappelle la bibliothèque Effect.
+- 📜 [Les attributs HTML command et commandfor](https://fullystacked.net/command-and-commandfor/)
+- 📦 [TypeScript 5.8 - `erasableSyntaxOnly`, `require(esm)`, rétrécissement de type de retour dépendant](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/) : Un flag que vous devriez probablement activer si vous souhaitez exécuter TypeScript nativement dans Node !
+- 📦 [Better Auth 1.2 - Stripe, Captcha, clés API, équipes, CLI d'initialisation, et plus](https://www.better-auth.com/changelogs/1-2)
+- 📦 [ArkType 2.1 - Pattern matching](https://github.com/arktypeio/arktype/releases/tag/arktype%402.1.0)
+- 📦 [Nitro 2.11 - Erreurs améliorées, serveur de développement, support de base de données et plus](https://github.com/nitrojs/nitro/releases/tag/v2.11.0)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![alt](/emails/issues/224/meme.jpg)](https://x.com/devagrawal09/status/1894892406480281924)
+
+[![alt](/emails/issues/224/meme2.jpg)](https://x.com/aidenybai/status/1895868884986778103)
+
+À plus ! 👋

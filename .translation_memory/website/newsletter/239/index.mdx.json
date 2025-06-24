@@ -1,0 +1,537 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/239/index.mdx",
+  "source_file_content_hash": "2684e592112b70cea2634d0f08c8e6466cd2347228c7b6b1bb65a28115b16bc0",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /239\ntitle: \"This Week In React #239: ViewTransition, Suspense, TanStack, Zero, use-mcp, Compiler, Intl-T | 0.80, Stable APIs, iOS prebuilds, shadcn, Expo, InstantDB, Granite | TypeBuddy, Hono, H3, Playwright, cosmos.gl\"\nauthors: [piaskowyk, tomekzaw]\ndate: 06-18-2025\n---",
+      "source_content_hash": "d16fb858b860de74325495afa5f431c506f12d93b4447a02160d2d596bf6201a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone! **Krzysztof and Tomasz from [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** here 👋",
+      "source_content_hash": "5c76f8b08c594f2ff644b677410fc91c227250a975415049c968dc7d58e7dc14",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous ! **Krzysztof et Tomasz de [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** ici 👋",
+        "en": "Bonjour à tous ! **Krzysztof et Tomasz de [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** ici 👋"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "It's been a fairly calm week for the React ecosystem, but not for the React Native world. Meta has made an exciting announcement about the release of React Native 0.80, where they've decided to officially freeze the Old Architecture. Make sure you're ready to adapt your app to the New Architecture, as it seems like it could be the last moment to do so.",
+      "source_content_hash": "006d7bd3976de55cf53a794e017bfbf5f84e4d323adb465864176ddb99a4dc82",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ce fut une semaine assez calme pour l'écosystème React, mais pas pour le monde React Native. Meta a fait une annonce excitante concernant la sortie de React Native 0.80, où ils ont décidé de figer officiellement l'Ancienne Architecture. Assurez-vous d'être prêt à adapter votre application à la Nouvelle Architecture, car il semble que ce soit le dernier moment pour le faire.",
+        "en": "Cela a été une semaine assez calme pour l'écosystème React, mais pas pour le monde React Native. Meta a fait une annonce passionnante concernant la sortie de React Native 0.80, où ils ont décidé de figer officiellement l'Ancienne Architecture. Assurez-vous d'être prêt à adapter votre application à la Nouvelle Architecture, car il semble que ce soit le dernier moment pour le faire."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b7b09f68",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_b7b09f68",
+        "en": "@@untranslatable_placeholder_b7b09f68"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17011a71",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_17011a71",
+        "en": "@@untranslatable_placeholder_17011a71"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cc3676fa",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_cc3676fa",
+        "en": "@@untranslatable_placeholder_cc3676fa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bc633244",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Partenaire {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "[![Free AI Code Reviews in IDE - VSCode, Cursor, Windsurf](/emails/issues/239/coderabbit.jpg)](https://coderabbit.link/tUMe5xC)",
+      "source_content_hash": "12bbca88e6708ff4b5605bc48a0edece4e961353a62588e2898e05ef5dff920a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Revues de code IA gratuites dans l'IDE - VSCode, Cursor, Windsurf](/emails/issues/239/coderabbit.jpg)](https://coderabbit.link/tUMe5xC)",
+        "en": "[![alt](/emails/issues/239/coderabbit.jpg)](https://coderabbit.link/tUMe5xC)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "**[Free AI Code Reviews in IDE - VSCode, Cursor, Windsurf](https://coderabbit.link/tUMe5xC)**",
+      "source_content_hash": "6571d3d27136d584acb27d2e62d0da118823750807147f36238ba54b976dbd4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Revues de code IA gratuites dans l'IDE - VSCode, Cursor, Windsurf](https://coderabbit.link/tUMe5xC)**",
+        "en": "**[Revues de code IA gratuites dans l'IDE - VSCode, Cursor, Windsurf](https://coderabbit.link/tUMe5xC)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[CodeRabbit](https://coderabbit.link/6ZXULSK) is the AI code review platform purpose built to speed up code reviews and improve code quality. Integrating seamlessly into git workflows and existing toolchains, it delivers codebase-aware reviews and supports all programming languages.",
+      "source_content_hash": "b24b89e404fe676181eb7bf52fd9f6f9c4c50db24003412ec40dd5da2fa33528",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[CodeRabbit](https://coderabbit.link/6ZXULSK) est la plateforme de revue de code IA conçue pour accélérer les revues de code et améliorer la qualité du code. S'intégrant de manière transparente aux workflows git et aux chaînes d'outils existantes, elle fournit des revues conscientes de la base de code et prend en charge tous les langages de programmation.",
+        "en": "[CodeRabbit](https://coderabbit.link/6ZXULSK) est la plateforme de revue de code IA conçue pour accélérer les revues de code et améliorer la qualité du code. S'intégrant de manière transparente aux workflows git et aux chaînes d'outils existantes, elle fournit des revues conscientes de la base de code et prend en charge tous les langages de programmation."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "Now they are excited to deliver AI code reviews directly in VS Code, Cursor, and Windsurf–letting you and your team (vibe) code with confidence and review while keeping in flow.",
+      "source_content_hash": "ca5d7c39fd4be950e5c5724ae0e4631e553513b01254291ae9348610ed8e3a85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ils sont désormais ravis de fournir des revues de code IA directement dans VS Code, Cursor et Windsurf, vous permettant ainsi que votre équipe de coder en toute confiance et de réviser tout en restant dans le flux (vibe).",
+        "en": "Maintenant, ils sont ravis de proposer des revues de code IA directement dans VS Code, Cursor et Windsurf – vous permettant, à vous et votre équipe, de coder en toute confiance et de réviser tout en restant dans le flux."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Even better: code reviews in the IDE are free! That’s right: line-by-line reviews and one-click fixes, all in your IDE at no cost to you.",
+      "source_content_hash": "3d58f489b3b8c97fb58dbe57b064ea8ef0565effa013a7f5eb5d9a1de3e75315",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Encore mieux : les revues de code dans l'IDE sont gratuites ! C'est vrai : des revues ligne par ligne et des corrections en un clic, le tout dans votre IDE sans frais pour vous.",
+        "en": "Encore mieux : les revues de code dans l'IDE sont gratuites ! C'est vrai : des revues ligne par ligne et des corrections en un clic, le tout dans votre IDE sans aucun frais pour vous."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[Install the extension](https://coderabbit.link/LszC1pB) and start vibe checking your code today!",
+      "source_content_hash": "5a53b44e2e1ba5b878463e086552dc6b67e4df35af1874f48674d53d77dd901b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Installez l'extension](https://coderabbit.link/LszC1pB) et commencez dès aujourd'hui à vérifier le vibe de votre code !",
+        "en": "[Installez l'extension](https://coderabbit.link/LszC1pB) et commencez à vérifier l'ambiance de votre code dès aujourd'hui !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2a0d3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "109ace10",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "- 💸 [Product for Engineers - The hidden benefits of being an open-source startup](https://go.posthog.com/twir-jun18)\n- 📊 [The State of React and the Community in 2025](https://blog.isquaredsoftware.com/2025/06/react-community-2025/)\n- 📖 [React Compiler – The Mutability & Aliasing Model](https://github.com/facebook/react/blob/156b7a96f5669470182ad226306184576d6f150f/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md)\n- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=ThisWeekinReact) - 🇺🇸 New York - 18 & 21 Nov. Final early bird opportunity! Join Addy Osmani (Google Chrome), Shaundai Person (Netflix), Shawn Swyx Wang & more!\n- 📜 [Bringing React's \\<ViewTransition\\> to vanilla JS](https://plainvanillaweb.com/blog/articles/2025-06-12-view-transitions/): A good explanation how view transitions are supposed to work and how you can implement them on your own.\n- 📜 [Composable streaming with Suspense](https://twofoldframework.com/blog/composable-streaming-with-suspense): React's Suspense composition allows you to easily implement features like lazy loading or out-of-order rendering without complex configurations and external dependencies.\n- 📜 [Real-Time Gesture Recognition in Videoconferencing](https://blog.swmansion.com/real-time-gesture-recognition-in-videoconferencing-4711855a1a53): browser-based video effects using MediaPipe, Fishjam and Smelter.\n- 📜 [Zero is Not Local-First. It's Better.](https://jjenzz.com/zero-is-not-local-first-its-better/): Zero library is a new sync engine that offers \"partial sync first\" rather than a full \"local-first\" approach, meaning it only syncs the data your application actively queries and uses, making it efficient for apps with large datasets. You don't need to take care of cache invalidation because the server is still the source of truth.\n- 📜 [TanStack Start: the Future of React Frameworks?](https://www.premieroctet.com/blog/en/tanstack-future-react-frameworks): Describes the advantages of the TanStack Start framework, which may potentially become a competitor to well-known frameworks like Remix or Next.js.\n- 📜 [Building the Twitter 1.0 Web Experience](https://largeapps.dev/case-studies/twitter/): A case study on how Twitter Lite PWA was optimized over time and the benefits it brought.\n- 💸 [The Road to Next - Master Full-Stack Web Development with Next.js 15 and React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)\n- 📦 [Relay 20.0 – ESLint plugin update](https://github.com/facebook/relay/releases/tag/v20.0.0)\n- 📦 [use-mcp - A lightweight React hook for connecting to Model Context Protocol servers](https://github.com/modelcontextprotocol/use-mcp)\n- 📦 [Intl-T – A Object-Typed Node-Based i18n Translation Library](https://github.com/nivandres/intl-t)\n- 📦 [React Final Form 7.0 – All modules modernized to TypeScript](https://erikras.com/blog/final-form-to-typescript)\n- 📦 [Meteor 3.3 – Faster Builds with SWC and Bundler Optimizations](https://dev.to/meteor/faster-builds-in-meteor-33-modern-build-stack-with-swc-and-bundler-optimizations-fm2) – 60% faster builds\n- 🎥 [Theo – Defending SQL in JSX](https://www.youtube.com/watch?v=PmXZvGtB7_U)\n- 🎥 [Shruti Kapoor – You’re Managing State Wrong in React](https://www.youtube.com/watch?v=c7FQP-tUn1U)\n- 🎥 [Future Frontend Conf – YouTube Playlist](http://youtube.com/watch?v=xadj32ExtWo&list=PLKGgD1M40S4hHnZtFi_kPgRRjMay_2KMp)",
+      "source_content_hash": "84a1f1e84f757acff2037daf5c8f6487c681a36d4b8cd7edcd903ac52db7a42c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Product for Engineers - Les avantages cachés d'être une startup open-source](https://go.posthog.com/twir-jun18)\n- 📊 [L'état de React et de la communauté en 2025](https://blog.isquaredsoftware.com/2025/06/react-community-2025/)\n- 📖 [React Compiler – Le modèle de mutabilité et d'alias](https://github.com/facebook/react/blob/156b7a96f5669470182ad226306184576d6f150f/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md)\n- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=ThisWeekinReact) - 🇺🇸 New York - 18 & 21 nov. Dernière opportunité tarif early bird ! Rejoignez Addy Osmani (Google Chrome), Shaundai Person (Netflix), Shawn Swyx Wang et plus encore !\n- 📜 [Adapter la \\<ViewTransition\\> de React en vanilla JS](https://plainvanillaweb.com/blog/articles/2025-06-12-view-transitions/) : Une bonne explication du fonctionnement des transitions de vue et comment les implémenter vous-même.\n- 📜 [Streaming composable avec Suspense](https://twofoldframework.com/blog/composable-streaming-with-suspense) : La composition de Suspense dans React permet d'implémenter facilement des fonctionnalités comme le chargement paresseux ou le rendu désordonné sans configurations complexes ni dépendances externes.\n- 📜 [Reconnaissance de gestes en temps réel dans la vidéoconférence](https://blog.swmansion.com/real-time-gesture-recognition-in-videoconferencing-4711855a1a53) : effets vidéo basés sur le navigateur utilisant MediaPipe, Fishjam et Smelter.\n- 📜 [Zero n'est pas Local-First. C'est mieux.](https://jjenzz.com/zero-is-not-local-first-its-better/) : Zero est un nouveau moteur de synchronisation proposant une approche \"partial sync first\" plutôt qu'un \"local-first\" complet, synchronisant uniquement les données que votre application utilise activement. Vous n'avez pas à gérer l'invalidation du cache car le serveur reste la source de vérité.\n- 📜 [TanStack Start : l'avenir des frameworks React ?](https://www.premieroctet.com/blog/en/tanstack-future-react-frameworks) : Décrit les avantages du framework TanStack Start, qui pourrait potentiellement concurrencer des frameworks connus comme Remix ou Next.js.\n- 📜 [Construire l'expérience web Twitter 1.0](https://largeapps.dev/case-studies/twitter/) : Une étude de cas sur l'optimisation progressive de Twitter Lite PWA et les bénéfices obtenus.\n- 💸 [The Road to Next - Maîtrisez le développement web full-stack avec Next.js 15 et React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)\n- 📦 [Relay 20.0 – Mise à jour du plugin ESLint](https://github.com/facebook/relay/releases/tag/v20.0.0)\n- 📦 [use-mcp - Un hook React léger pour se connecter aux serveurs Model Context Protocol](https://github.com/modelcontextprotocol/use-mcp)\n- 📦 [Intl-T – Une bibliothèque de traduction i18n basée sur Node avec typage objet](https://github.com/nivandres/intl-t)\n- 📦 [React Final Form 7.0 – Tous les modules modernisés en TypeScript](https://erikras.com/blog/final-form-to-typescript)\n- 📦 [Meteor 3.3 – Builds plus rapides avec SWC et optimisations de bundler](https://dev.to/meteor/faster-builds-in-meteor-33-modern-build-stack-with-swc-and-bundler-optimizations-fm2) – Builds 60% plus rapides\n- 🎥 [Theo – Défendre SQL dans JSX](https://www.youtube.com/watch?v=PmXZvGtB7_U)\n- 🎥 [Shruti Kapoor – Vous gérez mal l'état dans React](https://www.youtube.com/watch?v=c7FQP-tUn1U)\n- 🎥 [Future Frontend Conf – Playlist YouTube](http://youtube.com/watch?v=xadj32ExtWo&list=PLKGgD1M40S4hHnZtFi_kPgRRjMay_2KMp)",
+        "en": "- 💸 [Product for Engineers - Les avantages cachés d'une startup open-source](https://go.posthog.com/twir-jun18)\n- 📊 [L'état de React et de sa communauté en 2025](https://blog.isquaredsoftware.com/2025/06/react-community-2025/)\n- 📖 [React Compiler – Le modèle de mutabilité et d'alias](https://github.com/facebook/react/blob/156b7a96f5669470182ad226306184576d6f150f/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md)\n- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=ThisWeekinReact) - 🇺🇸 New York - 18 & 21 nov. Dernière opportunité tarif early bird ! Rejoignez Addy Osmani (Google Chrome), Shaundai Person (Netflix), Shawn Swyx Wang et plus encore !\n- 📜 [Apporter le \\<ViewTransition\\> de React à JavaScript vanilla](https://plainvanillaweb.com/blog/articles/2025-06-12-view-transitions/) : Une bonne explication du fonctionnement des transitions de vue et comment les implémenter vous-même.\n- 📜 [Streaming composable avec Suspense](https://twofoldframework.com/blog/composable-streaming-with-suspense) : La composition Suspense de React permet d'implémenter facilement des fonctionnalités comme le chargement différé ou le rendu désordonné sans configurations complexes ni dépendances externes.\n- 📜 [Reconnaissance de gestes en temps réel dans la vidéoconférence](https://blog.swmansion.com/real-time-gesture-recognition-in-videoconferencing-4711855a1a53) : effets vidéo basés navigateur utilisant MediaPipe, Fishjam et Smelter.\n- 📜 [Zero n'est pas Local-First. C'est mieux.](https://jjenzz.com/zero-is-not-local-first-its-better/) : Zero est un nouveau moteur de synchronisation qui propose une approche \"synchronisation partielle d'abord\" plutôt que \"local-first\", ne synchronisant que les données utilisées activement par votre application. Idéal pour les gros jeux de données. Pas besoin de gestion d'invalidation du cache car le serveur reste la source de vérité.\n- 📜 [TanStack Start : le futur des frameworks React ?](https://www.premieroctet.com/blog/en/tanstack-future-react-frameworks) : Décrit les avantages du framework TanStack Start, qui pourrait devenir un concurrent de Remix ou Next.js.\n- 📜 [Construire l'expérience web Twitter 1.0](https://largeapps.dev/case-studies/twitter/) : Étude de cas sur l'optimisation progressive de Twitter Lite PWA et ses bénéfices.\n- 💸 [The Road to Next - Maîtrisez le développement web full-stack avec Next.js 15 et React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)\n- 📦 [Relay 20.0 – Mise à jour du plugin ESLint](https://github.com/facebook/relay/releases/tag/v20.0.0)\n- 📦 [use-mcp - Un hook React léger pour se connecter aux serveurs Model Context Protocol](https://github.com/modelcontextprotocol/use-mcp)\n- 📦 [Intl-T – Une bibliothèque de traduction i18n basée sur des objets typés et Node](https://github.com/nivandres/intl-t)\n- 📦 [React Final Form 7.0 – Tous les modules modernisés en TypeScript](https://erikras.com/blog/final-form-to-typescript)\n- 📦 [Meteor 3.3 – Builds plus rapides avec SWC et optimisations de bundler](https://dev.to/meteor/faster-builds-in-meteor-33-modern-build-stack-with-swc-and-bundler-optimizations-fm2) – 60% de builds plus rapides\n- 🎥 [Theo – Défendre SQL dans JSX](https://www.youtube.com/watch?v=PmXZvGtB7_U)\n- 🎥 [Shruti Kapoor – Vous gérez mal l'état dans React](https://www.youtube.com/watch?v=c7FQP-tUn1U)\n- 🎥 [Future Frontend Conf – Playlist YouTube](http://youtube.com/watch?v=xadj32ExtWo&list=PLKGgD1M40S4hHnZtFi_kPgRRjMay_2KMp)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6214d3c2",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6214d3c2",
+        "en": "@@untranslatable_placeholder_6214d3c2"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b760ab3f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c431704b",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Commanditaire {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "[![Embrace Web RUM provides user-focused observability](/emails/issues/239/embrace.jpg)](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)",
+      "source_content_hash": "a3f3fd887d703345c563c3ec6c8c06ca78037e21b43e439ca9cfcf7e48a66fc6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Embrace Web RUM fournit une observabilité centrée sur l'utilisateur](/emails/issues/239/embrace.jpg)](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)",
+        "en": "[![Embrace Web RUM fournit une observabilité centrée sur l'utilisateur](/emails/issues/239/embrace.jpg)](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "**[Embrace Web RUM provides user-focused observability](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)**",
+      "source_content_hash": "53068c6c42c6129bb8c4c9b418c2e8da0d72cb53e88ea796f11ce896da4f1858",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Embrace Web RUM fournit une observabilité centrée sur l'utilisateur](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)**",
+        "en": "**[Embrace Web RUM fournit une observabilité centrée sur l'utilisateur](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "Want to understand where technical performance actually impacts user engagement? With Embrace Web RUM, you can connect telemetry to what users are actually experiencing, so you know what's broken, why it matters, and how to fix it.",
+      "source_content_hash": "dfbf41f790ba498c67071a5cb1ed13a4527dbc714f5f7e70485e3df7a2706c17",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous souhaitez comprendre où les performances techniques impactent réellement l'engagement utilisateur ? Avec Embrace Web RUM, vous pouvez relier la télémétrie à ce que vivent réellement les utilisateurs, pour identifier ce qui est défaillant, pourquoi c'est important et comment le corriger.",
+        "en": "Vous souhaitez comprendre où la performance technique impacte réellement l'engagement des utilisateurs ? Avec Embrace Web RUM, vous pouvez relier la télémétrie à ce que vivent réellement les utilisateurs, afin de savoir ce qui est cassé, pourquoi c'est important et comment le réparer."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "Full session timelines. Core Web Vitals and JS exceptions in context. User journeys for custom flows with intelligent issue correlation. Built on OpenTelemetry for powerful integration with existing observability systems.",
+      "source_content_hash": "30680d8356109ce934215171f574a149e19229515e06a80a7f03c89623d595c3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Chronologies complètes des sessions. Core Web Vitals et exceptions JS en contexte. Parcours utilisateurs pour flux personnalisés avec corrélation intelligente des problèmes. Construit sur OpenTelemetry pour une intégration puissante avec les systèmes d'observabilité existants.",
+        "en": "Chronologies complètes des sessions. Core Web Vitals et exceptions JavaScript en contexte. Parcours utilisateurs pour les flux personnalisés avec corrélation intelligente des problèmes. Basé sur OpenTelemetry pour une intégration puissante avec les systèmes d'observabilité existants."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "[Join the webinar to learn more.](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)",
+      "source_content_hash": "6a4d47dc34997533cbdcc87b24bcf8fcf1e13660acf4bd134b4fb40b057b545d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Rejoignez le webinaire pour en savoir plus.](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)",
+        "en": "[Rejoignez le webinar pour en savoir plus.](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b051b70c",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "[![React Native 0.80 overview](/emails/issues/239/RN_banner.png)](https://reactnative.dev/blog/2025/06/12/react-native-0.80)",
+      "source_content_hash": "ebe01f671361366703aa0276c913375a2f71c8ee820b5a57d077593535dcdab6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Aperçu de React Native 0.80](/emails/issues/239/RN_banner.png)](https://reactnative.dev/blog/2025/06/12/react-native-0.80)",
+        "en": "[![Aperçu de React Native 0.80](/emails/issues/239/RN_banner.png)](https://reactnative.dev/blog/2025/06/12/react-native-0.80)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "[**React Native 0.80**](https://reactnative.dev/blog/2025/06/12/react-native-0.80)",
+      "source_content_hash": "1d2d1ac5169d672287e1946a186c2980a3b4a914ee4fd6b424f699a8463a6a73",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**React Native 0.80**](https://reactnative.dev/blog/2025/06/12/react-native-0.80)",
+        "en": "[**React Native 0.80**](https://reactnative.dev/blog/2025/06/12/react-native-0.80)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "This milestone release announces the goal of [Moving Towards a Stable JavaScript API](https://reactnative.dev/blog/2025/06/12/moving-towards-a-stable-javascript-api), an ongoing effort to accurately define the JS and TypeScript APIs.",
+      "source_content_hash": "99987600b1eca06449019e3cd4a1d05c771f825a8f3adec7108cfbbf1eadb2e3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette version majeure annonce l'objectif de [Vers une API JavaScript stable](https://reactnative.dev/blog/2025/06/12/moving-towards-a-stable-javascript-api), un effort continu pour définir précisément les API JavaScript et TypeScript.",
+        "en": "Cette version majeure annonce l'objectif de [Transition vers une API JavaScript stable](https://reactnative.dev/blog/2025/06/12/moving-towards-a-stable-javascript-api), un effort continu pour définir précisément les API JavaScript et TypeScript."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "Here are the highlights:",
+      "source_content_hash": "c9069bed64ef5312255b10108b1f6a454d6639b97cee2f6b3432c30b5cf8c3b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Voici les points forts :",
+        "en": "Voici les points forts :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cc9271fb",
+      "source_content": "- React 19.1: Its new `captureOwnerStack()` API can improve the DX of error overlays.\n- JavaScript deep imports deprecation: You’ll have to import everything from the root `’react-native’` exports.\n- Strict TypeScript API (opt in): The Strict TypeScript API is an opt-in preview offering more accurate TypeScript types for the react-native package, generated directly from source code.\n- Legacy Architecture Freezing & Warnings: The React Native team will now focus on the New Architecture.\n- iOS Prebuilds for React Native: iOS builds are roughly 12% faster thanks to shipping prebuilds for Folly and GLog rather than building them from source. In a future release, the rest of React Native core will be shipped as a prebuild.",
+      "source_content_hash": "10ab0a003d93a8765111986a801a95e5ffa837ad99f9ba7604dba098efe778d9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "fr": {
+          "translation": "- React 19.1 : Sa nouvelle API `captureOwnerStack()` peut améliorer la DX des superpositions d'erreurs.\n- Dépréciation des imports profonds JavaScript : Vous devrez tout importer depuis les exports racine `'react-native'`.\n- API TypeScript stricte (optionnelle) : L'API TypeScript stricte est une prévisualisation optionnelle offrant des types TypeScript plus précis pour le package react-native, générés directement depuis le code source.\n- Gel et avertissements de l'architecture héritée : L'équipe React Native se concentrera désormais sur la Nouvelle Architecture.\n- Précompilations iOS pour React Native : Les builds iOS sont environ 12% plus rapides grâce à l'expédition de précompilations pour Folly et GLog plutôt qu'à leur compilation depuis les sources. Dans une future version, le reste du cœur de React Native sera expédié en précompilation.",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`’react-native’`', Translation: '`'react-native'`'.",
+          "timestamp": "2025-06-24T15:50:44.530692+00:00"
+        },
+        "en": {
+          "translation": "- React 19.1 : Sa nouvelle API `captureOwnerStack()` peut améliorer l'expérience développeur des superpositions d'erreurs.\n- Dépréciation des imports profonds JavaScript : Vous devrez tout importer depuis les exports racine `'react-native'`.\n- API TypeScript stricte (opt-in) : L'API TypeScript stricte est une prévisualisation optionnelle offrant des types TypeScript plus précis pour le package react-native, générés directement depuis le code source.\n- Gel et avertissements pour l'architecture Legacy : L'équipe React Native se concentrera désormais sur la Nouvelle Architecture.\n- Précompilations iOS pour React Native : Les builds iOS sont environ 12% plus rapides grâce à l'expédition de précompilations pour Folly et GLog plutôt que leur compilation depuis les sources. Dans une future version, le reste du cœur de React Native sera expédié en précompilé.",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`’react-native’`', Translation: '`'react-native'`'.",
+          "timestamp": "2025-06-24T15:57:01.443153+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "9006437d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "023197ab",
+      "source_content": "- 💸 [WithFrame - Pre-Built React Native Templates](https://withfra.me)\n- 📣 [Expo support for React Native 0.80](https://expo.dev/changelog/react-native-80): You’ll have to use the Expo 54 canary until it becomes stable later this summer, bumping directly to RN 0.81.\n- 👀 [shadcn/ui CLI PR \\- Support scaffolding components for Expo apps using the CLI and registry system](https://github.com/shadcn-ui/ui/pull/7540)\n- 👀 [Bluesky mobile app PR – enable New Architecture](https://github.com/bluesky-social/social-app/pull/8295)\n- 💬 [Flutter \\- Support for iOS 26 “Liquid glass”](https://github.com/flutter/flutter/issues/170310): Interesting to know that Flutter will not add support for iOS 26 and Material 3 Expressive in core.\n- 🐦 [Bring every iOS 26 Liquid Glass feature from WWDC to React Native](https://x.com/saul_sharma/status/1934467342576009254)\n- 🐦 [Speed up iOS e2e test runs with Maestro](https://x.com/janicduplessis/status/1933589353714102511): Avoid generating recursive accessibility labels when not needed, will be shipped in 0.81.\n- 📜 [Best React Native Debugging Tools in 2025](https://blog.swmansion.com/best-react-native-debugging-tools-in-2025-a95dcac7a014): An overview of the current state of debugging tools in the React Native ecosystem.\n- 📜 [Simplifying auth flows in Expo Router with protected routes](https://expo.dev/blog/simplifying-auth-flows-with-protected-routes): How to use the new Expo Router's protected routes to control which screens users can see based on their authentication state – directly in your layout files.\n- 📜 [Expo \\+ InstantDB – What if useState was your backend?](https://expo.dev/blog/what-if-usestate-was-your-backend): The tutorial shows how, with InstantDB, you can simplify backend communication in your Expo app, providing a useState-like experience.\n- 📦 [Granite – Brownfield-friendly React Native framework for microservice apps](https://github.com/toss/granite)\n- 📦 [VisionCamera 4.7 - Android 16 KB page size support](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.7.0)\n- 📦 [Gesture Handler 2.26 \\- RN 0.80 support, relation props in Pressable](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.26.0).\n- 📦 [create-react-native-library 0.51 \\- 16 KB page size on Android](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.51.0).\n- 🎥 [Code with Beto – Liquid Glass Bottom Tabs](https://www.youtube.com/watch?v=L5f8Gy91Gv4)\n- 🎥 [Michał Pierzchała – Shrinking Android app size with R8](https://www.youtube.com/watch?v=Ud6TSlnEzCc)\n- 🎙️ [Rocket Ship 72 – The Frozen Arch, Killing my App & React Native World Domination](https://share.transistor.fm/s/43ce5c20)\n- 🎙️ [RNR 334 – React Native MacOS with Saad Najmi](https://infinite.red/react-native-radio/rnr-334-react-native-macos-with-saad-najmi)",
+      "source_content_hash": "ad214650f00f8f7d5a9a64d7bda5a17e11457663647fcc88e13e4c1e7ba05f84",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [WithFrame - Modèles React Native pré-construits](https://withfra.me)\n- 📣 [Prise en charge d'Expo pour React Native 0.80](https://expo.dev/changelog/react-native-80) : Vous devrez utiliser la version canary d'Expo 54 jusqu'à sa stabilisation fin d'été, passant directement à RN 0.81.\n- 👀 [PR du CLI shadcn/ui - Prise en charge de la génération de composants pour les apps Expo via CLI et système de registre](https://github.com/shadcn-ui/ui/pull/7540)\n- 👀 [PR de l'app mobile Bluesky – activation de la Nouvelle Architecture](https://github.com/bluesky-social/social-app/pull/8295)\n- 💬 [Flutter - Prise en charge d'iOS 26 « Liquid glass »](https://github.com/flutter/flutter/issues/170310) : Intéressant de noter que Flutter n'ajoutera pas le support d'iOS 26 et Material 3 Expressive dans son cœur.\n- 🐦 [Intégrer toutes les fonctionnalités Liquid Glass d'iOS 26 de la WWDC à React Native](https://x.com/saul_sharma/status/1934467342576009254)\n- 🐦 [Accélérer les tests e2e iOS avec Maestro](https://x.com/janicduplessis/status/1933589353714102511) : Évite la génération récursive d'étiquettes d'accessibilité inutiles, sera livré dans la 0.81.\n- 📜 [Meilleurs outils de débogage React Native en 2025](https://blog.swmansion.com/best-react-native-debugging-tools-in-2025-a95dcac7a014) : Aperçu de l'état actuel des outils de débogage dans l'écosystème React Native.\n- 📜 [Simplifier les flux d'authentification dans Expo Router avec des routes protégées](https://expo.dev/blog/simplifying-auth-flows-with-protected-routes) : Comment utiliser les nouvelles routes protégées d'Expo Router pour contrôler les écrans visibles selon l'état d'authentification – directement dans vos fichiers de mise en page.\n- 📜 [Expo + InstantDB – Et si useState était votre backend ?](https://expo.dev/blog/what-if-usestate-was-your-backend) : Le tutoriel montre comment InstantDB simplifie la communication backend dans votre app Expo, offrant une expérience similaire à useState.\n- 📦 [Granite – Framework React Native compatible brownfield pour apps microservices](https://github.com/toss/granite)\n- 📦 [VisionCamera 4.7 - Prise en charge de la taille de page 16 KB sur Android](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.7.0)\n- 📦 [Gesture Handler 2.26 - Support RN 0.80, propriétés de relation dans Pressable](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.26.0).\n- 📦 [create-react-native-library 0.51 - Taille de page 16 KB sur Android](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.51.0).\n- 🎥 [Code avec Beto – Onglets inférieurs Liquid Glass](https://www.youtube.com/watch?v=L5f8Gy91Gv4)\n- 🎥 [Michał Pierzchała – Réduire la taille des apps Android avec R8](https://www.youtube.com/watch?v=Ud6TSlnEzCc)\n- 🎙️ [Rocket Ship 72 – L'Arche Gelée, Tuer mon App & la Domination Mondiale de React Native](https://share.transistor.fm/s/43ce5c20)\n- 🎙️ [RNR 334 – React Native pour macOS avec Saad Najmi](https://infinite.red/react-native-radio/rnr-334-react-native-macos-with-saad-najmi)",
+        "en": "- 💸 [WithFrame - Modèles React Native pré-construits](https://withfra.me)\n- 📣 [Prise en charge d'Expo pour React Native 0.80](https://expo.dev/changelog/react-native-80) : Vous devrez utiliser la version canary d'Expo 54 jusqu'à sa stabilisation cet été, passant directement à RN 0.81.\n- 👀 [PR CLI shadcn/ui - Prise en charge de la génération de composants pour les applications Expo via CLI et système de registre](https://github.com/shadcn-ui/ui/pull/7540)\n- 👀 [PR application mobile Bluesky – activation de la nouvelle architecture](https://github.com/bluesky-social/social-app/pull/8295)\n- 💬 [Flutter - Prise en charge d'iOS 26 \"Liquid glass\"](https://github.com/flutter/flutter/issues/170310) : Intéressant de noter que Flutter n'ajoutera pas le support d'iOS 26 et Material 3 Expressive dans le cœur.\n- 🐦 [Apporter toutes les fonctionnalités iOS 26 Liquid Glass de la WWDC à React Native](https://x.com/saul_sharma/status/1934467342576009254)\n- 🐦 [Accélérer les tests e2e iOS avec Maestro](https://x.com/janicduplessis/status/1933589353714102511) : Éviter la génération d'étiquettes d'accessibilité récursives inutiles, livré dans la 0.81.\n- 📜 [Meilleurs outils de débogage React Native en 2025](https://blog.swmansion.com/best-react-native-debugging-tools-in-2025-a95dcac7a014) : Aperçu de l'état actuel des outils de débogage dans l'écosystème React Native.\n- 📜 [Simplifier les flux d'authentification dans Expo Router avec des routes protégées](https://expo.dev/blog/simplifying-auth-flows-with-protected-routes) : Comment utiliser les nouvelles routes protégées d'Expo Router pour contrôler les écrans visibles selon l'état d'authentification – directement dans les fichiers de mise en page.\n- 📜 [Expo + InstantDB – Et si useState était votre backend ?](https://expo.dev/blog/what-if-usestate-was-your-backend) : Le tutoriel montre comment InstantDB simplifie la communication backend dans les apps Expo avec une expérience similaire à useState.\n- 📦 [Granite – Framework React Native compatible brownfield pour apps microservices](https://github.com/toss/granite)\n- 📦 [VisionCamera 4.7 - Prise en charge de la taille de page 16 KB sur Android](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.7.0)\n- 📦 [Gesture Handler 2.26 \\- Prise en charge RN 0.80, propriétés relationnelles dans Pressable](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.26.0).\n- 📦 [create-react-native-library 0.51 \\- Taille de page 16 KB sur Android](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.51.0).\n- 🎥 [Code avec Beto – Onglets inférieurs Liquid Glass](https://www.youtube.com/watch?v=L5f8Gy91Gv4)\n- 🎥 [Michał Pierzchała – Réduire la taille des apps Android avec R8](https://www.youtube.com/watch?v=Ud6TSlnEzCc)\n- 🎙️ [Rocket Ship 72 – L'Arche Gelée, Tuer mon App & Domination mondiale de React Native](https://share.transistor.fm/s/43ce5c20)\n- 🎙️ [RNR 334 – React Native MacOS avec Saad Najmi](https://infinite.red/react-native-radio/rnr-334-react-native-macos-with-saad-najmi)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42bfcc5d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8172a0a5",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "- 💡 [TypeBuddy](https://github.com/typed-rocks/type-buddy) – write TypeScript types as functions ([playground](https://typed-rocks.github.io/type-buddy/))\n- 📜 [A new way to style gaps in CSS](https://developer.chrome.com/blog/gap-decorations?hl=en) – gap decorations available for developer trial in Chrome and Edge 139\n- 📜 [Safari at WWDC '25: The Ghost of Christmas Past](https://infrequently.org/2025/06/the-ghost-of-christmas-past/)\n- 📜 [Worker Threads in Node.js: A Complete Guide for Multithreading in JavaScript](https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript)\n- 📜 [Animating zooming using CSS: transform order is important](https://jakearchibald.com/2025/animating-zooming/)\n- 📜 [Using await at the top level in ES modules](https://allthingssmitty.com/2025/06/16/using-await-at-the-top-level-in-es-modules/) – real-world use cases, constraints and gotchas\n- 📜 [Dan Abramov – Suppressions of Suppressions](https://overreacted.io/suppressions-of-suppressions/) – some thoughts on linter suppressions and social contracts behind writing software\n- 📦 [H3 v2 beta \\- Fully rewritten on web standards, backward-compatible, faster](https://h3.dev/blog/v2-beta)\n- 📦 [Playwright v1.52 & v1.53 – Fix with AI, Describable Locators](https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9)\n- 📦 [Hono 4.8 - Route Helper, SSG, 3rd party middleware](https://github.com/honojs/hono/releases/tag/v4.8.0)\n- 📦 [cosmos.gl – High-Performance Graph Visualization Engine from the OpenJS Foundation](https://openjsf.org/blog/introducing-cosmos-gl)",
+      "source_content_hash": "f730d4849f89f2dfab4e121453955c637d730c59f200c79a61fae35b9a756d06",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💡 [TypeBuddy](https://github.com/typed-rocks/type-buddy) – écrire des types TypeScript comme fonctions ([playground](https://typed-rocks.github.io/type-buddy/))\n- 📜 [Une nouvelle façon de styliser les écarts en CSS](https://developer.chrome.com/blog/gap-decorations?hl=en) – décorations d'écart disponibles en version d'essai pour les développeurs dans Chrome et Edge 139\n- 📜 [Safari à la WWDC '25 : Le fantôme de Noël passé](https://infrequently.org/2025/06/the-ghost-of-christmas-past/)\n- 📜 [Worker Threads dans Node.js : Un guide complet du multithreading en JavaScript](https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript)\n- 📜 [Animer le zoom avec CSS : l'ordre des transformations est important](https://jakearchibald.com/2025/animating-zooming/)\n- 📜 [Utiliser await au niveau supérieur dans les modules ES](https://allthingssmitty.com/2025/06/16/using-await-at-the-top-level-in-es-modules/) – cas d'utilisation réels, contraintes et pièges\n- 📜 [Dan Abramov – Suppressions des suppressions](https://overreacted.io/suppressions-of-suppressions/) – quelques réflexions sur les suppressions de linter et les contrats sociaux derrière l'écriture de logiciels\n- 📦 [H3 v2 bêta - Réécrit entièrement sur les standards web, rétrocompatible, plus rapide](https://h3.dev/blog/v2-beta)\n- 📦 [Playwright v1.52 & v1.53 – Correction avec IA, localisateurs descriptibles](https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9)\n- 📦 [Hono 4.8 - Aide aux routes, SSG, middleware tiers](https://github.com/honojs/hono/releases/tag/v4.8.0)\n- 📦 [cosmos.gl – Moteur de visualisation de graphes haute performance de l'OpenJS Foundation](https://openjsf.org/blog/introducing-cosmos-gl)",
+        "en": "- 💡 [TypeBuddy](https://github.com/typed-rocks/type-buddy) – écrivez des types TypeScript comme des fonctions ([bac à sable](https://typed-rocks.github.io/type-buddy/))\n- 📜 [Une nouvelle manière de styler les écarts en CSS](https://developer.chrome.com/blog/gap-decorations?hl=en) – décorations d'écart disponibles en essai pour les développeurs dans Chrome et Edge 139\n- 📜 [Safari à WWDC '25 : Le Fantôme de Noël passé](https://infrequently.org/2025/06/the-ghost-of-christmas-past/)\n- 📜 [Threads de travail dans Node.js : Un guide complet pour le multithreading en JavaScript](https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript)\n- 📜 [Animer un zoom avec CSS : l'ordre des transformations est important](https://jakearchibald.com/2025/animating-zooming/)\n- 📜 [Utiliser await au niveau supérieur dans les modules ES](https://allthingssmitty.com/2025/06/16/using-await-at-the-top-level-in-es-modules/) – cas d'utilisation réels, contraintes et pièges\n- 📜 [Dan Abramov – Suppressions des suppressions](https://overreacted.io/suppressions-of-suppressions/) – quelques réflexions sur les suppressions de linter et les contrats sociaux derrière l'écriture de logiciels\n- 📦 [H3 v2 bêta - Réécrit entièrement sur les standards web, rétrocompatible, plus rapide](https://h3.dev/blog/v2-beta)\n- 📦 [Playwright v1.52 & v1.53 – Corriger avec l'IA, Localisateurs descriptibles](https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9)\n- 📦 [Hono 4.8 - Aide à la route, SSG, middleware tiers](https://github.com/honojs/hono/releases/tag/v4.8.0)\n- 📦 [cosmos.gl – Moteur de visualisation de graphes haute performance de l'OpenJS Foundation](https://openjsf.org/blog/introducing-cosmos-gl)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c9e2b64",
+      "source_content": "[![alt](/emails/issues/239/meme2.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7339605943137009664)",
+      "source_content_hash": "d4007862edd67d7b0ee9383e3137d2bddcc90ee95052d295e47442c881a0cea7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/239/meme2.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7339605943137009664)",
+        "en": "[![alt](/emails/issues/239/meme2.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7339605943137009664)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5c7d994c",
+      "source_content": "[![alt](/emails/issues/239/meme1.jpg)](https://x.com/mrousavy/status/1922994477712453742)",
+      "source_content_hash": "283283f5391761865133d3eaf18cdafe0bc4c1dbaae7ac224c6ba5fbbd16e3fb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/239/meme1.jpg)](https://x.com/mrousavy/status/1922994477712453742)",
+        "en": "[![alt](/emails/issues/239/meme1.jpg)](https://x.com/mrousavy/status/1922994477712453742)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1ecf0882",
+      "source_content": "[![alt](/emails/issues/239/meme3.jpg)](https://nerdy.dev/fathers-day-2025)",
+      "source_content_hash": "9e121fa1ec4b96ae86a4a0bb2ccee305c4fe2f87890069d8383ffb3d15dab0d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/239/meme3.jpg)](https://nerdy.dev/fathers-day-2025)",
+        "en": "[![alt](/emails/issues/239/meme3.jpg)](https://nerdy.dev/fathers-day-2025)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e77cf7c6",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/239/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.443201+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "2684e592112b70cea2634d0f08c8e6466cd2347228c7b6b1bb65a28115b16bc0",
+    "en": "2684e592112b70cea2634d0f08c8e6466cd2347228c7b6b1bb65a28115b16bc0"
+  }
+}

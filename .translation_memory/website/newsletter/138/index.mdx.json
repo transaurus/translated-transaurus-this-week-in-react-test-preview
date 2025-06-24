@@ -1,0 +1,733 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/138/index.mdx",
+  "source_file_content_hash": "b26b395b12191a9ebfa9518767217b1dca5cda9cd7411ad9a4b4c310d694c3be",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /138\ntitle: \"This Week In React #138: React-Router, Rspack, RSC, Storybook, Astro, Million, Superflare, Tremor, React-Email, Ink, Metro, VisionCamera, Jest, Proto...\"\nauthors: [slorber]\ndate: 03-14-2023\n---",
+      "source_content_hash": "91efea847a83997ac018a4f7e4c2190993ac597f00951bd8627519b8f13f8514",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "While everyone is playing with GPT-4, I'm still reading the React articles for you!",
+      "source_content_hash": "24a80cb9656348e52643fef25c25ae12ef1fbb73a457fd9b9830623c4f8e2f36",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pendant que tout le monde joue avec GPT-4, je continue de lire les articles React pour vous !",
+        "en": "Alors que tout le monde joue avec GPT-4, je continue de lire les articles React pour vous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "A new `lazy` feature in React-Router looks very useful to avoid waterfalls.",
+      "source_content_hash": "74df9f325cdcb715a8062104cd8a5c73575b294b6d497ae149fb57a115b06ebe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Une nouvelle fonctionnalité `lazy` dans React-Router semble très utile pour éviter les cascades de chargement.",
+        "en": "Une nouvelle fonctionnalité `lazy` dans React-Router semble très utile pour éviter les cascades."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The Rspack bundler in Rust has just been announced.",
+      "source_content_hash": "d055385fe340c95dddf5adac588677de58a5e87be4209e3a09f40ef29584b3d6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le bundler Rspack en Rust vient d'être annoncé.",
+        "en": "Le bundler Rspack en Rust vient d'être annoncé."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "I'd like to create a referral program for this newsletter. The idea is to encourage you to share it with your friends and reward you if new subscribers join us. Do you have any idea what I can offer?",
+      "source_content_hash": "ff9253b360530f53b418c35fb644e7c7126e12e66f44e7fc8f836abc05b9e5fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'aimerais créer un programme de parrainage pour cette newsletter. L'idée est de vous encourager à la partager avec vos amis et de vous récompenser si de nouveaux abonnés nous rejoignent. Avez-vous une idée de ce que je pourrais offrir ?",
+        "en": "J'aimerais créer un programme de parrainage pour cette newsletter. L'idée est de vous encourager à la partager avec vos amis et de vous récompenser si de nouveaux abonnés nous rejoignent. Avez-vous une idée de ce que je pourrais offrir ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "I thought of:",
+      "source_content_hash": "79112c632a8169b8f990008ba6cd088480a6db877b7d74b820ce34cbc34e95ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'ai pensé à :",
+        "en": "J'ai pensé à :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3b695c37",
+      "source_content": "- +1 subscriber - access to my top 10 React articles ever\n- +3 subscribers - access to a well-presented DB of good articles, sorted with tags and rating\n- +5 subscribers - a public thank you on Twitter or LinkedIn\n- +10 subscribers - your job offer in the newsletter\n- +30 subscribers - a course of your choice from Just JavaScript (Dan Abramov), Three.js Journey (Bruno Simon)...\n- +50 subscribers - a one-hour React consulting session",
+      "source_content_hash": "124c0ede5e7963d471fde2135ed17d21a91f9be6408105fe0a2fd9ad4f35d80d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- +1 abonné - accès à mes 10 meilleurs articles React de tous les temps\n- +3 abonnés - accès à une base de données bien présentée de bons articles, triés par tags et notation\n- +5 abonnés - un remerciement public sur Twitter ou LinkedIn\n- +10 abonnés - votre offre d'emploi dans la newsletter\n- +30 abonnés - un cours de votre choix parmi Just JavaScript (Dan Abramov), Three.js Journey (Bruno Simon)...\n- +50 abonnés - une session de consultation React d'une heure",
+        "en": "- +1 abonné - accès à mes 10 meilleurs articles React de tous les temps\n- +3 abonnés - accès à une base de données bien présentée de bons articles, triés par étiquettes et évaluations\n- +5 abonnés - un remerciement public sur Twitter ou LinkedIn\n- +10 abonnés - votre offre d'emploi dans la newsletter\n- +30 abonnés - un cours de votre choix parmi Just JavaScript (Dan Abramov), Three.js Journey (Bruno Simon)...\n- +50 abonnés - une séance de consultation React d'une heure"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a76548f8",
+      "source_content": "It's not easy to choose what to offer 😅. It's easier to manage digital products to get started, but I'm not closed to some physical products (stickers, socks, sneakers, backpack, mug,...).",
+      "source_content_hash": "361fe1140858ff11d7875f21f5670251509fa6f2483103f142a02954eda0a9eb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ce n'est pas facile de choisir quoi offrir 😅. Il est plus facile de gérer des produits numériques pour commencer, mais je ne suis pas fermé à des produits physiques (autocollants, chaussettes, baskets, sac à dos, mug,...).",
+        "en": "Ce n'est pas facile de choisir quoi offrir 😅. C'est plus simple de gérer des produits numériques pour commencer, mais je ne suis pas fermé à certains produits physiques (autocollants, chaussettes, baskets, sac à dos, mug,...)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "Can you reply to this email directly to give me your opinion, and tell me what would motivate you the most?",
+      "source_content_hash": "573d02fd43df8c3cc8e2f598aef5ce7e0deff828f3ea7e95743d5d45f8d01d55",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pouvez-vous répondre directement à cet email pour me donner votre avis et me dire ce qui vous motiverait le plus ?",
+        "en": "Pouvez-vous répondre directement à cet email pour me donner votre avis et me dire ce qui vous motiverait le plus ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2aa183dc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2aa183dc",
+        "en": "@@untranslatable_placeholder_2aa183dc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "102e731c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2405af69",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2405af69",
+        "en": "@@untranslatable_placeholder_2405af69"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "100eac36",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_100eac36",
+        "en": "@@untranslatable_placeholder_100eac36"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd7c9323",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Annonceur {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)",
+      "source_content_hash": "deee21e4180a15f059a6126299dd45c7996a497deb8d087c62d7a03242c93d41",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)",
+        "en": "[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "**[Build reusable blocks. Publish content faster. Get better Core Web Vitals and SEO.](https://suncel.io/)**",
+      "source_content_hash": "420a20eef798b05b03d389e43e8d3b54fa3368aded382155deae89b180eb726e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Construisez des blocs réutilisables. Publiez du contenu plus rapidement. Obtenez de meilleurs Core Web Vitals et un meilleur référencement.](https://suncel.io/)**",
+        "en": "**[Construisez des blocs réutilisables. Publiez du contenu plus rapidement. Obtenez de meilleurs Core Web Vitals et SEO.](https://suncel.io/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "**Content editors** : a game changer for companies that need to produce a lot of content and\nhave a strong SEO strategy. Marketers and content editors can edit and publish pages\nwithout any complexity. Eliminate long delays and publish instantly. Pages and images are\noptimized thanks to Next.js in order to achieve perfect Core Web Vitals scores.",
+      "source_content_hash": "5cec1def1c3995c6e8a5dd6d022f4969aceaa2d4a605622583bd34a5d3f6135e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Éditeurs de contenu** : un changement majeur pour les entreprises qui doivent produire beaucoup de contenu et ont une stratégie SEO solide. Les marketeurs et éditeurs peuvent modifier et publier des pages sans complexité. Éliminez les longs délais et publiez instantanément. Pages et images sont optimisées grâce à Next.js pour obtenir des scores Core Web Vitals parfaits.",
+        "en": "**Éditeurs de contenu** : un changement majeur pour les entreprises qui doivent produire beaucoup de contenu et ont une stratégie SEO solide. Les marketeurs et éditeurs de contenu peuvent modifier et publier des pages sans aucune complexité. Éliminez les longs délais et publiez instantanément. Les pages et images sont optimisées grâce à Next.js afin d'obtenir des scores Core Web Vitals parfaits."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "**Developers :** plug and play with your existing Next.js app. Number of benefits to use\nSuncel CMS as developer :",
+      "source_content_hash": "ac9708953d84e5a57c7d8bfd21a42019b445b933b89fbff9218bf580f7ac2095",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Développeurs :** plug and play avec votre application Next.js existante. Avantages à utiliser Suncel CMS en tant que développeur :",
+        "en": "**Développeurs :** branchez et utilisez avec votre application Next.js existante. Plusieurs avantages à utiliser Suncel CMS en tant que développeur :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "- Build your reusable blocks in React\n- SEO Meta and sitemap are generated automatically (thanks to our SEO module)\n- Create your own custom settings in React\n- Admin customizable in React\n- No routing system needed to fit the CMS",
+      "source_content_hash": "f0d76718a477f9949a2322ff9be2b4be5dcb38737f1dff9f8ba37a9080854df9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Construisez vos blocs réutilisables en React\n- Les métadonnées SEO et le sitemap sont générés automatiquement (grâce à notre module SEO)\n- Créez vos propres paramètres personnalisés en React\n- Administration personnalisable en React\n- Aucun système de routage nécessaire pour s'adapter au CMS",
+        "en": "- Construisez vos blocs réutilisables en React\n- Les méta SEO et le sitemap sont générés automatiquement (grâce à notre module SEO)\n- Créez vos propres paramètres personnalisés en React\n- Administration personnalisable en React\n- Aucun système de routage nécessaire pour s'adapter au CMS"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "**[Visit Suncel.io](https://suncel.io/)** | **[5mn demo video](https://www.youtube.com/watch?v=LUupLEZKp3w)**",
+      "source_content_hash": "6b7ac015e9e1125b6d7c2f0b41b92f6527cfc9cc3e7f060cea017cc8b20400d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Visitez Suncel.io](https://suncel.io/)** | **[Vidéo de démonstration de 5mn](https://www.youtube.com/watch?v=LUupLEZKp3w)**",
+        "en": "**[Visitez Suncel.io](https://suncel.io/)** | **[Vidéo de démo de 5mn](https://www.youtube.com/watch?v=LUupLEZKp3w)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42c293cc",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5a4323e",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "[![Lazy Loading Routes in React Router 6.4+](/emails/issues/138/reactrouterlazy.jpg)](https://remix.run/blog/lazy-loading-routes)",
+      "source_content_hash": "135069557e22e38daf1a86000d88199f812b78449a4c60af068048db800eb63c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Chargement paresseux des routes dans React Router 6.4+](/emails/issues/138/reactrouterlazy.jpg)](https://remix.run/blog/lazy-loading-routes)",
+        "en": "[![Chargement paresseux des routes dans React Router 6.4+](/emails/issues/138/reactrouterlazy.jpg)](https://remix.run/blog/lazy-loading-routes)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7772088",
+      "source_content": "**[Lazy Loading Routes in React Router 6.4+](https://remix.run/blog/lazy-loading-routes)**",
+      "source_content_hash": "ab9ccadc2ffbb1148f011915ddfcad76c54795aad9c8f79702656909bc55a194",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Chargement paresseux des routes dans React Router 6.4+](https://remix.run/blog/lazy-loading-routes)**",
+        "en": "**[Chargement paresseux des routes dans React Router 6.4+](https://remix.run/blog/lazy-loading-routes)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "[React-Router 6.9](https://github.com/remix-run/react-router/releases/tag/react-router%406.9.0) has just been released with a new lazy routes feature that allows to avoid waterfalls, and optimize the loading time of your apps. This is how Remix works, but you can now use this technique on any React-Router based app. Personally I plan to use it on Docusaurus (based on React-Router).",
+      "source_content_hash": "8beebd02edd728316273e1a1fb7b56ea854ff3457deee3386a07767708d07350",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[React-Router 6.9](https://github.com/remix-run/react-router/releases/tag/react-router%406.9.0) vient de sortir avec une nouvelle fonctionnalité de routes paresseuses qui permet d'éviter les cascades de chargement et d'optimiser le temps de chargement de vos applications. C'est ainsi que fonctionne Remix, mais vous pouvez désormais utiliser cette technique sur n'importe quelle application basée sur React-Router. Personnellement, je prévois de l'utiliser sur Docusaurus (basé sur React-Router).",
+        "en": "[React-Router 6.9](https://github.com/remix-run/react-router/releases/tag/react-router%406.9.0) vient d'être publié avec une nouvelle fonctionnalité de routes paresseuses qui permet d'éviter les cascades et d'optimiser le temps de chargement de vos applications. C'est ainsi que Remix fonctionne, mais vous pouvez désormais utiliser cette technique sur n'importe quelle application basée sur React-Router. Personnellement, je prévois de l'utiliser sur Docusaurus (basé sur React-Router)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "01868def",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caffd879",
+      "source_content": "- 👀 [React Flight PR - Add Reply Encoding](https://github.com/facebook/react/pull/26360): streaming support for server => client.\n- 👀 [Integrating Remix Router with React Transitions](https://twitter.com/dan_abramov/status/1634300734094057472): Dan Abramov suggests using `startTransition` in Remix. Suspended components outside `<Suspense>` boundaries should block the transition.\n- 🧵 [Dan Abramov - \"if you’re not composing GraphQL fragments from multiple components into one query \\[...\\] you’re missing 80% of the point of GraphQL\"](https://twitter.com/dan_abramov/status/1634968234821844992): interesting discussions about Relay this week. Although quite intimidating, this GraphQL client has many advantages compared to simpler solutions (colocation, data masking...).\n- 🧵 [70% of Docusaurus sites have good Core Web Vitals](https://twitter.com/sebastienlorber/status/1635661211579580429): my little rant because Docusaurus is often forgotten in the list of React meta-frameworks despite a high usage and good performance.\n- 📜 [The Great Gaslighting of the JavaScript Era](https://www.spicyweb.dev/the-great-gaslighting-of-the-js-age/): violent criticism of React 😅 I don't share the same opinion and think that React developers are generally aware of the tradeoffs they make.\n- 📜 [Client-side JavaScript and React criticism: What comes next?](https://molily.de/javascript-criticism/): more nuanced criticism, but I don't think React and progressive enhancement are incompatible, Remix is a good example.\n- 📜 [State in React is Immutable](https://reacttraining.com/blog/state-in-react-is-immutable): good intro to the immutable model in React.\n- 📜 [Where did Hooks come from?](https://reacttraining.com/blog/where-did-hooks-come-from): goes back to understand why we use hooks today. New React developers are not always aware of the problems encountered a few years ago.\n- 📜 [Fine-tuning refs with useImperativeHandle](https://prateeksurana.me/blog/fine-tuning-refs-with-useimperativehandle/): good intro for this hook that allows a React component to expose an imperative API to its parents.\n- 📜 [My experience learning React, web standards, and Remix](https://andre-landgraf.dev/blog/2023-03-11_web_standards_and_react): back to simplicity, less `useState` and more fullstack.\n- 📜 [Send emails using React and Tailwind CSS](https://resend.com/blog/tailwind-with-react-email): React-Email now supports Tailwind classes.\n- 📜 [Elegantly managing state and renders in React](https://remotion.com/blog/untangling-state-in-react):highlights how the batching of updates works, which can be surprising at first.\n- 📜 [A Brief History of Reactivity](https://www.builder.io/blog/history-of-reactivity): compares the reactive model of various frameworks, including React (coarce-grain reactivity).\n- 📜 [The Most Popular Node.js Frameworks in 2023](https://stackdiary.com/node-js-frameworks/)\n- 📜 [Full-Stack TypeScript with tRPC and React](https://www.robinwieruch.de/react-trpc/)\n- 📜 [Beautiful and mind-bending effects with WebGL Render Targets](https://blog.maximeheckel.com/posts/beautiful-and-mind-bending-effects-with-webgl-render-targets/)\n- 🎥 [RSC with Dan Abramov and Joe Savona Live Stream](https://kentcdodds.com/blog/rsc-with-dan-abramov-and-joe-savona-live-stream)\n- 🎥 [React's place in the frontend ecosystem](https://www.youtube.com/watch?v=GHRkN_G5BMc)\n- 🎥 [Ranking every Full Stack Framework (By...TypeSafety?)](https://www.youtube.com/watch?v=zADNdGVIPBY)\n- 🎥 [Unlock the Power of AI with Defer and NextJS 13 - UI Magic!](https://www.youtube.com/watch?v=kHsTp2LENUI)\n- 📦 [Ink 4.0](https://github.com/vadimdemedes/ink/releases/tag/v4.0.0): the React renderer for CLI is now under React 18 and ESM.\n- 📦 [Koestlich](https://twitter.com/coconut_xr/status/1633770307470098434): a \"3D UI-kit\" based on React-Three-Fiber.\n- 📦 [Storybook 7.0 RC](https://github.com/storybookjs/storybook/releases/tag/v7.0.0-rc.0): API framework with Next.js support Component Story Format 3, MDX 2... See also the conf [Storybook Day 2023](https://www.youtube.com/watch?v=P0hJm5v8TJw)\n- 📦 [Astro 2.1](https://astro.build/blog/astro-210/): Image component, Markdoc support.\n- 📦 [Million 2.0](https://twitter.com/aidenybai/status/1634060432372813829): a virtual DOM based on the concept of \"blocks\" compatible with React and which can make it 70% faster 🤔\n- 📦 [SWR 2.1](https://github.com/vercel/swr/releases/tag/v2.1.0): useSWRSubscription + useSWRInfinite parallel option\n- 📦 [Superflare](https://superflare.dev/): fullstack toolkit for Cloudflare Workers with support for D1, R2, Session, Queues... integration with Remix, and soon Next.js?\n- 📦 [Tremor 2.0](https://twitter.com/tremorlabs/status/1635064912153284609): UI lib to create dashboards, now based on Tailwind CSS.\n- 📦 [next-route-visualizer](https://github.com/DiiiaZoTe/next-route-visualizer)\n- 📦 [Radix - new Form primitive](https://twitter.com/radix_ui/status/1633483912755261443)\n- 📦 [Nodl 1.0](https://twitter.com/emilwidlund/status/1634804041397022720)\n- 📦 [Framer-Motion 10.3](https://twitter.com/mattgperry/status/1635641473319280646)\n- 🐦 [Node.js site now using Next.js](https://twitter.com/leeerob/status/1633595208448311296)",
+      "source_content_hash": "6950b684f685e7df5692154b0ce36d076c2a048ae7ec9fac9240c055f7742a7f",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_caffd879",
+        "en": "@@untranslatable_placeholder_caffd879"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "905803c8",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_905803c8",
+        "en": "@@untranslatable_placeholder_905803c8"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42bfcc5d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8172a0a5",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Commanditaire {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "[![Surveyjs - Extensible JavaScript libraries for surveys and forms](/emails/issues/136/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)",
+      "source_content_hash": "3ac95759a5e8d816e5ce4e274c73f8ca6de68a629b885698965697a81109aa2f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Surveyjs - Bibliothèques JavaScript extensibles pour les enquêtes et formulaires](/emails/issues/136/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)",
+        "en": "[![Surveyjs - Bibliothèques JavaScript extensibles pour les enquêtes et formulaires](/emails/issues/136/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "**[Extensible JavaScript libraries for surveys and forms](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)**",
+      "source_content_hash": "1be1417fbe0e745ee61ce3da14e2657a35e358fc8fdb60acdd7d9e642c261891",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Bibliothèques JavaScript extensibles pour les enquêtes et formulaires](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)**",
+        "en": "**[Bibliothèques JavaScript extensibles pour les enquêtes et formulaires](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "[SurveyJS](https://surveyjs.io/form-library?utm_source=thisweekinreact&utm_medium=referral) is a set of open-source JavaScript form libraries that you can easily integrate into your web app. It lets you **create and run multiple forms**, retaining all sensitive data on your servers, or have **your own self-hosted WYSIWYG form builder** that non-tech users can use directly.",
+      "source_content_hash": "39585fc96bdfe62b3d5f2b23b26c4b1a1e06581546643f4a2b198e25e40b06f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[SurveyJS](https://surveyjs.io/form-library?utm_source=thisweekinreact&utm_medium=referral) est un ensemble de bibliothèques JavaScript open source pour les formulaires que vous pouvez facilement intégrer à votre application web. Il vous permet de **créer et exécuter plusieurs formulaires**, en conservant toutes les données sensibles sur vos serveurs, ou d'avoir **votre propre constructeur de formulaires WYSIWYG auto-hébergé** que les utilisateurs non techniques peuvent utiliser directement.",
+        "en": "[SurveyJS](https://surveyjs.io/form-library?utm_source=thisweekinreact&utm_medium=referral) est un ensemble de bibliothèques JavaScript open-source pour formulaires que vous pouvez facilement intégrer à votre application web. Il vous permet de **créer et exécuter plusieurs formulaires**, en conservant toutes les données sensibles sur vos serveurs, ou d'avoir **votre propre éditeur de formulaires WYSIWYG auto-hébergé** que les utilisateurs non techniques peuvent utiliser directement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "You can also **analyze survey results** in custom-built dashboards, save your forms to PDF, or simply **convert them to editable PDF files**. It offers native support for **React and Angular rendering** and total freedom of choice as to the backend, because **any server + database combination is fully compatible**.",
+      "source_content_hash": "9c6854e16c2168c434879a17bddc39880aa2ac00615a0ca8d969c390854fb20a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous pouvez également **analyser les résultats des enquêtes** dans des tableaux de bord personnalisés, sauvegarder vos formulaires au format PDF, ou simplement **les convertir en fichiers PDF modifiables**. Il offre une prise en charge native pour le **rendu React et Angular** et une liberté totale de choix quant au backend, car **toute combinaison serveur + base de données est entièrement compatible**.",
+        "en": "Vous pouvez également **analyser les résultats des enquêtes** dans des tableaux de bord personnalisés, sauvegarder vos formulaires au format PDF, ou simplement **les convertir en fichiers PDF modifiables**. Il offre une prise en charge native pour le **rendu React et Angular** et une liberté totale de choix pour le backend, car **toute combinaison serveur + base de données est entièrement compatible**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23b96cc0",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4b530389",
+      "source_content": "- 📜 [Building smooth Shared Element Transitions in React Native](https://mrousavy.com/blog/Shared-Element-Transitions-in-React-Native): good intro to Shared Element Transitions in Reanimated 3. It looks simple and flexible to use, with the possibility to customize the transition with a worklet.\n- 📜 [Camera APIs on Android](https://mrousavy.com/blog/Camera-APIs-on-Android): Marc Rousavy explains why camera management is complicated, especially on Android. VisionCamera v3 should switch back to Camera2, and leave the CameraX API aside for now.\n- 📜 [Shopify Tophat - Crafting a Delightful Mobile Developer Experience](https://shopify.engineering/shopify-tophat-mobile-developer-testing): Shopify has created its own DX for its mobile apps, not too far from the Expo experience. Interesting article but not totally related to React-Native.\n- 📜 [Expo - EAS Build will Default to M1/M2 for iOS Builds](https://blog.expo.dev/eas-build-will-default-to-m1-m2-for-ios-builds-24208008a68d): Expo explains the transition to Apple silicon builders to reduce build times on iOS (by 40% for M1, and 10% more for M2)\n- 📜 [Microsoft - Adding Jest Snapshot Testing to React Native Windows Apps](https://devblogs.microsoft.com/react-native/2023-03-02-adding-snapshot-testing-to-rnw-apps/)\n- 📜 [Using React Native VisionCamera: Demo and alternatives](https://blog.logrocket.com/react-native-visioncamera-demo-alternatives/)\n- 🧑‍🎓 [Bridging Tutorial - Learn how to use any platform API in React Native app](https://mateusz1913.github.io/rnbridgingtutorial/): comprehensive resource for creating native modules.\n- 🎙️ [RNR 262 - Maestro: The App-solute Solution for Mobile UI Testing](https://reactnativeradio.com/episodes/rnr-262-maestro-the-app-solute-solution-for-mobile-ui-testing)\n- 📦 [Metro 0.76](https://github.com/facebook/metro/releases/tag/v0.76.0): API ported from Webpack that should [allow code splitting](https://twitter.com/sebastienlorber/status/1635671177082417158) and will be used by Expo Router.\n- 👀 [Expo Web Global CSS support](https://twitter.com/Baconbrix/status/1633562265189326855)",
+      "source_content_hash": "b57758954d0d59c42bafe2533d26be0fc21efd6e5c5dd26d6a17cf9ff5a62df7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Building smooth Shared Element Transitions in React Native](https://mrousavy.com/blog/Shared-Element-Transitions-in-React-Native) : une bonne introduction aux transitions d'éléments partagés dans Reanimated 3. Cela semble simple et flexible à utiliser, avec la possibilité de personnaliser la transition avec un worklet.\n- 📜 [Camera APIs on Android](https://mrousavy.com/blog/Camera-APIs-on-Android) : Marc Rousavy explique pourquoi la gestion de la caméra est compliquée, en particulier sur Android. VisionCamera v3 devrait revenir à Camera2, et laisser de côté l'API CameraX pour l'instant.\n- 📜 [Shopify Tophat - Crafting a Delightful Mobile Developer Experience](https://shopify.engineering/shopify-tophat-mobile-developer-testing) : Shopify a créé sa propre expérience de développement pour ses applications mobiles, pas trop loin de l'expérience Expo. Article intéressant mais pas totalement lié à React-Native.\n- 📜 [Expo - EAS Build will Default to M1/M2 for iOS Builds](https://blog.expo.dev/eas-build-will-default-to-m1-m2-for-ios-builds-24208008a68d) : Expo explique la transition vers les builders Apple silicon pour réduire les temps de build sur iOS (de 40% pour M1, et 10% de plus pour M2).\n- 📜 [Microsoft - Adding Jest Snapshot Testing to React Native Windows Apps](https://devblogs.microsoft.com/react-native/2023-03-02-adding-snapshot-testing-to-rnw-apps/)\n- 📜 [Using React Native VisionCamera: Demo and alternatives](https://blog.logrocket.com/react-native-visioncamera-demo-alternatives/)\n- 🧑‍🎓 [Bridging Tutorial - Learn how to use any platform API in React Native app](https://mateusz1913.github.io/rnbridgingtutorial/) : ressource complète pour créer des modules natifs.\n- 🎙️ [RNR 262 - Maestro: The App-solute Solution for Mobile UI Testing](https://reactnativeradio.com/episodes/rnr-262-maestro-the-app-solute-solution-for-mobile-ui-testing)\n- 📦 [Metro 0.76](https://github.com/facebook/metro/releases/tag/v0.76.0) : API portée depuis Webpack qui devrait [permettre le code splitting](https://twitter.com/sebastienlorber/status/1635671177082417158) et sera utilisée par Expo Router.\n- 👀 [Expo Web Global CSS support](https://twitter.com/Baconbrix/status/1633562265189326855)",
+        "en": "- 📜 [Créer des transitions fluides d'éléments partagés dans React Native](https://mrousavy.com/blog/Shared-Element-Transitions-in-React-Native) : bonne introduction aux transitions d'éléments partagés dans Reanimated 3. Cela semble simple et flexible à utiliser, avec la possibilité de personnaliser la transition avec un worklet.\n- 📜 [API Camera sur Android](https://mrousavy.com/blog/Camera-APIs-on-Android) : Marc Rousavy explique pourquoi la gestion de la caméra est complexe, notamment sur Android. VisionCamera v3 devrait revenir à Camera2 et laisser l'API CameraX de côté pour l'instant.\n- 📜 [Shopify Tophat - Créer une expérience développeur mobile agréable](https://shopify.engineering/shopify-tophat-mobile-developer-testing) : Shopify a créé sa propre DX pour ses applications mobiles, assez proche de l'expérience Expo. Article intéressant mais pas totalement lié à React-Native.\n- 📜 [Expo - EAS Build utilisera par défaut M1/M2 pour les builds iOS](https://blog.expo.dev/eas-build-will-default-to-m1-m2-for-ios-builds-24208008a68d) : Expo explique la transition vers des builders Apple silicon pour réduire les temps de build sur iOS (de 40% pour M1, et 10% supplémentaires pour M2).\n- 📜 [Microsoft - Ajout des tests par snapshot Jest aux applications React Native Windows](https://devblogs.microsoft.com/react-native/2023-03-02-adding-snapshot-testing-to-rnw-apps/)\n- 📜 [Utiliser React Native VisionCamera : Démo et alternatives](https://blog.logrocket.com/react-native-visioncamera-demo-alternatives/)\n- 🧑‍🎓 [Tutoriel de bridging - Apprendre à utiliser n'importe quelle API de plateforme dans une app React Native](https://mateusz1913.github.io/rnbridgingtutorial/) : ressource complète pour créer des modules natifs.\n- 🎙️ [RNR 262 - Maestro : La solution absolue pour les tests d'interface utilisateur mobile](https://reactnativeradio.com/episodes/rnr-262-maestro-the-app-solute-solution-for-mobile-ui-testing)\n- 📦 [Metro 0.76](https://github.com/facebook/metro/releases/tag/v0.76.0) : API portée depuis Webpack qui devrait [permettre le code splitting](https://twitter.com/sebastienlorber/status/1635671177082417158) et sera utilisée par Expo Router.\n- 👀 [Prise en charge du CSS global pour Expo Web](https://twitter.com/Baconbrix/status/1633562265189326855)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f523b45",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c2ab4c8",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Jobs {#jobs}",
+        "en": "## 🧑‍💻 Emplois {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement à distance, PLN 21-32k net en B2B, par mois**](https://www.callstack.com/senior-react-native-developer)",
+        "en": "🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement à distance, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous souhaitez travailler sur les applications les plus utilisées au monde ? Vous aimeriez co-créer la technologie React Native ? Rejoignez l'équipe Callstack, leader en React et React Native. Consultez notre site pour plus de détails. Nous avons hâte de découvrir votre candidature - montrez-nous votre talent !",
+        "en": "Vous souhaitez travailler sur les applications les plus utilisées au monde ? Vous aimeriez co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature avec impatience - montrez-nous ce que vous savez faire !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% distanciel**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% distants**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Contactez [@gabe_g2i](https://twitter.com/gabe_g2i) par DM pour en savoir plus et n'oubliez pas de mentionner This Week in React.",
+        "en": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7057b5fb",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2f2d5f01",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Divers {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "[![Rspack](/emails/issues/138/rspack.jpg)](https://www.rspack.dev/)",
+      "source_content_hash": "81c474776bda14580733d15d2cedbd492d1cb7e12c62981ad0ecfab23e55a6aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Rspack](/emails/issues/138/rspack.jpg)](https://www.rspack.dev/)",
+        "en": "[![Rspack](/emails/issues/138/rspack.jpg)](https://www.rspack.dev/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "**[Rspack](https://www.rspack.dev/)**",
+      "source_content_hash": "c5bf38fab00191ccb4fa60c932abecd9540dbaf3479fac2d86a6468daa3f3d6d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Rspack](https://www.rspack.dev/)**",
+        "en": "**[Rspack](https://www.rspack.dev/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "Official announcement of the Rust bundler from ByteDance, compatible with Webpack but much faster. It will be hard to choose between Rspack and Turbopack, which also announced [upcoming support for Webpack loaders](https://twitter.com/jaredpalmer/status/1619071988181651456). Note that [Unplugin 1.3](https://twitter.com/antfu7/status/1634517321392726017) already supports Rspack and allows to create agnostic bundler plugins. There is no Unplugin Turbopack support yet, but I hope it is planned!",
+      "source_content_hash": "325acaae818212f567f4254581f081a1f207ea794471d1b3bc85d938edb5ca4f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Annonce officielle du bundler Rust de ByteDance, compatible avec Webpack mais bien plus rapide. Il sera difficile de choisir entre Rspack et Turbopack, qui a également annoncé [une prochaine prise en charge des loaders Webpack](https://twitter.com/jaredpalmer/status/1619071988181651456). Notez qu'[Unplugin 1.3](https://twitter.com/antfu7/status/1634517321392726017) prend déjà en charge Rspack et permet de créer des plugins de bundler agnostiques. Aucune prise en charge Turbopack pour Unplugin n'existe encore, mais j'espère qu'elle est prévue !",
+        "en": "Annonce officielle du bundler Rust de ByteDance, compatible avec Webpack mais beaucoup plus rapide. Il sera difficile de choisir entre Rspack et Turbopack, qui a également annoncé [une prise en charge imminente des loaders Webpack](https://twitter.com/jaredpalmer/status/1619071988181651456). Notez que [Unplugin 1.3](https://twitter.com/antfu7/status/1634517321392726017) prend déjà en charge Rspack et permet de créer des plugins de bundler agnostiques. Il n'y a pas encore de support Unplugin pour Turbopack, mais j'espère que c'est prévu !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "Read also [Rspack: The Rust-Based Web Bundler that Combines High Performance with Interoperability](https://valor-software.com/press-release/rs-pack-rust-based-web-bundler)",
+      "source_content_hash": "fbc7e8fda54454eb7d15fb89dc2ddfc64b7d651e57eccab3ca699c862935754f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Lire aussi [Rspack : Le bundler web basé sur Rust qui allie haute performance et interopérabilité](https://valor-software.com/press-release/rs-pack-rust-based-web-bundler)",
+        "en": "Lisez aussi [Rspack : Le bundler Web basé sur Rust qui allie haute performance et interopérabilité](https://valor-software.com/press-release/rs-pack-rust-based-web-bundler)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "03b73b34",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccb70509",
+      "source_content": "- [Jest 29.5](https://github.com/facebook/jest/releases/tag/v29.5.0): CLI `--randomize` option.\n- [CSS Nesting](https://developer.chrome.com/articles/css-nesting/): landing in Chrome 112!\n- [Proto, a next-generation toolchain manager](https://moonrepo.dev/blog/proto): new alternative to fnm or Volta to manage its Node.js runtime (but not only).\n- [SPA view transitions land in Chrome 111](https://developer.chrome.com/blog/spa-view-transitions-land/)\n- [TypeScript’s Migration to Modules](https://devblogs.microsoft.com/typescript/typescripts-migration-to-modules/)\n- [Cloudflare Workers - Node.js compat demo](https://twitter.com/jasnell/status/1633949738516230144)\n- [ts-reset 0.4](https://twitter.com/mattpocockuk/status/1633525273860661257)\n- [Consider Animating Your Canvas in a Web Worker](https://www.macarthur.me/posts/animate-canvas-in-a-worker)\n- [All JavaScript and TypeScript Features of the last 3 years](https://betterprogramming.pub/all-javascript-and-typescript-features-of-the-last-3-years-629c57e73e42)\n- [How to measure CWVs on SPAs](https://estelafranco.com/blog/spa-cwv/)\n- [JavaScript Oxidation Compiler v0.1](https://github.com/Boshen/oxc)\n- [Why Turborepo is migrating from Go to Rust](https://vercel.com/blog/turborepo-migration-go-rust)",
+      "source_content_hash": "6acc877b4b171942d4cf3488370b84a2796c2d6c0d380c218a49b00528574d2f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Jest 29.5](https://github.com/facebook/jest/releases/tag/v29.5.0): option CLI `--randomize`.\n- [CSS Nesting](https://developer.chrome.com/articles/css-nesting/): disponible dans Chrome 112 !\n- [Proto, un gestionnaire de toolchain nouvelle génération](https://moonrepo.dev/blog/proto): nouvelle alternative à fnm ou Volta pour gérer son runtime Node.js (mais pas seulement).\n- [Les transitions de vue SPA arrivent dans Chrome 111](https://developer.chrome.com/blog/spa-view-transitions-land/)\n- [Migration de TypeScript vers les modules](https://devblogs.microsoft.com/typescript/typescripts-migration-to-modules/)\n- [Cloudflare Workers - Démo de compatibilité Node.js](https://twitter.com/jasnell/status/1633949738516230144)\n- [ts-reset 0.4](https://twitter.com/mattpocockuk/status/1633525273860661257)\n- [Envisagez d'animer votre Canvas dans un Web Worker](https://www.macarthur.me/posts/animate-canvas-in-a-worker)\n- [Toutes les fonctionnalités JavaScript et TypeScript des 3 dernières années](https://betterprogramming.pub/all-javascript-and-typescript-features-of-the-last-3-years-629c57e73e42)\n- [Comment mesurer les CWVs sur les SPA](https://estelafranco.com/blog/spa-cwv/)\n- [JavaScript Oxidation Compiler v0.1](https://github.com/Boshen/oxc)\n- [Pourquoi Turborepo migre de Go vers Rust](https://vercel.com/blog/turborepo-migration-go-rust)",
+        "en": "- [Jest 29.5](https://github.com/facebook/jest/releases/tag/v29.5.0) : option CLI `--randomize`.\n- [CSS Nesting](https://developer.chrome.com/articles/css-nesting/) : disponible dans Chrome 112 !\n- [Proto, un gestionnaire de toolchain nouvelle génération](https://moonrepo.dev/blog/proto) : nouvelle alternative à fnm ou Volta pour gérer son runtime Node.js (mais pas que).\n- [Les transitions de vue SPA arrivent dans Chrome 111](https://developer.chrome.com/blog/spa-view-transitions-land/)\n- [Migration de TypeScript vers les modules](https://devblogs.microsoft.com/typescript/typescripts-migration-to-modules/)\n- [Cloudflare Workers - Démo de compatibilité Node.js](https://twitter.com/jasnell/status/1633949738516230144)\n- [ts-reset 0.4](https://twitter.com/mattpocockuk/status/1633525273860661257)\n- [Envisagez d'animer votre Canvas dans un Web Worker](https://www.macarthur.me/posts/animate-canvas-in-a-worker)\n- [Toutes les fonctionnalités JavaScript et TypeScript des 3 dernières années](https://betterprogramming.pub/all-javascript-and-typescript-features-of-the-last-3-years-629c57e73e42)\n- [Comment mesurer les CWVs sur les SPA](https://estelafranco.com/blog/spa-cwv/)\n- [JavaScript Oxidation Compiler v0.1](https://github.com/Boshen/oxc)\n- [Pourquoi Turborepo migre de Go vers Rust](https://vercel.com/blog/turborepo-migration-go-rust)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cdeffb11",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d279c43",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e5821418",
+      "source_content": "[![alt](/emails/issues/138/meme.jpg)](https://twitter.com/sebastienlorber/status/1635592966973669379)",
+      "source_content_hash": "5bf9ee721b78e74cefa670996ea9ccf2fccbf7e5d9def592e2639055aeb06dbd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/138/meme.jpg)](https://twitter.com/sebastienlorber/status/1635592966973669379)",
+        "en": "[![alt](/emails/issues/138/meme.jpg)](https://twitter.com/sebastienlorber/status/1635592966973669379)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4e2e17c5",
+      "source_content": "🤣 [Other funny tweets this week](https://twitter.com/sebastienlorber/status/1635710256876777472)",
+      "source_content_hash": "de4eaed8b6a1204ac788dff1313d9923c6393e5cda97b745cc940bae9aac2e25",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🤣 [Autres tweets drôles cette semaine](https://twitter.com/sebastienlorber/status/1635710256876777472)",
+        "en": "🤣 [Autres tweets drôles cette semaine](https://twitter.com/sebastienlorber/status/1635710256876777472)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b49a7009",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/138/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.173160+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "b26b395b12191a9ebfa9518767217b1dca5cda9cd7411ad9a4b4c310d694c3be",
+    "en": "b26b395b12191a9ebfa9518767217b1dca5cda9cd7411ad9a4b4c310d694c3be"
+  }
+}

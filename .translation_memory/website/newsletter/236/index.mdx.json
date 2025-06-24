@@ -1,0 +1,541 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/236/index.mdx",
+  "source_file_content_hash": "062a96211e3bd51a6da4222278fe00ba2c014a1a811a7bbe28fa14adbb357a63",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /236\ntitle: \"This Week In React #236: Remix, TanStack, RSC, RedwoodSDK, Storybook, Docusaurus | ExecuTorch, Screens, FlashList, Reanimated, Expo, EAS, Radon | TypeScript, Temporal, Angular, JSPM, ESLint, tsdown\"\nauthors: [cyrilbo, matthieugicquel]\ndate: 05-28-2025\n---",
+      "source_content_hash": "387a3142fa77eb94ce960f6e5e67b310d549cb697a10037972c80264604ce484",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) here 👋.",
+      "source_content_hash": "28f9a979d5eafc822df077e35c7214fc70565e971d36ce4c45ff34be31d6a96a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cyril et Matthieu de [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) ici 👋.",
+        "en": "Cyril et Matthieu de [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) ici 👋."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "This week, the Remix team announced some big news. Microsoft has also made it easier to try out TypeScript Go rewriting.",
+      "source_content_hash": "24edb52528f92761b0aa6b9f7027cdb9b3b1b63ef843316cd2ea052e48adaae7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, l'équipe Remix a annoncé d'importantes nouvelles. Microsoft a également facilité l'expérimentation de la réécriture TypeScript Go.",
+        "en": "Cette semaine, l'équipe Remix a annoncé d'importantes nouvelles. Microsoft a également facilité l'expérimentation de la réécriture TypeScript Go."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "In the React Native world, there were a few minor but interesting releases, and the App.js config starts tomorrow. Seb will have more to tell you about it next week.",
+      "source_content_hash": "e88803a1bf6fbb303288aed121c40cd0467cfdbdc2ff4af8714b70e7513d4490",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dans l'univers React Native, il y a eu quelques versions mineures mais intéressantes, et la conférence App.js commence demain. Seb aura plus à vous en dire la semaine prochaine.",
+        "en": "Dans l'écosystème React Native, quelques versions mineures mais intéressantes sont sorties, et la conférence App.js commence demain. Seb vous en dira plus la semaine prochaine."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Let's dive in!",
+      "source_content_hash": "cc45dfce1fed2b9287eef463445c6df3e0386807de86fe31ec69cd1fa09e8d11",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Plongeons dedans !",
+        "en": "Plongeons dans le vif du sujet !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_45c63027",
+        "en": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_92f4ea84",
+        "en": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5dfba1c3",
+        "en": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![AG Charts: The best React Charts in the world.](/emails/issues/236/adgrid.jpg)](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)",
+      "source_content_hash": "207f686492662c6f28c3a2b273c9d9fd029ebe67ad38694fdaf77266342e6d17",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![AG Charts : Les meilleurs graphiques React au monde.](/emails/issues/236/adgrid.jpg)](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)",
+        "en": "[![AG Charts : Les meilleurs graphiques React au monde.](/emails/issues/236/adgrid.jpg)](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[AG Charts: The best React Charts in the world.](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)**",
+      "source_content_hash": "e177549ac239ce91c3cd9f658925a9522fd6cf14eda30d626703f21014c0dff7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[AG Charts : Les meilleurs graphiques React au monde.](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)**",
+        "en": "**[AG Charts : Les meilleurs graphiques React au monde.](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "AG Charts is a canvas-based charting library from AG Grid. Initially built to power [AG Grids](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1) Integrated Charts, AG Charts now has over **1 million** npm downloads/month:",
+      "source_content_hash": "287b3560b88b8e1600e811635130b2ada5a17099cc5b06f33b16a5b9387d7a0e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "AG Charts est une bibliothèque de graphiques basée sur canvas d'AG Grid. Initialement conçue pour alimenter les [AG Grids](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1) Integrated Charts, AG Charts compte désormais plus d'**un million** de téléchargements npm/mois :",
+        "en": "AG Charts est une bibliothèque de graphiques basée sur canvas d'AG Grid. Initialement conçue pour alimenter les [Graphiques Intégrés d'AG Grid](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1), AG Charts compte désormais plus d'**1 million** de téléchargements npm/mois :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f2c8a42b",
+      "source_content": "- 🆓 **Free:** Access a range of chart types, including **bar**, **line**, **scatter**, **area**, and more – completely **free**, forever.\n- 🚀 **Fast:** Using **batch drawing** and advanced change detection alongside the **offscreen canvas API**, AG Charts can easily render hundreds of thousands of data points out of the box\n- 📊 **Financial Charts:** Build interactive financial charts featuring advanced annotations with just 3 lines of code.\n- 🏢 **Enterprise Features:** Upgrade to Enterprise to unlock advanced capabilities such as animations, context menus, crosshairs and more. Try it for free, no trial license required.",
+      "source_content_hash": "d9178d52601d03d4552741124bda817946818c6665b65799cad4d271de34e14b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🆓 **Gratuit :** Accédez à une gamme de types de graphiques, notamment **barres**, **lignes**, **nuages de points**, **aires**, et plus encore - **gratuitement** à vie.\n- 🚀 **Rapide :** Utilisant le **rendu par lots** et une détection avancée des changements avec l'**API Canvas hors écran**, AG Charts peut facilement afficher des centaines de milliers de points de données par défaut.\n- 📊 **Graphiques financiers :** Créez des graphiques financiers interactifs avec annotations avancées en seulement 3 lignes de code.\n- 🏢 **Fonctionnalités Entreprise :** Passez à Enterprise pour débloquer des capacités avancées comme les animations, menus contextuels, réticules et plus. Essayez gratuitement sans licence d'essai requise.",
+        "en": "- 🆓 **Gratuit :** Accédez à une gamme de types de graphiques, notamment **barres**, **lignes**, **nuages de points**, **aires** et plus encore – **gratuitement** à vie.\n- 🚀 **Rapide :** Grâce au **rendu par lots** et à la détection avancée des changements couplée à l'**API Canvas hors écran**, AG Charts peut facilement afficher des centaines de milliers de points de données prêts à l'emploi.\n- 📊 **Graphiques Financiers :** Créez des graphiques financiers interactifs avec annotations avancées en seulement 3 lignes de code.\n- 🏢 **Fonctionnalités Entreprise :** Passez à la version Entreprise pour débloquer des capacités avancées telles que les animations, les menus contextuels, les réticules et plus encore. Essayez gratuitement sans licence d'essai requise."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "Learn More: [www.ag-grid.com/charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)",
+      "source_content_hash": "d35f48487066bd5b10c75b7f7f5453c979d73110cbe4322511d7be4c7ad7823e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En savoir plus : [www.ag-grid.com/charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)",
+        "en": "En savoir plus : [www.ag-grid.com/charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd7c9323",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "[![Wake up Remix](/emails/issues/236/remix.jpg)](https://remix.run/blog/wake-up-remix)",
+      "source_content_hash": "92dfa4039b489fe201aae7b744ff095c0fa9e2f7e9a25c2f93e22086ad394195",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Réveillez-vous Remix](/emails/issues/236/remix.jpg)](https://remix.run/blog/wake-up-remix)",
+        "en": "[![Wake up Remix](/emails/issues/236/remix.jpg)](https://remix.run/blog/wake-up-remix)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "**[Wake up Remix - The plan for Remix v3](https://remix.run/blog/wake-up-remix)**",
+      "source_content_hash": "13a4d0ade59fc3a536abb68f64a5619885cb2b3aca1ec76e70c1263ba325b9fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Réveillez-vous Remix - Le plan pour Remix v3](https://remix.run/blog/wake-up-remix)**",
+        "en": "**[Wake up Remix - Le plan pour Remix v3](https://remix.run/blog/wake-up-remix)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "This week you might have heard a rumor about [Remix moving on from React](https://x.com/AdamRackis/status/1925646909345058818). Ryan and Michael just published an official post describing the future of Remix.",
+      "source_content_hash": "401d79e92e745b4c506074c32ddcfab32e0952daf9f1857cfd1d4d3de047ce8f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, vous avez peut-être entendu une rumeur selon laquelle [Remix abandonnait React](https://x.com/AdamRackis/status/1925646909345058818). Ryan et Michael viennent de publier un article officiel décrivant l'avenir de Remix.",
+        "en": "Cette semaine, vous avez peut-être entendu une rumeur selon laquelle [Remix abandonnerait React](https://x.com/AdamRackis/status/1925646909345058818). Ryan et Michael viennent de publier un article officiel décrivant l'avenir de Remix."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "In a nutshell, React Router will still be fully maintained and a safe bet. In parallel, Remix v3 will be a new framework based on a fork of Preact, so that they control the full stack.",
+      "source_content_hash": "fbc9512f08a28c799a4064fa6ae72af252a5b594c02629d83e1664cdf52ace16",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En bref, React Router continuera d'être entièrement maintenu et restera un choix sûr. En parallèle, Remix v3 sera un nouveau framework basé sur un fork de Preact, leur permettant de contrôler toute la pile.",
+        "en": "En bref, React Router continuera d'être entièrement maintenu et restera un choix sûr. En parallèle, Remix v3 sera un nouveau framework basé sur un fork de Preact, leur permettant de contrôler toute la pile."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "Their goal with Remix v3 is “reimagining what a web framework can be”. The post describes the guiding principles this new framework will follow (optimize for LLMs, build on Web APIs, composition…)",
+      "source_content_hash": "9485f0b9c8d220cbf59619cf6e8692be85ceb3cce435a96bf18247270345954e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Leur objectif avec Remix v3 est de \"réinventer ce que peut être un framework web\". L'article décrit les principes directeurs de ce nouveau framework (optimisation pour les LLM, construction sur les API Web, composition...)",
+        "en": "Leur objectif avec Remix v3 est de « réinventer ce que peut être un framework web ». L'article décrit les principes directeurs de ce nouveau framework (optimisation pour les LLM, construction sur les API Web, composition...)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51029da6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "- 💸 [Product for Engineers - This is why you're not shipping](https://go.posthog.com/twir-may28)\n- 📜 [The Beauty of TanStack Router](https://tkdodo.eu/blog/the-beauty-of-tan-stack-router): Dominik goes through the features that differentiate Tanstack Router: Type-safe routing with StrictOrFrom principle, Search Param State Management, File-Based Routing, and Suspense support.\n- 📜 [Composing Server and Client Components: The Modern React's Superpower](https://www.epicreact.dev/composing-server-and-client-components-the-modern-reacts-superpower-08yn9): RSC contrasts sharply with the old days of script tags and global variables.\n- 📜 [Why React Error Boundaries Aren't Just Try/Catch for Components](https://www.epicreact.dev/why-react-error-boundaries-arent-just-try-catch-for-components-i6e2l): They are declarative components that only catch render errors. This article shares various pragmatic tips such as using `react-error-boundary` package or how to plug a retry button.\n- 📜 [Next.js Server Actions are public-facing API endpoints](https://growl.dev/blog/nextjs-server-actions/): Server Actions can be called from Curl commands, the action ids can easily leak. They should be treated with the same security precautions as traditional public API endpoints.\n- 📜 [Your React Meta-Framework Feels Broken, Here's Why](https://rwsdk.com/blog/your-react-meta-framework-feels-broken): RedwoodSDK tries to remove useless abstraction layers, conventions and other magic things that exist in Next.js and Remix.\n- 📜 [Building with React Server Components and Client Components in RedwoodSDK](https://rwsdk.com/blog/react-rsc-redwoodsdk)\n- 📜 [SolidJS for React Developers](https://marmelab.com/blog/2025/05/28/solidjs-for-react-developper.html)\n- 📜 [Building a Hold to Delete Component](https://emilkowal.ski/ui/building-a-hold-to-delete-component)\n- 📜 [Understanding Hydration Errors by building a SSR React Project](https://www.propelauth.com/post/understanding-hydration-errors)\n- 📜 [Why Composition Beats Inheritance In React](https://thetshaped.dev/p/why-composition-beats-inheritance-react-projects-extensible-components)\n- 💸 [The Road to Next - Master Full-Stack Web Development with Next.js 15 and React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)\n- 📦 [Docusaurus 3.8](https://docusaurus.io/blog/releases/3.8): Continues the work on faster builds, adds support for CSS Cascade layers, both behind “Future Flags”.\n- 📦 [Storybook 9.0](https://github.com/storybookjs/storybook/releases/tag/v9.0.0): After many betas/RCs, it's finally out, but no official blog post yet.\n- 📦 [TanStack Query v5.77](https://github.com/TanStack/query/releases/tag/v5.77.0): Adds `maxChunks` to keep in the cache for streamed queries.\n- 🎥 [Youssef Benlemlih - TanStack is Slowly Taking Over React](https://www.youtube.com/watch?v=u10Zlg_Un8I)\n- 🎥 [Alem Tuzlak - Understanding the cause of hydration issues in react-router](https://www.epicweb.dev/tips/understanding-the-cause-of-hydration-issues-in-react-router~si4z9)",
+      "source_content_hash": "ad1804b4c3120b5e21c7376a179f41e632bb23546d72132b31cc0fba56f285e4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Product for Engineers - Voici pourquoi vous ne livrez pas](https://go.posthog.com/twir-may28)\n- 📜 [La beauté de TanStack Router](https://tkdodo.eu/blog/the-beauty-of-tan-stack-router) : Dominik passe en revue les fonctionnalités qui distinguent Tanstack Router : routage typé avec le principe StrictOrFrom, gestion d'état des paramètres de recherche, routage basé sur les fichiers et support de Suspense.\n- 📜 [Composer des composants Serveur et Client : la superpuissance de React moderne](https://www.epicreact.dev/composing-server-and-client-components-the-modern-reacts-superpower-08yn9) : Les RSC contrastent fortement avec l'ancienne époque des balises script et variables globales.\n- 📜 [Pourquoi les Error Boundaries de React ne sont pas juste des Try/Catch pour composants](https://www.epicreact.dev/why-react-error-boundaries-arent-just-try-catch-for-components-i6e2l) : Ce sont des composants déclaratifs qui n'interceptent que les erreurs de rendu. Cet article partage divers conseils pragmatiques comme l'utilisation du package `react-error-boundary` ou comment intégrer un bouton de réessai.\n- 📜 [Les Server Actions de Next.js sont des endpoints API publics](https://growl.dev/blog/nextjs-server-actions/) : Les Server Actions peuvent être appelées via des commandes Curl, et leurs IDs peuvent facilement fuiter. Elles doivent être traitées avec les mêmes précautions de sécurité que des endpoints API publics traditionnels.\n- 📜 [Votre méta-framework React semble cassé, voici pourquoi](https://rwsdk.com/blog/your-react-meta-framework-feels-broken) : RedwoodSDK tente de supprimer les couches d'abstraction inutiles, conventions et autres éléments magiques existants dans Next.js et Remix.\n- 📜 [Construire avec des composants Serveur et Client dans RedwoodSDK](https://rwsdk.com/blog/react-rsc-redwoodsdk)\n- 📜 [SolidJS pour les développeurs React](https://marmelab.com/blog/2025/05/28/solidjs-for-react-developper.html)\n- 📜 [Construire un composant \"Maintenir pour supprimer\"](https://emilkowal.ski/ui/building-a-hold-to-delete-component)\n- 📜 [Comprendre les erreurs d'hydratation en construisant un projet React SSR](https://www.propelauth.com/post/understanding-hydration-errors)\n- 📜 [Pourquoi la composition surpasse l'héritage dans React](https://thetshaped.dev/p/why-composition-beats-inheritance-react-projects-extensible-components)\n- 💸 [The Road to Next - Maîtrisez le développement web full-stack avec Next.js 15 et React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)\n- 📦 [Docusaurus 3.8](https://docusaurus.io/blog/releases/3.8) : Poursuit le travail sur des builds plus rapides, ajoute le support des CSS Cascade layers, les deux derrière des \"Future Flags\".\n- 📦 [Storybook 9.0](https://github.com/storybookjs/storybook/releases/tag/v9.0.0) : Après de nombreuses betas/RCs, il est enfin sorti, mais pas encore d'article de blog officiel.\n- 📦 [TanStack Query v5.77](https://github.com/TanStack/query/releases/tag/v5.77.0) : Ajoute `maxChunks` pour conserver dans le cache pour les requêtes streamées.\n- 🎥 [Youssef Benlemlih - TanStack prend lentement le contrôle de React](https://www.youtube.com/watch?v=u10Zlg_Un8I)\n- 🎥 [Alem Tuzlak - Comprendre la cause des problèmes d'hydratation dans react-router](https://www.epicweb.dev/tips/understanding-the-cause-of-hydration-issues-in-react-router~si4z9)",
+        "en": "- 💸 [Product for Engineers - This is why you're not shipping](https://go.posthog.com/twir-may28)\n- 📜 [La beauté de TanStack Router](https://tkdodo.eu/blog/the-beauty-of-tan-stack-router) : Dominik détaille les fonctionnalités qui différencient Tanstack Router : routage typé avec le principe StrictOrFrom, gestion de l'état des paramètres de recherche, routage basé sur les fichiers et prise en charge de Suspense.\n- 📜 [Composer les composants serveur et client : la superpuissance de React moderne](https://www.epicreact.dev/composing-server-and-client-components-the-modern-reacts-superpower-08yn9) : Les RSC contrastent fortement avec l'ancienne époque des balises script et variables globales.\n- 📜 [Pourquoi les limites d'erreur React ne sont pas juste des try/catch pour composants](https://www.epicreact.dev/why-react-error-boundaries-arent-just-try-catch-for-components-i6e2l) : Ce sont des composants déclaratifs qui ne capturent que les erreurs de rendu. Cet article partage divers conseils pragmatiques comme utiliser le package `react-error-boundary` ou comment ajouter un bouton de réessai.\n- 📜 [Les actions serveur Next.js sont des endpoints API publics](https://growl.dev/blog/nextjs-server-actions/) : Les actions serveur peuvent être appelées via des commandes Curl, et leurs IDs peuvent facilement fuiter. Elles doivent être traitées avec les mêmes précautions de sécurité que les endpoints API publics traditionnels.\n- 📜 [Votre méta-framework React semble cassé, voici pourquoi](https://rwsdk.com/blog/your-react-meta-framework-feels-broken) : RedwoodSDK tente de supprimer les couches d'abstraction inutiles, conventions et autres éléments magiques présents dans Next.js et Remix.\n- 📜 [Construire avec les composants serveur et client dans RedwoodSDK](https://rwsdk.com/blog/react-rsc-redwoodsdk)\n- 📜 [SolidJS pour les développeurs React](https://marmelab.com/blog/2025/05/28/solidjs-for-react-developper.html)\n- 📜 [Construire un composant \"Maintenir pour supprimer\"](https://emilkowal.ski/ui/building-a-hold-to-delete-component)\n- 📜 [Comprendre les erreurs d'hydratation en construisant un projet React SSR](https://www.propelauth.com/post/understanding-hydration-errors)\n- 📜 [Pourquoi la composition surpasse l'héritage dans React](https://thetshaped.dev/p/why-composition-beats-inheritance-react-projects-extensible-components)\n- 💸 [The Road to Next - Maîtrisez le développement web full-stack avec Next.js 15 et React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)\n- 📦 [Docusaurus 3.8](https://docusaurus.io/blog/releases/3.8) : Poursuit le travail sur des builds plus rapides, ajoute le support des CSS Cascade Layers, les deux derrière des \"Future Flags\".\n- 📦 [Storybook 9.0](https://github.com/storybookjs/storybook/releases/tag/v9.0.0) : Après de nombreuses betas/RCs, il est enfin sorti, mais pas encore d'article de blog officiel.\n- 📦 [TanStack Query v5.77](https://github.com/TanStack/query/releases/tag/v5.77.0) : Ajoute `maxChunks` pour conserver dans le cache pour les requêtes streamées.\n- 🎥 [Youssef Benlemlih - TanStack prend lentement le contrôle de React](https://www.youtube.com/watch?v=u10Zlg_Un8I)\n- 🎥 [Alem Tuzlak - Comprendre la cause des problèmes d'hydratation dans react-router](https://www.epicweb.dev/tips/understanding-the-cause-of-hydration-issues-in-react-router~si4z9)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7961985",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_e7961985",
+        "en": "@@untranslatable_placeholder_e7961985"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "63e1d83c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "58ed925f",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "[![Getting started with Clerk Billing](/emails/issues/236/clerk.jpg)](https://go.clerk.com/KfnV7Rj)",
+      "source_content_hash": "83c49b6200489cdb563ae2c8f890f58692e77194b46786cc9c29bef12265306d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Getting started with Clerk Billing](/emails/issues/236/clerk.jpg)](https://go.clerk.com/KfnV7Rj)",
+        "en": "[![Getting started with Clerk Billing](/emails/issues/236/clerk.jpg)](https://go.clerk.com/KfnV7Rj)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "**[Getting started with Clerk Billing](https://go.clerk.com/KfnV7Rj)**",
+      "source_content_hash": "f7bb7e529d7d4c4be0facb4c0e8c7a41b80d3f064d9334c13651bb8b915ee842",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Démarrer avec Clerk Billing](https://go.clerk.com/KfnV7Rj)**",
+        "en": "**[Démarrer avec Clerk Billing](https://go.clerk.com/KfnV7Rj)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "Learn how to build a complete billing experience with Clerk—no custom UI, webhooks, or Stripe session management required.",
+      "source_content_hash": "9820c721888f6e67f080c1b5f8ffd28b06768794c0d0ed03fdbe9bf84407195b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Apprenez à créer une expérience de facturation complète avec Clerk—sans interface personnalisée, webhooks ou gestion de sessions Stripe requise.",
+        "en": "Apprenez à créer une expérience de facturation complète avec Clerk—sans interface personnalisée, webhooks ou gestion de session Stripe nécessaire."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e032fbc6",
+      "source_content": "- Create a pricing page with the `<PricingTable />` component\n- Connect with Stripe—no manual API calls, no manual syncing\n- Manage plans and entitlements all within the Clerk dashboard\n- `has()` helper to control access based on a customer’s plan, features, and permissions\n- Manage user and subscription data all in one place",
+      "source_content_hash": "af33633d89c53de9b08b1e3110945dfdd003e8fddff0baaa63ace32108bde0ad",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Créez une page de tarification avec le composant `<PricingTable />`\n- Connectez-vous à Stripe — pas d'appels API manuels, pas de synchronisation manuelle\n- Gérez les plans et les droits dans le tableau de bord Clerk\n- L'aide `has()` pour contrôler l'accès en fonction du plan, des fonctionnalités et des autorisations du client\n- Gérez les données utilisateur et d'abonnement au même endroit",
+        "en": "- Créez une page de tarification avec le composant `<PricingTable />`\n- Connectez-vous à Stripe — pas d'appels API manuels, pas de synchronisation manuelle\n- Gérez les offres et les droits directement dans le tableau de bord Clerk\n- L'assistant `has()` pour contrôler l'accès en fonction du forfait, des fonctionnalités et des permissions du client\n- Gérez les données utilisateur et d'abonnement au même endroit"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Enable Billing, drop in `<PricingTable/>` on your `/pricing` page and [start monetizing your application](https://go.clerk.com/LphCouG).",
+      "source_content_hash": "7f02e72558747fe838a9adac875c28ffd2009d177acdca4086b5fa3665a76b9e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Activez la facturation, insérez `<PricingTable/>` sur votre page `/pricing` et [commencez à monétiser votre application](https://go.clerk.com/LphCouG).",
+        "en": "Activez la facturation, intégrez `<PricingTable/>` sur votre page `/pricing` et [commencez à monétiser votre application](https://go.clerk.com/LphCouG)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b805e2c6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b10963d7",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dee20070",
+      "source_content": "- 💸 [EAS Workflows is the standard for React Native CI/CD. Spend less time thinking about CI and more time building features.](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)\n- 📣 [Expo - Incremental EAS Hosting changes](https://expo.dev/changelog/incremental-eas-hosting-changes)\n- 📜 [Expo \\- What every dev should know about using Environment Variables](https://expo.dev/blog/what-are-environment-variables)\n- 📜 [Expo - How to get your Bolt app to the App Store (No code required)](https://expo.dev/blog/how-to-get-your-ai-app-to-the-app-store)\n- 📦 [RN ExecuTorch 0.4.0 - More LLMs, tool calling, text embeddings, multilingual speech-to-text and OCR, and image segmentation](https://blog.swmansion.com/react-native-executorch-release-v0-4-0-262d4013ac10)\n- 📦 [RN Screens 4.11 \\- react-native-edge-to-edge integration, `pageSheet` presentation](https://github.com/software-mansion/react-native-screens/releases/tag/4.11.0)\n- 📦 [Radon IDE 1.7 \\- Lots of bugfixes](https://github.com/software-mansion/radon-ide/releases/tag/v1.7.0)\n- 📦 [FlashList 2.0 RC1](https://github.com/Shopify/flash-list/releases/tag/v2.0.0-rc.1): No major changes since the last alpha, it's now a Release Candidate and already considered ready for production.\n- 📦 [Reanimated 4.0.0-beta.4 \\- RN 0.78, 0.79, and 0.80 support, CSS animation fixes, stability improvements](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.4)\n- 🎥 [Expo - The Golden Workflows playlist](https://www.youtube.com/watch?v=u8MAJ0F18s0&list=PLsXDmrmFV_AQ1fp78TTKP51N_R-EW98oT)\n- 🎙️ [RNR 333 \\- Expo Atlas with Cedric van Putten](https://infinite.red/react-native-radio/rnr-333-expo-atlas-with-cedric-van-putten)\n- 🎙️ [Rocket Ship 070 \\- React Native Version Hell, React Server Components with Expo & Invoice App Updates](https://share.transistor.fm/s/b04dbb2b)",
+      "source_content_hash": "5a25b285e62dfd3fe91155e4423e93709f37697dcb33d88c190a04cb96709047",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [EAS Workflows est la norme pour le CI/CD React Native. Passez moins de temps à penser au CI et plus de temps à développer des fonctionnalités.](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)\n- 📣 [Expo - Changements incrémentiels d'hébergement EAS](https://expo.dev/changelog/incremental-eas-hosting-changes)\n- 📜 [Expo \\- Ce que tout développeur devrait savoir sur l'utilisation des variables d'environnement](https://expo.dev/blog/what-are-environment-variables)\n- 📜 [Expo - Comment publier votre application Bolt sur l'App Store (Aucun code requis)](https://expo.dev/blog/how-to-get-your-ai-app-to-the-app-store)\n- 📦 [RN ExecuTorch 0.4.0 - Plus de LLM, appels d'outils, embeddings de texte, reconnaissance vocale multilingue et OCR, et segmentation d'image](https://blog.swmansion.com/react-native-executorch-release-v0-4-0-262d4013ac10)\n- 📦 [RN Screens 4.11 \\- intégration react-native-edge-to-edge, présentation `pageSheet`](https://github.com/software-mansion/react-native-screens/releases/tag/4.11.0)\n- 📦 [Radon IDE 1.7 \\- Nombreuses corrections de bugs](https://github.com/software-mansion/radon-ide/releases/tag/v1.7.0)\n- 📦 [FlashList 2.0 RC1](https://github.com/Shopify/flash-list/releases/tag/v2.0.0-rc.1): Aucun changement majeur depuis la dernière alpha, c'est maintenant une Release Candidate et déjà considérée comme prête pour la production.\n- 📦 [Reanimated 4.0.0-beta.4 \\- Support RN 0.78, 0.79 et 0.80, corrections d'animations CSS, améliorations de stabilité](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.4)\n- 🎥 [Expo - La playlist Golden Workflows](https://www.youtube.com/watch?v=u8MAJ0F18s0&list=PLsXDmrmFV_AQ1fp78TTKP51N_R-EW98oT)\n- 🎙️ [RNR 333 \\- Expo Atlas avec Cedric van Putten](https://infinite.red/react-native-radio/rnr-333-expo-atlas-with-cedric-van-putten)\n- 🎙️ [Rocket Ship 070 \\- L'enfer des versions React Native, les React Server Components avec Expo & mises à jour de l'application Invoice](https://share.transistor.fm/s/b04dbb2b)",
+        "en": "- 💸 [EAS Workflows est la référence pour le CI/CD React Native. Passez moins de temps à configurer l'intégration continue et plus à développer des fonctionnalités.](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)\n- 📣 [Expo - Changements incrémentaux pour EAS Hosting](https://expo.dev/changelog/incremental-eas-hosting-changes)\n- 📜 [Expo \\- Ce que tout développeur doit savoir sur les variables d'environnement](https://expo.dev/blog/what-are-environment-variables)\n- 📜 [Expo - Comment publier votre application Bolt sur l'App Store (sans code requis)](https://expo.dev/blog/how-to-get-your-ai-app-to-the-app-store)\n- 📦 [RN ExecuTorch 0.4.0 - Plus de LLMs, appels d'outils, embeddings textuels, reconnaissance vocale multilingue, OCR et segmentation d'images](https://blog.swmansion.com/react-native-executorch-release-v0-4-0-262d4013ac10)\n- 📦 [RN Screens 4.11 \\- Intégration react-native-edge-to-edge, présentation `pageSheet`](https://github.com/software-mansion/react-native-screens/releases/tag/4.11.0)\n- 📦 [Radon IDE 1.7 \\- Nombreuses corrections de bugs](https://github.com/software-mansion/radon-ide/releases/tag/v1.7.0)\n- 📦 [FlashList 2.0 RC1](https://github.com/Shopify/flash-list/releases/tag/v2.0.0-rc.1): Aucun changement majeur depuis la dernière alpha, c'est maintenant une Release Candidate déjà considérée prête pour la production.\n- 📦 [Reanimated 4.0.0-beta.4 \\- Support RN 0.78, 0.79 et 0.80, corrections d'animations CSS, améliorations de stabilité](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.4)\n- 🎥 [Expo - Playlist The Golden Workflows](https://www.youtube.com/watch?v=u8MAJ0F18s0&list=PLsXDmrmFV_AQ1fp78TTKP51N_R-EW98oT)\n- 🎙️ [RNR 333 \\- Expo Atlas avec Cedric van Putten](https://infinite.red/react-native-radio/rnr-333-expo-atlas-with-cedric-van-putten)\n- 🎙️ [Rocket Ship 070 \\- L'enfer des versions React Native, React Server Components avec Expo & Mises à jour de l'app Invoice](https://share.transistor.fm/s/b04dbb2b)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0c6c4220",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ab39e8a7",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d56fc0d",
+      "source_content": "- 📜 [TypeScript Native Previews](https://devblogs.microsoft.com/typescript/announcing-typescript-native-previews/): Microsoft announced the go rewrite of TypeScript a few months ago. Nightly builds for this rewrite will now be published, and can be used with a CLI or a VS Code extension. JSX support has been added, and it’s still \\~10 times faster than the JS version.\n- 📜 [Do Not Assert on Requests](https://www.epicweb.dev/do-not-assert-on-requests): The creator of msw explains what he recommends instead of checking the body/header of sent requests in tests\n- 📜 [ESLint v9 Retrospective - A review of what went well, and what didn't](https://eslint.org/blog/2025/05/eslint-v9.0.0-retrospective/)\n- 📜 [Switching from tsup to tsdown](https://alan.norbauer.com/articles/tsdown-bundler/)\n- 📜 [A brief history of JavaScript](https://deno.com/blog/history-of-javascript)\n- 📦 [Firefox 139 - Temporal, `hidden=until-found`, `dialog.requestClose()`](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/139): The first browser to support the stage 3 Temporal API!\n- 📦 [JSPM 4.0 - Standards based import map package management](https://jspm.org/jspm-4.0-release): A quite innovative project for shipping frontends with no build step.\n- 📦 [Angular 20.0 - Reactivity, Resource API, SSR, Zoneless, Vitest, and more](https://medium.com/@mgechev/b5c9c06cf301)",
+      "source_content_hash": "e8f97791479747fbdf529a654b1cb5e4242c3682934350fea6310e3a5d962617",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Aperçus natifs TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-native-previews/) : Microsoft a annoncé la réécriture en Go de TypeScript il y a quelques mois. Les versions nocturnes de cette réécriture seront désormais publiées et peuvent être utilisées avec une CLI ou une extension VS Code. La prise en charge JSX a été ajoutée, et elle reste environ 10 fois plus rapide que la version JS.\n- 📜 [Ne pas faire d'assertions sur les requêtes](https://www.epicweb.dev/do-not-assert-on-requests) : Le créateur de msw explique ce qu'il recommande à la place de vérifier le corps/en-tête des requêtes envoyées dans les tests.\n- 📜 [ESLint v9 Rétrospective - Un bilan de ce qui a fonctionné et de ce qui n'a pas fonctionné](https://eslint.org/blog/2025/05/eslint-v9.0.0-retrospective/)\n- 📜 [Passer de tsup à tsdown](https://alan.norbauer.com/articles/tsdown-bundler/)\n- 📜 [Une brève histoire de JavaScript](https://deno.com/blog/history-of-javascript)\n- 📦 [Firefox 139 - Temporal, `hidden=until-found`, `dialog.requestClose()`](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/139) : Le premier navigateur à prendre en charge l'API Temporal de stade 3 !\n- 📦 [JSPM 4.0 - Gestion de paquets basée sur les standards des cartes d'import](https://jspm.org/jspm-4.0-release) : Un projet assez innovant pour livrer des frontends sans étape de build.\n- 📦 [Angular 20.0 - Réactivité, API Resource, SSR, Sans Zones, Vitest, et plus](https://medium.com/@mgechev/b5c9c06cf301)",
+        "en": "- 📜 [Aperçus natifs TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-native-previews/) : Microsoft a annoncé la réécriture de TypeScript en Go il y a quelques mois. Les versions nocturnes de cette réécriture seront désormais publiées et peuvent être utilisées avec une CLI ou une extension VS Code. La prise en charge JSX a été ajoutée, et elle reste environ 10 fois plus rapide que la version JavaScript.\n- 📜 [Ne pas vérifier les requêtes](https://www.epicweb.dev/do-not-assert-on-requests) : Le créateur de msw explique ce qu'il recommande à la place de la vérification du corps/en-tête des requêtes envoyées dans les tests.\n- 📜 [ESLint v9 Rétrospective - Bilan de ce qui a fonctionné et des difficultés](https://eslint.org/blog/2025/05/eslint-v9.0.0-retrospective/)\n- 📜 [Passer de tsup à tsdown](https://alan.norbauer.com/articles/tsdown-bundler/)\n- 📜 [Une brève histoire de JavaScript](https://deno.com/blog/history-of-javascript)\n- 📦 [Firefox 139 - Temporal, `hidden=until-found`, `dialog.requestClose()`](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/139) : Premier navigateur à prendre en charge l'API Temporal de stage 3 !\n- 📦 [JSPM 4.0 - Gestion de paquets basée sur les import maps standard](https://jspm.org/jspm-4.0-release) : Un projet innovant pour livrer des frontends sans étape de build.\n- 📦 [Angular 20.0 - Réactivité, API Resource, SSR, Sans Zone, Vitest et plus](https://medium.com/@mgechev/b5c9c06cf301)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23b96cc0",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "[![Benjamin Lee tweet: Just hoping @tan_stack stays safe from RSC](/emails/issues/236/meme.jpg)](https://x.com/Benjamin_D_Lee/status/1926071667345822140)",
+      "source_content_hash": "0e1a3565fbe355eee59b77cbe200e1dc25642c8fd6fff1a3921b17d7d0594da3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Tweet de Benjamin Lee : En espérant que @tan_stack reste à l'abri de RSC](/emails/issues/236/meme.jpg)](https://x.com/Benjamin_D_Lee/status/1926071667345822140)",
+        "en": "[![Tweet de Benjamin Lee : J'espère juste que @tan_stack reste à l'abri des RSC](/emails/issues/236/meme.jpg)](https://x.com/Benjamin_D_Lee/status/1926071667345822140)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "[![meme2](/emails/issues/236/meme2.jpg)](hhttps://x.com/alxfazio/status/1926731799226462646)",
+      "source_content_hash": "bbd6bf00ae8db37eb9912f03d05b13699d5c2873d921560b479dbfdc9265232a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![mème2](/emails/issues/236/meme2.jpg)](hhttps://x.com/alxfazio/status/1926731799226462646)",
+        "en": "[![meme2](/emails/issues/236/meme2.jpg)](hhttps://x.com/alxfazio/status/1926731799226462646)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c9e2b64",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/236/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.211259+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "062a96211e3bd51a6da4222278fe00ba2c014a1a811a7bbe28fa14adbb357a63",
+    "en": "062a96211e3bd51a6da4222278fe00ba2c014a1a811a7bbe28fa14adbb357a63"
+  }
+}

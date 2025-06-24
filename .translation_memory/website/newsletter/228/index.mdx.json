@@ -1,0 +1,541 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/228/index.mdx",
+  "source_file_content_hash": "c5d37cbe50ba7a3fccd3d14e01ffc870801bb7d1fc241b0a6c5cef0f6b9ab151",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /228\ntitle: \"This Week In React #228: React 19.1, Next.js deployment, React-Email, Triplex, Tinybase, Rspack, i18n-check, React-Admin | 0.79 Golden RC, ExecuTorch, Unistyles, Xcode 16.3, macOS, Screens, Gesture Handler | TypeScript, TC39, WebKit, Intl.Collator, Vitest 3.1\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 04-02-2025\n---",
+      "source_content_hash": "31bb0dceb8d5f444ad9398ee4184acc7276d87ee6f1020e63cd88e129864132c",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hey everyone!",
+      "source_content_hash": "ff32f8ac5ba471354f82ffb4cf5bf9a5a6ea79c97bfe47ea1a756a6902826c07",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Salut à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu here from [Theodo Apps](https://apps.theodo.com/) 👋 with your weekly dose of React and React Native updates, while Seb is busy enjoying the [React Native Connection](https://reactnativeconnection.io/) conf!",
+      "source_content_hash": "6e436fbefe84883cc9a4ec5092ec8a720ab6d180855dd1b8ee2c723d0a695cb4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cyril et Matthieu ici de [Theodo Apps](https://apps.theodo.com/) 👋 avec votre dose hebdomadaire d'actualités React et React Native, pendant que Seb profite de la conférence [React Native Connection](https://reactnativeconnection.io/) !",
+        "en": "Cyril et Matthieu ici de [Theodo Apps](https://apps.theodo.com/) 👋 avec votre dose hebdomadaire d'actualités React et React Native, pendant que Seb profite de la conférence [React Native Connection](https://reactnativeconnection.io/) !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React 19.1 just dropped with better error handling and deeper integration for Server Components in Parcel. Meanwhile, Tailwind CSS 4.1 is right around the corner, and the community is buzzing with hot takes on CSS-in-JS. On the React Native side, the golden RC for 0.79 is out, and ExecuTorch v0.4.0 is landing soon with exciting AI features.",
+      "source_content_hash": "39ac4ada12d975800a901fb520bd8a8a9111301eff760c5f6c942edf5cef3880",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React 19.1 vient de sortir avec une meilleure gestion des erreurs et une intégration approfondie des Server Components dans Parcel. Parallèlement, Tailwind CSS 4.1 est sur le point de sortir, et la communauté s'agite avec des avis passionnés sur CSS-in-JS. Du côté React Native, la version candidate finale de la 0.79 est disponible, et ExecuTorch v0.4.0 arrive bientôt avec des fonctionnalités IA passionnantes.",
+        "en": "React 19.1 vient de sortir avec une meilleure gestion des erreurs et une intégration plus profonde des Server Components dans Parcel. Parallèlement, Tailwind CSS 4.1 est sur le point d'arriver, et la communauté s'agite avec des avis tranchés sur CSS-in-JS. Côté React Native, la RC finale pour la 0.79 est disponible, et ExecuTorch v0.4.0 débarque bientôt avec des fonctionnalités IA passionnantes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Let’s get into it! 🚀",
+      "source_content_hash": "07c75e96ba6dc14b9ff3b75c980abee1ecc62aec8ecf190b4830794378e76594",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Entrons dans le vif du sujet ! 🚀",
+        "en": "Entrons dans le vif du sujet ! 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6c991806",
+        "en": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_8f488ab5",
+        "en": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Commanditaire {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![Bit: Celebrating 10 Years of Composability](/emails/issues/228/bit.jpg)](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)",
+      "source_content_hash": "4f3b6acbf1ac80729093e50893e9c32b7540d171236762dd7748935297e326b3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Bit : 10 ans de composabilité célébrés](/emails/issues/228/bit.jpg)](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)",
+        "en": "[![Bit: Celebrating 10 Years of Composability](/emails/issues/228/bit.jpg)](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[Bit: Celebrating 10 Years of Composability](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)**",
+      "source_content_hash": "9208877989c11166c4faa02b1ed08cd99c3a7a08532d4f50383568bb536649f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Bit : 10 ans de composabilité célébrés](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)**",
+        "en": "**[Bit : 10 ans de composabilité](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "For a decade, we navigated the complexities of disconnected systems, facing integration headaches and scaling challenges. Our journey to build effectively at scale led us to a breakthrough: [**Harmony**](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability/).",
+      "source_content_hash": "7c6e67c8facf787115c75dc917b0ff0a5148d5ad25e9ce8e787b3bd352ee6565",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pendant une décennie, nous avons navigué les complexités des systèmes déconnectés, affrontant les difficultés d'intégration et les défis de mise à l'échelle. Notre quête pour construire efficacement à grande échelle nous a menés à une percée : [**Harmony**](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability/).",
+        "en": "Pendant une décennie, nous avons navigué dans les complexités des systèmes déconnectés, affrontant des défis d'intégration et de mise à l'échelle. Notre quête pour construire efficacement à grande échelle nous a menés à une percée : [**Harmony**](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability/)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Discover our 10-year story of pioneering composable architecture and how Harmony finally delivered the monolithic simplicity and distributed power we always envisioned, transforming our development from struggle to exponential progress.",
+      "source_content_hash": "a485b23b9ad3e44351d088c73481a0b9a25eb70b42d3f3f80925e8673fe5d73c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Découvrez notre histoire de 10 ans de pionnier en architecture composable et comment Harmony a enfin concrétisé la simplicité monolithique et la puissance distribuée que nous avions toujours envisagée, transformant notre développement de la lutte en progrès exponentiel.",
+        "en": "Découvrez notre histoire de 10 ans de pionnier en architecture composable et comment Harmony a enfin apporté la simplicité monolithique et la puissance distribuée que nous avions toujours imaginée, transformant notre développement de la lutte vers un progrès exponentiel."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[**Read our story**](https://bit.dev/blog/telling-the-bit-story-celebrating-10-years-of-composability/?utm_source=ThisWeekInReact&utm_id=9&utm_medium=newsletter)",
+      "source_content_hash": "c6870612083eb929b0c5f65a07f04f2f75bd3270b203a45573493cd8a5842408",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Lisez notre histoire**](https://bit.dev/blog/telling-the-bit-story-celebrating-10-years-of-composability/?utm_source=ThisWeekInReact&utm_id=9&utm_medium=newsletter)",
+        "en": "[**Lire notre histoire**](https://bit.dev/blog/telling-the-bit-story-celebrating-10-years-of-composability/?utm_source=ThisWeekInReact&utm_id=9&utm_medium=newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[![React 19.1](/emails/issues/228/react_19_1.jpg)](https://github.com/facebook/react/releases/tag/v19.1.0)",
+      "source_content_hash": "a440e448b6c8ab451c3d4b93ddde260df8297a4cc52750b08fe632c2a4647354",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React 19.1](/emails/issues/228/react_19_1.jpg)](https://github.com/facebook/react/releases/tag/v19.1.0)",
+        "en": "[![React 19.1](/emails/issues/228/react_19_1.jpg)](https://github.com/facebook/react/releases/tag/v19.1.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "**[React 19.1](https://github.com/facebook/react/releases/tag/v19.1.0)**",
+      "source_content_hash": "d34d043d83e955516409c5acc644ec852f517be62545b390531f8fb0a33a5636",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React 19.1](https://github.com/facebook/react/releases/tag/v19.1.0)**",
+        "en": "**[React 19.1](https://github.com/facebook/react/releases/tag/v19.1.0)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "React 19.1 has been released this week, the most notable changes are:",
+      "source_content_hash": "06a79b37b946ce4cb41e502f8fce4fa52ae86cffd482c3e0da0fe637152c4c02",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React 19.1 a été publié cette semaine, les changements les plus notables étant :",
+        "en": "React 19.1 est sorti cette semaine, les changements les plus notables sont :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- A new [`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack) API that will be used by frameworks to provide better error information in dev. It’s different from the existing component stacks in how it handles `children` and DOM nodes.\n- The “React side” of Server Components support in Parcel, that works hand-in-hand with the new features in Parcel 2.14.\n- An experimental `unstable_prerender()` for prerendering React Server Components on the server.",
+      "source_content_hash": "e5df75f43f16d32b0c772c75775f205af2fed86344690e9f1c5e07a097386b5d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Une nouvelle API [`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack) qui sera utilisée par les frameworks pour fournir de meilleures informations d'erreur en développement. Elle diffère des piles de composants existantes dans sa gestion des `children` et des nœuds DOM.\n- Le côté \"React\" de la prise en charge des Server Components dans Parcel, fonctionnant de concert avec les nouvelles fonctionnalités de Parcel 2.14.\n- Un `unstable_prerender()` expérimental pour le prérendu des Server Components React sur le serveur.",
+        "en": "- Une nouvelle API [`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack) que les frameworks utiliseront pour fournir de meilleures informations d'erreur en dev. Elle diffère des piles de composants existantes par sa gestion des `children` et des nœuds DOM.\n- Le support côté React des Server Components dans Parcel, fonctionnant conjointement avec les nouvelles fonctionnalités de Parcel 2.14.\n- Un `unstable_prerender()` expérimental pour le prérendu des React Server Components côté serveur."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "This release also includes a slew of minor changes and fixes, most of them related to Server Components or `Suspense` boundaries.",
+      "source_content_hash": "48b22bd5545f3804be4228a635b13b1ac5edf80ddfe1cc83664f56f1af6887cf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette version inclut également une multitude de changements mineurs et correctifs, principalement liés aux Server Components ou aux limites `Suspense`.",
+        "en": "Cette version inclut également une multitude de modifications mineures et de correctifs, principalement liés aux Server Components ou aux limites de `Suspense`."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e0a17c0d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "- 💸 [Strapi - Open-source headless Content Management, now with generous PaaS hosting, fully managed yet flexible and customizable. ](https://strapi.link/twir)\n- 📜 [Is CSS-in-JS still a thing?](https://fullystacked.net/css-in-js-still-a-thing/) It’s not trendy anymore (at least not without a compiler to avoid the performance penalty) but it’s still widely used.\n- 📜 [Next.js Deployment Challenges: Why platforms need better open source collaboration](https://www.netlify.com/blog/how-we-run-nextjs/): Netlify explains why Next.js is complicated to deploy outside of Vercel (no adapter support, missing documentation, lack of visibility…) and what they would like to change.\n- 📜 [Adaptive Video Streaming With Dash.js In React](https://www.smashingmagazine.com/2025/03/adaptive-video-streaming-dashjs-react/): You probably won’t be building something like this every day, but it turns out adaptive streaming is not that complicated thanks to the DASH standard\n- 📜 [i18n-check: End to end React i18n testing](https://lingual.dev/blog/i18n-check-end-to-end-react-i18n-testing/)\n- 📜 [Keeping Costs in Check When Hosting Next.js on Vercel](https://www.thisdot.co/blog/keeping-costs-in-check-when-hosting-next-js-on-vercel)\n- 📜 [React Architecture Tradeoffs: SPA, SSR, or RSC](https://reacttraining.com/blog/react-architecture-spa-ssr-rsc)\n- 📜 [Understanding SPAs and their shortcomings](https://reacttraining.com/blog/problems-you-face-with-spas)\n- 💸 [VS Code extension: Get React component usage insights in VS Code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n- 📦 [React Email 4.0](https://resend.com/blog/react-email-4): adds useful tools (a linter, spam score, a compatibility checker) and a few components\n- 📦 [Triplex beta](https://triplex.dev/blog/triplex-for-vscode): A VS Code extension to develop React apps visually. It was initially built for React Three Fiber but now supports any React component\n- 📦 [Rspack 1.3](https://rspack.dev/blog/announcing-1-3): can be used to build React Router v7 apps\n- 📦 [Tinybase 6.0](https://github.com/tinyplex/tinybase/releases/tag/v6.0.0): compatible with React 19\n- 📦 [vike-server 1.0](https://vike.dev/blog/vike-server): simplifies running and deploying the server side of vite-built apps anywhere, and handles HMR in dev.\n- 📦 [React-Admin 5.7](https://github.com/marmelab/react-admin/releases/tag/v5.7.0)\n- 🎙️ [Front-End Fire: Next.js’s Security Vulnerability, Remix Walks Away from RSCs, and Rsdoctor 1.0](https://front-end-fire.com/episodes/87/)\n- 🎙️ [This Month in React 2025-03: Next had an auth vulnerability, TypeScript is porting to Golang](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-03-Next-had-an-auth-vulnerability--TypeScript-is-porting-to-Golang-e30tvf5/a-abs3i7h)",
+      "source_content_hash": "0cf0ccfec23e3f2aa0043b93aca6f18920eadc7a815ef6e00560d99992789244",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Strapi - Gestion de contenu headless open-source, désormais avec un hébergement PaaS généreux, entièrement géré tout en restant flexible et personnalisable. ](https://strapi.link/twir)\n- 📜 [Le CSS-in-JS est-il toujours d'actualité ?](https://fullystacked.net/css-in-js-still-a-thing/) Ce n'est plus très tendance (du moins sans compilateur pour éviter la pénalité de performance) mais reste largement utilisé.\n- 📜 [Défis de déploiement Next.js : Pourquoi les plateformes ont besoin d'une meilleure collaboration open source](https://www.netlify.com/blog/how-we-run-nextjs/) : Netlify explique pourquoi Next.js est compliqué à déployer en dehors de Vercel (absence de support d'adaptateur, documentation manquante, manque de visibilité…) et ce qu'ils aimeraient changer.\n- 📜 [Streaming vidéo adaptatif avec Dash.js dans React](https://www.smashingmagazine.com/2025/03/adaptive-video-streaming-dashjs-react/) : Vous ne construirez probablement pas ce genre de chose tous les jours, mais il s'avère que le streaming adaptatif n'est pas si compliqué grâce au standard DASH\n- 📜 [i18n-check : Tests end-to-end d'i18n pour React](https://lingual.dev/blog/i18n-check-end-to-end-react-i18n-testing/)\n- 📜 [Maîtriser les coûts lors de l'hébergement de Next.js sur Vercel](https://www.thisdot.co/blog/keeping-costs-in-check-when-hosting-next-js-on-vercel)\n- 📜 [Compromis d'architecture React : SPA, SSR ou RSC](https://reacttraining.com/blog/react-architecture-spa-ssr-rsc)\n- 📜 [Comprendre les SPA et leurs limites](https://reacttraining.com/blog/problems-you-face-with-spas)\n- 💸 [Extension VS Code : Obtenez des insights sur l'utilisation des composants React dans VS Code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n- 📦 [React Email 4.0](https://resend.com/blog/react-email-4) : ajoute des outils utiles (linter, score de spam, vérificateur de compatibilité) et quelques composants\n- 📦 [Triplex bêta](https://triplex.dev/blog/triplex-for-vscode) : Une extension VS Code pour développer des applications React visuellement. Initialement conçue pour React Three Fiber, elle prend désormais en charge n'importe quel composant React\n- 📦 [Rspack 1.3](https://rspack.dev/blog/announcing-1-3) : peut être utilisé pour construire des applications React Router v7\n- 📦 [Tinybase 6.0](https://github.com/tinyplex/tinybase/releases/tag/v6.0.0) : compatible avec React 19\n- 📦 [vike-server 1.0](https://vike.dev/blog/vike-server) : simplifie l'exécution et le déploiement côté serveur des applications construites avec Vite, et gère le HMR en développement\n- 📦 [React-Admin 5.7](https://github.com/marmelab/react-admin/releases/tag/v5.7.0)\n- 🎙️ [Front-End Fire : Vulnérabilité de sécurité de Next.js, Remix abandonne les RSC, et Rsdoctor 1.0](https://front-end-fire.com/episodes/87/)\n- 🎙️ [Ce mois-ci dans React 2025-03 : Next avait une vulnérabilité d'authentification, TypeScript se porte sur Golang](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-03-Next-had-an-auth-vulnerability--TypeScript-is-porting-to-Golang-e30tvf5/a-abs3i7h)",
+        "en": "- 💸 [Strapi - CMS headless open-source, désormais avec un hébergement PaaS généreux, entièrement géré tout en restant flexible et personnalisable.](https://strapi.link/twir)\n- 📜 [Le CSS-in-JS est-il toujours d'actualité ?](https://fullystacked.net/css-in-js-still-a-thing/) Ce n'est plus très tendance (du moins sans compilateur pour éviter la pénalité de performance) mais reste largement utilisé.\n- 📜 [Défis de déploiement Next.js : Pourquoi les plateformes ont besoin d'une meilleure collaboration open source](https://www.netlify.com/blog/how-we-run-nextjs/) : Netlify explique pourquoi Next.js est complexe à déployer hors de Vercel (absence de support d'adaptateur, documentation manquante, manque de visibilité...) et ce qu'ils souhaiteraient changer.\n- 📜 [Streaming vidéo adaptatif avec Dash.js dans React](https://www.smashingmagazine.com/2025/03/adaptive-video-streaming-dashjs-react/) : Vous ne construirez probablement pas ce genre de chose quotidiennement, mais il s'avère que le streaming adaptatif n'est pas si compliqué grâce au standard DASH.\n- 📜 [i18n-check : Tests end-to-end d'internationalisation React](https://lingual.dev/blog/i18n-check-end-to-end-react-i18n-testing/)\n- 📜 [Maîtriser les coûts lors de l'hébergement Next.js sur Vercel](https://www.thisdot.co/blog/keeping-costs-in-check-when-hosting-next-js-on-vercel)\n- 📜 [Compromis d'architecture React : SPA, SSR ou RSC](https://reacttraining.com/blog/react-architecture-spa-ssr-rsc)\n- 📜 [Comprendre les SPA et leurs limites](https://reacttraining.com/blog/problems-you-face-with-spas)\n- 💸 [Extension VS Code : Obtenez des insights sur l'utilisation des composants React dans VS Code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n- 📦 [React Email 4.0](https://resend.com/blog/react-email-4) : ajoute des outils utiles (linter, score de spam, vérificateur de compatibilité) et quelques composants\n- 📦 [Triplex bêta](https://triplex.dev/blog/triplex-for-vscode) : Une extension VS Code pour développer des applications React visuellement. Initialement conçue pour React Three Fiber, elle prend désormais en charge n'importe quel composant React\n- 📦 [Rspack 1.3](https://rspack.dev/blog/announcing-1-3) : peut être utilisé pour construire des applications React Router v7\n- 📦 [Tinybase 6.0](https://github.com/tinyplex/tinybase/releases/tag/v6.0.0) : compatible avec React 19\n- 📦 [vike-server 1.0](https://vike.dev/blog/vike-server) : simplifie l'exécution et le déploiement côté serveur des applications construites avec Vite, et gère le HMR en développement.\n- 📦 [React-Admin 5.7](https://github.com/marmelab/react-admin/releases/tag/v5.7.0)\n- 🎙️ [Front-End Fire : Vulnérabilité de sécurité de Next.js, Remix abandonne les RSC, et Rsdoctor 1.0](https://front-end-fire.com/episodes/87/)\n- 🎙️ [Ce mois-ci dans React 2025-03 : Next avait une vulnérabilité d'authentification, TypeScript est porté en Golang](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-03-Next-had-an-auth-vulnerability--TypeScript-is-porting-to-Golang-e30tvf5/a-abs3i7h)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5b035b90",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5b035b90",
+        "en": "@@untranslatable_placeholder_5b035b90"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b051b70c",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Commanditaire {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "[![Ship dashboards in minutes — not sprints](/emails/issues/228/semaphor.jpg)](https://semaphor.cloud)",
+      "source_content_hash": "7eb227b9d194db3d63c95c1e512529a204f650450e19e5210e05e36c0e8a0165",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Livrez des tableaux de bord en quelques minutes — pas en sprints](/emails/issues/228/semaphor.jpg)](https://semaphor.cloud)",
+        "en": "[![Livrez des tableaux de bord en minutes — pas en sprints](/emails/issues/228/semaphor.jpg)](https://semaphor.cloud)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "**[Ship dashboards in minutes — not sprints](https://semaphor.cloud)**",
+      "source_content_hash": "bfa47a4213dfe30e6e1e15f984e85b5f5b23f0aa678ca2fc83cbb41077eb541a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Livrez des tableaux de bord en quelques minutes — pas en sprints](https://semaphor.cloud)**",
+        "en": "**[Livrez des tableaux de bord en minutes — pas en sprints](https://semaphor.cloud)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "Sempahor is a React based SDK to launch fully-interactive dashboards in your customer-facing products.",
+      "source_content_hash": "ddb575aa3b1bcdf4b8e8f949ae18445be069724a228a20608eea89b346660270",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Semaphor est un SDK basé sur React pour déployer des tableaux de bord entièrement interactifs dans vos produits client.",
+        "en": "Semaphor est un SDK basé sur React pour déployer des tableaux de bord entièrement interactifs dans vos produits destinés aux clients."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "Semaphor helps you decouple analytics from your product code, so you can iterate quickly, and ship new insights independently — without needing to redeploy your app.",
+      "source_content_hash": "97f39148224fa3e1b95428b55261844e2df7679a611393f0feb8aae031361983",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Semaphor vous aide à découpler les analyses de votre code produit, afin que vous puissiez itérer rapidement et livrer de nouvelles informations indépendamment — sans avoir à redéployer votre application.",
+        "en": "Semaphor vous aide à découpler les analytiques de votre code produit, vous permettant d'itérer rapidement et de déployer de nouvelles insights indépendamment — sans avoir à redéployer votre application."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "The CPO of TalentsConnect sums it up best:",
+      "source_content_hash": "2aa32e3a6e210dd32ae520a53bd229ded31abed28fccd513d6e80e82cddc4493",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le CPO de TalentsConnect résume cela parfaitement :",
+        "en": "Le CPO de TalentsConnect résume cela parfaitement :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "\"Semaphor has transformed our product and data team's workflow. They can now more quickly prototype and test new use cases directly in our application with our clients, significantly reducing feedback cycle time. Plus, Semaphor's styling options are outstanding, fitting seamlessly with our product's design\"",
+      "source_content_hash": "6538e18328dddd211b09d69334023eddc9e91ea564b030cf72c84b76af501faa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "\"Semaphor a transformé le flux de travail de notre équipe produit et données. Ils peuvent désormais prototyper et tester plus rapidement de nouveaux cas d'utilisation directement dans notre application avec nos clients, réduisant considérablement le temps du cycle de retour. De plus, les options de style de Semaphor sont exceptionnelles, s'intégrant parfaitement au design de notre produit\"",
+        "en": "\"Semaphor a transformé le flux de travail de notre équipe produit et données. Ils peuvent désormais prototyper et tester plus rapidement de nouveaux cas d'utilisation directement dans notre application avec nos clients, réduisant ainsi considérablement le temps du cycle de feedback. De plus, les options de style de Semaphor sont exceptionnelles et s'intègrent parfaitement au design de notre produit.\""
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "233bb60e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "It’s been a quiet week in the React Native community—perhaps because all eyes are on the React Native Connection happening right now in Paris. Hopefully, we’ll have plenty of exciting topics to dive into next week 🤗",
+      "source_content_hash": "b5ebb3f78efafd893b0115000eda665ec62ac87a54426624780910673dc17f71",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cela a été une semaine calme dans la communauté React Native — peut-être parce que tous les regards sont tournés vers la React Native Connection qui se déroule actuellement à Paris. Espérons que nous aurons de nombreux sujets passionnants à explorer la semaine prochaine 🤗",
+        "en": "Cela a été une semaine calme dans la communauté React Native – peut-être parce que tous les regards sont tournés vers la React Native Connection qui se déroule actuellement à Paris. Espérons que nous aurons de nombreux sujets passionnants à explorer la semaine prochaine 🤗"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e0019b35",
+      "source_content": "- 💸 [Radon IDE – All-in-one tool for React Native & Expo development. Now with Network Inspector and Outline Renders!](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 🐦 [Nice animated SplashScreen using Expo SplashScreen and RN Masked View.](https://x.com/S0LARIN/status/1905829104600875025)\n- 🐦 [React Native ExecuTorch 0.4 is announced for end of May](https://x.com/swmansion/status/1907086132828934414): with Universal LLM Runner, Additional LLMs support, Embedding models, Multilingual Whisper, OCR, Image segmentation…\n- 👀 [React Native 0.79 Golden RC](https://github.com/facebook/react-native/releases/tag/v0.79.0-rc.4): We should have a stable release next week.\n- 👀 [Lynx is exploring solutions for native plugin development](https://github.com/lynx-family/lynx/discussions/1#discussioncomment-12660488)\n- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 28-30 May. We're thrilled to announce the first speakers for App.js Conf 2025: Charlie Cheever, Enzo Manuel Mangano & Delphine Bugner! Grab your ticket now with a 15% discount using the code \"TWIR\".\n- 📜 [SDK 52 patches for Xcode 16.3](https://expo.dev/changelog/xcode-16-3-patches): If you encountered build issues when upgrading to Xcode 16.3, you may have to install the latest SDK 52 patch and RN0.77. Or move back to Xcode 16.2 🫠\n- 📜 [React Native: 10 years](https://shift.infinite.red/react-native-10-years-db9eb36c5af6): Infinite Red celebrates the birthday.\n- 📦 [React Native Screens 4.10](https://github.com/software-mansion/react-native-screens/releases/tag/4.10.0): iOS min supported version bumped to v15.1, experimental support for scrollview header when using formsheet, many android bug fixes.\n- 📦 [Unistyles 3.0 RC.1](https://github.com/jpudysz/react-native-unistyles/releases/tag/v3.0.0-rc.1): This has just been announced at React Native Connection conference, the library entered RC. Apart from the nice styling features, this version is quite exciting because it handles many things on the \"Shadow Tree\" of React Native using C++, allowing you to implement dynamic styles that do not need React to re-render components on the JS side when dependencies such as theme, signal, screen size/orientation and other dependencies change. This reminds how CSS works on the web: we don't need a React re-render when we cross a breakpoint.\n- 📦 [React Native MacOS 0.78](https://github.com/microsoft/react-native-macos/releases/tag/v0.78.0): The library caught up. We also heard it now supports Skia and WebGPU.\n- 📦 [React Native Builder Bob 0.39 - Upgrades to ESLint v9](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.39.0)\n- 📦 [React Native Gesture Handler 2.25](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.25.0)\n- 🎥 [William Candillon \\- The Shader's Gambit](https://www.youtube.com/watch?v=wUsFNlas620): Don’t expect much talking in this video, but it shows how far you can go with react-native-skia.\n- 🎥 [Theo \\- Android just changed forever](https://www.youtube.com/watch?v=ucZx1ArrIVQ)\n- 🎙️ [RNR 326 \\- React Native Turns 10 🎉](https://infinite.red/react-native-radio/rnr-326-react-native-turns-10)",
+      "source_content_hash": "02716cd364cad0b53d884282f4c4a03fe8f3edbe680f729e076b7c2cec954454",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Radon IDE – Outil tout-en-un pour le développement React Native & Expo. Maintenant avec Network Inspector et Outline Renders !](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 🐦 [Belle SplashScreen animée utilisant Expo SplashScreen et RN Masked View.](https://x.com/S0LARIN/status/1905829104600875025)\n- 🐦 [React Native ExecuTorch 0.4 annoncé pour fin mai](https://x.com/swmansion/status/1907086132828934414) : avec Universal LLM Runner, support de LLM supplémentaires, modèles d'embedding, Whisper multilingue, OCR, segmentation d'images…\n- 👀 [React Native 0.79 Golden RC](https://github.com/facebook/react-native/releases/tag/v0.79.0-rc.4) : Nous devrions avoir une version stable la semaine prochaine.\n- 👀 [Lynx explore des solutions pour le développement de plugins natifs](https://github.com/lynx-family/lynx/discussions/1#discussioncomment-12660488)\n- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Cracovie - 28-30 mai. Nous sommes ravis d'annoncer les premiers intervenants pour App.js Conf 2025 : Charlie Cheever, Enzo Manuel Mangano & Delphine Bugner ! Obtenez votre billet maintenant avec 15% de réduction en utilisant le code \"TWIR\".\n- 📜 [Correctifs SDK 52 pour Xcode 16.3](https://expo.dev/changelog/xcode-16-3-patches) : Si vous avez rencontré des problèmes de build lors de la mise à niveau vers Xcode 16.3, vous devrez peut-être installer le dernier correctif SDK 52 et RN0.77. Ou revenir à Xcode 16.2 🫠\n- 📜 [React Native : 10 ans](https://shift.infinite.red/react-native-10-years-db9eb36c5af6) : Infinite Red célèbre l'anniversaire.\n- 📦 [React Native Screens 4.10](https://github.com/software-mansion/react-native-screens/releases/tag/4.10.0) : Version iOS minimale prise en charge passée à v15.1, support expérimental de l'en-tête scrollview avec formSheet, nombreux correctifs Android.\n- 📦 [Unistyles 3.0 RC.1](https://github.com/jpudysz/react-native-unistyles/releases/tag/v3.0.0-rc.1) : Annoncé lors de la conférence React Native Connection, la bibliothèque entre en RC. Outre les fonctionnalités de style, cette version est passionnante car elle gère de nombreux éléments dans l'\"Arbre d'ombre\" de React Native en utilisant du C++, permettant d'implémenter des styles dynamiques sans nécessiter de nouveau rendu React côté JS lors des changements de dépendances (thème, signal, taille/orientation d'écran, etc.). Cela rappelle le fonctionnement du CSS sur le web : pas besoin de rendu React pour traverser un point de rupture.\n- 📦 [React Native MacOS 0.78](https://github.com/microsoft/react-native-macos/releases/tag/v0.78.0) : La bibliothèque s'est mise à jour. Elle supporterait maintenant Skia et WebGPU.\n- 📦 [React Native Builder Bob 0.39 - Mise à niveau vers ESLint v9](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.39.0)\n- 📦 [React Native Gesture Handler 2.25](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.25.0)\n- 🎥 [William Candillon - The Shader's Gambit](https://www.youtube.com/watch?v=wUsFNlas620) : Ne vous attendez pas à beaucoup de paroles, mais cela montre jusqu'où on peut aller avec react-native-skia.\n- 🎥 [Theo - Android vient de changer pour toujours](https://www.youtube.com/watch?v=ucZx1ArrIVQ)\n- 🎙️ [RNR 326 - React Native fête ses 10 ans 🎉](https://infinite.red/react-native-radio/rnr-326-react-native-turns-10)",
+        "en": "- 💸 [Radon IDE – Un outil tout-en-un pour le développement React Native et Expo. Désormais avec Network Inspector et Outline Renders !](https://ide.swmansion.com/?utm_source=thisweekinreact.com)\n- 🐦 [Belle SplashScreen animée utilisant Expo SplashScreen et RN Masked View.](https://x.com/S0LARIN/status/1905829104600875025)\n- 🐦 [React Native ExecuTorch 0.4 annoncé pour fin mai](https://x.com/swmansion/status/1907086132828934414): avec Universal LLM Runner, support supplémentaire de LLMs, modèles d'embedding, Whisper multilingue, OCR, segmentation d'image…\n- 👀 [React Native 0.79 Golden RC](https://github.com/facebook/react-native/releases/tag/v0.79.0-rc.4): Nous devrions avoir une version stable la semaine prochaine.\n- 👀 [Lynx explore des solutions pour le développement de plugins natifs](https://github.com/lynx-family/lynx/discussions/1#discussioncomment-12660488)\n- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 28-30 mai. Nous sommes ravis d'annoncer les premiers intervenants pour App.js Conf 2025 : Charlie Cheever, Enzo Manuel Mangano et Delphine Bugner ! Obtenez votre billet dès maintenant avec une réduction de 15% en utilisant le code \"TWIR\".\n- 📜 [Correctifs SDK 52 pour Xcode 16.3](https://expo.dev/changelog/xcode-16-3-patches): Si vous rencontrez des problèmes de build lors de la mise à niveau vers Xcode 16.3, vous devrez peut-être installer le dernier correctif SDK 52 et RN0.77. Ou revenir à Xcode 16.2 🫠\n- 📜 [React Native : 10 ans](https://shift.infinite.red/react-native-10-years-db9eb36c5af6): Infinite Red célèbre cet anniversaire.\n- 📦 [React Native Screens 4.10](https://github.com/software-mansion/react-native-screens/releases/tag/4.10.0): Version minimale iOS prise en charge remontée à v15.1, support expérimental des en-têtes de scrollview avec formulaire, nombreuses corrections de bugs Android.\n- 📦 [Unistyles 3.0 RC.1](https://github.com/jpudysz/react-native-unistyles/releases/tag/v3.0.0-rc.1): Annoncé lors de la conférence React Native Connection, la bibliothèque entre en RC. Outre les fonctionnalités de style, cette version gère de nombreux aspects de l'\"arbre d'ombre\" de React Native en C++, permettant d'implémenter des styles dynamiques sans re-render React côté JS lors des changements de thème, signal, taille/orientation d'écran. Fonctionnement similaire au CSS web : aucun re-render React lors du franchissement d'un point de rupture.\n- 📦 [React Native MacOS 0.78](https://github.com/microsoft/react-native-macos/releases/tag/v0.78.0): La bibliothèque a rattrapé son retard. Elle prend désormais en charge Skia et WebGPU.\n- 📦 [React Native Builder Bob 0.39 - Mise à niveau vers ESLint v9](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.39.0)\n- 📦 [React Native Gesture Handler 2.25](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.25.0)\n- 🎥 [William Candillon - The Shader's Gambit](https://www.youtube.com/watch?v=wUsFNlas620): Peu de paroles, mais démontre les capacités poussées de react-native-skia.\n- 🎥 [Theo - Android vient de changer pour toujours](https://www.youtube.com/watch?v=ucZx1ArrIVQ)\n- 🎙️ [RNR 326 - React Native fête ses 10 ans 🎉](https://infinite.red/react-native-radio/rnr-326-react-native-turns-10)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42bfcc5d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8172a0a5",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "- 👀 [PR on TypeScript by the ArkType maintainer](https://github.com/microsoft/TypeScript/pull/61505): A huge perf boost may be coming for codebases that use lots of “schemas” with eg Zod or ArkType.\n- 📜 [WebKit Features in Safari 18.4](https://webkit.org/blog/16574/webkit-features-in-safari-18-4/): Ships various things including 3 TC39 proposals. Iterator Helpers is now available in all browsers and Node.js!\n- 📜 [Summary of the February 2025 TC39 plenary](https://blogs.igalia.com/compilers/2025/03/27/summary-of-the-february-2025-tc39-plenary/)\n- 📜 [Faster String Sorting with Intl.Collator](https://claritydev.net/blog/faster-string-sorting-intl-collator)\n- 📜 [Forbidden Request Headers](https://macarthur.me/posts/forbidden-request-headers/)\n- 📜 [Node.js API Security Vulnerabilities with Path Traversal in files-bucket-server](https://www.nodejs-security.com/blog/nodejs-api-security-vulnerabilities-path-traversal-files-bucket-server/)\n- 📦 [Vitest 3.1](https://github.com/vitest-dev/vitest/releases/tag/v3.1.0)",
+      "source_content_hash": "9c01e09474ecc757f4f6d5ddacd1027ab01245fd99a3f9498754b1dfc013b76f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [PR sur TypeScript par le mainteneur d'ArkType](https://github.com/microsoft/TypeScript/pull/61505) : Un énorme gain de performance pourrait arriver pour les bases de code utilisant massivement des \"schémas\" comme Zod ou ArkType.\n- 📜 [Fonctionnalités WebKit dans Safari 18.4](https://webkit.org/blog/16574/webkit-features-in-safari-18-4/) : Livre diverses fonctionnalités incluant 3 propositions TC39. Iterator Helpers est désormais disponible dans tous les navigateurs et Node.js !\n- 📜 [Résumé de la plénière TC39 de février 2025](https://blogs.igalia.com/compilers/2025/03/27/summary-of-the-february-2025-tc39-plenary/)\n- 📜 [Tri de chaînes plus rapide avec Intl.Collator](https://claritydev.net/blog/faster-string-sorting-intl-collator)\n- 📜 [En-têtes de requête interdits](https://macarthur.me/posts/forbidden-request-headers/)\n- 📜 [Vulnérabilités de sécurité dans les API Node.js avec traversée de chemin dans files-bucket-server](https://www.nodejs-security.com/blog/nodejs-api-security-vulnerabilities-path-traversal-files-bucket-server/)\n- 📦 [Vitest 3.1](https://github.com/vitest-dev/vitest/releases/tag/v3.1.0)",
+        "en": "- [PR sur TypeScript par le mainteneur d'ArkType](https://github.com/microsoft/TypeScript/pull/61505): Une énorme amélioration des performances pourrait arriver pour les bases de code utilisant massivement des \"schémas\" avec par exemple Zod ou ArkType.\n- [Fonctionnalités WebKit dans Safari 18.4](https://webkit.org/blog/16574/webkit-features-in-safari-18-4/): Livre diverses fonctionnalités incluant 3 propositions TC39. Iterator Helpers est désormais disponible dans tous les navigateurs et Node.js !\n- [Résumé de la plénière TC39 de février 2025](https://blogs.igalia.com/compilers/2025/03/27/summary-of-the-february-2025-tc39-plenary/)\n- [Tri de chaînes plus rapide avec Intl.Collator](https://claritydev.net/blog/faster-string-sorting-intl-collator)\n- [En-têtes de requête interdits](https://macarthur.me/posts/forbidden-request-headers/)\n- [Vulnérabilités de sécurité de l'API Node.js avec traversée de chemin dans files-bucket-server](https://www.nodejs-security.com/blog/nodejs-api-security-vulnerabilities-path-traversal-files-bucket-server/)\n- [Vitest 3.1](https://github.com/vitest-dev/vitest/releases/tag/v3.1.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23b96cc0",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "[![alt](/emails/issues/228/next_burn.jpg)](https://x.com/aidenybai/status/1904294570533572817)",
+      "source_content_hash": "e5a397cb7d84a6417941b5a6b49e888f01da3a4c4257999b1af9b1ea9ee9c4ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/228/next_burn.jpg)](https://x.com/aidenybai/status/1904294570533572817)",
+        "en": "[![alt](/emails/issues/228/next_burn.jpg)](https://x.com/aidenybai/status/1904294570533572817)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/228/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.212991+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "c5d37cbe50ba7a3fccd3d14e01ffc870801bb7d1fc241b0a6c5cef0f6b9ab151",
+    "en": "c5d37cbe50ba7a3fccd3d14e01ffc870801bb7d1fc241b0a6c5cef0f6b9ab151"
+  }
+}

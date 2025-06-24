@@ -1,0 +1,630 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/183/index.mdx",
+  "source_file_content_hash": "3853394c5b98b878c7eb13b1aad7e50c5b454362987e51ee6c8e44a523ecdccf",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /183\ntitle: \"This Week In React #183: Vercel Edge, React Native 0.74 + IDE, refs, patching fetch(), Remix Single Fetch, RSCs, Signals, Redwood, Zustand Slices, XState, VisionCamera 4, NewArch, VisionOS...\"\nauthors: [slorber, bndkt]\ndate: 04-24-2024\n---",
+      "source_content_hash": "7f9c1b557b29a3c74439d3a4071be80ed44383e318aed1884a10d3623b6d34e5",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week React Native takes the spotlight! But there are also interesting news from Vercel and PRs to take a look at from the React core team.",
+      "source_content_hash": "fe0b35d937700132ca463b61cad8c99896e958b8edaba4d803a58e7a2553816b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, React Native est à l'honneur ! Mais il y a aussi des nouvelles intéressantes de Vercel et des PR à examiner de la part de l'équipe React Core.",
+        "en": "Cette semaine, React Native est à l'honneur ! Mais il y a aussi des nouvelles intéressantes de Vercel et des PR à examiner de la part de l'équipe React core."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Earlier this week, I was at React/RN Connection conferences in Paris. It was great to meet some of you there!",
+      "source_content_hash": "4656e407717abde109030d7590315550816e0832b5959cc8b7c2acf52a48e4b1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Plus tôt cette semaine, j'étais aux conférences React/RN Connection à Paris. Ce fut un plaisir de rencontrer certains d'entre vous sur place !",
+        "en": "Plus tôt cette semaine, j'étais aux conférences React/RN Connection à Paris. C'était super de rencontrer certains d'entre vous sur place !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The Parisian party is not over. After many years, the great [**dotJS conference**](https://www.dotjs.io/?utm_source=thisweekinreact) is back in Paris on June 27. They already announced great speakers, including Mark Dalgleish, Malte Ubl, Charlie Gerard, James Q Quick, Ben Lesh... Last regular tickets available, get a 10% discount with my code \"TWIR\".",
+      "source_content_hash": "b49039ae33f1065f6dd2f35d7e49ace4a9de14eec5327c30a70664b6633a010a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La fête parisienne n'est pas terminée. Après de nombreuses années, la grande conférence [**dotJS**](https://www.dotjs.io/?utm_source=thisweekinreact) revient à Paris le 27 juin. Ils ont déjà annoncé d'excellents intervenants, dont Mark Dalgleish, Malte Ubl, Charlie Gerard, James Q Quick, Ben Lesh... Derniers billets réguliers disponibles, obtenez 10% de réduction avec mon code \"TWIR\".",
+        "en": "La fête parisienne n'est pas terminée. Après de nombreuses années, la grande conférence [**dotJS**](https://www.dotjs.io/?utm_source=thisweekinreact) revient à Paris le 27 juin. Ils ont déjà annoncé d'excellents intervenants, dont Mark Dalgleish, Malte Ubl, Charlie Gerard, James Q Quick, Ben Lesh... Derniers billets ordinaires disponibles, bénéficiez de 10% de réduction avec mon code \"TWIR\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Due to the conf, I only had today to work on the newsletter. Thankfully my co-author [Benedikt](https://twitter.com/bndkt) took over and did most of the work this week! 🙏",
+      "source_content_hash": "d5e5ff099a5eebf6ca51cf74fd7e56ea13ceeaaa7d5c84eddcd1465f15a3fa81",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En raison de la conférence, je n'ai eu que aujourd'hui pour travailler sur la newsletter. Heureusement, mon co-auteur [Benedikt](https://twitter.com/bndkt) a pris le relais et a fait la majeure partie du travail cette semaine ! 🙏",
+        "en": "À cause de la conférence, je n'ai eu qu'aujourd'hui pour travailler sur la newsletter. Heureusement, mon co-auteur [Benedikt](https://twitter.com/bndkt) a pris le relais et a fait la majeure partie du travail cette semaine ! 🙏"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Next week, the newsletter takes a well-deserved break. We'll be back on May 8.",
+      "source_content_hash": "f6aee74c588b37a59cb93e4c3e324d27627678ef990afb98d9bc6f8338b43a4d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La semaine prochaine, la newsletter prend une pause bien méritée. Nous serons de retour le 8 mai.",
+        "en": "La semaine prochaine, la newsletter prend une pause bien méritée. Nous serons de retour le 8 mai."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c6da205d",
+        "en": "@@untranslatable_placeholder_c6da205d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf4363fc",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_cf4363fc",
+        "en": "@@untranslatable_placeholder_cf4363fc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2a3434e4",
+        "en": "@@untranslatable_placeholder_2a3434e4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2b28cb1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[![A newsletter helping build your product skills](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+      "source_content_hash": "b4defffda4cb70d8fab3f0121a878488876529b49c2af70e74bab3338167a672",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Une newsletter vous aidant à développer vos compétences produit](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+        "en": "[![Une newsletter pour développer vos compétences produit](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "**[A newsletter helping build your product skills](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+      "source_content_hash": "40683f0d8688d5ee07c70054387a0de091102f03256989716283d2cb2727d676",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Une newsletter vous aidant à développer vos compétences produit](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+        "en": "**[Une newsletter pour développer vos compétences produit](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) is PostHog’s newsletter dedicated to helping engineers improve their product skills. Learn what questions to ask users, how to build new features users love, and the path to product market fit.",
+      "source_content_hash": "dafb8650efe99337a8919642c13774a586336b2fb91f36b3b2fae7dec8e62387",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit. Apprenez quelles questions poser aux utilisateurs, comment créer de nouvelles fonctionnalités qu'ils adoreront, et le chemin vers le product-market fit.",
+        "en": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit. Apprenez quelles questions poser aux utilisateurs, comment créer de nouvelles fonctionnalités qu'ils adoreront, et le chemin vers l'adéquation produit-marché."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[**Subscribe for free**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) to get curated advice on building great products, lessons (and mistakes) from building PostHog, and deep dives into the strategies of top startups.",
+      "source_content_hash": "2df114b9fcd4e6f633a0926e9670819f408cf761beed46d1ded189643c97c963",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils triés sur le volet pour créer d'excellents produits, des leçons (et erreurs) tirées du développement de PostHog, et des analyses approfondies des stratégies des meilleures startups.",
+        "en": "[**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils triés sur la création de produits exceptionnels, des leçons (et erreurs) tirées de la construction de PostHog, et des analyses approfondies des stratégies des meilleures startups."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "602e59c7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[![Vercel reverted all edge rendering back to Node.js](/emails/issues/183/r183.jpg)](https://x.com/leeerob/status/1780705942734331983)",
+      "source_content_hash": "0842acdadb583d18b5c85f5f7549910f5eae591d4656435ff3b4717e7b038829",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Vercel réintègre tout le rendu edge vers Node.js](/emails/issues/183/r183.jpg)](https://x.com/leeerob/status/1780705942734331983)",
+        "en": "[![Vercel réintègre tout le rendu edge dans Node.js](/emails/issues/183/r183.jpg)](https://x.com/leeerob/status/1780705942734331983)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "🐦 [Vercel reverted all edge rendering back to Node.js](https://x.com/leeerob/status/1780705942734331983)",
+      "source_content_hash": "b34b642ce77eb21665039a014cf91776648a2b00c0aa13476b3476fab75e9a61",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🐦 [Vercel réintègre tout le rendu edge vers Node.js](https://x.com/leeerob/status/1780705942734331983)",
+        "en": "🐦 [Vercel réintègre tout le rendu edge dans Node.js](https://x.com/leeerob/status/1780705942734331983)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "Vercel’s VP of Product, Lee Rob, explained on X that Vercel is “reverting all edge rendering back to Node.js.” If you’re using Vercel (and probably even if you don’t), you’ll know that Vercel has pushed “edge” as a concept for a long time. On the one hand, edge means that compute is run near to where a user accessing a site hosted on Vercel is located. On the other hand, it also means that this compute is run on an “edge runtime,” which is built on V8 and not on Node.js. While the concept of running compute near to the end users sound appealing, the advantages quickly disappear if data needs to be loaded from a central location (which very often is the case). At the same time, development teams are often struggling to adapt workload to the limited subset of APIs available on the edge runtime. Now it seams Vercel has come to the conclusion that overall, the challenges for developers outweigh the limited benefits, and is therefore reverting to centralized Node.js runtimes. I appreciate their transparency around this! If you want more details, Theo made a [video](https://youtu.be/lAGE-k1Zfrg?si=5SP4hyoFkixTsh-y) about it.",
+      "source_content_hash": "4763f7c930c06c67a372436da349618734be72e6735545d2a6babfb7a40b82ac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le VP Produit de Vercel, Lee Rob, a expliqué sur X que Vercel \"réintègre tout le rendu edge vers Node.js\". Si vous utilisez Vercel (et probablement même si ce n'est pas le cas), vous savez que Vercel a poussé le concept \"edge\" depuis longtemps. D'un côté, edge signifie que le calcul s'effectue près de l'utilisateur accédant à un site hébergé sur Vercel. D'un autre côté, cela signifie aussi que ce calcul s'exécute dans un \"runtime edge\", basé sur V8 et non sur Node.js. Bien que l'idée d'exécuter des calculs près des utilisateurs finaux semble séduisante, les avantages disparaissent rapidement si les données doivent être chargées depuis un emplacement central (ce qui est très souvent le cas). Parallèlement, les équipes de développement peinent souvent à adapter leur charge de travail au sous-ensemble limité d'API disponibles sur le runtime edge. Il semble que Vercel ait conclu que globalement, les défis pour les développeurs l'emportent sur les bénéfices limités, et revient donc aux runtimes Node.js centralisés. J'apprécie leur transparence sur ce sujet ! Si vous voulez plus de détails, Theo a réalisé une [vidéo](https://youtu.be/lAGE-k1Zfrg?si=5SP4hyoFkixTsh-y) à ce sujet.",
+        "en": "Lee Rob, VP Produit de Vercel, a expliqué sur X que Vercel « réintègre tout le rendu edge dans Node.js ». Si vous utilisez Vercel (et probablement même si ce n'est pas le cas), vous savez que Vercel promeut le concept d'« edge » depuis longtemps. D'un côté, edge signifie que le calcul s'exécute près de l'emplacement de l'utilisateur accédant à un site hébergé sur Vercel. D'un autre côté, cela signifie aussi que ce calcul s'exécute dans un « runtime edge », basé sur V8 et non sur Node.js. Bien que le concept d'exécution proche des utilisateurs finaux semble séduisant, les avantages s'effacent rapidement si les données doivent être chargées depuis un emplacement central (ce qui est très souvent le cas). Parallèlement, les équipes de développement peinent souvent à adapter les charges de travail au sous-ensemble limité d'API disponibles dans le runtime edge. Vercel semble avoir conclu qu'au global, les défis pour les développeurs surpassent les avantages limités, et revient donc aux runtimes Node.js centralisés. J'apprécie leur transparence sur ce sujet ! Pour plus de détails, Theo a réalisé une [vidéo](https://youtu.be/lAGE-k1Zfrg?si=5SP4hyoFkixTsh-y) à ce sujet."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e0a17c0d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "- 💸 [Clerk's prebuilt UI components give you a beautiful, fully-functional user management experience in minutes. Start for free!](https://go.clerk.com/AlkHHq8)\n- 👀 [React Core PR - React 19 will not patch fetch() anymore!](https://github.com/facebook/react/pull/28896): the controversial `fetch()` patch to deduplicate requests in RSCs is now removed from React core. You might see it as a good thing, but keep in mind you will now need to deduplicate requests yourself manually with `React.cache`.\n- 👀 [React Core PR - Don't minify symbols in production builds](https://github.com/facebook/react/pull/28881): React 19 production builds will preserve variable/function names and should become easier to read/debug. You can still minify it yourself if you want to, but using HTTP gzip compression should be enough to compensate for the extra size.\n- 👀 [React Docs PR - Add documentation for ref cleanup function](https://github.com/reactjs/react.dev/pull/6770): React 19 ref functions can now return a cleanup function (🐦 [preview](https://twitter.com/sebastienlorber/status/1783108366459375675)). This should also help users using string refs (removed in v19) and classes to migrate thanks to automated codemods.\n- 👀 [Remix POC - Remix + Hono + Vite](https://github.com/yusukebe/hono-and-remix-on-vite)\n- 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Get a 10% discount with code \"TWIR\". Awesome lineup including Evan Bacon, Kent C. Dodds, Theo, Tim Neutkens, Mark Erikson, Fred Schott and so many others!\n- 📜 [HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/): A great deep dive into subtle DOM behaviors and design decisions, including how frameworks like React or Vue handle the difference. Also explains how React 19 will improve support for Web Components.\n- 📜 [Redwood - Building a new docs site with RSC](https://redwoodjs.com/blog/building-a-new-docs-site-with-rsc): Redwood is dogfooding Redwood by showing how to build a docs site with it, based on MDX and RSCs.\n- 📜 [Deploy a new Remix app to Cloudflare Pages:](https://www.jacobparis.com/content/remix-cloudflare-pages) A lot has recently changed (and improved!) about how Remix can be deployed to CF Pages. This is a good guide on the state of the art.\n- 📜 [Improving INP in React and Next.js](https://www.thisdot.co/blog/improving-inp-in-react-and-next-js): Interaction to Next Paint has recently replaced First Input Delay (FID) as a core web vital; this post details how to optimize it.\n- 📜 [Did Signals Just Land in React?](https://thenewstack.io/did-signals-just-land-in-react/): Spoiler Alert: No, they didn't. But there’s still a way to try signals in React.\n- 📜 [Vercel - Building an interactive 3D event badge with React Three Fiber](https://vercel.com/blog/building-an-interactive-3d-event-badge-with-react-three-fiber)\n- 📜 [Getting the Current URL in Next.js Server Components](https://www.propelauth.com/post/getting-url-in-next-server-components)\n- 📜 [How to manifest streamlined authentication: AWS Cognito in a React app](https://evilmartians.com/chronicles/how-to-manifest-streamlined-authentication-aws-cognito-in-a-react-app)\n- 📜 [Localized link tags for SEO in Remix](https://react-japan.dev/en/blog/localized-link-tags-for-seo-in-remix)\n- 📜 [How Solid Made Me A Better React Developer](https://www.brenelz.com/posts/how-solid-made-me-a-better-react-developer/)\n- 📜 [Boosting Performance with Next.js and React Server Components - A GeekyAnts Case Study](https://geekyants.com/blog/boosting-performance-with-nextjs-and-react-server-components-a-geekyantscom-case-study)\n- 📜 [How to Simplify Global State Management in React Using Jotai](https://thenewstack.io/how-to-simplify-global-state-management-in-react-using-jotai/)\n- 📦 [Remix 2.9 - Single Fetch (unstable)](https://github.com/remix-run/remix/blob/main/CHANGELOG.md)\n- 📦 [StyleX - 0.6.1 - Typed variables, fallback values, ESLint plugin](https://stylexjs.com/blog/v0.6.1)\n- 📦 [Hydrogen April 2024 release - Analytics preview, stable Vite support, SEO updates, full-page caching](https://hydrogen.shopify.dev/update/april-2024)\n- 📦 [Zustand-Slices - Assemble slices into a single store](https://github.com/zustandjs/zustand-slices)\n- 📦 [Spoiled - Realistic Spoiler component for React.js](https://github.com/molefrog/spoiled)\n- 🎙️ [Off The Main Thread Podcast: Putting React In The Browser](https://offthemainthread.tech/episode/putting-react-in-the-browser/)\n- 🎥 [Jack Herrington - JS Built-in Signals In React and Svelte today!](https://www.youtube.com/watch?v=HSVcZa5yTKE)\n- 🎥 [Ben Holmes - Vercel got it wrong](https://www.youtube.com/watch?v=_dtyYDwHAIc): Interesting take on the “edge” topic by Ben Holmes, detailing Cloudflare’s approach.",
+      "source_content_hash": "962431130e7acfef78c4d95d0be47f49d9e84a26f397714fc001225dc3498454",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_157c9741",
+        "en": "@@untranslatable_placeholder_157c9741"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2128cb26",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2128cb26",
+        "en": "@@untranslatable_placeholder_2128cb26"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "[![NLUX ― New React Library To Simplify Adding AI Features](/emails/issues/183/nlux.jpg)](https://nlux.dev/?c-twr2-h)",
+      "source_content_hash": "29f42603a0228d7c8cf4b282a95877a521e9a1bafd1722b6317b32a7a0f746f1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![NLUX ― Nouvelle bibliothèque React pour simplifier l'ajout de fonctionnalités IA](/emails/issues/183/nlux.jpg)](https://nlux.dev/?c-twr2-h)",
+        "en": "[![NLUX ― Nouvelle bibliothèque React pour simplifier l'ajout de fonctionnalités IA](/emails/issues/183/nlux.jpg)](https://nlux.dev/?c-twr2-h)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "**[NLUX ― New React Library To Simplify Adding AI Features](https://nlux.dev/?c-twr2-h)**",
+      "source_content_hash": "12b2a0eaf8abe2e1215d8149c7dd2622201e74a44eced2d3612c5eb27fadf6d9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[NLUX ― Nouvelle bibliothèque React pour simplifier l'ajout de fonctionnalités IA](https://nlux.dev/?c-twr2-h)**",
+        "en": "**[NLUX ― Nouvelle bibliothèque React pour simplifier l'ajout de fonctionnalités IA](https://nlux.dev/?c-twr2-h)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "[NLUX](https://nlux.dev?c-twr2-p1) is an [open-source](https://github.com/nluxai/nlux) React library that makes it super simple to integrate powerful large language models (LLMs) like ChatGPT into your web app or website. With just a few lines of code, you can add conversational AI capabilities.",
+      "source_content_hash": "bee626b6aa954838238ed905beff30885dbdc73c488b1912a32bb109f73bf622",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[NLUX](https://nlux.dev?c-twr2-p1) est une bibliothèque React [open-source](https://github.com/nluxai/nlux) qui simplifie énormément l'intégration de modèles de langage avancés (LLM) comme ChatGPT dans vos applications web ou sites. Avec seulement quelques lignes de code, vous pouvez ajouter des capacités conversationnelles d'IA.",
+        "en": "[NLUX](https://nlux.dev?c-twr2-p1) est une bibliothèque React [open-source](https://github.com/nluxai/nlux) qui simplifie l'intégration de modèles de langage avancés (LLM) comme ChatGPT dans vos applications web. Avec quelques lignes de code, vous ajoutez des capacités conversationnelles IA."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Key features 🌟 include:",
+      "source_content_hash": "7c9774ccfc6a7d876eedf218e2c40697e4a451c1178bdf57089358b2544054ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Principales fonctionnalités 🌟 :",
+        "en": "Fonctionnalités clés 🌟 :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0dbe2f3",
+      "source_content": "- **Build AI Chat Interfaces In Minutes** - High quality conversational AI interfaces with a few lines of code.\n- **React Components & Hooks** - `<AiChat />` for UI and `useChatAdapter` hook for easy integration.\n- **Flexible Adapters** - For `ChatGPT`, `LangChain` and `HuggingFace`, and an API to **Create Your Own Adapter** for any backend.\n- **Synchronise UI state with AI backends** in an optimal way.\n- **Markdown Streaming** - Render LLM markdown as it's being generated.\n- **Zero Dependencies** - Lightweight codebase.",
+      "source_content_hash": "690f43a97513126123ff925f2df5e8f35b601cb5541258ef71d4163bb14d4fc1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- **Créez des interfaces de chat IA en minutes** - Interfaces conversationnelles IA de haute qualité avec peu de code.\n- **Composants React et Hooks** - `<AiChat />` pour l'UI et le hook `useChatAdapter` pour une intégration facile.\n- **Adaptateurs flexibles** - Pour `ChatGPT`, `LangChain` et `HuggingFace`, avec une API pour **créer votre propre adaptateur** pour n'importe quel backend.\n- **Synchronisez l'état de l'UI avec les backends IA** de manière optimale.\n- **Streaming Markdown** - Affichez le markdown généré par les LLM en temps réel.\n- **Zéro dépendance** - Base de code légère.",
+        "en": "- **Créez des interfaces de chat IA en minutes** - Interfaces conversationnelles de qualité avec peu de code.\n- **Composants React & Hooks** - `<AiChat />` pour l'UI et le hook `useChatAdapter` pour une intégration facile.\n- **Adaptateurs flexibles** - Pour `ChatGPT`, `LangChain` et `HuggingFace`, avec une API pour **créer vos propres adaptateurs**.\n- **Synchronisez l'état de l'UI** avec les backends IA de manière optimale.\n- **Streaming Markdown** - Rendu du markdown généré par les LLM en temps réel.\n- **Zéro dépendance** - Base de code légère."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "More info, examples and documentation on [nlux.dev](https://nlux.dev?c-twr2-p1)",
+      "source_content_hash": "94aec7f0299d1143e78a8b8b846b942a3bf1a5cda7b402a8ebd227852e26612c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Plus d'informations, d'exemples et la documentation sur [nlux.dev](https://nlux.dev?c-twr2-p1)",
+        "en": "Plus d'informations, exemples et documentation sur [nlux.dev](https://nlux.dev?c-twr2-p1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dd8754e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7c92a79",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "[![React Native 0.74 released, React Native IDE is now in beta](/emails/issues/183/rn183.jpg)](https://reactnative.dev/blog/2024/04/22/release-0.74)",
+      "source_content_hash": "261f5aba5df751c4048700a1e62220ca3c87fd5ded6b2cd5c74f8d7c47a6c7d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Native 0.74 publiée, l'IDE React Native est désormais en bêta](/emails/issues/183/rn183.jpg)](https://reactnative.dev/blog/2024/04/22/release-0.74)",
+        "en": "[![React Native 0.74 publié, l'IDE React Native est désormais en bêta](/emails/issues/183/rn183.jpg)](https://reactnative.dev/blog/2024/04/22/release-0.74)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "📦 [React Native 0.74 released](https://reactnative.dev/blog/2024/04/22/release-0.74)",
+      "source_content_hash": "431a300b6125ecac2e39fb2f4444dcd01865a816617eba222c98752d3af85704",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "📦 [React Native 0.74 publiée](https://reactnative.dev/blog/2024/04/22/release-0.74)",
+        "en": "📦 [React Native 0.74 publié](https://reactnative.dev/blog/2024/04/22/release-0.74)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "This week saw the release of React Native 0.74, a major milestone for the community! The latest version makes “bridgeless mode” the default for new projects using the New Architecture (with the next release, 0.75, the New Arch will become the default, too). Both can still be turned off if needed, but they clearly represent the future of React Native, and over the last months especially, A LOT of libraries have added support for both. But there’s more: RN 0.74 includes Yoga 3.0. There are very few breaking changes and deprecations, but it’s still worth checking them out in the [release notes](https://reactnative.dev/blog/2024/04/22/release-0.74).",
+      "source_content_hash": "07880d9425d34282f721f30a5ee70864e791f38ff3f9a2f195969dfef46e5609",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine a vu la sortie de React Native 0.74, une étape majeure pour la communauté ! Cette dernière version rend le \"mode sans pont\" (bridgeless mode) par défaut pour les nouveaux projets utilisant la Nouvelle Architecture (avec la prochaine version 0.75, la Nouvelle Arch deviendra également la valeur par défaut). Les deux peuvent toujours être désactivés si nécessaire, mais ils représentent clairement l'avenir de React Native. Ces derniers mois, en particulier, BEAUCOUP de bibliothèques ont ajouté leur prise en charge. Mais il y a plus : RN 0.74 inclut Yoga 3.0. Il y a très peu de changements cassants et de dépréciations, mais il vaut tout de même la peine de les consulter dans les [notes de version](https://reactnative.dev/blog/2024/04/22/release-0.74).",
+        "en": "Cette semaine a vu la publication de React Native 0.74, une étape majeure ! Cette version rend le \"mode sans pont\" (bridgeless) par défaut pour les nouveaux projets utilisant la Nouvelle Architecture (dès la version 0.75, la Nouvelle Arch deviendra aussi le défaut). Les deux options restent désactivables, mais représentent clairement l'avenir de React Native. De nombreuses bibliothèques ont ajouté leur support ces derniers mois. Autre nouveauté : RN 0.74 intègre Yoga 3.0. Peu de changements cassants, mais consultez les [notes de version](https://reactnative.dev/blog/2024/04/22/release-0.74)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "📦 [React Native IDE is now in beta](https://ide.swmansion.com/)",
+      "source_content_hash": "221839eae6a1aed1ee50c29557a7ff46cbfd9d95f35a8b197e914ec0bcc0d9a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "📦 [L'IDE React Native est désormais en bêta](https://ide.swmansion.com/)",
+        "en": "📦 [L'IDE React Native est désormais en bêta](https://ide.swmansion.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "Another exciting news this week is the closed beta for React Native IDE, developed by the team at Software Mansion. You can now sign up to get early access to the IDE. They also have a landing page up now, and the [docs](https://ide.swmansion.com/docs/getting-started) are publicly available for anyone curious about it.",
+      "source_content_hash": "17e67b1619cf0b988b88f1e35e817335c1a30e3cec2d0c7931356ac555a5042c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Autre nouvelle passionnante cette semaine : la bêta fermée de l'IDE React Native, développé par l'équipe de Software Mansion. Vous pouvez désormais vous inscrire pour obtenir un accès anticipé. Ils ont également mis en ligne une page de présentation, et la [documentation](https://ide.swmansion.com/docs/getting-started) est publiquement accessible pour les curieux."
+      },
+      "invalid_translations": {
+        "en": {
+          "translation": "Autre actualité : la bêta fermée de l'IDE React Native par Software Mansion. Inscrivez-vous pour un accès anticipé. La [page d'accueil](https://ide.swmansion.com/) et la [documentation](https://ide.swmansion.com/docs/getting-started) sont disponibles.",
+          "reason": "The number of special elements (links, code, variables) differs. Source has 1, translation has 2.",
+          "timestamp": "2025-06-24T15:57:01.447381+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a1e835c",
+      "source_content": "- 💸 [React Native Analytics — Omlet is a New Tool to Analyze Component Usage. See Trends to Improve Code and Boost Component Adoption.](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-apr-2024)\n- 🐦 [Right-click to inspect with access to components hierarchy and jump-to-source in the coming React Native IDE?](https://x.com/kzzzf/status/1781334337960493100)\n- 🐦 [Another week, another wild push from Evan Bacon: Precompiled React Native](https://x.com/Baconbrix/status/1782454818851663918)\n- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 22-24 May. Get a [10% discount](https://ti.to/appjs/2024/discount/TWIR) with code \"TWIR\".\n- 📜 [Sunrising New Architecture in the New Expensify App](https://blog.swmansion.com/sunrising-new-architecture-in-the-new-expensify-app-729d237a02f5): Super cool to see a complex open-source app adapting the New Arch. A great example to look into!\n- 📜 [Apple privacy manifest for React Native](https://dev.to/dannyhw/apple-privacy-manifest-for-react-native-29fk): I’ve mentioned the Apple Privacy Manifest requirement before; finally, a good blog post summarizes the topic.\n- 📜 [Expo Blog: Save users from deleting your app with expo-quick-actions](https://expo.dev/blog/expo-quick-actions)\n- 📜 [Creating a React Native “Curved Bottom Bar” with Handwritten SVG](https://kyleshevlin.com/react-native-curved-bottom-bar-with-handwritten-svg/)\n- 📜 [Exploring VisionOS Apps with React Native](https://geekyants.com/blog/exploring-visionos-apps-with-react-native)\n- 📜 [Microsoft is retiring App Center: Here’s what React Native developers should use instead](https://shift.infinite.red/microsoft-is-retiring-app-center-heres-what-react-native-developers-should-use-instead-c2a8786f971e)\n- 📦 [React Native VisionCamera V4: Draw directly on camera frames with Skia, lots of Android bug fixes](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.0.0): There is a great [demo](https://github.com/mrousavy/FaceBlurApp) showcasing what kind of stuff this enables, too!\n- 📦 [react-native-svg 15.2.0 adds support for RN 0.74 on New Architecture](https://github.com/software-mansion/react-native-svg/releases/tag/v15.2.0)\n- 🎙️ [RNR 294 - Goodbye, App Center!](https://reactnativeradio.com/episodes/rnr-294-rip-app-center-and-other-news)\n- 🎙 [Rocket Ship 39 - Award Winning Credit Card App Yonder with Henry Moulton](https://podcast.galaxies.dev/episodes/039-award-winning-credit-card-app-yonder-with-henry-moulton)\n- 🎥 [The React Native Show Podcast: Coffee Talk 18 - Behind the Scenes of React Native 0.74 Release](https://www.youtube.com/watch?v=bLHubdUE2Ew)\n- 🎥 [Simon Grimm - React Native Multiplayer with Supabase Realtime and Skia](https://www.youtube.com/watch?v=rqbu-nGkOgw)\n- 🎥 [Oscar Franco - React Native Bridgeless Mode for Dummies](https://www.youtube.com/watch?v=K5HBIKAjZ4U)",
+      "source_content_hash": "fb3414d2e2612d1c66168cb04e46655bb822eac93967d4dc008ef368073833e5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Analyse React Native — Omlet est un nouvel outil pour analyser l'utilisation des composants. Visualisez les tendances pour améliorer le code et booster l'adoption des composants.](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-apr-2024)\n- 🐦 [Clic droit pour inspecter avec accès à la hiérarchie des composants et aller à la source dans le futur IDE React Native ?](https://x.com/kzzzf/status/1781334337960493100)\n- 🐦 [Une autre semaine, une autre avancée folle d'Evan Bacon : React Native précompilé](https://x.com/Baconbrix/status/1782454818851663918)\n- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 22-24 mai. Obtenez une [réduction de 10%](https://ti.to/appjs/2024/discount/TWIR) avec le code \"TWIR\".\n- 📜 [Émergence de la Nouvelle Architecture dans l'application New Expensify](https://blog.swmansion.com/sunrising-new-architecture-in-the-new-expensify-app-729d237a02f5) : Super cool de voir une application open-source complexe adopter la Nouvelle Arch. Un excellent exemple à explorer !\n- 📜 [Manifeste de confidentialité Apple pour React Native](https://dev.to/dannyhw/apple-privacy-manifest-for-react-native-29fk) : J'ai déjà mentionné l'obligation du Manifeste de Confidentialité Apple ; enfin, un bon article de blog résume le sujet.\n- 📜 [Blog Expo : Sauvez les utilisateurs de supprimer votre application avec expo-quick-actions](https://expo.dev/blog/expo-quick-actions)\n- 📜 [Création d'une « Barre inférieure incurvée » React Native avec SVG manuscrit](https://kyleshevlin.com/react-native-curved-bottom-bar-with-handwritten-svg/)\n- 📜 [Exploration des applications VisionOS avec React Native](https://geekyants.com/blog/exploring-visionos-apps-with-react-native)\n- 📜 [Microsoft met fin à App Center : Voici ce que les développeurs React Native devraient utiliser à la place](https://shift.infinite.red/microsoft-is-retiring-app-center-heres-what-react-native-developers-should-use-instead-c2a8786f971e)\n- 📦 [React Native VisionCamera V4 : Dessinez directement sur les trames de la caméra avec Skia, nombreuses corrections de bugs Android](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.0.0) : Il y a aussi une super [démo](https://github.com/mrousavy/FaceBlurApp) montrant ce que cela permet !\n- 📦 [react-native-svg 15.2.0 ajoute le support de RN 0.74 sur la Nouvelle Architecture](https://github.com/software-mansion/react-native-svg/releases/tag/v15.2.0)\n- 🎙️ [RNR 294 - Adieu, App Center !](https://reactnativeradio.com/episodes/rnr-294-rip-app-center-and-other-news)\n- 🎙 [Rocket Ship 39 - L'application de carte de crédit primée Yonder avec Henry Moulton](https://podcast.galaxies.dev/episodes/039-award-winning-credit-card-app-yonder-with-henry-moulton)\n- 🎥 [Le podcast The React Native Show : Coffee Talk 18 - Dans les coulisses de la sortie de React Native 0.74](https://www.youtube.com/watch?v=bLHubdUE2Ew)\n- 🎥 [Simon Grimm - Multijoueur React Native avec Supabase Realtime et Skia](https://www.youtube.com/watch?v=rqbu-nGkOgw)\n- 🎥 [Oscar Franco - Le mode Bridgeless de React Native pour les nuls](https://www.youtube.com/watch?v=K5HBIKAjZ4U)",
+        "en": "- 💸 [React Native Analytics — Omlet est un nouvel outil pour analyser l'utilisation des composants. Visualisez les tendances pour améliorer le code et stimuler l'adoption des composants.](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-apr-2024)\n- 🐦 [Clic droit pour inspecter avec accès à la hiérarchie des composants et saut vers la source dans le futur IDE React Native ?](https://x.com/kzzzf/status/1781334337960493100)\n- 🐦 [Une nouvelle semaine, une nouvelle avancée spectaculaire d'Evan Bacon : React Native précompilé](https://x.com/Baconbrix/status/1782454818851663918)\n- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Cracovie - 22-24 mai. Bénéficiez d'une [réduction de 10%](https://ti.to/appjs/2024/discount/TWIR) avec le code \"TWIR\".\n- 📜 [Lever de soleil sur la Nouvelle Architecture dans l'application New Expensify](https://blog.swmansion.com/sunrising-new-architecture-in-the-new-expensify-app-729d237a02f5) : Super cool de voir une application open-source complexe adopter la Nouvelle Arch. Un excellent exemple à étudier !\n- 📜 [Manifeste de confidentialité Apple pour React Native](https://dev.to/dannyhw/apple-privacy-manifest-for-react-native-29fk) : J'ai déjà mentionné l'exigence du Manifeste de Confidentialité Apple ; enfin, un bon article de blog résume le sujet.\n- 📜 [Blog Expo : Épargnez à vos utilisateurs la suppression de votre app avec expo-quick-actions](https://expo.dev/blog/expo-quick-actions)\n- 📜 [Créer une \"Barre Inférieure Courbée\" dans React Native avec du SVG manuscrit](https://kyleshevlin.com/react-native-curved-bottom-bar-with-handwritten-svg/)\n- 📜 [Explorer les applications VisionOS avec React Native](https://geekyants.com/blog/exploring-visionos-apps-with-react-native)\n- 📜 [Microsoft retire App Center : Voici ce que les développeurs React Native devraient utiliser à la place](https://shift.infinite.red/microsoft-is-retiring-app-center-heres-what-react-native-developers-should-use-instead-c2a8786f971e)\n- 📦 [React Native VisionCamera V4 : Dessinez directement sur les trames de la caméra avec Skia, nombreuses corrections de bugs Android](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.0.0) : Une excellente [démo](https://github.com/mrousavy/FaceBlurApp) montre également ce que cela permet de réaliser !\n- 📦 [react-native-svg 15.2.0 ajoute la prise en charge de RN 0.74 sur la Nouvelle Architecture](https://github.com/software-mansion/react-native-svg/releases/tag/v15.2.0)\n- 🎙️ [RNR 294 - Adieu, App Center !](https://reactnativeradio.com/episodes/rnr-294-rip-app-center-and-other-news)\n- 🎙 [Rocket Ship 39 - L'application de carte de crédit primée Yonder avec Henry Moulton](https://podcast.galaxies.dev/episodes/039-award-winning-credit-card-app-yonder-with-henry-moulton)\n- 🎥 [The React Native Show Podcast : Coffee Talk 18 - Dans les coulisses de la version React Native 0.74](https://www.youtube.com/watch?v=bLHubdUE2Ew)\n- 🎥 [Simon Grimm - Multijoueur React Native avec Supabase Realtime et Skia](https://www.youtube.com/watch?v=rqbu-nGkOgw)\n- 🎥 [Oscar Franco - Le mode sans pont React Native pour les nuls](https://www.youtube.com/watch?v=K5HBIKAjZ4U)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b99d2cf6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dba1427",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb70e807",
+      "source_content": "- 🐦 [Fetch API has built-in timeout support](https://x.com/goenning/status/1781290404211814903)\n- 📜 [On Signal Relays](https://www.pzuraq.com/blog/on-signal-relays)\n- 📜 [WebKit: Help us invent CSS Grid Level 3, aka “Masonry” layout](https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/)\n- 📜 [An intro to TSConfig for JavaScript Developers](https://deno.com/blog/intro-to-tsconfig)\n- 📜 [Vercel - Latency numbers every frontend developer should know](https://vercel.com/blog/latency-numbers-every-web-developer-should-know)\n- 📖 [The Front End Developer/Engineer Handbook 2024 — A Guide to Modern Web Development - Free eBook](https://frontendmasters.com/blog/front-end-developer-handbook-2024/)\n- 📦 [Chrome 125 beta - CSS Anchor Positioning, CSS stepped functions, …](https://developer.chrome.com/blog/chrome-125-beta?hl=en)\n- 📦 [ESLint v9.1](https://eslint.org/blog/2024/04/eslint-v9.1.0-released/)\n- 📦 [Electron 30.0](https://www.electronjs.org/blog/electron-30-0)",
+      "source_content_hash": "5e052d6b6e7f95a316fe5189695361982f4d25c4e37edeeba84dc770a65fa5c3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🐦 [L'API Fetch prend désormais en charge nativement les timeouts](https://x.com/goenning/status/1781290404211814903)\n- 📜 [À propos des relais de signal](https://www.pzuraq.com/blog/on-signal-relays)\n- 📜 [WebKit : Aidez-nous à inventer CSS Grid Level 3, alias disposition \"Masonry\"](https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/)\n- 📜 [Une introduction à TSConfig pour les développeurs JavaScript](https://deno.com/blog/intro-to-tsconfig)\n- 📜 [Vercel - Les chiffres de latence que tout développeur frontend devrait connaître](https://vercel.com/blog/latency-numbers-every-web-developer-should-know)\n- 📖 [Le manuel du développeur front-end 2024 — Un guide du développement web moderne - eBook gratuit](https://frontendmasters.com/blog/front-end-developer-handbook-2024/)\n- 📦 [Chrome 125 bêta - Positionnement d'ancrage CSS, fonctions étagées CSS, …](https://developer.chrome.com/blog/chrome-125-beta?hl=en)\n- 📦 [ESLint v9.1](https://eslint.org/blog/2024/04/eslint-v9.1.0-released/)\n- 📦 [Electron 30.0](https://www.electronjs.org/blog/electron-30-0)",
+        "en": "- 🐦 [L'API Fetch dispose désormais d'un support natif des timeouts](https://x.com/goenning/status/1781290404211814903)\n- 📜 [À propos des relais de signaux](https://www.pzuraq.com/blog/on-signal-relays)\n- 📜 [WebKit : Aidez-nous à inventer CSS Grid Level 3, alias la disposition \"Masonry\"](https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/)\n- 📜 [Introduction à TSConfig pour les développeurs JavaScript](https://deno.com/blog/intro-to-tsconfig)\n- 📜 [Vercel - Les temps de latence que tout développeur frontend devrait connaître](https://vercel.com/blog/latency-numbers-every-web-developer-should-know)\n- 📖 [Le manuel du développeur/ingénieur frontend 2024 — Un guide du développement web moderne - eBook gratuit](https://frontendmasters.com/blog/front-end-developer-handbook-2024/)\n- 📦 [Chrome 125 bêta - Positionnement d'ancrage CSS, fonctions échelonnées CSS, …](https://developer.chrome.com/blog/chrome-125-beta?hl=en)\n- 📦 [ESLint v9.1](https://eslint.org/blog/2024/04/eslint-v9.1.0-released/)\n- 📦 [Electron 30.0](https://www.electronjs.org/blog/electron-30-0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74a488b8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "[![Vercel updated their logo](/emails/issues/183/meme.jpg)](https://twitter.com/RhysSullivan/status/1780822966349266957)",
+      "source_content_hash": "9ecc0ce1b21cbc12a160a4924dcf92f185ba2c48fe7dcaefa700b846c62a2083",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Vercel a mis à jour son logo](/emails/issues/183/meme.jpg)](https://twitter.com/RhysSullivan/status/1780822966349266957)",
+        "en": "[![Vercel a mis à jour son logo](/emails/issues/183/meme.jpg)](https://twitter.com/RhysSullivan/status/1780822966349266957)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "[![Vercel updated their logo](/emails/issues/183/meme2.jpg)](https://twitter.com/bentonnnnnn/status/1781186098800267421)",
+      "source_content_hash": "97d7e4725b6796aef4a7f676c051a6bd3d9cf3f0556d75a7e3c9840b7e1e0744",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Vercel a mis à jour son logo](/emails/issues/183/meme2.jpg)](https://twitter.com/bentonnnnnn/status/1781186098800267421)",
+        "en": "[![Vercel a mis à jour son logo](/emails/issues/183/meme2.jpg)](https://twitter.com/bentonnnnnn/status/1781186098800267421)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/183/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.447431+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "3853394c5b98b878c7eb13b1aad7e50c5b454362987e51ee6c8e44a523ecdccf",
+    "en": "3853394c5b98b878c7eb13b1aad7e50c5b454362987e51ee6c8e44a523ecdccf"
+  }
+}

@@ -1,0 +1,171 @@
+---
+slug: /182
+title: "This Week In React #182: v18.3, useDeferredValue, Next.js, DevTools, Zustand, CSS-in-JS, R19, Remix, Jest, XState, Astro, RNSC, Strict DOM, 3D, Metro, Worklets, TC39, TypeScript, Effect, Rspack, GraphQL..."
+authors: [slorber, bndkt]
+date: 04-17-2024
+---
+
+Bonjour à tous !
+
+Cette semaine, nous avons une nouvelle version de Next.js et de nombreux articles intéressants de la communauté.
+
+On sent aussi que l'équipe React travaille dur pour finaliser React 19. De manière inattendue, une version 18.3 est prévue avec des avertissements supplémentaires. React Native 0.74 arrive également bientôt.
+
+Cette semaine, j'aimerais vous présenter [**ECMAScript News**](https://ecmascript.news/?utm_source=thisweekinreact). C'est ma newsletter préférée pour suivre ES, TC39, l'outillage JS et les runtimes.
+
+La semaine prochaine se tiendront les conférences [React Connection](https://reactconnection.io/) et [React Native Connection](https://reactnativeconnection.io/) à Paris. À bientôt pour ceux qui y assistent 👋. Vous pouvez toujours bénéficier d'une [réduction de -20%](https://www.billetweb.fr/react-connection-2024?discount=TWIR) avec mon code partenaire "TWIR".
+
+<!-- truncate -->
+
+**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![React-admin: Le Framework Open-Source pour les apps B2B](/emails/issues/182/marmelab.jpg)](https://marmelab.com/react-admin/)
+
+**[React-admin: Le Framework Open-Source pour les apps B2B](https://marmelab.com/react-admin/)**
+
+Utilisé par 25 000 entreprises, React-admin est le framework leader pour créer des ERP, outils internes et applications B2B avec React. Voici 3 raisons de l'essayer :
+
+1️⃣ **Développement Rapide** 🏎️🏁 Dispose d'une bibliothèque de 170+ hooks et composants, vous permettant de vous concentrer sur les aspects uniques de votre application plutôt que sur les opérations CRUD répétitives.
+
+2️⃣ **Personnalisable et Extensible** ✨💫 Bâti sur un cœur headless, react-admin permet une personnalisation totale de l'apparence de votre app. Et il s'efface lorsque vous avez besoin de logique personnalisée.
+
+3️⃣ **Bonnes Pratiques Intégrées** 🤓 React-admin intègre 7 ans de bonnes pratiques en récupération de données, performance, gestion de formulaires et sécurité, garantissant une expérience développeur robuste et agréable.
+
+Le meilleur : c'est gratuit et s'intègre parfaitement à votre API (pas de [SSO Tax](https://sso.tax/)). [**Essayez-le maintenant**](https://marmelab.com/react-admin/) 😉
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 14.2](/emails/issues/182/next14.2.jpg)](https://nextjs.org/blog/next-14-2)
+
+[**Next.js 14.2**](https://nextjs.org/blog/next-14-2)
+
+En attendant React 19 et Next.js 15, cette nouvelle version mineure inclut des améliorations en développement, production et mise en cache. Les points forts sont :
+
+- Turbopack (RC) : 99,8 % des tests réussis pour `next dev --turbo`
+- Améliorations Build/Production : Réduction de l'utilisation mémoire
+- Améliorations du Cache : Révalidation configurable côté client avec `staleTimes`
+- DX Erreurs : Meilleurs messages d'incompatibilité d'hydratation
+
+Je suis ravi de voir un excellent dialogue d'erreur d'incompatibilité d'hydratation React déjà implémenté dans Next.js ! Au moment où j'écris, Turbopack est prêt à 99,9 % pour l'usage en développement (6 tests d'intégration manquants). Pour l'usage en build, il est prêt à 75 %, nous devrons donc patienter encore un peu.
+
+---
+
+- 💸 [Clerk - A complete suite of embeddable UIs, flexible APIs, and admin dashboards to authenticate and manage your users.](https://go.clerk.com/JTqLYDZ)
+- 👀 [React Core - Upcoming v18.3 release](https://github.com/facebook/react/pull/28843): The React team has finally decided to release a v18 minor version. It should not contain any behavior change but will emit new warnings for deprecated features to help us upgrade to React 19. It should warn us when using string refs, defaultProps on FC/memo components, or when spreading a key prop (🐦 [preview](https://twitter.com/sebastienlorber/status/1780519349247205589)).
+- 👀 [React Core - useDeferredValue’s `initialValue`](https://github.com/reactjs/react.dev/pull/6747): In upcoming React 19 canary releases, this hook will take a new 2nd argument affecting the initial render. It will return the `initialValue` on initial render, and schedule a re-render in the background with the `value` returned.
+- 👀 [React Core - Automatically reset forms after action finishes](https://github.com/facebook/react/pull/28804): This new React 19 behavior only affects uncontrolled inputs, and aligns with the native platform behavior (it will now be the same with/without JS). It will only affect uncontrolled inputs. They also added a new public API [DOM.requestFormReset](https://github.com/facebook/react/pull/28809) so that form abstraction authors can implement this behavior too.
+- 👀 [React Core - DevTools v5.1](https://github.com/facebook/react/pull/28840)
+- 👀 [React Core - Document new react-reconciler methods](https://github.com/facebook/react/pull/28750)
+- 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Get a 10% discount with code "TWIR". Awesome lineup including Evan Bacon, Kent C. Dodds, Theo, Tim Neutkens, Mark Erikson, Fred Schott and so many others!
+- 📜 [Zustand and React Context](https://tkdodo.eu/blog/zustand-and-react-context): I cannot agree more with Dominik that suggests putting your Zustand store instance in a React context. This way, you can initialize the store from props, make things easier to test, and allow using a store on multiple subtrees.
+- 📜 [CSS in React Server Components](https://www.joshwcomeau.com/react/css-in-rsc/): Josh explains why Styled-Components/Emotion do not play well with RSC, and presents alternative solutions providing a similar styled API, like Linaria, Panda, or Pigment. Avoid FOMO, there's no need to adopt RSCs and these libraries now if your app already works fine.
+- 📜 [R19, a dead-simple React 19 framework - Part 2 - The Code; How it works under the hood!](https://www.cmrg.me/blog/rsc-part-2-the-code): Great technical deep dive into what it takes to create a custom React 19 / RSC / Server Actions setup on top of Bun.
+- 📜 [Rebuilding "Remix Contacts" in Next.js 14 with Transitions, Server Actions and Prisma](https://aurorascharff.no/posts/rebuilding-remix-contacts-in-nextjs-14-with-transitions-server-actions-and-prisma/): A nicely detailed walkthrough of converting an official Remix tutorial app to Next.js while preserving the progressive enhancement behavior. It also explains the differences between the 2 approaches and lists the pros/cons of each implementation. There’s no clear winner, although Remix looks quite competitive!
+- 📜 [The Two-Tree Problem with Styling on the Web](https://danielnagy.me/posts/Post_jt4adn0o5bnr): An interesting read on the DOM/CSS tree separation, and whether React CSS-in-JS or Tailwind solves this problem. The author is pro-inline-style (like me BTW).
+- 📜 [Improving our Jest execution time by 300%](https://www.camggould.com/posts/Jest-With-RTL-Is-Slow/): Investigations of Jest execution time on a React codebase. RTL getByRole was a bottleneck, among other things.
+- 📜 [Empathetic Coding - Button Component](https://react-japan.dev/en/blog/empathetic-coding-button-component): Nice article showing the steps to design a React button component using TypeScript and Tailwind, keeping in mind maintenance and convenience.
+- 📜 [Overcoming Next.js' Search Params Limitation in Layouts](https://www.nico.fyi/blog/workaround-layout-has-no-search-params): Suggest using parallel routes to overcome the limitation.
+- 📜 [The process.env frontend time bomb (plus: a sustainable definition of “fixed”)](https://massimilianomirra.com/notes/the-frontend-process-env-time-bomb-plus-a-sustainable-definition-of-fixed): Instead of spreading process.env across your codebase, parses env variables with Zod and exposes app config in a React context.
+- 📜 [How to Style a React Application](https://alexkondov.com/full-stack-tao-styling/)
+- 📜 [Understanding Layout and Template Next.js App Router](https://www.nico.fyi/blog/understanding-layout-and-template-next-app-router)
+- 📦 [Next.js View Transitions](https://next-view-transitions.vercel.app/): Shu from Vercel released a basic userland implementation of CSS View Transitions, although it looks possible that Next.js will provide this feature later.
+- 📦 [XState Store](https://stately.ai/blog/2024-04-10-xstate-store): New tiny typesafe event-driven state manager, including a React useSelector API. This reminds me a bit of both Redux and Zustand.
+- 📦 [Astro 4.6 - Manual i18n routing, move dev toolbar, CSRF protection, cookies…](https://astro.build/blog/astro-460/)
+- 📦 [Next-Video 1.0 - The easiest way to add video in your NextJS app](https://github.com/muxinc/next-video/releases/tag/v1.0.0)
+- 📦 [Mantine 7.8.0 - Uncontrolled form mode, form.getValues, form.watch, automatic px to rem conversions](https://mantine.dev/changelog/7-8-0/)
+- 📦 [NextUI 2.3 - Date/Time/Calendar components](https://nextui.org/blog/v2.3.0)
+- 🎥[Theo - From 0 to Production - The Modern React Tutorial (RSCs, Next.js, Shadui, Drizzle, TS and more)](https://www.youtube.com/watch?v=d5x0JCZbAJs)
+- 🎥 [React Paris 2024 - Conf Talks YouTube Playlist](https://www.youtube.com/playlist?list=PL53Z0yyYnpWhUzgvr2Nys3kZBBLcY0TA7)
+- 🎥 [Ryan Toronto - Handling RSC Errors in Next.js](https://www.youtube.com/watch?v=idEL0dv2V1A)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![FormBuilder SDK for React](/emails/issues/171/tripetto.jpg)](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact&utm_medium=sponsor&utm_campaign=sdk)
+
+**[FormBuilder SDK pour React](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact&utm_medium=sponsor&utm_campaign=sdk)**
+
+Une solution complète de formulaires pour les projets React, utilisée par des entreprises du Fortune 500. Composants open-source faciles à utiliser pour créer et exécuter des formulaires puissants dans votre application React. Documentation exhaustive, opérationnel en quelques minutes et hautement personnalisable.
+
+- Builder pour créer des formulaires puissants ;
+- Runner pour déployer des formulaires et collecter des données ;
+- Dispositions flexibles (conversationnelles, chat etc.) et style ;
+- Extensible avec des types de questions personnalisés ;
+- Documentation complète, exemples et démonstrations ;
+- Auto-hébergé sans dépendances externes ;
+- Commencez, testez et perfectionnez gratuitement.
+
+Exclusivité TWIR : [Obtenez 25% de réduction sur votre licence FormBuilder SDK](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact&utm_medium=sponsor&utm_campaign=sdk).
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Les composants React Server à taille de bundle nulle sont-ils possibles dans React Native ?](/emails/issues/182/rn0kb.jpg)](https://twitter.com/Baconbrix/status/1780259340458340360)
+
+🐦 [Les composants React Server à taille de bundle nulle sont-ils possibles dans React Native ?](https://twitter.com/Baconbrix/status/1780259340458340360)
+
+Evan Bacon répond par l'affirmative et nous donne un aperçu de ce que l'avenir pourrait réserver dans un monde React Native piloté par le serveur. Des temps passionnants à venir !
+
+---
+
+- 💸 [PowerSync – créez des applications local-first avec une gestion d'état simple et une réactivité en temps réel. Non invasif pour l'architecture existante.](https://www.powersync.com/?utm_source=newsletter&utm_medium=sponsorship&utm_campaign=this-week-in-react)
+- 🐦 [Démos de mise en lot automatique de Brent Vatne](https://twitter.com/notbrent/status/1778266063832056285) : Voir la nouvelle architecture en action !
+- 🐦 [Belle démo de composant de dialogue pour les actions destructrices](https://twitter.com/marceloterreiro/status/1779657639745798411)
+- 🐦 [Le site Ignite Cookbook a discrètement reçu plusieurs nouvelles recettes](https://twitter.com/jamonholmgren/status/1778829659775676653) : Supabase & PowerSync
+- 🐦 [Rendu 3D avec RN sur Vision Pro](https://twitter.com/o_kwasniewski/status/1780602815167283485)
+- 👀 [rn.new - Une manière assez astucieuse de démarrer un nouveau projet React Native](https://rn.new)
+- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Cracovie - 22-24 mai. Obtenez une [réduction de 10%](https://ti.to/appjs/2024/discount/TWIR) avec le code "TWIR".
+- 📜 [Ajouter des formes et textures aux animations 3D avec React, Expo et ThreeJS](https://www.themorrow.digital/blog/add-shapes-and-textures-to-3d-animations-with-react-expo-and-threejs) : La semaine dernière, j'ai écrit sur une future bibliothèque d'animation 3D, mais bien sûr il existe déjà des approches pour le 3D dans RN. Cet article en décrit une.
+- 📜 [Comment implémenter le cache HTTP de Metro](https://andrei-calazans.com/posts/metro-http-cache/) : Saviez-vous que Meta utilise un cache central pour ses développeurs RN, ce qui signifie que si un développeur a déjà empaqueté quelque chose, un autre peut bénéficier du résultat du cache. Cet article décrit le fonctionnement des caches HTTP distants dans Metro.
+- 📜 [React Strict DOM : L'avenir des applications universelles avec React Native](https://blog.theodo.com/2024/04/react-strict-dom-react-native-web/)
+- 📜 [L'art oublié de la conception de la barre d'état](https://brainsandbeards.com/blog/2024-forgotten-art-of-status-bar-design/)
+- 📜 [Gist - Manifeste de confidentialité Apple utilisant Expo 50.0.17](https://gist.github.com/catalinmiron/d2cabb835088d0342bc48030464ee615)
+- 📜 [react-native-worklets-core 1.0](https://github.com/margelo/react-native-worklets-core/releases/tag/v1.0.0)
+- 📦 [VisionCamera 4.0.0-beta.15 - la première bêta pour les processeurs de trames Skia](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.0.0-beta.15)
+- 📦 [react-native 0.74.0-rc.9](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.9) : Ajoute un modèle pour un manifeste de confidentialité iOS à l'étape de build
+- 📦 [Unistyle 2.6 + 2.7 - Ajoute la prise en charge de tvOS + visionOS](https://github.com/jpudysz/react-native-unistyles/releases)
+- 📦 [RN Storybook v8.0.0-alpha.4](https://github.com/storybookjs/react-native/releases/tag/v8.0.0-alpha.4)
+- 🎥 [Simon Grimm - 10 bibliothèques d'animation React Native épiques](https://www.youtube.com/watch?v=8CZy6DjDXK0)
+- 🎥 [La taille de votre application compte | React Native Optimization Shorts 2](https://www.youtube.com/watch?v=d2xlQRoea-8)
+- 🎙️ [Rocket Ship 38 - Expo EAS et 100 serpents avec Jon Samp](https://share.transistor.fm/s/6896005f)
+
+---
+
+## 🔀 Autre {#other}
+
+- 📜 [Mises à jour de la 101e réunion du TC39 - Méthodes Set, Regex, Promise.try, isError, Signaux…](https://dev.to/hemanth/updates-from-the-101th-tc39-meeting-1mm)
+- 📜 [La création d'une fonctionnalité TypeScript : Inférence des prédicats de type](https://effectivetypescript.com/2024/04/16/inferring-a-type-predicate/)
+- 📜 [Deno - Comment nous avons construit JSR](https://deno.com/blog/how-we-built-jsr)
+- 📜 [Vous n'avez probablement pas besoin de GraphQL](https://mxstbr.com/thoughts/graphql)
+- 📜 [Sommet de collaboration Node.js (Londres 2024)](https://nodejs.org/en/blog/events/collab-summit-2024-london)
+- 📜 [Plongée approfondie dans le Tree Shaking de Rspack et Webpack](https://github.com/orgs/web-infra-dev/discussions/17)
+- 📦 [Safari Technology Preview 192 - Transitions de vue CSS, URL.parse()](https://webkit.org/blog/15260/release-notes-for-safari-technology-preview-192/)
+- 📦 [Rspack v0.6 - Plugin d'extraction CSS intégré, activation du nouveau treeshaking](https://www.rspack.dev/blog/announcing-0.6.html)
+- 📦 [pnpm 9.0 - Abandon de Node 16, amélioration du format de lockfile et de la résolution](https://github.com/pnpm/pnpm/releases/tag/v9.0.0)
+- 📦 [Biome 1.7 - Amélioration de la CLI de migration ESLint/Prettier](https://biomejs.dev/blog/biome-v1-7/)
+- 📦 [Effect 3.0 - API Stable](https://effect.website/blog/effect-3.0)
+- 📦 [gql.tada 1.5 - Opérations persistantes, mode Turbo, nouvelle CLI](https://gql-tada.0no.co/devlog/2024-04-15)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![alt](/emails/issues/182/meme.jpg)](https://twitter.com/bndkt/status/1780615189202907426)
+
+À bientôt ! 👋

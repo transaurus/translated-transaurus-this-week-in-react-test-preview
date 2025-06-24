@@ -1,0 +1,645 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/227/index.mdx",
+  "source_file_content_hash": "14470db96cfd873ea78a0ff1c9b21bfd65b026c29e904dae416d4fd4c5f092ac",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /227\ntitle: \"This Week In React #227: Next.js, tRPC, React Query, React Router, StyledComponents, MUI, Base UI, Next Intl | React Native birthday, Lynx, EAS, Atlas, Reanimated, Audio, BottomTabs | CSS, Rsdoctor, Linters, Node\"\nauthors: [slorber]\ndate: 03-26-2025\n---",
+      "source_content_hash": "df956872fc0c2407e3ee6c1ce805859a56996643ac902e38d69f6b9f3a06f311",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week, you probably didn't miss the Next.js middleware drama, but that wasn't the only thing going on!",
+      "source_content_hash": "a3ce92aaadea8c311d4d9f9af8bacb5da4ad87a933deefc799457ae1028901ed",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, vous n'avez probablement pas manqué le drama autour du middleware Next.js, mais ce n'était pas la seule actualité !",
+        "en": "Cette semaine, vous n'avez probablement pas manqué le drame du middleware Next.js, mais ce n'était pas la seule actualité !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "We also got many great releases such as tRPC, React Query, Rsdoctor and more!",
+      "source_content_hash": "7849eea3d6bceb8dfe919b6d0993e14d7a281d71fba131ad73f11fa129274faf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons également eu de nombreuses sorties remarquables comme tRPC, React Query, Rsdoctor et plus encore !",
+        "en": "Nous avons également eu de nombreuses sorties majeures comme tRPC, React Query, Rsdoctor et plus encore !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Also, React Native is 10 years old today! 🥳",
+      "source_content_hash": "b83dded1dac1b5aa6d2200e751f864f58226ecef201d26d1d4ac209e77afe75f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Aussi, React Native fête ses 10 ans aujourd'hui ! 🥳",
+        "en": "Aussi, React Native fête ses 10 ans aujourd'hui ! 🥳"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6c991806",
+        "en": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_8f488ab5",
+        "en": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![Convex: The Database Designed for AI Coding](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)",
+      "source_content_hash": "4035796cb62442c23691cfb51a2e889ced451d26cabc9790c92d66a1c6286830",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Convex : La base de données conçue pour le codage IA](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)",
+        "en": "[![Convex : La base de données conçue pour le codage IA](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[Convex: The Database Designed for AI Coding](https://convex.link/thisweekai)**",
+      "source_content_hash": "d384fd6f220e543e310b02b0dbf2f609aeb6345a2c6e5afafb56a68aae15b062",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Convex : La base de données conçue pour le codage IA](https://convex.link/thisweekai)**",
+        "en": "**[Convex : La base de données conçue pour le codage IA](https://convex.link/thisweekai)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "In the age of code generation, you need a backend that you can confidently generate with AI platforms. Convex is by far and away [best in class](https://stack.convex.dev/introducing-fullstack-bench) in this respect.",
+      "source_content_hash": "3d6b6550ec4434fdb7d1e0d080f650b4d4ce50ff1bfec51a6a667626a9411329",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À l'ère de la génération de code, vous avez besoin d'un backend que vous pouvez générer en toute confiance avec des plateformes IA. Convex est de loin [le meilleur de sa catégorie](https://stack.convex.dev/introducing-fullstack-bench) à cet égard.",
+        "en": "À l'ère de la génération de code, vous avez besoin d'un backend que vous pouvez générer en toute confiance avec des plateformes d'IA. Convex est [largement supérieur](https://stack.convex.dev/introducing-fullstack-bench) dans ce domaine."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "This is because Convex is just TypeScript, allowing you to write [queries as code](https://docs.convex.dev/functions/query-functions/) that are automatically transactional, cached, and realtime.",
+      "source_content_hash": "b00591181af36984cd990624880779b79694b2dffc5adce3c0d62fdea305b862",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cela s'explique par le fait que Convex n'est que du TypeScript, vous permettant d'écrire des [requêtes sous forme de code](https://docs.convex.dev/functions/query-functions/) qui sont automatiquement transactionnelles, mises en cache et en temps réel.",
+        "en": "Cela parce que Convex est juste du TypeScript, vous permettant d'écrire [des requêtes comme du code](https://docs.convex.dev/functions/query-functions/) automatiquement transactionnelles, mises en cache et en temps réel."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "And that’s just the beginning. With Convex, you can:",
+      "source_content_hash": "6cde80d7e7f63df8bc62324cf0d40c07146774a00de388434787366d409a424a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Et ce n'est que le début. Avec Convex, vous pouvez :",
+        "en": "Et ce n'est que le début. Avec Convex, vous pouvez :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- Easily schedule functions and write cron jobs\n- Set up file storage\n- Write efficient server functions\n- And so much more…",
+      "source_content_hash": "4a6286ba8f677bac5d7d1196522d5c14cb3407786a98babe46839c1f52ebff65",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Planifier facilement des fonctions et écrire des tâches cron\n- Configurer le stockage de fichiers\n- Écrire des fonctions serveur efficaces\n- Et bien plus encore...",
+        "en": "- Planifier facilement des fonctions et écrire des tâches cron\n- Configurer le stockage de fichiers\n- Écrire des fonctions serveur efficaces\n- Et bien plus encore…"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "[Try a Quickstart today](https://docs.convex.dev/quickstarts)",
+      "source_content_hash": "bae3099e9bb4fe5dd167b12ba995e805841457f7c924697770516e6cf10e140a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Essayez un démarrage rapide dès aujourd'hui](https://docs.convex.dev/quickstarts)",
+        "en": "[Essayez un guide de démarrage rapide dès aujourd'hui](https://docs.convex.dev/quickstarts)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![Postmortem on Next.js Middleware bypass](/emails/issues/227/middleware.png)](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)",
+      "source_content_hash": "0156a42ec98e3acef6302be26d51744ded366689746bb932bd9c01e413c16359",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Post-mortem sur le contournement du middleware Next.js](/emails/issues/227/middleware.png)](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)",
+        "en": "[![Postmortem sur le contournement du middleware Next.js](/emails/issues/227/middleware.png)](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "**[Postmortem on Next.js Middleware bypass](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)**",
+      "source_content_hash": "bf46007de9d775082e9d014820d32a455df29afb26595024a555d00101efc0ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Post-mortem sur le contournement du middleware Next.js](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)**",
+        "en": "**[Postmortem sur le contournement du middleware Next.js](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "A few days ago, Vercel announced a critical 9.1 vulnerability in Next.js middleware system. With a simple but malicious `x-middleware-subrequest` header, you can bypass the middleware, possibly exposing sensitive information. Patches are available for Next.js 12/13/14/15. Note that this vulnerability only affects self-hosted apps using `output: ‘standalone’` and `next start` are affected. Customers of major serverless cloud providers are either not affected (Vercel, Netlify), or protection can be turned on (Cloudflare).",
+      "source_content_hash": "f7f449f620054263cc289624f9dc4bb61aaebb802a9f940cae626c3124db2341",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "fr": {
+          "translation": "Il y a quelques jours, Vercel a annoncé une vulnérabilité critique 9.1 dans le système middleware de Next.js. Avec un simple en-tête malveillant `x-middleware-subrequest`, vous pouvez contourner le middleware, exposant potentiellement des informations sensibles. Des correctifs sont disponibles pour Next.js 12/13/14/15. Notez que cette vulnérabilité n'affecte que les applications auto-hébergées utilisant `output: 'standalone'` et `next start`. Les clients des principaux fournisseurs cloud serverless ne sont soit pas affectés (Vercel, Netlify), soit la protection peut être activée (Cloudflare).",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`output: ‘standalone’`', Translation: '`output: 'standalone'`'.",
+          "timestamp": "2025-06-24T15:50:44.521797+00:00"
+        },
+        "en": {
+          "translation": "Il y a quelques jours, Vercel a annoncé une vulnérabilité critique 9.1 dans le système de middleware de Next.js. Avec un simple en-tête malveillant `x-middleware-subrequest`, vous pouvez contourner le middleware, exposant potentiellement des informations sensibles. Des correctifs sont disponibles pour Next.js 12/13/14/15. Notez que cette vulnérabilité n'affecte que les applications auto-hébergées utilisant `output: 'standalone'` et `next start`. Les clients des principaux fournisseurs cloud serverless ne sont soit pas affectés (Vercel, Netlify), soit une protection peut être activée (Cloudflare).",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`output: ‘standalone’`', Translation: '`output: 'standalone'`'.",
+          "timestamp": "2025-06-24T15:57:01.431544+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "It's worth noting that even though Next.js middleware shouldn’t have this vulnerability, it is [not the recommended place to manage user sessions and protect routes](https://nextjs.org/docs/pages/building-your-application/authentication#optimistic-checks-with-middleware-optional), and shouldn’t be the only line of defense in your Next.js app. The middleware is more designed to perform lightweight optimistic checks, eventually rewriting/redirecting without hitting any DB.",
+      "source_content_hash": "1e7c0dab74021769df8d477f2e41028fd6471e6d3843ea09d79e7599ca3433a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Il est important de noter que même si le middleware Next.js ne devrait pas avoir cette vulnérabilité, ce n'est [pas l'endroit recommandé pour gérer les sessions utilisateur et protéger les routes](https://nextjs.org/docs/pages/building-your-application/authentication#optimistic-checks-with-middleware-optional), et ne devrait pas être la seule ligne de défense dans votre application Next.js. Le middleware est plutôt conçu pour effectuer des vérifications optimistes légères, éventuellement en réécrivant/redirigeant sans accéder à aucune base de données.",
+        "en": "Il est important de noter que même si le middleware Next.js ne devrait pas avoir cette vulnérabilité, ce n'est [pas l'endroit recommandé pour gérer les sessions utilisateur et protéger les routes](https://nextjs.org/docs/pages/building-your-application/authentication#optimistic-checks-with-middleware-optional), et ne devrait pas être la seule ligne de défense dans votre application Next.js. Le middleware est davantage conçu pour effectuer des vérifications optimistes légères, réécrivant/redirigeant éventuellement sans accéder à aucune base de données."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "This security event has caused a lot of drama in the ecosystem, which I'd rather not comment on much. Vercel could have handled the situation better, and they plan to do better in the future. I’ll let you make your own opinion based on various resources, and there’s too many, so this is just a subset:",
+      "source_content_hash": "3afb20b1c2f3ca8b8c7d43a2970b9cd7fed287d6e725d0db3c12d599e2f59afc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cet événement de sécurité a provoqué beaucoup de drama dans l'écosystème, sur lequel je préfère ne pas trop m'étendre. Vercel aurait pu mieux gérer la situation, et ils prévoient de faire mieux à l'avenir. Je vous laisse vous faire votre propre opinion sur la base de diverses ressources, et il y en a trop, donc ceci n'est qu'un sous-ensemble :",
+        "en": "Cet événement de sécurité a provoqué beaucoup de remous dans l'écosystème, sur lesquels je préfère ne pas trop m'étendre. Vercel aurait pu mieux gérer la situation, et ils prévoient de s'améliorer à l'avenir. Je vous laisse vous faire votre propre opinion basée sur diverses ressources, et il y en a trop, donc voici juste un sous-ensemble :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "- 📜 [Next.js and the corrupt middleware: the authorizing artifact](https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware): The original article from the security researchers who found the vulnerability.\n- 📜 [How to Think About Security in Next.js](https://nextjs.org/blog/security-nextjs-server-components-actions): Older post but still a relevant read today.\n- 📜 [Authorization in Next.js](https://www.robinwieruch.de/next-authorization/): Robin explains how he approaches authorization in Next.js projects, as close to the sensitive data as possible.\n- 📜 [You should know this before choosing Next.js](https://eduardoboucas.com/posts/2025-03-25-you-should-know-this-before-choosing-nextjs/): The perspective from Netlify’s Principal Engineer.\n- 🎥 [Theo \\- Next.js security exploit](https://www.youtube.com/live/UbcrphhSAIs?si=QgihLKnhpyE3RxPO&t=8243): A 1h stream that on this topic, also explaining what Vercel did wrong.",
+      "source_content_hash": "b5024eef946759b9dca95886bdecec10a17f3679a888b17ad0aa615ffaf9142a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Next.js and the corrupt middleware: the authorizing artifact](https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware): L'article original des chercheurs en sécurité qui ont découvert la vulnérabilité.\n- 📜 [How to Think About Security in Next.js](https://nextjs.org/blog/security-nextjs-server-components-actions): Article plus ancien mais toujours pertinent aujourd'hui.\n- 📜 [Authorization in Next.js](https://www.robinwieruch.de/next-authorization/): Robin explique son approche de l'autorisation dans les projets Next.js, au plus près des données sensibles.\n- 📜 [You should know this before choosing Next.js](https://eduardoboucas.com/posts/2025-03-25-you-should-know-this-before-choosing-nextjs/): Le point de vue de l'ingénieur principal de Netlify.\n- 🎥 [Theo \\- Next.js security exploit](https://www.youtube.com/live/UbcrphhSAIs?si=QgihLKnhpyE3RxPO&t=8243): Un stream d'1h sur ce sujet, expliquant également ce que Vercel a mal géré.",
+        "en": "- 📜 [Next.js and the corrupt middleware: the authorizing artifact](https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware) : L'article original des chercheurs en sécurité ayant découvert la vulnérabilité.\n- 📜 [How to Think About Security in Next.js](https://nextjs.org/blog/security-nextjs-server-components-actions) : Article plus ancien mais toujours pertinent aujourd'hui.\n- 📜 [Authorization in Next.js](https://www.robinwieruch.de/next-authorization/) : Robin explique son approche de l'autorisation dans les projets Next.js, au plus près des données sensibles.\n- 📜 [You should know this before choosing Next.js](https://eduardoboucas.com/posts/2025-03-25-you-should-know-this-before-choosing-nextjs/) : Le point de vue de l'ingénieur principal de Netlify.\n- 🎥 [Theo - Next.js security exploit](https://www.youtube.com/live/UbcrphhSAIs?si=QgihLKnhpyE3RxPO&t=8243) : Un stream d'1h sur ce sujet, expliquant également les erreurs de Vercel."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "df6e96a7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35f6931b",
+      "source_content": "- 💸 [Product for Engineers - Don't make these feature flag mistakes](https://dub.link/twir-mar26)\n- 👀 [Next.js PR \\- `useLinkStatus()`](https://github.com/vercel/next.js/pull/77300): New hook to provide pending feedback during navigation transitions.\n- 👀 [Next.js PR \\- Link `onNavigate` prop](https://github.com/vercel/next.js/pull/77209)\n- 📣 [Styled Components \\- Thank you](https://opencollective.com/styled-components/updates/thank-you): The popular old-gen CSS-in-JS library is now in maintenance mode and not recommended for new projects.\n- 🗓 [React-Summit](https://reactsummit.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇳🇱 Amsterdam - 13 & 17 June. Creators of React Query (Tanner Linsley), Expo Router (Evan Bacon), Million.js (Aiden Bai) & more will share knowledge at React Summit! Use promo code TWIR for 10% off tickets.\n- 📜 [Experimenting with React View Transitions](https://frontendatscale.com/issues/43): Explains what View Transitions are and how React’s experimental `<ViewComponent>` API integrates this web feature. React starts view transitions automatically when using concurrent features, applies transition names automatically at the right time, and exposes convenient lifecycle props.\n- 📜 [Components Are Just Sparkling Hooks](https://www.bbss.dev/posts/sparkling-hooks/): Shows how a component can be transformed into a hook, how the 2 are related, and introduces the concept of hook-based headless components as a flexible primitive.\n- 📜 [Writing static websites with Vite and React](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/): Carlos created a Vite plugin to implement a simple React-based static site generator, using React only as a server-side templating system.\n- 📜 [Next.js vs TanStack](https://www.kylegill.com/essays/next-vs-tanstack/): Kyle is done with Next.js complexity and thinks TanStack Start is the right abstraction.\n- 📜 [Passing TypeScript react components native HTML attributes](https://frontguys.fr/front-end/typescript-react-native-attributes/): Shows how to wrap a native input while keeping the ability to pass any native input prop.\n- 📜 [Storybook 9 sneak peek: Accessibility Addon refresh](https://storybook.js.org/blog/preview-the-new-accessibility-addon/)\n- 📜 [React Trends in 2025](https://www.robinwieruch.de/react-trends/)\n- 📜 [How does the use API work with Next 15 and React 19?](https://www.premieroctet.com/blog/en/how-does-the-use-api-work-with-next-15-and-react-19)\n- 💸 [Omlet for VS Code: Get React component usage insights in VS Code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n- 📦 [tRPC 11.0](https://trpc.io/blog/announcing-trpc-v11): This release brings many new React-related features, including TanStack Query v5 support, the new more native React Query integration based on `queryOptions`, improved Next.js/RSC support, the ability to download/upload binaries, and more.\n- 📦 [React Query 5.69 \\- `streamedQuery`](https://github.com/TanStack/query/releases/tag/v5.69.0): React Query can now handle `AsyncIterable` types and receive chunks of data. It will be `pending` only while waiting for the first chunk. This looks particularly useful for building AI/LLM chats.\n- 📦 [Rsbuild Plugin React Router](https://github.com/rspack-contrib/rsbuild-plugin-react-router/releases/tag/rsbuild-plugin-react-router%400.0.1): Now available on npm, you can use React Router in framework mode with another bundler than Vite. It works well with all the React Router CLI templates and the Epic Stack.\n- 📦 [Material UI 7.0 \\- Improved ESM support, consitent slot pattern implementation, `enableCssLayer`](https://mui.com/blog/material-ui-v7-is-here/)\n- 📦 [Base UI 1.0.0-alpha.7](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.7): Another great release from the promising Radix UI challenger.\n- 📦 [Next Intl 4.0 \\- Type-safe locales, ICU arguments, format and more](https://next-intl.dev/blog/next-intl-4-0)\n- 📦 [Merge Refs 2.0 \\- Merges React refs into one](https://github.com/wojtekmaj/merge-refs)\n- 📦 [React-Admin 5.5 & 5.6 \\- March 2025 Update](https://marmelab.com/blog/2025/03/24/react-admin-march-2025-update.html)\n- 📦 [Ionic 8.5 \\- React 19 support](https://ionic.io/blog/announcing-ionic-8-5)\n- 🎥 [React Paris 2025 Playlist](https://www.youtube.com/watch?v=-W3_dxNDHVw&list=PL53Z0yyYnpWitP8Zv01TSEQmKLvuRh_Dj): I was at the conf last Friday, great talks already available online, and it was nice to meet some of you there 👋!",
+      "source_content_hash": "bff37daa79478795a9805df7a3748ed65cec4a0d83287f574abb02b22fc4a404",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_35f6931b",
+        "en": "@@untranslatable_placeholder_35f6931b"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c625a102",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c625a102",
+        "en": "@@untranslatable_placeholder_c625a102"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9006437d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6b04a59",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[![Meet @clerk/agent-toolkit](/emails/issues/227/clerk.jpg)](https://go.clerk.com/ovPb3z0)",
+      "source_content_hash": "92d51949f0520b61ba74a56b4cf8261b91f2275c17cf14d9f8662af31d2a5d4a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Rencontrez @clerk/agent-toolkit](/emails/issues/227/clerk.jpg)](https://go.clerk.com/ovPb3z0)",
+        "en": "[![Meet @clerk/agent-toolkit](/emails/issues/227/clerk.jpg)](https://go.clerk.com/ovPb3z0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "**[Meet @clerk/agent-toolkit](https://go.clerk.com/ovPb3z0)**",
+      "source_content_hash": "624542e3be0d7807c39d3718ddaea24c972dad5c36ca71da81effae81217897f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Rencontrez @clerk/agent-toolkit](https://go.clerk.com/ovPb3z0)**",
+        "en": "**[Découvrez @clerk/agent-toolkit](https://go.clerk.com/ovPb3z0)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "Clerk's new experimental package for using Clerk in your AI agent workflows. Manage users, orgs, and more with Vercel AI SDK + LangChain support. Try it now: `npm install @clerk/agent-toolkit`",
+      "source_content_hash": "dd554405e4f18808ea47b3b65c8ab1d8ef26a13659095a0f68d23351327d7737",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nouveau package expérimental de Clerk pour utiliser Clerk dans vos workflows d'agents IA. Gérez utilisateurs, organisations et plus encore avec Vercel AI SDK + support LangChain. Essayez maintenant : `npm install @clerk/agent-toolkit`",
+        "en": "Le nouveau package expérimental de Clerk pour intégrer Clerk dans vos workflows d'agents IA. Gérez utilisateurs, organisations et plus avec Vercel AI SDK + support LangChain. Essayez maintenant : `npm install @clerk/agent-toolkit`"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "647304fd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "71169a2d",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "![React Native turns 10](/emails/issues/227/rn-10.jpg)",
+      "source_content_hash": "6afc4343b517362337db930e9541f249fb917378d98508bba62738ebf304b8b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "![React Native fête ses 10 ans](/emails/issues/227/rn-10.jpg)",
+        "en": "![React Native turns 10](/emails/issues/227/rn-10.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "**React Native turns 10\\! 🎉🤯**",
+      "source_content_hash": "1a25c8c1b66e9543aa1206b676c9fa873f34f1ec094eeff926a2f535e5d8fa25",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**React Native fête ses 10 ans ! 🎉🤯**",
+        "en": "**React Native fête ses 10 ans ! 🎉🤯**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "Believe it or not, React Native was [open-sourced exactly 10 years ago](https://engineering.fb.com/2015/03/26/android/react-native-bringing-modern-web-techniques-to-mobile/), and React Native is celebrating its first decade today\\!",
+      "source_content_hash": "19acc9366db34b97986edab3e2e3cafc882400b99faf0ce73869683f26fc1414",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Croyez-le ou non, React Native a été [open-sourcé il y a exactement 10 ans](https://engineering.fb.com/2015/03/26/android/react-native-bringing-modern-web-techniques-to-mobile/), et fête sa première décennie aujourd'hui !",
+        "en": "Croyez-le ou non, React Native a été [open-sourcé il y a exactement 10 ans](https://engineering.fb.com/2015/03/26/android/react-native-bringing-modern-web-techniques-to-mobile/), et célèbre aujourd'hui sa première décennie !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "A huge shoutout to everyone who made it happen\\! Let’s take the opportunity to listen again to [this podcast episode with Christopher Chedeau](https://youtu.be/_cBqGenDCks?si=nrfF4D_FGEJhQsH3&t=1504) (Vjeux, co-creator of React Native) where he explains the backstory of React Native, and how this great project could easily have died without ambitious people willing to bet on it.",
+      "source_content_hash": "a5831d9f25f4cc66a6c69e562c9ac9c83c80b85a0b6b6b8fd2d38c5ca20d395f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Un immense bravo à tous ceux qui l'ont rendu possible ! Réécoutons [cet épisode de podcast avec Christopher Chedeau](https://youtu.be/_cBqGenDCks?si=nrfF4D_FGEJhQsH3&t=1504) (Vjeux, co-créateur de React Native) où il raconte l'histoire de React Native, et comment ce projet aurait pu disparaître sans des visionnaires prêts à miser sur lui.",
+        "en": "Un immense bravo à tous ceux qui ont rendu cela possible ! Profitons de l'occasion pour réécouter [cet épisode de podcast avec Christopher Chedeau](https://youtu.be/_cBqGenDCks?si=nrfF4D_FGEJhQsH3&t=1504) (Vjeux, co-créateur de React Native) où il raconte l'histoire derrière React Native, et comment ce grand projet aurait pu facilement disparaître sans des personnes ambitieuses prêtes à parier dessus."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "Also a shoutout to the amazing React Native community—tight-knit, always pushing forward, tackling challenges, and building the future of native declarative UI together 🚀",
+      "source_content_hash": "b586f57ab5c56f4dbb5cd5460b8277a0d4848f59f51b9f8c7548916d2fe43a76",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bravo aussi à l'incroyable communauté React Native – soudée, toujours en mouvement, relevant les défis et construisant ensemble l'avenir de l'UI native déclarative 🚀",
+        "en": "Un bravo également à l'incroyable communauté React Native - soudée, toujours en mouvement, relevant les défis et construisant ensemble l'avenir de l'UI native déclarative 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "To the next promising decade\\! 🥂",
+      "source_content_hash": "5d2bdb11eff56bdfcf7b995222d49aa46123219caa9501232ea0517091d359cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À la prochaine décennie prometteuse ! 🥂",
+        "en": "À la prochaine décennie prometteuse ! 🥂"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a1e835c",
+      "source_content": "- 💸 [Codemagic - a great App Center alternative for React Native devs! 8x faster builds, CodePush, automated distribution. 1-month free trial!](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)\n- 👀 [Who's using Expo OSS in 2025](https://bacon.expo.app/blog/expo-apps): Evan just updated his list of 2,262 top apps using Expo or React Navigation.\n- 👀 [Plugin Pro](https://pluginpro.dev/): Preview of upcoming CLI that records your native platform changes and then generates an Expo config plugin. This reminds how patch-package works.\n- 👀 [Legend Photos \\- Open source photo viewing app \\- Built with React Native macOS](https://github.com/LegendApp/legend-photos)\n- 🐦 [Evan Bacon \\- “What if you could just build mobile apps—on the go—from a mobile app?”](https://x.com/Baconbrix/status/1904548835143409948): This idea is quite interesting. Instead of using AI to generate server-driven UI, why not generating whole screens locally?\n- 📣 [EAS Build & Workflows \\- Introducing M4 Pro \\- 1.85x faster iOS builds](https://expo.dev/changelog/eas-build-workflows-m4-pro)\n- 📜 [Lynx Roadmap 2025](https://lynxjs.org/blog/lynx-open-source-roadmap-2025.html): The React Native competitor plans to open source desktop support for Windows, macOS, and OpenHarmony. New capabilities, UI elements and improved tooling are coming.\n- 📜 [Why Knowing Your App’s Bundle Contents Matters for React Native Performance](https://www.callstack.com/blog/knowing-your-apps-bundle-contents-native-performance): Explains how to use Expo Atlas, and a trick to make it work even when not using Expo\\!\n- 📜 [Migrating from Firebase Dynamic Links: a practical guide](https://medium.com/@louis.lagrange/migrating-from-firebase-dynamic-links-a-practical-guide-9905bbb8f04d)\n- 📜 [React Native Modals in 2025](https://addjam.com/blog/2025-03-24/react-native-modals-2025-comprehensive-guide/)\n- 📦 [Reanimated 4 beta.3 \\- CSS transitions shorthand, edge-to-edge, remove Old Arch code, depends on react-native-worklets](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.3)\n- 📦 [Bottom Tabs 0.9 \\- Add `freezeOnBlur`, remove `ignoresTopSafeArea` (now it’s automatic)](https://github.com/callstackincubator/react-native-bottom-tabs/releases)\n- 📦 [Audio API 0.5 \\- RN 0.78, pitch correction, in-memory audio decoding](https://github.com/software-mansion/react-native-audio-api/releases/tag/0.5.0)\n- 📦 [Tanstack Query DevTools Expo Plugin](https://github.com/LovesWorking/tanstack-query-dev-tools-expo-plugin)\n- 📦 [React Native Auto Skeleton \\- Automatically generates skeleton based on your existing UI layout](https://github.com/pioner92/react-native-auto-skeleton)\n- 📦 [Expo Passkey \\- A Better Auth plugin enabling secure, passwordless authentication](https://github.com/iosazee/expo-passkey)\n- 📦 [React Native Magic Scroll 0.1.25 \\- Manage keyboards and ScrollViews on long forms \\- New Arch, Expo 52 support](https://github.com/AppAndFlow/react-native-magic-scroll/releases/tag/v0.1.25)\n- 🎙️ [Rocket Ship 63 \\- From Idea to App using Replit with Matt Palmer](https://podcast.galaxies.dev/episodes/063-from-idea-to-app-using-replit-with-matt-palmer)\n- 🎥 [Callstack Webinar \\- Using React Native in Existing Apps for Faster Cross-Platform Features](https://www.youtube.com/watch?v=qlm1q0ZQ0ko)",
+      "source_content_hash": "a637473ed6689efca76dad67b97879a6e55c22c37047c0baf5c85928b19f7a09",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Codemagic - une excellente alternative à App Center pour les développeurs React Native ! Des builds 8x plus rapides, CodePush, distribution automatisée. Essai gratuit d'un mois !](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)\n- 👀 [Qui utilise Expo OSS en 2025](https://bacon.expo.app/blog/expo-apps): Evan vient de mettre à jour sa liste de 2 262 meilleures applications utilisant Expo ou React Navigation.\n- 👀 [Plugin Pro](https://pluginpro.dev/): Prévisualisation d'un CLI à venir qui enregistre vos modifications de plateforme native puis génère un plugin de configuration Expo. Cela rappelle le fonctionnement de patch-package.\n- 👀 [Legend Photos - Application open source de visualisation de photos - Construite avec React Native macOS](https://github.com/LegendApp/legend-photos)\n- 🐦 [Evan Bacon - \"Et si vous pouviez simplement créer des applications mobiles—en déplacement—depuis une application mobile ?\"](https://x.com/Baconbrix/status/1904548835143409948): Cette idée est assez intéressante. Plutôt que d'utiliser l'IA pour générer une UI pilotée par le serveur, pourquoi ne pas générer des écrans entiers localement ?\n- 📣 [EAS Build & Workflows - Présentation de M4 Pro - Builds iOS 1,85x plus rapides](https://expo.dev/changelog/eas-build-workflows-m4-pro)\n- 📜 [Feuille de route Lynx 2025](https://lynxjs.org/blog/lynx-open-source-roadmap-2025.html): Le concurrent de React Native prévoit d'ouvrir le support desktop pour Windows, macOS et OpenHarmony. Nouvelles capacités, éléments UI et amélioration des outils à venir.\n- 📜 [Pourquoi connaître le contenu de votre bundle est crucial pour les performances React Native](https://www.callstack.com/blog/knowing-your-apps-bundle-contents-native-performance): Explique comment utiliser Expo Atlas, et une astuce pour le faire fonctionner sans Expo !\n- 📜 [Migration depuis Firebase Dynamic Links : guide pratique](https://medium.com/@louis.lagrange/migrating-from-firebase-dynamic-links-a-practical-guide-9905bbb8f04d)\n- 📜 [Modales React Native en 2025](https://addjam.com/blog/2025-03-24/react-native-modals-2025-comprehensive-guide/)\n- 📦 [Reanimated 4 beta.3 - Raccourci pour les transitions CSS, edge-to-edge, suppression du code Old Arch, dépend de react-native-worklets](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.3)\n- 📦 [Bottom Tabs 0.9 - Ajout de `freezeOnBlur`, suppression de `ignoresTopSafeArea` (désormais automatique)](https://github.com/callstackincubator/react-native-bottom-tabs/releases)\n- 📦 [Audio API 0.5 - RN 0.78, correction de hauteur, décodage audio en mémoire](https://github.com/software-mansion/react-native-audio-api/releases/tag/0.5.0)\n- 📦 [Plugin Expo Tanstack Query DevTools](https://github.com/LovesWorking/tanstack-query-dev-tools-expo-plugin)\n- 📦 [React Native Auto Skeleton - Génère automatiquement un squelette basé sur votre disposition UI existante](https://github.com/pioner92/react-native-auto-skeleton)\n- 📦 [Expo Passkey - Un meilleur plugin d'authentification permettant une authentification sécurisée sans mot de passe](https://github.com/iosazee/expo-passkey)\n- 📦 [React Native Magic Scroll 0.1.25 - Gère les claviers et ScrollViews sur les longs formulaires - Nouvelle Arch, support Expo 52](https://github.com/AppAndFlow/react-native-magic-scroll/releases/tag/v0.1.25)\n- 🎙️ [Rocket Ship 63 - De l'idée à l'application avec Replit ft. Matt Palmer](https://podcast.galaxies.dev/episodes/063-from-idea-to-app-using-replit-with-matt-palmer)\n- 🎥 [Webinaire Callstack - Utiliser React Native dans des applications existantes pour des fonctionnalités multiplateformes plus rapides](https://www.youtube.com/watch?v=qlm1q0ZQ0ko)",
+        "en": "- 💸 [Codemagic - une excellente alternative à App Center pour les devs React Native ! Builds 8x plus rapides, CodePush, distribution automatisée. Essai gratuit d'1 mois !](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)\n- 👀 [Qui utilise Expo OSS en 2025](https://bacon.expo.app/blog/expo-apps): Evan vient de mettre à jour sa liste de 2 262 applications utilisant Expo ou React Navigation.\n- 👀 [Plugin Pro](https://pluginpro.dev/): Aperçu d'une future CLI qui enregistre vos modifications de plateforme native puis génère un plugin de configuration Expo. Fonctionne comme patch-package.\n- 👀 [Legend Photos - Application open source de visualisation photos - Construite avec React Native macOS](https://github.com/LegendApp/legend-photos)\n- 🐦 [Evan Bacon - « Et si vous pouviez créer des apps mobiles—en déplacement—depuis une app mobile ? »](https://x.com/Baconbrix/status/1904548835143409948): Idée intéressante. Plutôt que l'IA pour générer une UI serveur, pourquoi ne pas générer des écrans entiers localement ?\n- 📣 [EAS Build & Workflows - Présentation du M4 Pro - Builds iOS 1,85x plus rapides](https://expo.dev/changelog/eas-build-workflows-m4-pro)\n- 📜 [Feuille de route Lynx 2025](https://lynxjs.org/blog/lynx-open-source-roadmap-2025.html): Le concurrent de React Native prévoit le support open source pour Windows, macOS et OpenHarmony. Nouvelles capacités, éléments UI et outils améliorés à venir.\n- 📜 [L'importance de connaître le contenu de votre bundle pour les performances React Native](https://www.callstack.com/blog/knowing-your-apps-bundle-contents-native-performance): Explique comment utiliser Expo Atlas, même sans Expo !\n- 📜 [Migrer depuis Firebase Dynamic Links : guide pratique](https://medium.com/@louis.lagrange/migrating-from-firebase-dynamic-links-a-practical-guide-9905bbb8f04d)\n- 📜 [Modaux React Native en 2025](https://addjam.com/blog/2025-03-24/react-native-modals-2025-comprehensive-guide/)\n- 📦 [Reanimated 4 beta.3 - Raccourci transitions CSS, edge-to-edge, suppression code Old Arch, dépend de react-native-worklets](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.3)\n- 📦 [Bottom Tabs 0.9 - Ajoute `freezeOnBlur`, supprime `ignoresTopSafeArea` (désormais automatique)](https://github.com/callstackincubator/react-native-bottom-tabs/releases)\n- 📦 [Audio API 0.5 - RN 0.78, correction de hauteur, décodage audio en mémoire](https://github.com/software-mansion/react-native-audio-api/releases/tag/0.5.0)\n- 📦 [Plugin Expo pour Tanstack Query DevTools](https://github.com/LovesWorking/tanstack-query-dev-tools-expo-plugin)\n- 📦 [React Native Auto Skeleton - Génère automatiquement des squelettes basés sur votre UI existante](https://github.com/pioner92/react-native-auto-skeleton)\n- 📦 [Expo Passkey - Un meilleur plugin d'authentification sans mot de passe sécurisé](https://github.com/iosazee/expo-passkey)\n- 📦 [React Native Magic Scroll 0.1.25 - Gère claviers et ScrollViews dans les longs formulaires - New Arch, support Expo 52](https://github.com/AppAndFlow/react-native-magic-scroll/releases/tag/v0.1.25)\n- 🎙️ [Rocket Ship 63 - De l'idée à l'app avec Replit (Matt Palmer)](https://podcast.galaxies.dev/episodes/063-from-idea-to-app-using-replit-with-matt-palmer)\n- 🎥 [Webinaire Callstack - Utiliser React Native dans des apps existantes pour des features multiplateformes plus rapides](https://www.youtube.com/watch?v=qlm1q0ZQ0ko)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f523b45",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c2ab4c8",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "31bf14c2",
+      "source_content": "- 👀 [Node PR \\- v24.0 release](https://github.com/nodejs/node/pull/57609): New Node.js LTS is in RC and should be released on April 22\\. It upgrades V8 to 13.4, which should unlock new JS features such as `Promise.try`, `Intl.DurationFormat` and `Atomics.pause`.\n- 📜 [One Thing @scope Can Do is Reduce Concerns About Source Order](https://frontendmasters.com/blog/one-thing-scope-can-do-is-reduce-concerns-about-source-order/): TIL that `@scope` introduces a new concept of “scope proximity” to the CSS cascade\\! It’s in Interop 2025 and should be in all browsers very soon.\n- 📜 [Chrome 135 \\- Carousels with CSS](https://developer.chrome.com/blog/carousels-with-css)\n- 📜 [Chrome 135 \\- The \\<select\\> element can now be customized with CSS](https://developer.chrome.com/blog/a-customizable-select)\n- 📜 [Hybrid Linters: The Best of Both Worlds](https://www.joshuakgoldberg.com/blog/hybrid-linters-the-best-of-both-worlds/)\n- 📦 [Rsdoctor 1.0 \\- Build analyzer for webpack and Rspack](https://rsdoctor.dev/blog/release/release-note-1_0): A great tool I’m using on Docusaurus to find build time bottlenecks.\n- 📦 [Biome 2.0 beta \\- Plugins, domains, multi-file analysis and more](https://biomejs.dev/blog/biome-v2-0-beta/)",
+      "source_content_hash": "127560840d7128308f2732ed1c97fedf9ec52f7be0125a7a5bf6f37cf5b6eb28",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Node PR - v24.0 release](https://github.com/nodejs/node/pull/57609) : La nouvelle version LTS de Node.js est en RC et devrait être publiée le 22 avril. Elle met à jour V8 vers la version 13.4, ce qui devrait débloquer de nouvelles fonctionnalités JavaScript telles que `Promise.try`, `Intl.DurationFormat` et `Atomics.pause`.\n- 📜 [One Thing @scope Can Do is Reduce Concerns About Source Order](https://frontendmasters.com/blog/one-thing-scope-can-do-is-reduce-concerns-about-source-order/) : Aujourd'hui j'ai appris que `@scope` introduit un nouveau concept de \"proximité de portée\" dans la cascade CSS ! C'est dans Interop 2025 et devrait arriver dans tous les navigateurs très bientôt.\n- 📜 [Chrome 135 - Carousels with CSS](https://developer.chrome.com/blog/carousels-with-css)\n- 📜 [Chrome 135 - The \\<select\\> element can now be customized with CSS](https://developer.chrome.com/blog/a-customizable-select)\n- 📜 [Hybrid Linters: The Best of Both Worlds](https://www.joshuakgoldberg.com/blog/hybrid-linters-the-best-of-both-worlds/)\n- 📦 [Rsdoctor 1.0 - Build analyzer for webpack and Rspack](https://rsdoctor.dev/blog/release/release-note-1_0) : Un excellent outil que j'utilise sur Docusaurus pour identifier les goulots d'étranglement dans les temps de build.\n- 📦 [Biome 2.0 beta - Plugins, domains, multi-file analysis and more](https://biomejs.dev/blog/biome-v2-0-beta/)",
+        "en": "- 👀 [Node PR - v24.0 release](https://github.com/nodejs/node/pull/57609): La nouvelle version LTS de Node.js est en RC et devrait sortir le 22 avril. Elle met à jour V8 en version 13.4, ce qui devrait débloquer de nouvelles fonctionnalités JavaScript comme `Promise.try`, `Intl.DurationFormat` et `Atomics.pause`.\n- 📜 [One Thing @scope Can Do is Reduce Concerns About Source Order](https://frontendmasters.com/blog/one-thing-scope-can-do-is-reduce-concerns-about-source-order/): Aujourd'hui j'ai appris que `@scope` introduit un nouveau concept de \"proximité de portée\" dans la cascade CSS ! C'est dans Interop 2025 et devrait arriver dans tous les navigateurs très bientôt.\n- 📜 [Chrome 135 - Carousels with CSS](https://developer.chrome.com/blog/carousels-with-css)\n- 📜 [Chrome 135 - The \\<select\\> element can now be customized with CSS](https://developer.chrome.com/blog/a-customizable-select)\n- 📜 [Hybrid Linters: The Best of Both Worlds](https://www.joshuakgoldberg.com/blog/hybrid-linters-the-best-of-both-worlds/)\n- 📦 [Rsdoctor 1.0 - Build analyzer for webpack and Rspack](https://rsdoctor.dev/blog/release/release-note-1_0): Un super outil que j'utilise sur Docusaurus pour identifier les goulets d'étranglement lors du build.\n- 📦 [Biome 2.0 beta - Plugins, domains, multi-file analysis and more](https://biomejs.dev/blog/biome-v2-0-beta/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74a488b8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Détente {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "This week we have 2 videos, you need to click 😂",
+      "source_content_hash": "1bd5dd01d1510aa208dc8c3636c9a5d0abb4bbffa136218e2c3666bb79d783d1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine nous avons 2 vidéos, il faut cliquer 😂",
+        "en": "Cette semaine, nous avons 2 vidéos, il faut cliquer 😂"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "[![alt](/emails/issues/227/meme.jpg)](https://x.com/sebastienlorber/status/1904152606181658966)",
+      "source_content_hash": "e393b7757676d8a37f3ee0d58de369f5d001736c293c140f3add1d5151d57720",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/227/meme.jpg)](https://x.com/sebastienlorber/status/1904152606181658966)",
+        "en": "[![alt](/emails/issues/227/meme.jpg)](https://x.com/sebastienlorber/status/1904152606181658966)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "[![alt](/emails/issues/227/meme2.jpg)](https://x.com/flexbox_/status/1903547233032712635)",
+      "source_content_hash": "f60bb4ee1d9b1988a9e5ee12ab00bc152b0024b9c6850d49285904cf2c1ed4a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/227/meme2.jpg)](https://x.com/flexbox_/status/1903547233032712635)",
+        "en": "[![alt](/emails/issues/227/meme2.jpg)](https://x.com/flexbox_/status/1903547233032712635)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/227/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.431591+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "14470db96cfd873ea78a0ff1c9b21bfd65b026c29e904dae416d4fd4c5f092ac",
+    "en": "14470db96cfd873ea78a0ff1c9b21bfd65b026c29e904dae416d4fd4c5f092ac"
+  }
+}

@@ -1,0 +1,172 @@
+---
+slug: /215
+title: "This Week In React #215: Dropdown, i18n, Next.js, Remix, Astro, shadcn, StyleX, Fancy Components, Expo, Static Hermes, Skia, ExecuTorch, Kotlin, Node, Shortest, Rolldown, Rspack, pnpm..."
+authors: [slorber]
+date: 01-02-2025
+---
+
+Bonjour à tous !
+
+Nous avions initialement prévu de revenir le 8 janvier.\
+Mais me voici un peu plus tôt pour vous souhaiter à tous une bonne année ! 🎉\
+Avec les fêtes de fin d'année, ce fut une semaine calme pour React, comme on pouvait s'y attendre.
+
+J'en profite également pour partager une petite rétrospective de la newsletter et vous remercier encore une fois de votre lecture qui rend tout cela possible.
+
+En 2024, la newsletter est passée d'un projet durable à une activité à l'équilibre. Cela me permet d'investir davantage dans le projet et d'améliorer le contenu. Voici quelques chiffres concrets de 2023 à 2024 :
+
+- 📈 **Abonnés** : 31k ➡️ 46k - Une belle augmentation de +15k abonnés cette année. Pas exponentielle comme je l'espérais, mais très satisfaisante !
+- 👥 **Rédacteurs** : 1 ➡️ 4 - Je ne suis plus le seul rédacteur de cette newsletter de curation : Benedikt, Matthieu et Cyril m'ont relayé en mon absence.
+- 📨 **Numéros** : 38 ➡️ 47 - L'arrivée d'autres rédacteurs nous a permis d'envoyer un email presque chaque semaine !
+- 💰 **Revenus** : 47k€ ➡️ 99k€ ARR - Nous progressons en vente et avons convaincu la plupart des entreprises que nous souhaitions collaborer avec nous.
+- 💸 **Charges** : 15k€ ➡️ 36k€ - Nos charges ont significativement augmenté cette année avec les rédacteurs invités (14k€). Les autres dépenses sont les publicités (12k€), les SaaS (7k€) et les assistants virtuels (3k€).
+
+Dans l'ensemble, 2024 a été une excellente année, avec des perspectives prometteuses. Je n'ai pas atteint mon objectif ambitieux de 50k abonnés, mais j'en suis proche. Après l'été, la croissance est devenue plus difficile, sans raison évidente. J'ai tout de même franchi un jalon symbolique important : dépasser le nombre d'abonnés à la newsletter par rapport aux followers Twitter, réduisant ainsi la dépendance aux plateformes sociales.
+
+En 2025, j'aimerais que la newsletter soit plus qu'une simple curation. Je prévois d'engager des rédacteurs invités, rémunérés pour produire des séries d'articles sur leurs sujets de prédilection. Si vous pensez correspondre au profil, répondez et dites bonjour ! 👋
+
+Si vous souhaitez m'aider à concrétiser ces projets, partagez la newsletter avec un ami ou collègue qui pourrait l'apprécier, ou sur les réseaux sociaux.
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![alt](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)
+
+**[Devenez un meilleur ingénieur une newsletter à la fois.](https://dub.link/twir-dec18)**
+
+[Product for Engineers](https://dub.link/twir-dec18) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit.
+
+Avec plus de 30k abonnés, c'est une source fiable qui comble le fossé entre produit et ingénierie, vous aidant à livrer des produits que les utilisateurs adorent.
+
+Elle couvre des sujets comme le choix des bonnes technologies, les comportements non évidents qui nuisent aux startups, et les erreurs de tests A/B apprises à la dure. C'est entièrement gratuit et le restera.
+
+[**Abonnez-vous gratuitement.**](https://dub.link/twir-dec18)
+
+---
+
+## ⚛️ React {#react}
+
+[![Construire un menu déroulant](/emails/issues/215/dropdown.jpg)](https://reshaped.so/blog/building-a-dropdown)
+
+**[Construire un menu déroulant](https://reshaped.so/blog/building-a-dropdown)**
+
+Un excellent article interactif qui montre la complexité de l'implémentation d'une abstraction de composant React déroulant flexible à partir de zéro, couvrant les déclencheurs, le positionnement, les pièges de focus, la navigation au clavier, l'accessibilité et de nombreuses autres subtilités à considérer.
+
+---
+
+[![Échafaudage de votre internationalisation dans React avec automatisation](/emails/issues/215/i18n.jpg)](https://lingual.dev/blog/automating-your-react-internationalization/)
+
+**[Échafaudage de votre internationalisation dans React avec automatisation](https://lingual.dev/blog/automating-your-react-internationalization/)**
+
+Cet article montre comment utiliser les transformations AST de ts-morph pour remplacer automatiquement toutes les chaînes codées en dur de votre application par les API de traduction de react-i18next ou react-intl.
+
+---
+
+- 💸 [React Native Zero to Hero - Everything you need to ship your first app](https://galaxies.dev/missions/zero-to-hero?utm_source=thisweekinreact)
+- 👀 [React PR \- “Forgive” IDE extension](https://github.com/facebook/react/pull/31918): The React Compiler team recently [hinted at React Summit](https://www.youtube.com/watch?v=C8Mg-NSyqWg&t=14452s) their intent to create a “React IDE” powered by the compiler, not limited to just linting but also providing educational tooltips and more. Well, there's nothing very interesting to see yet, but work has begun on scaffolding a Language Server Protocol and VSCode extension.
+- 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 February - Full speaker line up just dropped! Join Mateusz Burzyński, Elise Patrikainen and David Rousset! Get 20% off tickets with code "TWIR"!
+- 📜 [You don't need Next.js](https://www.comfydeploy.com/blog/you-dont-need-nextjs): They migrated dashboards from Next.js 15 to just React with TanStack Router and Rspack with satisfying results.
+- 📜 [Building the Black Friday-Cyber Monday live dashboard](https://vercel.com/blog/building-the-black-friday-cyber-monday-live-dashboard): Vercel presents the technical architecture behind their Next.js-based Black Friday dashboard
+- 📜 [Replacing Legacy throw in React 19 with Suspense and use](https://peterkellner.net/2024/12/31/replacing-legacy-throw-in-react-19-with-suspense-and-use/): There’s a new `use()` hook, but throwing promises still works.
+- 📜 [Remix Security Checklist](https://blog.arcjet.com/remix-security-checklist/)
+- 📜 [Building a simple form in React \- before and after React 19](https://reactpractice.dev/articles/building-a-simple-form-in-react-before-and-after-react-19/)
+- 📦 [Astro 5.1 \- Experimental sessions, remote image caching, getActionPath](https://astro.build/blog/astro-510/)
+- 📦 [StyleX 0.10 - PostCSS plugin, better debugging, ESLint/Perf/CLI improvements](https://stylexjs.com/blog/v0.10.0): The new PostCSS plugin should make StyleX easier to adopt in various contexts.
+- 📦 [Fancy Components \- Collection of funky, unconventional components](https://www.fancycomponents.dev/)
+- 📦 [next-intl 4.0 beta](https://next-intl.dev/blog/next-intl-4-0): type-safety for ICU params is really cool\! Also lays the ground for the latest Next.js innovations like PPR, dynamicIO, and rootParams.
+- 📦 [React Router 7.1 \- Support for Vite 6](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v710)
+- 📦 [shadcn/ui CLI \- Experimental monorepo support](https://ui.shadcn.com/docs/monorepo)
+- 📦 [React Toastify 11.0 \- Easy customization](https://github.com/fkhadra/react-toastify/releases/tag/v11.0.0)
+- 📦 [TanStack Store 0.7 \- Derived/Effect classes](https://tanstack.com/store/latest/docs/quick-start#derived)
+- 🎥 [Theo \- This magic hack makes Next.js possible](https://www.youtube.com/watch?v=VMDydLUCLtE): A great video explaining how Next.js implements PPR and Dynamic IO features using only JS features.
+- 🎥 [Theo \- I might have a new favorite state manager (XState Store)](https://www.youtube.com/watch?v=Pmieyp75SrA)
+- 🎥 [Lee Robinson \- Forms with React 19 and Next.js](https://www.youtube.com/watch?v=KhO4VjaYSXU)
+- 🎥 [Ankita \- Stop\! These Next.js Mistakes are Killing Your App](https://www.youtube.com/watch?v=6ZR5drEQzp4)
+- 🎙️ [This Month in React \- React 19 is here, 2024 is over](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-12-React-19-is-here--2024-is-over-e2sv4o6)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![React-admin : Le framework open-source pour les applications B2B](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)
+
+**[React-admin : Le framework open-source pour les applications B2B](https://marmelab.com/react-admin/)**
+
+👩🏻‍💻 **Par des développeurs, pour des développeurs** : React-admin est une bibliothèque gratuite à faible code qui accélère le développement d'outils internes, d'administrations ou d'applications B2B. Contrairement aux outils no-code, vous utilisez du code, garantissant de ne jamais être limité par le framework.
+
+🔌 **Intégration flexible** : React-admin prend en charge n'importe quel format d'API (REST ou GraphQL) et divers backends d'authentification, notamment Auth0, Cognito, Google Auth, Active Directory et Keycloak. Vous contrôlez le serveur, il n'y a donc pas de coûts supplémentaires pour les capacités Single Sign-On (SSO). Il est entièrement personnalisable, vous permettant de l'adapter aux couleurs de votre entreprise.
+
+🚀 **Succès avéré** : Plus de 25 000 entreprises ont construit des applications monopage avec React-admin. Pour votre prochain projet, économisez des semaines de temps de développement en utilisant react-admin. [Essayez react-admin maintenant](https://marmelab.com/react-admin/).
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo - Bilan de l'année 2024](/emails/issues/215/expo.jpg)](https://expo.dev/blog/2024-year-in-review)
+
+**[Expo \- Bilan de l'année 2024](https://expo.dev/blog/2024-year-in-review)**
+
+Pour bien démarrer 2025, récapitulons toutes les excellentes fonctionnalités qu'Expo nous a offertes l'année dernière :
+
+- SDK Expo v50, v51, v52
+- Prise en charge de la Nouvelle Architecture par défaut
+- Expo Router v3, v4
+- Composants DOM
+- Empreinte numérique
+- Atlas & DevTools
+- expo.new
+- Flux de travail
+- Variables d'environnement, activité de sécurité et journaux d'audit
+
+---
+
+- 💸 [Demos - 90+ animations React Native créées avec Reanimated, Gesture Handler et Skia, par Reactiive](https://reactiive.io/demos?utm_source=thisweekinreact)
+- 👀 [PR RN Skia - support macOS](https://github.com/Shopify/react-native-skia/pull/2836)
+- 📊 [State of React Native](https://stateofreactnative.com/) : Dernière semaine pour répondre à l'enquête annuelle de la communauté !
+- 📜 [Mise à jour de Static Hermes, déc. 2024](https://x.com/tmikov/status/1869945330638442651) : Static Hermes devrait être déployé en 2025, initialement en option puis activé par défaut. Il peut compiler et exécuter du code typé et non typé. Les benchmarks montrent qu'il est déjà significativement plus rapide sur le code non typé, notamment avec le mode JIT quand Hermes peut inférer les types. Aucun benchmark n'a été fourni pour le code typé, mais on s'attend à ce qu'il soit beaucoup plus rapide ! La conformité ES améliorée permettra également de supprimer de lourds plugins Babel. TLDR : en 2025, préparez-vous à une augmentation significative des performances de build et d'exécution.
+- 📜 [Comment créer de magnifiques composants luminescents sur React Native 0.76+](https://www.devas.life/how-to-create-beautiful-glowing-components-on-react-native-0-76/) : la prise en charge de box-shadow et la New Architecture débloquent de nouvelles possibilités créatives.
+- 📜 [Du Natif au Développement Multiplateforme : Décryptage de Kotlin et Compose](https://www.callstack.com/blog/from-native-to-multiplatform-development-unpacking-kotlin-and-compose) : Explore l'écosystème Android Kotlin du point de vue d'un développeur React Native.
+- 📜 [Le moment est venu pour React Native](https://galaxies.dev/article/time-for-react-native)
+- 📜 [Pourquoi Expo est idéal pour les nouvelles et existantes applications React Native](https://expo.dev/blog/why-expo-is-a-great-fit-for-new-and-existing-react-native-apps)
+- 📜 [Animation de squelette dans React Native avec Moti](https://reactiive.io/articles/skeleton-loader)
+- 📦 [RN ExecuTorch 0.2 - Prise en charge des modèles de vision par ordinateur](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.2.0)
+- 📦 [RN Volume Manager 2.0 - Prise en charge de la New Architecture](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)
+- 📦 [RN Skia 1.8 - Nouveau réconciliateur sur React Native Web](https://github.com/Shopify/react-native-skia/releases/tag/v1.8.0)
+- 📦 [RN 0.77 RC.5](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.5)
+- 📦 [RN Windows 0.77 preview.1](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0-preview.1)
+- 📦 [RN Screens 4.4 - Correctifs importants](https://github.com/software-mansion/react-native-screens/releases/tag/4.4.0)
+- 🎥 [Le Lab de Dan - Trigonométrie et React-Native Skia - Mon avis](https://www.youtube.com/watch?v=r5P7Z3O8Jog)
+- 🎙️ [React Universe On Air - Evan Bacon sur les applications React Native universelles, DOM & React Server Component](https://www.youtube.com/watch?v=rA7E3rGKSZw)
+- 🎙️ [RNR - React Native Rewind 2024](https://www.reactnativeradio.com/episodes/rnr-317-react-native-rewind-2024)
+
+---
+
+## 🔀 Autre {#other}
+
+- 📜 [Node.js Now Supports TypeScript By Default](https://www.totaltypescript.com/typescript-is-coming-to-node-23) : Les prochaines versions de Node.js v23.6 (et ultérieurement v22.x) pourront exécuter les fichiers `.ts` par défaut ! 🔥
+- 📜 [Breaking Up with Long Tasks](https://calendar.perfplanet.com/2024/breaking-up-with-long-tasks-or-how-i-learned-to-group-loops-and-wield-the-yield/)
+- 📦 [Shortest - AI-powered natural language end-to-end testing framework](https://github.com/anti-work/shortest)
+- 📦 [Rolldown 1.0 beta](https://github.com/rolldown/rolldown/releases/tag/v1.0.0-beta.1) : Une version officielle de Vite fonctionnant sur Rolldown est attendue début 2025.
+- 📦 [Skip - The reactive framework](https://skiplabs.io/) : C'est comme "React pour le backend" selon Christopher Chedeau. 👀
+- 📦 [Rspack 1.2 alpha - Experimental persistent caching, perf improvements](https://github.com/web-infra-dev/rspack/releases/tag/v1.2.0-alpha.0)
+- 📦 [pnpm 10.0 RC - Increased security, whitelist packages allowed to run install scripts](https://github.com/pnpm/pnpm/releases/tag/v10.0.0-rc.2)
+- 📦 [Languine - Translate your application with a CLI powered by AI](https://languine.ai/)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![alt](/emails/issues/215/meme.jpg)](https://bsky.app/profile/brandonroberts.dev/post/3ld74oultjc2g)
+
+[![alt](/emails/issues/215/meme2.jpg)](https://x.com/flydotio/status/1873840239166226548)
+
+À bientôt ! 👋

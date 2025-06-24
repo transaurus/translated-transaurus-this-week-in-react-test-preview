@@ -1,0 +1,158 @@
+---
+slug: /213
+title: "This Week In React #213: React 19, Next.js, React Compiler, React Router, Restyle, Lingui, State of RN, Uniffi, Shared Objects, Fast IO, Sheet Transitions, Radon, TC39, OpenAuth, TypeScript, Dioxus..."
+authors: [matthieugicquel, cyrilbo]
+date: 12-11-2024
+---
+
+Bonjour à tous !
+
+Cyril et Matthieu de Theodo Apps (anciennement BAM) ici 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles de React et React Native !
+
+React 19 est officiellement stable. Le nombre d'articles et de versions que nous mentionnons ci-dessous, liés à ses nouvelles fonctionnalités, montre l'importance de cette version 🙂
+
+L'enquête State of React Native 2024 est en ligne. Ne manquez pas votre chance de façonner l'avenir de React Native !
+
+Il y a également des progrès passionnants dans l'utilisation de Rust pour les applications frontend avec des outils comme Uniffi pour React Native et Dioxus, ouvrant la voie à des expériences multiplateformes plus puissantes.
+
+Plongeons dedans ! 🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![WorkOS : Plateforme d'identité moderne pour les SaaS B2B](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)
+
+**[WorkOS : Plateforme d'identité moderne pour les SaaS B2B](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**
+
+Avec WorkOS, vous pouvez commencer à vendre aux entreprises avec seulement quelques lignes de code.
+
+🔐 WorkOS AuthKit prend en charge une solution complète de gestion des utilisateurs avec **SSO, SCIM, RBAC et FGA**.
+
+🏗️ Les API sont **flexibles, faciles à utiliser et modulaires**. Choisissez ce dont vous avez besoin et intégrez en quelques minutes.
+
+🎨 Le design et l'expérience utilisateur sont primordiaux. De la qualité de notre documentation à l'intégration de vos utilisateurs, nous **éliminons toute complexité inutile pour les développeurs**.
+
+✨ AuthKit est **gratuit jusqu'à 1 million d'utilisateurs actifs mensuels (MAU)** et inclut la protection contre les bots, MFA, RBAC, et plus encore.
+
+🤝 WorkOS est utilisé par des centaines de startups leaders comme **Perplexity**, **Vercel** et **Webflow**.
+
+[Commencer avec WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀
+
+---
+
+## ⚛️ React {#react}
+
+[![React 19](/emails/issues/213/react.jpg)](https://react.dev/blog/2024/12/05/react-19)
+
+**[React 19](https://react.dev/blog/2024/12/05/react-19)**
+
+Les versions candidates de React 19 ont été l'un des sujets principaux de cette newsletter au cours de l'année écoulée, donc il n'y a pas grand-chose de plus à dire, si ce n'est qu'elle est officiellement stable, à part 2 nouvelles fonctionnalités : la fonction de préchauffage qui a retardé la sortie, et les nouvelles API statiques de React-DOM. Voici un bon rappel des autres fonctionnalités que nous avons déjà couvertes :
+
+- Actions / Actions serveur / `useActionState()`
+- `<form>` + hooks compatibles avec l'amélioration progressive
+- `<Context>` au lieu de `<Context.Provider>`
+- Le hook `use()`
+- Éléments personnalisés
+- Ref comme props standard et fonctions de nettoyage des ref callbacks
+- Gestion des balises meta
+- Préchargement des ressources
+- Meilleures erreurs et reporting des différences d'hydratation
+
+Vidéos connexes couvrant la sortie :
+
+- 🎥 [Theo - React 19 est enfin disponible !](https://www.youtube.com/watch?v=6aQgiJHReCI)
+- 🎥 [Ankita - Maîtrisez les changements de React 19 en 5 minutes !](https://www.youtube.com/watch?v=ZcuOV60_z6s)
+- 🎥 [Brandon Roberts - React 19 : Ce que chaque développeur Angular doit savoir !](https://www.youtube.com/watch?v=0aHHGdxAmF4)
+
+---
+
+- 💸 [React Bricks – le CMS visuel pour React devient plus accessible avec un prix d'entrée plus bas et des options flexibles de paiement à l'usage. Commencez gratuitement !](https://www.reactbricks.com/?utm_source=twir&utm_campaign=ql24)
+- 📖 [Un nouveau tutoriel React Router](https://reactrouter.com/tutorials/address-book) : Il couvre la plupart des fonctionnalités dont vous aurez besoin en \~30 minutes.
+- 📜 [Performances du compilateur React sur du code réel](https://www.developerway.com/posts/how-react-compiler-performs-on-real-code) : L'activation du compilateur sur une application réelle a maintenu les performances au chargement initial et les a améliorées lors des interactions. Mais le compilateur ne parvient pas toujours à optimiser pleinement votre code existant.
+- 📜 [Ref Callbacks, React 19 et le compilateur](https://tkdodo.eu/blog/ref-callbacks-react-19-and-the-compiler) : TkDodo examine les ref callbacks, qui disposent désormais de fonctions de nettoyage. Quand doivent-ils remplacer `useEffect` ?
+- 📜 [Construire des micro-frontends évolutifs avec Next.js Multi Zones](https://techhub.iodigital.com/articles/building-scalable-micro-frontends-with-next-js-multi-zones) : Pouvoir déployer indépendamment est un avantage majeur pour les grandes équipes, et cela s'avère peu compliqué avec Next.js.
+- 📜 [API Root Element dans waku](https://waku.gg/blog/root-element-api) : Personnalisez `<html>`, `<body>` et `<head>` dans un fichier `\_root.tsx`.
+- 📜 [Documentation multi-framework avec Astro Starlight](https://blog.arcjet.com/multi-framework-docs-with-astro-starlight/)
+- 📜 [Le SSR n'est pas coûteux](https://t3.gg/blog/post/ssr-is-not-expensive)
+- 📜 [Réflexions sur la gestion d'état](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)
+- 📦 [Next.js 15.1](https://nextjs.org/blog/next-15-1) : React 19 stable, débogage des erreurs amélioré, `after` (pour exécuter du code après l'envoi de la réponse, ex. pour les analyses) est stable, et nouvelles API expérimentales `forbidden` et `unauthorized` fonctionnant comme `notFound`.
+- 📦 [Restyle 3.0](https://www.restyle.dev/) : Une bibliothèque CSS-in-JS très légère pour React utilisant les nouvelles API de métadonnées de React 19.
+- 📦 [Lingui 5.0](https://lingui.dev/blog/2024/11/28/announcing-lingui-5.0) : Prise en charge de RSC et nouvelle macro `useLingui` parmi d'autres améliorations.
+- 📦 [react-render-stream-testing-library 2.0](https://github.com/testing-library/react-render-stream-testing-library/releases/tag/v2.0.0) : Aucune nouvelle fonctionnalité majeure, quelques changements cassants nécessaires pour la compatibilité avec React 19.
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![From solo to collaborative: React + Stream Video!](/emails/issues/213/stream.jpg)](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)
+
+**[Du solo au collaboratif : React + Stream Video !](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)**
+
+Le SDK Video React de Stream permet aux développeurs d'intégrer facilement les appels vidéo, les conférences et les diffusions en direct.
+
+✔️ **Par des développeurs pour des développeurs :** Composants d'interface et hooks entièrement personnalisables, documentation complète et modèles de démarrage rapide.
+
+✔️ **Performances Éclairs :** Latence inférieure à 200 ms et scalabilité alimentée par WebRTC.
+
+✔️ **Fonctionnalités Prêtes à l'Emploi :** Appels en groupe, partage d'écran, débit adaptatif, codecs, etc.
+
+Développez rapidement. Scalabilité sans effort. [Commencez avec Stream](https://getstream.io/try-for-free/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact).
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![State of React Native 2024](/emails/issues/213/state_of_rn.jpg)](https://stateofreactnative.com/)
+
+**[State of React Native 2024](https://stateofreactnative.com/)**
+
+L'enquête State of React Native 2024 est en ligne ! 📊 C'est votre chance d'influencer l'avenir de React Native en partageant vos insights sur les tendances, les outils et les défis. Vos retours aident les équipes Expo et Meta à façonner les améliorations chaque année, au bénéfice de toute la communauté.
+
+---
+
+- 💸 [React Native Mastery - Inscriptions ouvertes !](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 🐦 [RN Unistyles v3 prend en charge les thèmes scopés](https://x.com/jpudysz/status/1865460854717632737) : Une fonctionnalité manquante depuis la suppression de `UnistylesTheme` en v2.
+- 📜 [L'impact réel des objets partagés dans Expo Modules](https://expo.dev/blog/the-real-world-impact-of-shared-objects) : Les objets partagés dans Expo Modules permettent une intégration transparente entre le natif et JavaScript, améliorant la conception des API et la compatibilité entre paquets.
+- 📜 [Présentation d'Uniffi pour React Native : Turbo Modules propulsés par Rust](https://hacks.mozilla.org/2024/12/introducing-uniffi-for-react-native-rust-powered-turbo-modules/) : Uniffi pour React Native intègre Rust avec les Turbo Modules, déverrouillant tout l'écosystème des crates Rust pour les applications React Native.
+- 📜 [Mises à jour EAS automatisées dans une app React Native bare avec plusieurs flavors & schémas](https://shift.infinite.red/automated-eas-updates-in-a-bare-react-native-app-with-multiple-flavors-schemes-dcdf17963079) : Un article parfaitement opportun pour les projets n'utilisant pas Expo ou EAS mais dépendant de CodePush, nécessitant une solution OTA avant l'abandon officiel de CodePush.
+- 📜 [Développer une application TV React Native](https://www.callstack.com/blog/developing-a-react-native-tv-app)
+- 📦 [React Native Sheet Transitions - De belles transitions de feuille universelles](https://github.com/saulamsal/react-native-sheet-transitions) : Impressionnant, mais toujours en développement actif.
+- 📦 [@lingui/metro-transformer](https://lingui.dev/blog/2024/11/20/metro-transformer) : Élimine le besoin de précompiler les fichiers de traduction `.po` en gérant la compilation lors du bundling Metro.
+- 📦 [React Native Fast IO pré-version](https://github.com/callstackincubator/react-native-fast-io) : Solution I/O haute performance pour React Native, implémentant les API W3C standard comme WebSocket, Fetch, FileSystem, Blob et Streams, propulsée par Nitro.
+- 📦 [React Native Bottom Tabs v0.7.2 - Prise en charge de macOS, prise en charge des barres latérales](https://github.com/okwasniewski/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.7.2)
+- 📦 [React Native Video Player v0.15](https://github.com/TheWidlarzGroup/react-native-video-player/releases/tag/v0.15.0)
+- 🎥 [Une démo en direct de Radon IDE : l'extension VS Code pour rationaliser le développement](https://www.youtube.com/watch?v=UeYmRKWhwFI)
+- 🎙️ [RNR 316 - Déboguer le débogueur avec Cedric van Putten et Alex Hunt](https://reactnativeradio.com/episodes/rnr-316-debugging-the-debugger-with-cedric-van-putten-and-alex-hunt)
+
+---
+
+## 🔀 Autre {#other}
+
+- 📜 [TC39 105e réunion](https://dev.to/hemanth/updates-from-the-105th-tc39-meeting-3gkh): plusieurs propositions ES ont progressé cette semaine, notamment Intl.DurationFormat, Immutable ArrayBuffer, Import Sync et plus encore.
+- 📜 [Airtable - Mise à l'échelle de TypeScript pour des milliers de projets](https://medium.com/airtable-eng/a-leap-in-the-evolution-of-airtables-codebase-scaling-typescript-to-thousands-of-projects-734326c3a553)
+- 📜 [Node.js livre sa première LTS avec require(esm) activé, améliore la sécurité et l'automatisation des versions](https://socket.dev/blog/node-js-delivers-first-lts-with-require-esm-enabled)
+- 📜 [Résoudre la complexité N² avec les Maps JavaScript](https://davidbonan.io/blog/solving-n2-complexity-with-javascript-maps)
+- 📜 [CSS Wrapped 2024](https://chrome.dev/css-wrapped-2024/)
+- 📜 [Comment améliorer votre temps de chargement avec le cache navigateur | DebugBear](https://www.debugbear.com/blog/browser-caching)
+- 📜 [Exploration des flux Readable de Node.js](https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams)
+- 📦 [OpenAuth - Fournisseur d'authentification universel et standardisé](https://openauth.js.org/)
+- 📦 [Dioxus 0.6 - Framework d'applications multiplateforme fullstack en Rust](https://dioxuslabs.com/blog/release-060): On dirait qu'il s'inspire beaucoup de React, et cette version majeure ajoute de nombreuses fonctionnalités comme Server Functions, SSG/ISG, Streaming HTML et bien plus.
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![Dépendances pairs de React 19](/emails/issues/213/react_19_meme.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3laz2eyx77k2l)
+
+[![Math.sin en JavaScript](/emails/issues/213/math_sin.jpg)](https://x.com/davesnx/status/1863991593432391711)
+
+À bientôt ! 👋

@@ -1,0 +1,144 @@
+---
+slug: /234
+title: "This Week In React #234: TanStack DB, TanStack Query, React Router, Vite, Redux Toolkit, Parcel | 0.80 RC, Expo, Legal, Re.Pack, Skia, Radon IDE, Rive | Rslib, Composites, Lightning CSS, Accessibility, V8"
+authors: [tboba, kacperkapusciak]
+date: 05-14-2025
+---
+
+Bonjour à tous !
+
+**Kacper et Tymek de [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** ici 👋.
+
+Avec une semaine un peu plus calme, nous vous proposons surtout d'excellents articles que vous pourriez apprécier, accompagnés de quelques sorties intéressantes ! Nous sommes très enthousiastes concernant l'équipe Vite qui travaille sur le support RSC, une nouvelle proposition pour React Query, en conjonction avec les fonctionnalités à venir dans React Native 0.80, mais il reste encore de nombreux nouveaux sujets à explorer ici.
+
+Plongeons dedans !
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Voici pourquoi vous ne livrez pas](/emails/issues/234/posthog.jpg)](https://go.posthog.com/twir-may14)
+
+**[Voici pourquoi vous ne livrez pas](https://go.posthog.com/twir-may14)**
+
+Quelques signaux d'alarme que [PostHog](https://go.posthog.com/twir-may14-ph) a identifiés dans les équipes qui échouent à livrer rapidement : attendre des entretiens individuels pour résoudre les problèmes, nécessiter l'approbation d'autres équipes pour votre travail, et les ventes qui dépassent en nombre l'ingénierie 🚩
+
+Apprenez à identifier et résoudre chacun de ces problèmes (et plus) dans [la dernière édition de leur newsletter Product for Engineers](https://go.posthog.com/twir-may14) 💪
+
+---
+
+## ⚛️ React {#react}
+
+[![TanStackDB](/emails/issues/234/tanstackdb.jpg)](https://github.com/TanStack/db)
+
+**[TanStack DB](https://github.com/TanStack/db)**
+
+Une toute nouvelle bibliothèque de l'équipe TanStack a été introduite en collaboration avec ElectricSQL, apportant de nombreuses fonctionnalités passionnantes. Elle vous offre un moteur de requêtes ultra-rapide, une réactivité fine pour des re-rendus minimaux, des primitives de transaction robustes et des données normalisées par défaut !
+
+Elle est construite sur TanStack Store et fonctionne avec et aux côtés de TanStack Query, étendant ses capacités avec des collections, des requêtes en direct et des mutations optimistes.
+
+---
+
+- 💸 [Build professional design system in less than a day, using Hope AI, new model by Bit.Cloud](https://bit.cloud/solutions/design-systems?utm_source=ThisWeekInReact&campaign=DesignSystem)
+- 👀 [React PR \- Integrate React RSC with Vite](https://github.com/facebook/react/pull/33152): An implementation of React Server Components support in Vite. There used to be a community proposal in the past but this time it's coming officially from the Vite team.
+- 👀 [React Query RFC \- Unified Imperative Query Methods](https://github.com/TanStack/query/discussions/9135): As the API of TanStack Query grows, the creators proposed to reduce the number of six functions with similar functionality to two unique methods \- `query()` and `infiniteQuery()`.
+- 📜 [Static as a Server](https://overreacted.io/static-as-a-server/): Dan draws parallels between the Astro and built-time React Server Components for creating static sites without a server.
+- 📜 [React Hook Factory \- how to create custom hooks programmatically](https://tylur.blog/react-hook-factory/): A clever pattern to reduce boilerplate when setting up a new React Context.
+- 📜 [No, react context is not causing too many renders](https://blacksheepcode.com/posts/no_react_context_is_not_causing_too_many_renders): Argues that using React context is fine, and re-render problems are more likely related to large context values and controlled components.
+- 📜 [Dependency Inversion in React: Building Truly Testable Components](https://cekrem.github.io/posts/dependency-inversion-in-react/): Implementing the SOLID principle by passing dependencies as props.
+- 📜 [Using OpenAuth with React Router](https://seanpaulcampbell.com/blog/openauth-react-router/): Comprehensive 2-part tutorial explaining how to implement authentication using React Router, OpenAuth and deploying on AWS with SST.
+- 📜 [Client-Side React Rocks](https://marmelab.com/blog/2025/05/09/client-side-react-rocks.html): On the example of tabular layout, the author argues client-side React features like `useContext` and `createPortal` provide better DX than Server Components.
+- 📜 [The Limits of RSC: A Practitioner's Journey](https://www.nirtamir.com/articles/the-limits-of-rsc-a-practitioners-journey): Nir tried to implement infinite scrolling UI using Server Components, but ran into a wall. Spoiler: He used React Query instead.
+- 📜 [How to Build a Custom React Renderer](https://blog.swmansion.com/how-to-build-a-custom-react-renderer-595dc4a9cb1c): Using the `react-reconciler` package to build a video composition software.
+- 📜 [Patterns for state management with actors in React with XState](https://www.typeonce.dev/article/patterns-for-state-management-with-actors-in-react-with-xstate)
+- 📜 [How To Integrate React Query With AG Grid?](https://scientyficworld.org/how-to-integrate-react-query-with-ag-grid/)
+- 📦 [React Router 7.6 \- new `routeDiscovery` option](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v760): New config option introduced granting more control over the Lazy Route Discovery feature.
+- 📦 [Redux Toolkit 2.8 \- Infinite Query Page Params, RN compatibility](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.8.0)
+- 📦 [Parcel 2.15 \- New HTML and SVG to JSX transformer](https://parceljs.org/blog/v2-15-0/)
+- 📦 [eslint-plugin-react-you-might-not-need-an-effect](https://github.com/NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect)
+- 🎥 [Jack Herrington \- Server Functions Don't Exist (It Matters)](https://www.youtube.com/watch?v=FPJvlhee04E)
+- 🎥 [Lee Robinson \- Multi-tenant SaaS apps with Next.js and Vercel](https://www.youtube.com/watch?v=vVYlCnNjEWA)
+- 🎥 [Epic Web Conf 2025 \- Talks are online](https://www.epicweb.dev/talks)
+- 🎙️ [PodRocket 563 \- JSX over the wire with Dan Abramov](https://podrocket.logrocket.com/jsx-over-the-wire-dan-abramov)
+- 🎙️ [Syntax.fm 901 \- New React & Svelte APIs, RSC Updates, Redwood and Storybook](https://syntax.fm/show/901/js-news-new-react-and-svelte-apis-rsc-updates-redwood-and-storybook)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Présentation de Clerk Billing](/emails/issues/234/clerk.jpg)](https://go.clerk.com/LphCouG)
+
+**[Présentation de Clerk Billing](https://go.clerk.com/LphCouG)**
+
+Configurez des abonnements dans votre application B2B ou B2C sans écrire de code de paiement personnalisé ni créer votre propre interface.
+
+- Créez une page de tarification avec le composant `<PricingTable />`
+- Connectez-vous à Stripe — pas d'appels API manuels, pas de synchronisation manuelle
+- Gérez les plans et les droits directement dans le tableau de bord Clerk
+- L'aide `has()` pour contrôler l'accès en fonction du plan, des fonctionnalités et des permissions d'un client
+- Gérez les données utilisateur et d'abonnement en un seul endroit
+
+Activez Billing, insérez `<PricingTable/>` sur votre page `/pricing` et [commencez à monétiser votre application](https://go.clerk.com/LphCouG).
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![MS Office utilise React Native](/emails/issues/234/microsoft-uses-react-native.png)](https://devblogs.microsoft.com/react-native/2025-05-09-office-modernize/)
+
+**[Comment Office modernise l'interface de sa suite d'applications avec Windows App SDK et React Native](https://devblogs.microsoft.com/react-native/2025-05-09-office-modernize/)**
+
+Chiara Mooney de Microsoft a décrit comment ils utilisent React Native pour implémenter les dernières fonctionnalités Copilot dans leur suite phare MS Office utilisée **par 600 millions de personnes**.
+
+Ils l'utilisent avec l'architecture en îlots, un modèle adopté dans l'écosystème frontend par des frameworks comme Astro.
+
+Intéressant de voir comment RN est utilisé au plus haut niveau entreprise sur des plateformes qui ne se limitent pas à Android ou iOS.
+
+---
+
+- 💸 [WithFrame - Modèles React Native pré-construits](https://withfra.me)
+- 🐦 [mrdoob - Question honnête, pourquoi utiliser Flutter plutôt que React Native ?](https://x.com/mrdoob/status/1920861880911884771) : Conversation élargissant les horizons entre développeurs React Native et Flutter initiée par le créateur de Three.js.
+- 🗓 [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025&utm_source=TWIRpartnership&utm_content=savethedate) - 🇵🇱 Wrocław - 2-4 septembre. Conférenciers vedettes annoncés ! Obtenez 10% de réduction avec le code "TWIR".
+- 📜 [Expo - Développement local plus rapide avec les fournisseurs de cache de build (expérimental)](https://expo.dev/blog/build-cache-providers-in-expo) : Utilisez le cache de build distant pour éviter de recompiler le même code et livrez plus rapidement.
+- 📜 [Cauchemar sur Apple Street](https://byk.im/posts/apple-code-signing-x-platform/) : Publier votre application sur l'App Store depuis Linux peut être un cauchemar. Avant de tenter l'expérience, découvrez les obstacles pour pousser une application iOS depuis une machine Linux.
+- 📦 [React Native 0.80 RC.1](https://github.com/facebook/react-native/releases/tag/v0.80.0-rc.1) : La prochaine version de React Native est en RC. Améliorations TypeScript avec la nouvelle [API stricte](https://github.com/react-native-community/discussions-and-proposals/blob/main/proposals/0894-deprecate-subpath-imports.md#parallel-effort-strict-typescript-api), support des dégradés radiaux, React 19.1.
+- 📦 [React Native Legal - Écrans de licence OSS sans configuration pour votre application](https://www.callstack.com/blog/react-native-legal-acknowledge-open-source-libraries-in-your-app) : L'équipe Callstack présente sa bibliothèque récente cross-platform sans configuration, qui gère pour vous la génération de métadonnées de licence et l'affichage in-app.
+- 📦 [Re.Pack 5.1 - Préchargement des remotes, hooks runtime et démarrages plus rapides](https://www.callstack.com/blog/new-in-re-pack-5-1) : Cette version se concentre principalement sur un meilleur support de Module Federation 2.
+- 📦 [TanStack Query 5.76 - DevTools pour Expo/React Native](https://github.com/TanStack/query/releases/tag/v5.76.0)
+- 📦 [Radon IDE 1.6 - Intégration du profileur React, points d'arrêt conditionnels et d'expression, Expo SDK 53](https://github.com/software-mansion/radon-ide/releases/tag/v1.6.0)
+- 📦 [React Native Skia 2.0 - React 19 et React Native 0.78 minimum requis](https://github.com/Shopify/react-native-skia/releases/tag/v2.0.0)
+- 📦 [Rive React Native 9.3 - Support du data binding, nouveau hook useRive(), chargement simplifié des fichiers .riv](https://github.com/rive-app/rive-react-native/releases/tag/v9.3.0)
+- 🎥 [Simon Grimm - Les applications React Native IA ne peuvent pas être plus simples (Expo & Vercel AI SDK)](https://www.youtube.com/watch?v=W9bbVJwCyqo)
+- 🎙️ [React Native Radio 331 - Nouvelle architecture, nouvelle ère avec Riccardo Cipolleschi](https://infinite.red/react-native-radio/rnr-331-new-architecture-new-era-with-riccardo-cipolleschi)
+- 🎙️ [Rocket Ship 68 - Points forts d'Expo SDK 53, IA React Native, Worklets et pas de commissions Apple App Store](https://podcast.galaxies.dev/episodes/068-expo-sdk-53-highlights-react-native-ai-worklets-no-apple-app-store-commissions)
+
+---
+
+## 🔀 Autre {#other}
+
+- 🎥 [Matt Pocock \- Arrays, objects... now `composites`?](https://www.youtube.com/watch?v=hFenspfGLTk): La passionnante proposition JS qui remplace les Records et Tuples.
+- 📜 [Introducing Rslib: Build library with Rspack](https://lib.rsbuild.dev/blog/introducing-rslib): Développée par l'équipe Web Infra de ByteDance, Rslib est une bibliothèque visant à devenir l'outil idéal pour le développement de bibliothèques, facile à configurer, offrant des fonctionnalités complètes, exploitant un écosystème partagé avec la création d'applications et priorisant la performance.
+- 📜 [shape(): A New Powerful Drawing Syntax in CSS](https://frontendmasters.com/blog/shape-a-new-powerful-drawing-syntax-in-css/): Une nouvelle fonction de clip-path est désormais prise en charge, vous permettant de découper vos éléments avec des formes arbitraires et réactives.
+- 📜 [The CSS Height Enigma](https://www.joshwcomeau.com/css/height-enigma/)
+- 📜 [How V8 JavaScript Engine Works Behind the Scenes](https://www.deepintodev.com/blog/how-v8-javascript-engine-works-behind-the-scenes)
+- 📜 [The Art of Accessibility](https://playfulprogramming.com/collections/art-of-accessibility)
+- 📜 [Making a new form control \- with Custom Elements](https://plainvanillaweb.com/blog/articles/2025-05-09-form-control/)
+- 📦 [Lightning CSS 1.30 \- Relative color spec, nesting spec for pseudo elements, build support on Android, and more](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.30.0)
+
+---
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/234/meme.png)](https://x.com/adamwathan/status/1922002165884682690)
+
+[![alt](/emails/issues/234/meme2.png)](https://x.com/Baconbrix/status/1922134704330854557)
+
+À bientôt ! 👋

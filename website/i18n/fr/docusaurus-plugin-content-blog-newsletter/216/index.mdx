@@ -1,0 +1,140 @@
+---
+slug: /216
+title: "This Week In React #216: Next.js, ViewTransition, RSC, Compiler, React Router, Recoil, Bippy, Docusaurus, A11y, Static Hermes, Nitro, Radon, SQLite, Edge-to-Edge, Node, TypeScript, pnpm, htmx..."
+authors: [matthieugicquel, cyrilbo]
+date: 01-08-2025
+---
+
+Bonjour à tous !
+
+Cyril et Matthieu des applications Theodo ici 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles de React et React Native !
+
+L'édition précédente était vendredi dernier, donc celle-ci sera un peu plus courte que d'habitude. Nous reprenons le rythme habituel d'une newsletter par semaine après les vacances.
+
+L'[édition 2024 de JS rising stars](https://risingstars.js.org/2024/en) est sortie, vous pouvez commencer par regarder quelles bibliothèques ont bien performé selon cette métrique imparfaite mais toujours utile des étoiles GitHub. Spoiler : `shadcn/ui` a gagné le plus d'étoiles (encore une fois). Sébastien a commenté la [section Tooling](https://risingstars.js.org/2024/en#section-build).
+
+Assurez-vous de consulter notre partenaire 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 février - La liste complète des intervenants vient d'être dévoilée ! Rejoignez Mateusz Burzyński, Elise Patrikainen et David Rousset ! Obtenez 20% de réduction sur les billets avec le code "TWIR" !
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![PropelAuth : Faites de l'authentification votre atout](/emails/issues/216/PropelAuth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)
+
+**[PropelAuth : Faites de l'authentification votre atout](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)**
+
+Si votre authentification ne vous **aide pas à grandir**, elle **vous retient**.
+
+Avec [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024), vous obtenez tout ce dont vous avez besoin pour lancer et développer votre produit B2B :
+
+- Une **documentation** [facile à comprendre](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024) et un **support amical et rapide**.
+- **Des interfaces utilisateur qui couvrent tous vos cas d'utilisation** - inscription, connexion, MFA, gestion des organisations et plus encore.
+- **L'usurpation d'utilisateur** pour que vous puissiez offrir un support de premier ordre à vos utilisateurs.
+- **SAML/SSO d'entreprise** et des **fonctionnalités de sécurité avancées** pour que vous soyez prêt pour le marché haut de gamme.
+- **Des insights utilisateurs** pour vous aider à élaborer des stratégies et à vous développer.
+
+[Commencez dès aujourd'hui](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)
+
+---
+
+## ⚛️ React {#react}
+
+[![Mise en cache composable avec Next.js](/emails/issues/216/nextjscache.jpg)](https://nextjs.org/blog/composable-caching)
+
+**[Mise en cache composable avec Next.js](https://nextjs.org/blog/composable-caching)**
+
+Explique ce que Next.js tente d'accomplir, et pourquoi `”use cache”` est une directive du compilateur et non une fonction (pour pouvoir analyser les fermetures et déterminer la bonne clé de cache).
+
+---
+
+[![PR React Core - Ajouter le composant `<ViewTransition>`](/emails/issues/216/viewTransitions.jpg)](https://github.com/facebook/react/pull/31975)
+
+**[PR React Core - Ajouter le composant `<ViewTransition>`](https://github.com/facebook/react/pull/31975)**
+
+React ajoute la prise en charge des transitions de vue avec un composant `<ViewTransition />` qui s'intègre à toutes les fonctionnalités asynchrones comme Suspense et `startTransition`.
+
+---
+
+- 💸 [daily.dev : Votre fil d'actualités dev personnel. Gratuit !](https://daily.dev/w/this-week-in-react)
+- 🐦 [Recoil (gestionnaire d'état par Meta) a été archivé](https://x.com/dai_shi/status/1875910305802514649)
+- 📜 [Pratiques de bundling pour RSC et Server Actions](https://github.com/orgs/web-infra-dev/discussions/23) : Un mainteneur de Rspack partage une plongée approfondie sur la mise en œuvre pratique des React Server Components par les bundlers, notamment webpack et Turbopack.
+- 📜 [Tests d'accessibilité automatisés chez Slack](https://slack.engineering/automated-accessibility-testing-at-slack/) : Ils ont tenté avec testing-library mais ont fini par utiliser Playwright.
+- 📜 [Réflexions sur les bibliothèques de gestion d'état à l'ère du compilateur React](https://blog.axlight.com/posts/thoughts-on-state-management-libraries-in-the-react-compiler-era/) : Le compilateur rend React Context bien plus attrayant. Sont-elles encore utiles ?
+- 📜 [Tous les types de gestion d'état dans React](https://www.typeonce.dev/article/all-kinds-of-state-management-in-react) : état d'URL, état serveur, état client...
+- 📜 [Tutoriel React Router 7](https://www.robinwieruch.de/react-router/) : Une série en 3 parties couvrant l'introduction, les routes descendantes et les paramètres de recherche.
+- 📜 [Fonctionnement interne du rendu, des effets et des refs dans React](https://tigerabrodi.blog/how-reacts-render-effects-and-refs-work-under-the-hood)
+- 📜 [Redux Saga est difficile jusqu'à ce que vous regardiez sous le capot](https://janhesters.com/blog/redux-saga-is-hard-until-you-look-under-the-hood)
+- 📦 [Bippy - Une boîte à outils pour hacker les internes de React](https://www.bippy.dev/) : C'est ce que [react-scan](https://github.com/aidenybai/react-scan) utilise sous le capot pour accéder à l'arbre Fiber.
+- 📦 [Docusaurus 3.7](https://docusaurus.io/blog/releases/3.7) ajoute le support de React 19 et un nouveau plugin svgr.
+- 📦 [React Admin 5.4 (et 5.3)](https://marmelab.com/blog/2025/01/08/react-admin-january-2025-update.html)
+- 🎥 [Cosden - La plus grosse erreur que font les développeurs React intermédiaires](https://www.youtube.com/watch?v=jqcbIgQBn34)
+- 🎥 [Alem Tuzlak - Les avantages méconnus de React Router V7](https://www.youtube.com/watch?v=EGuYKL8puRI)
+- 🎥 [Theo - Inertia 2.0 : C'est comme Next mais en mieux (et vous pouvez utiliser React !)](https://www.youtube.com/watch?v=OpXLWJd2iO0)
+- 🎙️ [Syntax.fm - Prédictions pour le développement web en 2025](https://syntax.fm/show/866/2025-web-development-predictions)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Repensez l'UX de vos applications React avec Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)
+
+**[Repensez l'UX de vos applications React avec Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**
+
+Reactile est un framework UI/UX clé en main proposant un affichage en tuiles intuitif avec espaces de travail prêt à l'emploi. Il encourage les charges de travail parallèles pour les solutions web complexes dans un seul onglet navigateur. Implémentez vos propres conteneurs de vue, widgets et logique en React et laissez Reactile gérer l'affichage.
+
+En plus, Reactile offre :
+
+- Un mécanisme de persistance basé sur les promesses permettant un workflow uniforme dans le temps et sur plusieurs appareils.
+- La possibilité d'utiliser des onglets imbriqués pour vos tuiles.
+- Un mécanisme de recherche globale simplifié.
+- Une réactivité basée sur CSS @container.
+- Et bien plus encore.
+
+La version 2 sort bientôt. Démarrez avec votre essai gratuit unique de 30 jours. En savoir plus sur reactile.net.
+
+[Reactile - Le nouveau système de gestion d'interface React](https://www.reactile.net/price?utm_source=ThisweekinReact)
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [PostHog - Comment configurer le replay de session React Native](https://dub.link/twir-jan8)
+- 🐦 [Nitro Views sera publié avec React Native 0.78](https://x.com/mrousavy/status/1876559810784833930)
+- 🐦 [Les outils de débogage réseau arriveront dans Radon IDE](https://x.com/kzzzf/status/1875211071231025353)
+- 👀 [PR React Native - Hermes statique pour React Native](https://github.com/facebook/react-native/pull/48531) : L'intégration de la nouvelle implémentation d'Hermes a commencé ! Les benchmarks initiaux montrent une amélioration de performance de plus de 30%, et ce n'est même pas encore avec du code typé ou JIT, ce qui devrait donner des gains encore plus significatifs.
+- 📖 [Vous pouvez mettre en évidence les re-rendus en direct dans React Native DevTools](https://reactnative.dev/docs/react-native-devtools#react-components)
+- 📜 [SQLite moderne pour les apps React Native - Configuration de DrizzleORM avec expo-sqlite, requêtes type-safe, requêtes live, migrations, plugin Drizzle Studio Expo Dev Tool.](https://expo.dev/blog/modern-sqlite-for-react-native-apps)
+- 📦 [React Native 0.77.0-rc.6](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.6) est la version candidate finale et une release stable est prévue pour la semaine prochaine.
+- 📦 [React Native Edge to Edge 1.2](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.2.0) ajoute le support des variantes de thème clair sur Android.
+- 🎥 [React Universe On Air 45 - Evan Bacon sur les apps React Native universelles, DOM & React Server Components](https://www.youtube.com/watch?v=rA7E3rGKSZw)
+
+---
+
+## 🔀 Autres {#other}
+
+- 📜 [Frameworks JavaScript - Tendances pour 2025](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2025-hkb)
+- 📜 [Le futur d'htmx](https://htmx.org/essays/future/) : (presque) pas de nouvelles fonctionnalités
+- 📜 [Nouveautés HTML à connaître pour 2025](https://frontendmasters.com/blog/bone-up-html-2025/)
+- 📜 [Tester l'accessibilité avec les lecteurs d'écran](https://www.epicweb.dev/testing-accessibility-with-screen-readers)
+- 📜 [Équilibrer le texte en CSS](https://ishadeed.com/article/balancing-text-css/)
+- 📜 [Utiliser les reflows forcés, la boucle d'événements et le cycle de repaint pour ouvrir une boîte](https://macarthur.me/posts/box/)
+- 📜 [Le nouveau support natif de TypeScript dans Node](https://2ality.com/2025/01/nodejs-strip-type.html)
+- 📦 [Node 23.6](https://nodejs.org/en/blog/release/v23.6.0) avec le stripping des types TS, et [Node 22.13 (LTS)](https://nodejs.org/en/blog/release/v22.13.0) avec un modèle de sécurité stable.
+- 📦 [pnpm 10.0 - Sécurité renforcée, `onlyBuiltDependencies`](https://github.com/pnpm/pnpm/releases/tag/v10.0.0)
+- 📦 [Prisma 6.2 - omit, champs json/enum SQLite](https://github.com/prisma/prisma/releases/tag/6.2.0)
+
+---
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/216/meme.jpg)](https://x.com/jordwalke/status/1875336115009573268)
+
+À plus ! 👋

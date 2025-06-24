@@ -1,0 +1,72 @@
+{
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "folder_patterns": [
+    {
+      "source_dir_relative_to_docusaurus_root": "articles",
+      "target_i18n_subpath": "docusaurus-plugin-content-blog-articles",
+      "original_agent_pattern": {
+        "type": "blog",
+        "source_path": "articles",
+        "plugin_id": "articles",
+        "is_versioned": null,
+        "description": "Blog content for the 'articles' instance, configured via a 'content-blog' plugin."
+      },
+      "type": "blog-articles",
+      "description": "Blog content for the 'articles' instance, configured via a 'content-blog' plugin.",
+      "ignore_patterns": null
+    },
+    {
+      "source_dir_relative_to_docusaurus_root": "newsletter",
+      "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter",
+      "original_agent_pattern": {
+        "type": "blog",
+        "source_path": "newsletter",
+        "plugin_id": "newsletter",
+        "is_versioned": null,
+        "description": "Blog content for the 'newsletter' instance, configured via a 'content-blog' plugin."
+      },
+      "type": "blog-newsletter",
+      "description": "Blog content for the 'newsletter' instance, configured via a 'content-blog' plugin.",
+      "ignore_patterns": null
+    },
+    {
+      "source_dir_relative_to_docusaurus_root": "src/pages",
+      "target_i18n_subpath": "docusaurus-plugin-content-pages",
+      "original_agent_pattern": {
+        "type": "pages",
+        "source_path": "src/pages",
+        "plugin_id": "default",
+        "is_versioned": null,
+        "description": "Standalone pages located in the 'src/pages' directory."
+      },
+      "type": "pages",
+      "description": "Standalone pages located in the 'src/pages' directory.",
+      "ignore_patterns": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx"
+      ]
+    },
+    {
+      "source_dir_relative_to_docusaurus_root": "i18n/en",
+      "target_i18n_subpath": "",
+      "original_agent_pattern": {
+        "type": "json_translations",
+        "source_path": "i18n/en",
+        "plugin_id": "default",
+        "is_versioned": null,
+        "description": "JSON translation files for UI elements, based on the default locale 'en'."
+      },
+      "type": "json_translations",
+      "description": "JSON translation files for UI elements, based on the default locale 'en'.",
+      "ignore_patterns": null
+    }
+  ],
+  "docusaurus_root_dir_relative_to_repo": "website",
+  "docusaurus_config_filepath_relative_to_repo": "website/docusaurus.config.ts",
+  "source_language": "en"
+}

@@ -1,0 +1,171 @@
+---
+slug: /120
+title: "This Week In React #120: use RFC, Sandpack, Progressive enhancement, Streaming, Storybook, React-Native, Codeflow, Fontaine, Unplugin, Node.js 19, TypeRunner..."
+authors: [slorber]
+date: 10-18-2022
+---
+
+Bonjour à tous !
+
+La newsletter est en retard : un nouveau RFC React m'a donné beaucoup de lecture 😄 L'article de Kent C. Dodds est aussi assez long mais en vaut la peine. Nous avons deux articles mettant en avant Sandpack en deux semaines, ça vaut probablement le coup d'œil !
+
+Ça avance bien aussi du côté du cœur de React-Native, avec de nouvelles discussions ouvertes. On pourrait même penser qu'après la migration vers la nouvelle architecture et la stabilisation des API publiques, il pourrait y avoir une version 1.0 ? Cela importe peu en pratique, mais certains tiennent apparemment beaucoup à avoir une version majeure.
+
+Il y a aussi pas mal de nouveautés intéressantes dans l'écosystème frontend. Je suis particulièrement intéressé par Codeflow, Fontaine et Unplugin qui pourraient concerner directement Docusaurus.
+
+En parlant de Docusaurus, j'ai été invité à en parler dans le [podcast Changelog JS Party](https://changelog.com/jsparty/247).
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Sizzy - le navigateur pour développeurs](/emails/issues/120/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact)
+
+Comment se fait-il que les professionnels de tous les autres secteurs disposent d'outils spécialisés, alors que les développeurs web sont encore coincés avec le navigateur que leur grand-mère utilise pour faire ses courses sur Amazon ?
+
+Si vous ouvrez localhost:3000 dans un autre navigateur que Sizzy, vous gaspillez des heures de votre temps précieux.
+
+**Avant Sizzy :** le développement web vous stresse, le responsive design est difficile, vous avez une quantité écrasante d'onglets et d'applications ouverts.
+
+**Après Sizzy :** tous les outils dont vous avez besoin sont au même endroit, le responsive design est un jeu d'enfant, plus de changement de contexte.
+
+Vous pouvez le [télécharger ici](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact) et l'essayer gratuitement pendant 14 jours !
+
+---
+
+## ⚛️ React {#react}
+
+**[RFC React : Support de première classe pour les promesses et async/await](https://github.com/reactjs/rfcs/pull/229)**
+
+L'équipe React a décidé de revenir à un modèle `async/await` pour simplifier l'utilisation des Server Components. Problème : il est difficile de supporter `async/await` sur les Client Components. Ils proposent donc d'introduire une API `use(promise)` côté client. Contrairement aux autres hooks, `use` peut être appelé conditionnellement. Plus tard, il pourrait être utilisé avec d'autres "utilisables" comme le contexte React (en réalité, on peut déjà [utiliser `useContext` conditionnellement !](https://twitter.com/acdlite/status/1581401077915975680)). L'utilisation d'API différentes peut aussi être vue comme une fonctionnalité : cela permet de distinguer les Server Components des Client Components.
+
+Ce RFC donne lieu à des débats intéressants. On se demande à quoi ressemblera l'intégration avec les bibliothèques de récupération de données. L'utilisation de générateurs semble adaptée à ce cas, mais ils sont difficiles à utiliser en pratique. Nous attendons un nouveau RFC qui présentera une API de cache.
+
+**[La prochaine transition du Web](https://www.epicweb.dev/the-webs-next-transition)**
+
+Kent C. Dodds propose une belle rétrospective des 3 principales architectures web, très bien illustrée et documentée. Il met en lumière la dernière architecture, la tendance du moment : Progressively Enhanced Single-Page-Application. Remix en est une implémentation, avec des abstractions bien pensées qui encouragent à reproduire le comportement natif du navigateur. Je ne suis pas tout à fait d'accord sur la nécessité absolue d'un serveur. [Docusaurus](https://github.com/facebook/docusaurus) est également une implémentation PESPA qui fonctionne bien sans JavaScript.
+
+**[Une aire de jeux de code de classe mondiale avec Sandpack](https://www.joshwcomeau.com/react/next-level-playground/)**
+
+Josh Comeau vante [Sandpack](https://github.com/codesandbox/sandpack), la boîte à outils CodeSandbox qu'il utilise pour créer des aires de jeux de code interactives. Cela semble facile à utiliser et très flexible !
+
+- 📜 [Streaming: is it worth it?](https://www.builder.io/blog/streaming-is-it-worth-it) : les auteurs de Qwik, Solid et Marko expliquent les avantages du streaming, et pourquoi il est difficile d'adopter cette technique. Dans un contexte React, les bibliothèques utilisées (Helmet, CSS-in-JS, Redux...) doivent être compatibles pour que le streaming soit efficace.
+- 📜 [Storybook - First-class Vite support](https://storybook.js.org/blog/first-class-vite-support-in-storybook/) : la version 7.0 sera bientôt en bêta : support de Vite sans configuration, pré-bundling, plus besoin de Webpack, support de nouveaux frameworks comme Vue 2, Lit et Svelte...
+- 📜 [Moving From React to htmx](https://htmx.org/essays/a-real-world-react-to-htmx-port/) : retour d'expérience (article + vidéo) sur une migration réussie de React vers [htmx](https://htmx.org/). On est dans un contexte backend Python, leurs conclusions seraient probablement différentes dans un contexte JavaScript où tous les devs sont full-stack. Le dev JS a fait le POC et a perdu son emploi par la suite 😅.
+- 📜 [Prioritise content over components](https://www.simeongriggs.dev/components-considered-harmful-for-content) : idées intéressantes sur la conception de composants React selon différentes perspectives : designer, développeur et auteur de contenu (CMS)
+- 📜 [A little semantic HTML trick for React components](https://queen.raae.codes/emails/2022-10-10-semantic-react/) : explique comment respecter la sémantique HTML en passant l'élément DOM à créer dans les props.
+- 📜 [Using Web Components With Next (or Any SSR Framework)](https://css-tricks.com/using-web-components-with-next-or-any-ssr-framework/)
+- 📜 [Exploring how virtual DOM is implemented in React](https://indepth.dev/posts/1501/exploring-how-virtual-dom-is-implemented-in-react)
+- 📜 [Lazy-load React components in Remix](https://sergiodxa.com/articles/lazy-load-react-components-in-remix)
+- 🐦 [React tip: isFocused should almost never be a prop](https://twitter.com/DavidKPiano/status/1580179833052876800)
+- 🚧 [Streaming SSR in Preact prototype](https://twitter.com/marvinhagemeist/status/1581762567328104448)
+- 🧑‍🎓 [Create a 3D site with Game Controls in Spline and React](https://designcode.io/spline2) ([video](https://www.youtube.com/watch?v=uYp_ipIasYE))
+- 🎨 [Satori + React-Three-Fiber demo](https://twitter.com/0xca0a/status/1581751380339232768)
+- 🎨 [Satori + SVG code syntax highlighting demo](https://twitter.com/shuding_/status/1581358324569645056)
+- 🎙️ [Docusaurus 2 is a pretty big deal](https://changelog.com/jsparty/247)
+- 🎥 [In Defense of useEffect](https://www.youtube.com/watch?v=Zw4lJqBphvA)
+- 🎥 [Making React Context Fast!](https://www.youtube.com/watch?v=ZKlXqrcBx88)
+- 📦 [Planby - React.js based component for schedules and timelines](https://planby.netlify.app/)
+- 📦 [Gatsby v5 beta](https://twitter.com/GatsbyJS/status/1580288285229735936)
+- 📦 [Astro 1.5](https://twitter.com/astrodotbuild/status/1580611193429168129)
+- 📦 [SWR 2.0 RC](https://github.com/vercel/swr/releases/tag/2.0.0-rc.0)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Chain React - La conférence américaine React Native - 17-19 mai 2023 Portland Oregon](/emails/issues/120/chainreact.jpg)](https://cr.infinite.red/?utm_source=react_hebdo)
+
+**[Chain React - La conférence américaine React Native - 17-19 mai 2023 Portland Oregon](https://cr.infinite.red/?utm_source=react_hebdo)**
+
+Chain React revient pour la 4ème édition annuelle de la conférence phare React Native en mai 2023. Les meilleurs esprits, entreprises et partenaires que vous ne voudrez pas manquer.
+
+- **Ateliers | 17 mai 2023** - Trois ateliers passionnants pour tous niveaux ! Ces sessions exclusives se tiendront le 17 mai à l'hôtel officiel des intervenants. Vous y apprendrez, échangerez et bénéficierez d'un accès direct aux experts.
+
+- **Conférence | 18-19 mai 2023** - Notre événement principal ! C'est ici que les entreprises annoncent des nouveautés majeures, que les développeurs partagent leurs secrets et que des amitiés durables se créent. La conférence principale n'est jamais diffusée en direct.
+
+---
+
+## 📱 React-Native {#react-native}
+
+**[2022 : Comment pouvons-nous améliorer React Native ?](https://github.com/react-native-community/discussions-and-proposals/discussions/528)**
+
+L'équipe React Native souhaite recueillir des retours sur les améliorations nécessaires. Points mentionnés : support CSS (Yoga, gap, grid, ombres...), support multiplateforme, mises à niveau, débogage, clavier, liens symboliques Metro...
+
+- 💬 [Restructuration de l'API publique de React Native](https://github.com/react-native-community/discussions-and-proposals/discussions/523)
+- 📜 [Configurer un monorepo React Native avec Yarn Workspaces](https://www.callstack.com/blog/setting-up-react-native-monorepo-with-yarn-workspaces)
+- 📜 [Utiliser Module Federation avec Re.Pack 3](https://www.callstack.com/blog/module-federation-with-re-pack-3)
+- 🚧 [Expo Router 0.0.27](https://twitter.com/Baconbrix/status/1579912795323215872) + [RFC sur les changements d'API Layout](https://twitter.com/Baconbrix/status/1582057133939384321)
+- 🚧 [React-Native Bottom Sheet v5 aura un support web](https://twitter.com/gorhom/status/1581334529121218561)
+- 🚧 [Support Flex gap dans React Native à venir ?](https://twitter.com/Baconbrix/status/1580587087174062080)
+- 📖 [Améliorations de la documentation Expo](https://twitter.com/amanhimself/status/1580615698321399811) : "Les tests E2E sur EAS Build fonctionnent maintenant sur Android"
+- 📦 [Metro 0.73.0](https://github.com/facebook/metro/releases/tag/v0.73.0)
+- 📦 [React-Native 0.70.3](https://twitter.com/Kelset/status/1580210635266084864)
+- 🎥 [Animation de carte retournable avec React-Native Re-Animated 2](https://www.youtube.com/watch?v=nVsvcu93488)
+- 🎙️ [React-Native-Radio 248 - Présentation d'Ignite v8 : Maverick !](https://reactnativeradio.com/episodes/rnr-248-introducing-ignite-v8-maverick)
+
+---
+
+## 🧑‍💻 Emplois {#jobs}
+
+🧑‍💼 [**Ingénieur Produit chez Causal, Remote/Londres/NY, 150-250k$**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal est une startup Série A (soutenue par Coatue/Accel) construisant un outil tout-en-un pour manipuler des nombres et visualiser des données. Nous recherchons des ingénieurs React expérimentés capables de résoudre des défis UX/performance complexes.
+
+🧑‍💼 [**G2i - Emplois React Native 100% Remote**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k$ plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.
+
+💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 Autres sujets {#other}
+
+**[StackBlitz Codeflow](https://stackblitz.com/codeflow)**
+
+La technologie [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/) de StackBlitz permet d'exécuter Node.js dans le navigateur via WebAssembly. Vous pouvez exécuter VS Code, Next.js ou Docusaurus directement dans votre navigateur, sans passer par un conteneur Docker distant. Codeflow ajoute une couche d'intégration complète avec GitHub qui facilite l'ouverture, la revue ou l'édition d'une pull-request en l'exécutant localement de manière sécurisée : extrêmement utile pour les projets open-source.
+
+Ils ont également lancé Web Publisher, une interface d'édition simplifiée pour les fichiers Markdown (éditeur, prévisualisation, bouton d'enregistrement). Très pratique pour contribuer à la documentation sur Git, même pour les utilisateurs moins techniques. Il y a une véritable prévisualisation du contenu, et non l'expérience dégradée de la prévisualisation Markdown de GitHub. Cela répond à un [besoin important pour les utilisateurs de Docusaurus](https://twitter.com/ericsimons40/status/1580371754974781440).
+
+**[Fontaine - Fallback de police automatique basé sur les métriques de police](https://github.com/unjs/fontaine)**
+
+Permet d'éviter les décalages de mise en page lors du chargement d'une police personnalisée. Rend la police de fallback de même taille que la police finale, pour que la transition soit fluide et n'affecte pas la taille des conteneurs de texte. Excellente idée !
+
+- [Node.js 19](https://twitter.com/nodejs/status/1582401871179747329)
+- [Node 18.11](https://nodejs.org/en/blog/release/v18.11.0/) : ajoute un nouveau mode `--watch` et [quelques autres fonctionnalités intéressantes](https://twitter.com/matteocollina/status/1580911016506163202)
+- [Unplugin - Système de plugins unifié pour Vite, Rollup, Webpack et plus](https://github.com/unjs/unplugin) : créer des plugins agnostiques fonctionnant sur tous les bundlers !
+- [CSS - Aidez à choisir une syntaxe pour l'imbrication - Résultats du sondage](https://developer.chrome.com/blog/help-css-nesting-results/)
+- [Mise à jour sur le portage de mon tsc](https://kdy1.dev/posts/2022/10/tsc-port-status) + [Dépôt public du vérificateur de types TypeScript rapide](https://twitter.com/kdy1dev/status/1582174891230760960)
+- [TypeRunner - Compilateur TypeScript haute performance](https://github.com/marcj/TypeRunner)
+- [Lerna renaît - Quoi de neuf dans la v6 ?](https://blog.nrwl.io/lerna-reborn-whats-new-in-v6-10aec6e9091c)
+- [Quoi de neuf dans Nx 15 ?](https://blog.nrwl.io/whats-new-in-nx-15-7e14e1ff282d)
+- [JetBrains Fleet - Préversion publique](https://blog.jetbrains.com/fleet/2022/10/introducing-the-fleet-public-preview/)
+- [Les import maps bientôt disponibles dans tous les navigateurs](https://twitter.com/sebastienlorber/status/1582024272788480000)
+- [Conférence de Bun à la ViteConf](https://twitter.com/jarredsumner/status/1581427214691708929)
+- [rRPC-chrome - Adaptateur tRPC pour les extensions Web](https://github.com/jlalmes/trpc-chrome)
+- [Qu'est-ce que pnpm ? Est-ce vraiment si rapide et économe en espace ?](https://dev.to/stackblitz/what-is-pnpm-and-is-it-really-so-fast-and-space-efficient-29la)
+- [Intl Explorer - Outil pour expérimenter avec l'API d'internationalisation ECMAScript](https://www.intl-explorer.com/)
+- [Pourquoi nous utilisons Babylon.js au lieu de Three.js en 2022](https://www.spotvirtual.com/blog/why-we-use-babylonjs-instead-of-threejs-in-2022)
+- [Comment Vite est né - Diapositives de la ViteConf 2022](https://docs.google.com/presentation/d/1O09rAOu_wRLHVjukVbBeSlRkLeX-dcYZfsdjPiU4kGQ/edit#slide=id.p)
+- [Rollup v3](https://github.com/rollup/rollup/releases/tag/v3.0.0)
+- [Jest 29.2](https://github.com/facebook/jest/releases/tag/v29.2.0)
+- [Obsidian 1.0](https://obsidian.md/1.0)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![Mème - Quand une règle ESLint est un avertissement plutôt qu'une erreur. - oh non - bref (tout le monde s'en fiche)](/emails/issues/120/meme.png)](https://twitter.com/markdalgleish/status/1580827326799310848)

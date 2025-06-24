@@ -1,0 +1,673 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/154/index.mdx",
+  "source_file_content_hash": "8f2b974291851535d208930237c31496a0ae6463a2686213e8798e80591296ae",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /154\ntitle: \"This Week In React #154: Server Components, Remix, Next.js, Redwood, Million, Lucia, ElementRef, Partially Controlled, SVG Sprites, NextUI, Storybook, Hermes, require.context...\"\nauthors: [slorber]\ndate: 08-01-2023\nimage: /img/TWIR_POST.png\n---",
+      "source_content_hash": "fe0a391be6f27f49bd0e8742c111520e497862a049ce333935b0582dc6cf2b48",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8ac585fb",
+      "source_content": "Once again this week, we've got some great React articles, especially on Server Components!",
+      "source_content_hash": "ce8eebc9a9f350dfc0c4121b801e5ef4cf674b6b3ad955d351f9473c8cb2b8e0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Encore une fois cette semaine, nous avons d'excellents articles sur React, notamment sur les Server Components !",
+        "en": "Encore une fois cette semaine, nous avons d'excellents articles sur React, notamment sur les Server Components !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "Last week, I asked whether you preferred direct links or links to Twitter. Your answer was unanimous: **direct links**. On top of that, the Twitter/X experience has been degraded for anonymous users who can no longer see the discussions. So I'll try to avoid Twitter links, with a few exceptions for which I'll use the 🐦 emoji.",
+      "source_content_hash": "20dd6f272243c6a8d34969c3a3c068a1be23cac827b6c1b8a51b9a3d26911a36",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La semaine dernière, je vous ai demandé si vous préfériez les liens directs ou les liens vers Twitter. Votre réponse a été unanime : **les liens directs**. En plus de cela, l'expérience Twitter/X s'est dégradée pour les utilisateurs anonymes qui ne peuvent plus voir les discussions. Je vais donc essayer d'éviter les liens Twitter, avec quelques exceptions pour lesquelles j'utiliserai l'emoji 🐦.",
+        "en": "La semaine dernière, je vous ai demandé si vous préfériez des liens directs ou des liens vers Twitter. Votre réponse a été unanime : **des liens directs**. En plus de cela, l'expérience Twitter/X s'est dégradée pour les utilisateurs anonymes qui ne peuvent plus voir les discussions. J'essaierai donc d'éviter les liens Twitter, avec quelques exceptions pour lesquelles j'utiliserai l'emoji 🐦."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "28a64196",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_28a64196",
+        "en": "@@untranslatable_placeholder_28a64196"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ade2cf6a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0271a665",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_0271a665",
+        "en": "@@untranslatable_placeholder_0271a665"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b7a64917",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_b7a64917",
+        "en": "@@untranslatable_placeholder_b7a64917"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eaf571f0",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Commanditaire {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)",
+      "source_content_hash": "7903a362c22115134a45f2f385a44ccaa3b70d0b9502be736c51dcdcde1704ce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)",
+        "en": "[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "**[Enterprise UI Development (With React): Testing & Code Quality](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**",
+      "source_content_hash": "ebcb74ca66469ab981d9f337dc249ddd7dea364c157b06465ebd873507ed93ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Développement d'interface utilisateur d'entreprise (avec React) : Tests et qualité du code](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**",
+        "en": "**[Développement d'UI d'entreprise (avec React) : Tests et qualité du code](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "Managing or migrating large apps and codebases? This video course covers what you need to know to scale efficiently whilst maintaining code quality. Covers unit testing, CI pipelines, mocking, code coverage, and more.",
+      "source_content_hash": "34571df72e771004268e4090d9f668c8c0a06c7474381d884b76a207e02360a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous gérez ou migrez des applications et des bases de code volumineuses ? Ce cours vidéo couvre ce que vous devez savoir pour évoluer efficacement tout en maintenant la qualité du code. Aborde les tests unitaires, les pipelines d'intégration continue, le mocking, la couverture de code, et plus encore.",
+        "en": "Vous gérez ou migrez de grandes applications et bases de code ? Ce cours vidéo couvre ce que vous devez savoir pour évoluer efficacement tout en maintenant la qualité du code. Aborde les tests unitaires, les pipelines d'intégration continue, le mocking, la couverture de code, et plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "102e731c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3b7478ea",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "[![Understanding React Server Components](/emails/issues/154/understandingrsc.jpg)](https://vercel.com/blog/understanding-react-server-components)",
+      "source_content_hash": "cd8166bb0f3354f908eb2cddf92d50d953e47026955aa746cbd9db86d99c9530",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Comprendre les React Server Components](/emails/issues/154/understandingrsc.jpg)](https://vercel.com/blog/understanding-react-server-components)",
+        "en": "[![Comprendre les React Server Components](/emails/issues/154/understandingrsc.jpg)](https://vercel.com/blog/understanding-react-server-components)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "[**Understanding React Server Components**](https://vercel.com/blog/understanding-react-server-components)",
+      "source_content_hash": "6c9d2757ec17d04239a3ee29de68fda45335251ef63b0f1d2911410261a73c0d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Comprendre les React Server Components**](https://vercel.com/blog/understanding-react-server-components)",
+        "en": "[**Comprendre les React Server Components**](https://vercel.com/blog/understanding-react-server-components)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "New Vercel article that gives a good overview of React Server Components, their implementation in Next.js, why they exist, when to use them and their limitations. Also covers various related topics: Server Actions, code-splitting, caching, suspense, selective hydration...",
+      "source_content_hash": "3efb376689c4c830767159cbda8058da36dfb67d979e1082811821f9def32ef9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nouvel article de Vercel qui donne une bonne vue d'ensemble des composants serveur React, leur implémentation dans Next.js, pourquoi ils existent, quand les utiliser et leurs limites. Aborde également divers sujets connexes : Server Actions, code-splitting, mise en cache, suspense, hydratation sélective...",
+        "en": "Nouvel article de Vercel qui donne un bon aperçu des React Server Components, leur implémentation dans Next.js, pourquoi ils existent, quand les utiliser et leurs limites. Couvre également divers sujets connexes : les Server Actions, le code-splitting, le caching, le suspense, l'hydratation sélective..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39993511",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![Everything I wish I knew before moving 50,000 lines of code to React Server Components](/emails/issues/154/everythingrsc.jpg)](https://www.mux.com/blog/what-are-react-server-components)",
+      "source_content_hash": "24986c62e9b8f2de41a8428cad342eccb17a45214c645bd40a01dbf7446820da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Tout ce que j'aurais aimé savoir avant de migrer 50 000 lignes de code vers les React Server Components](/emails/issues/154/everythingrsc.jpg)](https://www.mux.com/blog/what-are-react-server-components)",
+        "en": "[![Tout ce que j'aurais aimé savoir avant de migrer 50 000 lignes de code vers les React Server Components](/emails/issues/154/everythingrsc.jpg)](https://www.mux.com/blog/what-are-react-server-components)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "[**Everything I wish I knew before moving 50,000 lines of code to React Server Components**](https://www.mux.com/blog/what-are-react-server-components)",
+      "source_content_hash": "36e437675329295ae5f92e65048f623192471b2cad45f998eda09333a648f6bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Tout ce que j'aurais aimé savoir avant de migrer 50 000 lignes de code vers les React Server Components**](https://www.mux.com/blog/what-are-react-server-components)",
+        "en": "[**Tout ce que j'aurais aimé savoir avant de migrer 50 000 lignes de code vers les React Server Components**](https://www.mux.com/blog/what-are-react-server-components)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "Awesome article on RSCs! Feedback that details the 3 main challenges encountered during the adoption at Mux: no CSS-in-JS, no React Context, and additional complexity. Also provides answers to many questions and a strategy for adopting RSCs incrementally.",
+      "source_content_hash": "9211d06438376a0c158e2914173284a55c401b6718936c6470b3ce5154cf73f7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Super article sur les RSCs ! Retour d'expérience qui détaille les 3 principaux défis rencontrés lors de l'adoption chez Mux : pas de CSS-in-JS, pas de React Context, et une complexité supplémentaire. Fournit également des réponses à de nombreuses questions et une stratégie pour adopter les RSCs de manière incrémentale.",
+        "en": "Superbe article sur les RSC ! Retour d'expérience détaillant les 3 principaux défis rencontrés lors de l'adoption chez Mux : pas de CSS-in-JS, pas de React Context, et une complexité supplémentaire. Apporte également des réponses à de nombreuses questions et une stratégie pour adopter les RSC progressivement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f01394b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c94a9c0e",
+      "source_content": "- 👀 [React Working Group - List of libraries that support React Server Components](https://github.com/reactwg/server-components/discussions/6)\n- 🐦 [React devs, it's time to start using `Array.prototype.with()`](https://twitter.com/sebastienlorber/status/1686059338647957509)\n- 📜 [Speeding up the dbt™ docs by 20x with React Server Components](https://dagster.io/blog/dbt-docs-on-react): feedback on a POC migration of an Angular 1 app to Next.js App Router and React Server Components. Very significant gains reported in terms of loading time, memory consumption, CPU blocking.\n- 📜 [Shopify’s platform is the Web platform](https://shopify.engineering/shopifys-platform-is-the-web-platform): Shopify now recommends Remix for creating \"Admin Apps\", which run in an iframe and communicate with the parent app via an \"App Bridge\" based on `postMessage()`. An interesting frontend/React architecture for those building a platform that need decoupling.\n- 📜 [Partially Controlled Components: A Declarative Design Pattern in React](https://www.jameskerr.blog/posts/partially-controlled-react-components/): introduces a new term/concept to describe components capable of offering both controlled/uncontrolled state on demand, with granularity applicable to the whole state, or a slice of it.\n- 📜 [Use svg sprite icons in React](https://www.jacobparis.com/content/svg-icons): explains how to use SVG sprites (more optimised than React SVG components) in a Remix context with a codegen step.\n- 📜 [Strongly Type useRef with ElementRef](https://www.totaltypescript.com/strongly-type-useref-with-elementref): TIL about the `ElementRef` TypeScript type, which is used to obtain the type of a React ref from any component, quite similarly to how `ComponentProps` works.\n- 📜 [10 Essential React Performance Optimization Techniques for Faster Web Applications](https://techreactlearning.blogspot.com/2023/07/10-essential-react-performance.html)\n- 📜 [Remix Error Handling Essentials](https://otiv.dev/blog/essential-remix-error-handling)\n- 📦 [Lucia v2.0](https://lucia-auth.com/blog/lucia-2): Lucia is a TypeScript authentication library gaining momentum recently. Including Next.js and Remix integrations.\n- 📦 [Million.js Automatic Mode beta](https://million.dev/docs/automatic): now analyses your React code and automatically optimises it with Million.js!\n- 📦 [Redwood v6](https://github.com/redwoodjs/redwood/releases/tag/v6.0.0): new stable release with Vite, Prisma 5, Storybook 7, Suspense Router... Prepares the ground for the introduction of streaming support and React Server components.\n- 📦 [NextUI Version 2.0](https://nextui.org/blog/nextui-v2)\n- 📦 [Joi UI beta - design-agnostic lib from the MUI team](https://mui.com/joy-ui/getting-started/)\n- 📦 [Storybook 7.2](https://storybook.js.org/blog/july-2023-update/)\n- 📦 [Auto-Form - Automatically creates a @shadcn/ui form based on a zod schema](https://github.com/vantezzen/auto-form)\n- 📦 [Framer Motion 10.5 - inView API](https://www.framer.com/motion/in-view/)\n- 📦 [Zustand 4.4](https://github.com/pmndrs/zustand/releases/tag/v4.4.0)\n- 🎥 [Must Know App Router Secret: Promises For Props](https://www.youtube.com/watch?v=ViVa5JPGrf4)\n- 🎙️ [This Month in React – July 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--July-2023-e27ijk5)",
+      "source_content_hash": "57e820414c45bf856e0ce955328af55a46f92de1b1377b4af8f697c296e94d92",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Groupe de travail React - Liste des bibliothèques prenant en charge les composants serveur React](https://github.com/reactwg/server-components/discussions/6)\n- 🐦 [Développeurs React, il est temps d'utiliser `Array.prototype.with()`](https://twitter.com/sebastienlorber/status/1686059338647957509)\n- 📜 [Accélération de la documentation dbt™ par 20x avec les composants serveur React](https://dagster.io/blog/dbt-docs-on-react) : retour d'expérience sur une migration POC d'une application Angular 1 vers Next.js App Router et les composants serveur React. Des gains très significatifs sont rapportés en termes de temps de chargement, consommation mémoire et blocage CPU.\n- 📜 [La plateforme de Shopify est la plateforme Web](https://shopify.engineering/shopifys-platform-is-the-web-platform) : Shopify recommande désormais Remix pour créer des \"Admin Apps\", qui s'exécutent dans une iframe et communiquent avec l'application parente via un \"App Bridge\" basé sur `postMessage()`. Une architecture frontend/React intéressante pour ceux qui construisent une plateforme nécessitant un découplage.\n- 📜 [Composants partiellement contrôlés : un modèle de conception déclaratif dans React](https://www.jameskerr.blog/posts/partially-controlled-react-components/) : introduit un nouveau terme/concept pour décrire des composants capables d'offrir à la fois un état contrôlé/non contrôlé à la demande, avec une granularité applicable à l'état entier ou à une partie de celui-ci.\n- 📜 [Utiliser des icônes SVG en sprite dans React](https://www.jacobparis.com/content/svg-icons) : explique comment utiliser des sprites SVG (plus optimisés que les composants SVG React) dans un contexte Remix avec une étape de génération de code.\n- 📜 [Typer fortement useRef avec ElementRef](https://www.totaltypescript.com/strongly-type-useref-with-elementref) : Aujourd'hui, j'ai appris (TIL) le type TypeScript `ElementRef`, qui est utilisé pour obtenir le type d'une référence React de n'importe quel composant, de manière similaire à `ComponentProps`.\n- 📜 [10 techniques essentielles d'optimisation des performances React pour des applications Web plus rapides](https://techreactlearning.blogspot.com/2023/07/10-essential-react-performance.html)\n- 📜 [Les bases de la gestion des erreurs dans Remix](https://otiv.dev/blog/essential-remix-error-handling)\n- 📦 [Lucia v2.0](https://lucia-auth.com/blog/lucia-2) : Lucia est une bibliothèque d'authentification TypeScript qui gagne du terrain récemment. Inclut des intégrations avec Next.js et Remix.\n- 📦 [Mode automatique de Million.js en bêta](https://million.dev/docs/automatic) : analyse désormais votre code React et l'optimise automatiquement avec Million.js !\n- 📦 [Redwood v6](https://github.com/redwoodjs/redwood/releases/tag/v6.0.0) : nouvelle version stable avec Vite, Prisma 5, Storybook 7, Suspense Router... Prépare le terrain pour l'introduction du streaming et des composants serveur React.\n- 📦 [NextUI Version 2.0](https://nextui.org/blog/nextui-v2)\n- 📦 [Joi UI bêta - bibliothèque indépendante de la conception de l'équipe MUI](https://mui.com/joy-ui/getting-started/)\n- 📦 [Storybook 7.2](https://storybook.js.org/blog/july-2023-update/)\n- 📦 [Auto-Form - Crée automatiquement un formulaire @shadcn/ui basé sur un schéma zod](https://github.com/vantezzen/auto-form)\n- 📦 [Framer Motion 10.5 - API inView](https://www.framer.com/motion/in-view/)\n- 📦 [Zustand 4.4](https://github.com/pmndrs/zustand/releases/tag/v4.4.0)\n- 🎥 [Secret du routeur d'applications à connaître : les promesses pour les props](https://www.youtube.com/watch?v=ViVa5JPGrf4)\n- 🎙️ [Ce mois-ci dans React – Juillet 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--July-2023-e27ijk5)",
+        "en": "- 👀 [Groupe de travail React - Liste des bibliothèques prenant en charge les React Server Components](https://github.com/reactwg/server-components/discussions/6)\n- 🐦 [Développeurs React, il est temps d'utiliser `Array.prototype.with()`](https://twitter.com/sebastienlorber/status/1686059338647957509)\n- 📜 [Accélérer la documentation dbt™ par 20x avec les React Server Components](https://dagster.io/blog/dbt-docs-on-react) : retour sur une POC de migration d'une application Angular 1 vers Next.js App Router et React Server Components. Des gains très significatifs sont rapportés en termes de temps de chargement, consommation mémoire et blocage CPU.\n- 📜 [La plateforme de Shopify est la plateforme Web](https://shopify.engineering/shopifys-platform-is-the-web-platform) : Shopify recommande désormais Remix pour créer des \"Admin Apps\", qui s'exécutent dans une iframe et communiquent avec l'application parent via un \"App Bridge\" basé sur `postMessage()`. Une architecture frontend/React intéressante pour ceux qui construisent une plateforme nécessitant un découplage.\n- 📜 [Composants Partiellement Contrôlés : Un Design Pattern Déclaratif dans React](https://www.jameskerr.blog/posts/partially-controlled-react-components/) : introduit un nouveau terme/concept pour décrire des composants capables d'offrir à la fois un état contrôlé/non contrôlé à la demande, avec une granularité applicable à l'ensemble de l'état ou à une partie de celui-ci.\n- 📜 [Utiliser des icônes SVG sprite dans React](https://www.jacobparis.com/content/svg-icons) : explique comment utiliser des sprites SVG (plus optimisés que les composants React SVG) dans un contexte Remix avec une étape de génération de code.\n- 📜 [Typer Fortement useRef avec ElementRef](https://www.totaltypescript.com/strongly-type-useref-with-elementref) : J'ai appris aujourd'hui le type TypeScript `ElementRef`, qui est utilisé pour obtenir le type d'une ref React à partir de n'importe quel composant, de manière similaire à `ComponentProps`.\n- 📜 [10 Techniques Essentielles d'Optimisation des Performances React pour des Applications Web Plus Rapides](https://techreactlearning.blogspot.com/2023/07/10-essential-react-performance.html)\n- 📜 [Les bases de la gestion des erreurs dans Remix](https://otiv.dev/blog/essential-remix-error-handling)\n- 📦 [Lucia v2.0](https://lucia-auth.com/blog/lucia-2) : Lucia est une bibliothèque d'authentification TypeScript qui gagne du terrain récemment. Inclut des intégrations Next.js et Remix.\n- 📦 [Mode automatique de Million.js en bêta](https://million.dev/docs/automatic) : analyse désormais votre code React et l'optimise automatiquement avec Million.js !\n- 📦 [Redwood v6](https://github.com/redwoodjs/redwood/releases/tag/v6.0.0) : nouvelle version stable avec Vite, Prisma 5, Storybook 7, Suspense Router... Prépare le terrain pour l'introduction du streaming et des React Server Components.\n- 📦 [NextUI Version 2.0](https://nextui.org/blog/nextui-v2)\n- 📦 [Joi UI bêta - librairie indépendante du design de l'équipe MUI](https://mui.com/joy-ui/getting-started/)\n- 📦 [Storybook 7.2](https://storybook.js.org/blog/july-2023-update/)\n- 📦 [Auto-Form - Crée automatiquement un formulaire @shadcn/ui basé sur un schéma zod](https://github.com/vantezzen/auto-form)\n- 📦 [Framer Motion 10.5 - API inView](https://www.framer.com/motion/in-view/)\n- 📦 [Zustand 4.4](https://github.com/pmndrs/zustand/releases/tag/v4.4.0)\n- 🎥 [Secret à connaître pour App Router : les promesses pour les props](https://www.youtube.com/watch?v=ViVa5JPGrf4)\n- 🎙️ [Ce mois-ci dans React – Juillet 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--July-2023-e27ijk5)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "091b48eb",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_091b48eb",
+        "en": "@@untranslatable_placeholder_091b48eb"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "254ea949",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2fd0be2a",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "[![CoderPad: Code together before you work together](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)",
+      "source_content_hash": "adaeff743abca68fbe5d656de496ae51e50a64997c3eef6937268b9ee78f4cc6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![CoderPad : Codez ensemble avant de travailler ensemble](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)",
+        "en": "[![CoderPad : Codez ensemble avant de travailler ensemble](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "[**CoderPad: Code together before you work together**](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)",
+      "source_content_hash": "7334a37fdeec309ec1437489bcc7c0db84348ba057186dd57ac3f9ce3354c90b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**CoderPad : Codez ensemble avant de travailler ensemble**](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)",
+        "en": "[**CoderPad : Codez ensemble avant de travailler ensemble**](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "Hiring front-end developers is hard. 😩 But 4,000+ engineering teams — including at Netflix, Spotify and LinkedIn — have found a better way! 🤠 Skip the algorithm interviews and **run front-end interviews in a fully customizable and collaborative IDE** - where you can:",
+      "source_content_hash": "c7c9fdc3fd74b29d1f9dbbe15455fc2031e30d38eb0b686a0ca491e7605f86ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Recruter des développeurs front-end est difficile. 😩 Mais plus de 4 000 équipes d'ingénieurs – dont Netflix, Spotify et LinkedIn – ont trouvé une meilleure méthode ! 🤠 Passez outre les entretiens algorithmiques et **conduisez des entretiens front-end dans un IDE entièrement personnalisable et collaboratif** - où vous pouvez :",
+        "en": "Recruter des développeurs front-end est difficile. 😩 Mais plus de 4 000 équipes d'ingénierie — dont Netflix, Spotify et LinkedIn — ont trouvé une meilleure méthode ! 🤠 Passez outre les entretiens algorithmiques et **conduisez des entretiens front-end dans un EDI entièrement personnalisable et collaboratif** - où vous pouvez :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "887c863e",
+      "source_content": "- drag and drop a React (and Angular or Vue) repo\n- add packages with npm install\n- let candidates use ChatGPT live in the interview\n- watch & share code playback after the interview",
+      "source_content_hash": "230a76fcb3450697f96064cdd29e51da9dd80e42288568bf3eae6a29bef0df83",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- glisser-déposer un dépôt React (et Angular ou Vue)\n- ajouter des packages avec npm install\n- permettre aux candidats d'utiliser ChatGPT en direct pendant l'entretien\n- visionner et partager le replay du code après l'entretien",
+        "en": "- glisser-déposer un dépôt React (et Angular ou Vue)\n- ajouter des packages avec npm install\n- laisser les candidats utiliser ChatGPT en direct pendant l'entretien\n- visionner et partager la lecture du code après l'entretien"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Use CoderPad to run fast, fair and real coding interviews that candidates and interviewers trust. [Sign up for free today & hire with confidence](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter).",
+      "source_content_hash": "07ea67740e061ba1bbc9aeabc6c01b394953e0e0726dcb348c830f6bbbe61a44",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Utilisez CoderPad pour mener des entretiens de codage rapides, équitables et réalistes, approuvés par les candidats et les recruteurs. [Inscrivez-vous gratuitement dès aujourd'hui et recrutez en toute confiance](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter).",
+        "en": "Utilisez CoderPad pour mener des entretiens de codage rapides, équitables et réalistes auxquels candidats et intervieweurs font confiance. [Inscrivez-vous gratuitement dès aujourd'hui et recrutez en toute confiance](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b805e2c6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b10963d7",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "[![Measure Hermes engine performance in React Native with Flashlight](/emails/issues/154/hermes.jpg)](https://www.bam.tech/article/measure-hermes-engine-performance-in-react-native-with-flashlight)",
+      "source_content_hash": "adc595006e8075d8d8006ef9cc1a367f7ac0e36b1199985d47d806b14aa46049",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Mesurer les performances du moteur Hermes dans React Native avec Flashlight](/emails/issues/154/hermes.jpg)](https://www.bam.tech/article/measure-hermes-engine-performance-in-react-native-with-flashlight)",
+        "en": "[![Mesurer les performances du moteur Hermes dans React Native avec Flashlight](/emails/issues/154/hermes.jpg)](https://www.bam.tech/article/measure-hermes-engine-performance-in-react-native-with-flashlight)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "[**Measure Hermes engine performance in React Native with Flashlight**](https://www.bam.tech/article/measure-hermes-engine-performance-in-react-native-with-flashlight)",
+      "source_content_hash": "a2ea9429c342de97974ab1fb626e8eb84ba3f856e80b32b7f1f9d8988f2c9b00",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Mesurer les performances du moteur Hermes dans React Native avec Flashlight**](https://www.bam.tech/article/measure-hermes-engine-performance-in-react-native-with-flashlight)",
+        "en": "[**Mesurer les performances du moteur Hermes dans React Native avec Flashlight**](https://www.bam.tech/article/measure-hermes-engine-performance-in-react-native-with-flashlight)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "The developers at BAM benchmarked the impact of the Hermes runtime on the app start-up time and memory consumption of a React-Native Android app using their [Flashlight](https://github.com/bamlab/flashlight) performance tool. For those who were still in doubt, Hermes clearly outperforms JSC.",
+      "source_content_hash": "78206c5d93fe91adbb976aac41fbfd9bffa99d27c77fceaf221ea2ece65a290a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les développeurs de BAM ont évalué l'impact du runtime Hermes sur le temps de démarrage et la consommation mémoire d'une application Android React-Native avec leur outil de performance [Flashlight](https://github.com/bamlab/flashlight). Pour ceux qui doutaient encore, Hermes surpasse clairement JSC.",
+        "en": "Les développeurs de BAM ont évalué l'impact du runtime Hermes sur le temps de démarrage et la consommation mémoire d'une application React-Native Android en utilisant leur outil de performance [Flashlight](https://github.com/bamlab/flashlight). Pour ceux qui doutaient encore, Hermes surpasse clairement JSC."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6db2c30",
+      "source_content": "- 🐦 [Apple Store - 1/5 of top 100 Sports apps use React-Native](https://twitter.com/Baconbrix/status/1684579413688750082)\n- 🐦 [React-Native now has end-2-end tests](https://twitter.com/SzymonRybczak/status/1684870142839160832): great news for React-Native release process and QA, the official RNTester app is now tested with Appium and WebDriver.\n- 📜 [Dynamic imports supported in react native](https://dev.to/dannyhw/dynamic-imports-supported-in-react-native-273j): the Webpack feature `require.context` (used to import a folder of modules dynamically) has been ported to Metro for the needs of Expo Router. This allows [Storybook React-Native 6.5.5](https://github.com/storybookjs/react-native/releases/tag/v6.5.5) to create an index of stories without a codegen step (in preview), and opens up other interesting possibilities.\n- 📜 [Apple - List of APIs that require declared reasons now available](https://developer.apple.com/news/?id=z6fu1dcu): React-Native iOS developers need to prepare for new constraints.\n- 📦 [VisionCamera 3.0.0-rc.4](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0-rc.4): a number of significant changes in this RC, in preparation for the expected arrival of v3.\n- 🎥 [How to make a bottom sheet with React Native Reanimated](https://www.youtube.com/watch?v=lYYiuXcTnnE)",
+      "source_content_hash": "8deacd1c52124c13705196d8a39195f128ab2fa946fc5d565385fc2168a7abd4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🐦 [Apple Store - 1/5 des 100 meilleures applications sportives utilisent React-Native](https://twitter.com/Baconbrix/status/1684579413688750082)\n- 🐦 [React-Native dispose désormais de tests end-to-end](https://twitter.com/SzymonRybczak/status/1684870142839160832) : excellente nouvelle pour le processus de release et la QA, l'application officielle RNTester est désormais testée avec Appium et WebDriver.\n- 📜 [Les imports dynamiques pris en charge dans React Native](https://dev.to/dannyhw/dynamic-imports-supported-in-react-native-273j) : la fonctionnalité Webpack `require.context` (utilisée pour importer dynamiquement un dossier de modules) a été portée dans Metro pour les besoins d'Expo Router. Cela permet à [Storybook React-Native 6.5.5](https://github.com/storybookjs/react-native/releases/tag/v6.5.5) de créer un index de stories sans étape de génération de code (en prévisualisation), et ouvre d'autres possibilités intéressantes.\n- 📜 [Apple - La liste des API nécessitant des raisons déclarées est désormais disponible](https://developer.apple.com/news/?id=z6fu1dcu) : les développeurs iOS React-Native doivent se préparer à de nouvelles contraintes.\n- 📦 [VisionCamera 3.0.0-rc.4](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0-rc.4) : plusieurs changements significatifs dans cette RC, en préparation de l'arrivée attendue de la v3.\n- 🎥 [Comment créer un bottom sheet avec React Native Reanimated](https://www.youtube.com/watch?v=lYYiuXcTnnE)",
+        "en": "- 🐦 [Apple Store - 1/5 des 100 meilleures applications Sport utilisent React-Native](https://twitter.com/Baconbrix/status/1684579413688750082)\n- 🐦 [React-Native dispose désormais de tests end-to-end](https://twitter.com/SzymonRybczak/status/1684870142839160832) : excellente nouvelle pour le processus de publication et l'QA de React-Native, l'application officielle RNTester est désormais testée avec Appium et WebDriver.\n- 📜 [Les imports dynamiques pris en charge dans React Native](https://dev.to/dannyhw/dynamic-imports-supported-in-react-native-273j) : la fonctionnalité Webpack `require.context` (utilisée pour importer dynamiquement un dossier de modules) a été portée dans Metro pour les besoins d'Expo Router. Cela permet à [Storybook React-Native 6.5.5](https://github.com/storybookjs/react-native/releases/tag/v6.5.5) de créer un index d'histoires sans étape de génération de code (en prévisualisation), et ouvre d'autres possibilités intéressantes.\n- 📜 [Apple - La liste des API nécessitant des raisons déclarées est désormais disponible](https://developer.apple.com/news/?id=z6fu1dcu) : les développeurs iOS React-Native doivent se préparer à de nouvelles contraintes.\n- 📦 [VisionCamera 3.0.0-rc.4](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0-rc.4) : plusieurs changements significatifs dans cette RC, en préparation de l'arrivée attendue de v3.\n- 🎥 [Comment créer un bottom sheet avec React Native Reanimated](https://www.youtube.com/watch?v=lYYiuXcTnnE)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ab39e8a7",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Emplois {#jobs}",
+        "en": "## 🧑‍💻 Offres d'emploi {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/distance**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+        "en": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/distance**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, les podcasts, les réseaux sociaux et les newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de bâtir des entreprises évolutives et durables.",
+        "en": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, les médias sociaux et les newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de développer des entreprises évolutives et durables."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement à distance, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)",
+        "en": "🧑‍💼 [**Callstack - Développeur React Native Senior - Télétravail complet, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack, leader en React et React Native. Consultez notre site web pour plus de détails. Nous avons hâte de voir votre candidature - montrez-nous ce que vous savez faire !",
+        "en": "Vous souhaitez travailler sur les applications les plus utilisées au monde ? Aimeriez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature avec impatience - montrez-nous ce que vous savez faire !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f38d1cb0",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% distants**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.",
+        "en": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d30a9380",
+      "source_content": "- 👀 [New unofficial Observable API proposal](https://github.com/domfarolino/observable)\n- 📊 [Help Design the Inaugural State of HTML Survey!](https://lea.verou.me/blog/2023/design-state-of-html/)\n- 📜 [Core Web Vitals for Search Engine Optimisation](https://csswizardry.com/2023/07/core-web-vitals-for-search-engine-optimisation/)\n- 📜 [Is Jamstack Officially Finished?](https://remotesynthesis.com/blog/goodbye-jamstack/)\n- 📜 [New to the web platform in July](https://web.dev/web-platform-07-2023/)\n- 📜 [dnt — Publish a hybrid npm module for ESM and CommonJS](https://deno.com/blog/publish-esm-cjs-module-dnt)\n- 📦 [Woodpile - SWC AST visitor in Javascript](https://github.com/kwonoj/woodpile)",
+      "source_content_hash": "7dee9ca281afdf8fd55ca4b9de18c0e814fba7da54c74c57d8a1add8e8791fc3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Nouvelle proposition non officielle d'API Observable](https://github.com/domfarolino/observable)\n- 📊 [Aidez à concevoir la première enquête State of HTML !](https://lea.verou.me/blog/2023/design-state-of-html/)\n- 📜 [Core Web Vitals pour l'optimisation des moteurs de recherche](https://csswizardry.com/2023/07/core-web-vitals-for-search-engine-optimisation/)\n- 📜 [Jamstack est-il officiellement terminé ?](https://remotesynthesis.com/blog/goodbye-jamstack/)\n- 📜 [Nouveautés de la plateforme web en juillet](https://web.dev/web-platform-07-2023/)\n- 📜 [dnt — Publier un module npm hybride pour ESM et CommonJS](https://deno.com/blog/publish-esm-cjs-module-dnt)\n- 📦 [Woodpile - Visiteur d'AST SWC en Javascript](https://github.com/kwonoj/woodpile)",
+        "en": "- 👀 [Nouvelle proposition non officielle d'API Observable](https://github.com/domfarolino/observable)\n- 📊 [Aidez à concevoir la première enquête State of HTML !](https://lea.verou.me/blog/2023/design-state-of-html/)\n- 📜 [Core Web Vitals pour le référencement](https://csswizardry.com/2023/07/core-web-vitals-for-search-engine-optimisation/)\n- 📜 [Le Jamstack est-il officiellement terminé ?](https://remotesynthesis.com/blog/goodbye-jamstack/)\n- 📜 [Nouveautés sur la plateforme web en juillet](https://web.dev/web-platform-07-2023/)\n- 📜 [dnt — Publier un module npm hybride pour ESM et CommonJS](https://deno.com/blog/publish-esm-cjs-module-dnt)\n- 📦 [Woodpile - Visiteur AST SWC en Javascript](https://github.com/kwonoj/woodpile)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8144f6e8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0d5321b7",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "[![alt](/emails/issues/154/meme.jpg)](https://twitter.com/fireship_dev/status/1684324664699674625)",
+      "source_content_hash": "efc3bd30ab17724428230fda2a6f69f7d9e5a96453a0505bcc9a25bc5e79f615",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/154/meme.jpg)](https://twitter.com/fireship_dev/status/1684324664699674625)",
+        "en": "[![alt](/emails/issues/154/meme.jpg)](https://twitter.com/fireship_dev/status/1684324664699674625)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/154/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.165323+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "8f2b974291851535d208930237c31496a0ae6463a2686213e8798e80591296ae",
+    "en": "8f2b974291851535d208930237c31496a0ae6463a2686213e8798e80591296ae"
+  }
+}

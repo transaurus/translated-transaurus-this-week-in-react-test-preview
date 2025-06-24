@@ -1,0 +1,709 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/121/index.mdx",
+  "source_file_content_hash": "5a870d6e854f55e0fae47712b854c97806762e1556c0ed4ff99d993a94c4d4f5",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /121\ntitle: \"This Week In React #121: Next.js, experimental_cache, CSS-in-JS, Qwikify, Typesafety, 3D, Vitest Preview, Outstatic, Remix, React-Native...\"\nauthors: [slorber]\ndate: 10-25-2022\n---",
+      "source_content_hash": "f283481a21ba21ea6eaecb5305f8999ab7b333ba9cd091a96e493036bee439b1",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Last week I made a mistake, I sent out the 220 edition instead of 120 😅 No one noticed, probably not a big deal!",
+      "source_content_hash": "d7af29a9306417192c151c255438ab51ba0476766772eddecd32233dafb2622c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La semaine dernière, j'ai fait une erreur : j'ai envoyé l'édition 220 au lieu de la 120 😅. Personne ne l'a remarqué, ce n'est probablement pas grave !",
+        "en": "La semaine dernière, j'ai fait une erreur : j'ai envoyé l'édition 220 au lieu de la 120 😅. Personne ne l'a remarqué, ce n'est probablement pas grave !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "It's the conference season: the ViteConf replay is available, React Advanced just finished, and more to come.",
+      "source_content_hash": "eb631a71e70f9550285f1c5123f5fec8c1733aa8d7bde96fbd5a123fc53269e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "C'est la saison des conférences : le replay de ViteConf est disponible, React Advanced vient de se terminer, et d'autres sont à venir.",
+        "en": "C'est la saison des conférences : le replay de ViteConf est disponible, React Advanced vient de se terminer, et il y en a d'autres à venir."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The Next.js conference starts in a few hours. We'll probably get a Next.js 13 announcement, along with nested layouts, and some other super cool stuff that starts with Turbo 🤭. Let's discuss that next week.",
+      "source_content_hash": "842dc9bdc78ad23194bac249c65fde1f1d714e95e73a912fda27350f1352a159",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La conférence Next.js commence dans quelques heures. Nous aurons probablement une annonce de Next.js 13, ainsi que des mises en page imbriquées, et d'autres choses super cool qui commencent par Turbo 🤭. Parlons-en la semaine prochaine.",
+        "en": "La conférence Next.js commence dans quelques heures. Nous aurons probablement une annonce de Next.js 13, avec des layouts imbriqués, et d'autres fonctionnalités super cool qui commencent par Turbo 🤭. Nous en discuterons la semaine prochaine."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "We also have all the hosts agreeing to improve their Next.js support at the same time: Netlify, Cloudflare, Microsoft...",
+      "source_content_hash": "872abfa007f3b9f20bf33f67c586816077de3beaa7076506cacbfd42da498a1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons également tous les hébergeurs qui acceptent d'améliorer leur support Next.js en même temps : Netlify, Cloudflare, Microsoft...",
+        "en": "Tous les hébergeurs s'accordent également pour améliorer leur support de Next.js simultanément : Netlify, Cloudflare, Microsoft..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Don't miss William Candillon's React-Native video season 5 which starts today!",
+      "source_content_hash": "6b966b426f1581e010d5b7624c0a6bc38492166d01a07365fb9af37f69bb7e94",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ne manquez pas la saison 5 des vidéos React-Native de William Candillon qui commence aujourd'hui !",
+        "en": "Ne manquez pas la saison 5 des vidéos React-Native de William Candillon qui commence aujourd'hui !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "I recorded a [podcast episode about Docusaurus 2.0 with PodRocket](https://podrocket.logrocket.com/docusaurus) last month. Totally forgot to mention it 😅 I want to do more podcast episodes in the future, so please invite me! 😉",
+      "source_content_hash": "dd23c16c2d004eb106e0004d3c412afa0ef45fb0a86d917a7f0311dffffeff8c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'ai enregistré un [épisode de podcast sur Docusaurus 2.0 avec PodRocket](https://podrocket.logrocket.com/docusaurus) le mois dernier. J'ai totalement oublié d'en parler 😅. Je veux faire plus d'épisodes de podcast à l'avenir, alors invitez-moi ! 😉",
+        "en": "J'ai enregistré un [épisode de podcast sur Docusaurus 2.0 avec PodRocket](https://podrocket.logrocket.com/docusaurus) le mois dernier. J'ai complètement oublié d'en parler 😅. J'aimerais faire plus d'épisodes de podcast à l'avenir, alors invitez-moi ! 😉"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ea978e4d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_ea978e4d",
+        "en": "@@untranslatable_placeholder_ea978e4d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd6b8019",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_cd6b8019",
+        "en": "@@untranslatable_placeholder_cd6b8019"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "599822a5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_599822a5",
+        "en": "@@untranslatable_placeholder_599822a5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2b88bb9d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Partenaire {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "[![Sizzy - the browser for developers](/emails/issues/220/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact)",
+      "source_content_hash": "1907873bc33873b7d04036f10acbb020b54f2023c4cf2f570f8006191f752d0f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Sizzy - le navigateur pour les développeurs](/emails/issues/220/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact)",
+        "en": "[![Sizzy - le navigateur pour développeurs](/emails/issues/220/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "How come professionals in every other industry have specialized tools, but web developers are still stuck using the browser that their grandma is using for shopping on Amazon?",
+      "source_content_hash": "26b8c6ec51f87cca81919a96482819c351d8cadb122e36ca601443672fe673a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Comment se fait-il que les professionnels de tous les autres secteurs aient des outils spécialisés, mais que les développeurs web soient encore coincés à utiliser le navigateur que leur grand-mère utilise pour faire ses achats sur Amazon ?",
+        "en": "Comment se fait-il que les professionnels de tous les autres secteurs disposent d'outils spécialisés, tandis que les développeurs web utilisent encore le navigateur de leur grand-mère pour faire des achats sur Amazon ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "If you're opening localhost:3000 in any other browser except Sizzy, you're wasting hours of your precious time.",
+      "source_content_hash": "1b45af3f5b07953c2e5907c2b0a4151a488680b945bad33afbf745a22f4e7cf2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Si vous ouvrez localhost:3000 dans un autre navigateur que Sizzy, vous perdez des heures de votre précieux temps.",
+        "en": "Si vous ouvrez localhost:3000 dans un autre navigateur que Sizzy, vous gaspillez des heures de votre temps précieux."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "**Before Sizzy:** web development is stressing you out, responsive design is hard, you have an overwhelming amount of opened tabs and apps.",
+      "source_content_hash": "fcf8907035860275f1fa71ad34104e0c7aceb1b05211a2ed0a03d724f29be681",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Avant Sizzy :** le développement web vous stresse, le design responsive est difficile, vous avez une quantité écrasante d'onglets et d'applications ouverts.",
+        "en": "**Avant Sizzy :** le développement web vous stresse, le responsive design est difficile, vous avez une quantité écrasante d'onglets et d'applications ouverts."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "**After Sizzy:** all the tools you need are in one place, responsive design is a breeze, no more context switching.",
+      "source_content_hash": "cb26d31538dd4060eca29703b8308c3b081c54b9a43a71b8eb1982efb37a2090",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Après Sizzy :** tous les outils dont vous avez besoin sont au même endroit, le design responsive est un jeu d'enfant, fini le changement de contexte.",
+        "en": "**Après Sizzy :** tous vos outils sont au même endroit, le responsive design devient simple, plus de changement de contexte."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "You can [download it here](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact) and try it for free for 14 days!",
+      "source_content_hash": "248f7912a547e27fa4b0af50705fbd6e4be7d2bcba0be18b06c5826ba22aa48d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous pouvez [le télécharger ici](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact) et l'essayer gratuitement pendant 14 jours !",
+        "en": "Vous pouvez [le télécharger ici](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact) et l'essayer gratuitement pendant 14 jours !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "**[Why We're Breaking Up with CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)**",
+      "source_content_hash": "26860a9c7fcd9a288928c6cd5a3b074158e984e3ed57f3d09bae6f2ff68439e5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Pourquoi nous rompons avec le CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)**",
+        "en": "**[Pourquoi nous rompons avec CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "Sam is a maintainer of Emotion, one of the most popular CSS-in-JS libs. He explains the advantages and disadvantages of CSS-in-JS, with a focus on runtime libraries problems. For his company Spot, the cost of serializing styles was too high. They replaced Emotion by Sass modules (CSS modules + Sass) with a CSS utility system. On Docusaurus, we use CSS modules and I confirm that it is a good no-runtime and relatively simple alternative. DX is not as good but still quite acceptable.",
+      "source_content_hash": "55dd025a7acfc63c42eddb34bb86cd3c0867730da72d4ba606f283113dc097d5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Sam est un mainteneur d'Emotion, l'une des bibliothèques CSS-in-JS les plus populaires. Il explique les avantages et les inconvénients du CSS-in-JS, en se concentrant sur les problèmes des bibliothèques avec runtime. Pour son entreprise Spot, le coût de la sérialisation des styles était trop élevé. Ils ont remplacé Emotion par des modules Sass (modules CSS + Sass) avec un système utilitaire CSS. Sur Docusaurus, nous utilisons les modules CSS et je confirme que c'est une bonne alternative sans runtime et relativement simple. L'expérience développeur (DX) n'est pas aussi bonne mais reste tout à fait acceptable.",
+        "en": "Sam est mainteneur d'Emotion, l'une des bibliothèques CSS-in-JS les plus populaires. Il explique les avantages et inconvénients du CSS-in-JS, en se concentrant sur les problèmes des bibliothèques runtime. Pour son entreprise Spot, le coût de sérialisation des styles était trop élevé. Ils ont remplacé Emotion par des modules Sass (CSS modules + Sass) avec un système utilitaire CSS. Sur Docusaurus, nous utilisons des modules CSS et je confirme que c'est une bonne alternative sans runtime et relativement simple. L'expérience développeur (DX) n'est pas aussi bonne mais reste tout à fait acceptable."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "This article has started many interesting discussions. It has been known for a while that CSS-in-JS libraries with runtime cause performance problems. [Dan Abramov confirms](https://twitter.com/dan_abramov/status/1584835028986793984) and [does not want to use any runtime on the new React doc site](https://github.com/reactjs/reactjs.org/issues/5115). Ryan Florence mentions [performance problems with Chakra](https://twitter.com/ryanflorence/status/1582835729360572416), which uses Emotion.",
+      "source_content_hash": "88ce9bf0190824b68f1c336c3fd3d4d71196ee123ace04fabaf719ccc90b96fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cet article a lancé de nombreuses discussions intéressantes. On sait depuis un moment que les bibliothèques CSS-in-JS avec runtime causent des problèmes de performance. [Dan Abramov confirme](https://twitter.com/dan_abramov/status/1584835028986793984) et [ne veut utiliser aucun runtime sur le nouveau site de documentation de React](https://github.com/reactjs/reactjs.org/issues/5115). Ryan Florence mentionne [des problèmes de performance avec Chakra](https://twitter.com/ryanflorence/status/1582835729360572416), qui utilise Emotion.",
+        "en": "Cet article a lancé de nombreuses discussions intéressantes. Il est connu depuis un moment que les bibliothèques CSS-in-JS avec runtime causent des problèmes de performance. [Dan Abramov le confirme](https://twitter.com/dan_abramov/status/1584835028986793984) et [ne veut utiliser aucun runtime sur le nouveau site de documentation React](https://github.com/reactjs/reactjs.org/issues/5115). Ryan Florence mentionne des [problèmes de performance avec Chakra](https://twitter.com/ryanflorence/status/1582835729360572416), qui utilise Emotion."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "Tailwind remains a good alternative. For me, it can be put in the CSS-in-JS no-runtime category, especially in a React context where Tailwind styling is done via JSX. Some question its [maintainability](https://twitter.com/hi__mayank/status/1584261503670448128), but in practice it works quite well.",
+      "source_content_hash": "2155c3f8987df84fc0e24e1570bb1ca390fdb44f9b6594540e6d95e67ad1b0ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Tailwind reste une bonne alternative. Pour moi, il peut être classé dans la catégorie CSS-in-JS sans runtime, notamment dans un contexte React où le style Tailwind est appliqué via JSX. Certains questionnent sa [maintenabilité](https://twitter.com/hi__mayank/status/1584261503670448128), mais en pratique cela fonctionne plutôt bien.",
+        "en": "Tailwind reste une bonne alternative. Pour moi, il peut être classé dans la catégorie CSS-in-JS sans runtime, notamment dans un contexte React où le style Tailwind s'applique via JSX. Certains remettent en question sa [maintenabilité](https://twitter.com/hi__mayank/status/1584261503670448128), mais en pratique cela fonctionne plutôt bien."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "**[Qwik React](https://qwik.builder.io/qwikcity/integrations/react/)**",
+      "source_content_hash": "daeed5a0b13d8539b9da25615179f20267f37e366cc046910e2e54b0132566f0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Qwik React](https://qwik.builder.io/qwikcity/integrations/react/)**",
+        "en": "**[Qwik React](https://qwik.builder.io/qwikcity/integrations/react/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "Qwik is an innovative SPA framework that [avoids performance issues related to client-side hydration](https://www.builder.io/blog/hydration-is-pure-overhead). It can now integrate with React through a `qwikify$()` function to wrap any existing React component. `client:` directives (inspired by Astro) allow to control when the React component will be hydrated with a lot of granularity. The demo integrates Material UI in a Qwik app. See also [this video](https://www.youtube.com/watch?v=fLH28rDu97I). I think it's a good solution to avoid doing an all-in on this new framework, and try it gradually. We can also keep the cross-platform properties of React, while adopting Qwik to improve performance on the web.",
+      "source_content_hash": "0b17892a881dedc584f3aefadf581af51d49e80342d2715892044d300e2d4742",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Qwik est un framework SPA innovant qui [évite les problèmes de performance liés à l'hydratation côté client](https://www.builder.io/blog/hydration-is-pure-overhead). Il peut désormais s'intégrer avec React via une fonction `qwikify$()` pour encapsuler n'importe quel composant React existant. Les directives `client:` (inspirées d'Astro) permettent de contrôler quand le composant React sera hydraté avec une grande granularité. La démo intègre Material UI dans une application Qwik. Voir aussi [cette vidéo](https://www.youtube.com/watch?v=fLH28rDu97I). Je pense que c'est une bonne solution pour éviter d'adopter entièrement ce nouveau framework, et de l'essayer progressivement. Nous pouvons également conserver les propriétés multiplateformes de React tout en adoptant Qwik pour améliorer les performances web.",
+        "en": "Qwik est un framework SPA innovant qui [évite les problèmes de performance liés à l'hydratation côté client](https://www.builder.io/blog/hydration-is-pure-overhead). Il peut désormais s'intégrer avec React via une fonction `qwikify$()` pour encapsuler tout composant React existant. Les directives `client:` (inspirées d'Astro) permettent de contrôler avec une grande granularité quand le composant React sera hydraté. La démo intègre Material UI dans une application Qwik. Voir aussi [cette vidéo](https://www.youtube.com/watch?v=fLH28rDu97I). Je pense que c'est une bonne solution pour éviter de basculer entièrement sur ce nouveau framework, et l'essayer progressivement. Nous pouvons également conserver les propriétés multiplateformes de React tout en adoptant Qwik pour améliorer les performances web."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "**[Fully Typed Web Apps](https://www.epicweb.dev/fully-typed-web-apps)**",
+      "source_content_hash": "03631a02db293acc3d9bfef56b578e2d38c55d218c1ce6d671a8e75cfa104e8f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Fully Typed Web Apps](https://www.epicweb.dev/fully-typed-web-apps)**",
+        "en": "**[Fully Typed Web Apps](https://www.epicweb.dev/fully-typed-web-apps)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "Kent C. Dodds explains the interest of having end to end type-safety, from the DB to the UI, through the different boundaries: network, localstorage, DB... He talks about validation (schema, type guards), type generation (Prisma) and conventions (Remix). He explains how this experience is possible with Remix, thanks to inference: it is better to use `typeof` than `as`.",
+      "source_content_hash": "327501819681cd614aa046ae216df89ad7c5f006ca5b02ecb0646cb70906a6f9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Kent C. Dodds explique l'intérêt d'avoir une sécurité de type de bout en bout, de la base de données à l'interface utilisateur, à travers différentes frontières : réseau, stockage local, base de données... Il aborde la validation (schémas, gardes de type), la génération de types (Prisma) et les conventions (Remix). Il explique comment cette expérience est possible avec Remix grâce à l'inférence : il est préférable d'utiliser `typeof` plutôt que `as`.",
+        "en": "Kent C. Dodds explique l'intérêt d'avoir une typage de bout en bout, de la base de données à l'interface utilisateur, à travers différentes frontières : réseau, stockage local, DB... Il parle de validation (schémas, gardes de type), de génération de types (Prisma) et de conventions (Remix). Il explique comment cette expérience est possible avec Remix grâce à l'inférence : il est préférable d'utiliser `typeof` plutôt que `as`."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "**[Building an interactive WebGL experience in Next.js](https://vercel.com/blog/building-an-interactive-webgl-experience-in-next-js)**",
+      "source_content_hash": "fe5d8308ba3dc76d5fa267b024c34fa4bdf5a9e098e5b585a8042906502769da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Building an interactive WebGL experience in Next.js](https://vercel.com/blog/building-an-interactive-webgl-experience-in-next-js)**",
+        "en": "**[Building an interactive WebGL experience in Next.js](https://vercel.com/blog/building-an-interactive-webgl-experience-in-next-js)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "Vercel explains how they created an [impressive immersive signup experience for the Next.js conf](https://nextjs.org/conf), based on React-Three-Fiber. It's still complex to understand without 3D / WebGL / Three.js experience, but the deconstruction in successive steps is interesting and gives an insight into the mindset of doing creative dev.",
+      "source_content_hash": "e321850df88b5974118b662bc21273ddd8dabc6f4a41f365036eb5c958da429b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vercel explique comment ils ont créé une [expérience d'inscription immersive impressionnante pour la conférence Next.js](https://nextjs.org/conf), basée sur React-Three-Fiber. Cela reste complexe à comprendre sans expérience en 3D / WebGL / Three.js, mais la décomposition en étapes successives est intéressante et donne un aperçu de l'état d'esprit du développement créatif.",
+        "en": "Vercel explique comment ils ont créé une [expérience d'inscription immersive impressionnante pour la conf Next.js](https://nextjs.org/conf), basée sur React-Three-Fiber. Cela reste complexe à comprendre sans expérience en 3D/WebGL/Three.js, mais la décomposition en étapes successives est intéressante et donne un aperçu de l'état d'esprit nécessaire pour faire du développement créatif."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76dbcc76",
+      "source_content": "- 👀 [React Cache API Pull-Request](https://github.com/facebook/react/pull/25506): exposes a new `React.experimental_cache` API\n- 📖 [New beta doc - cloneElement](https://twitter.com/dan_abramov/status/1582814754426433537)\n- 📦 [Vitest Preview](https://www.vitest-preview.com/): permits to visually debug Vitest tests. Little brother of [Jest Preview](https://www.jest-preview.com/).\n- 📦 [Outstatic - A static CMS for Next.js](https://outstatic.com/): new Git-based CMS that integrates nicely with Next.js. Simple user-friendly editor with the ability to upload images.\n- 📜 [Netlify - Background and Scheduled API Routes for Next.js](https://www.netlify.com/blog/new-background-scheduled-api-routes-nextjs/): Netlify using its background functions to call Next.js API based on cron expressions.\n- 📜 [Cloudflare Pages support for Next.js Edge Runtime](https://blog.cloudflare.com/next-on-pages/): Cloudflare now supports Next.js, only via the `experimental-edge` runtime that can run on Cloudflare Workers (unlike the Node.js runtime). Their solution is based on [Vercel Build Output API](https://vercel.com/blog/build-output-api), which seems to pave the way for better portability of edge-first frameworks between different clouds.\n- 📜 [Microsoft - Extending Next.js support in Azure Static Web Apps](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975): Azure will now support Next.js SSR (previously: only SSG).\n- 📜 [Persist inputs after a form submit in Remix](https://sergiodxa.com/articles/persist-inputs-after-a-form-submit-in-remix): proposes a progressive enhancement solution to keep the values of a form after a submission. 2 solutions: return the values in the Remix action or use the flash session.\n- 📜 [Currying Layout Component Patterns in Next.js](https://creativedesignsguru.com/currying-nextjs-layout/): suggest to parametrize the `getLayout` of Next.js to create Layout variants without leading to unmount/remount. Nice trick today, might become less relevant with the upcoming nested layouts support.\n- 📜 [Throwing vs. Returning responses in Remix](https://sergiodxa.com/articles/throwing-vs-returning-responses-in-remix)\n- 📜 [Lessons learned from moving to Recoil.js](https://kitemaker.co/blog/lessons-learned-from-moving-to-recoil)\n- 📜 [Separate API Layers In React Apps](https://profy.dev/article/react-architecture-api-layer)\n- 🎥 [Is the new React use hook a footgun?](https://www.youtube.com/watch?v=ytXM05PVcFU)\n- 🎥 [React Advanced London 2022 - Day 1](https://www.youtube.com/watch?v=1x7mI_xuVVo)\n- 🧵 [Lottie vs Rive](https://twitter.com/guidorosso/status/1582086637328031745): Lottie is quite popular in the React ecosystem but its competitor Rive looks much more performant at runtime.\n- 🐦 [Zustand code in a tweet](https://twitter.com/dai_shi/status/1583082766081531905)\n- 🔗 [New website for Storybook](https://twitter.com/storybookjs/status/1583175829009289216)",
+      "source_content_hash": "4d0cde42f0a3b74654a4836b515457d881a48c83d8d472e5accbd552df720503",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Pull-Request de l'API React Cache](https://github.com/facebook/react/pull/25506): expose une nouvelle API `React.experimental_cache`\n- 📖 [Nouveau doc bêta - cloneElement](https://twitter.com/dan_abramov/status/1582814754426433537)\n- 📦 [Vitest Preview](https://www.vitest-preview.com/): permet de déboguer visuellement les tests Vitest. Petit frère de [Jest Preview](https://www.jest-preview.com/).\n- 📦 [Outstatic - Un CMS statique pour Next.js](https://outstatic.com/): nouveau CMS basé sur Git qui s'intègre parfaitement à Next.js. Éditeur convivial avec capacité d'upload d'images.\n- 📜 [Netlify - Routes API planifiées et en arrière-plan pour Next.js](https://www.netlify.com/blog/new-background-scheduled-api-routes-nextjs/): Netlify utilise ses fonctions d'arrière-plan pour appeler les API Next.js basées sur des expressions cron.\n- 📜 [Prise en charge de Next.js Edge Runtime par Cloudflare Pages](https://blog.cloudflare.com/next-on-pages/): Cloudflare supporte désormais Next.js via le runtime `experimental-edge` fonctionnant sur Cloudflare Workers (contrairement au runtime Node.js). Leur solution s'appuie sur l'[API Vercel Build Output](https://vercel.com/blog/build-output-api), ouvrant la voie à une meilleure portabilité des frameworks edge-first entre clouds.\n- 📜 [Microsoft - Extension du support Next.js dans Azure Static Web Apps](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975): Azure supporte désormais le SSR Next.js (auparavant : uniquement SSG).\n- 📜 [Conserver les saisies après soumission de formulaire dans Remix](https://sergiodxa.com/articles/persist-inputs-after-a-form-submit-in-remix): propose une amélioration progressive pour préserver les valeurs de formulaire après soumission. 2 solutions : retourner les valeurs dans l'action Remix ou utiliser la session flash.\n- 📜 [Motifs de composants Layout par curryfication dans Next.js](https://creativedesignsguru.com/currying-nextjs-layout/): suggère de paramétrer le `getLayout` de Next.js pour créer des variantes sans démontage/remontage. Astuce utile aujourd'hui, potentiellement moins pertinente avec les futurs layouts imbriqués.\n- 📜 [Lancer vs. Retourner des réponses dans Remix](https://sergiodxa.com/articles/throwing-vs-returning-responses-in-remix)\n- 📜 [Leçons apprises en migrant vers Recoil.js](https://kitemaker.co/blog/lessons-learned-from-moving-to-recoil)\n- 📜 [Couches API distinctes dans les apps React](https://profy.dev/article/react-architecture-api-layer)\n- 🎥 [Le nouveau hook use de React est-il un piège ?](https://www.youtube.com/watch?v=ytXM05PVcFU)\n- 🎥 [React Advanced London 2022 - Jour 1](https://www.youtube.com/watch?v=1x7mI_xuVVo)\n- 🧵 [Lottie vs Rive](https://twitter.com/guidorosso/status/1582086637328031745): Lottie est populaire dans l'écosystème React mais son concurrent Rive semble bien plus performant à l'exécution.\n- 🐦 [Code Zustand en un tweet](https://twitter.com/dai_shi/status/1583082766081531905)\n- 🔗 [Nouveau site web pour Storybook](https://twitter.com/storybookjs/status/1583175829009289216)",
+        "en": "- 👀 [Pull-Request pour l'API React Cache](https://github.com/facebook/react/pull/25506) : expose une nouvelle API `React.experimental_cache`\n- 📖 [Nouvelle doc bêta - cloneElement](https://twitter.com/dan_abramov/status/1582814754426433537)\n- 📦 [Vitest Preview](https://www.vitest-preview.com/) : permet de déboguer visuellement les tests Vitest. Petit frère de [Jest Preview](https://www.jest-preview.com/).\n- 📦 [Outstatic - Un CMS statique pour Next.js](https://outstatic.com/) : nouveau CMS basé sur Git qui s'intègre bien avec Next.js. Éditeur simple et convivial avec possibilité de télécharger des images.\n- 📜 [Netlify - Routes d'API en arrière-plan et planifiées pour Next.js](https://www.netlify.com/blog/new-background-scheduled-api-routes-nextjs/) : Netlify utilise ses fonctions d'arrière-plan pour appeler les API Next.js basées sur des expressions cron.\n- 📜 [Support Cloudflare Pages pour le runtime Edge de Next.js](https://blog.cloudflare.com/next-on-pages/) : Cloudflare prend désormais en charge Next.js, uniquement via le runtime `experimental-edge` qui peut s'exécuter sur Cloudflare Workers (contrairement au runtime Node.js). Leur solution est basée sur [l'API Vercel Build Output](https://vercel.com/blog/build-output-api), ce qui semble ouvrir la voie à une meilleure portabilité des frameworks edge-first entre différents clouds.\n- 📜 [Microsoft - Extension du support Next.js dans Azure Static Web Apps](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975) : Azure prendra désormais en charge le SSR Next.js (auparavant : uniquement SSG).\n- 📜 [Persister les saisies après la soumission d'un formulaire dans Remix](https://sergiodxa.com/articles/persist-inputs-after-a-form-submit-in-remix) : propose une amélioration progressive pour conserver les valeurs d'un formulaire après soumission. 2 solutions : retourner les valeurs dans l'action Remix ou utiliser la session flash.\n- 📜 [Patterns de composants Layout curryfiés dans Next.js](https://creativedesignsguru.com/currying-nextjs-layout/) : suggère de paramétrer le `getLayout` de Next.js pour créer des variantes de Layout sans entraîner de démontage/remontage. Astuce utile aujourd'hui, pourrait devenir moins pertinente avec le futur support des layouts imbriqués.\n- 📜 [Lancer vs. Retourner des réponses dans Remix](https://sergiodxa.com/articles/throwing-vs-returning-responses-in-remix)\n- 📜 [Leçons tirées de la migration vers Recoil.js](https://kitemaker.co/blog/lessons-learned-from-moving-to-recoil)\n- 📜 [Séparer les couches API dans les apps React](https://profy.dev/article/react-architecture-api-layer)\n- 🎥 [Le nouveau hook use de React est-il un piège ?](https://www.youtube.com/watch?v=ytXM05PVcFU)\n- 🎥 [React Advanced London 2022 - Jour 1](https://www.youtube.com/watch?v=1x7mI_xuVVo)\n- 🧵 [Lottie vs Rive](https://twitter.com/guidorosso/status/1582086637328031745) : Lottie est assez populaire dans l'écosystème React mais son concurrent Rive semble bien plus performant à l'exécution.\n- 🐦 [Code Zustand en un tweet](https://twitter.com/dai_shi/status/1583082766081531905)\n- 🔗 [Nouveau site web pour Storybook](https://twitter.com/storybookjs/status/1583175829009289216)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c625a102",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c625a102",
+        "en": "@@untranslatable_placeholder_c625a102"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9006437d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6b04a59",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsorisé {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[![Sunsama - How 1000s of software engineers stay productive without burning out](/emails/issues/121/sunsama.jpg)](https://www.sunsama.com/a/this-week-in-react)",
+      "source_content_hash": "e81dacb60a299685da55e84c1d36d83d3bbb15d1c04f0c30471c269efb8a5666",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Sunsama - Comment des milliers d'ingénieurs logiciels restent productifs sans s'épuiser](/emails/issues/121/sunsama.jpg)](https://www.sunsama.com/a/this-week-in-react)",
+        "en": "[![Sunsama - Comment des milliers d'ingénieurs logiciels restent productifs sans s'épuiser](/emails/issues/121/sunsama.jpg)](https://www.sunsama.com/a/this-week-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "**[How 1000s of software engineers stay productive without burning out](https://www.sunsama.com/a/this-week-in-react)**",
+      "source_content_hash": "1076d061e96034dc8ce7ad1419bc882d6022b3619c62dd1c8f1f75d312a038f0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Comment des milliers d'ingénieurs logiciels restent productifs sans s'épuiser](https://www.sunsama.com/a/this-week-in-react)**",
+        "en": "**[Comment des milliers d'ingénieurs logiciels restent productifs sans s'épuiser](https://www.sunsama.com/a/this-week-in-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "You know that the output of your work matters more than the number of hours you put in. **[Sunsama](https://www.sunsama.com/a/this-week-in-react)** has been the insider secret of 1000s of developers who use it to work less but achieve more.",
+      "source_content_hash": "07bd4199c8b44f9472c3d9bfff9005fe393b2f631c66dba6564d1725facee3b3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous savez que les résultats de votre travail comptent plus que les heures passées. **[Sunsama](https://www.sunsama.com/a/this-week-in-react)** est le secret de milliers de développeurs qui l'utilisent pour travailler moins mais accomplir plus.",
+        "en": "Vous savez que le résultat de votre travail compte plus que le nombre d'heures que vous y consacrez. **[Sunsama](https://www.sunsama.com/a/this-week-in-react)** est le secret bien gardé de milliers de développeurs qui l'utilisent pour travailler moins mais accomplir plus."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "Eliminate endless tab-switching with their JIRA, Github, and Notion integration. Timebox your day and create space for your hobbies and side-projects.",
+      "source_content_hash": "94a15a27a12af4454e7d32b5b0dd9cabd0c4e258b58b3a9825a381e42eb157a1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Éliminez le changement incessant d'onglets grâce à leur intégration JIRA, Github et Notion. Planifiez votre journée et créez de l'espace pour vos loisirs et projets personnels.",
+        "en": "Éliminez le changement incessant d'onglets grâce à leur intégration JIRA, Github et Notion. Planifiez votre journée et créez de l'espace pour vos loisirs et projets personnels."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "The best part? They're offering a **[14-day free trial](https://www.sunsama.com/a/this-week-in-react)** (no card needed) so you can start achieving more, today.",
+      "source_content_hash": "d482325695822021f46a44736df8f882db4074d06817143e820f67a680f33671",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le meilleur dans tout ça ? Ils proposent un **[essai gratuit de 14 jours](https://www.sunsama.com/a/this-week-in-react)** (sans carte nécessaire) pour que vous puissiez commencer à accomplir plus dès aujourd'hui.",
+        "en": "Le meilleur ? Ils proposent un **[essai gratuit de 14 jours](https://www.sunsama.com/a/this-week-in-react)** (sans carte nécessaire) pour commencer à accomplir plus dès aujourd'hui."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "05765487",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1f4b3b94",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2270deb6",
+      "source_content": "- 🎥 [Headspace Player - “Can it be done in React Native?”](https://www.youtube.com/watch?v=pErnuAx5GjE): season 5 just started today 🤗\n- 🤫 [Some rumors going around about Expo SDK 47](https://twitter.com/tsapeta/status/1582831949030522881): a promising SDK!\n- 🗣 [The new architecture is here… what now? 3.0](https://twitter.com/Kelset/status/1583416697741975552): React Advanced talk slides from Lorenzo (Microsoft).\n- 📈 [React-Native performance brenchmarks](https://twitter.com/almouro/status/1584628478963777537): Alexandre does daily benchmarks and compares the performance of the old VS the new architecture on various scenarios.\n- 📖 [Reassure documentation](https://callstack.github.io/reassure/): Reassure has a brand new Docusaurus doc site 🤗\n- 📖 [Expo Docs Updates - new Flipper plugin integration guide](https://twitter.com/amanhimself/status/1583202477469765633)\n- 📦 [create-react-native-library 0.25](https://twitter.com/satya164/status/1583462129235263490): Kotlin Turbo module template\n- 📦 [Expo Router 0.0.31](https://twitter.com/Baconbrix/status/1582875434567409664)\n- 📦 [Expo Router 0.0.33](https://twitter.com/Baconbrix/status/1584289284713947136)\n- 📦 [Realm JavaScript v11 - Hermes Support, Realm React, Flipper, and Much More](https://www.mongodb.com/developer/products/realm/realm-javascript-v11-react-native/)\n- 🎙️ [RNR 249 - A Redux Maintainer’s Thoughts on RTK vs MST](https://reactnativeradio.com/episodes/rnr-249-a-redux-maintainers-thoughts-on-rtk-vs-mst)",
+      "source_content_hash": "082e87c5f894c75b1f4ee7216fe3ff8edf127c74a488b808ffb23106f2c342c1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🎥 [Headspace Player - \"Peut-on le faire en React Native ?\"](https://www.youtube.com/watch?v=pErnuAx5GjE) : la saison 5 vient de commencer aujourd'hui 🤗\n- 🤫 [Des rumeurs circulent sur Expo SDK 47](https://twitter.com/tsapeta/status/1582831949030522881) : un SDK prometteur !\n- 🗣 [La nouvelle architecture est là… et maintenant ? 3.0](https://twitter.com/Kelset/status/1583416697741975552) : diapositives de la conférence React Advanced par Lorenzo (Microsoft).\n- 📈 [Benchmarks de performance React Native](https://twitter.com/almouro/status/1584628478963777537) : Alexandre effectue des benchmarks quotidiens comparant les performances des anciennes et nouvelles architectures dans divers scénarios.\n- 📖 [Documentation Reassure](https://callstack.github.io/reassure/) : Reassure dispose d'un tout nouveau site de documentation Docusaurus 🤗\n- 📖 [Mises à jour de la documentation Expo - nouveau guide d'intégration du plugin Flipper](https://twitter.com/amanhimself/status/1583202477469765633)\n- 📦 [create-react-native-library 0.25](https://twitter.com/satya164/status/1583462129235263490) : modèle de module Turbo Kotlin\n- 📦 [Expo Router 0.0.31](https://twitter.com/Baconbrix/status/1582875434567409664)\n- 📦 [Expo Router 0.0.33](https://twitter.com/Baconbrix/status/1584289284713947136)\n- 📦 [Realm JavaScript v11 - Prise en charge Hermes, Realm React, Flipper et bien plus](https://www.mongodb.com/developer/products/realm/realm-javascript-v11-react-native/)\n- 🎙️ [RNR 249 - Réflexions d'un mainteneur Redux sur RTK vs MST](https://reactnativeradio.com/episodes/rnr-249-a-redux-maintainers-thoughts-on-rtk-vs-mst)",
+        "en": "- 🎥 [Lecteur Headspace - \"Peut-il être fait en React Native ?\"](https://www.youtube.com/watch?v=pErnuAx5GjE): la saison 5 vient de commencer aujourd'hui 🤗\n- 🤫 [Rumeurs autour d'Expo SDK 47](https://twitter.com/tsapeta/status/1582831949030522881): un SDK prometteur !\n- 🗣 [La nouvelle architecture est là... et maintenant ? 3.0](https://twitter.com/Kelset/status/1583416697741975552): diapositives de React Advanced par Lorenzo (Microsoft).\n- 📈 [Benchmarks de performance React-Native](https://twitter.com/almouro/status/1584628478963777537): Alexandre effectue des benchmarks quotidiens comparant les performances des architectures ancienne vs nouvelle sur divers scénarios.\n- 📖 [Documentation Reassure](https://callstack.github.io/reassure/): Reassure dispose d'un tout nouveau site de documentation Docusaurus 🤗\n- 📖 [Mises à jour des docs Expo - nouveau guide d'intégration du plugin Flipper](https://twitter.com/amanhimself/status/1583202477469765633)\n- 📦 [create-react-native-library 0.25](https://twitter.com/satya164/status/1583462129235263490): modèle de module Kotlin Turbo\n- 📦 [Expo Router 0.0.31](https://twitter.com/Baconbrix/status/1582875434567409664)\n- 📦 [Expo Router 0.0.33](https://twitter.com/Baconbrix/status/1584289284713947136)\n- 📦 [Realm JavaScript v11 - Prise en charge Hermes, Realm React, Flipper et bien plus](https://www.mongodb.com/developer/products/realm/realm-javascript-v11-react-native/)\n- 🎙️ [RNR 249 - Réflexions d'un mainteneur Redux sur RTK vs MST](https://reactnativeradio.com/episodes/rnr-249-a-redux-maintainers-thoughts-on-rtk-vs-mst)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "256e0c86",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "64d57278",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Emplois {#jobs}",
+        "en": "## 🧑‍💻 Offres d'emploi {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "🧑‍💼 [**Product Engineer at Causal, Remote/London/NY, $150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)",
+      "source_content_hash": "382f1c3a48ba67f7413a1d09e0e17ee63d0ecea0499e9a0f1bf0a58963fdf7ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Ingénieur Produit chez Causal, Remote/Londres/NY, 150-250k$**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)",
+        "en": "🧑‍💼 [**Ingénieur Produit chez Causal, Remote/Londres/NY, 150-250k$**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "Causal is a Series A Startup (backed by Coatue/Accel) building an all-in-one tool for working with numbers and visualizing data. We're looking for strong React engineers who can solve difficult UX/performance challenges.",
+      "source_content_hash": "20bfaa3d377f2ddf3a9abbf4f1ce455c376710731cb5f7e58785d6741fc6377f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Causal est une startup de série A (soutenue par Coatue/Accel) développant un outil tout-en-un pour manipuler des nombres et visualiser des données. Nous recherchons des ingénieurs React expérimentés capables de relever des défis complexes d'UX/performance.",
+        "en": "Causal est une startup de série A (soutenue par Coatue/Accel) développant un outil tout-en-un pour manipuler des nombres et visualiser des données. Nous recherchons des ingénieurs React expérimentés capables de résoudre des défis UX/performance complexes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c364340c",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% distants**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% distanciels**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f45239ba",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes ouverts pour développeurs spécialisés en React Native ! Rémunération ~160k$ + 10% de bonus. Expérience en production RN requise et résidence aux États-Unis. Contactez [@gabe_g2i](https://twitter.com/gabe_g2i) en mentionnant This Week in React.",
+        "en": "Plusieurs postes ouverts pour développeurs spécialisés en React Native ! Rémunération ~160k + 10% de bonus. Expérience en production avec RN requise et résidence aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour plus d'informations en mentionnant This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "692c6053",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "- [Let’s talk about web components](https://bradfrost.com/blog/post/lets-talk-about-web-components/): Interesting reading by Brad Frost on Web Components, which are not necessarily incompatible with React but can complement it (e.g.: a design system in a React app). The current difficulties (SSR) will eventually be overcome.\n- [Replit App](https://twitter.com/amasad/status/1582754714575257600): new app to code on your phone (made with [Expo](https://twitter.com/amasad/status/1582968657675661314)). There are templates to code in Next.js.\n- [Introducing Node.js 19](https://www.redhat.com/en/blog/introducing-nodejs-19) - Note: Node.js 18 enters LTS today!\n- [Introducing Stately Studio 1.0](https://stately.ai/blog/introducing-stately-studio-10): XState state machine editor\n- [Vite 4 plans](https://github.com/vitejs/vite/discussions/10570): upgrade to Rollup 3, es2020 compat...\n- [ViteConf 2022 replay](https://viteconf.org/2022/replay)\n- [Turborepo 1.6 - Use Turborepo in non-monorepos](https://twitter.com/turborepo/status/1583518617970233346)\n- [Solid 1.6](https://twitter.com/solid_js/status/1583016386984480768)\n- [Futuristic CSS](https://www.smashingmagazine.com/2022/10/futuristic-css/)\n- [Is There Too Much CSS Now?](https://css-tricks.com/is-there-too-much-css-now/)\n- [npm bin script confusion: Abusing ‘bin’ to hijack ‘node’ command](https://socket.dev/blog/npm-bin-script-confusion)\n- [Tailwind CSS v3.2: Dynamic breakpoints, multi-config, and container queries](https://twitter.com/adamwathan/status/1582793658168152065)\n- [Tailwind CSS v3.2: revisiting my “feature creep” warning](https://www.brycewray.com/posts/2022/10/tailwind-css-v3-2-revisiting-feature-creep-warning/)\n- [Can I DevTools - Compare the features of browsers DevTools. ](https://canidev.tools)\n- [Vercel - Regional Edge Functions](https://vercel.com/blog/regional-execution-for-ultra-low-latency-rendering-at-the-edge)\n- [Deno - Which serverless edge platform has the fastest git deployments?](https://deno.com/blog/fastest-git-deploys-to-the-edge)\n- [Cloudflare Workers and micro-frontends: made for one another](https://blog.cloudflare.com/better-micro-frontends/)\n- [Blink: Intent to Ship: CSS Color Module Level 4 + color-mix()](https://twitter.com/intenttoship/status/1583110354074116096)\n- [Release Notes for Safari Technology Preview 156](https://webkit.org/blog/13394/release-notes-for-safari-technology-preview-156/)\n- [WebKit Features in Safari 16.1](https://webkit.org/blog/13399/webkit-features-in-safari-16-1/)\n- [JavaScript metaprogramming with the 2022-03 decorators API](https://2ality.com/2022/10/javascript-decorators.html)",
+      "source_content_hash": "3dd712821d4e005c9e7afc70ae2b945eaf4f86354d35b7b8e5de0cf7b13fbf04",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Let’s talk about web components](https://bradfrost.com/blog/post/lets-talk-about-web-components/) : Lecture intéressante de Brad Frost sur les Web Components, qui ne sont pas nécessairement incompatibles avec React mais peuvent le compléter (ex : système de design dans une app React). Les difficultés actuelles (SSR) seront finalement surmontées.\n- [Replit App](https://twitter.com/amasad/status/1582754714575257600) : nouvelle application pour coder sur votre téléphone (réalisée avec [Expo](https://twitter.com/amasad/status/1582968657675661314)). Contient des templates pour coder en Next.js.\n- [Introducing Node.js 19](https://www.redhat.com/en/blog/introducing-nodejs-19) - Note : Node.js 18 devient LTS aujourd'hui !\n- [Introducing Stately Studio 1.0](https://stately.ai/blog/introducing-stately-studio-10) : éditeur de machines à états XState\n- [Vite 4 plans](https://github.com/vitejs/vite/discussions/10570) : mise à niveau vers Rollup 3, compatibilité es2020...\n- [ViteConf 2022 replay](https://viteconf.org/2022/replay)\n- [Turborepo 1.6 - Use Turborepo in non-monorepos](https://twitter.com/turborepo/status/1583518617970233346)\n- [Solid 1.6](https://twitter.com/solid_js/status/1583016386984480768)\n- [Futuristic CSS](https://www.smashingmagazine.com/2022/10/futuristic-css/)\n- [Is There Too Much CSS Now?](https://css-tricks.com/is-there-too-much-css-now/)\n- [npm bin script confusion: Abusing ‘bin’ to hijack ‘node’ command](https://socket.dev/blog/npm-bin-script-confusion)\n- [Tailwind CSS v3.2: Dynamic breakpoints, multi-config, and container queries](https://twitter.com/adamwathan/status/1582793658168152065)\n- [Tailwind CSS v3.2: revisiting my “feature creep” warning](https://www.brycewray.com/posts/2022/10/tailwind-css-v3-2-revisiting-feature-creep-warning/)\n- [Can I DevTools - Compare the features of browsers DevTools. ](https://canidev.tools)\n- [Vercel - Regional Edge Functions](https://vercel.com/blog/regional-execution-for-ultra-low-latency-rendering-at-the-edge)\n- [Deno - Which serverless edge platform has the fastest git deployments?](https://deno.com/blog/fastest-git-deploys-to-the-edge)\n- [Cloudflare Workers and micro-frontends: made for one another](https://blog.cloudflare.com/better-micro-frontends/)\n- [Blink: Intent to Ship: CSS Color Module Level 4 + color-mix()](https://twitter.com/intenttoship/status/1583110354074116096)\n- [Release Notes for Safari Technology Preview 156](https://webkit.org/blog/13394/release-notes-for-safari-technology-preview-156/)\n- [WebKit Features in Safari 16.1](https://webkit.org/blog/13399/webkit-features-in-safari-16-1/)\n- [JavaScript metaprogramming with the 2022-03 decorators API](https://2ality.com/2022/10/javascript-decorators.html)",
+        "en": "- [Parlons des composants Web](https://bradfrost.com/blog/post/lets-talk-about-web-components/) : Lecture intéressante de Brad Frost sur les composants Web, qui ne sont pas nécessairement incompatibles avec React mais peuvent le compléter (ex. : un système de design dans une app React). Les difficultés actuelles (SSR) seront finalement surmontées.\n- [Application Replit](https://twitter.com/amasad/status/1582754714575257600) : nouvelle application pour coder sur votre téléphone (réalisée avec [Expo](https://twitter.com/amasad/status/1582968657675661314)). Des modèles permettent de coder en Next.js.\n- [Présentation de Node.js 19](https://www.redhat.com/en/blog/introducing-nodejs-19) - Note : Node.js 18 passe en LTS aujourd'hui !\n- [Présentation de Stately Studio 1.0](https://stately.ai/blog/introducing-stately-studio-10) : Éditeur de machines à états XState\n- [Plans pour Vite 4](https://github.com/vitejs/vite/discussions/10570) : mise à niveau vers Rollup 3, compatibilité es2020...\n- [Replay de ViteConf 2022](https://viteconf.org/2022/replay)\n- [Turborepo 1.6 - Utiliser Turborepo dans des non-monorepos](https://twitter.com/turborepo/status/1583518617970233346)\n- [Solid 1.6](https://twitter.com/solid_js/status/1583016386984480768)\n- [CSS Futuriste](https://www.smashingmagazine.com/2022/10/futuristic-css/)\n- [Y a-t-il trop de CSS aujourd'hui ?](https://css-tricks.com/is-there-too-much-css-now/)\n- [Confusion des scripts npm bin : Détournement de la commande 'node' via 'bin'](https://socket.dev/blog/npm-bin-script-confusion)\n- [Tailwind CSS v3.2 : Points de rupture dynamiques, multi-configuration et requêtes de conteneur](https://twitter.com/adamwathan/status/1582793658168152065)\n- [Tailwind CSS v3.2 : Revisite de mon avertissement sur le « feature creep »](https://www.brycewray.com/posts/2022/10/tailwind-css-v3-2-revisiting-feature-creep-warning/)\n- [Can I DevTools - Comparer les fonctionnalités des DevTools des navigateurs](https://canidev.tools)\n- [Vercel - Fonctions Edge Régionales](https://vercel.com/blog/regional-execution-for-ultra-low-latency-rendering-at-the-edge)\n- [Deno - Quelle plateforme serverless edge a les déploiements git les plus rapides ?](https://deno.com/blog/fastest-git-deploys-to-the-edge)\n- [Cloudflare Workers et micro-frontends : faits l'un pour l'autre](https://blog.cloudflare.com/better-micro-frontends/)\n- [Blink : Intention de livrer : Module CSS Color Level 4 + color-mix()](https://twitter.com/intenttoship/status/1583110354074116096)\n- [Notes de version pour Safari Technology Preview 156](https://webkit.org/blog/13394/release-notes-for-safari-technology-preview-156/)\n- [Fonctionnalités WebKit dans Safari 16.1](https://webkit.org/blog/13399/webkit-features-in-safari-16-1/)\n- [Métaprogrammation JavaScript avec l'API des décorateurs 2022-03](https://2ality.com/2022/10/javascript-decorators.html)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7daeccd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4eab4a6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "[![Meme - VSCode running on iWatch](/emails/issues/121/meme.png)](https://twitter.com/rohanpdofficial/status/1583455633134977026)",
+      "source_content_hash": "7cf2d7cace44b71f2ad84f206bd59550bd09bbc41c735f53f20b94ca2000fb18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Mème - VSCode fonctionnant sur une iWatch](/emails/issues/121/meme.png)](https://twitter.com/rohanpdofficial/status/1583455633134977026)",
+        "en": "[![Mème - VSCode fonctionnant sur iWatch](/emails/issues/121/meme.png)](https://twitter.com/rohanpdofficial/status/1583455633134977026)"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/121/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.143337+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "5a870d6e854f55e0fae47712b854c97806762e1556c0ed4ff99d993a94c4d4f5",
+    "en": "5a870d6e854f55e0fae47712b854c97806762e1556c0ed4ff99d993a94c4d4f5"
+  }
+}

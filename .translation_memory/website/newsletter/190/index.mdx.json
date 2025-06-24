@@ -1,0 +1,672 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/190/index.mdx",
+  "source_file_content_hash": "6fc85aa36004878f4207a66623ee257cd278ff12193f4525e0c62c7d94d2910e",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /190\ntitle: \"This Week In React #190: Suspense, Internals Explorer, DevTools, RSC + Vite, Codemod, Astro, INP, composition, Reassure, Fumadocs, tscircuit, Sonner, Relay, Reanimated, RNGH, BottomSheet, RNScreens, VisionOS, TC39, Node, CSS ...\"\nauthors: [slorber, bndkt]\ndate: 06-19-2024\n---",
+      "source_content_hash": "9c1145f8c5379e82567464be50be8adea9c76c99a3b1d076feccec14417774b6",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "I (Seb) am back, and happy to share that the newsletter crossed **40 000 subscribers**! 🎉",
+      "source_content_hash": "5a9f86bcad207b6e1f1d7d68e73511db2a6b366d408ae2df1f53f8748065288d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je suis de retour (Seb) et ravi de vous annoncer que la newsletter dépasse désormais **40 000 abonnés** ! 🎉",
+        "en": "Je suis de retour (Seb) et ravi de vous annoncer que la newsletter a dépassé **40 000 abonnés** ! 🎉"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Thanks for your support and for sharing the newsletter with your friends.\\\nAny idea to make it even better, share feedback, or submit a link? Just reply to this email!",
+      "source_content_hash": "a44e4a7e0277a7feaa1c321c13ed48021ef34dd214ff9149939625395ab86e59",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Merci pour votre soutien et d'avoir partagé cette newsletter avec vos amis.\\\nUne idée pour l'améliorer, un retour à partager ou un lien à soumettre ? Répondez simplement à cet email !",
+        "en": "Merci pour votre soutien et pour avoir partagé cette newsletter avec vos amis.\\\nUne idée pour l'améliorer, un retour ou un lien à soumettre ? Répondez simplement à cet email !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "This week the React 19 stable release that we expected very soon is delayed a bit due to a controversial change in how Suspense behaves.",
+      "source_content_hash": "747fc4e9b47cd54027c33a95dfbc9faf9218fbae9b8ffd80c2c5cf6a16623b59",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, la version stable tant attendue de React 19 est légèrement retardée en raison d'un changement controversé du comportement de Suspense.",
+        "en": "Cette semaine, la version stable de React 19 que nous attendions très bientôt est légèrement retardée en raison d'un changement controversé dans le comportement de Suspense."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "On the React Native side, the first RC of 0.75 is expected very soon, running under React 19.",
+      "source_content_hash": "896c2eadb4ccc30336744f98f07b72ee25b7b87c4f7c8c2163b540fa7124c56f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Côté React Native, la première RC de la version 0.75 est attendue très prochainement, fonctionnant sous React 19.",
+        "en": "Côté React Native, la première RC de la version 0.75 est attendue très prochainement, fonctionnant sous React 19."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29ee8c7a",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_29ee8c7a",
+        "en": "@@untranslatable_placeholder_29ee8c7a"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4f4de567",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3af2d875",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_3af2d875",
+        "en": "@@untranslatable_placeholder_3af2d875"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0dc46dba",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_0dc46dba",
+        "en": "@@untranslatable_placeholder_0dc46dba"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3af2df1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f2f30ae8",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "[![The Category-Defining React Grid for Your Enterprise ](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)",
+      "source_content_hash": "1557050ecfef1ae14e2d6d7cd493dd160b0383b10b73c22755caddf13f31d6aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![The Category-Defining React Grid for Your Enterprise ](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)",
+        "en": "[![La solution de grille React redéfinissant la catégorie pour votre entreprise](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "**[The Category-Defining React Grid for Your Enterprise ](https://1771technologies.com/graphitegrid)**",
+      "source_content_hash": "c1f91a5368f5ea99aae0b4586ee4bc210363c356c7d1a85bc282f0b1d6b4d8ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[The Category-Defining React Grid for Your Enterprise ](https://1771technologies.com/graphitegrid)**",
+        "en": "**[La solution de grille React redéfinissant la catégorie pour votre entreprise](https://1771technologies.com/graphitegrid)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "Data grids are complex components of web applications, but current solutions are inefficient, require a lot of maintenance, and perform poorly. [Graphite Grid](https://1771technologies.com/graphitegrid) transforms the landscape with two key features: retargetable rendering and reactive signal state.",
+      "source_content_hash": "ae1e23fc37d4e4f8ad9d2cc6915852b0f589bbc72583758436b6abddb5174fbd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les grilles de données sont des composants complexes dans les applications web, mais les solutions actuelles sont inefficaces, nécessitent beaucoup de maintenance et offrent des performances médiocres. [Graphite Grid](https://1771technologies.com/graphitegrid) transforme le paysage avec deux fonctionnalités clés : le rendu retargetable et l'état réactif par signaux.",
+        "en": "Les grilles de données sont des composants complexes des applications web, mais les solutions actuelles sont inefficaces, nécessitent beaucoup de maintenance et offrent des performances médiocres. [Graphite Grid](https://1771technologies.com/graphitegrid) transforme le paysage avec deux fonctionnalités clés : le rendu retargetable et l'état réactif par signaux."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "**Graphite Grid** separates grid state from view logic, allowing a single unified state model to support a variety of render targets, declaratively or imperatively. It includes a **DOM and Canvas** renderer, giving developers flexible, high-performance options 🚀.",
+      "source_content_hash": "9a4f40bb7338262be96c8b6fd51aafd981a3a6d1b896c82640ca22d1f43c88e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Graphite Grid** sépare l'état de la grille de la logique d'affichage, permettant à un modèle d'état unifié de supporter diverses cibles de rendu, de manière déclarative ou impérative. Il inclut un moteur de rendu **DOM et Canvas**, offrant aux développeurs des options flexibles et hautes performances 🚀.",
+        "en": "**Graphite Grid** sépare l'état de la grille de la logique d'affichage, permettant à un modèle d'état unifié unique de prendre en charge diverses cibles de rendu, de manière déclarative ou impérative. Il inclut un moteur de rendu **DOM et Canvas**, offrant aux développeurs des options flexibles et hautes performances 🚀."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "Graphite Grid is declarative and consistent, leveraging state signals to ensure seamless integration with your application. Designed with **React in mind**, it is the only JavaScript data grid built with React's state management primitives. [Try it now!](https://1771technologies.com/graphitegrid/demo)",
+      "source_content_hash": "cc96df044764791cb8f694826df305674de9dccc3ed870d1de5622f0ff40ae26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Graphite Grid est déclaratif et cohérent, exploitant les signaux d'état pour garantir une intégration transparente avec votre application. Conçu **pensé pour React**, c'est la seule grille de données JavaScript construite avec les primitives de gestion d'état de React. [Essayez-le dès maintenant !](https://1771technologies.com/graphitegrid/demo)",
+        "en": "Graphite Grid est déclaratif et cohérent, exploitant les signaux d'état pour garantir une intégration transparente avec votre application. Conçu **spécialement pour React**, c'est la seule grille de données JavaScript construite avec les primitives de gestion d'état de React. [Essayez-le dès maintenant !](https://1771technologies.com/graphitegrid/demo)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd7c9323",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "![Suspense with siblings](/emails/issues/190/suspense.jpg)",
+      "source_content_hash": "1aeaf41d6e0b5730d30fd8463b1f7626c370a4af71ded5ea5a3dff7f1d39a23d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "![Suspense avec éléments frères](/emails/issues/190/suspense.jpg)",
+        "en": "![Suspense avec composants frères](/emails/issues/190/suspense.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "**[React 19 and Suspense - A Drama in 3 Acts](https://tkdodo.eu/blog/react-19-and-suspense-a-drama-in-3-acts)**",
+      "source_content_hash": "650299637761ac8c8e009f22a15d25c489bd9293f39074b875e597a72e2c2fd7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React 19 et Suspense - Un drame en 3 actes](https://tkdodo.eu/blog/react-19-and-suspense-a-drama-in-3-acts)**",
+        "en": "**[React 19 et Suspense - Un drame en 3 actes](https://tkdodo.eu/blog/react-19-and-suspense-a-drama-in-3-acts)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "React 19 RC.0 was released 2 weeks ago and could have become the React 19 stable release we've been waiting for. Unfortunately, it contains a controversial change to the Suspense behavior, leading the React team to talk and decide to delay the release until a solution is found.",
+      "source_content_hash": "20d16c0f37ae995e94f908d326c488212b3a145409f6caefaa8cac7fdfeffd50",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React 19 RC.0 a été publié il y a 2 semaines et aurait pu devenir la version stable tant attendue. Malheureusement, il contient un changement controversé du comportement de Suspense, conduisant l'équipe React à discuter et décider de reporter la sortie jusqu'à ce qu'une solution soit trouvée.",
+        "en": "React 19 RC.0 a été publié il y a 2 semaines et aurait pu devenir la version stable tant attendue. Malheureusement, il contient un changement controversé du comportement de Suspense, conduisant l'équipe React à discuter et décider de retarder la sortie jusqu'à ce qu'une solution soit trouvée."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "Unlike React 18, in v19 if a component suspends, its siblings won't render anymore, leading to potential waterfalls. In many situations (using “fetch-on-render” pattern, using React.lazy()...), async code might run sequentially instead of in parallel. There’s a good reason motivating this change: the ability to display Suspense fallbacks sooner, and avoid rendering components uselessly. In theory, waterfalls could be avoided if requests were “hoisted” at the router level (using the “render-as-you-fetch” pattern), but many existing apps do not do that and would suffer from degraded performances.",
+      "source_content_hash": "93de03266b4c47691e4c660f3e9233dcd450ba9e1d454d42fb1fd0664252a7c9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Contrairement à React 18, dans la v19, si un composant suspend, ses éléments frères ne s'affichent plus, ce qui peut entraîner des cascades de chargement. Dans de nombreux cas (utilisation du modèle \"fetch-on-render\", React.lazy()...), le code asynchrone pourrait s'exécuter séquentiellement plutôt qu'en parallèle. Une bonne raison motive ce changement : afficher plus tôt les fallbacks Suspense et éviter le rendu inutile de composants. En théorie, les cascades pourraient être évitées en \"élevant\" les requêtes au niveau du routeur (modèle \"render-as-you-fetch\"), mais de nombreuses applications existantes ne le font pas et verraient leurs performances dégradées.",
+        "en": "Contrairement à React 18, dans la v19 si un composant suspend, ses composants frères ne seront plus rendus, ce qui peut entraîner des cascades de rendu. Dans de nombreuses situations (utilisation du modèle \"fetch-on-render\", React.lazy()...), le code asynchrone pourrait s'exécuter séquentiellement plutôt qu'en parallèle. Cette modification est motivée par une bonne raison : afficher plus rapidement les fallbacks Suspense et éviter de rendre inutilement des composants. En théorie, les cascades pourraient être évitées si les requêtes étaient \"remontées\" au niveau du routeur (modèle \"render-as-you-fetch\"), mais de nombreuses applications existantes ne le font pas et subiraient des baisses de performances."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "**Related resources**:",
+      "source_content_hash": "d6e25e26c41bbf1266b6ac0ec0ac9e0d6a568d242f1848025d709a7986e87b4e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Ressources connexes**:",
+        "en": "**Ressources connexes** :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c94a9c0e",
+      "source_content": "- 📜 [How React 19 (Almost) Made the Internet Slower](https://blog.codeminer42.com/how-react-19-almost-made-the-internet-slower/)\n- 🔗 [React 19 Issue - Disabling prerendering siblings of suspended components breaking common pattern](https://github.com/facebook/react/issues/29898)\n- 🎥 [Jack Herrington - Big Suspense Changes in React 19: Explained In Code](https://www.youtube.com/watch?v=sgnw8dRZa3Q)\n- 🎥 [Josh tried coding - React 19 has a Problem](https://www.youtube.com/watch?v=PZYXTFnP2po)",
+      "source_content_hash": "df7af6838515db70a0224e287c62045c50a823b5a1190a1b1e947e129a2fb399",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Comment React 19 a (presque) ralenti Internet](https://blog.codeminer42.com/how-react-19-almost-made-the-internet-slower/)\n- 🔗 [Problème React 19 - Désactivation du pré-rendu des frères suspendus casse un modèle courant](https://github.com/facebook/react/issues/29898)\n- 🎥 [Jack Herrington - Gros changements Suspense dans React 19 : expliqués en code](https://www.youtube.com/watch?v=sgnw8dRZa3Q)\n- 🎥 [Josh tried coding - React 19 a un problème](https://www.youtube.com/watch?v=PZYXTFnP2po)",
+        "en": "- 📜 [Comment React 19 a (presque) ralenti Internet](https://blog.codeminer42.com/how-react-19-almost-made-the-internet-slower/)\n- 🔗 [Problème React 19 - La désactivation du prérendu des composants frères suspendus casse un modèle courant](https://github.com/facebook/react/issues/29898)\n- 🎥 [Jack Herrington - Grands changements Suspense dans React 19 : expliqué en code](https://www.youtube.com/watch?v=sgnw8dRZa3Q)\n- 🎥 [Josh tried coding - React 19 a un problème](https://www.youtube.com/watch?v=PZYXTFnP2po)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b760ab3f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "![React Internals Explorer - screenshot + logo](/emails/issues/190/rie.jpg)",
+      "source_content_hash": "9ecefe7121591fc9b5e7d8a0c4d087085d36b2a5be1595f74949c6e629e96ee8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "![React Internals Explorer - capture d'écran + logo](/emails/issues/190/rie.jpg)",
+        "en": "![Explorateur des internes de React - capture d'écran + logo](/emails/issues/190/rie.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "**[React Internals Explorer - easily see how React works](https://jser.dev/2024-05-11-introducing-rie/)**",
+      "source_content_hash": "3eab105d4c904c0991ceb9cc38f881628bdb300d2aeac2be06747f4e7c42a274",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Internals Explorer - voir facilement comment React fonctionne](https://jser.dev/2024-05-11-introducing-rie/)**",
+        "en": "**[Explorateur des internes de React - voir facilement comment React fonctionne](https://jser.dev/2024-05-11-introducing-rie/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "A new interactive playground to see how React works under the hood. It’s possible to explore internals step-by-step. You can even select the React version, and it’s particularly relevant for today’s issue because it can show the Suspense behavior difference between React 18 and React 19!",
+      "source_content_hash": "e1d017f1eda5aad2d2c0364c3201b3c435f62012a27f4d0e8fbf67127d44ea61",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Un nouveau terrain de jeu interactif pour voir comment React fonctionne sous le capot. Il est possible d'explorer les mécanismes internes étape par étape. Vous pouvez même sélectionner la version de React, et c'est particulièrement pertinent pour l'édition d'aujourd'hui car il peut montrer la différence de comportement de Suspense entre React 18 et React 19 !",
+        "en": "Un nouveau terrain de jeu interactif pour voir le fonctionnement interne de React. Il est possible d'explorer les mécanismes internes étape par étape. Vous pouvez même sélectionner la version de React, ce qui est particulièrement pertinent pour l'édition d'aujourd'hui car il peut montrer la différence de comportement de Suspense entre React 18 et React 19 !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ba96ee98",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "af7d8a35",
+      "source_content": "- 💸 [Meilisearch - Build search-as-you-type for React](https://www.meilisearch.com/with/react?utm_campaign=sponsoring&utm_content=june-19&utm_source=thisweekinreact)\n- 👀 [React Core PR - Badge Environment Name on Thrown Errors from the Server](https://github.com/facebook/react/pull/29846): A convenient DX improvement to know where the error comes from thanks to a [server] console badge.\n- 🐦 [React Router 7 - Ryan Florence Sneak Peek video](https://x.com/ryanflorence/status/1801388170891903252)\n- 🗓️ [The Geek Conf](https://www.thegeekconf.com/?utm_source=thisweekinreact) - 🇩🇪 Berlin - 18 & 25 July - Get a 10% discount with code \"TWIR\". Tomasz Sapeta (Expo/Software Mansion), Carmen Huidobro (DevCraft Academy), and Atila Fassina (CrabNebula) will speak !\n- 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - June 27 - Just 1 week left before the conference! 10% discount with code \"TWIR\"\n- 📜 [Codemod partnering with the React team](https://codemod.com/blog/react-announcement): The Codemod company is partnering with React to maintain the react-codemod repo and help us upgrade to React 19.\n- 📜 [Future of Astro series - Zero-JS view transitions, Astro Content Layer, and Server Islands](https://astro.build/blog/future-of-astro-zero-js-view-transitions/): Astro betting on new browser features like cross-document view transitions makes us question the need for client-side routing and SPAs. I hope they’ll figure out how to persist component state across navigation in this new mode. They also plan to improve their (CMS integration, composable, using LibSQL) and provide a new “server:defer” directive (similar to Suspense, but not using streaming).\n- 📜 [Demystifying INP: New tools and actionable insights](https://vercel.com/blog/demystifying-inp-new-tools-and-actionable-insights): Vercel CTO explains that the new Core Web Vital INP (Interaction to Next Paint) is a misleading metric. Surprisingly preloading data can even give you a lower INP score. Using a React example from the Next.js docs site (js/ts code block language picker), he explains that user input must be acknowledged within 200ms. He suggests using either his package “await-interaction-response” or React transitions to separate user input handling from rendering the meaningful result.\n- 📜 [Experimenting with React Server Components and Vite](https://danielnagy.me/posts/Post_usaivhdu3j5d): A quite advanced article recreating a RSC setup with Vite from scratch. Very useful resource for framework authors looking to support RSCs. All this work to run a blog for your cat Dan 😄.\n- 📜 [How to compose JavaScript functions that take multiple parameters](https://jrsinclair.com/articles/2024/how-to-compose-functions-that-take-multiple-parameters-epic-guide/): Shows how to use a compose() function with React useState, among other things that will interest functional programming enthusiasts.\n- 📜 [React Form with Loading State (Pending Action)](https://www.robinwieruch.de/react-form-loading-pending-action/): Shows 3 possible ways to can get the loading state of a form, using useActionState, useFormStatus and useTransition.\n- 📜 [Redwood “Love reloaded\" - A DX Story](https://redwoodjs.com/blog/love-reloaded-a-dx-story): Redwood briefly explains the tradeoffs of 3 instant feedback mechanisms. For their RSC experience, they’ll start by shipping live reload, and plan to implement fast refresh later.\n- 📜 [Using React Query with Astro](https://hounie.me/writings/how-to-use-react-query-with-astro/): Using nanostores instead of React Context.\n- 📜 [Next.js Server Actions with next-safe-action](https://www.davegray.codes/posts/nextjs-server-actions-with-next-safe-action): The library handles typesafety and input validation (with zod).\n- 📜 [Hybrid i18n with Next and Astro - 4-part series](https://www.ericburel.tech/blog/hybrid-i18n-next-astro-1)\n- 📜 [Write SOLID React Hooks](https://www.perssondennis.com/articles/write-solid-react-hooks)\n- 📜 [Full Stack Web Push API Guide - Add push notifications to Remix Indie Stack](https://www.bocoup.com/blog/full-stack-web-push-api-guide)\n- 📦 [React DevTools 5.3 - Dim StrictMode extra console logs, fixes and refactors](https://github.com/facebook/react/blob/main/packages/react-devtools/CHANGELOG.md#530)\n- 📦 [Vercel AI SDK 3.2](https://vercel.com/blog/introducing-vercel-ai-sdk-3-2): you can now build generative UI chatbots client-side with just useChat() and streamText in your React projects\n- 📦 [Reassure 1.0 - Performance testing companion for React and React Native](https://github.com/callstack/reassure/releases/tag/reassure%401.0.0)\n- 📦 [Fumadocs 12 - Documentation framework for Next.js](https://fumadocs.vercel.app/blog/v12)\n- 📦 [react-distributed-components - Effortlessly compose client and server components](https://github.com/daniel-nagy/react-distributed-components)\n- 📦 [tscircuit - Design Electronics with React & AI](https://tscircuit.com/)\n- 📦 [Relay 17.0](https://github.com/facebook/relay/releases/tag/v17.0.0)\n- 📦 [Sonner 1.5 - Toast library - x3 smaller and many other improvements](https://github.com/emilkowalski/sonner/releases/tag/v.1.5.0)\n- 📦 [Remix Privacy Stack - Indie Stack + GDPR/CCPA flows + self-hosted](https://www.bocoup.com/blog/announcing-the-privacy-stack-for-remix)\n- 🎥 [Delba - Next.js: Authentication (Best Practices for Server Components, Actions, Middleware)](https://www.youtube.com/watch?v=N_sUsq_y10U)\n- 🎥 [Jolly Coding - Why You Should Use React Aria Components](https://www.youtube.com/watch?v=lTPh6NGLAmk)",
+      "source_content_hash": "31e0993cf9b0d0ee0c4401a80e9c985ed988bc0e6cd8e3e1f3f8941dd583beab",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_af7d8a35",
+        "en": "@@untranslatable_placeholder_af7d8a35"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c2059547",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c2059547",
+        "en": "@@untranslatable_placeholder_c2059547"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fc25fa9c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "94145a94",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "[![Join The React Native Performance Optimization Course](/emails/issues/190/AdCourseTWIR.jpg)](https://hubs.li/Q02B4mFd0)",
+      "source_content_hash": "ea106b4c75d5598cd66eb82f574440cea7cbf8add7b52b041bd3c1246369043f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Rejoignez le cours d'optimisation des performances React Native](/emails/issues/190/AdCourseTWIR.jpg)](https://hubs.li/Q02B4mFd0)",
+        "en": "[![Rejoignez le cours d'optimisation des performances React Native](/emails/issues/190/AdCourseTWIR.jpg)](https://hubs.li/Q02B4mFd0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "**[Join The React Native Performance Optimization Course](https://hubs.li/Q02B4mFd0)**",
+      "source_content_hash": "44974058ff5c32f2bd81ae2cebad281b81729867f1050855dec451f389cb1527",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Rejoignez le cours d'optimisation des performances React Native](https://hubs.li/Q02B4mFd0)**",
+        "en": "**[Rejoignez le cours d'optimisation des performances React Native](https://hubs.li/Q02B4mFd0)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "**No App Can Be A Patchwork Planet**",
+      "source_content_hash": "ca9fd5196954335aeaa83cbfb1e03a165111dc4b978dd3f49ae38d476d40bc81",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Aucune application ne peut être une planète rapiécée**",
+        "en": "**Aucune application ne peut être une planète en patchwork**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "So if you want to react well to its performance bottlenecks, you need to understand their origins.",
+      "source_content_hash": "afabb874ca7fee0cb8242aaf9404e90a0c7dfce15fca8a44110a038e66e6cea0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Donc si vous voulez bien réagir à ses goulots d'étranglement de performance, vous devez comprendre leurs origines.",
+        "en": "Donc si vous voulez bien réagir à ses goulots d'étranglement de performance, vous devez comprendre leurs origines."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "This [live training program](https://hubs.li/Q02B4mFd0) will help you **solve optimization mysteries based on a data-driven approach called DMAIC 🕵️**",
+      "source_content_hash": "1419129dda6e2f6f251053398de4642147f4a6d68fadce77eb8048b05302df9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ce [programme de formation en direct](https://hubs.li/Q02B4mFd0) vous aidera à **résoudre les mystères d'optimisation grâce à une approche data-driven appelée DMAIC 🕵️**",
+        "en": "Ce [programme de formation en direct](https://hubs.li/Q02B4mFd0) vous aidera **à résoudre les mystères de l'optimisation grâce à une approche basée sur les données appelée DMAIC 🕵️**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "**5** Interactive Modules, **3** Seasoned React Native Experts, and **1** Future-Proof Framework that will nurture your development lifecycle holistically.",
+      "source_content_hash": "40ad64e66182bfe30a00518b37d9db940206b385b24ccfd5d77ead0919f7ef5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**5** modules interactifs, **3** experts chevronnés de React Native, et **1** framework pérenne qui nourrira votre cycle de développement de manière holistique.",
+        "en": "**5** modules interactifs, **3** experts chevronnés de React Native, et **1** cadre pérenne qui nourrira votre cycle de développement de manière holistique."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "Want to join the mission? 🚀 [**Sign up for the waiting list today**](https://hubs.li/Q02B4mFd0) and mark your calendar for July 9-10!",
+      "source_content_hash": "5e0aad149df4b276101fbfde60fda11021231ce16081b1fde2dae4fa9627fe5f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vous voulez rejoindre la mission ? 🚀 [**Inscrivez-vous à la liste d'attente dès aujourd'hui**](https://hubs.li/Q02B4mFd0) et notez les dates du 9-10 juillet dans votre agenda !",
+        "en": "Vous voulez rejoindre la mission ? 🚀 [**Inscrivez-vous à la liste d'attente dès aujourd'hui**](https://hubs.li/Q02B4mFd0) et notez les dates du 9-10 juillet dans votre calendrier !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette section est rédigée par [Benedikt](https://twitter.com/bndkt).",
+        "en": "Cette section est rédigée par [Benedikt](https://twitter.com/bndkt)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "![](/emails/issues/190/rn.jpg)",
+      "source_content_hash": "9f83befe116a85015aa987eb1f97c533eb7d0f7d7b5a58b344410d197fc10218",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "![](/emails/issues/190/rn.jpg)",
+        "en": "![](/emails/issues/190/rn.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "As there is no “big headline news” this week, I want to take the opportunity to celebrate two projects within the React Native community. The team behind React Native [visionOS received the React Open Source Award](https://x.com/michalchudziak/status/1801632496100008121) in the category “Most Exciting Use of Technology,” and the team at Infinite Red released the [300th episode of the React Native Radio](https://reactnativeradio.com/episodes/rnr-300-special-episode-ask-us-anything) podcast this week. Congratulations to both teams and thank you for the work you all do for our community!",
+      "source_content_hash": "9972dfe1ee3ab07bb056e20030d749a272e2d39d230aa91b288d15d9d54fd3c5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Comme il n'y a pas de \"grosse actualité\" cette semaine, je souhaite saisir l'occasion pour célébrer deux projets au sein de la communauté React Native. L'équipe derrière React Native [visionOS a reçu le React Open Source Award](https://x.com/michalchudziak/status/1801632496100008121) dans la catégorie \"Utilisation la plus excitante de la technologie\", et l'équipe d'Infinite Red a publié le [300ème épisode du podcast React Native Radio](https://reactnativeradio.com/episodes/rnr-300-special-episode-ask-us-anything) cette semaine. Félicitations aux deux équipes et merci pour le travail que vous accomplissez pour notre communauté !",
+        "en": "En l'absence de \"grosse actualité\" cette semaine, je souhaite profiter de l'occasion pour célébrer deux projets au sein de la communauté React Native. L'équipe derrière React Native [visionOS a reçu le React Open Source Award](https://x.com/michalchudziak/status/1801632496100008121) dans la catégorie \"Utilisation technologique la plus excitante\", et l'équipe d'Infinite Red a publié le [300ème épisode du podcast React Native Radio](https://reactnativeradio.com/episodes/rnr-300-special-episode-ask-us-anything) cette semaine. Félicitations aux deux équipes et merci pour le travail que vous accomplissez pour notre communauté !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8198b43",
+      "source_content": "- 💸 [WithFrame - Pre-Built React Native Components](https://withfra.me/?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--3)\n- 🐦 [React Native visionOS receives React Open Source Award](https://x.com/michalchudziak/status/1801632496100008121): Congratulations!\n- 🐦 [New React Native IDE beta with speed improvements](https://x.com/kzzzf/status/1801367065086816449)\n- 👀 [React Native 0.75 PRs - bump dependency to React 19](https://github.com/facebook/react-native/pull/44990)\n- 👀 [React Native PR - requestIdleCallback ](https://github.com/facebook/react-native/pull/44759): Schedule background and low-priority work on the main event loop.\n- 📖 [Expo Docs - React Compiler - Available from Expo SDK 51](https://docs.expo.dev/guides/react-compiler/): Still experimental, of course.\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 Portland, OR - July 17-19. The U.S. React Native Conference is back with engaging talks and hands-on workshops! Get 15% off your ticket with code “TWIR”\n- 📜 [Infinite Red maintains a list of the Top React Native Apps](https://shift.infinite.red/top-react-native-apps-1cae78fdee22): I didn’t know Burger King and Pizza Hut apps were built with RN. If you know of a great app that should be on that list, you can nominate it - even if it’s not a fast food chain!\n- 📜 [Reanimated Can Block Your JS Thread](https://andrei-calazans.com/posts/reanimated-blocking-js-thread/): Yes, you can shoot yourself in the foot when using shared values, this is a good reminder to evaluate whether a value needs to be a Shared Value.\n- 📜 [Testing Expo Web3 Apps With Wagmi and Anvil](https://www.callstack.com/blog/testing-expo-web3-apps-with-wagmi-and-anvil): Even if you’re like me and instantly fall asleep when you hear the word Web3 these days, this article is a good example walkthrough of different aspects of testing, including mocking.\n- 📜 [Baseball + React Native = Success](https://www.thewidlarzgroup.com/portfolio/flexpro-grip): I love seeing apps built with RN that are a bit unusual (and not just consist of lists of records). This is an example of such an app for the FlexPro Grip, a device that Baseball players use to train their grip.\n- 📜 [Bringing native AI to your mobile apps with ExecuTorch— part I — iOS](https://blog.swmansion.com/bringing-native-ai-to-your-mobile-apps-with-executorch-part-i-ios-f1562a4556e8)\n- 📦 [react-navigation-bottom-sheet](https://github.com/th3rdwave/react-navigation-bottom-sheet): I’m a big fan of @gorhom/bottom-sheet, this new library integrates it with React Navigation.\n- 📦 [react-native-screens 3.32.0 - Back button display mode on iOS, navigationBarTranslucent prop on Android](https://github.com/software-mansion/react-native-screens/releases/tag/3.32.0)\n- 📦 [react-native-config 1.5.2 adds visionOS support](https://github.com/lugg/react-native-config/releases/tag/v1.5.2)\n- 📦 [react-native-gesture-handler 2.17.0](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.17.0)\n- 🎙️ [RNR 300 - Special Episode: Ask Us Anything!](https://reactnativeradio.com/episodes/rnr-300-special-episode-ask-us-anything)\n- 🎙️ [Rocket Ship 43 - React Native Best Practices Template with Youssouf El Azizi](https://share.transistor.fm/s/cc24a442)\n- 🎥 [notJust․dev - Building an e-Scooter App with React Native and Mapbox](https://www.youtube.com/live/uxj8jnlooP8)\n- 🎥 [Simon Grimm - 5 React Native Tips to Wow Your Users](https://www.youtube.com/watch?v=pZgjlh5ezd4)\n- 🎥 [Baptiste Devessier - XState at Expo](https://www.youtube.com/watch?v=HuXnUGfHKZs): TIL that Expo Updates uses XState.",
+      "source_content_hash": "0df57bd0ffcd10f6dbbdee1ece9323d9c8754f33327403bc42e6170f64016f65",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_a8198b43",
+        "en": "@@untranslatable_placeholder_a8198b43"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4b679d6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55dc794c",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e99d73d3",
+      "source_content": "- 📣 [Updates from the 102nd TC39 meeting - Promise.try, isError, Discard Bindings, RegExp.escape, Iterators…](https://dev.to/hemanth/updates-from-the-102nd-tc39-meeting-i4i)\n- 📜 [CSS Conditionals (if) on Custom Properties](https://geoffgraham.me/conditionals-on-custom-properties/)\n- 📜 [Introducing Drizzle](https://frontendmasters.com/blog/introducing-drizzle/)\n- 📜 [Node.js is Here to Stay](https://blog.platformatic.dev/nodejs-is-here-to-stay)\n- 📜 [The latest in CSS and web UI: I/O 2024 recap](https://developer.chrome.com/blog/new-in-web-ui-io-2024?hl=en)\n- 📜 [Using Arktype in Place of Zod - How to Adapt Parsers](https://dev.to/seasonedcc/using-arktype-in-place-of-zod-how-to-adapt-parsers-3bd5)\n- 📜 [Blazing Fast Websites with Speculation Rules](https://www.debugbear.com/blog/speculation-rules)\n- 📦 [Node 22.3 - Snapshot testing, module mocking (experimental), fs.cp() stable](https://nodejs.org/en/blog/release/v22.3.0)\n- 📦 [htmx 2.0](https://htmx.org/posts/2024-06-17-htmx-2-0-0-is-released/)",
+      "source_content_hash": "461c592f59bdcd864e4bc1660fbf1252c2b3504348d6efab8a38afc95a1a0658",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📣 [Mises à jour de la 102e réunion du TC39 - Promise.try, isError, Discard Bindings, RegExp.escape, Iterators…](https://dev.to/hemanth/updates-from-the-102nd-tc39-meeting-i4i)\n- 📜 [Conditionnels CSS (if) sur les propriétés personnalisées](https://geoffgraham.me/conditionals-on-custom-properties/)\n- 📜 [Présentation de Drizzle](https://frontendmasters.com/blog/introducing-drizzle/)\n- 📜 [Node.js est là pour rester](https://blog.platformatic.dev/nodejs-is-here-to-stay)\n- 📜 [Les dernières nouveautés en CSS et UI web : récapitulatif de I/O 2024](https://developer.chrome.com/blog/new-in-web-ui-io-2024?hl=en)\n- 📜 [Utiliser Arktype à la place de Zod - Comment adapter les parseurs](https://dev.to/seasonedcc/using-arktype-in-place-of-zod-how-to-adapt-parsers-3bd5)\n- 📜 [Des sites web ultra-rapides avec les règles de spéculation](https://www.debugbear.com/blog/speculation-rules)\n- 📦 [Node 22.3 - Tests par instantanés, simulation de modules (expérimental), fs.cp() stable](https://nodejs.org/en/blog/release/v22.3.0)\n- 📦 [htmx 2.0](https://htmx.org/posts/2024-06-17-htmx-2-0-0-is-released/)",
+        "en": "- 📣 [Mises à jour de la 102e réunion TC39 - Promise.try, isError, Discard Bindings, RegExp.escape, Iterators…](https://dev.to/hemanth/updates-from-the-102nd-tc39-meeting-i4i)\n- 📜 [Conditionnels CSS (if) sur les propriétés personnalisées](https://geoffgraham.me/conditionals-on-custom-properties/)\n- 📜 [Présentation de Drizzle](https://frontendmasters.com/blog/introducing-drizzle/)\n- 📜 [Node.js est là pour rester](https://blog.platformatic.dev/nodejs-is-here-to-stay)\n- 📜 [Les dernières nouveautés en CSS et interface web : récapitulatif I/O 2024](https://developer.chrome.com/blog/new-in-web-ui-io-2024?hl=en)\n- 📜 [Utiliser Arktype à la place de Zod - Comment adapter les analyseurs](https://dev.to/seasonedcc/using-arktype-in-place-of-zod-how-to-adapt-parsers-3bd5)\n- 📜 [Des sites web ultra-rapides avec les règles de spéculation](https://www.debugbear.com/blog/speculation-rules)\n- 📦 [Node 22.3 - Tests par instantané, simulation de modules (expérimental), fs.cp() stable](https://nodejs.org/en/blog/release/v22.3.0)\n- 📦 [htmx 2.0](https://htmx.org/posts/2024-06-17-htmx-2-0-0-is-released/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c81952ce",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "657bde08",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "[![alt](/emails/issues/190/meme.jpg)](https://x.com/trashh_dev/status/1803151970078957936)",
+      "source_content_hash": "e8b257279ea8b93152a88e355fe3eda57753a39ab9774779af7c46480292e81f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/190/meme.jpg)](https://x.com/trashh_dev/status/1803151970078957936)",
+        "en": "[![alt](/emails/issues/190/meme.jpg)](https://x.com/trashh_dev/status/1803151970078957936)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "62d066b0",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À la prochaine ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/190/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.189245+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "6fc85aa36004878f4207a66623ee257cd278ff12193f4525e0c62c7d94d2910e",
+    "en": "6fc85aa36004878f4207a66623ee257cd278ff12193f4525e0c62c7d94d2910e"
+  }
+}

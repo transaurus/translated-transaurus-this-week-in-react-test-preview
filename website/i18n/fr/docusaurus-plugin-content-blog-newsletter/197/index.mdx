@@ -1,0 +1,156 @@
+---
+slug: /197
+title: "This Week In React #197: Waku, Effect, TanStack, Framer Motion, use(), Preact, Valtio, Astro, Three.js, Nitrogen, React-Native-Web, expo-dom, Tophat, React-Navigation, Skip, TypeScript, Rspack, Volta..."
+authors: [matthieugicquel, cyrilbo]
+date: 08-21-2024
+---
+
+Bonjour à tous !
+
+Cyril et Matthieu de [Theodo Apps (anciennement BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) ici 👋, remplaçant Seb pour vous apporter les dernières nouvelles des mondes React et React Native.
+
+Cela a été une autre semaine calme, mais nous avons tout de même de belles mises à jour pour vous. Waku prend désormais en charge les React Server Actions, il y a des conseils pour utiliser TanStack/Router, et nous explorons le parcours de React pour devenir un framework full-stack. De plus, découvrez les nouveautés de React Native 0.75 ! Nous avons également quelques mises à jour sur NitroModules et react-native-webGPU. Plongez et profitez-en !
+
+Découvrez notre conférence partenaire **[React Advanced London](https://reactadvanced.com/?utm_source=Newsletter&utm_medium=thisweekinreact)** (🇬🇧 Londres - 25 et 28 octobre). Nous aimons beaucoup l'idée des conférences React avancées, et jusqu'à présent, le programme ne déçoit pas ! 👌
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Vos revues de PR React deviennent-elles un chaos de composants ?](/emails/issues/197/coderabbit.jpg)](https://coderabbit.ai/?utm_source=newsletter&utm_medium=this-week-react-aug-21)
+
+**[Vos revues de PR React deviennent-elles un chaos de composants ?](https://coderabbit.ai/?utm_source=newsletter&utm_medium=this-week-react-aug-21)**
+
+Découvrez des stratégies pour rationaliser vos revues de PR React et élever la concentration de votre équipe sur les aspects critiques de la qualité du code. Nous examinerons chaque PR avec la gestion des dépendances, la réconciliation du code et plus encore, permettant à votre équipe de se concentrer sur les décisions architecturales, la conception des composants et les optimisations de performances.
+
+CodeRabbit aide à :
+
+- Application des bonnes pratiques : Utilisez la capacité de CodeRabbit à identifier les anti-patterns React courants et à suggérer des bonnes pratiques, garantissant une bonne qualité de code.
+- Revue de la structure des composants : Bénéficiez d'un résumé approfondi de la structure de vos composants, recevant des suggestions pour une meilleure composition.
+- Commentaires de revue de code actionnables : Corrigez le code directement dans la PR, avec une suggestion de commit en un clic.
+
+CodeRabbit est gratuit pour tous les dépôts open source. [Commencez dès aujourd'hui !](https://coderabbit.ai/?utm_source=newsletter&utm_medium=this-week-react-aug-21)
+
+---
+
+## ⚛️ React {#react}
+
+[![Waku v0.21 - Prise en charge complète des React Server Actions](/emails/issues/197/waku.jpg)](https://waku.gg/blog/server-actions-are-here)
+
+**[Waku v0.21 - Prise en charge complète des React Server Actions](https://waku.gg/blog/server-actions-are-here)**
+
+Les composants React Server ont inspiré une nouvelle vague de « frameworks React ». Waku, créé par Daishi Kato (le créateur de jotai, valtio…) en fait partie. Il a été l'un des premiers en dehors de Next.js à offrir le support des composants serveur.
+
+Avec l'ajout des Server Actions, la plupart des fonctionnalités de React 19 sont désormais prises en charge par Waku, et il est possible de développer des applications complètes en sautant la partie « avoir une API ».
+
+---
+
+[![De React à Effect](/emails/issues/197/effect.jpg)](https://effect.website/blog/from-react-to-effect)
+
+**[De React à Effect](https://effect.website/blog/from-react-to-effect)**
+
+Michael Arnaldi, le créateur d'Effect, explique comment les modèles utilisés par Effect et React sont similaires. Bien qu'Effect soit une boîte à outils puissante, il est assez difficile de démarrer avec, presque comme un nouveau langage, donc établir des parallèles avec ce que nous connaissons déjà peut aider.
+
+Dans Effect, tout comme avec React, la majeure partie du code que vous écrivez est un "blueprint" : vous déclarez ce que votre programme doit faire sans l'exécuter directement. Ensuite, la bibliothèque (React ou Effect) se charge de l'exécuter.
+
+---
+
+- 💸 [TutorialKit — Créez des tutoriels interactifs instantanément sans construire ni gérer d'infrastructure backend.](https://tutorialkit.dev/)
+- 🗓️ [reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact) - 🇮🇹 Vérone - 25 octobre - Obtenez 10% de réduction avec le code "TWIR". A, B et C interviendront !
+- 🗓️ [Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact) - 🇺🇸 Boston - 03 & 04 octobre - Obtenez 10% de réduction avec le code "TWIR". Les intervenants sont annoncés, consultez le site de la conférence.
+- 📜 [Conseils après 8 mois de TanStack/Router en production](https://swizec.com/blog/tips-from-8-months-of-tan-stack-router-in-production/) : Swizec Teller partage ses principes directeurs, par exemple quand utiliser des loaders, des requêtes suspense ou des queries
+- 📜 [React devient (ou devient) un Framework Full-Stack](https://www.robinwieruch.de/react-full-stack-framework/) : Avec l'ajout des Server Components et Server Actions
+- 📜 [Synchroniser l'état dans React](https://www.brenelz.com/posts/synchronizing-state-in-react/) : Explique comment résoudre un bug classique "correctement", non pas avec useEffect mais en découpant les composants
+- 📜 [Construire un composant d'actions par glissement avec React et Framer Motion](https://sinja.io/blog/swipe-actions-react-framer-motion)
+- 📜 [useStateObject : Une API simple et pratique autour de useState](https://www.jameskerr.blog/posts/use-state-object/)
+- 📜 [Comment construire un Hook React qui gère les requêtes séquentielles - Utilisation d'un AbortController](https://webdeveloper.beehiiv.com/p/build-react-hook-handles-sequential-requests)
+- 📜 [Générer un PDF en React](https://spacejelly.dev/posts/generate-a-pdf-from-html-in-javascript) - html2pdf.js, React PDF et Puppeteer
+- 📜 [Preact - Prérendu avec Preset Vite](https://preactjs.com/blog/prerendering-preset-vite)
+- 📜 [Bon refactoring vs mauvais refactoring](https://www.builder.io/blog/good-vs-bad-refactoring)
+- 📜 [Comment Valtio est né](https://blog.axlight.com/posts/how-valtio-was-born/)
+- 📦 [Astro v4.14 - API expérimentale Content Layer avec support Intellisense dans les fichiers de contenu](https://astro.build/blog/astro-4140/)
+- 📦 [react-three/xr 6.2.0](https://github.com/pmndrs/xr/releases/tag/v6.2.0) : Ajoute les espaces non bornés, la détection de profondeur et les sources d'entrée secondaires
+- 📦 [react18-use](https://github.com/dai-shi/react18-use) : Daishi Kato a créé un shim du hook React 19 `use` fonctionnant sous React 18. Inclut la capacité de 🐦 [appeler `use(Context)` dans `useMemo`](https://x.com/dai_shi/status/1825484689030955094) (expérimental), une meilleure alternative aux sélecteurs de contexte que l'équipe React prévoit d'implémenter.
+- 📦 [Formity](https://www.formity.app/) : Définissez des formulaires complexes avec une structure JSON, laissez le package gérer le gros œuvre
+- 📦 [rspack-plugin-react-refresh v1.0](https://github.com/rspack-contrib/rspack-plugin-react-refresh)
+- 🎙️ [PodRocket - UI générative et composants React avec Malte Ubl](https://podrocket.logrocket.com/generative-ui-react-components-malte-ubl)
+- 🎥 [Jack Herrington - Astuce secrète React-Native pour les devs React Web ! - Utilisez patch-package pour corriger une dépendance incompatible avec les Server Components](https://www.youtube.com/watch?v=81oUBWJQii4)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Tests visuels pour Storybook, Playwright & Cypress](/emails/issues/197/chromatic.jpg)](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=2nd_sponsor&utm_campaign=q3_2024)
+
+**[Test visuel pour Storybook, Playwright & Cypress](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=2nd_sponsor&utm_campaign=q3_2024)**
+
+Fatigué des mises en page cassées et des interfaces utilisateur saccadées qui vous ralentissent ? Les tests visuels de Chromatic vous permettent de développer en toute confiance. Ils détectent les bugs que les tests fonctionnels manquent, des éléments mal alignés aux couleurs incorrectes en passant par les problèmes de z-index.
+
+Aucun besoin de cas de test ou de configuration séparée. Chromatic s'intègre à votre configuration existante pour Storybook, Playwright ou Cypress pour activer les tests visuels de l'interface utilisateur de votre application. Tous les tests s'exécutent en parallèle - sans coût supplémentaire - grâce à l'infrastructure Capture Cloud ultra-rapide de Chromatic.
+
+La configuration ne prend que deux minutes, et notre plan de base comprend 5 000 captures gratuites par mois. [Commencez dès aujourd'hui »](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=2nd_sponsor&utm_campaign=q3_2024)
+
+---
+
+## 📱 React-Native {#react-native}
+
+**[React Native 0.75](https://reactnative.dev/blog/2024/08/12/release-0.75)**
+
+Cette semaine marque la sortie de React Native 0.75, où l'équipe principale a renforcé sa recommandation d'utiliser un framework React Native comme Expo pour créer des applications prêtes pour la production. Reflétant ce changement, le dossier `/template` a été supprimé du package principal `react-native`, et la commande `react-native init` sera dépréciée d'ici fin 2024, bien que les deux resteront accessibles via les packages `@react-native-community`. Notamment, cette mise à jour apporte des améliorations significatives, notamment [des performances accrues lors de la phase de build d'auto-liaison](https://github.com/react-native-community/discussions-and-proposals/discussions/814) et l'ajout de [Yoga 3.1](https://www.yogalayout.dev/blog/announcing-yoga-3.1), qui prend désormais en charge les pourcentages pour les props `gap`, `columnGap`, `rowGap` et `translation` lorsque la nouvelle architecture est activée. Avec ces avancées, il est clair que l'adoption de la nouvelle architecture est cruciale pour bénéficier des dernières fonctionnalités et améliorations de stabilité.
+
+---
+
+- 💸 [React Native Mastery - Le seul cours dont vous avez besoin pour maîtriser React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 👀 [React Native 0.76 sera livré avec une bibliothèque dynamique unique fusionnée appelée libreactnative.so](https://github.com/react-native-community/discussions-and-proposals/discussions/816): Cela réduira la taille de l'application et le temps de démarrage
+- 🐦 [Nitrogen, le nouveau Codegen pour NitroModules](https://x.com/mrousavy/status/1823796378860184044): Marc présente comment Nitrogen génère des spécifications Swift que vous pouvez ensuite implémenter sans toucher au code Objective-C & C++ 👏
+- 🐦 [Les types pour react-native-web sont désormais publiés sur DefinitelyTyped](https://x.com/swmansion/status/1824379053836480771)
+- 🐦 [three.js fonctionnant dans RN grâce à react-native-webGPU](https://x.com/wcandillon/status/1825862686300672124)
+- 🐦 [Démo expo-dom avec un composant React Three Fiber](https://x.com/Baconbrix/status/1825128678683971733)
+- 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 Wrocław - 5-6 sept. Obtenez 10% de réduction avec le code "TWIR". Intervenants : Evan Bacon, Marc Rousavy, Tzvetan Mikov, Oskar Kwaśniewski...
+- 📜 [React Native 0.75 est désormais disponible avec Expo SDK 51](https://expo.dev/changelog/2024/08-14-react-native-0.75): Pas besoin d'attendre le SDK 52, profitez des corrections de bugs, des améliorations de performances et de la stabilisation de la nouvelle architecture à moindre coût de mise à niveau.
+- 📜 [Progressive Web Apps (PWAs) : Une étape vers une application mobile native](https://www.thinkmill.com.au/blog/progressive-web-apps-pw-as-a-stepping-stone-towards-a-native-mobile-application): Une évaluation à jour des compromis entre les PWAs et les applications natives
+- 📦 [React Native Keyboard Controller v1.13](https://github.com/kirillzyusko/react-native-keyboard-controller/releases/tag/1.13.0): Ajoute la prise en charge des modales Android et de React Native 0.75
+- 📦 [Skip v1.0](https://skip.tools/blog/skip-1_0-release/): Nouveau framework multiplateforme permettant aux développeurs d'écrire des applications iOS natives en Swift et SwiftUI tout en générant automatiquement du code Android natif
+- 📦 [Shopify - Tophat est désormais open source](https://github.com/shopify/tophat)
+- 🎙️ [RNR 304 - React Navigation V7 avec Satyajit Sahoo - Nouvelles fonctionnalités de React Navigation 7, notamment l'API statique, le deep linking amélioré et une meilleure prise en charge de TypeScript](https://reactnativeradio.com/episodes/rnr-304-react-navigation-v7-with-satyajit-saho)
+- 🎥 [Jolly Coding - Expo facilite la migration du Web vers le natif - Démo expo-dom](https://www.youtube.com/watch?v=MKoZTAcVCJU)
+
+---
+
+## 🔀 Autres {#other}
+
+- 📊 [State of CSS 2024 survey is out](https://survey.devographics.com/en-US/survey/state-of-css/2024)
+- 👀 [Chrome 129 will introduce two new Javascript Events - scrollSnapChange and scrollSnapChanging](https://developer.chrome.com/blog/scroll-snap-events?hl=en)
+- 👀 [ECMAScript Error Safe Assignment Operator proposal](https://github.com/arthurfiorette/proposal-safe-assignment-operator) - Inspired by functional programming concepts like monads and Rust's `Result` type, It aims to streamline error handling in JavaScript by returning a tuple `[error, result]` from functions.
+- 🐦 [Colin’s hack to filter keys from a TS interface:](https://x.com/colinhacks/status/1824052417820021173) Using Omit/Pick and a string template literal
+- 📜 [Branded Types in Typescript](https://www.learningtypescript.com/articles/branded-types): Branded types are key if you want to strengthen your type system. Prices are not just numbers, nor is an amount of time, so protect your functions by narrowing down the types you accept.
+- 📜 [Total TypeScript - Why I Don't Like Enums - Numeric vs String Enums, Nominal typing and other quirks.](https://www.totaltypescript.com/why-i-dont-like-typescript-enums)
+- 📜 [Syntax Highlighting in Hand-Coded Websites - Implement syntax highlighting using OpenType features directly within a font](https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/)
+- 📜 [“Smart” Layouts With Container Queries - Comparison of container queries with traditional media queries](https://css-tricks.com/smart-layouts-with-container-queries/)
+- 📜 [Lessons learned switching to Rspack - challenges and benefits of migrating a SPA from webpack to Rspack](https://birtles.blog/2024/08/14/lessons-learned-switching-to-rspack/)
+- 📜 [Spatial compute - Let the network decide where in the world to run your code](https://sunilpai.dev/posts/spatial-compute/)
+- 📦 [Chrome 128 Devtools update - Console insights by Gemini, Performance & Network panels improvements](https://developer.chrome.com/blog/new-in-devtools-128?hl=en)
+- 📦 [Volta 2.0 The Hassle-Free JavaScript Tool Manager](https://github.com/volta-cli/volta/releases/tag/v2.0.0)
+- 🎥 [Lydia Hallie - JavaScript Visualized - Closures](https://www.youtube.com/watch?v=6Ixyltr8_R0)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![alt](/emails/issues/197/meme.jpg)](https://x.com/colinhacks/status/1823445912997515429)
+
+[![alt](/emails/issues/197/meme2.jpg)](https://x.com/nativewindcss/status/1824558552972923122)
+
+À la prochaine ! 👋

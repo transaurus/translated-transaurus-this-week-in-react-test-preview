@@ -1,0 +1,553 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/188/index.mdx",
+  "source_file_content_hash": "6faebf6722f31c576fe45c182e99fb52ba667231403e5396b8dfb9180f81e57e",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /188\ntitle: \"This Week In React #188: React 19 RC0, Data Fetching, Framer Motion, Compiler, Astro, Zod, Remix, Docusaurus, React-Query,, Memory Leaks, Spline, Module Mocking, Slow Networks, MS Edge, RN Security Guide, RN 0.74.2, Reanimated 3.12, Turborepo 2, Biome 1.8...\"\nauthors: [bndkt]\ndate: 06-06-2024\n---",
+      "source_content_hash": "ccb10060443ba38cbc22685b55e4958246510b765ecff42e68ea8bc3e82dade8",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hey,",
+      "source_content_hash": "6eeab484b885033840d8271bed6863a4eac0e789769730f1195a6be2e1235797",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour,",
+        "en": "Salut,"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This is [Benedikt](https://twitter.com/bndkt) this week, filling in for Sébastien who’s taking a newsletter break.",
+      "source_content_hash": "8460aade61cdf03a04ff7038b1a1618a66dbb969b6403964346350d7c6de0b27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ici [Benedikt](https://twitter.com/bndkt) cette semaine, remplaçant Sébastien qui prend une pause de la newsletter.",
+        "en": "C'est [Benedikt](https://twitter.com/bndkt) cette semaine, qui remplace Sébastien en pause newsletter."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React 19 is nearing its final release, with the first RC published this week. Apart from this, there’s not a lot of release activity in the React and React Native communities. So this week, I decided to feature two great pieces of content as headlines in both sections. A seminal 10k-word-long article about Data Fetching Patterns in Single-Page Applications by Juntao Qiu, and a great video overview of all the different ways to build React Native apps with Expo by Simon Grimm.",
+      "source_content_hash": "d0ffa96c0d848f3c5612ad129eac266dea1934d58a1421de75e6d4027d75d03f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React 19 approche de sa version finale, avec la première RC publiée cette semaine. Hormis cela, l'activité de publication est plutôt calme dans les communautés React et React Native. J'ai donc décidé de mettre en avant deux excellents contenus comme têtes d'affiche dans chaque section : un article fondateur de 10 000 mots sur les modèles de récupération de données dans les applications monopages par Juntao Qiu, et une superbe vue d'ensemble vidéo des différentes méthodes pour construire des applications React Native avec Expo par Simon Grimm.",
+        "en": "React 19 approche de sa sortie finale, avec la première RC publiée cette semaine. Hormis cela, peu d'activités de publication dans les communautés React et React Native. J'ai donc choisi de mettre en avant deux excellents contenus : un article fondateur de 10 000 mots sur les modèles de récupération de données dans les SPA par Juntao Qiu, et une superbe vue d'ensemble vidéo des différentes méthodes de construction d'apps React Native avec Expo par Simon Grimm."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "I wanted to use this opportunity to let you know that both Sébastien and I put a lot of effort into finding the best content for the React and React Native sections, but I’m sure there is still great stuff that sometimes goes unnoticed. That’s why we’re always open to suggestions, so feel free to let us know when you put something out there!",
+      "source_content_hash": "165c23b0fa606c3b9f5cd7a1a10bdbd2d85b79fd718c60f2d9b320bd3d3d3a12",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je profite de cette occasion pour vous dire que Sébastien et moi-même consacrons beaucoup d'efforts à trouver les meilleurs contenus pour les sections React et React Native, mais je suis sûr qu'il existe toujours des pépites qui passent parfois inaperçues. C'est pourquoi nous sommes toujours ouverts aux suggestions, n'hésitez donc pas à nous faire savoir quand vous publiez quelque chose !",
+        "en": "Je profite de l'occasion pour souligner l'effort que Sébastien et moi consacrons à sélectionner les meilleurs contenus pour les sections React et React Native. Si vous publiez quelque chose d'intéressant qui nous échappe, n'hésitez pas à nous le signaler !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsorisé {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![Build your product skills](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+      "source_content_hash": "11e9cc9decacf6895c68553bbc48b05fd35a67b42e32b4dfe4fd84e5ab152637",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Développez vos compétences produit](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+        "en": "[![Développez vos compétences produit](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[Build your product skills](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+      "source_content_hash": "8691bf1234d6518e10ce9436ed6e7ba3a6583f29210132a0022529731d0338bd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Développez vos compétences produit](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+        "en": "**[Développez vos compétences produit](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) is PostHog’s newsletter dedicated to helping engineers improve their product skills. Learn what questions to ask users, how to build new features users love, and the path to product market fit.",
+      "source_content_hash": "dafb8650efe99337a8919642c13774a586336b2fb91f36b3b2fae7dec8e62387",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit. Apprenez quelles questions poser aux utilisateurs, comment créer des fonctionnalités qu'ils adorent, et le chemin vers le product-market fit.",
+        "en": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog aidant les ingénieurs à améliorer leurs compétences produit. Découvrez les questions à poser aux utilisateurs, comment créer des fonctionnalités appréciées, et le chemin vers le product market fit."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "[**Subscribe for free**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) to get curated advice on building great products, lessons (and mistakes) from building PostHog, and deep dives into the strategies of top startups.",
+      "source_content_hash": "2df114b9fcd4e6f633a0926e9670819f408cf761beed46d1ded189643c97c963",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils sur la création de produits exceptionnels, les leçons (et erreurs) du développement de PostHog, et des analyses approfondies des stratégies des meilleures startups.",
+        "en": "[**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils triés sur la création de produits, les leçons (et erreurs) du développement de PostHog, et des analyses des stratégies des startups leaders."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "📜 **[Data Fetching Patterns in Single-Page Applications](https://martinfowler.com/articles/data-fetch-spa.html)**",
+      "source_content_hash": "33956ebb5dd32914fd0124f61ebdb17243242b8cc7432c79bf6a5de7f2a662a1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "📜 **[Modèles de récupération de données dans les applications monopages](https://martinfowler.com/articles/data-fetch-spa.html)**",
+        "en": "📜 **[Modèles de récupération de données dans les applications monopages](https://martinfowler.com/articles/data-fetch-spa.html)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "This is a long read (~10k words), but such a great article! The title doesn’t do its justice, because in passing, this covers so much more than just data fetching. Basic React concepts, Suspense, async state handling, code splitting, prefetching, and parallel data fetching to avoid waterfalls. There has been a lot of discussion on X about web app performance in the last few weeks (Rails vs. React, MS Edge decision, …) - this is a great article to freshen up the basics of this topic to build a great user experience!",
+      "source_content_hash": "dfd82c3a5f984f83b036362a515bc51e5f7a8184e9ec9cea1074f156660ab3c2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Une lecture longue (~10k mots), mais un excellent article ! Le titre ne rend pas justice au contenu, car il couvre bien plus que la simple récupération de données : concepts de base de React, Suspense, gestion d'état asynchrone, découpage de code, pré-récupération et récupération parallèle pour éviter les cascades. Alors que les performances des applications web font débat sur X (Rails vs. React, décision MS Edge...), c'est une excellente ressource pour rafraîchir les bases et créer une expérience utilisateur optimale !",
+        "en": "Lecture longue (~10k mots) mais exceptionnelle ! Le titre ne rend pas justice à la richesse du contenu : concepts React de base, Suspense, gestion d'état asynchrone, découpage de code, préchargement et récupération parallèle pour éviter les cascades. Dans un contexte de débats sur les performances web (Rails vs. React, décision MS Edge), cet article rafraîchit parfaitement les bases pour une UX optimale !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- 💸 [Meilisearch - Build search as you type for React](https://www.meilisearch.com/with/react?utm_campaign=sponsoring&utm_source=thisweekinreact)\n- 👀 [React Router PR - defineRoute API](https://github.com/remix-run/react-router/pull/11596)\n- 🐦 [shadcn/ui is working on adding charts](https://x.com/shadcn/status/1795920488797188525)\n- 🐦 [Remix working inside a Cloudflare Durable Object 🤯](https://x.com/threepointone/status/1796223745243119890)\n- 🐦 [React 19.0.0-rc.0](https://x.com/acdlite/status/1797668537349328923): Andrew Clark says “This is the exact build we'll release as 19.0, unless an issue is reported that requires a breaking change.”\n- 🐦 [Upcoming Spline (3D rendering) and NextJS RSC integration](https://x.com/rauchg/status/1798021886657650711)\n- 📜 [I tried React Compiler today, and guess what …](https://www.developerway.com/posts/i-tried-react-compiler): A super interesting and detailed article about React Compiler and real-world use cases. Seems like we’re not at the point yet where we can just ignore everything about memoization because the Compiler takes care of it, and apart from this conclusion the article is also a great reminder of how memoization works exactly.\n- 📜 [Do you still need Framer Motion?](https://motion.dev/blog/do-you-still-need-framer-motion): The creator of the popular React animation library explains you might not need his library anymore thanks to 5 great new/upcoming CSS features.\n- 📜 [Sneaky React Memory Leaks II: Closures Vs. React Query](https://schiener.io/2024-05-29/react-query-leaks): This follows up on last week's great article. This time it shows how React Query might be affected as well by memory leaks, and how to fix them. Using custom hooks looks like a good general solution to this problem.\n- 📜 [An even faster Microsoft Edge](https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge/): Microsoft was using React for some elements of the UI in its Edge browser and is now abandoning this approach. See the video linked below for more context.\n- 📜 [Speeding up the JavaScript ecosystem - Server Side JSX](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-9/): The JSX runtime of React can lead to many object allocations. Marvin (Preact/Deno) shows it's possible to precompile JSX to improve server rendering of JSX and reduce GC. Maybe React could use that as well?\n- 📜 [Type-safe module mocking in Storybook](https://storybook.js.org/blog/type-safe-module-mocking/): Very elegant way to leverage subpath imports for module mocking.\n- 📜 [Multiple action handlers with Zod in Remix](https://www.jacobparis.com/content/zod-actions-remix): If you target one action endpoint from multiple components, this article shows you how to combine the different Zod schemas via discriminated union.\n- 📜 [Embracing Slow Networks: Improving User Experience](https://www.epicweb.dev/embracing-slow-networks-improving-user-experience)\n- 📜 [Cleaner components with useSuspenseQuery](https://swizec.com/blog/cleaner-components-with-use-suspense-query/) & [Why useSuspenseQuery works](https://swizec.com/blog/why-use-suspense-query-works/)\n- 📜 [Explore new hooks coming up in React 19](https://blog.saeloun.com/2024/06/05/new-hooks-in-react-19/)\n- 📦 [React 19.0.0-rc.0](https://www.npmjs.com/package/react/v/19.0.0-rc.0): Andrew Clark said \"This is the exact build we'll release as 19.0, unless an issue is reported that requires a breaking change.\"\n- 📦 [Docusaurus 3.4](https://docusaurus.io/blog/releases/3.4): A new way to centrally manage tags (great for consistency), an experimental hash router (great for offline browsing without a web server), and an option to use namespaces for local storage (useful if you’re deploying multiple instances of Docusaurus on the same domain).\n- 🎙 [This Month in React, May 2024 - Updates from React Conf](https://www.reactiflux.com/transcripts/tmir-2024-05)\n- 🎥 [Jack Herrington - Beware of \"auto\" Mode in the NextJS App Router](https://www.youtube.com/watch?v=bU3Px8bHjPA)\n- 🎥 [Theo - Microsoft Regrets Using React (For Edge)](https://www.youtube.com/watch?v=Bm8Ga07BOnI)\n- 🎥 [Stephanie Dietz - How to Use React's `useOptimistic` Hook](https://www.youtube.com/watch?v=ChF9-P4Bjs4)\n- 🎥 [UI Engineering - Why 95% of Modals should be Local (in React)](https://www.youtube.com/watch?v=iMoAviG_ZUE)\n- 🎥 [Aaron Francis - Laravel vs React](https://www.youtube.com/watch?v=gRtv-BVkwA4)\n- 🎥 [Theo - How React Query Won](https://www.youtube.com/watch?v=xIflplz925Y)",
+      "source_content_hash": "9a823469cdb569c488a9a6464aa1426d3e22b18391c1100f14469d418ef4d236",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_824626b3",
+        "en": "@@untranslatable_placeholder_824626b3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5b035b90",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5b035b90",
+        "en": "@@untranslatable_placeholder_5b035b90"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b051b70c",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsorisé {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "[![WorkOS: enterprise-grade auth in minutes](/emails/issues/188/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)",
+      "source_content_hash": "35eeb15f3bf50afe1e8d2f4dff66410337a967316f1bdcc9b9518573095499d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![WorkOS : authentification professionnelle en minutes](/emails/issues/188/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)",
+        "en": "[![WorkOS : authentification professionnelle en minutes](/emails/issues/188/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "**[WorkOS: enterprise-grade auth in minutes](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**",
+      "source_content_hash": "a7a8f58de04c3a71af5875752192617bb7ed72e0dff0fca255bf686869139eb5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[WorkOS : authentification professionnelle en minutes](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**",
+        "en": "**[WorkOS : authentification professionnelle en minutes](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "🔐 WorkOS supports a complete User Management solution along with **SSO, SCIM, RBAC, & FGA**.",
+      "source_content_hash": "2f2e507bd12e3ac919139e6f3d3d225a5373ae15c038928e94c42acd977b1d73",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🔐 WorkOS propose une solution complète de gestion des utilisateurs avec **SSO, SCIM, RBAC & FGA**.",
+        "en": "🔐 WorkOS propose une solution complète de gestion utilisateurs avec **SSO, SCIM, RBAC & FGA**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "🗂️ Unlike other auth providers that rely on user-centric models, WorkOS is designed for B2B SaaS with an **org modeling approach**.",
+      "source_content_hash": "7dc18354f94bc88426e767a51c0c4a32cf5f80ace68a0932091929775b003a29",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🗂️ Contrairement aux autres fournisseurs basés sur des modèles centrés utilisateur, WorkOS est conçu pour les SaaS B2B avec une **approche de modélisation organisationnelle**.",
+        "en": "🗂️ Contrairement aux solutions centrées utilisateur, WorkOS adopte une **modélisation organisationnelle** pour le SaaS B2B."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "🏗️ The APIs are **flexible, easy-to-use, and modular**. Pick and choose what you need and integrate in minutes.",
+      "source_content_hash": "40cbba585ed73eb8b160406f2c3c40e74d45e7c861b8fe1a05b5a6778845df26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🏗️ Les API sont **flexibles, faciles à utiliser et modulaires**. Choisissez ce dont vous avez besoin et intégrez en quelques minutes.",
+        "en": "🏗️ Les API sont **flexibles, faciles à utiliser et modulaires**. Choisissez ce dont vous avez besoin et intégrez en quelques minutes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "✨ User Management is **free up to 1 million MAUs** and includes bot protection, impersonation, MFA, & more.",
+      "source_content_hash": "582b686ca0891e3a152f6754ce81a454d6c569775a71cc7fe8ed336c18f84712",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "✨ La gestion des utilisateurs est **gratuite jusqu'à 1 million d'utilisateurs actifs mensuels (MAU)** et inclut la protection contre les bots, l'usurpation d'identité, l'authentification multifacteur (MFA), et plus encore.",
+        "en": "✨ La gestion des utilisateurs est **gratuite jusqu'à 1 million d'utilisateurs actifs mensuels (MAU)** et inclut la protection contre les bots, l'usurpation d'identité, l'authentification multi-facteurs (MFA), etc."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "🤝 WorkOS is trusted by hundreds of leading startups like **Perplexity**, **Vercel**, & **Webflow**.",
+      "source_content_hash": "43e2ceada1d518743097693e7bee36fd8f5f6a9f9a03dd28878d31ae3a97fba6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🤝 WorkOS est utilisé par des centaines de startups leaders comme **Perplexity**, **Vercel** et **Webflow**.",
+        "en": "🤝 WorkOS est utilisé par des centaines de startups leaders comme **Perplexity**, **Vercel** et **Webflow**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "Future-proof your auth stack with [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 🚀",
+      "source_content_hash": "5bfe5bb18f2e9074d5d68896059a5e32c413c1dbc50a863396fcdd9fe90167bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Préparez votre système d'authentification pour l'avenir avec [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 🚀",
+        "en": "Future-proof votre pile d'authentification avec [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cb0bf89b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5baf88e2",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "![Simon Grimm: Build React Native with Expo](/emails/issues/188/rn188.jpg)",
+      "source_content_hash": "272cce89d723fa96cb1ccbb9dd8863e600354b0754442f9d67ec07577ea533b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "![Simon Grimm: Construire React Native avec Expo](/emails/issues/188/rn188.jpg)",
+        "en": "![Simon Grimm : Développer React Native avec Expo](/emails/issues/188/rn188.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "🎥 **[Every Way to Build your React Native App with Expo](https://www.youtube.com/watch?v=cs-zgHjt5RQ)**",
+      "source_content_hash": "c12c5f0ec67d3e5421e004c48dcc5212d65e11e8f39c292e6f2a45b6a655f273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🎥 **[Toutes les façons de construire votre application React Native avec Expo](https://www.youtube.com/watch?v=cs-zgHjt5RQ)**",
+        "en": "🎥 **[Toutes les façons de construire votre application React Native avec Expo](https://www.youtube.com/watch?v=cs-zgHjt5RQ)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "Many roads lead to Rome, and it seems there are almost as many ways to build an Expo app. This gives us developers a lot of power and freedom, but can also sometimes lead to confusion - not just for beginners! Thankfully, Simon made a great video comparing the different approaches via Expo Go, Expo Prebuild, Xcode, Android Studio, and EAS. This is also a great opportunity to congratulate Expo on reaching [30k stars on GitHub!](https://x.com/expo/status/1796262781584654492)",
+      "source_content_hash": "e36c5591728195b799d5fdde5508e9e4bf00a951b248e1bee5ecabe1b29eca47",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Tous les chemins mènent à Rome, et il semble qu'il y ait presque autant de façons de construire une application Expo. Cela nous donne aux développeurs beaucoup de puissance et de liberté, mais peut aussi parfois mener à la confusion - pas seulement pour les débutants ! Heureusement, Simon a réalisé une excellente vidéo comparant les différentes approches via Expo Go, Expo Prebuild, Xcode, Android Studio et EAS. C'est aussi une belle occasion de féliciter Expo pour avoir atteint [30 000 étoiles sur GitHub !](https://x.com/expo/status/1796262781584654492)",
+        "en": "Tous les chemins mènent à Rome, et il semble qu'il y ait presque autant de façons de construire une application Expo. Cela nous donne beaucoup de puissance et de liberté en tant que développeurs, mais peut parfois aussi prêter à confusion - pas seulement pour les débutants ! Heureusement, Simon a réalisé une excellente vidéo comparant les différentes approches via Expo Go, Expo Prebuild, Xcode, Android Studio et EAS. C'est aussi l'occasion de féliciter Expo pour avoir atteint [30k étoiles sur GitHub !](https://x.com/expo/status/1796262781584654492)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "936011bd",
+      "source_content": "- 💸 [React Native Mastery - The only course you need to Master React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 🐦 [The most powerful demo AI app, featuring RSC via Expo Router](https://x.com/Baconbrix/status/1795804445738963283): We’ve talked about Evan Bacon’s RSC demo before. This is a great thread on X summing up the promise and including a nice comparison video on how great mobile UI can get especially in the context of LLM chat apps.\n- 📜 [React Native Security Guide](https://ospfranco.com/react-native-security-guide/): Oscar picks up a topic that doesn’t get talked about enough. This is a good intro, covering secrets (TLDR: Don’t store them on a device) and encryption of user data (including leveraging biometrics).\n- 📜 [Seamless Transitions: From Native to React Native](https://commerce.nearform.com/blog/2024/seamless-transitions-from-native-to-react-native): Some impulses for brownfield development: Because RN creates truly native apps, introducing RN to an existing app or migrating to RN can be made seamless for the end users.\n- 📦 [React Native 0.74.2](https://github.com/facebook/react-native/releases/tag/v0.74.2): Patch release, bumping some dependencies (typescript-eslint, CLI) and fixing bugs.\n- 📦 [React Native Reanimated 3.12.0](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.12.0): Introduces a new hook useComposedEventHandler which simplifies merging of multiple event handlers.\n- 🎙️ [RNR 298 - Create Expo Stack, NativeWind Ul, & Plugin Pro with Dan Stepanov](https://reactnativeradio.com/episodes/rnr-298-create-expo-stack-nativewind-ul-plugin-pro-with-dan-stepanov)\n- 🎥 [Rocket Ship 42 - React Native is alive! App.js Recap with Áron Berezkin](https://www.youtube.com/watch?v=GeUfrojkoo0)\n- 🎥 [Expo - How to start your first Expo project in 2 minutes](https://www.youtube.com/watch?v=yOUAEfDuI44)",
+      "source_content_hash": "853fbf3f54946427b0484c687f8ed4c2a4995de9b30312fa180eac52f52c27e6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [React Native Mastery - Le seul cours dont vous avez besoin pour maîtriser React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 🐦 [La démo d'application IA la plus puissante, avec RSC via Expo Router](https://x.com/Baconbrix/status/1795804445738963283) : Nous avons déjà parlé de la démo RSC d'Evan Bacon. Ce thread sur X résume bien les promesses et inclut une comparaison vidéo montrant à quel point l'UI mobile peut être performante, notamment dans le contexte des applications de chat LLM.\n- 📜 [Guide de sécurité React Native](https://ospfranco.com/react-native-security-guide/) : Oscar aborde un sujet trop peu discuté. Une bonne introduction couvrant les secrets (TLDR : Ne les stockez pas sur l'appareil) et le chiffrement des données utilisateur (y compris l'utilisation de la biométrie).\n- 📜 [Transitions fluides : Du natif à React Native](https://commerce.nearform.com/blog/2024/seamless-transitions-from-native-to-react-native) : Des pistes pour le développement brownfield : Comme RN crée de véritables applications natives, l'introduction de RN dans une application existante ou la migration vers RN peut être transparente pour les utilisateurs finaux.\n- 📦 [React Native 0.74.2](https://github.com/facebook/react-native/releases/tag/v0.74.2) : Version corrective, mettant à jour certaines dépendances (typescript-eslint, CLI) et corrigeant des bugs.\n- 📦 [React Native Reanimated 3.12.0](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.12.0) : Introduit un nouveau hook useComposedEventHandler qui simplifie la fusion de plusieurs gestionnaires d'événements.\n- 🎙️ [RNR 298 - Create Expo Stack, NativeWind UI, & Plugin Pro avec Dan Stepanov](https://reactnativeradio.com/episodes/rnr-298-create-expo-stack-nativewind-ul-plugin-pro-with-dan-stepanov)\n- 🎥 [Rocket Ship 42 - React Native est vivant ! Retour sur App.js avec Áron Berezkin](https://www.youtube.com/watch?v=GeUfrojkoo0)\n- 🎥 [Expo - Comment démarrer votre premier projet Expo en 2 minutes](https://www.youtube.com/watch?v=yOUAEfDuI44)",
+        "en": "- 💸 [React Native Mastery - Le seul cours dont vous avez besoin pour maîtriser React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 🐦 [La démo d'application IA la plus puissante, avec RSC via Expo Router](https://x.com/Baconbrix/status/1795804445738963283) : Nous avons déjà parlé de la démo RSC d'Evan Bacon. Ce thread sur X résume bien la promesse et inclut une vidéo comparative montrant à quel point l'UI mobile peut être performante, notamment dans le contexte des applications de chat LLM.\n- 📜 [Guide de sécurité React Native](https://ospfranco.com/react-native-security-guide/) : Oscar aborde un sujet trop peu discuté. Une bonne introduction couvrant les secrets (TLDR : Ne les stockez pas sur un appareil) et le chiffrement des données utilisateur (y compris l'utilisation des biométriques).\n- 📜 [Transitions fluides : Du natif à React Native](https://commerce.nearform.com/blog/2024/seamless-transitions-from-native-to-react-native) : Des pistes pour le développement brownfield : Comme RN crée de véritables applications natives, l'introduction de RN dans une application existante ou la migration vers RN peut être transparente pour les utilisateurs finaux.\n- 📦 [React Native 0.74.2](https://github.com/facebook/react-native/releases/tag/v0.74.2) : Version corrective mettant à jour certaines dépendances (typescript-eslint, CLI) et corrigeant des bugs.\n- 📦 [React Native Reanimated 3.12.0](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.12.0) : Introduit un nouveau hook useComposedEventHandler qui simplifie la fusion de plusieurs gestionnaires d'événements.\n- 🎙️ [RNR 298 - Create Expo Stack, NativeWind UI, & Plugin Pro avec Dan Stepanov](https://reactnativeradio.com/episodes/rnr-298-create-expo-stack-nativewind-ul-plugin-pro-with-dan-stepanov)\n- 🎥 [Rocket Ship 42 - React Native est vivant ! Retour sur App.js avec Áron Berezkin](https://www.youtube.com/watch?v=GeUfrojkoo0)\n- 🎥 [Expo - Comment démarrer votre premier projet Expo en 2 minutes](https://www.youtube.com/watch?v=yOUAEfDuI44)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "70cef2c1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7974af84",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2979d081",
+      "source_content": "- 🐦 [Find memory issues using Chrome Dev Tools](https://x.com/addyosmani/status/1796527052306419820)\n- 👀 [Vitest Browser Mode](https://github.com/vitest-dev/vitest/discussions/5828)\n- 📜 [10 modern Node.js runtime features to start using in 2024](https://snyk.io/blog/10-modern-node-js-runtime-features/)\n- 📜 [Live types in a TypeScript monorepo - stop writing dead TypeScript](https://colinhacks.com/essays/live-types-typescript-monorepo)\n- 📜 [How To Use Corepack](https://www.totaltypescript.com/how-to-use-corepack)\n- 📜 [Promises From The Ground Up](https://www.joshwcomeau.com/javascript/promises/)\n- 📜 [Zero - Rethinking local-first, general-purpose sync engine for the web](https://zerosync.dev/)\n- 📦 [Turborepo 2.0 - New terminal UI, watch mode, all-new docs](https://turbo.build/blog/turbo-2-0)\n- 📦 [Biome 1.8 - CSS support, new reports, CLI improvements...](https://x.com/biomejs/status/1797963672004043040)\n- 📦 [Deno 1.44 - Private npm registries, improved Node.js compat, and performance boosts](https://deno.com/blog/v1.44)",
+      "source_content_hash": "2090de97c3e63a3f26db34d77df0b8ba6d6cc658aeb052123e17ef207145f0bf",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🐦 [Détecter les fuites mémoire avec les Chrome DevTools](https://x.com/addyosmani/status/1796527052306419820)\n- 👀 [Mode navigateur de Vitest](https://github.com/vitest-dev/vitest/discussions/5828)\n- 📜 [10 fonctionnalités modernes du runtime Node.js à utiliser en 2024](https://snyk.io/blog/10-modern-node-js-runtime-features/)\n- 📜 [Types dynamiques dans un monorepo TypeScript - Arrêtez d'écrire du TypeScript mort](https://colinhacks.com/essays/live-types-typescript-monorepo)\n- 📜 [Comment utiliser Corepack](https://www.totaltypescript.com/how-to-use-corepack)\n- 📜 [Les Promesses depuis les fondamentaux](https://www.joshwcomeau.com/javascript/promises/)\n- 📜 [Zero - Repenser un moteur de synchronisation local-first polyvalent pour le web](https://zerosync.dev/)\n- 📦 [Turborepo 2.0 - Nouvelle interface terminal, mode watch, documentation inédite](https://turbo.build/blog/turbo-2-0)\n- 📦 [Biome 1.8 - Prise en charge CSS, nouveaux rapports, améliorations CLI...](https://x.com/biomejs/status/1797963672004043040)\n- 📦 [Deno 1.44 - Registres npm privés, meilleure compatibilité Node.js et gains de performances](https://deno.com/blog/v1.44)",
+        "en": "- 🐦 [Détecter les problèmes de mémoire avec les outils de développement Chrome](https://x.com/addyosmani/status/1796527052306419820)\n- 👀 [Mode navigateur de Vitest](https://github.com/vitest-dev/vitest/discussions/5828)\n- 📜 [10 fonctionnalités modernes du runtime Node.js à utiliser en 2024](https://snyk.io/blog/10-modern-node-js-runtime-features/)\n- 📜 [Types en direct dans un monorepo TypeScript - arrêtez d'écrire du TypeScript mort](https://colinhacks.com/essays/live-types-typescript-monorepo)\n- 📜 [Comment utiliser Corepack](https://www.totaltypescript.com/how-to-use-corepack)\n- 📜 [Les Promises depuis les bases](https://www.joshwcomeau.com/javascript/promises/)\n- 📜 [Zero - Repenser un moteur de synchronisation local-first polyvalent pour le web](https://zerosync.dev/)\n- 📦 [Turborepo 2.0 - Nouvelle interface terminal, mode watch, documentation entièrement nouvelle](https://turbo.build/blog/turbo-2-0)\n- 📦 [Biome 1.8 - Prise en charge CSS, nouveaux rapports, améliorations CLI...](https://x.com/biomejs/status/1797963672004043040)\n- 📦 [Deno 1.44 - Registres npm privés, compatibilité Node.js améliorée et gains de performance](https://deno.com/blog/v1.44)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c9e2b64",
+      "source_content": "[![Thank you JavaScript](/emails/issues/188/meme.jpg)](https://x.com/fireship_dev/status/1796526654183059925)",
+      "source_content_hash": "11c1011075ae35e3fc6dcfc2e2047ab83196acbaafae319317fedaae94c88b47",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Merci JavaScript](/emails/issues/188/meme.jpg)](https://x.com/fireship_dev/status/1796526654183059925)",
+        "en": "[![Merci JavaScript](/emails/issues/188/meme.jpg)](https://x.com/fireship_dev/status/1796526654183059925)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5c7d994c",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/188/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.188871+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "6faebf6722f31c576fe45c182e99fb52ba667231403e5396b8dfb9180f81e57e",
+    "en": "6faebf6722f31c576fe45c182e99fb52ba667231403e5396b8dfb9180f81e57e"
+  }
+}

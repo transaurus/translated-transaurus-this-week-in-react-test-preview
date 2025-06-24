@@ -1,0 +1,73 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "articles/old/2019-08-30-handling-race-conditions-in-react/index.mdx",
+  "source_file_content_hash": "9b57ddd3f6e6caba9a4357e3e346f7b324d47a54d75ba7f9d19e7cfeb77a7b01",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: handling-api-request-race-conditions-in-react\ntitle: Handling API request race conditions in React\ndescription: Handling API request race conditions in React... or how to avoid rendering the wrong data\nauthors: [slorber]\ntwitterThreadUrl: \"https://slo.im/thread\"\nimage: ./images/hero.png\n---",
+      "source_content_hash": "d2a16ec358d787b10a23f03278a575e577f88950c3d79dd654edb8983165beef",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Many blog articles talk about loading api/async data in React apps, with `componentDidMount`, `useEffect`, Redux, Apollo...",
+      "source_content_hash": "6880358a26f3bbd5a301c8b7a40bff0d1765cebe87d47244976674036a97e854",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "De nombreux articles de blog traitent du chargement de données api/async dans les applications React, avec `componentDidMount`, `useEffect`, Redux, Apollo...",
+        "en": "De nombreux articles de blog traitent du chargement de données api/async dans les applications React, avec `componentDidMount`, `useEffect`, Redux, Apollo..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Yet, all those articles are **generally optimistic**, and never mention something important to consider: race conditions could happen, and your UI may end up in an **inconsistent state**.",
+      "source_content_hash": "c4e64d76960d1bbd7db3446b696e6ed87ecff694e889a913277f0f22189911bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pourtant, tous ces articles sont **généralement optimistes** et ne mentionnent jamais un point important à considérer : des conditions de course peuvent survenir, et votre interface utilisateur pourrait se retrouver dans un **état incohérent**.",
+        "en": "Pourtant, tous ces articles sont **généralement optimistes** et ne mentionnent jamais un point important à considérer : des conditions de course pourraient survenir, et votre interface utilisateur pourrait se retrouver dans un **état incohérent**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "[![hero](./images/hero.png)](https://sebastienlorber.com/handling-api-request-race-conditions-in-react)",
+      "source_content_hash": "d43ea9cf270adec8511a81d06f76915d1a3778cd5ee40bf053f4ce6b9645c237",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![hero](./images/hero.png)](https://sebastienlorber.com/handling-api-request-race-conditions-in-react)",
+        "en": "[![hero](./images/hero.png)](https://sebastienlorber.com/handling-api-request-race-conditions-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "🔗 [**Read More**](https://sebastienlorber.com/handling-api-request-race-conditions-in-react)",
+      "source_content_hash": "ce05ad7e1d0ee1a7e1f588a863c8b7d87c027a556036e1b258b841c26c4e47e0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🔗 [**Lire la suite**](https://sebastienlorber.com/handling-api-request-race-conditions-in-react)",
+        "en": "🔗 [**Lire la suite**](https://sebastienlorber.com/handling-api-request-race-conditions-in-react)"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-articles/old/2019-08-30-handling-race-conditions-in-react/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.150333+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "9b57ddd3f6e6caba9a4357e3e346f7b324d47a54d75ba7f9d19e7cfeb77a7b01",
+    "en": "9b57ddd3f6e6caba9a4357e3e346f7b324d47a54d75ba7f9d19e7cfeb77a7b01"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "articles/old/2020-07-31-records-and-tuples-for-react-developers/index.mdx",
+  "source_file_content_hash": "2aff0922652524834992e899b4626b30183159c46fd012c3c31b7fdaaeda2e35",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: records-and-tuples-for-react\ntitle: Records & Tuples for React\ndescription: .Records & Tuples for React... and how they are much more than immutable data structures.\nauthors: [slorber]\ntwitterThreadUrl: \"https://slo.im/thread\"\nimage: ./images/hero.png\n---",
+      "source_content_hash": "1297192a92d023323fc662c9fecf4f751d53bc7d3a4e7b8229ed00741f25e7ac",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "**Records & Tuples**, a very interesting **[proposal](https://github.com/tc39/proposal-record-tuple)**, has just reached **[stage 2](https://twitter.com/robpalmer2/status/1286040041089904640)** at **TC39**.",
+      "source_content_hash": "86eacece11c62592fb7f20db8b06ea4cc335ac80c5587f0df0b0bc6fef55b548",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**Records & Tuples**, une **[proposition](https://github.com/tc39/proposal-record-tuple)** très intéressante, vient d'atteindre le **[stade 2](https://twitter.com/robpalmer2/status/1286040041089904640)** au **TC39**.",
+        "en": "**Records & Tuples**, une **[proposition](https://github.com/tc39/proposal-record-tuple)** très intéressante, vient d'atteindre le **[stade 2](https://twitter.com/robpalmer2/status/1286040041089904640)** au **TC39**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "They bring **deeply immutable data structures** to JavaScript.",
+      "source_content_hash": "2b0f20655b6eeebfc0e11b3a039186926d64b3f3bafc51ea859b47adf4935904",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ils apportent des **structures de données profondément immuables** à JavaScript.",
+        "en": "Ils introduisent des **structures de données profondément immuables** en JavaScript."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "But don't overlook their **equality properties**, that are <u>**VERY**</u> interesting for **React**.",
+      "source_content_hash": "8d05124857cb5f2a59805a7722e985ebc9b6cece98a4b57c1e18371b306715b5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "fr": {
+          "translation": "Mais ne négligez pas leurs **propriétés d'égalité**, qui sont <u>**TRÈS**</u> intéressantes pour **React**.",
+          "reason": "Content of a non-translatable 'mdxJsxTextElement' element was changed. Source: '<u>**VERY**</u>', Translation: '<u>**TRÈS**</u>'.",
+          "timestamp": "2025-06-24T15:50:44.518137+00:00"
+        },
+        "en": {
+          "translation": "Mais ne négligez pas leurs **propriétés d'égalité**, qui sont <u>**TRÈS**</u> intéressantes pour **React**.",
+          "reason": "Content of a non-translatable 'mdxJsxTextElement' element was changed. Source: '<u>**VERY**</u>', Translation: '<u>**TRÈS**</u>'.",
+          "timestamp": "2025-06-24T15:57:01.427375+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "A whole category of **React bugs** are related to **unstable object identities**:",
+      "source_content_hash": "17dbaf0629835560314b3c94961d03bb8efb7db9b537d808d1b355987ece582d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Toute une catégorie de **bugs React** est liée à des **identités d'objet instables** :",
+        "en": "Toute une catégorie de **bugs React** est liée à des **identités d'objet instables** :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "11c829ab",
+      "source_content": "- **Performance**: re-renders that could be avoided\n- **Behavior**: useless effect re-executions, infinite loops\n- **API surface**: unability to express when a stable object identity matters",
+      "source_content_hash": "89d7195237cc12258b239e1b9d027c8f98d8f759d66a06ee0e962105da4ddb37",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- **Performance** : rendus inutiles qui pourraient être évités\n- **Comportement** : ré-exécutions d'effets inutiles, boucles infinies\n- **Surface d'API** : incapacité à exprimer quand une identité d'objet stable est importante",
+        "en": "- **Performance** : rendus inutiles qui pourraient être évités\n- **Comportement** : ré-exécutions inutiles d'effets, boucles infinies\n- **Surface d'API** : incapacité à exprimer quand une identité d'objet stable est importante"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "I will explain the basics of **Records & Tuples**, and how they can solve **real world React issues**.",
+      "source_content_hash": "f0ed66d496495ab4cccb5c44e039a769756d57d0792ac6f18ddd772ae96f9765",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je vais expliquer les bases de **Records & Tuples**, et comment ils peuvent résoudre des **problèmes React réels**.",
+        "en": "Je vais expliquer les bases de **Records & Tuples**, et comment ils peuvent résoudre des **problèmes React du monde réel**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "[![hero](./images/hero.png)](https://sebastienlorber.com/records-and-tuples-for-react)",
+      "source_content_hash": "955b549d22849f26f6842902f1380a2eabec2c195b629f0c9e64a3a381ecfc22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![hero](./images/hero.png)](https://sebastienlorber.com/records-and-tuples-for-react)",
+        "en": "[![hero](./images/hero.png)](https://sebastienlorber.com/records-and-tuples-for-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "🔗 [**Read More**](https://sebastienlorber.com/records-and-tuples-for-react)",
+      "source_content_hash": "96522deb574690aaddd53b0b5239b22450416433db8b6bc952e19ed8682d7324",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🔗 [**Lire la suite**](https://sebastienlorber.com/records-and-tuples-for-react)",
+        "en": "🔗 [**Lire la suite**](https://sebastienlorber.com/records-and-tuples-for-react)"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-articles/old/2020-07-31-records-and-tuples-for-react-developers/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.427702+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "2aff0922652524834992e899b4626b30183159c46fd012c3c31b7fdaaeda2e35",
+    "en": "2aff0922652524834992e899b4626b30183159c46fd012c3c31b7fdaaeda2e35"
+  }
+}

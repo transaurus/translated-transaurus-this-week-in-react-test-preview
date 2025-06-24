@@ -1,0 +1,709 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/169/index.mdx",
+  "source_file_content_hash": "152d704d6383f56f72eef6bbc4827edc97fa0ce111b79593ee3170f82da14001",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /169\ntitle: \"This Week In React #169: useMemo, 2 Reacts, Next.js, Remix, JS Rising Stars, Docusaurus, Astro, Fresnel, Mutative, JSX emails, Expo usage, React-Native releases, Reanimated, VisionCamera, TypeScript, Rspack, Biome...\"\nauthors: [slorber, bndkt]\ndate: 01-09-2024\n---",
+      "source_content_hash": "567ce8b7d9e9b09ab891077389182a7aaef8b7b9598110a5a3591d1cbf9ecd32",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we have an exciting sneak peek of the future of React and memoization, and a lot of Lee Robinson's related content 😄",
+      "source_content_hash": "72c4b32f1b450518eebf4609c64066d847f2a89fae516b1fee7b1defe2a57913",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, nous avons un aperçu passionnant de l'avenir de React et de la mémoïsation, ainsi que beaucoup de contenu connexe de Lee Robinson 😄",
+        "en": "Cette semaine, nous avons un aperçu passionnant du futur de React et de la mémoïsation, ainsi que beaucoup de contenu lié de Lee Robinson 😄"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Expo is going strong in the React-Native ecosystem and the app stores 💪",
+      "source_content_hash": "32cdd46cffbd2df846ea5b5a80a683644ac5bb2e48c9f13f71ea55dbdceceb8d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Expo se porte bien dans l'écosystème React-Native et sur les stores d'applications 💪",
+        "en": "Expo se porte bien dans l'écosystème React-Native et sur les stores d'applications 💪"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "[JavaScript Rising Stars 2023](https://risingstars.js.org/2023/en) has been published. This year I had the opportunity to comment on the React section. shadcn/ui and Bun took the world by storm. I’m also thankful for Theo recommending my newsletter in his related [trend analysis video](https://www.youtube.com/watch?v=5lkMs_WEoto): welcome to all of you who signed up recently 🙏",
+      "source_content_hash": "031307401889ec8416b5bc732e0b9c3633792d54d7ff7f7d9bc003da40d328e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[JavaScript Rising Stars 2023](https://risingstars.js.org/2023/en) a été publié. Cette année, j'ai eu l'opportunité de commenter la section React. shadcn/ui et Bun ont pris le monde d'assaut. Je remercie également Theo d'avoir recommandé ma newsletter dans sa [vidéo d'analyse des tendances](https://www.youtube.com/watch?v=5lkMs_WEoto) : bienvenue à tous ceux qui se sont inscrits récemment 🙏",
+        "en": "[JavaScript Rising Stars 2023](https://risingstars.js.org/2023/en) a été publié. Cette année, j'ai eu l'opportunité de commenter la section React. shadcn/ui et Bun ont pris le monde d'assaut. Je suis également reconnaissant envers Theo d'avoir recommandé ma newsletter dans sa [vidéo d'analyse des tendances](https://www.youtube.com/watch?v=5lkMs_WEoto) : bienvenue à tous ceux qui se sont récemment inscrits 🙏"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Paris 2024 is not only the Olympic Games: we are also back at the center of the React conf world!\nSince the end of React Europe, there has been a lack of great React conferences in Paris. It’s finally fixed with 3 great upcoming confs 👌",
+      "source_content_hash": "c44c382e205b94eb3f553e766495bd5999e18665568ac6b50ab3f386152589c4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Paris 2024 n'est pas seulement les Jeux Olympiques : nous sommes également de retour au centre du monde des conférences React !\nDepuis la fin de React Europe, il manquait de grandes conférences React à Paris. C'est enfin résolu avec 3 grandes conférences à venir 👌",
+        "en": "Paris 2024 ne se limite pas aux Jeux Olympiques : nous revenons également au centre de l'univers des conférences React ! Depuis la fin de React Europe, il manquait de grandes conférences React à Paris. C'est enfin résolu avec 3 excellentes conférences à venir 👌"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "034de896",
+      "source_content": "- 📅 22 March - [React Paris](https://react.paris/) - The crew behind React Brussels and BeJS is launching a new conference in Paris and a great line-up has just been announced today!\n\n- 📅 22-23 April - [React Connection](https://reactconnection.io/) + [React-Native Connection](https://reactnativeconnection.io/) - Last year’s half-day React-Native conference that I helped organize was a great success. So it returns this year as a 1-day + 1-day conference, making it more worth it to travel. CFP is open until 3 February.",
+      "source_content_hash": "99f1a47b7a53407a458ced91b0186fcff508398aec405b92d83a5faed7eb62f5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📅 22 mars - [React Paris](https://react.paris/) - L'équipe derrière React Brussels et BeJS lance une nouvelle conférence à Paris et une excellente programmation vient d'être annoncée aujourd'hui !\n\n- 📅 22-23 avril - [React Connection](https://reactconnection.io/) + [React-Native Connection](https://reactnativeconnection.io/) - La conférence React-Native d'une demi-journée de l'année dernière, que j'ai aidé à organiser, a été un grand succès. Elle revient donc cette année sous forme d'une conférence d'une journée + une journée, ce qui rend le déplacement plus intéressant. L'appel à propositions est ouvert jusqu'au 3 février.",
+        "en": "- 📅 22 mars - [React Paris](https://react.paris/) - L'équipe derrière React Brussels et BeJS lance une nouvelle conférence à Paris et un excellent programme vient d'être annoncé aujourd'hui !\n\n- 📅 22-23 avril - [React Connection](https://reactconnection.io/) + [React-Native Connection](https://reactnativeconnection.io/) - La conférence React-Native d'une demi-journée de l'année dernière, que j'ai aidé à organiser, fut un grand succès. Elle revient donc cette année en format 1 jour + 1 jour, rendant le déplacement plus intéressant. L'appel à propositions est ouvert jusqu'au 3 février."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "I’ll try to attend both, and hope to meet some of you there!",
+      "source_content_hash": "589a729ced68c3ef8c37cdf566fade7fc32b56e4de634610d67a8bbeada78513",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je vais essayer d'assister aux deux et j'espère y rencontrer certains d'entre vous !",
+        "en": "J'essaierai d'assister aux deux et espère y rencontrer certains d'entre vous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c0bf612b",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c0bf612b",
+        "en": "@@untranslatable_placeholder_c0bf612b"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a76548f8",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b52fbba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "00e03281",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_00e03281",
+        "en": "@@untranslatable_placeholder_00e03281"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a70bec8",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2a70bec8",
+        "en": "@@untranslatable_placeholder_2a70bec8"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "102e731c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3b7478ea",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "[![Nlux ― A new new React / JS library to create conversational AI web apps](/emails/issues/169/nlux.png)](https://nlux.ai/?c-twr1-h)",
+      "source_content_hash": "bf8ec29456ab3997aa485509a601d72213d228335badb089047e28ca73412107",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Nlux ― Une nouvelle bibliothèque React / JS pour créer des applications web d'IA conversationnelle](/emails/issues/169/nlux.png)](https://nlux.ai/?c-twr1-h)",
+        "en": "[![Nlux ― Une nouvelle bibliothèque React/JS pour créer des applications web d'IA conversationnelle](/emails/issues/169/nlux.png)](https://nlux.ai/?c-twr1-h)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "**[Nlux ― A new new React / JS library to create conversational AI web apps](https://nlux.ai/?c-twr1-h)**",
+      "source_content_hash": "3877a7a943e9bc7e8cb0a8d76dd922960294707955be16da425ed97e0d056f70",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Nlux ― Une nouvelle bibliothèque React / JS pour créer des applications web d'IA conversationnelle](https://nlux.ai/?c-twr1-h)**",
+        "en": "**[Nlux ― Une nouvelle bibliothèque React/JS pour créer des applications web d'IA conversationnelle](https://nlux.ai/?c-twr1-h)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "[NLUX](https://nlux.ai?c-twr1-p1) _(for Natural Language User Experience)_ is a new [open-source](https://github.com/nluxai/nlux) React / Javascript library that makes it simple to integrate powerful large language models (LLMs) like ChatGPT into your web app or website. With just a few lines of code, you can add conversational AI capabilities and interact with your favourite LLM.",
+      "source_content_hash": "b97e7207ed923e32f580bfe14462fad7db470378e0173d6cec0d5874c6ffe196",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[NLUX](https://nlux.ai?c-twr1-p1) _(pour Natural Language User Experience)_ est une nouvelle bibliothèque React / JavaScript [open-source](https://github.com/nluxai/nlux) qui permet d'intégrer facilement des modèles de langage volumineux (LLM) puissants comme ChatGPT dans votre application web ou site web. Avec seulement quelques lignes de code, vous pouvez ajouter des capacités d'IA conversationnelle et interagir avec votre LLM préféré.",
+        "en": "[NLUX](https://nlux.ai?c-twr1-p1) _(pour Natural Language User Experience)_ est une nouvelle bibliothèque [open-source](https://github.com/nluxai/nlux) React/Javascript qui simplifie l'intégration de modèles de langage puissants (LLM) comme ChatGPT dans votre application ou site web. Avec quelques lignes de code, vous pouvez ajouter des capacités d'IA conversationnelle et interagir avec votre LLM préféré."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Key features 🌟 include:",
+      "source_content_hash": "7c9774ccfc6a7d876eedf218e2c40697e4a451c1178bdf57089358b2544054ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les principales fonctionnalités 🌟 incluent :",
+        "en": "Fonctionnalités clés 🌟 :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b93ddfac",
+      "source_content": "- **Build AI Chat Interfaces In Minutes** - High quality conversational AI interfaces with just a few lines of code.\n- **React Components & Hooks** - `<AiChat />` for UI and `useAdapter` hook for easy integration.\n- **Flexible LLM Adapters** - `ChatGPT` and `HuggingFace`, and an API to **Create Your Own Adapter** for any LLM.\n- **Customisable Chat Personas** - Configure bot and user pictures, names, and descriptions for personalised interactions.\n- **Zero Dependencies** - Lightweight codebase, with zero-dependencies except for LLM front-end libraries.",
+      "source_content_hash": "585f286105741d6a859004e7705e20e0c092a34adaba87af77232b32da83a015",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- **Créer des interfaces de chat IA en quelques minutes** - Des interfaces d'IA conversationnelle de haute qualité avec seulement quelques lignes de code.\n- **Composants React et Hooks** - `<AiChat />` pour l'interface utilisateur et le hook `useAdapter` pour une intégration facile.\n- **Adaptateurs LLM flexibles** - `ChatGPT` et `HuggingFace`, et une API pour **créer votre propre adaptateur** pour n'importe quel LLM.\n- **Personas de chat personnalisables** - Configurez les images, noms et descriptions du bot et de l'utilisateur pour des interactions personnalisées.\n- **Zéro dépendance** - Base de code légère, sans dépendances à l'exception des bibliothèques front-end LLM.",
+        "en": "- **Créer des interfaces de chat IA en minutes** - Interfaces d'IA conversationnelle de haute qualité avec peu de code.\n- **Composants React & Hooks** - `<AiChat />` pour l'UI et le hook `useAdapter` pour une intégration facile.\n- **Adaptateurs LLM flexibles** - `ChatGPT` et `HuggingFace`, avec une API pour **créer votre propre adaptateur** pour tout LLM.\n- **Personas de chat personnalisables** - Configurez images, noms et descriptions des bots/utilisateurs pour des interactions personnalisées.\n- **Zéro dépendance** - Base de code légère sans dépendances, sauf pour les bibliothèques frontales LLM."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "More info, examples and documentation on [Nlux.ai](https://nlux.ai?c-twr1-p2)",
+      "source_content_hash": "2367392256052fdc27b87a190cf6932168699fcbd4f31b9cf69b74a2fad5ecdc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Plus d'informations, d'exemples et de documentation sur [Nlux.ai](https://nlux.ai?c-twr1-p2)",
+        "en": "Plus d'informations, exemples et documentation sur [Nlux.ai](https://nlux.ai?c-twr1-p2)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51029da6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e50bebbf",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "[![The future of React.use and React.useMemo - a powerful alternative to context selectors](/emails/issues/169/useMemo.jpg)](https://interbolt.org/blog/react-use-selector-optimization/)",
+      "source_content_hash": "77c3b42c74530c7e719d0ebae60d7625366b22835d939ee52492a40d08eb2027",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![L'avenir de React.use et React.useMemo - une alternative puissante aux sélecteurs de contexte](/emails/issues/169/useMemo.jpg)](https://interbolt.org/blog/react-use-selector-optimization/)",
+        "en": "[![L'avenir de React.use et React.useMemo - une alternative puissante aux sélecteurs de contexte](/emails/issues/169/useMemo.jpg)](https://interbolt.org/blog/react-use-selector-optimization/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "**[The future of React.use and React.useMemo - a powerful alternative to context selectors](https://interbolt.org/blog/react-use-selector-optimization/)**",
+      "source_content_hash": "cdcf41de217d5576b418d111933635b936d52303c91bca9d82289df434e38812",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[L'avenir de React.use et React.useMemo - une alternative puissante aux sélecteurs de contexte](https://interbolt.org/blog/react-use-selector-optimization/)**",
+        "en": "**[The future of React.use and React.useMemo - a powerful alternative to context selectors](https://interbolt.org/blog/react-use-selector-optimization/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "Colin explains how React context can cause performance problems, the lack of a context selector API, and how he optimized an app’s performances thanks to the userland [use-context-selector](https://github.com/dai-shi/use-context-selector) implementation from Daishi Kato.",
+      "source_content_hash": "2240df1d8ab64fb58f5bc37fa54997638fa78b4ffa0e800ab5f4ad35ba2c1f4f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Colin explique comment le contexte React peut causer des problèmes de performance, l'absence d'API de sélecteur de contexte, et comment il a optimisé les performances d'une application grâce à l'implémentation communautaire [use-context-selector](https://github.com/dai-shi/use-context-selector) de Daishi Kato.",
+        "en": "Colin explique comment le contexte React peut causer des problèmes de performance, l'absence d'une API de sélecteur de contexte, et comment il a optimisé les performances d'une application grâce à l'implémentation tierce [use-context-selector](https://github.com/dai-shi/use-context-selector) de Daishi Kato."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dae11e3",
+      "source_content": "The most interesting part is a great summary of the [recent Twitter discussions](https://twitter.com/sebastienlorber/status/1741218919732429108). Dan Abramov explained context selectors do not compos well. Andrew Clark shared the plan to extend `useMemo()` and allow the usage of other hooks inside it. This would work with the use hook with [any Usable types](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md#other-usable-types) (currently context and promises, but maybe Observables and stores in the future?), but also [third-party hooks](https://twitter.com/BenJ_Ayc0/status/1742499230525067408)! This would solve the fine-grained selection problem in a performant and composable way, and be compatible with the upcoming React Forget compiler.",
+      "source_content_hash": "6fc82e8b52adca82c1809b676bf2b0484f54b789362758a2d65cd95e57c143df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La partie la plus intéressante est un excellent résumé des [récentes discussions sur Twitter](https://twitter.com/sebastienlorber/status/1741218919732429108). Dan Abramov a expliqué que les sélecteurs de contexte ne se composent pas bien. Andrew Clark a partagé le plan pour étendre `useMemo()` et permettre l'utilisation d'autres hooks à l'intérieur. Cela fonctionnerait avec le hook use avec [tout type Usable](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md#other-usable-types) (actuellement contexte et promesses, mais peut-être des Observables et stores à l'avenir?), mais aussi [des hooks tiers](https://twitter.com/BenJ_Ayc0/status/1742499230525067408)! Cela résoudrait le problème de sélection fine de manière performante et composable, tout en étant compatible avec le futur compilateur React Forget.",
+        "en": "La partie la plus intéressante est un excellent résumé des [récentes discussions sur Twitter](https://twitter.com/sebastienlorber/status/1741218919732429108). Dan Abramov a expliqué que les sélecteurs de contexte ne se composent pas bien. Andrew Clark a partagé le plan d'étendre `useMemo()` et d'autoriser l'utilisation d'autres hooks à l'intérieur. Cela fonctionnerait avec le hook use avec [tout type Usable](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md#other-usable-types) (actuellement contexte et promesses, mais peut-être Observables et stores à l'avenir ?), mais aussi [avec des hooks tiers](https://twitter.com/BenJ_Ayc0/status/1742499230525067408) ! Cela résoudrait le problème de sélection fine de manière performante et composable, et serait compatible avec le futur compilateur React Forget."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "379f9c7b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "[![The Two Reacts](/emails/issues/169/2reacts.jpg)](https://overreacted.io/the-two-reacts/)",
+      "source_content_hash": "48b82beb0b3f12f54e1f9a5d70019640216078a99413bcdaefc340d35705dd9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Les deux React](/emails/issues/169/2reacts.jpg)](https://overreacted.io/the-two-reacts/)",
+        "en": "[![The Two Reacts](/emails/issues/169/2reacts.jpg)](https://overreacted.io/the-two-reacts/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7772088",
+      "source_content": "**[The Two Reacts](https://overreacted.io/the-two-reacts/)**",
+      "source_content_hash": "63453f6572957ddf6d779caf646fc1263b0551b4efb11125624236782a086ff8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Les deux React](https://overreacted.io/the-two-reacts/)**",
+        "en": "**[The Two Reacts](https://overreacted.io/the-two-reacts/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "Great writeup from Dan Abramov, giving good reasons for code to run locally (instant feedback), as well as remotely (close to the data source). He proposes a new React formula: `UI = f(data, state)`, where `f` represents all your whole React app, running in 2 distinct environments.",
+      "source_content_hash": "28628d4805b55578ef6aac63090957f4290e16dd26043d70968d8b54e88aacae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Excellent article de Dan Abramov, présentant de bonnes raisons pour que le code s'exécute localement (retour instantané) ainsi qu'à distance (près de la source de données). Il propose une nouvelle formule React : `UI = f(data, state)`, où `f` représente toute votre application React, s'exécutant dans 2 environnements distincts.",
+        "en": "Excellent article de Dan Abramov, présentant de bonnes raisons pour exécuter du code localement (retour instantané) et à distance (proche de la source de données). Il propose une nouvelle formule React : `UI = f(data, state)`, où `f` représente toute votre application React, s'exécutant dans 2 environnements distincts."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "This ends with a great question, implicitly asking if you would invent React Server Components to solve this problem.",
+      "source_content_hash": "e1dc955cb5fcb34d24fee2c7eb84442c645c519cc1b57d93f9aeb2ed12a21134",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cela se termine par une excellente question, demandant implicitement si vous inventeriez les React Server Components pour résoudre ce problème.",
+        "en": "Cela se termine par une excellente question, demandant implicitement si vous inventeriez les React Server Components pour résoudre ce problème."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "34033296",
+      "source_content": "> Is there some way we could split components between your computer and mine in a way that preserves what’s great about React? Could we combine and nest components from two different environments? How would that work?",
+      "source_content_hash": "c763c875dcf3dff0e9653198413a5a937a607909cd2f3fdc0cecc141b570256f",
+      "node_type": "blockquote",
+      "translatable": true,
+      "translations": {
+        "fr": "> Existe-t-il un moyen de diviser les composants entre votre ordinateur et le mien tout en préservant ce qui est génial dans React ? Pourrions-nous combiner et imbriquer des composants de deux environnements différents ? Comment cela fonctionnerait-il ?",
+        "en": "> Est-il possible de répartir des composants entre votre ordinateur et le mien tout en préservant ce qui fait la force de React ? Pourrions-nous combiner et imbriquer des composants provenant de deux environnements différents ? Comment cela fonctionnerait-il ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f51aebdd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5efe9dee",
+      "source_content": "- 💸 [From Dreamweaver to JSX: The Evolution of Visual Dev Tools for the Web](https://mightymeld.com/blog/browser-dev-tools-understand-code?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=link1)\n- 🌟 [2023 JavaScript Rising Stars](https://risingstars.js.org/2023/en): see my comment on the [React section](https://risingstars.js.org/2023/en#section-react).\n- 🐦 [Next.js can now run with HTTPS locally](https://twitter.com/leeerob/status/1743709145386131906)\n- 📖 [Remix Docs - new Client Data guide](https://remix.run/docs/en/main/guides/client-data)\n- 📜 [Common mistakes with the Next.js App Router and how to fix them](https://vercel.com/blog/common-mistakes-with-the-next-js-app-router-and-how-to-fix-them): Lee Robinson is in touch with hundreds of Next.js devs and gathered the most common mistakes. Also available as a [video](https://www.youtube.com/watch?v=RBM03RihZVs). TIL that the redirect function returns a never type and throws a Next.js specific error, surprising design.\n- 📜 [How I'm Writing CSS in 2024](https://leerob.io/blog/css): Lee Robinson likes CSS in 2024. He describes constraints that make a great UX/DX, and the role of a build step, compiler, or streaming. He recommends CSS Modules, Tailwind CSS, or StyleX.\n- 📜 [Increasingly miffed about the state of React releases](https://macwright.com/2024/01/03/miffed-about-react): No stable release for 550d considered harmful.\n- 📜 [Executing Dangerously Injected Scripts Inside React Components](https://macarthur.me/posts/script-tags-in-react): Interesting technique to bypass security limitations and execute scripts injected through dangerouslySetInnerHTML, using Document Fragments.\n- 📜 [28 Advanced NextJS features everyone should know](https://codedrivendevelopment.com/posts/rarely-known-nextjs-features): List and comments on various lesser-known features the author did not encounter in any app he worked on.\n- 📜 [Things I would change about React to increase DX](https://codedrivendevelopment.com/posts/things-i-would-change-about-react): List React pain points I can agee with, and make rough propositions to fix them (not all of them are great nor possible IMHO).\n- 📜 [Harmful complexity: using React for static content](https://gomakethings.com/harmful-complexity-using-react-for-static-content/): Interesting opinion, but I hope to prove the author wrong and believe React is nice for static content, particularly with RSCs.\n- 📜 [A new blog for 2024](https://chrisnicholas.dev/blog/a-new-blog-for-2024): Using moderns tools such as Catalyst, TWC, Contentlayer, Tailwind, Next.js\n- 📜 [How to Set Up Soft Navigation Reporting in a React App](https://www.debugbear.com/blog/soft-navigations-react-tutorial): Shows usage of the Google web-vitals npm package in a CRA app.\n- 📜 [Introducing Superglue: React ❤️ Rails](https://thoughtbot.com/blog/introducing-superglue): “Superglue makes React and Redux as productive as Hotwire, Turbo and Stimulus”\n- 📜 [How Lee Robinson created his Guestbook, and you can do it too](https://bejamas.io/blog/how-to-create-a-guestbook/?ck_subscriber_id=887776054)\n- 📜 [2024 Predictions by JavaScript Frontend Framework Maintainers](https://thenewstack.io/2024-predictions-by-javascript-frontend-framework-maintainers/)\n- 📦 [Fresnel 7.0 - React 18 support - SSR compatible approach for responsive layouts for React](https://github.com/artsy/fresnel/releases/tag/v7.0.0)\n- 📦 [@tanstack/router-vite-plugin - Vite alternative to the router CLI](https://tanstack.com/router/v1/docs/api/router-vite-plugin)\n- 📦 [Docusaurus 3.1 - built-in broken anchors detectors, `parseFrontMatter` hook](https://docusaurus.io/blog/releases/3.1)\n- 📦 [Astro 4.1 - Accessibility audit rules, client:visible rootMargin, custom cookie encoding](https://astro.build/blog/astro-410/)\n- 📦 [Mutative 1.0 - Efficient immutable updates, 10x faster than Immer](https://dev.to/unadlib/announcing-mutative-10-a-new-era-in-efficient-immutable-updates-nml)\n- 📦 [JSX email 1.7 - A fork of react-email that keeps being improved](https://github.com/shellscape/jsx-email)\n- 🔨 [Palettify - Get an instant preview for your theme - supports shadcn/ui and soon MUI](https://palettify.co/)\n- 🔗 [Remix Resources - Community templates, stacks and libraries](https://remix.run/resources)\n- 🎥 [Jack Herrington - HTMX For React Developers in 10 Minutes](https://www.youtube.com/watch?v=r0XBULqzsT0)\n- 🎥 [Lee Robinson - React Server Components: the Good, the Bad, and the Ugly](https://www.youtube.com/watch?v=8DyzsSWNcDE)\n- 🎥 [Remix Singles - \"Trellix\" - Cookies, Auth, and Drag & Drop](https://www.youtube.com/watch?v=RTHzZVbTl6c&list=PLXoynULbYuED9b2k5LS44v9TQjfXifwNu): 15 short videos by the Remix team, building a Trello clone (see the [demo app](https://trellix.fly.dev/)).",
+      "source_content_hash": "94525376ab8736fbf368a9b80b77a6b2f27b84ec746fbccd33bf514339f48d5c",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5efe9dee",
+        "en": "@@untranslatable_placeholder_5efe9dee"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8850c5e2",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_8850c5e2",
+        "en": "@@untranslatable_placeholder_8850c5e2"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c5a1374",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8574d51c",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "[![CMS with Inline Visual editing for Next.js, Remix and Gatsby](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)",
+      "source_content_hash": "e89db264458429cbe0a1bde57166596ead43db06f5a0abec8ef9d1790a424142",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![CMS avec édition visuelle en ligne pour Next.js, Remix et Gatsby](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)",
+        "en": "[![CMS avec édition visuelle intégrée pour Next.js, Remix et Gatsby](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "**[CMS with Inline Visual editing for Next.js, Remix and Gatsby](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**",
+      "source_content_hash": "14ab5cb79e9d19bdc3da4e2f50d577967971463a9c514b6731a0f01e0bb1a8bf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[CMS avec édition visuelle en ligne pour Next.js, Remix et Gatsby](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**",
+        "en": "**[CMS avec édition visuelle intégrée pour Next.js, Remix et Gatsby](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "[**Set up a project in just 1 minute**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email) with the CLI and define your own Visual blocks as React components to convey your pixel-perfect corporate brand, using any CSS framework.",
+      "source_content_hash": "d3cdd2eff51dbe3b2d1178ce740d5636ba258ee9e0b244d1b4714dbec80e4a90",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Configurez un projet en seulement 1 minute**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email) avec le CLI et définissez vos propres blocs visuels en tant que composants React pour véhiculer votre marque d'entreprise au pixel près, en utilisant n'importe quel framework CSS.",
+        "en": "[**Configurez un projet en seulement 1 minute**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email) avec le CLI et définissez vos propres blocs visuels comme composants React pour véhiculer votre identité de marque pixel-perfect, en utilisant n'importe quel framework CSS."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "Content editors can easily use these blocks to compose pages visually, just like using a word processor, without compromising the design system.",
+      "source_content_hash": "6b38e1bcd98970bb30ecedea484b9defb1939da083a3ce7df622eab3da0899aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les éditeurs de contenu peuvent facilement utiliser ces blocs pour composer des pages visuellement, comme avec un traitement de texte, sans compromettre le système de design.",
+        "en": "Les éditeurs de contenu peuvent facilement utiliser ces blocs pour composer visuellement des pages, comme avec un traitement de texte, sans compromettre le système de design."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "React Bricks is enterprise-ready with Digital Assets Management, Advanced SEO, Collaboration, Scheduled Publishing, Multilanguage, Integrations with external data sources, Approval Workflow, Single Sign-On, Multiple environments, Backup and Change history.",
+      "source_content_hash": "37c55b642e5229bc7b36e008f9f29c44762405ddce84cc50d6f0e84568127bf4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React Bricks est adapté aux entreprises avec Gestion des actifs numériques, SEO avancé, Collaboration, Publication planifiée, Multilingue, Intégrations avec des sources de données externes, Workflow d'approbation, Authentification unique, Environnements multiples, Sauvegarde et Historique des modifications.",
+        "en": "React Bricks est adapté aux entreprises avec Gestion des ressources numériques, SEO avancé, Collaboration, Publication planifiée, Multilinguisme, Intégrations avec des sources de données externes, Workflow de validation, Authentification unique, Environnements multiples, Sauvegarde et Historique des modifications."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "Trusted by corporate clients such as The Weather Channel, Deel.com, La Banque Postale, leading eCommerce sites and over 8,500 users worldwide.  \n[**Get started today!**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)",
+      "source_content_hash": "68f4a6870ea39b592c06672285e3a8b4a971baffee010cf2e248025dd9494d06",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Utilisé par des clients corporatifs comme The Weather Channel, Deel.com, La Banque Postale, des sites eCommerce leaders et plus de 8 500 utilisateurs dans le monde.  \n[**Commencez dès aujourd'hui !**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)",
+        "en": "Utilisé par des clients corporatifs comme The Weather Channel, Deel.com, La Banque Postale, des sites eCommerce leaders et plus de 8 500 utilisateurs dans le monde.  \n[**Commencez dès aujourd'hui !**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ce5ba214",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4dd6a631",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f45239ba",
+      "source_content": "[![Who's using Expo OSS in 2024](/emails/issues/169/expo.jpg)](https://evanbacon.dev/blog/expo-2024)",
+      "source_content_hash": "9414b007786ebf1ea46ce81b497e1d73a1b22047c00966008cc5e1c3e36d2cd8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Qui utilise Expo OSS en 2024](/emails/issues/169/expo.jpg)](https://evanbacon.dev/blog/expo-2024)",
+        "en": "[![Qui utilise Expo OSS en 2024](/emails/issues/169/expo.jpg)](https://evanbacon.dev/blog/expo-2024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "692c6053",
+      "source_content": "**[Who's using Expo OSS in 2024](https://evanbacon.dev/blog/expo-2024)**",
+      "source_content_hash": "5bba6b1c972dd773e2596987d1be434e1bcc32f4ce1bd15440f44ee141cb890b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Qui utilise Expo OSS en 2024](https://evanbacon.dev/blog/expo-2024)**",
+        "en": "**[Qui utilise Expo OSS en 2024](https://evanbacon.dev/blog/expo-2024)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "Evan Bacon gathered an impressive list of 1,599 apps that are using Expo libraries (and therefore, React Native). The list includes household names like Pizza Hut, Burger King, Microsoft, Discord, Shopify, NFL, Walgreens, Amazon, CNN, and many more. It’s not news to us that React Native is thriving, but it’s nevertheless encouraging to see the big role that it plays when you look at top apps in the App Store.",
+      "source_content_hash": "d07243cc7e8879ff33bc196ec01a5150a43892da4ddbcdf81e40e5f8104a73ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Evan Bacon a rassemblé une liste impressionnante de 1 599 applications utilisant les bibliothèques Expo (et donc React Native). Cette liste comprend des noms bien connus comme Pizza Hut, Burger King, Microsoft, Discord, Shopify, NFL, Walgreens, Amazon, CNN et bien d'autres. Ce n'est pas une surprise pour nous que React Native prospère, mais il reste encourageant de constater son rôle majeur lorsqu'on examine les applications phares de l'App Store.",
+        "en": "Evan Bacon a compilé une liste impressionnante de 1 599 applications utilisant les bibliothèques Expo (et donc React Native). La liste comprend des noms bien connus comme Pizza Hut, Burger King, Microsoft, Discord, Shopify, NFL, Walgreens, Amazon, CNN et bien d'autres. Ce n'est pas une nouvelle pour nous que React Native prospère, mais il est néanmoins encourageant de constater son rôle majeur lorsqu'on examine les meilleures applications de l'App Store."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b99d2cf6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "- 💸 [Galaxies.dev - Master React Native & Save 25% on PRO with code GALAXIES24](https://galaxies.dev?utm_source=thisweekinreact.com)\n- 👀 [Proposal: Hover style API for iPad / Apple Vision Pro](https://github.com/react-native-community/discussions-and-proposals/pull/750) The iPad supports hover effects for mouse/trackpad users, and this will also be useful for Apple’s upcoming Vision Pro, where navigation elements get highlighted when the user looks at them.\n- 📜 [Introduction to Reanimated](https://www.reactiive.io/articles/introduction-to-reanimated): A good introductory article to learn about the concepts behind one of the most popular animation libraries for RN: shared values, reanimated style, animated view.\n- 📦 [React-Native v0.73.2 + v0.72.9 + v0.71.15](https://github.com/facebook/react-native/issues/42180): new releases fix the \"Error installing boost Verification checksum” iOS build errors, among other things.\n- 📦 [react-native-vision-camera 3.7.0](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.7.0): Now includes an Expo config plugin to easily enable the fully native QR/Barcode scanner.\n- 🎥 [Theo - Moving off React Native](https://www.youtube.com/watch?v=gntZth3mIbM): Clickbait, but informative. This is about moving from “vanilla” React-Native to Expo.\n- 🎥 [Szymon Rybczak - Bringing React Server Components to React Native](https://portal.gitnation.org/contents/brining-react-server-components-to-react-native)\n- 🎥 [Simon Grimm - THE React Native Tech Stack for 2024](https://www.youtube.com/watch?v=Xwk4rcB6qVQ)",
+      "source_content_hash": "7748718d3077c8c9a4988341d98fab53e9a89ad064310a8649f8785a01b373cf",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Galaxies.dev - Maîtrisez React Native & économisez 25% sur PRO avec le code GALAXIES24](https://galaxies.dev?utm_source=thisweekinreact.com)\n- 👀 [Proposition : API de style hover pour iPad / Apple Vision Pro](https://github.com/react-native-community/discussions-and-proposals/pull/750) L'iPad prend en charge les effets de survol pour les utilisateurs de souris/pavé tactile, et cela sera également utile pour le futur Vision Pro d'Apple, où les éléments de navigation sont mis en surbrillance lorsque l'utilisateur les regarde.\n- 📜 [Introduction à Reanimated](https://www.reactiive.io/articles/introduction-to-reanimated) : Un bon article d'introduction pour comprendre les concepts derrière l'une des bibliothèques d'animation les plus populaires pour RN : valeurs partagées, style réanimé, vue animée.\n- 📦 [React-Native v0.73.2 + v0.72.9 + v0.71.15](https://github.com/facebook/react-native/issues/42180) : ces nouvelles versions corrigent les erreurs de build iOS \"Error installing boost Verification checksum\", entre autres.\n- 📦 [react-native-vision-camera 3.7.0](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.7.0) : inclut désormais un plugin de configuration Expo pour activer facilement le scanner QR/Code-barres entièrement natif.\n- 🎥 [Theo - Quitter React Native](https://www.youtube.com/watch?v=gntZth3mIbM) : Accrocheur mais informatif. Il s'agit de passer de React-Native \"vanille\" à Expo.\n- 🎥 [Szymon Rybczak - Intégrer les React Server Components à React Native](https://portal.gitnation.org/contents/brining-react-server-components-to-react-native)\n- 🎥 [Simon Grimm - LA pile technologique React Native pour 2024](https://www.youtube.com/watch?v=Xwk4rcB6qVQ)",
+        "en": "- 💸 [Galaxies.dev - Maîtrisez React Native & économisez 25% sur PRO avec le code GALAXIES24](https://galaxies.dev?utm_source=thisweekinreact.com)\n- 👀 [Proposition : API de style hover pour iPad / Apple Vision Pro](https://github.com/react-native-community/discussions-and-proposals/pull/750) L'iPad prend en charge les effets de survol pour les utilisateurs de souris/pavé tactile, et cela sera également utile pour le futur Vision Pro d'Apple, où les éléments de navigation sont mis en surbrillance lorsque l'utilisateur les regarde.\n- 📜 [Introduction à Reanimated](https://www.reactiive.io/articles/introduction-to-reanimated) : Un bon article introductif pour comprendre les concepts derrière l'une des bibliothèques d'animation les plus populaires pour RN : valeurs partagées, style réanimé, vue animée.\n- 📦 [React-Native v0.73.2 + v0.72.9 + v0.71.15](https://github.com/facebook/react-native/issues/42180) : Les nouvelles versions corrigent les erreurs de build iOS \"Error installing boost Verification checksum\", entre autres.\n- 📦 [react-native-vision-camera 3.7.0](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.7.0) : Inclut désormais un plugin de configuration Expo pour activer facilement le scanner QR/Code-barres entièrement natif.\n- 🎥 [Theo - Migrer de React Native](https://www.youtube.com/watch?v=gntZth3mIbM) : Accrocheur mais informatif. Il s'agit de passer de React Native \"vanilla\" à Expo.\n- 🎥 [Szymon Rybczak - Intégrer les React Server Components à React Native](https://portal.gitnation.org/contents/brining-react-server-components-to-react-native)\n- 🎥 [Simon Grimm - LA stack technique React Native pour 2024](https://www.youtube.com/watch?v=Xwk4rcB6qVQ)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a627a446",
+      "source_content": "- 👀 [TypeScript 5.4 Iteration Plan - `NoInfer<T>`, throw expressions...](https://github.com/microsoft/TypeScript/issues/56948)\n- 📜 [Daniel Rosenwasser on TypeScript and What’s Ahead in 2024](https://thenewstack.io/daniel-rosenwasser-on-typescript-and-whats-ahead-in-2024/)\n- 📜 [Weird things engineers believe about Web development](https://birtles.blog/2024/01/06/weird-things-engineers-believe-about-development/)\n- 📜 [The Website vs. Web App Dichotomy Doesn't Exist](https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/)\n- 📜 [The Popular Vote of Interop 2024](https://frontendmasters.com/blog/the-popular-vote-of-interop-2024/)\n- 📦 [Biome 1.5 - 97% Prettier compat + 2024 Roadmap](https://biomejs.dev/blog/roadmap-2024/)\n- 📦 [Node 20.11 - improves test_runner, import.meta, perf…](https://nodejs.org/en/blog/release/v20.11.0)\n- 📦 [Rspact 0.5 - Module Federation](https://www.rspack.dev/blog/announcing-0.5)",
+      "source_content_hash": "0f1c6d4c8e01ace8b534db3dc5a3956d5fd8524ae1084649819465822afc0cab",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Plan d'itération TypeScript 5.4 - `NoInfer<T>`, expressions throw...](https://github.com/microsoft/TypeScript/issues/56948)\n- 📜 [Daniel Rosenwasser sur TypeScript et les perspectives pour 2024](https://thenewstack.io/daniel-rosenwasser-on-typescript-and-whats-ahead-in-2024/)\n- 📜 [Croyances étranges des ingénieurs sur le développement Web](https://birtles.blog/2024/01/06/weird-things-engineers-believe-about-development/)\n- 📜 [La dichotomie Site Web vs Application Web n'existe pas](https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/)\n- 📜 [Le vote populaire d'Interop 2024](https://frontendmasters.com/blog/the-popular-vote-of-interop-2024/)\n- 📦 [Biome 1.5 - 97% de compatibilité Prettier + Feuille de route 2024](https://biomejs.dev/blog/roadmap-2024/)\n- 📦 [Node 20.11 - améliore test_runner, import.meta, perf...](https://nodejs.org/en/blog/release/v20.11.0)\n- 📦 [Rspack 0.5 - Module Federation](https://www.rspack.dev/blog/announcing-0.5)",
+        "en": "- 👀 [Plan d'itération TypeScript 5.4 - `NoInfer<T>`, expressions throw...](https://github.com/microsoft/TypeScript/issues/56948)\n- 📜 [Daniel Rosenwasser sur TypeScript et les perspectives 2024](https://thenewstack.io/daniel-rosenwasser-on-typescript-and-whats-ahead-in-2024/)\n- 📜 [Croyances étranges des ingénieurs sur le développement Web](https://birtles.blog/2024/01/06/weird-things-engineers-believe-about-development/)\n- 📜 [La dichotomie Site Web vs Application Web n'existe pas](https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/)\n- 📜 [Le vote populaire d'Interop 2024](https://frontendmasters.com/blog/the-popular-vote-of-interop-2024/)\n- 📦 [Biome 1.5 - 97% de compatibilité Prettier + Feuille de route 2024](https://biomejs.dev/blog/roadmap-2024/)\n- 📦 [Node 20.11 - améliore test_runner, import.meta, perf...](https://nodejs.org/en/blog/release/v20.11.0)\n- 📦 [Rspact 0.5 - Module Federation](https://www.rspack.dev/blog/announcing-0.5)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7daeccd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4eab4a6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "[![alt](/emails/issues/169/meme.jpg)](https://twitter.com/sebastienlorber/status/1744853546556649773)",
+      "source_content_hash": "f287d983864ae3e00efebfcf3d46bbc68dfd320ed56b9d8c35fe3c8814a638c1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/169/meme.jpg)](https://twitter.com/sebastienlorber/status/1744853546556649773)",
+        "en": "[![alt](/emails/issues/169/meme.jpg)](https://twitter.com/sebastienlorber/status/1744853546556649773)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/169/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.176037+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "152d704d6383f56f72eef6bbc4827edc97fa0ce111b79593ee3170f82da14001",
+    "en": "152d704d6383f56f72eef6bbc4827edc97fa0ce111b79593ee3170f82da14001"
+  }
+}

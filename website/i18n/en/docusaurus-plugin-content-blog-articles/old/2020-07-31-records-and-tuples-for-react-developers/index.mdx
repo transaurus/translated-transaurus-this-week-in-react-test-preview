@@ -1,0 +1,26 @@
+---
+slug: records-and-tuples-for-react
+title: Records & Tuples for React
+description: .Records & Tuples for React... and how they are much more than immutable data structures.
+authors: [slorber]
+twitterThreadUrl: "https://slo.im/thread"
+image: ./images/hero.png
+---
+
+**Records & Tuples**, une **[proposition](https://github.com/tc39/proposal-record-tuple)** très intéressante, vient d'atteindre le **[stade 2](https://twitter.com/robpalmer2/status/1286040041089904640)** au **TC39**.
+
+Ils introduisent des **structures de données profondément immuables** en JavaScript.
+
+But don't overlook their **equality properties**, that are <u>**VERY**</u> interesting for **React**.
+
+Toute une catégorie de **bugs React** est liée à des **identités d'objet instables** :
+
+- **Performance** : rendus inutiles qui pourraient être évités
+- **Comportement** : ré-exécutions inutiles d'effets, boucles infinies
+- **Surface d'API** : incapacité à exprimer quand une identité d'objet stable est importante
+
+Je vais expliquer les bases de **Records & Tuples**, et comment ils peuvent résoudre des **problèmes React du monde réel**.
+
+[![hero](./images/hero.png)](https://sebastienlorber.com/records-and-tuples-for-react)
+
+🔗 [**Lire la suite**](https://sebastienlorber.com/records-and-tuples-for-react)

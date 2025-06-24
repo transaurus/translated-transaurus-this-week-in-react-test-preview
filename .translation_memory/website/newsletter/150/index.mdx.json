@@ -1,0 +1,817 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/150/index.mdx",
+  "source_file_content_hash": "4946c62d5ef4e219531d44335353409ea68d96057a8f21d8e4bb454dff2fe23c",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /150\ntitle: \"This Week In React #150: Next.js, Skew Protection, Portals, Remix Dev Server, Shadcn UI, AI, React-Aria, SWR, visionOS, tvOS, MiniSim, MMKV...\"\nauthors: [slorber]\ndate: 06-27-2023\n---",
+      "source_content_hash": "dff04f7ffe55ae1e8e24f67f0936331a443c8867187ccf16278a9bb568fb5f45",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we've had some news about Next.js, which has been getting a lot of criticism recently. Remix is also releasing its new Dev Server with Hot Data Revalidation.",
+      "source_content_hash": "524c7adf2e0e44cdcfdf90832611c04a38a7d73c396000944fd3adabfea23236",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, nous avons eu des nouvelles de Next.js, qui a récemment fait l'objet de nombreuses critiques. Remix publie également son nouveau serveur de développement avec revalidation à chaud des données.",
+        "en": "Cette semaine, nous avons eu des nouvelles concernant Next.js, qui a récemment fait l'objet de nombreuses critiques. Remix publie également son nouveau serveur de développement avec revalidation à chaud des données."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "On the React-Native side, the devs are having fun running the latest version on Vision Pro.",
+      "source_content_hash": "b79dda56dd5524b5ff948908b4aaf6e255dc044f6a850a0735444293480654ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Côté React-Native, les développeurs s'amusent à exécuter la dernière version sur Vision Pro.",
+        "en": "Du côté de React-Native, les développeurs s'amusent à exécuter la dernière version sur Vision Pro."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Check out [React Jam](https://reactjam.com/?utm_source=thisweekinreact): a contest to create video games in React that starts on 20 July. I'm on the jury.",
+      "source_content_hash": "d99b72764f1365d5de3f634743445c206f98d4a9aada9622f978400d7f6e1dd2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Découvrez [React Jam](https://reactjam.com/?utm_source=thisweekinreact) : un concours pour créer des jeux vidéo en React qui commence le 20 juillet. Je fais partie du jury.",
+        "en": "Découvrez [React Jam](https://reactjam.com/?utm_source=thisweekinreact) : un concours pour créer des jeux vidéo en React qui commence le 20 juillet. Je fais partie du jury."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![Tina.io is a headless CMS for Markdown-powered sites](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)",
+      "source_content_hash": "d07d67b40382ffe752cafb4d03574ec5e0348f7991f13c5fd7a07d59ea0908aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)",
+        "en": "[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[Tina.io is a headless CMS for Markdown-powered sites](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**",
+      "source_content_hash": "8daaebad6e0f00c8c4faf2c3d04fabcc8992451ab583bfb3838238fb941d5ec7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**",
+        "en": "**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f2c8a42b",
+      "source_content": "- Editing UI for your Markdown files\n- UI for MDX components\n- Supports static (SSG) and server-side rendering (SSR)\n- Option for visual editing (live-preview)\n- Build with reusable blocks",
+      "source_content_hash": "cb5d921a7fe229312ad7e31fa01a28654568a7604897dcb86fe0ecaa88d5a4c0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Interface d'édition pour vos fichiers Markdown\n- Interface pour les composants MDX\n- Prend en charge le rendu statique (SSG) et côté serveur (SSR)\n- Option pour l'édition visuelle (aperçu en direct)\n- Construction avec des blocs réutilisables",
+        "en": "- Interface d'édition pour vos fichiers Markdown\n- Interface pour les composants MDX\n- Prend en charge le rendu statique (SSG) et côté serveur (SSR)\n- Option d'édition visuelle (prévisualisation en direct)\n- Construction avec des blocs réutilisables"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "Test a starter site",
+      "source_content_hash": "00cfdd6dfc445a7df446241a49f872dd69eae76fb2b91f1adce9cd97ccd3a228",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Testez un site de démarrage",
+        "en": "Testez un site de démarrage"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8612da05",
+      "source_content": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind with visual editing](https://github.com/tinacms/tina-cloud-starter) (Github)",
+      "source_content_hash": "de7a40ae87efb6c6ab4417e89bb39524a8e8daca4f792ef09ca756319a654e0b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)",
+        "en": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Or run  `npx create-tina-app@latest` then visit `localhost:3000/admin`",
+      "source_content_hash": "3c38b4e8e7ed89fb82c1d7a4781a5edfb7e4fda07b6616777408937de6748b5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ou exécutez `npx create-tina-app@latest` puis visitez `localhost:3000/admin`",
+        "en": "Ou exécutez `npx create-tina-app@latest` puis visitez `localhost:3000/admin`"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "Watch the [4-min demo video](https://www.youtube.com/watch?v=zRkeKSZjlyw)",
+      "source_content_hash": "2a28b2aaced7040bc5de34214f8661699eb64901ddd6ce54922fe7b3e0a3a4b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)",
+        "en": "Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "67c8996f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "11c76fcc",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "[![](/emails/issues/150/nextjs-update.jpg)](https://nextjs.org/blog/june-2023-update)",
+      "source_content_hash": "8ebea4906bc18a4c0f788a23fbf2022a6238eda9086fb0bac73fba8eb7a7e01b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![](/emails/issues/150/nextjs-update.jpg)](https://nextjs.org/blog/june-2023-update)",
+        "en": "[![](/emails/issues/150/nextjs-update.jpg)](https://nextjs.org/blog/june-2023-update)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "**[Next.js App Router Update - Top Priorities](https://nextjs.org/blog/june-2023-update)**",
+      "source_content_hash": "0789142b5e48a00ad3012456dec46c262603b7c0e85d94772dcd2a5ebeae0c08",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Mise à jour du routeur d'application Next.js - Priorités absolues](https://nextjs.org/blog/june-2023-update)**",
+        "en": "**[Mise à jour du routeur d'applications Next.js - Priorités](https://nextjs.org/blog/june-2023-update)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "The Next.js team shares some context on the new App Router. They've received a lot of criticism lately and are well aware of the bugs and other problems with the current DX. They detail what they're working on in priority:",
+      "source_content_hash": "eb04c5275696fcd99b4665e04cc315ff37bb41388086f6837e4e098d419fb4a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'équipe Next.js partage un contexte sur le nouveau routeur d'application. Elle a récemment reçu beaucoup de critiques et est bien consciente des bogues et autres problèmes avec l'expérience de développement actuelle. Elle détaille ce sur quoi elle travaille en priorité :",
+        "en": "L'équipe Next.js partage du contexte sur le nouveau routeur d'applications. Ils ont récemment reçu beaucoup de critiques et sont bien conscients des bogues et autres problèmes avec la DX actuelle. Ils détaillent ce sur quoi ils travaillent en priorité :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- Performance: local, build and server runtime\n- Bugs and instabilities\n- Education and documentation",
+      "source_content_hash": "e311d9329af6f3839376010f6b75756da0d3d50a1fd6ece4477637cfa5e0252c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Performance : locale, build et runtime serveur\n- Bogues et instabilités\n- Éducation et documentation",
+        "en": "- Performances : exécution locale, de build et serveur\n- Bogues et instabilités\n- Éducation et documentation"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "df6e96a7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dae11e3",
+      "source_content": "[![](/emails/issues/150/skew-protection.jpg)](https://vercel.com/blog/version-skew-protection)",
+      "source_content_hash": "44f5198762e91bc56c84ded1c8b20b97b31f081a8d2acb14be4a92be1bed0a40",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![](/emails/issues/150/skew-protection.jpg)](https://vercel.com/blog/version-skew-protection)",
+        "en": "[![](/emails/issues/150/skew-protection.jpg)](https://vercel.com/blog/version-skew-protection)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0bb95128",
+      "source_content": "**[Vercel - Introducing Skew Protection](https://vercel.com/blog/version-skew-protection)**",
+      "source_content_hash": "348eff6127015892c3e47048986820834d0b57c4ffcbe756d781007294e2c217",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Vercel - Présentation de Skew Protection](https://vercel.com/blog/version-skew-protection)**",
+        "en": "**[Vercel - Présentation de la protection contre le décalage](https://vercel.com/blog/version-skew-protection)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "New Vercel feature that mitigates the back/front desynchronisation that can occur during a new deployment: requests from state clients can now be routed to the appropriate stale immutable server deployment. Particularly useful for those doing continuous deployment. Available experimentally in Next.js 13.4.7, which will automatically apply the correct HTTP headers.",
+      "source_content_hash": "b95571b38ddd889667e267155e677645920cfde4b5b3cd6b3fc2471d83d22249",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nouvelle fonctionnalité de Vercel qui atténue la désynchronisation front/back pouvant survenir lors d'un nouveau déploiement : les requêtes des clients dans un certain état peuvent maintenant être acheminées vers le déploiement serveur immuable approprié. Particulièrement utile pour ceux qui font du déploiement continu. Disponible expérimentalement dans Next.js 13.4.7, qui appliquera automatiquement les en-têtes HTTP appropriés.",
+        "en": "Nouvelle fonctionnalité de Vercel qui atténue la désynchronisation back/front pouvant survenir lors d'un nouveau déploiement : les requêtes des clients avec état peuvent désormais être acheminées vers le déploiement de serveur immuable périmé approprié. Particulièrement utile pour ceux qui font du déploiement continu. Disponible expérimentalement dans Next.js 13.4.7, qui appliquera automatiquement les en-têtes HTTP corrects."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "803be95a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "[![](/emails/issues/150/shadcnui.jpg)](https://ui.shadcn.com/docs/changelog)",
+      "source_content_hash": "de1b0af6c3a38b4cd83cc8193b865972883c90cd9d1c35a3294f0b29b526ead1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![](/emails/issues/150/shadcnui.jpg)](https://ui.shadcn.com/docs/changelog)",
+        "en": "[![](/emails/issues/150/shadcnui.jpg)](https://ui.shadcn.com/docs/changelog)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "**[Shadcn UI update - June 2023](https://ui.shadcn.com/docs/changelog)**",
+      "source_content_hash": "ed0c57323fd928cdfd4484c38cc9a125ba733641ed862524b0704c4829111c21",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Mise à jour de Shadcn UI - Juin 2023](https://ui.shadcn.com/docs/changelog)**",
+        "en": "**[Mise à jour de Shadcn UI - juin 2023](https://ui.shadcn.com/docs/changelog)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "afa378f7",
+      "source_content": "This collection of Tailwind + Radix components is gaining momentum. The author has just released a major update with a CLI that already offers a great DX, and looks set to add some [impressive AI features](https://twitter.com/shadcn/status/1673055193968287744) in the near future. Kent C. Dodds [explains](https://twitter.com/kentcdodds/status/1673806183935909888) why he adopted it in his Remix stack.",
+      "source_content_hash": "27d80637d7adf48b75a89e9176d2f42803950974eb864655ed9a6b22a8b25d69",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette collection de composants Tailwind + Radix gagne en popularité. L'auteur vient de publier une mise à jour majeure avec une CLI offrant déjà une excellente DX, et s'apprête à ajouter des [fonctionnalités IA impressionnantes](https://twitter.com/shadcn/status/1673055193968287744) dans un futur proche. Kent C. Dodds [explique](https://twitter.com/kentcdodds/status/1673806183935909888) pourquoi il l'a adoptée dans sa stack Remix.",
+        "en": "Cette collection de composants Tailwind + Radix gagne en popularité. L'auteur vient de publier une mise à jour majeure avec une CLI offrant déjà une excellente DX, et s'apprête à ajouter des [fonctionnalités IA impressionnantes](https://twitter.com/shadcn/status/1673055193968287744) dans un futur proche. Kent C. Dodds [explique](https://twitter.com/kentcdodds/status/1673806183935909888) pourquoi il l'a adoptée dans sa stack Remix."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f51aebdd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5efe9dee",
+      "source_content": "- 🐦 [Fred K Schott - \"React.js canary is _not_ stable and probably shouldn't be used in production.\"](https://twitter.com/FredKSchott/status/1673722399278403584): a debate that is particularly animating the community this week. I also shared [my opinion](https://twitter.com/sebastienlorber/status/1673802036666589185) and think it's OK to use a canary React release in a framework.\n- 💬 [Stitches is not longer maintained](https://github.com/stitchesjs/stitches/discussions/1149#discussioncomment-6223090)\n- 👀 [React Jam - Build and play games together!](https://reactjam.com/?utm_source=thisweekinreact)\n- 👀 [Remotion 4.0 launches next week](https://twitter.com/JNYBGR/status/1673641398539546625)\n- 💡 [Refresh React Server Component on Focus](https://buildui.com/recipes/refresh-react-server-component-on-focus): tip for reproducing a popular React-Query/SWR feature.\n- 📜 [Teleportation in React: Positioning, Stacking Context, and Portals](https://www.developerway.com/posts/positioning-and-portals-in-react): great interactive article for those struggling with z-index. Explains well the concept of stacking context, and how creating a React portal can simplify your life.\n- 📜 [GitHub - Crafting a better, faster code view](https://github.blog/2023-06-21-crafting-a-better-faster-code-view/): feedback on the implementation of GitHub's new Code View in React, and on the fancy techniques used for scaling with the number of code lines to be displayed.\n- 📜 [Our experience adding Edge Runtime to Next.js SDK](https://blog.logto.io/next-edge/): feedback from Logto on the changes needed to their SDK to support the Next.js Edge Runtime.\n- 📜 [Things you might not know about Next Image](https://pixelpoint.io/blog/next-image/): a good resource on how Next.js' Image component works, with a few pragmatic tips to help you optimise your Lighthouse score.\n- 📜 [Using useMutation to make an advanced toggle in React](https://www.propelauth.com/post/using-usemutation-to-make-an-advanced-toggle-in-react): uses React-Query's useMutation callbacks to give animated feedback to the user.\n- 📜 [Storybook - Zero-config support for Tailwind, MUI, styled-components, and Emotion](https://twitter.com/storybookjs/status/1671907527422795776): the styling-addon is now able to configure itself for several popular UI libs.\n- 📜 [A16z - The Getting Started with AI Stack for JavaScript](https://a16z.com/2023/06/21/the-getting-started-with-ai-stack-for-javascript/): VCs from Andreessen Horowitz present an AI starter based on a React and Next.js stack.\n- 📜 [SwiftUI stole the best parts of React…and my heart](https://www.mux.com/blog/swiftui-against-react)\n- 📦 [Remix 1.18 - Stable V2 Dev Server, JSON/Text Submission...](https://github.com/remix-run/remix/releases/tag/remix%401.18.0): see also the [video series](https://www.youtube.com/watch?v=2c2OeqOX72s) which explains how the Dev Server works and the concept of Hot Data Revalidation.\n- 📦 [AI.JSX - AI Application Framework for Javascript](https://github.com/fixie-ai/ai-jsx): a solution for creating AI applications based on JSX. Does not use React directly, but integrates particularly well with ([details](https://docs.ai-jsx.com/is-it-react)).\n- 📦 [Medusa Product Module](https://medusajs.com/recap/): the open-source e-commerce solution is offering a new module for Next.js and other serverless environments.\n- 📦 [React Aria - June 27 Release](https://twitter.com/devongovett/status/1673764872117714944): StrictMode support added, no need for SSRProvider anymore, and various other new features: Calendar, DatePicker, TagGroup...\n- 📦 [Next.js 13.4.7](https://github.com/vercel/next.js/releases/tag/v13.4.7)\n- 📦 [SWR 2.2](https://github.com/vercel/swr/releases/tag/v2.2.0)\n- 🎥 [Single Line React Performance Boost with Million](https://www.youtube.com/watch?v=x-aNifu9RNw)\n- 🎥 [Don't Follow This Bad React Advice!](https://www.youtube.com/watch?v=YlU9vznPWIk)\n- 🎥 [Make Your Own Next.js](https://www.youtube.com/watch?v=3RzhNYhjVAw)\n- 🎥 [The Ultimate Guide to Server Actions in NextJs 13](https://www.youtube.com/watch?v=sdKFEo6978U)",
+      "source_content_hash": "b0e3d714157df1ed5686ac0e61a0ee5e0de20a98f3a9543c47698e80283c2480",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5efe9dee",
+        "en": "@@untranslatable_placeholder_5efe9dee"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "440823bd",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_440823bd",
+        "en": "@@untranslatable_placeholder_440823bd"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f414353c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f947c8e4",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Partenaire {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "[![Porkbun.com - The Best Domain Name Registrar](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)",
+      "source_content_hash": "b586358be6d238b132e1a5975adfc67156975cd356917f8af356f2a985ba08eb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Porkbun.com - Le meilleur registraire de noms de domaine](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)",
+        "en": "[![Porkbun.com - Le meilleur registraire de noms de domaine](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "**[Porkbun.com - The Best Domain Name Registrar](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**",
+      "source_content_hash": "87a8346f1a38b708044b7ec0f18247f4ebdbc25f5f5ea8611f146537004b681b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Porkbun.com - Le meilleur registraire de noms de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**",
+        "en": "**[Porkbun.com - Le meilleur registraire de noms de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "Porkbun offers hundreds of domain extensions for React and React-Native developers from .dev and .app to .cloud, .xyz, and .ai — all at the **lowest prices around!** Every domain name at Porkbun comes with **tons of free features** like:",
+      "source_content_hash": "a9ddb05490e57e8f08339518b5a217fdcc60d350b46a09d386315c03861533fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Porkbun propose des centaines d'extensions de domaine pour les développeurs React et React-Native, allant de .dev et .app à .cloud, .xyz et .ai — le tout aux **prix les plus bas du marché** ! Chaque nom de domaine chez Porkbun inclut **de nombreuses fonctionnalités gratuites** comme :",
+        "en": "Porkbun propose des centaines d'extensions de domaine pour les développeurs React et React-Native, de .dev et .app à .cloud, .xyz et .ai — toutes aux **prix les plus bas du marché !** Chaque nom de domaine chez Porkbun inclut **des tonnes de fonctionnalités gratuites** comme :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "- SSL Certificates\n- WHOIS Privacy\n- DNS\n- URL Forwarding\n- Web and Email Hosting Trials",
+      "source_content_hash": "37ae2fc5df7013fc0c3e53e6f42795837327a3e6946776e76984fe95f8c4ae81",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Certificats SSL\n- Confidentialité WHOIS\n- DNS\n- Redirection d'URL\n- Essais d'hébergement web et email",
+        "en": "- Certificats SSL\n- Confidentialité WHOIS\n- DNS\n- Redirection d'URL\n- Essais d'hébergement Web et Email"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "Check out our **AI Generated Search tool** that’s changing the way people look for domain names. All this is backed by **incredible support 365 days a year** plus thousands of real five-star reviews on Trustpilot.",
+      "source_content_hash": "f8d12b2a974839f1cd2a9cc88a7ef05ceee5bbbccdd4a55b27851b9e4149328a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Découvrez notre **outil de recherche généré par IA** qui révolutionne la recherche de noms de domaine. Le tout soutenu par **un support exceptionnel 365 jours par an** et des milliers d'avis cinq étoiles sur Trustpilot.",
+        "en": "Découvrez notre **outil de recherche généré par IA** qui révolutionne la recherche de noms de domaine. Le tout soutenu par **un support exceptionnel 365 jours par an** et des milliers d'avis cinq étoiles sur Trustpilot."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "Click the link and [get $1 off your next domain name registration](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023) at Porkbun.com!",
+      "source_content_hash": "1af5731ab9994757c3892a323cd71ed233b5e72bf3562bba6e3828191f38909a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cliquez sur le lien pour [obtenir 1$ de réduction sur votre prochaine inscription de nom de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023) chez Porkbun.com !",
+        "en": "Cliquez sur le lien et [obtenez 1 $ de réduction sur votre prochaine inscription de nom de domaine](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023) chez Porkbun.com !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "18fa676c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2bb63d77",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "[![React Native 0.72 and Expo SDK 49 running on visionOS](/emails/issues/150/visionpro.jpg)](https://twitter.com/donadeldev/status/1671643367246032897)",
+      "source_content_hash": "c4205a41bb9c2694822aaf025360c9e414080c039e4b3cfc2443460dd412725b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Native 0.72 et Expo SDK 49 fonctionnant sur visionOS](/emails/issues/150/visionpro.jpg)](https://twitter.com/donadeldev/status/1671643367246032897)",
+        "en": "[![React Native 0.72 et Expo SDK 49 fonctionnant sur visionOS](/emails/issues/150/visionpro.jpg)](https://twitter.com/donadeldev/status/1671643367246032897)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c9e2b64",
+      "source_content": "**[React Native 0.72 and Expo SDK 49 running on visionOS](https://twitter.com/donadeldev/status/1671643367246032897)**",
+      "source_content_hash": "a3376182ff0e119dc85e73a7b27a2ef8be7659d48bc993b4a893beaaaf01e815",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Native 0.72 et Expo SDK 49 fonctionnant sur visionOS](https://twitter.com/donadeldev/status/1671643367246032897)**",
+        "en": "**[React Native 0.72 et Expo SDK 49 fonctionnant sur visionOS](https://twitter.com/donadeldev/status/1671643367246032897)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5c7d994c",
+      "source_content": "Following the release of React-Native 0.72 and the [Apple visionOS SDK](https://developer.apple.com/visionos/), several demos ([1](https://twitter.com/donadeldev/status/1671643367246032897), [2](https://twitter.com/CipolleschiR/status/1671829763650904064), [3](https://twitter.com/piaskowyk/status/1672560913730117634)) have demonstrated the ability to run React-Native on visionOS and Vision Pro. [3 pull-requests](https://twitter.com/donadeldev/status/1673186295831568385) are adding the visionOS target to CocoaPods.",
+      "source_content_hash": "9e21f67812e27c619011f86b22cd915bf97b36446b75a6409e4e12c743aa7ece",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Suite à la sortie de React-Native 0.72 et du [SDK Apple visionOS](https://developer.apple.com/visionos/), plusieurs démos ([1](https://twitter.com/donadeldev/status/1671643367246032897), [2](https://twitter.com/CipolleschiR/status/1671829763650904064), [3](https://twitter.com/piaskowyk/status/1672560913730117634)) ont démontré l'exécution de React-Native sur visionOS et Vision Pro. [3 pull-requests](https://twitter.com/donadeldev/status/1673186295831568385) ajoutent la cible visionOS à CocoaPods.",
+        "en": "Suite à la sortie de React-Native 0.72 et du [SDK Apple visionOS](https://developer.apple.com/visionos/), plusieurs démos ([1](https://twitter.com/donadeldev/status/1671643367246032897), [2](https://twitter.com/CipolleschiR/status/1671829763650904064), [3](https://twitter.com/piaskowyk/status/1672560913730117634)) ont démontré l'exécution de React-Native sur visionOS et Vision Pro. [3 pull-requests](https://twitter.com/donadeldev/status/1673186295831568385) ajoutent la cible visionOS à CocoaPods."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1fe5236e",
+      "source_content": "- 📜 [How to Write a Flexbox Layout Engine](https://tchayen.com/how-to-write-a-flexbox-layout-engine): an Expo dev demystifying how a layout engine works, similar to what Yoga does for React-Native.\n- 📜 [Revolutionizing Focus Management in TV Applications with React Native](https://medium.com/xite-engineering/revolutionizing-focus-management-in-tv-applications-with-react-native-10ba69bd90): XITE's feedback on the implementation of spatial navigation with React-Native tvOS. Challenge: Apple/Android TV platforms have different native focus management behaviors.\n- 📜 [NativeScript with React Native Modules](https://twitter.com/NativeScript/status/1671873172952567808): highlights NativeScript's ability to reuse code from the React-Native ecosystem thanks to [Open Native](https://github.com/OpenNative/open-native).\n- 📜 [Mobile development trends from Chain React](https://ionic.io/blog/mobile-development-trends-from-chain-react): analysis of the conference talks and comparison with Ionic/Capacitor.\n- 🧵 [Maestro on React Native Pager View](https://twitter.com/jaworek3211/status/1672230720545386496): positive feedback on the use of the e2e mobile test framework.\n- 📦 [MiniSim - MacOS menu bar app for launching iOS/Android emulators](https://github.com/okwasniewski/minisim): an app particularly appreciated for its ability to [start an Android emulator without sound](https://twitter.com/ariel_is_dev/status/1672250640704184321) 😄. Already supports [VisionOS](https://twitter.com/o_kwasniewski/status/1672257084379783174).\n- 📦 [React-Native MMKV 2.10 - iOS App Groups support](https://twitter.com/mrousavy/status/1672184227813642241)\n- 🎙️ [React Native Radio 270 - Diving into React Native 0.72 with Lorenzo Sciandra and Riccardo Cipolleschi](https://reactnativeradio.com/episodes/diving-into-react-native-072-with-lorenzo-sciandra-and-riccardo-cipolleschi)\n- 🎙️ [The React Native Show Podcast #23 - React Native at scale with Matt Hargett](https://www.youtube.com/watch?v=60iOEg-vWjw)\n- 🎥 [Redux-Toolkit and Bluetooth Low Energy in React-Native](https://www.youtube.com/watch?v=IWEAepFC0eo)",
+      "source_content_hash": "64ec2bf38308cf94680a706c8413a36d9cb9f4f968d176be3553bcd0fcef20e8",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Comment écrire un moteur de mise en page Flexbox](https://tchayen.com/how-to-write-a-flexbox-layout-engine) : un développeur Expo démystifiant le fonctionnement d'un moteur de mise en page, similaire à ce que fait Yoga pour React-Native.\n- 📜 [Révolutionner la gestion du focus dans les applications TV avec React Native](https://medium.com/xite-engineering/revolutionizing-focus-management-in-tv-applications-with-react-native-10ba69bd90) : retour d'expérience de XITE sur l'implémentation de la navigation spatiale avec React-Native tvOS. Défi : les plateformes Apple/Android TV ont des comportements natifs différents de gestion du focus.\n- 📜 [NativeScript avec des modules React Native](https://twitter.com/NativeScript/status/1671873172952567808) : met en avant la capacité de NativeScript à réutiliser du code de l'écosystème React-Native grâce à [Open Native](https://github.com/OpenNative/open-native).\n- 📜 [Tendances du développement mobile issues de Chain React](https://ionic.io/blog/mobile-development-trends-from-chain-react) : analyse des conférences et comparaison avec Ionic/Capacitor.\n- 🧵 [Maestro sur React Native Pager View](https://twitter.com/jaworek3211/status/1672230720545386496) : retour positif sur l'utilisation du framework de test e2e mobile.\n- 📦 [MiniSim - Application de barre de menu macOS pour lancer des émulateurs iOS/Android](https://github.com/okwasniewski/minisim) : une app particulièrement appréciée pour sa capacité à [démarrer un émulateur Android sans son](https://twitter.com/ariel_is_dev/status/1672250640704184321) 😄. Prend déjà en charge [visionOS](https://twitter.com/o_kwasniewski/status/1672257084379783174).\n- 📦 [React-Native MMKV 2.10 - Prise en charge des groupes d'applications iOS](https://twitter.com/mrousavy/status/1672184227813642241)\n- 🎙️ [React Native Radio 270 - Plongée dans React Native 0.72 avec Lorenzo Sciandra et Riccardo Cipolleschi](https://reactnativeradio.com/episodes/diving-into-react-native-072-with-lorenzo-sciandra-and-riccardo-cipolleschi)\n- 🎙️ [Le podcast The React Native Show #23 - React Native à grande échelle avec Matt Hargett](https://www.youtube.com/watch?v=60iOEg-vWjw)\n- 🎥 [Redux-Toolkit et Bluetooth Low Energy dans React-Native](https://www.youtube.com/watch?v=IWEAepFC0eo)",
+        "en": "- 📜 [Comment écrire un moteur de mise en page Flexbox](https://tchayen.com/how-to-write-a-flexbox-layout-engine) : un développeur Expo démystifiant le fonctionnement d'un moteur de mise en page, similaire à ce que fait Yoga pour React-Native.\n- 📜 [Révolutionner la gestion du focus dans les applications TV avec React Native](https://medium.com/xite-engineering/revolutionizing-focus-management-in-tv-applications-with-react-native-10ba69bd90) : retour d'expérience de XITE sur l'implémentation de la navigation spatiale avec React-Native tvOS. Défi : les plateformes Apple/Android TV ont des comportements natifs différents de gestion du focus.\n- 📜 [NativeScript avec des modules React Native](https://twitter.com/NativeScript/status/1671873172952567808) : met en lumière la capacité de NativeScript à réutiliser du code de l'écosystème React-Native grâce à [Open Native](https://github.com/OpenNative/open-native).\n- 📜 [Tendances du développement mobile issues de Chain React](https://ionic.io/blog/mobile-development-trends-from-chain-react) : analyse des conférences et comparaison avec Ionic/Capacitor.\n- 🧵 [Maestro sur React Native Pager View](https://twitter.com/jaworek3211/status/1672230720545386496) : retour positif sur l'utilisation du framework de tests e2e mobile.\n- 📦 [MiniSim - Application de barre de menu macOS pour lancer des émulateurs iOS/Android](https://github.com/okwasniewski/minisim) : une app particulièrement appréciée pour sa capacité à [démarrer un émulateur Android sans son](https://twitter.com/ariel_is_dev/status/1672250640704184321) 😄. Supporte déjà [VisionOS](https://twitter.com/o_kwasniewski/status/1672257084379783174).\n- 📦 [React-Native MMKV 2.10 - Support des groupes d'applications iOS](https://twitter.com/mrousavy/status/1672184227813642241)\n- 🎙️ [React Native Radio 270 - Plongée dans React Native 0.72 avec Lorenzo Sciandra et Riccardo Cipolleschi](https://reactnativeradio.com/episodes/diving-into-react-native-072-with-lorenzo-sciandra-and-riccardo-cipolleschi)\n- 🎙️ [The React Native Show Podcast #23 - React Native à grande échelle avec Matt Hargett](https://www.youtube.com/watch?v=60iOEg-vWjw)\n- 🎥 [Redux-Toolkit et Bluetooth Low Energy dans React-Native](https://www.youtube.com/watch?v=IWEAepFC0eo)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0bed0da6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ab1b234",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Emplois {#jobs}",
+        "en": "## 🧑‍💻 Emplois {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42d9ca67",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/distance**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+        "en": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - 160k€+, Berlin/distant**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Médias Sociaux et Newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs mondiaux de bâtir des entreprises évolutives et durables.",
+        "en": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, réseaux sociaux et newsletters. Rejoignez-nous pour construire un outil permettant aux créateurs mondiaux de développer des activités évolutives et durables."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement à distance, PLN 21-32k net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)",
+        "en": "🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement distant, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous sommes impatients de voir votre candidature - montrez-nous ce que vous valez !",
+        "en": "Souhaitez-vous travailler sur les applications les plus utilisées au monde ? Aimeriez-vous co-créer la technologie React Native ? Rejoignez l'équipe de leaders React & React Native de Callstack. Consultez notre site pour plus de détails. Nous attendons votre candidature - montrez-nous ce que vous savez faire !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% distants**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.",
+        "en": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k$ plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Contactez [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cb3e8b91",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "58f98d22",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8a75aa33",
+      "source_content": "- [An Introduction to Streaming on the Web](https://vercel.com/blog/an-introduction-to-streaming-on-the-web)\n- [Future CSS: State Container Queries](https://ishadeed.com/article/css-state-queries/)\n- [Svelte 4](https://svelte.dev/blog/svelte-4)\n- [Thoughts on Svelte(Kit), one year and 3 billion requests later](https://claudioholanda.ch/en/blog/svelte-kit-after-3-billion-requests/)\n- [Type Argument Placeholders: TypeScript 5.2's Most Discussed Feature](https://www.totaltypescript.com/type-argument-placeholders-typescript-5-2-most-discussed-feature)\n- [Vite 4.4 beta - exp Lightning CSS support](https://twitter.com/vite_js/status/1671510085820882946)\n- [A preview of Ezno's checker](https://kaleidawave.github.io/posts/a-preview-of-the-checker/)",
+      "source_content_hash": "9fce458bb0af0c41387880e0fc6c1d20fc5e9bf94c567dab2a618dc21ac0469f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Une introduction au streaming sur le Web](https://vercel.com/blog/an-introduction-to-streaming-on-the-web)\n- [CSS futur : Requêtes de conteneur d'état](https://ishadeed.com/article/css-state-queries/)\n- [Svelte 4](https://svelte.dev/blog/svelte-4)\n- [Réflexions sur Svelte(Kit), un an et 3 milliards de requêtes plus tard](https://claudioholanda.ch/en/blog/svelte-kit-after-3-billion-requests/)\n- [Espaces réservés pour les arguments de type : La fonctionnalité la plus discutée de TypeScript 5.2](https://www.totaltypescript.com/type-argument-placeholders-typescript-5-2-most-discussed-feature)\n- [Vite 4.4 bêta - support expérimental de Lightning CSS](https://twitter.com/vite_js/status/1671510085820882946)\n- [Un aperçu du vérificateur d'Ezno](https://kaleidawave.github.io/posts/a-preview-of-the-checker/)",
+        "en": "- [Une introduction au streaming sur le Web](https://vercel.com/blog/an-introduction-to-streaming-on-the-web)\n- [CSS futuriste : State Container Queries](https://ishadeed.com/article/css-state-queries/)\n- [Svelte 4](https://svelte.dev/blog/svelte-4)\n- [Réflexions sur Svelte(Kit) après un an et 3 milliards de requêtes](https://claudioholanda.ch/en/blog/svelte-kit-after-3-billion-requests/)\n- [Placeholders d'arguments de type : fonctionnalité la plus discutée de TypeScript 5.2](https://www.totaltypescript.com/type-argument-placeholders-typescript-5-2-most-discussed-feature)\n- [Vite 4.4 bêta - prise en charge expérimentale de Lightning CSS](https://twitter.com/vite_js/status/1671510085820882946)\n- [Un aperçu du vérificateur d'Ezno](https://kaleidawave.github.io/posts/a-preview-of-the-checker/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33b68b3f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c66e62ef",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fe25bd72",
+      "source_content": "[![alt](/emails/issues/150/meme.jpg)](https://twitter.com/cesarzagonel/status/1671584136115494928)",
+      "source_content_hash": "097ec4d497a8441c37599ac3d39dd600887c1637d6de529b7e3c6cea7a332125",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![mème](/emails/issues/150/meme.jpg)](https://twitter.com/cesarzagonel/status/1671584136115494928)",
+        "en": "[![alt](/emails/issues/150/meme.jpg)](https://twitter.com/cesarzagonel/status/1671584136115494928)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c8a6ab3e",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À la prochaine ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/150/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.169004+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "4946c62d5ef4e219531d44335353409ea68d96057a8f21d8e4bb454dff2fe23c",
+    "en": "4946c62d5ef4e219531d44335353409ea68d96057a8f21d8e4bb454dff2fe23c"
+  }
+}

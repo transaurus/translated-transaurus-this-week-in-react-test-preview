@@ -1,0 +1,564 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/223/index.mdx",
+  "source_file_content_hash": "eb0b61c12c8e0d480330a488cb0128c2b1c75911141933ad43dea22549d1d45c",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /223\ntitle: \"This Week In React #223: TanStack, React Router, React-Scan, Bun, Next.js, INP, Storybook | State of RN, Nitro Views, Reanimated, Gesture Handler, Screens, AWS-LC, QuickPush, Metro | TC39, CSS, TypeScript, Observables...\"\nauthors: [slorber]\ndate: 02-26-2025\n---",
+      "source_content_hash": "be9239b28540c51e953f191dae6d7c2eb73631e641b34c2fe686ed4a86d9c51d",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we have:",
+      "source_content_hash": "a6352a9b027570377cc0a88e9522887265e6d3f6c6f031ce612f64761e19d181",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine nous avons :",
+        "en": "Cette semaine, nous avons :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "143e51c1",
+      "source_content": "- **React**: A good mix of content and many community articles, but no major announcements.\n- **React Native**: The 2024 survey results are out, infra libraries now support RN 0.78, and Nitro Views have been released!\n- **Other**: Several TC39 proposals are progressing—my favorites are `import defer` and `RegExp.escape()`.",
+      "source_content_hash": "e2d1acce3346faa0701c81c2a1adf838028673cfb8d37fa950b45e93f00d4c1e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- **React** : Un bon mélange de contenu et de nombreux articles de la communauté, mais aucune annonce majeure.\n- **React Native** : Les résultats de l'enquête 2024 sont publiés, les bibliothèques d'infrastructure prennent désormais en charge RN 0.78, et Nitro Views est sorti !\n- **Autre** : Plusieurs propositions TC39 progressent — mes préférées sont `import defer` et `RegExp.escape()`.",
+        "en": "- **React** : Un bon mélange de contenu et de nombreux articles de la communauté, mais pas d'annonces majeures.\n- **React Native** : Les résultats de l'enquête 2024 sont sortis, les bibliothèques d'infrastructure prennent désormais en charge RN 0.78, et Nitro Views a été publié !\n- **Autre** : Plusieurs propositions TC39 progressent — mes préférées sont `import defer` et `RegExp.escape()`."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "I'm trying something new, let me know if you like the intro to be split by section like above.",
+      "source_content_hash": "c06f46484a74a4dbff144f68840ba3e12caf11f896fb6bf0cb27aad02cbf4afe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'essaie quelque chose de nouveau, dites-moi si vous aimez que l'intro soit segmentée par section comme ci-dessus.",
+        "en": "J'essaie quelque chose de nouveau, dites-moi si vous appréciez que l'introduction soit segmentée par section comme ci-dessus."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Check our partner [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 13 May. Strapi is a popular headless CMS in the React ecosystem, and like me, it's French 🥐! Get a 10% discount with code \"TWIR\".",
+      "source_content_hash": "a657befbcd617c0d671493636d7645a1b06b7bbd9770572700f295325d6af974",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Découvrez notre partenaire [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 13 mai. Strapi est un CMS headless populaire dans l'écosystème React, et comme moi, c'est français 🥐 ! Bénéficiez d'une réduction de 10% avec le code \"TWIR\".",
+        "en": "Découvrez notre partenaire [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 13 mai. Strapi est un CMS headless populaire dans l'écosystème React, et comme moi, il est français 🥐 ! Bénéficiez d'une réduction de 10% avec le code \"TWIR\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c6da205d",
+        "en": "@@untranslatable_placeholder_c6da205d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsorisé {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![React-admin: The Open-Source Framework for B2B apps](/emails/issues/223/marmelab.jpg)](https://marmelab.com/react-admin/?ref=TWIR)",
+      "source_content_hash": "2a5d24d5ef6dd076d8dc1fe2016fe6409ef8b3d37c2c4007387a99785b03f912",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React-admin : Le framework open-source pour les applications B2B](/emails/issues/223/marmelab.jpg)](https://marmelab.com/react-admin/?ref=TWIR)",
+        "en": "[![React-admin : Le Framework Open-Source pour les applications B2B](/emails/issues/223/marmelab.jpg)](https://marmelab.com/react-admin/?ref=TWIR)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[React-admin: The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/?ref=TWIR)**",
+      "source_content_hash": "4ea32687b130302c6dfe602b0137609e323174a0bb625be5939376952fcc9e54",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React-admin : Le framework open-source pour les applications B2B](https://marmelab.com/react-admin/?ref=TWIR)**",
+        "en": "**[React-admin : Le Framework Open-Source pour les applications B2B](https://marmelab.com/react-admin/?ref=TWIR)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[React-admin](https://marmelab.com/react-admin/?ref=TWIR) is the go-to framework for building B2B apps—because let’s be real, nobody dreams of writing yet another CRUD screen. Here’s why thousands of developers swear by it:",
+      "source_content_hash": "5516cb5db90cd287271b392158ecab8628ed4fb8cb705c15125b63d21b495e8b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[React-admin](https://marmelab.com/react-admin/?ref=TWIR) est le framework incontournable pour créer des applications B2B — soyons honnêtes, personne ne rêve d'écrire un énième écran CRUD. Voici pourquoi des milliers de développeurs ne jurent que par lui :",
+        "en": "[React-admin](https://marmelab.com/react-admin/?ref=TWIR) est le framework incontournable pour créer des applications B2B — soyons réalistes, personne ne rêve d'écrire un autre écran CRUD. Voici pourquoi des milliers de développeurs lui font confiance :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- 🔌 **Backend Agnostic:** Connects to any API—because commitment issues aren't just for relationships.\n- 🧩 **200+ Building Blocks:** More pre-built components than your project has TODOs.\n- 🛠 **Complete Customization:** If you don’t like it, change it. We won’t take it personally (\\*wipes away tears\\*).\n- 💻 **Great Developer Experience:** Makes you feel like a coding rockstar, minus the groupies (unless you count rubber ducks).",
+      "source_content_hash": "b1c7fcd17d46f1aecb81a1b5501ca6eef43516ffbe03d2754f2c4c398e774931",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🔌 **Indépendant du backend** : Se connecte à n'importe quelle API — parce que les problèmes d'engagement ne sont pas réservés aux relations.\n- 🧩 **200+ blocs de construction** : Plus de composants prédéfinis que votre projet n'a de TODOs.\n- 🛠 **Personnalisation complète** : Si vous ne l'aimez pas, changez-le. Nous ne le prendrons pas personnellement (\\*essuie une larme\\*).\n- 💻 **Excellente expérience développeur** : Vous donne l'impression d'être une rockstar du code, sans les groupies (sauf si vous comptez les canards en caoutchouc).",
+        "en": "- 🔌 **Backend Agnostic** : Se connecte à n'importe quelle API — car les problèmes d'engagement ne concernent pas que les relations.\n- 🧩 **200+ Briques de Construction** : Plus de composants préconstruits que votre projet n'a de TODOs.\n- 🛠 **Personnalisation Complète** : Si vous ne l'aimez pas, changez-le. Nous ne le prendrons pas personnellement (\\*essuie ses larmes\\*).\n- 💻 **Excellente Expérience Développeur** : Vous fait vous sentir comme une rockstar du code, sans les groupies (sauf si vous comptez les canards en caoutchouc)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "With 7 years in production and 1 million daily users, react-admin is a sure bet. So why don’t you [try it out](https://github.com/marmelab/react-admin?ref=TWIR) yourself?",
+      "source_content_hash": "a11974f8afaddc711bf013bcf1dee61d388c6282244dd352c272c8704c93b129",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec 7 ans en production et 1 million d'utilisateurs quotidiens, react-admin est un pari sûr. Alors pourquoi ne pas [l'essayer](https://github.com/marmelab/react-admin?ref=TWIR) vous-même ?",
+        "en": "Avec 7 ans en production et 1 million d'utilisateurs quotidiens, react-admin est un choix sûr. Alors pourquoi ne pas [l'essayer](https://github.com/marmelab/react-admin?ref=TWIR) vous-même ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b93ddfac",
+      "source_content": "- 💸 [AI coding benchmarks for backends](https://convex.link/thisweekbench)\n- 👀 [React Explorer \\- Turns your React site into an interactive visualization](https://www.react-explorer.com/)\n- 📖 [Deno docs \\- Build an app with TanStack and Deno](https://docs.deno.com/examples/tanstack_tutorial/)\n- 🗓 [React-Summit](https://reactsummit.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇳🇱 Amsterdam - 13 & 17 June. CFP is closing soon on March 2! Last chance to submit your talks for a top-tier tech audience.\n- 📜 [How Preply improved INP on a Next.js application (without React Server Components and App Router)](https://medium.com/preply-engineering/how-preply-improved-inp-on-a-next-js-application-without-react-server-components-and-app-router-491713149875): A deep dive into this Core Web Vital metrics and various things Preply tried to improve it, using a data-driven approach.\n- 📜 [Avoiding Server Component Waterfall Fetching with React 19 cache()](https://aurorascharff.no/posts/avoiding-server-component-waterfall-fetching-with-react-19-cache/): You can use `React.cache()` to deduplicate requests and preload data as soon as possible to avoid request waterfalls. This works but creates an implicit coupling. I’d prefer a more explicit model, hoisting all requests and passing promises down as props.\n- 📜 [Armin's TanStack Router Notes](https://gist.github.com/mitsuhiko/555b45f020a8d7e389516b51f6d03534): Documents challenges encountered while trying to determine whether Sentry could adopt TanStack Router.\n- 📜 [There’s no such thing as an isomorphic layout effect](https://smoores.dev/post/no_such_thing_isomorphic_layout_effect/): A possible interpretation of the story behind the `useIsomorphicLayoutEffect` pattern.\n- 📜 [Debouncing in React Router v7](https://programmingarehard.com/2025/02/24/debouncing-in-react-router-v7.html/): Interesting technique relying on `clientLoader`\n- 📜 [How to Download a file from a React Router route](https://sergiodxa.com/tutorials/download-a-file-from-a-react-router-route): With/without dynamic params, with/without JS.\n- 📜 [Shadcn Registry: A Better Way to Manage Your UI Components](https://ouassim.tech/notes/shadcn-registry-a-better-way-to-manage-your-ui-components/)\n- 📜 [Throwing vs. Returning Redirects in React Router](https://sergiodxa.com/articles/throwing-vs-returning-redirects-in-react-router)\n- 📜 [Functional programming in React](https://www.56kode.com/posts/level-up-react-functional-programming-in-react/)\n- 📜 [React Performance: Common Problems & Their Solutions](https://blog.sentry.io/react-js-performance-guide/)\n- 📜 [Making Next.js Apps Faster: A Practical Performance Guide Beyond Next.js](https://tigerabrodi.blog/making-nextjs-apps-faster-a-practical-performance-guide-beyond-nextjs)\n- 📜 [Progressive forms with server actions](https://waku.gg/blog/progressive-forms)\n- 📦 [Create TanStack Router App 0.4 \\- Add-ons, SolidJS support, MCP support](https://github.com/TanStack/create-tsrouter-app/releases/tag/v0.4.0)\n- 📦 [React Scan 0.2 \\- Slowdown notifications, explanations and pre-generated prompts to fix them](https://github.com/aidenybai/react-scan/releases/tag/v0.2.0)\n- 📦 [React Scan Chrome Extension](https://github.com/jantimon/chrome-react-scan-inspector)\n- 📦 [Storybook 8.6 \\- Storybook Test improvements](https://github.com/storybookjs/storybook/releases/tag/v8.6.0)\n- 📦 [React Admin 5.6 \\- Black & white theme](https://github.com/marmelab/react-admin/releases/tag/v5.6.0)\n- 📦 [Bun 1.2.3 - Built-in React support with hot-reloading, React init template](https://bun.sh/blog/bun-v1.2.3)\n- 🔨 [Laravel Starter Kits](https://laravel.com/starter-kits): Include a new official React 19 \\+ Inertia 2 starter kit.\n- 🔨 [Remix Epic Stack update \\- Passkeys, Helmets, and more\\!](https://github.com/epicweb-dev/epic-stack/discussions/937)\n- 🎥 [Jack Herrington \\- Fix Your Slow React App With React-Scan](https://www.youtube.com/watch?v=3EnathFYgz8)\n- 🎥 [Syntax \\- Should You Use Signals with React?](https://www.youtube.com/watch?v=Diy4XRSFTiA)\n- 🎥 [Cosden \\- Combining React Query With Server Components (Next.js)](https://www.youtube.com/watch?v=XcUpTPbY4Wg)",
+      "source_content_hash": "76ce44a31c861f761f59ef6cb7986c12da3d15c49850844a5b6fa010327b3b74",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_b93ddfac",
+        "en": "@@untranslatable_placeholder_b93ddfac"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7961985",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_e7961985",
+        "en": "@@untranslatable_placeholder_e7961985"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "63e1d83c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "58ed925f",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsorisé {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "[![Tests are dead - Meticulous is here](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)",
+      "source_content_hash": "c799f098cd671af12e9df91f2812db0c056e46974007059dc545ad5277f8cb18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Les tests sont morts - Meticulous est là](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)",
+        "en": "[![Les tests sont morts - Meticulous est là](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "**[Tests are dead - Meticulous is here](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)**",
+      "source_content_hash": "f3b4e22a4a078c42fe080fe4e86725fc8ae8d9e141d543fa272df7b3932a7fab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Les tests sont morts - Meticulous est là](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)**",
+        "en": "**[Les tests sont morts - Meticulous est là](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "Meticulous creates and maintains an exhaustive suite of e2e ui tests with **zero** developer effort.",
+      "source_content_hash": "0ecb39db111eb1375a61d1cef29da6ab4b417c2dea7f9c87927ef68686364ce6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Meticulous crée et maintient une suite exhaustive de tests e2e UI avec **zéro** effort développeur.",
+        "en": "Meticulous crée et maintient une suite exhaustive de tests e2e d'interface utilisateur avec **zéro** effort des développeurs."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "Dropbox, Bilt Rewards, Lattice and hundreds of engineering organizations rely on Meticulous for their frontend testing.",
+      "source_content_hash": "ce2441e4431232bf72089ca781026659675f9b6730570031e49f64e9de5f0b22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dropbox, Bilt Rewards, Lattice et des centaines d'organisations techniques comptent sur Meticulous pour leurs tests frontend.",
+        "en": "Dropbox, Bilt Rewards, Lattice et des centaines d'organisations d'ingénierie comptent sur Meticulous pour leurs tests frontend."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "This quote from the CTO of Traba sums the product up best: \"Meticulous has fundamentally changed the way we approach frontend testing in our web applications, fully eliminating the need to write any frontend tests. The software gives us confidence that every change will be completely regression tested, allowing us to ship more quickly with significantly fewer bugs in our code.\"",
+      "source_content_hash": "679cbf62c6e39e9a29be41c29259c9a006d31b25ec9f5ccfadcb058422c7d71b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette citation du CTO de Traba résume le mieux le produit : \"Meticulous a fondamentalement changé notre approche des tests frontend dans nos applications web, éliminant totalement le besoin d'écrire des tests frontend. Le logiciel nous donne confiance que chaque modification sera entièrement testée en régression, nous permettant de livrer plus rapidement avec nettement moins de bugs dans notre code.\"",
+        "en": "Cette citation du CTO de Traba résume le produit à merveille : \"Meticulous a fondamentalement changé notre approche des tests frontend dans nos applications web, éliminant complètement le besoin d'écrire des tests frontend. Le logiciel nous donne la confiance que chaque changement sera entièrement testé en régression, nous permettant de livrer plus rapidement avec nettement moins de bogues dans notre code.\""
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "This [post](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th) from our CTO, who formerly led a large engineering group at Palantir, sets out the context of why exhaustive testing can double engineering velocity.",
+      "source_content_hash": "c75c225aff2e1b4efe1a41312390a741c058bae0c1a727c0a779cbf99244d506",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ce [billet](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th) de notre CTO, qui dirigeait auparavant un grand groupe d'ingénierie chez Palantir, explique pourquoi des tests exhaustifs peuvent doubler la vélocité technique.",
+        "en": "Cet [article](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th) de notre CTO, qui a précédemment dirigé un grand groupe d'ingénierie chez Palantir, expose le contexte expliquant pourquoi des tests exhaustifs peuvent doubler la vélocité d'ingénierie."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "945bf499",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e33a2404",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "[![State of React Native 2024 - Survey Results](/emails/issues/223/state-of-rn.jpg)](https://results.stateofreactnative.com/)",
+      "source_content_hash": "50a13a103837817544a090e002355b3f8e2dd33a46560488931d939daf15a644",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![État de React Native 2024 - Résultats de l'enquête](/emails/issues/223/state-of-rn.jpg)](https://results.stateofreactnative.com/)",
+        "en": "[![État de React Native 2024 - Résultats de l'enquête](/emails/issues/223/state-of-rn.jpg)](https://results.stateofreactnative.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "**[State of React Native 2024 \\- Survey Results](https://results.stateofreactnative.com/)**",
+      "source_content_hash": "4e762ae11bcbd7b3b1d25506993f287635f6f9fc13ac9c5cd3a575920705865f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[État de React Native 2024 \\- Résultats de l'enquête](https://results.stateofreactnative.com/)**",
+        "en": "**[État de React Native 2024 \\- Résultats de l'enquête](https://results.stateofreactnative.com/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "The survey results are out and I’m super proud that among all the React Native resources, this newsletter got the highest positivity score. Thank you ❤️!",
+      "source_content_hash": "2734ed8b0cc350ee38ec55f55b4c3c745c2061c90a3897a73b76c707c3e6e75a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les résultats de l'enquête sont disponibles et je suis très fier que parmi toutes les ressources React Native, cette newsletter ait obtenu le score de positivité le plus élevé. Merci ❤️ !",
+        "en": "Les résultats de l'enquête sont disponibles et je suis extrêmement fier que parmi toutes les ressources React Native, cette newsletter ait obtenu le score de positivité le plus élevé. Merci ❤️ !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "I can’t summarize the whole survey, but here are a few things I discovered:",
+      "source_content_hash": "2e2b43c02cfd89831c3001d8bfdb53db2a9b51ee39162f08b03fe70c4de98853",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je ne peux pas résumer toute l'enquête, mais voici quelques éléments que j'ai découverts :",
+        "en": "Je ne peux pas résumer toute l'enquête, mais voici quelques éléments que j'ai découverts :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dea0598f",
+      "source_content": "- 61% of RN devs came from React (web)\n- iOS and Android remain the most common RN targets, but the Web also has a 22% market share\n- Libraries with the most positive sentiment are: Reanimated, TanStack Query, Zustand, React Navigation, Expo Router, Skia.\n- No clear winner in terms of styling. Devs like the built-in APIs such as StyleSheet and inline styles.",
+      "source_content_hash": "59326b817fa74197ef760012e8d44c44c6217a6763e866696496b202892be46d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 61 % des développeurs RN viennent de React (web)\n- iOS et Android restent les cibles RN les plus courantes, mais le Web représente également 22 % des parts de marché\n- Les bibliothèques avec le sentiment le plus positif sont : Reanimated, TanStack Query, Zustand, React Navigation, Expo Router, Skia.\n- Pas de gagnant clair en matière de style. Les développeurs apprécient les API intégrées telles que StyleSheet et les styles en ligne.",
+        "en": "- 61 % des développeurs RN viennent de React (web)\n- iOS et Android restent les cibles RN les plus courantes, mais le Web représente également 22 % du marché\n- Les bibliothèques avec le sentiment le plus positif sont : Reanimated, TanStack Query, Zustand, React Navigation, Expo Router, Skia.\n- Pas de gagnant clair en matière de style. Les développeurs apprécient les API intégrées comme StyleSheet et les styles inline."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bc8bc928",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5cb70a3d",
+      "source_content": "- 💸 [PostHog - How we built mobile replay (and why it took so long)](https://dub.link/twir-feb26)\n- 📜 [How to build Custom Tabs with Expo Router UI](https://expo.dev/blog/how-to-build-custom-tabs-with-expo-router-ui)\n- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) -  🇵🇱 Kraków - 28-30 May. Don't miss your chance to grab your tickets and benefit from an exclusive 15% discount using the code \"TWIR\".\n- 📦 [Nitro 0.23 \\- Nitro Views](https://github.com/mrousavy/nitro/releases/tag/v0.23.0): A new convenient and perfomant way to integrate native Swift / Kotlin views into React Native apps. Requires 0.78+ and New Arch.\n- 📦 [Reanimated 3.17 \\- Edge-to-Edge, LAB color space, animate `boxShadow`](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.17.0): Support for RN 0.78 coming in 3.17.1 soon.\n- 📦 [React Native Boost \\- A powerful Babel plugin that automatically optimizes React Native apps](https://github.com/kuatsu/react-native-boost): Apply safe AST micro-optimizations to boost performance, like using faster native Text/View components instead of the RN JS wrappers.\n- 📦 [AWS-LibCrypto](https://github.com/OP-Engineering/op-aws-lc): RN bindings to Rust AWS lib, with FIPS certification from the US government.\n- 📦 [Screens 4.8 \\- Android 16 KB page size](https://github.com/software-mansion/react-native-screens/releases/tag/4.8.0)\n- 📦 [Screens 4.9 \\- RN 0.78](https://github.com/software-mansion/react-native-screens/releases/tag/4.9.0)\n- 📦 [Gesture Handler 2.24 \\- RN 0.78, Android 16 KB page size support](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.24.0)\n- 📦 [QuickPush \\- A lightweight macOS menu bar utility for quickly testing Expo push notifications](https://github.com/betomoedano/quick-push)\n- 📦 [Metro 0.81.2 \\- Package exports to clearly define public API surface, perf, experimental flags](https://github.com/facebook/metro/releases/tag/v0.81.2)\n- 🔨 [VSCode Extension for React Native Directory](https://marketplace.visualstudio.com/items?itemName=react-native-directory.vscode-react-native-directory): Find and install the right RND packages directly from your IDE.\n- 🎥 [Simon Grimm \\- Your own iOS Widget in 12 Minutes](https://www.youtube.com/watch?v=00VwmqqXDik)\n- 🎙️ [RNR 322 \\- Building React Native Libraries With Builder Bob](https://infinite.red/react-native-radio/rnr-322-building-react-native-libraries-with-builder-bob-6g-7gnty)\n- 🎙️ [Rocket Ship 61 \\- Shipping Successful AI Apps with Your Average Tech Bro](https://share.transistor.fm/s/fde1972f)",
+      "source_content_hash": "079c6cb848d109a43551e1dc55cd87750f7c9afc5e9e6ba9c7dcb4db84dbcbe7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [PostHog - Comment nous avons construit le replay mobile (et pourquoi cela a pris si longtemps)](https://dub.link/twir-feb26)\n- 📜 [Comment construire des onglets personnalisés avec l'interface Expo Router](https://expo.dev/blog/how-to-build-custom-tabs-with-expo-router-ui)\n- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Cracovie - 28-30 mai. Ne manquez pas l'occasion de vous procurer vos billets et de bénéficier d'une réduction exclusive de 15% avec le code \"TWIR\".\n- 📦 [Nitro 0.23 - Vues Nitro](https://github.com/mrousavy/nitro/releases/tag/v0.23.0): Une nouvelle méthode pratique et performante pour intégrer des vues Swift/Kotlin natives dans les applications React Native. Requiert la version 0.78+ et la New Architecture.\n- 📦 [Reanimated 3.17 - Edge-to-Edge, espace colorimétrique LAB, animation de `boxShadow`](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.17.0): La prise en charge de RN 0.78 arrivera prochainement dans la version 3.17.1.\n- 📦 [React Native Boost - Un plugin Babel puissant qui optimise automatiquement les applications React Native](https://github.com/kuatsu/react-native-boost): Applique des micro-optimisations AST sûres pour améliorer les performances, comme l'utilisation de composants Text/View natifs plus rapides au lieu des wrappers JS RN.\n- 📦 [AWS-LibCrypto](https://github.com/OP-Engineering/op-aws-lc): Liaisons RN pour la bibliothèque Rust AWS, avec certification FIPS du gouvernement américain.\n- 📦 [Screens 4.8 - Taille de page Android 16 KB](https://github.com/software-mansion/react-native-screens/releases/tag/4.8.0)\n- 📦 [Screens 4.9 - RN 0.78](https://github.com/software-mansion/react-native-screens/releases/tag/4.9.0)\n- 📦 [Gesture Handler 2.24 - RN 0.78, prise en charge de la taille de page Android 16 KB](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.24.0)\n- 📦 [QuickPush - Une utilitaire légère pour la barre de menu macOS permettant de tester rapidement les notifications push Expo](https://github.com/betomoedano/quick-push)\n- 📦 [Metro 0.81.2 - Exportations de packages pour définir clairement la surface d'API publique, performances, drapeaux expérimentaux](https://github.com/facebook/metro/releases/tag/v0.81.2)\n- 🔨 [Extension VSCode pour React Native Directory](https://marketplace.visualstudio.com/items?itemName=react-native-directory.vscode-react-native-directory): Trouvez et installez les bons packages RND directement depuis votre IDE.\n- 🎥 [Simon Grimm - Votre propre widget iOS en 12 minutes](https://www.youtube.com/watch?v=00VwmqqXDik)\n- 🎙️ [RNR 322 - Construire des bibliothèques React Native avec Builder Bob](https://infinite.red/react-native-radio/rnr-322-building-react-native-libraries-with-builder-bob-6g-7gnty)\n- 🎙️ [Rocket Ship 61 - Livrer des applications IA réussies avec Your Average Tech Bro](https://share.transistor.fm/s/fde1972f)",
+        "en": "- 💸 [PostHog - Comment nous avons construit le replay mobile (et pourquoi cela a pris si longtemps)](https://dub.link/twir-feb26)\n- 📜 [Comment créer des onglets personnalisés avec Expo Router UI](https://expo.dev/blog/how-to-build-custom-tabs-with-expo-router-ui)\n- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 28-30 mai. Ne manquez pas votre chance d'obtenir vos billets et de bénéficier d'une réduction exclusive de 15% avec le code \"TWIR\".\n- 📦 [Nitro 0.23 - Vues Nitro](https://github.com/mrousavy/nitro/releases/tag/v0.23.0): Une nouvelle méthode pratique et performante pour intégrer des vues natives Swift/Kotlin dans les applications React Native. Requiert la version 0.78+ et la New Arch.\n- 📦 [Reanimated 3.17 - Edge-to-Edge, espace colorimétrique LAB, animation de `boxShadow`](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.17.0): La prise en charge de RN 0.78 arrivera bientôt dans la version 3.17.1.\n- 📦 [React Native Boost - Un plugin Babel puissant qui optimise automatiquement les applications React Native](https://github.com/kuatsu/react-native-boost): Applique des micro-optimisations AST sûres pour améliorer les performances, comme utiliser des composants Text/View natifs plus rapides au lieu des wrappers JS RN.\n- 📦 [AWS-LibCrypto](https://github.com/OP-Engineering/op-aws-lc): Liaisons RN pour la bibliothèque Rust AWS, avec certification FIPS du gouvernement américain.\n- 📦 [Screens 4.8 - Taille de page Android 16 Ko](https://github.com/software-mansion/react-native-screens/releases/tag/4.8.0)\n- 📦 [Screens 4.9 - RN 0.78](https://github.com/software-mansion/react-native-screens/releases/tag/4.9.0)\n- 📦 [Gesture Handler 2.24 - RN 0.78, prise en charge de la taille de page Android 16 Ko](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.24.0)\n- 📦 [QuickPush - Une utilitaire légère pour la barre de menus macOS permettant de tester rapidement les notifications push Expo](https://github.com/betomoedano/quick-push)\n- 📦 [Metro 0.81.2 - Exportations de paquets pour définir clairement la surface d'API publique, perf, drapeaux expérimentaux](https://github.com/facebook/metro/releases/tag/v0.81.2)\n- 🔨 [Extension VSCode pour React Native Directory](https://marketplace.visualstudio.com/items?itemName=react-native-directory.vscode-react-native-directory): Trouvez et installez les bons paquets RND directement depuis votre IDE.\n- 🎥 [Simon Grimm - Votre propre widget iOS en 12 minutes](https://www.youtube.com/watch?v=00VwmqqXDik)\n- 🎙️ [RNR 322 - Construire des bibliothèques React Native avec Builder Bob](https://infinite.red/react-native-radio/rnr-322-building-react-native-libraries-with-builder-bob-6g-7gnty)\n- 🎙️ [Rocket Ship 61 - Livrer des applications IA réussies avec Your Average Tech Bro](https://share.transistor.fm/s/fde1972f)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "- 👀 [Chromium \\- Intent to ship Observables API in Chrome 135](https://groups.google.com/a/chromium.org/g/blink-dev/c/stxSgTgMHog)\n- 🎮 [Anchoreum \\- A game for learning CSS Anchor Positioning](https://anchoreum.com/): I didn’t expect Anchor Positioning to be as powerful. It’s in Interop 2025 and likely to land in all browsers this year, so now is a great time to learn\\!\n- 📜 [TC39 Advances 3 Proposals to Stage 4: RegExp Escaping, Float16Array, and Redeclarable global eval vars](https://socket.dev/blog/tc39-advances-3-proposals-to-stage-4-regexp-escaping-float16array-and-redeclarable-global-eval)\n- 📜 [Extreme Server-Side Rendering](https://www.scd31.com/posts/extreme-server-side-rendering): Keeping the connection alive, a server can stream updates continuously to the client. The author implemented a Flappy Bird game relying on this technique, without any JS.\n- 📜 [Testing Web Authentication (WebAuthn)](https://www.heal.dev/docs/blog/testing-webauthn): TIL you can leverage Chrome DevTools features in Playwright.\n- 📜 [Speeding up the JavaScript ecosystem \\- Rust and JavaScript Plugins](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-11/)\n- 📜 [A Million Little Secrets \\- Deconstructing the “Whimsical Animations” landing page](https://www.joshwcomeau.com/blog/whimsical-animations/)\n- 📜 [Subverting control with weak references](https://jlongster.com/subverting-control-weak-refs)\n- 🎥 [TypeScript types can run DOOM](https://www.youtube.com/watch?v=0mCsluv5FXA): Just 🤯.",
+      "source_content_hash": "5b19abdc86b35c89b32432fa376d7683ce072a448b88f8af9ed294db905ef6d4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Chromium \\- Intention de déployer l'API Observables dans Chrome 135](https://groups.google.com/a/chromium.org/g/blink-dev/c/stxSgTgMHog)\n- 🎮 [Anchoreum \\- Un jeu pour apprendre le positionnement d'ancrage CSS](https://anchoreum.com/): Je ne m'attendais pas à ce que le positionnement d'ancrage soit si puissant. Il fait partie d'Interop 2025 et devrait arriver dans tous les navigateurs cette année, c'est donc le moment idéal pour apprendre\\!\n- 📜 [TC39 fait avancer 3 propositions au stade 4 : Échappement RegExp, Float16Array et variables globales eval redéclarables](https://socket.dev/blog/tc39-advances-3-proposals-to-stage-4-regexp-escaping-float16array-and-redeclarable-global-eval)\n- 📜 [Extreme Server-Side Rendering](https://www.scd31.com/posts/extreme-server-side-rendering): En maintenant la connexion active, un serveur peut diffuser en continu des mises à jour au client. L'auteur a implémenté un jeu Flappy Bird en s'appuyant sur cette technique, sans aucun JS.\n- 📜 [Tester l'authentification Web (WebAuthn)](https://www.heal.dev/docs/blog/testing-webauthn): Aujourd'hui, j'ai appris qu'on peut exploiter les fonctionnalités de Chrome DevTools dans Playwright.\n- 📜 [Accélérer l'écosystème JavaScript \\- Rust et plugins JavaScript](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-11/)\n- 📜 [A Million Little Secrets \\- Déconstruction de la page d'atterrissage « Whimsical Animations »](https://www.joshwcomeau.com/blog/whimsical-animations/)\n- 📜 [Subvertir le contrôle avec des références faibles](https://jlongster.com/subverting-control-weak-refs)\n- 🎥 [Les types TypeScript peuvent exécuter DOOM](https://www.youtube.com/watch?v=0mCsluv5FXA): Juste 🤯.",
+        "en": "- 👀 [Chromium \\- Intent to ship Observables API in Chrome 135](https://groups.google.com/a/chromium.org/g/blink-dev/c/stxSgTgMHog)\n- 🎮 [Anchoreum \\- A game for learning CSS Anchor Positioning](https://anchoreum.com/): Je ne m'attendais pas à ce que le positionnement d'ancrage soit aussi puissant. Il fait partie d'Interop 2025 et devrait arriver dans tous les navigateurs cette année, donc c'est le moment idéal pour apprendre\\!\n- 📜 [TC39 Advances 3 Proposals to Stage 4: RegExp Escaping, Float16Array, and Redeclarable global eval vars](https://socket.dev/blog/tc39-advances-3-proposals-to-stage-4-regexp-escaping-float16array-and-redeclarable-global-eval)\n- 📜 [Extreme Server-Side Rendering](https://www.scd31.com/posts/extreme-server-side-rendering): Garder la connexion active permet à un serveur de diffuser des mises à jour en continu au client. L'auteur a implémenté un jeu Flappy Bird en s'appuyant sur cette technique, sans aucun JS.\n- 📜 [Testing Web Authentication (WebAuthn)](https://www.heal.dev/docs/blog/testing-webauthn): Aujourd'hui j'ai appris qu'on peut exploiter les fonctionnalités de Chrome DevTools dans Playwright.\n- 📜 [Speeding up the JavaScript ecosystem \\- Rust and JavaScript Plugins](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-11/)\n- 📜 [A Million Little Secrets \\- Deconstructing the “Whimsical Animations” landing page](https://www.joshwcomeau.com/blog/whimsical-animations/)\n- 📜 [Subverting control with weak references](https://jlongster.com/subverting-control-weak-refs)\n- 🎥 [TypeScript types can run DOOM](https://www.youtube.com/watch?v=0mCsluv5FXA): Tout simplement 🤯."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9f823c77",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "af843cee",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "681ef526",
+      "source_content": "[![alt](/emails/issues/223/meme.jpg)](https://bsky.app/profile/sebastienlorber.com/post/3lijm77wxdk2b)",
+      "source_content_hash": "e769a5c9e68dee606a98d98715e48fb46b98a8a842feed98181462256fa4d007",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/223/meme.jpg)](https://bsky.app/profile/sebastienlorber.com/post/3lijm77wxdk2b)",
+        "en": "[![alt](/emails/issues/223/meme.jpg)](https://bsky.app/profile/sebastienlorber.com/post/3lijm77wxdk2b)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "be17ccc3",
+      "source_content": "[![alt](/emails/issues/223/meme2.jpg)](https://x.com/schlimmson/status/1892257891870265830)",
+      "source_content_hash": "674c3a26750df5cfa84c853dfa02ca30e44c5fc01efc0429ce21a5001f4103cd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/223/meme2.jpg)](https://x.com/schlimmson/status/1892257891870265830)",
+        "en": "[![alt](/emails/issues/223/meme2.jpg)](https://x.com/schlimmson/status/1892257891870265830)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad3e22c6",
+      "source_content": "[![alt](/emails/issues/223/meme3.jpg)](https://x.com/cramforce/status/1894781544851783754)",
+      "source_content_hash": "97059cdb3ac9e5d5c0d88b2145dbc75ac771963a7a466fc734810b64bfb5f2bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/223/meme3.jpg)](https://x.com/cramforce/status/1894781544851783754)",
+        "en": "[![alt](/emails/issues/223/meme3.jpg)](https://x.com/cramforce/status/1894781544851783754)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8f45da",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/223/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.216532+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "eb0b61c12c8e0d480330a488cb0128c2b1c75911141933ad43dea22549d1d45c",
+    "en": "eb0b61c12c8e0d480330a488cb0128c2b1c75911141933ad43dea22549d1d45c"
+  }
+}

@@ -1,0 +1,140 @@
+---
+slug: /199
+title: "This Week In React #199: shadcn, Next.js, TanStack, Remix, MDX, Astro, Storybook, @svg-use, MSW, RAG, RN-WebGPU, React-Three-Fiber, Re.Pack, Super Apps, RN-macOS, EAS, Node.jx, Stage 2.7, AggregateError, Style-Observer..."
+authors: [matthieugicquel, cyrilbo]
+date: 09-04-2024
+---
+
+Bonjour à tous !
+
+Cyril et Matthieu de [Theodo Apps (anciennement BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) 👋, nous remplaçons Seb pour vous apporter les dernières nouvelles des mondes React et React Native.
+
+Cette semaine, shadcn a lancé un nouveau CLI, et nous avons remarqué d'autres développements intéressants en cours, comme le support du hook `use()` dans React Query.
+
+La conférence React Universe débute demain, nous nous attendons à des annonces React Native que nous aborderons la semaine prochaine !
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![[Atelier en direct] Déboguer Next.js avec exemples](/emails/issues/199/sentry.jpg)](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)
+
+**[[Atelier en direct] Déboguer Next.js avec exemples](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)**
+
+Rejoignez-nous le 15 septembre pour un atelier pratique avec Dan Mindru, co-animateur de Morning Maker, où il partagera comment il a réduit de 22,3 secondes un appel API avec Sentry. Vous découvrirez des conseils pratiques pour déboguer erreurs et problèmes de performance en utilisant le Tracing et Session Replay de Sentry — Réservez votre place.
+
+---
+
+## ⚛️ React {#react}
+
+[![Shadcn présente un nouveau CLI](/emails/issues/199/shadcn.jpg)](https://ui.shadcn.com/docs/changelog)
+
+**[Shadcn présente un nouveau CLI](https://ui.shadcn.com/docs/changelog)**
+
+Il est nettement plus puissant et flexible :
+
+- `shadcn add` peut désormais installer composants, thèmes, hooks, utils, dépendances…
+- Support multi-frameworks React (Next.js, Remix, Vite, Laravel)
+- Met à jour votre config Tailwind au lieu de la remplacer
+- Les composants peuvent être importés directement depuis des URLs
+
+Plus de détails dans 🐦 [ce thread Twitter](https://x.com/shadcn/status/1829646528149143992).
+
+---
+
+- 💸 [React Component Analytics — Omlet Scans Your Codebase to Measure Component Usage to Increase Code Quality and Design Systems Adoption](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-aug-2024)
+- 👀 [TanStack Query PR - Add support for `React.use()`](https://github.com/TanStack/query/pull/7988): React Query plans to return a promise that you can `use()`, making it easier to integrate with Suspense in a performant way. It’s more convenient than `usePrefetchQuery` and more parallel than `useSuspenseQuery`.
+- 👀 [Remix Route Convention Evolution](https://github.com/brookslybrand/route-convention-evolution): The new `routes.ts` we evoked last week will allow you to skip filesystem-based routing, or simplify using the convention of your choice.
+- 🐦 [Next.js 15 may be released soon](https://x.com/feedthejim/status/1829569083777437745) without waiting for React 19 to be stable, and without requiring React 19 for the pages router. It will include major Turbopack improvements.
+- 🐦 [Render on Fetch vs Fetch on Render](https://x.com/t3dotgg/status/1829988532489793957): Theo shares a graphical visualization of different React rendering patterns. An associated video is available to deep dive.
+- 📜 [Introducing @svg-use](https://fotis.xyz/posts/introducing-svg-use/): Greatly explains how SVG-in-JS (notably SVGR in React) is convenient for theming and distribution, but is not ideal in terms of performance and duplication. The `<use href>` pattern is a good alternative but requires manual plumbing, so the author created a toolchain to automate it.
+- 📜 [Build-time Components](https://codehike.org/blog/build-time-components): Greatly illustrated article explains the benefits of React Server Components for MDX users looking to make their content interactive. Client components and build-time Remark/Rehype plugins have limitations, and RSCs offer the best of both.
+- 📜 [Using Server Functions and TanStack Query](https://www.brenelz.com/posts/using-server-functions-and-tanstack-query/): TanStack Start is almost ready to use, and has a compelling data fetching approach, with “server fns” integrated with react-query and routing (for prefetching), fully typesafe of course.
+- 📜 [What the heck is atomic state management?](https://www.frontendundefined.com/posts/monthly/jotai-atomic-state-management/): A refresher on how to use Jotai “the right way” and the benefits it brings.
+- 📜 [Component testing in Storybook](https://storybook.js.org/blog/component-testing/): Storybook promotes component testing as a complement to end-to-end testing, offering speed and reliability with browser fidelity for better UI test coverage.
+- 📜 [The Complete Developer Guide to React 19:](https://www.callstack.com/blog/the-complete-developer-guide-to-react-19-part-1-async-handling) A 2-part series on what’s coming in React 19, including useTransition, useActionState, useOptimistic, use, Server Components, Server Actions, ref as a prop, Diffs for Hydration Errors, Improved error reporting, Context as a provider, useDeferredValue initial value & more.
+- 📜 [Easy RAG for TypeScript and React Apps](https://edspencer.net/2024/9/2/easy-rag-for-typescript-and-react-apps): Build a RAG system in TypeScript and React by processing text documents, generating embeddings, and utilizing a vector database for semantic search to answer user queries.
+- 📜 [Blending Markdown and React components in NextJS](https://edspencer.net/2024/8/28/using-markdown-with-nextjs)
+- 📜 [Higher Order Components (HOCs) in React: What They Are and How To Use Them](https://www.reactsquad.io/blog/higher-order-components-hocs-in-react)
+- 📜 [Comprehensive React Testing: Handling API Calls with Mock Service Worker](https://www.trevorlasn.com/blog/react-testing-mock-service-worker/)
+- 📜 [Using the inert attribute in React](https://www.mayank.co/notes/inert-in-react)
+- 📜 [Authoring CSS in modern JavaScript apps](https://www.alexchantastic.com/modern-css-authoring)
+- 📦 [Midday V1 - Starter kit based on Next.js, Turborepo, Shadcn & more](https://github.com/midday-ai/v1)
+- 📦 [Bulletproof-React - scalable React architecture repo - now updated with Next.js examples](https://github.com/alan2207/bulletproof-react)
+- 📦 [Astro 4.15 - Astro Actions, Use rewrites for i18n fallbacks, libSQL remotes in @astrojs/db, Timeout option in client:idle, Swap helpers for ViewTransitions](https://astro.build/blog/astro-4150/)
+- 🎥 [Lee Robinson - Build anything with v0 (3D games, interactive apps)](https://www.youtube.com/watch?v=zA-eCGFBXjM)
+- 🎥 [Jack Herrington - Using AI Structured Output with NextJS & React](https://www.youtube.com/watch?v=_Rb4SpWRHC8)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Exécutez GitHub Actions 2x plus vite à moitié prix](/emails/issues/199/blacksmith.jpg)](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)
+
+**[Exécutez GitHub Actions 2x plus vite à moitié prix](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)**
+
+Blacksmith exécute vos GitHub Actions nettement plus vite grâce à des CPU gaming modernes. L'intégration de Blacksmith est un changement d'une ligne de code. 100+ entreprises comme Ashby, GitBook, Superblocks et Slope utilisent Blacksmith pour aider les développeurs à merger du code plus rapidement.
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![L'Univers React](/emails/issues/199/react-universe.jpg)](https://www.reactuniverseconf.com/)
+
+Au moment où nous écrivons, le sommet des contributeurs principaux de React Native se déroule à Wrocław.
+
+Il sera suivi par la conférence React Universe jeudi et vendredi. De nombreuses présentations passionnantes sont prévues, et [vous pouvez suivre en direct sur YouTube](https://www.youtube.com/watch?v=b48Lax2-jOQ). Parmi les temps forts : un nouveau débogueur, la Nouvelle Architecture, les composants DOM d'Expo et Hermes statique.
+
+Nous aurons donc probablement plus d'actualités React Native pour vous la semaine prochaine !
+
+---
+
+- 💸 [React Native Mastery - Le seul cours dont vous avez besoin pour maîtriser React Native et Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 👀 [Re.Pack ajoute le support de Rspack](https://github.com/callstack/repack/pull/720) : Le bundleur alternatif compatible avec webpack pour React Native devrait gagner considérablement en vitesse avec ce changement.
+- 🐦 [L'IDE React Native intégrera Storybook dans son mode de prévisualisation](https://x.com/kzzzf/status/1829262449541062716)
+- 🐦 [React Three Fiber fonctionnant sur react-native-webgpu](https://x.com/aarongrider/status/1830629528005460016) : Nous avons vu des exemples de Three.js avec react-native-webgpu. Aaron Grider de SpaceX travaille actuellement sur le support de React Three Fiber, apportant son API déclarative à React Native.
+- 📜 [Créer et exécuter des tests de bout en bout rapides avec Moropo et Expo : avec Maestro](https://expo.dev/blog/create-and-run-fast-end-to-end-tests-using-moropo-and-expo)
+- 📜 [Comment développer une super application avec React Native ?](https://medium.com/@xayilmaz/how-to-develop-a-super-app-with-react-native-fe18fbe002c5) : L'utilisation d'un module natif personnalisé pour la communication entre mini-apps diffère de l'approche Repack, qui utilise Webpack pour générer des bundles JavaScript modulaires et indépendants.
+- 📖 [Mise à jour de la documentation Expo](https://x.com/amanhimself/status/1828545129499750498) : Architecture Local First, Composants DOM, Assistant de mise à niveau de projet natif pour le SDK 51.
+- 📖 [Tarification des Expo Application Services (EAS)](https://expo.dev/pricing#update) : Les concurrences EAS Update et Build deviennent moins chères à partir du 1er septembre.
+- 📦 [react-native-macos 0.75](https://www.npmjs.com/package/react-native-macos/v/0.75.2)
+- 🎥 [Minute React Native - React Native WebGPU expliqué en moins de 2 minutes](https://www.youtube.com/watch?v=DQrO2LFnrOw)
+- 🎥 [Le Lab de Dan - Comment construire un scanneur de code QR avec Expo](https://www.youtube.com/watch?v=PZIEqcdFjpQ)
+- 🎥 [Simon Grimm - Les composants DOM Expo sont dingues](https://www.youtube.com/watch?v=BWA8KY5QEPk)
+- 🎥 [Chain React 2024 - Playlist YouTube disponible](https://www.youtube.com/playlist?list=PLE7tQUdRKcyb81ybEVsrk6PfxXu7pJs1i#chainreact2024)
+
+---
+
+## 🔀 Autre {#other}
+
+- 📜 [À l'intérieur d'ECMAScript : la norme JavaScript obtient une étape supplémentaire](https://thenewstack.io/inside-ecmascript-javascript-standard-gets-an-extra-stage/)
+- 📜 [Le presse-papiers du web, et comment il stocke des données de différents types](https://alexharri.com/blog/clipboard)
+- 📜 [Les générateurs JavaScript expliqués, mais de manière experte](https://www.reactsquad.io/blog/understanding-generators-in-javascript)
+- 📜 [AggregateError en JavaScript](https://www.trevorlasn.com/blog/aggregate-error-in-javascript/)
+- 📦 [ThreeJS 168](https://github.com/mrdoob/three.js/releases/tag/r168)
+- 📦 [Style-observer \- Un MutationObserver pour CSS](https://www.bram.us/2024/08/31/introducing-bramus-style-observer-a-mutationobserver-for-css/)
+- 📦 [Effect 3.7 \- Avec HttpApi, une manière déclarative de définir des points de terminaison d'API](https://effect.website/blog/effect-3.7)
+- 📦 [Node 22.8](https://nodejs.org/en/blog/release/v22.8.0) \- module.enableCompileCache(), vm.createContext() avec globalThis gelable, seuils de couverture
+- 📦 [Sherif 1.0 \- Linter opinionné sans configuration pour les monorepos JavaScript](https://github.com/QuiiBz/sherif)
+- 📦 [Safari Technology Preview 202 \- De nombreuses fonctionnalités CSS](https://webkit.org/blog/15798/release-notes-for-safari-technology-preview-202/)
+- 📦 [i-html \- Élément d'importation inline-html](https://www.keithcirkel.co.uk/i-html/)
+
+---
+
+## 🤭 Fun {#fun}
+
+[![The life of a programmer in 2024](/emails/issues/199/meme.jpg)](https://x.com/daboigbae/status/1828778118888452572)
+
+À bientôt ! 👋

@@ -1,0 +1,865 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/144/index.mdx",
+  "source_file_content_hash": "4193b87ed11bf5b85a5dfe4252917e1bf16b935b050c972d4f56a5914d5ff290",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /144\ntitle: \"This Week In React #144: Server Actions, Million.js, Rendering, Layout Animations, Qwik, Lingui, Remix, React-Router, React-Native macOS, Expo Modules, Ignite...\"\nauthors: [slorber]\ndate: 05-02-2023\n---",
+      "source_content_hash": "d70c9162a8bd1bec93a347416bded02096bc8298d927b7c22c0f0a05b3118258",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week is \"launch week\" for Vercel which should make some nice announcements about React, Next.js and its cloud offer. We already have a small preview of what is coming very soon in Next.js!",
+      "source_content_hash": "9a3625dc06e2db2d593a9779c85b5be7876a3664a63d9d3f8271fa54f0d61ffe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine est la \"semaine de lancement\" pour Vercel qui devrait annoncer des nouveautés concernant React, Next.js et son offre cloud. Nous avons déjà un petit aperçu de ce qui arrive très bientôt dans Next.js !",
+        "en": "Cette semaine est la \"launch week\" de Vercel qui devrait annoncer des nouveautés intéressantes concernant React, Next.js et son offre cloud. Nous avons déjà un petit aperçu de ce qui arrive très bientôt dans Next.js !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "There are quite a few great articles to read this week, including some interactive ones. I particularly liked to learn more about Million.js and its concept of \"block virtual DOM\".",
+      "source_content_hash": "4aae390cbb9ddd85c889a10585c72752a67b7dbdbe28cdba84891d863f6ba6c8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Il y a pas mal d'excellents articles à lire cette semaine, dont certains interactifs. J'ai particulièrement apprécié d'en apprendre davantage sur Million.js et son concept de \"block virtual DOM\".",
+        "en": "Il y a plusieurs excellents articles à lire cette semaine, dont certains interactifs. J'ai particulièrement apprécié en apprendre davantage sur Million.js et son concept de \"block virtual DOM\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "On the React-Native side, the macOS platform is catching up with the release of v0.71, and Expo makes it easier than ever to use local native modules.",
+      "source_content_hash": "7398770f00aa9371d524eb76462c5950daaea7959ee7322ea5c107fa6833616f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Côté React-Native, la plateforme macOS rattrape son retard avec la sortie de la v0.71, et Expo facilite plus que jamais l'utilisation de modules natifs locaux.",
+        "en": "Côté React-Native, la plateforme macOS rattrape son retard avec la sortie de la v0.71, et Expo facilite plus que jamais l'utilisation de modules natifs locaux."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "There are a lot of React conferences in the next weeks, we should have great announcements! By the way, you might see a flyer for my newsletter at one of them! I'm counting on you to convince your colleagues to sign up for the newsletter.",
+      "source_content_hash": "2a0dec6a234a7d5ca41031c44ee70ab6ee0cff78767703d8c4e0ce5039ffa2dd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "De nombreuses conférences React sont prévues dans les prochaines semaines, nous devrions avoir de belles annonces ! D'ailleurs, vous pourriez voir un flyer pour ma newsletter lors de l'une d'elles ! Je compte sur vous pour convaincre vos collègues de s'inscrire à la newsletter.",
+        "en": "De nombreuses conférences React sont prévues dans les prochaines semaines, nous devrions avoir de belles annonces ! Au fait, vous pourriez voir un flyer pour ma newsletter lors de l'une d'elles ! Je compte sur vous pour convaincre vos collègues de s'inscrire à la newsletter."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Speaking of conferences, [React Summit](https://reactsummit.com/?utm_source=email&utm_medium=thisweekinreact) (Amsterdam June 2-6) is the biggest React conference in the world. They offer us a 5% discount (code \"ThisWeekInReact5\").",
+      "source_content_hash": "e40c9655a96b13751e5a66cd781eb931a0a2f258b4d91bc8efb4d9bddb0f9ec0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En parlant de conférences, [React Summit](https://reactsummit.com/?utm_source=email&utm_medium=thisweekinreact) (Amsterdam 2-6 juin) est la plus grande conférence React au monde. Ils nous offrent une réduction de 5% (code \"ThisWeekInReact5\").",
+        "en": "En parlant de conférences, [React Summit](https://reactsummit.com/?utm_source=email&utm_medium=thisweekinreact) (Amsterdam 2-6 juin) est la plus grande conférence React au monde. Ils nous offrent une réduction de 5% (code \"ThisWeekInReact5\")."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c6da205d",
+        "en": "@@untranslatable_placeholder_c6da205d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf4363fc",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_cf4363fc",
+        "en": "@@untranslatable_placeholder_cf4363fc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2a3434e4",
+        "en": "@@untranslatable_placeholder_2a3434e4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2b28cb1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[![Start UI](/emails/issues/144/start_ui.jpg)](https://web.start-ui.com?utm_source=newsletter&utm_term=this-week-in-react)",
+      "source_content_hash": "65685200ed6308d989b7482b49e5e77e7d20cb9c637bab202933b0ac1d938860",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Start UI](/emails/issues/144/start_ui.jpg)](https://web.start-ui.com?utm_source=newsletter&utm_term=this-week-in-react)",
+        "en": "[![Start UI](/emails/issues/144/start_ui.jpg)](https://web.start-ui.com?utm_source=newsletter&utm_term=this-week-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "**[Start UI [web] - Opinionated web app UI starter](https://web.start-ui.com?utm_source=newsletter&utm_term=this-week-in-react)**",
+      "source_content_hash": "e783b2a129c11bb3ee80a14141ba5bded8f5cca3b8852da119f99505710b5b5c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Start UI [web] - Starter d'interface utilisateur pour applications web opiné](https://web.start-ui.com?utm_source=newsletter&utm_term=this-week-in-react)**",
+        "en": "**[Start UI [web] - Boilerplate d'interface d'application web opiniâtre](https://web.start-ui.com?utm_source=newsletter&utm_term=this-week-in-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Our **free and open source UI web app starter** offers a quick and easy way to bootstrap your next project. It includes **best practices & production ready tools** to help you get started right away, saving you time and effort in the initial setup phase.",
+      "source_content_hash": "12475d9e4e0189dc5bafe70e459eaab752e1ffa2795e01082463a64faf1b5a17",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Notre **starter d'interface utilisateur pour applications web gratuit et open source** offre un moyen rapide et facile de démarrer votre prochain projet. Il inclut **les bonnes pratiques et des outils prêts pour la production** pour vous aider à démarrer immédiatement, vous faisant gagner du temps et des efforts dans la phase de configuration initiale.",
+        "en": "Notre **boilerplate d'interface d'application web gratuit et open source** offre un moyen rapide et facile de démarrer votre prochain projet. Il inclut **les meilleures pratiques et des outils prêts pour la production** pour vous aider à démarrer immédiatement, vous faisant gagner du temps et des efforts dans la phase de configuration initiale."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "Comes with built-in **features** like 🔐 Authentication, 📱Responsive Layout, 🧑‍💻 User Management, 🇫🇷 Internationalization & Right-to-Left support, 🌚 Dark Mode, 🎛 Advanced components for easy development. You can try out the [example app](https://demo.start-ui.com).",
+      "source_content_hash": "da59c07b7b4e664504a325bca2f3972011a1a415328023f61ae6fae0191d4251",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Livré avec des **fonctionnalités intégrées** comme 🔐 Authentification, 📱 Mise en page adaptative, 🧑‍💻 Gestion des utilisateurs, 🇫🇷 Internationalisation et support droite-à-gauche, 🌚 Mode sombre, 🎛 Composants avancés pour un développement simplifié. Vous pouvez essayer la [démo d'application](https://demo.start-ui.com).",
+        "en": "Doté de **fonctionnalités** intégrées comme 🔐 Authentification, 📱 Mise en page réactive, 🧑‍💻 Gestion des utilisateurs, 🇫🇷 Internationalisation et support droite-à-gauche, 🌚 Mode sombre, 🎛 Composants avancés pour un développement facile. Vous pouvez essayer l'[application exemple](https://demo.start-ui.com)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "Ready to use with **TypeScript**, **NextJS**, Chakra UI, TanStack Query, Storybook and more.",
+      "source_content_hash": "ff75df91e132769a926c4bffc17cdc4af96ea826855cfcf3b090a32ea26794e0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Prêt à l'emploi avec **TypeScript**, **NextJS**, Chakra UI, TanStack Query, Storybook et plus encore.",
+        "en": "Prêt à l'emploi avec **TypeScript**, **NextJS**, Chakra UI, TanStack Query, Storybook et plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[🚀 Start UI [web] on GitHub](https://web.start-ui.com)",
+      "source_content_hash": "07d813e41f6bef6d80e2e7f6444654bdc33661333f44ce2abbbf6708a2c91a7d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[🚀 Start UI [web] sur GitHub](https://web.start-ui.com)",
+        "en": "[🚀 Start UI [web] sur GitHub](https://web.start-ui.com)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06784e79",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[![Introducing storage on Vercel](/emails/issues/144/vercel.jpg)](https://vercel.com/blog/vercel-storage)",
+      "source_content_hash": "802c8423b9440079d4351c34fc03330ad81a486a76e90ba581cf9622dde81d83",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Introducing storage on Vercel](/emails/issues/144/vercel.jpg)](https://vercel.com/blog/vercel-storage)",
+        "en": "[![Introducing storage on Vercel](/emails/issues/144/vercel.jpg)](https://vercel.com/blog/vercel-storage)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "**[Introducing storage on Vercel](https://vercel.com/blog/vercel-storage)**",
+      "source_content_hash": "66fda9b8ae5cce4d06d2b763a747a2ac71aa52b0d331f8ea8c53edde1ee12b3c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Présentation du stockage chez Vercel](https://vercel.com/blog/vercel-storage)**",
+        "en": "**[Présentation du stockage sur Vercel](https://vercel.com/blog/vercel-storage)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "Vercel has just launched its edge-first storage offering, particularly suited for use in React Server Components and Next.js:",
+      "source_content_hash": "2e15dc899ab9db816d2cc96671a8c50f774db88a0ab5b69a014cdd126f4dc121",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Vercel vient de lancer son offre de stockage orientée edge, particulièrement adaptée aux React Server Components et à Next.js :",
+        "en": "Vercel vient de lancer son offre de stockage edge-first, particulièrement adaptée à une utilisation dans React Server Components et Next.js :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9b797309",
+      "source_content": "- Vercel KV: store key-value Redis, based on Upstash.\n- Vercel Postgres: PostgreSQL database, based on Neon.\n- Vercel Blob: file storage, based on Cloudflare R2.",
+      "source_content_hash": "9766bb24d57b00d3c3db93ba80f081ca09fd8bdabc14e160c736397784677ad7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Vercel KV : stockage clé-valeur Redis, basé sur Upstash.\n- Vercel Postgres : base de données PostgreSQL, basée sur Neon.\n- Vercel Blob : stockage de fichiers, basé sur Cloudflare R2.",
+        "en": "- Vercel KV : stockage clé-valeur Redis, basé sur Upstash\n- Vercel Postgres : base de données PostgreSQL, basée sur Neon\n- Vercel Blob : stockage de fichiers, basé sur Cloudflare R2"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "It's [Vercel Ship week](https://vercel.com/ship): more news should be announced in the next few days. The image chosen leads us to believe that there will be a Next.js release tomorrow, introducing a new feature **Next.js Server Actions**. This also reveals the will to improve [progressive enhancement](https://twitter.com/sebastienlorber/status/1653701538336915456) in React apps, in a way quite similar to Remix: this form can also work without JavaScript or hydration.",
+      "source_content_hash": "c262f50bb611a0f9f14b15eb44819e19c6930296a70666dc399ad8c6a79c6d09",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "C'est la [semaine Vercel Ship](https://vercel.com/ship) : d'autres nouvelles devraient être annoncées dans les prochains jours. L'image choisie laisse penser qu'il y aura une version de Next.js demain, introduisant une nouvelle fonctionnalité **Next.js Server Actions**. Cela révèle aussi la volonté d'améliorer l'[amélioration progressive](https://twitter.com/sebastienlorber/status/1653701538336915456) dans les applications React, d'une manière similaire à Remix : ce formulaire peut aussi fonctionner sans JavaScript ni hydratation.",
+        "en": "C'est la [Vercel Ship week](https://vercel.com/ship) : d'autres nouvelles devraient être annoncées dans les prochains jours. L'image choisie nous laisse penser qu'il y aura une version de Next.js demain, introduisant une nouvelle fonctionnalité **Next.js Server Actions**. Cela révèle aussi la volonté d'améliorer l'[amélioration progressive](https://twitter.com/sebastienlorber/status/1653701538336915456) dans les applications React, d'une manière assez similaire à Remix : ce formulaire peut également fonctionner sans JavaScript ou hydratation."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "Note: this example is not vulnerable to SQL injections because it uses template literals.",
+      "source_content_hash": "eb8144a2b7e9ba0ff0185691c81286a3e7572e02db00d39d69b4fe4c653a4939",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Note : cet exemple n'est pas vulnérable aux injections SQL car il utilise des littéraux de modèle.",
+        "en": "Note : cet exemple n'est pas vulnérable aux injections SQL car il utilise des littéraux de modèle."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bcda0ab1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "[![Million.js - Virtual DOM: Back in Block](/emails/issues/144/million.jpg)](https://millionjs.org/blog/virtual-dom)",
+      "source_content_hash": "83fadfc1b188558f35086deb0a73e06a32abbf512d5e3bf45efc4eed6d180082",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Million.js - Virtual DOM: Back in Block](/emails/issues/144/million.jpg)](https://millionjs.org/blog/virtual-dom)",
+        "en": "[![Million.js - DOM Virtuel : Retour en Bloc](/emails/issues/144/million.jpg)](https://millionjs.org/blog/virtual-dom)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "**[Million.js - Virtual DOM: Back in Block](https://millionjs.org/blog/virtual-dom)**",
+      "source_content_hash": "c53fc26852507d765ff34d107f375f976b6ad6ced8880b188bea0aff5ccd4ad2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Million.js - Virtual DOM : Retour en Bloc](https://millionjs.org/blog/virtual-dom)**",
+        "en": "**[Million.js - DOM Virtuel : Retour en Bloc](https://millionjs.org/blog/virtual-dom)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "Interactive article that presents Million.js and its \"Block Virtual DOM\" concept. Its approach to diffing is different: non-recursive, based on static analysis, compilation and dirty checking, quite similar to Svelte.",
+      "source_content_hash": "8911a9690f5c7de17dcaa19e080f039be66a1a59f7904adf086f49bd3ebf5498",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Article interactif présentant Million.js et son concept de \"Block Virtual DOM\". Son approche de diffing est différente : non récursive, basée sur l'analyse statique, la compilation et le dirty checking, assez similaire à Svelte.",
+        "en": "Article interactif présentant Million.js et son concept de « Block Virtual DOM ». Son approche du diffing est différente : non récursive, basée sur l'analyse statique, la compilation et le dirty checking, assez similaire à Svelte."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "Million.js does not replace React, but integrates with it to improve performance. It is recommended to use it only in some very specific cases: a lot of static content and UI trees with a stable structure.",
+      "source_content_hash": "c2c130b20b598f26beb29a2b5d7daf3c51bf7562a4d7beb8de34d71cd3fc5111",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Million.js ne remplace pas React mais s'intègre à celui-ci pour améliorer les performances. Il est recommandé de l'utiliser uniquement dans des cas très spécifiques : beaucoup de contenu statique et des arbres d'interface utilisateur avec une structure stable.",
+        "en": "Million.js ne remplace pas React, mais s'intègre à lui pour améliorer les performances. Il est recommandé de l'utiliser uniquement dans certains cas très spécifiques : beaucoup de contenu statique et des arbres d'interface utilisateur ayant une structure stable."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "[![The Interactive Guide to Rendering in React](/emails/issues/144/rendering.jpg)](https://ui.dev/why-react-renders)",
+      "source_content_hash": "6a7979282380785a0138a8772a92e4058ad126d54adc0771a09a320ac1b3dbc6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![The Interactive Guide to Rendering in React](/emails/issues/144/rendering.jpg)](https://ui.dev/why-react-renders)",
+        "en": "[![Le guide interactif du rendu dans React](/emails/issues/144/rendering.jpg)](https://ui.dev/why-react-renders)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "**[The Interactive Guide to Rendering in React](https://ui.dev/why-react-renders)**",
+      "source_content_hash": "cba89e78cb1401aa8a206108a4ca13de14610e07dad077c8d68bc84d8a2a5f52",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Le Guide Interactif du Rendering dans React](https://ui.dev/why-react-renders)**",
+        "en": "**[Le guide interactif du rendu dans React](https://ui.dev/why-react-renders)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "Interactive article that explains when React re-render a component. A good resource for beginners, with detailed explanations on setState(fn), batching, memo, StrictMode etc...",
+      "source_content_hash": "57c30963621add0185ad2d48a66e7c01bf061386c617a10180fcc90af99f2b61",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Article interactif expliquant quand React effectue un nouveau rendu d'un composant. Une bonne ressource pour les débutants, avec des explications détaillées sur setState(fn), le batching, memo, StrictMode etc...",
+        "en": "Article interactif expliquant quand React effectue un nouveau rendu d'un composant. Une bonne ressource pour les débutants, avec des explications détaillées sur setState(fn), le batching, memo, StrictMode, etc."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "678c3938",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c142abbb",
+      "source_content": "- 🐦 [Dan Abramov - \"If we thought Qwik model was better we would have literally implemented it\"](https://twitter.com/dan_abramov/status/1651055386101796864)\n- 🐦 [CSS scoping - upcoming CSS feature useful for React devs](https://twitter.com/sebastienlorber/status/1653432768544534531)\n- 📜 [Making animated tooltip with React and Framer Motion](https://sinja.io/blog/animated-tooltip-with-react-framer-motion): interactive article that implements a nice tooltip system with Floating UI and beautiful Frame Motion layout animations.\n- 📜 [Building a Type-Safe Tailwind with vanilla-extract](https://www.highlight.io/blog/typesafe-tailwind): Tailwind is a good solution, but still has some flaws. This article gives an in-depth look at Vanilla-Extract / Sprinkles, a good typesafe alternative.\n- 📜 [The URL is the ultimate global state management tool](https://www.jacobparis.com/guides/url-as-state-management): encourages the use of query-string, with some React examples.\n- 📜 [Find and fix performance bottlenecks in your Remix app with Server Timing](https://www.jacobparis.com/guides/remix-server-timing)\n- 📜 [Building a WebGL Carousel with React Three Fiber and GSAP](https://tympanus.net/codrops/2023/04/27/building-a-webgl-carousel-with-react-three-fiber-and-gsap/)\n- 📜 [Server Components vs. SSR](https://www.webscope.io/blog/server-components-vs-ssr)\n- 📜 [Best YouTube Channels to learn React in 2023](https://www.code-insights.dev/posts/best-youtube-channels-to-learn-react-in-2023)\n- 📦 [Qwik v1.0](https://www.builder.io/blog/qwik-v1): official v1 release of a framework that challenges React with its resumability concept. React can be used in a Qwik application, which should facilitate the adoption.\n- 📦 [Lingui 4.0](https://lingui.dev/blog/2023/04/26/announcing-lingui-4.0): overview of the i18n lib, and presents the new v4 features. This lib looks like a good alternative to React-Intl: ICU syntax, message extraction, framework-agnostics, React support...\n- 📦 [Remix 1.16](https://github.com/remix-run/remix/releases/tag/remix%401.16.0): stabilizes support for CSS Modules, CSS imports, Vanilla Extract, PostCSS, Tailwind...\n- 📦 [React-Router 6.11](https://twitter.com/remix_run/status/1652000618620555264)\n- 🎥 [45% failed Dan's Server Component Quiz](https://www.youtube.com/watch?v=AGAax7WzStc)\n- 🎥 [Reactathon 2023 Day 1 Livestream](https://www.youtube.com/watch?v=gJaN9CnFqrI)\n- 🎙️ [The React Core team talks React Forget and the future](https://twitter.com/PodRocketpod/status/1653429138387243010)\n- 👥 [React Summit](https://reactsummit.com/?utm_source=email&utm_medium=thisweekinreact) (Amsterdam, June 2-6) is offering us -5% on tickets (code \"ThisWeekInReact5\").",
+      "source_content_hash": "ac24ba9a00a00e71a10a60eed063832e80fa5ce34e467fd9de4898ce23233bb0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🐦 [Dan Abramov - \"Si nous avions pensé que le modèle Qwik était meilleur, nous l'aurions littéralement implémenté\"](https://twitter.com/dan_abramov/status/1651055386101796864)\n- 🐦 [Scopage CSS - future fonctionnalité CSS utile pour les développeurs React](https://twitter.com/sebastienlorber/status/1653432768544534531)\n- 📜 [Créer une infobulle animée avec React et Framer Motion](https://sinja.io/blog/animated-tooltip-with-react-framer-motion): article interactif implémentant un système d'infobulle élégant avec Floating UI et de belles animations de mise en page Framer Motion.\n- 📜 [Construire un Tailwind type-safe avec vanilla-extract](https://www.highlight.io/blog/typesafe-tailwind): Tailwind est une bonne solution mais présente des limites. Cet article examine en profondeur Vanilla-Extract/Sprinkles, une alternative type-safe intéressante.\n- 📜 [L'URL est l'outil ultime de gestion d'état global](https://www.jacobparis.com/guides/url-as-state-management): encourage l'utilisation des chaînes de requête, avec des exemples React.\n- 📜 [Détecter et corriger les goulots d'étranglement dans votre app Remix avec Server Timing](https://www.jacobparis.com/guides/remix-server-timing)\n- 📜 [Construire un carrousel WebGL avec React Three Fiber et GSAP](https://tympanus.net/codrops/2023/04/27/building-a-webgl-carousel-with-react-three-fiber-and-gsap/)\n- 📜 [Composants Serveur vs SSR](https://www.webscope.io/blog/server-components-vs-ssr)\n- 📜 [Meilleures chaînes YouTube pour apprendre React en 2023](https://www.code-insights.dev/posts/best-youtube-channels-to-learn-react-in-2023)\n- 📦 [Qwik v1.0](https://www.builder.io/blog/qwik-v1): version officielle v1 d'un framework défiant React avec son concept de \"résumabilité\". React peut être utilisé dans une application Qwik, facilitant l'adoption.\n- 📦 [Lingui 4.0](https://lingui.dev/blog/2023/04/26/announcing-lingui-4.0): présentation de la bibliothèque i18n et des nouvelles fonctionnalités v4. Alternative intéressante à React-Intl: syntaxe ICU, extraction de messages, agnostique aux frameworks.\n- 📦 [Remix 1.16](https://github.com/remix-run/remix/releases/tag/remix%401.16.0): stabilise le support des CSS Modules, imports CSS, Vanilla Extract, PostCSS, Tailwind...\n- 📦 [React-Router 6.11](https://twitter.com/remix_run/status/1652000618620555264)\n- 🎥 [45% ont échoué au quiz sur les Composants Serveur de Dan](https://www.youtube.com/watch?v=AGAax7WzStc)\n- 🎥 [Livestream Jour 1 - Reactathon 2023](https://www.youtube.com/watch?v=gJaN9CnFqrI)\n- 🎙️ [L'équipe Core React parle de React Forget et du futur](https://twitter.com/PodRocketpod/status/1653429138387243010)\n- 👥 [React Summit](https://reactsummit.com/?utm_source=email&utm_medium=thisweekinreact) (Amsterdam, 2-6 juin) nous offre -5% sur les billets (code \"ThisWeekInReact5\").",
+        "en": "- 🐦 [Dan Abramov - \"Si nous pensions que le modèle de Qwik était meilleur, nous l'aurions littéralement implémenté\"](https://twitter.com/dan_abramov/status/1651055386101796864)\n- 🐦 [Scopage CSS - future fonctionnalité CSS utile pour les développeurs React](https://twitter.com/sebastienlorber/status/1653432768544534531)\n- 📜 [Créer une infobulle animée avec React et Framer Motion](https://sinja.io/blog/animated-tooltip-with-react-framer-motion) : article interactif qui implémente un joli système d'infobulle avec Floating UI et de belles animations de mise en page avec Framer Motion.\n- 📜 [Construire un Tailwind Type-Safe avec vanilla-extract](https://www.highlight.io/blog/typesafe-tailwind) : Tailwind est une bonne solution, mais présente encore des défauts. Cet article examine en profondeur Vanilla-Extract / Sprinkles, une bonne alternative type-safe.\n- 📜 [L'URL est l'outil ultime de gestion d'état global](https://www.jacobparis.com/guides/url-as-state-management) : encourage l'utilisation des chaînes de requête, avec quelques exemples React.\n- 📜 [Détecter et corriger les goulots d'étranglement de performance dans votre application Remix avec Server Timing](https://www.jacobparis.com/guides/remix-server-timing)\n- 📜 [Construire un carrousel WebGL avec React Three Fiber et GSAP](https://tympanus.net/codrops/2023/04/27/building-a-webgl-carousel-with-react-three-fiber-and-gsap/)\n- 📜 [Composants Serveur vs. SSR](https://www.webscope.io/blog/server-components-vs-ssr)\n- 📜 [Meilleures chaînes YouTube pour apprendre React en 2023](https://www.code-insights.dev/posts/best-youtube-channels-to-learn-react-in-2023)\n- 📦 [Qwik v1.0](https://www.builder.io/blog/qwik-v1) : version officielle v1 d'un framework qui défie React avec son concept de \"resumability\". React peut être utilisé dans une application Qwik, ce qui devrait faciliter l'adoption.\n- 📦 [Lingui 4.0](https://lingui.dev/blog/2023/04/26/announcing-lingui-4.0) : aperçu de la bibliothèque d'i18n, et présente les nouvelles fonctionnalités de la v4. Cette bibliothèque semble être une bonne alternative à React-Intl : syntaxe ICU, extraction de messages, agnostique aux frameworks, support React...\n- 📦 [Remix 1.16](https://github.com/remix-run/remix/releases/tag/remix%401.16.0) : stabilise le support des modules CSS, des imports CSS, Vanilla Extract, PostCSS, Tailwind...\n- 📦 [React-Router 6.11](https://twitter.com/remix_run/status/1652000618620555264)\n- 🎥 [45% ont échoué au quiz sur les composants serveur de Dan](https://www.youtube.com/watch?v=AGAax7WzStc)\n- 🎥 [Reactathon 2023 Jour 1 Livestream](https://www.youtube.com/watch?v=gJaN9CnFqrI)\n- 🎙️ [L'équipe React Core parle de React Forget et du futur](https://twitter.com/PodRocketpod/status/1653429138387243010)\n- 👥 [React Summit](https://reactsummit.com/?utm_source=email&utm_medium=thisweekinreact) (Amsterdam, 2-6 juin) nous offre -5% sur les billets (code \"ThisWeekInReact5\")."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6060e09",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c6060e09",
+        "en": "@@untranslatable_placeholder_c6060e09"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dd8754e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7c92a79",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "[![Nylas](/emails/issues/144/nylas.jpg)](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)",
+      "source_content_hash": "8df5cd13c6e5f7a3083dc106a763922b3f11e24f550ba521453fc1339d7def79",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Nylas](/emails/issues/144/nylas.jpg)](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)",
+        "en": "[![Nylas](/emails/issues/144/nylas.jpg)](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "**[Nylas: Powering email, calendar, and contacts in the products you build](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)**",
+      "source_content_hash": "058268503d814cd56b477393abf7018d86b481768a8ef3f37b96f352f4510133",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Nylas : Alimenter les fonctionnalités email, calendrier et contacts dans vos produits](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)**",
+        "en": "**[Nylas : Des fonctionnalités d'e-mail, de calendrier et de contacts pour les produits que vous construisez](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "The [Nylas Email and Calendar APIs](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term) allow developers to build communications features that connect them to all major service providers in the world - with a single integration.",
+      "source_content_hash": "8ddfb278b8b6a0bf8cc90922518ad2572eb62ea6f8cb029bea7505d7d23a4694",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Les [API Email et Calendrier de Nylas](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term) permettent aux développeurs de créer des fonctionnalités de communication qui les connectent à tous les principaux fournisseurs de services dans le monde - avec une seule intégration.",
+        "en": "Les [API Email et Calendrier de Nylas](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term) permettent aux développeurs de créer des fonctionnalités de communication qui les connectent à tous les principaux fournisseurs de services dans le monde - avec une seule intégration."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "Nylas makes selecting a use case and a server-side SDK language easy. You'll get a [step-by-step tutorial complete with a **ready-to-use React frontend**](https://www.nylas.com/blog/how-to-build-email-templates-with-react/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content=&utm_term=) and download-ready codebase with your API credentials. Stop building and maintaining individual integrations with multiple providers and [start launching email and calendar features](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term) with guaranteed 99.99% uptime and no maintenance downtime.",
+      "source_content_hash": "1ff42085e37a46ae5b77734af388f8d07d01486275a79cd852dbc456242c127c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nylas facilite la sélection d'un cas d'utilisation et d'un langage SDK côté serveur. Vous obtiendrez un [tutoriel étape par étape complet avec un **frontend React prêt à l'emploi**](https://www.nylas.com/blog/how-to-build-email-templates-with-react/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content=&utm_term=) et une base de code téléchargeable avec vos identifiants API. Arrêtez de construire et de maintenir des intégrations individuelles avec plusieurs fournisseurs et [lancez-vous dans les fonctionnalités d'email et de calendrier](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term) avec une disponibilité garantie de 99,99 % et aucun temps d'arrêt pour maintenance.",
+        "en": "Nylas facilite la sélection d'un cas d'utilisation et d'un langage SDK côté serveur. Vous obtiendrez un [tutoriel étape par étape complet avec un **frontend React prêt à l'emploi**](https://www.nylas.com/blog/how-to-build-email-templates-with-react/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content=&utm_term=) et une base de code téléchargeable avec vos identifiants API. Arrêtez de construire et de maintenir des intégrations individuelles avec plusieurs fournisseurs et [lancez des fonctionnalités d'email et de calendrier](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term) avec une disponibilité garantie de 99,99 % et aucun temps d'arrêt pour maintenance."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "[Start building with Nylas for free!](https://dashboard.nylas.com/register?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content=&utm_term=)",
+      "source_content_hash": "deaaec4581f4f50283bc8bf098247bb0a65931f2686994cabdaba8124de85820",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Commencez à développer avec Nylas gratuitement !](https://dashboard.nylas.com/register?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content=&utm_term=)",
+        "en": "[Commencez à développer avec Nylas gratuitement !](https://dashboard.nylas.com/register?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content=&utm_term=)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "638efb88",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "[![Introducing React Native macOS 0.71](/emails/issues/144/rnmacos.jpg)](https://devblogs.microsoft.com/react-native/2023-04-27-announcing-macos-71/)",
+      "source_content_hash": "46763e755fcba1ff6e2d189a383cf75aff3b6c5a582b1784efdc0e7241337650",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Présentation de React Native macOS 0.71](/emails/issues/144/rnmacos.jpg)](https://devblogs.microsoft.com/react-native/2023-04-27-announcing-macos-71/)",
+        "en": "[![Présentation de React Native macOS 0.71](/emails/issues/144/rnmacos.jpg)](https://devblogs.microsoft.com/react-native/2023-04-27-announcing-macos-71/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f38d1cb0",
+      "source_content": "**[Introducing React Native macOS 0.71](https://devblogs.microsoft.com/react-native/2023-04-27-announcing-macos-71/)**",
+      "source_content_hash": "c922568b753cd58f5b3c8baa59aaefdf725e685a31553626058c85b7b238bd9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Présentation de React Native macOS 0.71](https://devblogs.microsoft.com/react-native/2023-04-27-announcing-macos-71/)**",
+        "en": "**[Présentation de React Native macOS 0.71](https://devblogs.microsoft.com/react-native/2023-04-27-announcing-macos-71/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "Microsoft skipped the v0.69 and v0.70 releases to go directly to v0.71. The goal is now to stay up to date with the other platforms: v0.72 work is in progress. This platform version alignment looks super useful: according to feedback it is not easy to mix different React-Native versions within a single monorepo.",
+      "source_content_hash": "a00679a33051261df8a71e430512a8714bb98a5edb6e196e39b432f947356bd7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Microsoft a sauté les versions v0.69 et v0.70 pour passer directement à la v0.71. L'objectif est désormais de rester à jour avec les autres plateformes : les travaux sur la v0.72 sont en cours. Cette harmonisation des versions de plateforme semble très utile : selon les retours, il n'est pas facile de mélanger différentes versions de React-Native dans un seul monorepo.",
+        "en": "Microsoft a sauté les versions v0.69 et v0.70 pour passer directement à la v0.71. L'objectif est désormais de rester à jour avec les autres plateformes : les travaux sur la v0.72 sont en cours. Cet alignement des versions de plateforme semble très utile : selon les retours, il n'est pas facile de mélanger différentes versions de React-Native au sein d'un même monorepo."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "The newly released v0.71 brings experimental support for Fabric, as well as all the new features that have recently been released on other platforms: TypeScript, Flexbox... Microsoft and Meta collaborate and the use of this platform seems to grow within the 2 companies: Meta uses React-Native macOS on Messenger Desktop for example.",
+      "source_content_hash": "b2f28baf79d49b0b7aaa57522d74dc8ab4dadbbd1acc8920ed386a5e7d7dfb32",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La nouvelle version v0.71 apporte un support expérimental pour Fabric, ainsi que toutes les nouvelles fonctionnalités récemment publiées sur les autres plateformes : TypeScript, Flexbox... Microsoft et Meta collaborent et l'utilisation de cette plateforme semble croître au sein des deux entreprises : Meta utilise par exemple React-Native macOS sur Messenger Desktop.",
+        "en": "La nouvelle version v0.71 apporte un support expérimental pour Fabric, ainsi que toutes les nouvelles fonctionnalités récemment publiées sur les autres plateformes : TypeScript, Flexbox... Microsoft et Meta collaborent et l'utilisation de cette plateforme semble croître au sein des deux entreprises : Meta utilise par exemple React-Native macOS sur Messenger Desktop."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd2fd2f2",
+      "source_content": "- 🧵 [File-based Expo Router demo](https://twitter.com/Baconbrix/status/1652404780881289216): Evan Bacon offers a complete Expo Router demo with mobile and web support.\n- 🐦 [`npx create-expo-module --local`](https://twitter.com/aleqsio/status/1651268836593655808): great new Expo feature that makes it easy to create a local native module, without needing a monorepo.\n- 🐦 [`npx create-expo`](https://twitter.com/Baconbrix/status/1652372955450441729): command to create a new Expo project.\n- 🐦 [Bluesky app (iOS + Android + web) built by 1 dev with Expo](https://twitter.com/GergelyOrosz/status/1652679796818694146): Gergely Orosz's statement is causing a lot of debate on Twitter.\n- 📦 [Ignite v8.7.0](https://twitter.com/ir_ignite/status/1651064452781953024): replaces the e2e Detox tests with Maestro.\n- 📦 [Tamagui 1.17 - selectionStyles](https://twitter.com/tamagui_js/status/1651432667412566016)\n- 📦 [react-native-iconify](https://github.com/oktaysenkan/react-native-iconify)\n- 📦 [react-native-dnd](https://github.com/mgcrea/react-native-dnd)\n- 📦 [react-native-use-list](https://github.com/dozsolti/react-native-use-list)\n- 🎥 [How React Native Was Created At Facebook](https://www.youtube.com/watch?v=On9ghjix77c): Christopher Chedeau looks back at the history of React-Native, a project he more or less saved from a probable death.\n- 🎥 [React Native Transitions with Skia](https://www.youtube.com/watch?v=PzKWpwmmRqM): William Candillon shows how to use image transitions based on shaders and gestures. This may require some adaptation of existing glsl shaders.\n- 🎥 [Is this the Worst Volume Control? React Native and Reanimated](https://www.youtube.com/watch?v=FqdcRBqVS78)\n- 🎙️ [RNR 265 - Chain React is Back!!](https://reactnativeradio.com/episodes/rnr-265-chain-react-is-back)\n- 👥 [App.js](https://appjs.co/) (Krakow, May 10-12) is offering us [-20% on workshops](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (code \"ThisWeekinReact20\").\n- 👥 [Chain React](https://chainreactconf.com/) (Portland, May 18-19) is offering us -10% on entries (code \"thisweekinreact\").\n- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (Paris, 1er June) is offering us -10% on entries (code \"REACTHEBDO\").",
+      "source_content_hash": "914cde9da172f3f5826f59c7399ad3c2f265651f957da0f6b30f1b91a2d83710",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 🧵 [Démo d'Expo Router basée sur les fichiers](https://twitter.com/Baconbrix/status/1652404780881289216) : Evan Bacon propose une démo complète d'Expo Router avec support mobile et web.\n- 🐦 [`npx create-expo-module --local`](https://twitter.com/aleqsio/status/1651268836593655808) : excellente nouvelle fonctionnalité d'Expo qui facilite la création d'un module natif local, sans avoir besoin d'un monorepo.\n- 🐦 [`npx create-expo`](https://twitter.com/Baconbrix/status/1652372955450441729) : commande pour créer un nouveau projet Expo.\n- 🐦 [Application Bluesky (iOS + Android + web) construite par 1 développeur avec Expo](https://twitter.com/GergelyOrosz/status/1652679796818694146) : la déclaration de Gergely Orosz suscite beaucoup de débats sur Twitter.\n- 📦 [Ignite v8.7.0](https://twitter.com/ir_ignite/status/1651064452781953024) : remplace les tests e2e Detox par Maestro.\n- 📦 [Tamagui 1.17 - selectionStyles](https://twitter.com/tamagui_js/status/1651432667412566016)\n- 📦 [react-native-iconify](https://github.com/oktaysenkan/react-native-iconify)\n- 📦 [react-native-dnd](https://github.com/mgcrea/react-native-dnd)\n- 📦 [react-native-use-list](https://github.com/dozsolti/react-native-use-list)\n- 🎥 [Comment React Native a été créé chez Facebook](https://www.youtube.com/watch?v=On9ghjix77c) : Christopher Chedeau revient sur l'histoire de React-Native, un projet qu'il a plus ou moins sauvé d'une mort probable.\n- 🎥 [Transitions React Native avec Skia](https://www.youtube.com/watch?v=PzKWpwmmRqM) : William Candillon montre comment utiliser les transitions d'images basées sur des shaders et des gestes. Cela peut nécessiter une adaptation des shaders glsl existants.\n- 🎥 [Est-ce le pire contrôle de volume ? React Native et Reanimated](https://www.youtube.com/watch?v=FqdcRBqVS78)\n- 🎙️ [RNR 265 - Chain React est de retour !!](https://reactnativeradio.com/episodes/rnr-265-chain-react-is-back)\n- 👥 [App.js](https://appjs.co/) (Cracovie, 10-12 mai) nous offre [-20% sur les ateliers](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (code \"ThisWeekinReact20\").\n- 👥 [Chain React](https://chainreactconf.com/) (Portland, 18-19 mai) nous offre -10% sur les entrées (code \"thisweekinreact\").\n- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (Paris, 1er juin) nous offre -10% sur les entrées (code \"REACTHEBDO\").",
+        "en": "- 🧵 [Démonstration d'Expo Router basée sur les fichiers](https://twitter.com/Baconbrix/status/1652404780881289216) : Evan Bacon propose une démonstration complète d'Expo Router avec support mobile et web.\n- 🐦 [`npx create-expo-module --local`](https://twitter.com/aleqsio/status/1651268836593655808) : excellente nouvelle fonctionnalité Expo qui facilite la création d'un module natif local sans nécessiter de monorepo.\n- 🐦 [`npx create-expo`](https://twitter.com/Baconbrix/status/1652372955450441729) : commande pour créer un nouveau projet Expo.\n- 🐦 [Application Bluesky (iOS + Android + web) développée par 1 dev avec Expo](https://twitter.com/GergelyOrosz/status/1652679796818694146) : la déclaration de Gergely Orosz suscite de nombreux débats sur Twitter.\n- 📦 [Ignite v8.7.0](https://twitter.com/ir_ignite/status/1651064452781953024) : remplace les tests e2e Detox par Maestro.\n- 📦 [Tamagui 1.17 - selectionStyles](https://twitter.com/tamagui_js/status/1651432667412566016)\n- 📦 [react-native-iconify](https://github.com/oktaysenkan/react-native-iconify)\n- 📦 [react-native-dnd](https://github.com/mgcrea/react-native-dnd)\n- 📦 [react-native-use-list](https://github.com/dozsolti/react-native-use-list)\n- 🎥 [Comment React Native a été créé chez Facebook](https://www.youtube.com/watch?v=On9ghjix77c) : Christopher Chedeau revient sur l'histoire de React-Native, un projet qu'il a plus ou moins sauvé d'une mort probable.\n- 🎥 [Transitions React Native avec Skia](https://www.youtube.com/watch?v=PzKWpwmmRqM) : William Candillon montre comment utiliser des transitions d'images basées sur des shaders et des gestes. Cela peut nécessiter une adaptation des shaders GLSL existants.\n- 🎥 [Est-ce le pire contrôle de volume ? React Native et Reanimated](https://www.youtube.com/watch?v=FqdcRBqVS78)\n- 🎙️ [RNR 265 - Chain React est de retour !!](https://reactnativeradio.com/episodes/rnr-265-chain-react-is-back)\n- 👥 [App.js](https://appjs.co/) (Cracovie, 10-12 mai) nous offre [-20% sur les ateliers](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (code \"ThisWeekinReact20\").\n- 👥 [Chain React](https://chainreactconf.com/) (Portland, 18-19 mai) nous offre -10% sur les entrées (code \"thisweekinreact\").\n- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (Paris, 1er juin) nous offre -10% sur les entrées (code \"REACTHEBDO\")."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Emplois {#jobs}",
+        "en": "## 🧑‍💻 Emplois {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8f45da",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/télétravail**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+        "en": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/distant**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4c787c52",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La mission de Passionfroot est de permettre aux entreprises indépendantes de demain via YouTube, les podcasts, les médias sociaux et les newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de créer des entreprises évolutives et durables.",
+        "en": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Réseaux Sociaux et Newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de développer des entreprises évolutives et durables."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "63565425",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Callstack - Développeur React Native Senior - Télétravail complet, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)",
+        "en": "🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement distant, 21-32k PLN net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1496ef51",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack, leader en React et React Native. Consultez notre site web pour plus de détails. Nous avons hâte de voir votre candidature - montrez-nous ce que vous savez faire !",
+        "en": "Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature avec impatience - montrez-nous ce que vous savez faire !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dce16ab4",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% distanciels**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6f08f877",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.",
+        "en": "Nous avons plusieurs postes ouverts pour les développeurs spécialisés en React Native ! La rémunération est d'environ 160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2dbfc5f7",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c81952ce",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "657bde08",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "093c95e5",
+      "source_content": "- [Deno 1.33](https://twitter.com/deno_land/status/1652030907396530188)\n- [Deno KV](https://deno.com/blog/kv)\n- [Favour TypeScript Types Over Interfaces](https://www.lloydatkinson.net/posts/2023/favour-typescript-types-over-interfaces/)\n- [Practical Guide To Not Blocking The Event Loop](https://www.bbss.dev/posts/eventloop/)\n- [TailwindCSS vs. UnoCSS](https://dev.to/mapleleaf/tailwindcss-vs-unocss-2a53)\n- [Configuring ESLint, Prettier, and TypeScript Together](https://blog.joshuakgoldberg.com/configuring-eslint-prettier-and-typescript-together/)\n- [JS private class fields considered harmful](https://lea.verou.me/2023/04/private-fields-considered-harmful/)\n- [StackBlitz - WebContainers now run on Safari, iOS, and iPadOS](https://blog.stackblitz.com/posts/webcontainers-are-now-supported-on-safari/)\n- [Why I Like Using Maps (and WeakMaps) for Handling DOM Nodes](https://www.macarthur.me/posts/maps-for-dom-nodes)",
+      "source_content_hash": "d13cecf1934789b22ea51c2963a068c46d2ac96ad6cd3da8e0540274eeafcb3c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Deno 1.33](https://twitter.com/deno_land/status/1652030907396530188)\n- [Deno KV](https://deno.com/blog/kv)\n- [Privilégier les types TypeScript aux interfaces](https://www.lloydatkinson.net/posts/2023/favour-typescript-types-over-interfaces/)\n- [Guide pratique pour ne pas bloquer la boucle d'événements](https://www.bbss.dev/posts/eventloop/)\n- [TailwindCSS vs. UnoCSS](https://dev.to/mapleleaf/tailwindcss-vs-unocss-2a53)\n- [Configurer ensemble ESLint, Prettier et TypeScript](https://blog.joshuakgoldberg.com/configuring-eslint-prettier-and-typescript-together/)\n- [Les champs privés de classe JS considérés comme nuisibles](https://lea.verou.me/2023/04/private-fields-considered-harmful/)\n- [StackBlitz - WebContainers fonctionnent désormais sur Safari, iOS et iPadOS](https://blog.stackblitz.com/posts/webcontainers-are-now-supported-on-safari/)\n- [Pourquoi j'aime utiliser les Maps (et WeakMaps) pour gérer les nœuds DOM](https://www.macarthur.me/posts/maps-for-dom-nodes)",
+        "en": "- [Deno 1.33](https://twitter.com/deno_land/status/1652030907396530188)\n- [Deno KV](https://deno.com/blog/kv)\n- [Privilégier les types TypeScript aux interfaces](https://www.lloydatkinson.net/posts/2023/favour-typescript-types-over-interfaces/)\n- [Guide pratique pour ne pas bloquer la boucle d'événements](https://www.bbss.dev/posts/eventloop/)\n- [TailwindCSS vs. UnoCSS](https://dev.to/mapleleaf/tailwindcss-vs-unocss-2a53)\n- [Configurer ESLint, Prettier et TypeScript ensemble](https://blog.joshuakgoldberg.com/configuring-eslint-prettier-and-typescript-together/)\n- [Les champs privés de classe JS considérés comme nuisibles](https://lea.verou.me/2023/04/private-fields-considered-harmful/)\n- [StackBlitz - WebContainers fonctionnent désormais sur Safari, iOS et iPadOS](https://blog.stackblitz.com/posts/webcontainers-are-now-supported-on-safari/)\n- [Pourquoi j'utilise des Maps (et WeakMaps) pour manipuler les nœuds DOM](https://www.macarthur.me/posts/maps-for-dom-nodes)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cdeffb11",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d279c43",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e5821418",
+      "source_content": "[![alt](/emails/issues/144/meme.jpg)](https://twitter.com/sebastienlorber/status/1653385919460696068)",
+      "source_content_hash": "20018959417c21587757728de7e477de4a7a5231b68a58db795664577946161c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/144/meme.jpg)](https://twitter.com/sebastienlorber/status/1653385919460696068)",
+        "en": "[![alt](/emails/issues/144/meme.jpg)](https://twitter.com/sebastienlorber/status/1653385919460696068)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4e2e17c5",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/144/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.168018+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "4193b87ed11bf5b85a5dfe4252917e1bf16b935b050c972d4f56a5914d5ff290",
+    "en": "4193b87ed11bf5b85a5dfe4252917e1bf16b935b050c972d4f56a5914d5ff290"
+  }
+}

@@ -1,0 +1,635 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/167/index.mdx",
+  "source_file_content_hash": "dff75ad3f159a8c5989f1210e35ab1a0f2ade13418549a5254683575e9133aca",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /167\ntitle: \"This Week In React #167: Aria Components, Hydration, Remix, Server Components, useSyncExternalStore, cache, perf, Glow, Unistyles, Expo, :has(), Tailwind, date-fns...\"\nauthors: [slorber, bndkt]\ndate: 12-19-2023\n---",
+      "source_content_hash": "0c30e8f1863b28c54f4f4edbaa9948165d34e8c2c85ef08a7504a7d42a8e30b4",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Once again this week, we have a good mix of articles and releases.",
+      "source_content_hash": "c08450b170956a4100d070c47cd7f34447db1c28bd13f516d71d358618bfae82",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Encore une fois cette semaine, nous avons un bon mélange d'articles et de sorties.",
+        "en": "Encore une fois cette semaine, nous avons un bon mélange d'articles et de versions."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Firefox 121 is out, making [CSS `:has()`](https://twitter.com/stefanjudis/status/1737366970566053927) officially cross-browser supported 🥲",
+      "source_content_hash": "b50fab417ace743f0cf57335c0464365a20b296d8dd3fa1474d4c0dbc13d447a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Firefox 121 est sorti, rendant officiellement [CSS `:has()`](https://twitter.com/stefanjudis/status/1737366970566053927) supporté cross-navigateur 🥲",
+        "en": "Firefox 121 est sorti, rendant [CSS `:has()`](https://twitter.com/stefanjudis/status/1737366970566053927) officiellement supporté par tous les navigateurs 🥲"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "That's the last issue of the year. The newsletter should be back on January 3.",
+      "source_content_hash": "6467f3e850be37c770370b5055947ea86e861ee897a463661ba4ddd51bf6234b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "C'est le dernier numéro de l'année. La newsletter devrait revenir le 3 janvier.",
+        "en": "C'est le dernier numéro de l'année. La newsletter devrait revenir le 3 janvier."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Happy New Year and Merry Christmas everyone, and thank you for reading me throughout the year ❤️️",
+      "source_content_hash": "1e48275b1e033867062b67a58f5f69d0f763149d34e7bc7929815f7b702d59d4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonne année et joyeux Noël à tous, et merci de m'avoir lu tout au long de l'année ❤️️",
+        "en": "Joyeux Noël et Bonne Année à tous, et merci de m'avoir lu tout au long de l'année ❤️️"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_45c63027",
+        "en": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_0adfe0aa",
+        "en": "@@untranslatable_placeholder_0adfe0aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_1941846d",
+        "en": "@@untranslatable_placeholder_1941846d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![FrontendMasters – Complete React.js Learning Path to Senior React Developer](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)",
+      "source_content_hash": "6694a448896b203e9ea63a53fa2c39970f7ea644592e59443cbcdfb354aaa7da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![FrontendMasters – Complete React.js Learning Path to Senior React Developer](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)",
+        "en": "[![FrontendMasters – Complete React.js Learning Path to Senior React Developer](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "**[FrontendMasters – Complete React.js Learning Path to Senior React Developer](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**",
+      "source_content_hash": "096b3d9bc3d7b486e46be5772b2705462e0dc3d5e9d9acc07c30f6f2d93e6ace",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[FrontendMasters – Complete React.js Learning Path to Senior React Developer](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**",
+        "en": "**[FrontendMasters – Parcours d'apprentissage complet React.js pour devenir développeur React senior](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Learn React.js from the ground up to advanced topics like performance, testing, and code quality. Start by building a real-world app in the Complete Introduction to React. Continue with Intermediate React, integrating the most popular tools from the ecosystem. Then learn performance, TypeScript, and even Next.js, the fullstack React framework!",
+      "source_content_hash": "e17c755b1aba7ee0aa6d9a6d04fb708ada63619379555fc2d4d852b7115f5723",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Apprenez React.js depuis les bases jusqu'aux sujets avancés comme les performances, les tests et la qualité du code. Commencez par construire une application réelle dans l'Introduction Complète à React. Poursuivez avec React Intermédiaire, intégrant les outils les plus populaires de l'écosystème. Puis apprenez les performances, TypeScript, et même Next.js, le framework React fullstack !",
+        "en": "Apprenez React.js depuis les bases jusqu'aux sujets avancés comme les performances, les tests et la qualité du code. Commencez par construire une application du monde réel dans l'Introduction Complète à React. Continuez avec React Intermédiaire, en intégrant les outils les plus populaires de l'écosystème. Puis apprenez les performances, TypeScript, et même Next.js, le framework React fullstack !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![**React Aria Components 1.0**](/emails/issues/167/reactaria.jpg)](https://react-spectrum.adobe.com/releases/2023-12-20.html)",
+      "source_content_hash": "ff7885203428fe353faa0281151315b1b45c4a07a79d5846d201a269704abe11",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![**React Aria Components 1.0**](/emails/issues/167/reactaria.jpg)](https://react-spectrum.adobe.com/releases/2023-12-20.html)",
+        "en": "[![**React Aria Components 1.0**](/emails/issues/167/reactaria.jpg)](https://react-spectrum.adobe.com/releases/2023-12-20.html)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[**React Aria Components 1.0**](https://react-spectrum.adobe.com/releases/2023-12-20.html)",
+      "source_content_hash": "61ccb53fd6079a69fb11d69c699508f30fee9ca5e76d40566fb84e1334b3f2e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**React Aria Components 1.0**](https://react-spectrum.adobe.com/releases/2023-12-20.html)",
+        "en": "[**React Aria Components 1.0**](https://react-spectrum.adobe.com/releases/2023-12-20.html)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "Devon just 🐦 [announced](https://twitter.com/devongovett/status/1737516074663362843) the stable release of React Aria Components 1.0. Over 40 components with built-in behavior, adaptive interactions, top-tier accessibility, and internationalization out of the box, ready for your styles.",
+      "source_content_hash": "e2448dabef726e62672dc20733d16cf32a69e0178f76fdee9484211426a4ccd0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Devon vient de 🐦 [annoncer](https://twitter.com/devongovett/status/1737516074663362843) la version stable de React Aria Components 1.0. Plus de 40 composants avec comportement intégré, interactions adaptatives, accessibilité de premier ordre et internationalisation prêts à l'emploi, prêts pour vos styles.",
+        "en": "Devon vient de 🐦 [annoncer](https://twitter.com/devongovett/status/1737516074663362843) la version stable de React Aria Components 1.0. Plus de 40 composants avec comportement intégré, interactions adaptatives, accessibilité de premier ordre et internationalisation prêts à l'emploi, prêts pour vos styles."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[![**React Hydration Overlay**](/emails/issues/167/hydration.jpg)](https://www.builder.io/blog/announcing-react-hydration-overlay)",
+      "source_content_hash": "2c626a6af2573b5953d86d823cb2987bdff2576a4249cb1c21914e5489468dff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![**React Hydration Overlay**](/emails/issues/167/hydration.jpg)](https://www.builder.io/blog/announcing-react-hydration-overlay)",
+        "en": "[![**React Hydration Overlay**](/emails/issues/167/hydration.jpg)](https://www.builder.io/blog/announcing-react-hydration-overlay)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "[**React Hydration Overlay - Easily Squash Hydration Errors**](https://www.builder.io/blog/announcing-react-hydration-overlay)",
+      "source_content_hash": "fc0b6792bb3261d204d51cbfc12371dcbfda5f2614a19d01e44e846d586f88ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**React Hydration Overlay - Éliminer facilement les erreurs d'hydratation**](https://www.builder.io/blog/announcing-react-hydration-overlay)",
+        "en": "[**React Hydration Overlay - Éliminez facilement les erreurs d'hydratation**](https://www.builder.io/blog/announcing-react-hydration-overlay)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "A brand-new project that permits to add a handy error overlay to help debugging hydration errors. For now, this can be added to Next.js sites thanks to a Webpack plugin, but this is a much-needed feature that we all hope to see land in React core.",
+      "source_content_hash": "dcaa6b675ec62dccbaaafc1f38c5db3fcc0b375fc2fbfc8b4b32940b024fa7a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Un tout nouveau projet qui permet d'ajouter un overlay d'erreur pratique pour aider au débogage des erreurs d'hydratation. Pour l'instant, cela peut être ajouté aux sites Next.js grâce à un plugin Webpack, mais c'est une fonctionnalité très attendue que nous espérons tous voir intégrée au cœur de React.",
+        "en": "Un tout nouveau projet permettant d'ajouter une superposition d'erreurs pratique pour déboguer les erreurs d'hydratation. Pour l'instant, cela peut être ajouté aux sites Next.js via un plugin Webpack, mais c'est une fonctionnalité très attendue que nous espérons tous voir intégrée dans le cœur de React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "716da8e8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e3321a43",
+      "source_content": "- 💸 [Take the Developer Nation Survey - A virtual goody bag packed with free data, promo codes for event tickets, courses, tools & platforms is waiting at the end of the survey!](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad3)\n- 👀 [Remix PR - unstable_serverBundles - split your route tree](https://github.com/remix-run/remix/pull/8332)\n- 📖 [React Docs Update](https://github.com/reactwg/server-components/discussions/7): an overview of all the new official docs pages that were recently published on React.dev, including `use`, `cache`, `form` and many other experimental/canary APIs. There's even a \"Coming Soon\" section referencing docs for new [static resource preloading APIs](https://github.com/reactjs/react.dev/pull/6459).\n- 📖 [Updated Next.js testing docs - using App Router and TypeScript](https://nextjs.org/docs/app/building-your-application/testing)\n- 📜 [Concurrent React, External Stores, and Tearing](https://interbolt.org/blog/react-ui-tearing/): An advanced article explaining how React can end up displaying an inconsistent UI (tearing). `useSyncExternalStore` helps to render a consistent UI, but it can also de-optimize your React transitions. See also the [Tearable Dots interactive demo](https://tearabledots.com/).\n- 📜 [Explaining React's cache Function](https://unicorn-utterances.com/posts/explaining-reacts-cache-function): interactive article presenting the experimental React API, and how it differs from `useMemo`. It permits cross-component caching and can be used to preload data.\n- 📜 [How to Get Rid of “Window is Not Defined” and Hydration Mismatch Errors in Next.js](https://medium.com/@eric.burel/how-to-get-rid-of-window-is-not-defined-and-hydration-mismatch-errors-in-next-js-567cc51b4a17): Shares 5 tips to avoid React hydration problems.\n- 📜 [React Tricks: Fast, Fit and Fun](https://molefrog.com/notes/react-tricks): React perf lessons learned from building Wouter, a React router.\n- 📜 [Netlify’s Disingenuous Survey-based Attack on Next.js (and Eleventy, too)](https://www.zachleat.com/web/netlify-and-nextjs/): Eleventy creator's criticism of how Netlify presented their State of Web Dev survey results.\n- 📜 [Upcoming React and React-Native Conferences for 2024](https://thoughtbot.com/blog/upcoming-react-and-react-native-conferences-for-2024)\n- 📜 [What is Reactivity?](https://unicorn-utterances.com/posts/what-is-reactivity)\n- 📜 [What are React Server Actions?](https://unicorn-utterances.com/posts/what-are-react-server-actions)\n- 📜 [What is React Suspense and Async Rendering?](https://unicorn-utterances.com/posts/what-is-react-suspense-and-async-rendering)\n- 📜 [The Complete Guide To React Suspense](https://www.debugbear.com/blog/guide-to-react-suspense)\n- 📜 [Migrating from Jest to Vitest for your React Application](https://dev.to/opensauced/migrating-from-jest-to-vitest-for-your-react-application-1b75)\n- 📜 [Access the Search Params of a Request in Remix](https://sergiodxa.com/tutorials/access-the-search-params-of-a-request-in-remix)\n- 📦 [Remix 2.4.0 with client data](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v240): The first Remix release to land their Client Data RFC, which allows querying data APIs directly from the client (skipping the server).\n- 📦 [React-Glow - Mouse-tracing glow effect](https://github.com/codaworks/react-glow)\n- 📦 [next-export-i18n 3.0 - App Router support](https://github.com/martinkr/next-export-i18n)\n- 🎥 [Ben Holmes - React server components from scratch](https://www.youtube.com/watch?v=MaebEqhZR84): a great video showing how to implement a full RSC setup from scratch, including streaming, bundling, component routing, handling SSR, resolving client references...",
+      "source_content_hash": "536e06a4626bf3740af667be40ad1291f57e9ac530975f8d51362fc3fe4aee59",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Participez à l'enquête Developer Nation - Un sac de goodies virtuels rempli de données gratuites, codes promo pour billets d'événements, cours, outils et plateformes vous attend à la fin !](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad3)\n- 👀 [Remix PR - unstable_serverBundles - segmentation de votre arborescence de routes](https://github.com/remix-run/remix/pull/8332)\n- 📖 [Mise à jour de la documentation React](https://github.com/reactwg/server-components/discussions/7) : aperçu des nouvelles pages de documentation publiées sur React.dev, incluant `use`, `cache`, `form` et d'autres API expérimentales/canaries. Une section \"À venir\" évoque même la documentation des nouvelles [API de préchargement de ressources statiques](https://github.com/reactjs/react.dev/pull/6459).\n- 📖 [Documentation Next.js mise à jour pour les tests - avec App Router et TypeScript](https://nextjs.org/docs/app/building-your-application/testing)\n- 📜 [React Concurrent, Stores Externes et Tearing](https://interbolt.org/blog/react-ui-tearing/) : Article avancé expliquant comment React peut afficher une UI incohérente (tearing). `useSyncExternalStore` permet d'afficher une UI cohérente, mais peut dégrader les transitions React. Voir aussi la [démo interactive Tearable Dots](https://tearabledots.com/).\n- 📜 [Explication de la fonction cache de React](https://unicorn-utterances.com/posts/explaining-reacts-cache-function) : article interactif présentant l'API expérimentale de React et ses différences avec `useMemo`. Permet un cache inter-composants et préchargement de données.\n- 📜 [Comment éliminer les erreurs \"Window is Not Defined\" et d'incompatibilité d'hydratation dans Next.js](https://medium.com/@eric.burel/how-to-get-rid-of-window-is-not-defined-and-hydration-mismatch-errors-in-next-js-567cc51b4a17) : 5 astuces pour éviter les problèmes d'hydratation React.\n- 📜 [Astuces React : Rapide, Léger et Amusant](https://molefrog.com/notes/react-tricks) : Leçons de performance React issues du développement de Wouter, un routeur React.\n- 📜 [L'attaque malhonnête de Netlify contre Next.js via un sondage (et Eleventy aussi)](https://www.zachleat.com/web/netlify-and-nextjs/) : Critique du créateur d'Eleventy sur la présentation des résultats du sondage State of Web Dev par Netlify.\n- 📜 [Conférences React et React-Native à venir en 2024](https://thoughtbot.com/blog/upcoming-react-and-react-native-conferences-for-2024)\n- 📜 [Qu'est-ce que la réactivité ?](https://unicorn-utterances.com/posts/what-is-reactivity)\n- 📜 [Que sont les Actions Serveur React ?](https://unicorn-utterances.com/posts/what-are-react-server-actions)\n- 📜 [Qu'est-ce que React Suspense et le rendu asynchrone ?](https://unicorn-utterances.com/posts/what-is-react-suspense-and-async-rendering)\n- 📜 [Guide complet de React Suspense](https://www.debugbear.com/blog/guide-to-react-suspense)\n- 📜 [Migrer de Jest vers Vitest pour votre application React](https://dev.to/opensauced/migrating-from-jest-to-vitest-for-your-react-application-1b75)\n- 📜 [Accéder aux paramètres de recherche d'une requête dans Remix](https://sergiodxa.com/tutorials/access-the-search-params-of-a-request-in-remix)\n- 📦 [Remix 2.4.0 avec données client](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v240) : Première version implémentant le RFC Client Data, permettant d'interroger des APIs directement depuis le client.\n- 📦 [React-Glow - Effet de lueur suivant la souris](https://github.com/codaworks/react-glow)\n- 📦 [next-export-i18n 3.0 - Support d'App Router](https://github.com/martinkr/next-export-i18n)\n- 🎥 [Ben Holmes - React Server Components from scratch](https://www.youtube.com/watch?v=MaebEqhZR84) : Implémentation complète de RSC incluant streaming, bundling, routage de composants, SSR et références client."
+      },
+      "invalid_translations": {
+        "en": {
+          "translation": "- 💸 [Participez au sondage Developer Nation - Un sac de goodies virtuels rempli de données gratuites, codes promo pour billets d'événements, cours, outils & plateformes vous attend à la fin du sondage !](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad3)\n- 👀 [Remix PR - unstable_serverBundles - segmentez votre arborescence de routes](https://github.com/remix-run/remix/pull/8332)\n- 📖 [Mise à jour de la documentation React](https://github.com/reactwg/server-components/discussions/7) : un aperçu des nouvelles pages de documentation officielles publiées sur React.dev, incluant `use`, `cache`, `form` et bien d'autres API expérimentales/canaries. Il y a même une section \"À venir\" référençant la documentation des nouvelles [API de préchargement de ressources statiques](https://github.com/reactjs/react.dev/pull/6459).\n- 📖 [Documentation de test Next.js mise à jour - utilisation d'App Router et TypeScript](https://nextjs.org/docs/app/building-your-application/testing)\n- 📜 [React Concurrent, Magasins Externes et Déchirement](https://interbolt.org/blog/react-ui-tearing/) : Article avancé expliquant comment React peut afficher une UI incohérente (déchirement). `useSyncExternalStore` aide à afficher une UI cohérente mais peut désoptimiser vos transitions React. Voir aussi la [démo interactive Tearable Dots](https://tearabledots.com/).\n- 📜 [Expliquer la fonction `cache` de React](https://unicorn-utterances.com/posts/explaining-reacts-cache-function) : article interactif présentant l'API expérimentale de React et ses différences avec `useMemo`. Elle permet la mise en cache inter-composants et le préchargement de données.\n- 📜 [Comment éliminer les erreurs \"Window is Not Defined\" et d'incohérence d'hydratation dans Next.js](https://medium.com/@eric.burel/how-to-get-rid-of-window-is-not-defined-and-hydration-mismatch-errors-in-next-js-567cc51b4a17) : Partage 5 astuces pour éviter les problèmes d'hydratation React.\n- 📜 [Astuces React : Rapide, Adapté et Amusant](https://molefrog.com/notes/react-tricks) : Leçons de performance React apprises en construisant Wouter, un routeur React.\n- 📜 [L'attaque malhonnête de Netlify basée sur des sondages contre Next.js (et Eleventy aussi)](https://www.zachleat.com/web/netlify-and-nextjs/) : Critique du créateur d'Eleventy sur la présentation par Netlify des résultats de leur sondage State of Web Dev.\n- 📜 [Conférences React et React-Native à venir en 2024](https://thoughtbot.com/blog/upcoming-react-and-react-native-conferences-for-2024)\n- 📜 [Qu'est-ce que la Réactivité ?](https://unicorn-utterances.com/posts/what-is-reactivity)\n- 📜 [Que sont les Actions Serveur React ?](https://unicorn-utterances.com/posts/what-are-react-server-actions)\n- 📜 [Qu'est-ce que React Suspense et le Rendu Asynchrone ?](https://unicorn-utterances.com/posts/what-is-react-suspense-and-async-rendering)\n- 📜 [Le Guide Complet de React Suspense](https://www.debugbear.com/blog/guide-to-react-suspense)\n- 📜 [Migration de Jest vers Vitest pour votre application React](https://dev.to/opensauced/migrating-from-jest-to-vitest-for-your-react-application-1b75)\n- 📜 [Accéder aux paramètres de recherche d'une requête dans Remix](https://sergiodxa.com/tutorials/access-the-search-params-of-a-request-in-remix)\n- 📦 [Remix 2.4.0 avec données client](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v240) : Première version de Remix implémentant leur RFC Client Data, permettant d'interroger les API de données directement depuis le client (contournant le serveur).\n- 📦 [React-Glow - Effet de lueur traçant la souris](https://github.com/codaworks/react-glow)\n- 📦 [next-export-i18n 3.0 - Prise en charge d'App Router](https://github.com/martinkr/next-export-i18n)\n- 🎥 [Ben Holmes - Composants serveur React from scratch](https://www.youtube.com/watch?v=MaebEqhZR84) : excellente vidéo montrant comment implémenter une configuration RSC complète, incluant streaming, bundling, routage de composants, gestion SSR et résolution de références client...",
+          "reason": "The number of special elements (links, code, variables) differs. Source has 27, translation has 28.",
+          "timestamp": "2025-06-24T15:57:01.430613+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "5f852894",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5f852894",
+        "en": "@@untranslatable_placeholder_5f852894"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aac83236",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "66819c78",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "[![notJust Dev](/emails/issues/167/notjustdev.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)",
+      "source_content_hash": "48a5b37c5ddfc72f82f38455002478f1b0163c90e85649d0e1b4df4b8f5284e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![notJust Dev](/emails/issues/167/notjustdev.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)",
+        "en": "[![notJust Dev](/emails/issues/167/notjustdev.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "**[Are you a React Native developer or on your way to becoming one?](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)**",
+      "source_content_hash": "39d3c86c5702e58b14280d919ffb85ddf1fed23444f62d0362dc2c5bb5e84467",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Êtes-vous un développeur React Native ou en passe de le devenir ?](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)**",
+        "en": "**[Êtes-vous un développeur React Native ou en passe de le devenir ?](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Good news! You’ve found your endless source of skills!",
+      "source_content_hash": "59b9badf808d2e35bfeb89f6fee3ba688fb8f15b44df81a5d1be5a1d2508e7bf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonne nouvelle ! Vous avez trouvé votre source inépuisable de compétences !",
+        "en": "Bonne nouvelle ! Vous avez trouvé votre source inépuisable de compétences !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "🎄 [**Here**](https://www.youtube.com/watch?v=bIQII7gTXDE&list=PLY3ncAV1dSVA9ltOEMgzT8ZTZiccpOUkX) is #**DEVember -** a month-long Marathon of React Native Tutorials",
+      "source_content_hash": "4501e0afcf19f9b31c23c0ad688915a1623924de1f263c3d39679a6913597a3d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🎄 [**Voici**](https://www.youtube.com/watch?v=bIQII7gTXDE&list=PLY3ncAV1dSVA9ltOEMgzT8ZTZiccpOUkX) #**DEVember -** un marathon d'un mois de tutoriels React Native",
+        "en": "🎄 [**Ici**](https://www.youtube.com/watch?v=bIQII7gTXDE&list=PLY3ncAV1dSVA9ltOEMgzT8ZTZiccpOUkX) se trouve #**DEVember** - un marathon d'un mois de tutoriels React Native"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "🚀 [**Here**](https://academy.notjust.dev/?utm_source=newsletter&utm_medium=Course&utm_campaign=thisweekinreact#section-1687709246499) is our **Full Stack Mobile Developer** course with more than 550 real success stories from graduates.",
+      "source_content_hash": "92aa9515ef448b0d283fe0ad0bc71c3793887174f930001fe84e78e3f6d93d18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🚀 [**Voici**](https://academy.notjust.dev/?utm_source=newsletter&utm_medium=Course&utm_campaign=thisweekinreact#section-1687709246499) notre cours **Full Stack Mobile Developer** avec plus de 550 véritables réussites de diplômés.",
+        "en": "🚀 [**Ici**](https://academy.notjust.dev/?utm_source=newsletter&utm_medium=Course&utm_campaign=thisweekinreact#section-1687709246499) se trouve notre cours **Développeur Mobile Full Stack** avec plus de 550 véritables réussites de diplômés."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "💌 [**Here**](https://assets.notjust.dev/profile?utm_source=newsletter&utm_medium=OurNewsletter&utm_campaign=thisweekinreact) is our **Newsletter** with the TOP selection of news and life hacks about the world of React Native development.",
+      "source_content_hash": "bf43bfa609cf622f1be4d06a90ab9ac8c4e2aebbbda1b3742faf8f99763d1bf0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💌 [**Voici**](https://assets.notjust.dev/profile?utm_source=newsletter&utm_medium=OurNewsletter&utm_campaign=thisweekinreact) notre **Newsletter** avec une sélection TOP de nouvelles et astuces sur l'univers du développement React Native.",
+        "en": "💌 [**Ici**](https://assets.notjust.dev/profile?utm_source=newsletter&utm_medium=OurNewsletter&utm_campaign=thisweekinreact) se trouve notre **Newsletter** avec une sélection TOP de nouvelles et d'astuces sur le monde du développement React Native."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "All our content is **Project-Based-Learning** - which means that you will be learning the **skills** and adding **projects** to your portfolio at the same time!",
+      "source_content_hash": "390dce7d040bfe5e0d4e15038d40db471fec6082b183a321aadfcc2edf6c1366",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Tout notre contenu repose sur l'**apprentissage par projet** - vous acquérez ainsi des **compétences** tout en enrichissant votre portfolio !",
+        "en": "Tout notre contenu repose sur l'**apprentissage par projet** - ce qui signifie que vous acquerrez des **compétences** tout en ajoutant des **projets** à votre portfolio simultanément !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "_PS: Subscribe to our_ [**_YouTube channel_**](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)_. Today we are building a_ **_ChatGPT Wrapper_** \\_with Expo Router V3 & API Routes!",
+      "source_content_hash": "eb2c730f86ca7ea3bb5603a378429a35a1e2597f90f7168c5e0e1e83f8b68d67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "_PS : Abonnez-vous à notre_ [**_chaîne YouTube_**](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)_. Aujourd'hui, nous créons un_ **_ChatGPT Wrapper_** _avec Expo Router V3 & API Routes !_",
+        "en": "_PS : Abonnez-vous à notre_ [**_chaîne YouTube_**](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)_. Aujourd'hui, nous construisons un_ **_ChatGPT Wrapper_** \\_avec Expo Router V3 & API Routes !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fc25fa9c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "94145a94",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "[![Unistyles 2.0](/emails/issues/167/unistyles20.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)",
+      "source_content_hash": "6126efbe2ff5ad61c49347ee4494cb1d52c7e76ef42662ba85f0c4e23f40882e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Unistyles 2.0](/emails/issues/167/unistyles20.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)",
+        "en": "[![Unistyles 2.0](/emails/issues/167/unistyles20.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "[**Welcome to Unistyles 2.0!**](https://www.reactnativecrossroads.com/posts/unistyles-2-preview)",
+      "source_content_hash": "dada624ef519a2370ff63184ee69ae45e616ce417b8bed07d75fb73e3830f6c4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Bienvenue dans Unistyles 2.0 !**](https://www.reactnativecrossroads.com/posts/unistyles-2-preview)",
+        "en": "[**Bienvenue dans Unistyles 2.0 !**](https://www.reactnativecrossroads.com/posts/unistyles-2-preview)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "Unistyles is a cross-platform styling library. It is built as a superset of StyleSheet (if you use React Native, you’re probably familiar with StyleSheet.create …) similar to how TypeScript is a superset of JavaScript. First released just three months ago, it has since gained over 500 stars on GitHub and is now approaching its second major version with enhanced TypeScript types, no dependence on React Context anymore, and fresh C++ bindings to boost performance. A very interesting new feature is the addition of plugin support, which could enable some interesting new use cases.",
+      "source_content_hash": "56873c80304fa92a1bd2857a4586504714e5446e067fe06241714086b3282f38",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "en": "Unistyles est une bibliothèque de styles multiplateforme. Elle est conçue comme un sur-ensemble de StyleSheet (si vous utilisez React Native, vous connaissez probablement StyleSheet.create...) similaire à la façon dont TypeScript est un sur-ensemble de JavaScript. Publiée il y a seulement trois mois, elle a déjà gagné plus de 500 étoiles sur GitHub et s'apprête à sortir sa deuxième version majeure avec des types TypeScript améliorés, plus aucune dépendance à React Context, et de nouvelles liaisons C++ pour améliorer les performances. Une nouvelle fonctionnalité très intéressante est l'ajout de la prise en charge des plugins, qui pourrait permettre de nouveaux cas d'utilisation passionnants."
+      },
+      "invalid_translations": {
+        "fr": {
+          "translation": "Unistyles est une bibliothèque de styles multiplateforme conçue comme un sur-ensemble de StyleSheet (familière aux utilisateurs de React Native via `StyleSheet.create`), à l'instar de TypeScript pour JavaScript. Lancée il y a trois mois, elle compte déjà plus de 500 stars sur GitHub et prépare sa deuxième version majeure avec : des types TypeScript améliorés, l'abandon de la dépendance à React Context, et des liaisons C++ pour optimiser les performances. Le support de plugins, nouvelle fonctionnalité prometteuse, ouvre des cas d'utilisation innovants.",
+          "reason": "The number of special elements (links, code, variables) differs. Source has 0, translation has 1.",
+          "timestamp": "2025-06-24T15:50:44.521040+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "3c5a1374",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0465fca",
+      "source_content": "- 💸 [AnimateReactNative - Premium and Custom React Native animations](https://www.animatereactnative.com/?utm_source=thisweekinreact.com)\n- 🐦 [Evan Bacon - \"Expo Router v3 now has full support for popular web libraries like Radix, Tailwind, Shadcn UI, etc.](https://twitter.com/Baconbrix/status/1735011941431595149)\n- 📖 [Expo Guide on How to use the New Architecture](https://docs.expo.dev/guides/new-architecture/): All `expo-*` packages except expo-updates support the new architecture. Support for `expo-updates` is planned for Expo SDK 51.\n- 📜 [Expo 2023 - The year in review](https://expo.dev/changelog/2023/12-20-2023-year-in-review): An overview of everything Expo launched this year, including Expo Orbit, Expo Router, EAS improvements, 3 SDKs, Expo Modules API and much more.\n- 📜 [Xcode 15.1 image is now available on EAS Build](https://expo.dev/changelog/2023/12-19-eas-build-xcode-15.1-image): Xcode 15.1 primarily fixes bugs.\n- 📜 [Optimizing Performance in React-Native: Tips and Techniques](https://thoughtbot.com/blog/optimizing-performance-in-react-native-tips-and-techniques): Tutorial on how to apply memoization, use virtualized lists, optimize images, debounce, optimize bundle size and network requests\n- 📜 [Building AR face masks in React Native](https://blog.logrocket.com/building-ar-face-masks-react-native/): How to load and apply 3D face masks using DeepAR\n- 📜 [Introducing docs.infinite.red — A New Home for Infinite Red’s Documentation - Ignite, Reactotron, RN MLKit, Gluegun](https://shift.infinite.red/introducing-docs-infinite-red-a-new-home-for-infinite-reds-documentation-6f4b25f7a1a4)\n- 📜 [Universal Medusa: The why, when and how of universal e-commerce apps with Medusa.js, Expo and Next.js](https://bidah.hashnode.dev/universal-medusa-the-why-when-and-how-of-universal-e-commerce-apps-with-medusajs-expo-and-nextjs)\n- 📦 [React Native 0.73.1 is out](https://github.com/facebook/react-native/releases/tag/v0.73.1): Adds `enableNetworkInspector` to enable Network panel and CDP handlers in inspector proxy, bumps CLI to 12.3.0\n- 📦 [React Native Windows 0.73.1 is out](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.1): Brings React Native 0.73 to Windows\n- 📦 [Repack 3.7 - 0.73 compat](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%403.7.0)\n- 🎥 [Ignite 9 video overview by Jamon Holmgren](https://youtu.be/QmkMsUYrTlk?si=p9rvLM-EMggZNcft)\n- 🎙️ [Rocket Ship #021 - The React Native IDE with Krzysztof Magiera](https://podcast.galaxies.dev/episodes/021-the-react-native-ide-with-krzysztof-magiera)\n- 🎙️ [React Native Radio 283 - From side-project to acquisition!](https://reactnativeradio.com/episodes/rnr-283-from-side-hustle-to-top-charts-with-simon-reggiani)",
+      "source_content_hash": "9fe99c6bf3f8815f3e469a395eb1ea8a022c80bed08d70affac5bc7769479b14",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [AnimateReactNative - Animations React Native Premium et Personnalisées](https://www.animatereactnative.com/?utm_source=thisweekinreact.com)\n- 🐦 [Evan Bacon - \"Expo Router v3 prend désormais en charge complète les bibliothèques web populaires comme Radix, Tailwind, Shadcn UI, etc.\"](https://twitter.com/Baconbrix/status/1735011941431595149)\n- 📖 [Guide Expo sur l'utilisation de la Nouvelle Architecture](https://docs.expo.dev/guides/new-architecture/): Tous les packages `expo-*` sauf expo-updates prennent en charge la nouvelle architecture. La prise en charge d'`expo-updates` est prévue pour Expo SDK 51.\n- 📜 [Expo 2023 - L'année en revue](https://expo.dev/changelog/2023/12-20-2023-year-in-review): Aperçu de tout ce qu'Expo a lancé cette année, incluant Expo Orbit, Expo Router, améliorations d'EAS, 3 SDK, Expo Modules API et bien plus.\n- 📜 [L'image Xcode 15.1 est désormais disponible sur EAS Build](https://expo.dev/changelog/2023/12-19-eas-build-xcode-15.1-image): Xcode 15.1 corrige principalement des bugs.\n- 📜 [Optimiser les performances dans React-Native : Conseils et techniques](https://thoughtbot.com/blog/optimizing-performance-in-react-native-tips-and-techniques): Tutoriel sur l'application de la mémorisation, l'utilisation de listes virtualisées, l'optimisation des images, le debounce, l'optimisation de la taille du bundle et des requêtes réseau\n- 📜 [Créer des masques faciaux AR dans React Native](https://blog.logrocket.com/building-ar-face-masks-react-native/): Comment charger et appliquer des masques faciaux 3D avec DeepAR\n- 📜 [Présentation de docs.infinite.red — Un nouveau foyer pour la documentation d'Infinite Red - Ignite, Reactotron, RN MLKit, Gluegun](https://shift.infinite.red/introducing-docs-infinite-red-a-new-home-for-infinite-reds-documentation-6f4b25f7a1a4)\n- 📜 [Medusa universel : Le pourquoi, le quand et le comment des applications e-commerce universelles avec Medusa.js, Expo et Next.js](https://bidah.hashnode.dev/universal-medusa-the-why-when-and-how-of-universal-e-commerce-apps-with-medusajs-expo-and-nextjs)\n- 📦 [React Native 0.73.1 est disponible](https://github.com/facebook/react-native/releases/tag/v0.73.1): Ajoute `enableNetworkInspector` pour activer le panneau Réseau et les gestionnaires CDP dans le proxy d'inspection, met à jour la CLI en 12.3.0\n- 📦 [React Native Windows 0.73.1 est disponible](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.1): Apporte React Native 0.73 à Windows\n- 📦 [Repack 3.7 - Compatibilité 0.73](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%403.7.0)\n- 🎥 [Aperçu vidéo d'Ignite 9 par Jamon Holmgren](https://youtu.be/QmkMsUYrTlk?si=p9rvLM-EMggZNcft)\n- 🎙️ [Rocket Ship #021 - L'IDE React Native avec Krzysztof Magiera](https://podcast.galaxies.dev/episodes/021-the-react-native-ide-with-krzysztof-magiera)\n- 🎙️ [React Native Radio 283 - Du projet secondaire à l'acquisition !](https://reactnativeradio.com/episodes/rnr-283-from-side-hustle-to-top-charts-with-simon-reggiani)",
+        "en": "- 💸 [AnimateReactNative - Animations React Native Premium et Personnalisées](https://www.animatereactnative.com/?utm_source=thisweekinreact.com)\n- 🐦 [Evan Bacon - \"Expo Router v3 prend désormais en charge complètement les bibliothèques web populaires comme Radix, Tailwind, Shadcn UI, etc.](https://twitter.com/Baconbrix/status/1735011941431595149)\n- 📖 [Guide Expo sur l'utilisation de la Nouvelle Architecture](https://docs.expo.dev/guides/new-architecture/) : Tous les packages `expo-*` sauf expo-updates prennent en charge la nouvelle architecture. La prise en charge d'`expo-updates` est prévue pour Expo SDK 51.\n- 📜 [Expo 2023 - Bilan de l'année](https://expo.dev/changelog/2023/12-20-2023-year-in-review) : Aperçu de tout ce qu'Expo a lancé cette année, notamment Expo Orbit, Expo Router, les améliorations EAS, 3 SDK, l'API Expo Modules et bien plus encore.\n- 📜 [L'image Xcode 15.1 est désormais disponible sur EAS Build](https://expo.dev/changelog/2023/12-19-eas-build-xcode-15.1-image) : Xcode 15.1 corrige principalement des bogues.\n- 📜 [Optimisation des performances dans React-Native : Astuces et techniques](https://thoughtbot.com/blog/optimizing-performance-in-react-native-tips-and-techniques) : Tutoriel sur l'application de la mémoisation, l'utilisation de listes virtualisées, l'optimisation des images, le debouncing, l'optimisation de la taille du bundle et des requêtes réseau.\n- 📜 [Création de masques faciaux AR dans React Native](https://blog.logrocket.com/building-ar-face-masks-react-native/) : Comment charger et appliquer des masques faciaux 3D avec DeepAR.\n- 📜 [Présentation de docs.infinite.red — Un nouveau foyer pour la documentation d'Infinite Red - Ignite, Reactotron, RN MLKit, Gluegun](https://shift.infinite.red/introducing-docs-infinite-red-a-new-home-for-infinite-reds-documentation-6f4b25f7a1a4)\n- 📜 [Medusa Universelle : Le pourquoi, le quand et le comment des applications e-commerce universelles avec Medusa.js, Expo et Next.js](https://bidah.hashnode.dev/universal-medusa-the-why-when-and-how-of-universal-e-commerce-apps-with-medusajs-expo-and-nextjs)\n- 📦 [React Native 0.73.1 est disponible](https://github.com/facebook/react-native/releases/tag/v0.73.1) : Ajoute `enableNetworkInspector` pour activer le panneau Réseau et les gestionnaires CDP dans le proxy d'inspection, met à jour le CLI en 12.3.0.\n- 📦 [React Native Windows 0.73.1 est disponible](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.1) : Apporte React Native 0.73 à Windows.\n- 📦 [Repack 3.7 - Compatibilité 0.73](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%403.7.0)\n- 🎥 [Aperçu vidéo d'Ignite 9 par Jamon Holmgren](https://youtu.be/QmkMsUYrTlk?si=p9rvLM-EMggZNcft)\n- 🎙️ [Rocket Ship #021 - L'IDE React Native avec Krzysztof Magiera](https://podcast.galaxies.dev/episodes/021-the-react-native-ide-with-krzysztof-magiera)\n- 🎙️ [React Native Radio 283 - Du projet parallèle à l'acquisition !](https://reactnativeradio.com/episodes/rnr-283-from-side-hustle-to-top-charts-with-simon-reggiani)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "- 📖 [tsdocs.dev - browse type documentation for npm packages](https://tsdocs.dev/)\n- 📜 [New to the web platform in December](https://web.dev/blog/web-platform-12-2023)\n- 📜 [The await event horizon in JavaScript](https://frontside.com/blog/2023-12-11-await-event-horizon/)\n- 📦 [Node.js v21.5.0 - parse JSON efficiently, adding a `--trace-promises` flag](https://nodejs.org/en/blog/release/v21.5.0)\n- 📦 [Tailwind CSS v3.4: Dynamic viewport units, `:has()` support, balanced headlines, subgrid, and more](https://tailwindcss.com/blog/tailwindcss-v3-4)\n- 📦 [SvelteKit 2.0 - Vite 5, shallow routing, prepating for Svelte 5](https://svelte.dev/blog/sveltekit-2)\n- 📦 [date-fns 3.0 - TypeScript rewrite, ESM and other date features](https://blog.date-fns.org/v3-is-out/)\n- 📦 [TSDiagram - Create diagrams and plan your code with TypeScript](https://github.com/3rd/tsdiagram)",
+      "source_content_hash": "0dc633b8b062be06283771ef8121d6fd7686d6b6f2135d832f7dfcb5756d9748",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📖 [tsdocs.dev - parcourir la documentation de types pour les packages npm](https://tsdocs.dev/)\n- 📜 [Nouveautés de la plateforme web en décembre](https://web.dev/blog/web-platform-12-2023)\n- 📜 [L'horizon des événements await en JavaScript](https://frontside.com/blog/2023-12-11-await-event-horizon/)\n- 📦 [Node.js v21.5.0 - analyse JSON efficacement, ajout du drapeau `--trace-promises`](https://nodejs.org/en/blog/release/v21.5.0)\n- 📦 [Tailwind CSS v3.4 : unités de viewport dynamiques, prise en charge de `:has()`, titres équilibrés, sous-grille et plus](https://tailwindcss.com/blog/tailwindcss-v3-4)\n- 📦 [SvelteKit 2.0 - Vite 5, routage shallow, préparation pour Svelte 5](https://svelte.dev/blog/sveltekit-2)\n- 📦 [date-fns 3.0 - réécriture TypeScript, ESM et autres fonctionnalités de dates](https://blog.date-fns.org/v3-is-out/)\n- 📦 [TSDiagram - Créez des diagrammes et planifiez votre code avec TypeScript](https://github.com/3rd/tsdiagram)",
+        "en": "- 📖 [tsdocs.dev - parcourir la documentation des types pour les packages npm](https://tsdocs.dev/)\n- 📜 [Nouveautés de la plateforme web en décembre](https://web.dev/blog/web-platform-12-2023)\n- 📜 [L'horizon des événements await en JavaScript](https://frontside.com/blog/2023-12-11-await-event-horizon/)\n- 📦 [Node.js v21.5.0 - analyse efficace du JSON, ajout d'un indicateur `--trace-promises`](https://nodejs.org/en/blog/release/v21.5.0)\n- 📦 [Tailwind CSS v3.4 : unités de fenêtre dynamiques, prise en charge de `:has()`, titres équilibrés, sous-grille et plus](https://tailwindcss.com/blog/tailwindcss-v3-4)\n- 📦 [SvelteKit 2.0 - Vite 5, routage shallow, préparation pour Svelte 5](https://svelte.dev/blog/sveltekit-2)\n- 📦 [date-fns 3.0 - réécriture en TypeScript, ESM et autres fonctionnalités de date](https://blog.date-fns.org/v3-is-out/)\n- 📦 [TSDiagram - Créez des diagrammes et planifiez votre code avec TypeScript](https://github.com/3rd/tsdiagram)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c2ab4c8",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "[![alt](/emails/issues/167/meme.jpg)](https://twitter.com/sebastienlorber/status/1737380479383277636)",
+      "source_content_hash": "8f9b569d88a50e73869f7148ee18d4c6d0bf91aede9f81a93a7ac10722c07be3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/167/meme.jpg)](https://twitter.com/sebastienlorber/status/1737380479383277636)",
+        "en": "[![alt](/emails/issues/167/meme.jpg)](https://twitter.com/sebastienlorber/status/1737380479383277636)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/167/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:57:01.430673+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "dff75ad3f159a8c5989f1210e35ab1a0f2ade13418549a5254683575e9133aca",
+    "en": "dff75ad3f159a8c5989f1210e35ab1a0f2ade13418549a5254683575e9133aca"
+  }
+}

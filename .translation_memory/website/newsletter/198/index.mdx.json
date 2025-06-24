@@ -1,0 +1,613 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/198/index.mdx",
+  "source_file_content_hash": "fb9de69bdce6f3e85133af14d81c0b9f05a45331ed943f17a01221fa535a895a",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /198\ntitle: \"This Week In React #198: React-Email, MUI, Rspack, prerendering, tree-shaking, Next.js, TanStack, Remix, RSC, Code Hike, Astro, CodePush, visionOS, Tophat, Bluetooth, MKKV, Swift, Re.Pack, Reanimated, TypeScript, Node...\"\nauthors: [slorber]\ndate: 08-28-2024\n---",
+      "source_content_hash": "44da0082a1e41b7ae153de4480c93b97c6b3a6d49532cb8d482f7dde1f14dc0b",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Looks like it's the end of summer already, eh?",
+      "source_content_hash": "9e60a04f34b9b0ebd7bc22647e8ad8823a89e13a218c26d1ae6721ebd4bc541d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "On dirait que l'été touche déjà à sa fin, non ?",
+        "en": "On dirait que c'est déjà la fin de l'été, non ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "This week we had many great releases and articles!\\\nI'm particularly excited about React Email, which I'd like to use for an upcoming newsletter email template, and for Rspack that I'm adopting for Docusaurus to replace webpack.",
+      "source_content_hash": "69b2bf1f773d51554e3a5117f18316bba1c021cb3e9c3546e8658f3c8fe58897",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine a été riche en publications et articles passionnants !\\\nJe suis particulièrement enthousiaste concernant React Email, que j'aimerais utiliser pour un futur template de newsletter, ainsi que pour Rspack que j'adapte actuellement à Docusaurus pour remplacer webpack.",
+        "en": "Cette semaine a vu de nombreuses sorties et articles passionnants !\\\nJe suis particulièrement enthousiaste concernant React Email, que j'aimerais utiliser pour un prochain modèle d'email de newsletter, et pour Rspack que j'adopte pour Docusaurus afin de remplacer webpack."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "28a64196",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_28a64196",
+        "en": "@@untranslatable_placeholder_28a64196"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ade2cf6a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0271a665",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_0271a665",
+        "en": "@@untranslatable_placeholder_0271a665"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b7a64917",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_b7a64917",
+        "en": "@@untranslatable_placeholder_b7a64917"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eaf571f0",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "[![WorkOS: Modern Identity Platform for B2B SaaS](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)",
+      "source_content_hash": "c0b1dbfab13a26d659b0b75357c29722c8bdc420a1e6cfdd86452d6f561cceca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![WorkOS : Plateforme d'identité moderne pour SaaS B2B](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)",
+        "en": "[![WorkOS : Plateforme d'identité moderne pour les SaaS B2B](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "**[WorkOS: Modern Identity Platform for B2B SaaS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**",
+      "source_content_hash": "3f130e2628699d1e59ad03c35bd21e1732a8cc78ad365977ba7edf53fc0713fb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[WorkOS : Plateforme d'identité moderne pour SaaS B2B](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**",
+        "en": "**[WorkOS : Plateforme d'identité moderne pour les SaaS B2B](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "With WorkOS you can start selling to enterprises with just a few lines of code.",
+      "source_content_hash": "b304c6229bc7a16552aa18a5b6e5130f61eb1fe96748924778ed6da206a57780",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec WorkOS, vous pouvez commencer à vendre à des entreprises avec seulement quelques lignes de code.",
+        "en": "Avec WorkOS, vous pouvez commencer à vendre à des entreprises avec seulement quelques lignes de code."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "🔐 WorkOS AuthKit supports a complete user management solution along with **SSO, SCIM, RBAC, & FGA**.",
+      "source_content_hash": "6ecc60873f224277bea7d355000306ac78e0a6ca78d50da12498810d2b93e051",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🔐 WorkOS AuthKit propose une solution complète de gestion des utilisateurs incluant **SSO, SCIM, RBAC & FGA**.",
+        "en": "🔐 WorkOS AuthKit propose une solution complète de gestion des utilisateurs avec **SSO, SCIM, RBAC & FGA**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "🏗️ The APIs are **flexible, easy-to-use, and modular**. Pick and choose what you need and integrate in minutes.",
+      "source_content_hash": "f565da176cd3c9e58faeffc99f75d15725a5f1ed0be896bb818ab2a35e1cf3ed",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🏗️ Les API sont **flexibles, faciles à utiliser et modulaires**. Choisissez ce dont vous avez besoin et intégrez en quelques minutes.",
+        "en": "🏗️ Les API sont **flexibles, faciles à utiliser et modulaires**. Choisissez ce dont vous avez besoin et intégrez en quelques minutes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "🎨 Design and user experience are everything. From the quality of our documentation to how your users onboard, we **remove all the unnecessary complexity for developers**.",
+      "source_content_hash": "432e79b81813c3834300519fb5d4ec352a5ed97c6c8ad169b94d11678ed3bb6f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🎨 Le design et l'expérience utilisateur sont primordiaux. De la qualité de notre documentation à l'onboarding de vos utilisateurs, nous **éliminons toute complexité superflue pour les développeurs**.",
+        "en": "🎨 Le design et l'expérience utilisateur sont primordiaux. De la qualité de notre documentation à l'onboarding de vos utilisateurs, nous **éliminons toute complexité inutile pour les développeurs**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "✨ AuthKit is **free up to 1 million MAUs** and includes bot protection, MFA, RBAC, & more.",
+      "source_content_hash": "77f740e50a843abcbc59a1143e7e28d35e51ffb817065545e5ae876ccef2155b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "✨ AuthKit est **gratuit jusqu'à 1 million d'utilisateurs actifs mensuels (MAU)** et inclut la protection contre les bots, MFA, RBAC et plus encore.",
+        "en": "✨ AuthKit est **gratuit jusqu'à 1 million d'utilisateurs actifs mensuels** et inclut la protection contre les bots, MFA, RBAC et plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "🤝 WorkOS is trusted by hundreds of leading startups like **Perplexity**, **Vercel**, & **Webflow**.",
+      "source_content_hash": "43e2ceada1d518743097693e7bee36fd8f5f6a9f9a03dd28878d31ae3a97fba6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🤝 WorkOS est utilisé par des centaines de startups leaders comme **Perplexity**, **Vercel** et **Webflow**.",
+        "en": "🤝 WorkOS est utilisé par des centaines de startups leaders comme **Perplexity**, **Vercel** et **Webflow**."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "[Get started with WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀",
+      "source_content_hash": "a048ec06c22354487477c3859dab0e131452e127b2c80586d1d23493912d186c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Commencez avec WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀",
+        "en": "[Commencez avec WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "94f98fb8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6f930b2f",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[![React Email 3.0](/emails/issues/198/reactemail.jpg)](https://resend.com/blog/react-email-3)",
+      "source_content_hash": "109a48f4503847956612c2a38a96ee78a250d33c789e83addcd5e98f4afbced3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React Email 3.0](/emails/issues/198/reactemail.jpg)](https://resend.com/blog/react-email-3)",
+        "en": "[![React Email 3.0](/emails/issues/198/reactemail.jpg)](https://resend.com/blog/react-email-3)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "**[React Email 3.0](https://resend.com/blog/react-email-3)**",
+      "source_content_hash": "154cfe97c00a5b44e1847f5d7dc64074f3b57daa5ce186b353a14d687c60f5ce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React Email 3.0](https://resend.com/blog/react-email-3)**",
+        "en": "**[React Email 3.0](https://resend.com/blog/react-email-3)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "A new major version of React Email is out. Highlights include:",
+      "source_content_hash": "a1afcdd40c15f2bf5bb67968def417595d0fb9a9961c15215db4182e405eadeb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Une nouvelle version majeure de React Email est disponible. Les points forts incluent :",
+        "en": "Une nouvelle version majeure de React Email est disponible. Les points forts incluent :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "- A brand-new library of 54 components to copy/paste, similar to shadcn/ui\n- 11x rendering performance improvement\n- Support for React 19 RC",
+      "source_content_hash": "1a469a3bb8b0af765bf710eede87aa795ecf50942ca4903c03268c9e9819f84d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Une toute nouvelle bibliothèque de 54 composants prêts à copier/coller, similaire à shadcn/ui\n- Une amélioration des performances de rendu de 11x\n- La prise en charge de React 19 RC",
+        "en": "- Une toute nouvelle bibliothèque de 54 composants à copier/coller, similaire à shadcn/ui\n- Une amélioration des performances de rendu de 11x\n- La prise en charge de React 19 RC"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa7d3f2b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "- 💸 [Reactile – a new approach to React-based web apps. Create your own views. Let it handle your windows and widgets in a single browser tab](https://www.reactile.net/?utm_source=reactnewsletter)\n- 👀 [React Core PR - Schedule prerender after something suspends](https://github.com/facebook/react/pull/30800): Remember the [Suspense behavior change controversy](https://github.com/facebook/react/issues/29898) delaying the React 19.0 stable release? Andrew has a working implementation to add support for pre-rendering siblings in Suspense components, and this is the first of a series of PR. It introduces a new “pre-rendering” concept that should give us the best of both worlds: keep pre-rendering siblings without blocking the Suspense fallback!\n- 👀 [Next.js PR - Apply optimization for unused actions](https://github.com/vercel/next.js/pull/69178): Implements “tree-shaking” of unused server actions found in top-level “use server” files (not inline). This mitigates a security risk reported by the community and avoids exposing endpoints by mistake.\n- 👀 [React DevTools PR - Support Server Components in Tree](https://github.com/facebook/react/pull/30684): Also adds a `[server]` badge.\n- 👀 [React Router PR - Add support for `routes.ts`](https://github.com/remix-run/react-router/pull/11773): Defines a static list of routes, with a possibility to plug in the Remix filesystem convention. The Vite plugin uses this file to create bundles for each route.\n- 📖 [TanStack Start new doc - Server Functions](https://tanstack.com/router/latest/docs/framework/react/start/server-functions): Gives an interesting preview of the upcoming TanStack-Router-based framework. It uses an explicit `createServerFn()` on top of ‘use server’ directives and can give you access to the request context.\n- 📖 [Next.js new doc - ISR with App Router](https://x.com/leeerob/status/1828142382438858994)\n- 🗓️ [React-Brussels](https://www.react.brussels/?utm_source=thisweekinreact) - 🇧🇪 Brussels - 18 October - Get a 10% discount with code “TWIR”. The full line up is now available, take a tour on the conference website !\n- 🗓️ [React Advanced London](https://reactadvanced.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇬🇧 London - 25 & 28 October - [Free remote tickets are available, click here !](https://gitnation.com/badges/react-advanced-conference-2024/jack_herrington?from=This+Week+In+React)\n- 🗓️ [Next.js Conf](https://nextjs.org/conf) - 🇺🇸 San Francisco & Online - October 24\n- 📜 [Error handling and retry with React Server Components](https://edspencer.net/2024/7/16/errors-and-retry-with-react-server-components): To recover from RSC failures, you can present a retry button in your `<ErrorBoundary>`, and call Next.js `router.refresh()` in a transition.\n- 📜 [Everything about Google Translate crashing React (and other web apps)](https://martijnhols.nl/gists/everything-about-google-translate-crashing-react): An interactive blog post that greatly explains how Google Translate works and how it interferes with the DOM and React reconciliation, leading to crashes or text not updating. Unfortunately, there is no real solution.\n- 📜 [Multipart Namespace Components: Addressing RSC and Dot Notation Issues](https://ivicabatinic.from.hr/posts/multipart-namespace-components-addressing-rsc-and-dot-notation-issues): Explains how components like `<Card.Body>` can cause troubles in the RSC world and prevent tree-shaking. Suggests using named ES exports instead of assigning properties to the default root component. Libs like Chakra and Radix do that.\n- 📜 [Implementing React from scratch](https://www.rob.directory/blog/react-from-scratch): Reimplements typing, reconciliation, and hooks. You might discover surprising things along the way, such as the ability to call `useContext` conditionally, or the fact that `useCallback` is similar to `useMemo` returning a callback.\n- 📜 [An SSR Performance Showdown](https://blog.platformatic.dev/an-ssr-performance-showdown): You might have seen this benchmark showing React SSR as being slow. It should be updated with more accurate numbers soon. [Dan Abramov PRs](https://github.com/platformatic/ssr-performance-showdown/pull/8) made React SSR x4 faster by enabling production mode, automatic JSX runtime, and upgrading to React 19 RC (Fast JSX).\n- 📜 [Never Call new Date() Inside Your Components](https://kyleshevlin.com/never-call-new-date-inside-your-components/): To keep your components testable you’d rather avoid initializing state with impure functions like `new Date()` or `Math.random()`, and pass it as props instead. IMHO you can also use React context.\n- 📜 [Consuming a Remix backend from a mobile app or external client](https://www.jacobparis.com/content/remix-external-client): The `?_data` workaround will not work anymore under Remix Single Fetch mode. You’d rather create dedicated API routes for mobile apps and share common code in an abstraction.\n- 📜 [Why is CSS-in-JS slow?](https://playfulprogramming.com/posts/why-is-css-in-js-slow): Greatly illustrated articles explain why traditional CSS-in-JS is slow, and how compiled CSS-in-JS makes it faster by avoiding a waterfall chain of steps for the browsers.\n- 📜 [Interface Segregation Principle in React](https://alexkondov.com/interface-segregation-principle-in-react/): Explains how to apply this SOLID principle when designing component props and encourages you to use composition. Personally, I also like to leverage TypeScript duck typing and helpers like `Pick` narrow prop types.\n- 📜 [Exploring an experimental Micro-Frontend Architecture with Server-Side Rendering using React Server Components](https://dev.to/lazarv/exploring-an-experimental-micro-frontend-architecture-with-server-side-rendering-using-react-server-components-2d0f): An alternative RSC framework introduced an innovative concept of “RSC Delegation”.\n- 📜 [Introducing InformAI - Easy & Useful AI for React apps](https://edspencer.net/2024/8/26/introducing-inform-ai)\n- 📜 [Next.js + Supabase app in production: what would I do differently](https://catjam.fi/articles/next-supabase-what-do-differently)\n- 📦 [Material UI 6.0](https://mui.com/blog/material-ui-v6-is-out/): A great release with many new features and improvements. More importantly, it introduces an opt-in integration with Pigment CSS for static CSS extraction and zero-runtime CSS-in-JS, as a replacement for Emotion, with the ability to support React Server Components and React 19.\n- 📦 [Code Hike 1.0 - Bridges the gap between Markdown to create rich interactive experiences](https://codehike.org/blog/v1)\n- 📦 [Astro 5.0 alphas - stable globalRoutePriority, stable astro:env, CSRF protection by default…](https://github.com/withastro/astro/releases?q=%22astro%405.0.0%22)\n- 🎥 [Theo - React, is it time to move on?](https://www.youtube.com/watch?v=0tvfC9r9lcw)\n- 🎥 [Lee Robinson - Fast ecommerce with optimistic UI and Next.js](https://www.youtube.com/watch?v=Fl1x57e5i4k)",
+      "source_content_hash": "fa650610c5723fb53fa905da9ecbed0d5728c60beef471c9718bf70b78b07955",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_ea0c7bae",
+        "en": "@@untranslatable_placeholder_ea0c7bae"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3ca4b8b0",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_3ca4b8b0",
+        "en": "@@untranslatable_placeholder_3ca4b8b0"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "945bf499",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e33a2404",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "[![Increase Library Adoption with Interactive Tutorials](/emails/issues/198/tutorialkit.jpg)](https://tutorialkit.dev/?utm_source=twir&utm_medium=primary)",
+      "source_content_hash": "06d859ea63c63abaabf407f44dd98e615bcf266356743d53cfc4515d08bfaa63",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Boostez l'adoption de votre bibliothèque avec des tutoriels interactifs](/emails/issues/198/tutorialkit.jpg)](https://tutorialkit.dev/?utm_source=twir&utm_medium=primary)",
+        "en": "[![Augmentez l'adoption de votre bibliothèque avec des tutoriels interactifs](/emails/issues/198/tutorialkit.jpg)](https://tutorialkit.dev/?utm_source=twir&utm_medium=primary)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "**[Increase Library Adoption with Interactive Tutorials](https://tutorialkit.dev/?utm_source=twir&utm_medium=primary)**",
+      "source_content_hash": "3c5a99a89b4fd80af1253432ef267bd13f59836747de2b63283e153ab0e84fd7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Boostez l'adoption de votre bibliothèque avec des tutoriels interactifs](https://tutorialkit.dev/?utm_source=twir&utm_medium=primary)**",
+        "en": "**[Augmentez l'adoption de votre bibliothèque avec des tutoriels interactifs](https://tutorialkit.dev/?utm_source=twir&utm_medium=primary)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Are you looking to increase adoption of your JavaScript framework or library? **TutorialKit by StackBlitz** is a command-line interface (CLI) generator that allows you to create fully interactive code tutorials that engage your users and help them learn quickly.",
+      "source_content_hash": "0ae397a4235737c73f6a27783bf6e782ee75b0b2c3cec048b5cf0ade34303c71",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Souhaitez-vous accroître l'adoption de votre framework ou bibliothèque JavaScript ? **TutorialKit par StackBlitz** est un générateur d'interface en ligne de commande (CLI) qui vous permet de créer des tutoriels de code entièrement interactifs engageant vos utilisateurs et facilitant leur apprentissage rapide.",
+        "en": "Cherchez-vous à accroître l'adoption de votre framework ou bibliothèque JavaScript ? **TutorialKit par StackBlitz** est un générateur d'interface en ligne de commande (CLI) qui vous permet de créer des tutoriels de code entièrement interactifs engageant vos utilisateurs et les aidant à apprendre rapidement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "To get started with TutorialKit, simply run the `npm create tutorial` command to launch a wizard that guides you through the tutorial site generation process. The scaffolded project takes care of the underlying tutorial logic and in-browser code editor, so you can focus on the content.",
+      "source_content_hash": "422ea77f85a01ae22e3b2a55067eb9a20a8a8de2171eb0295d5467313ff5bbde",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pour démarrer avec TutorialKit, exécutez simplement la commande `npm create tutorial` pour lancer un assistant vous guidant tout au long du processus de génération du site de tutoriels. Le projet échafaudé gère la logique sous-jacente des tutoriels et l'éditeur de code dans le navigateur, vous permettant ainsi de vous concentrer sur le contenu.",
+        "en": "Pour commencer avec TutorialKit, exécutez simplement la commande `npm create tutorial` pour lancer un assistant vous guidant dans le processus de génération du site de tutoriels. Le projet échafaudé gère la logique sous-jacente des tutoriels et l'éditeur de code dans le navigateur, vous permettant de vous concentrer sur le contenu."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "Whether you're launching a new framework or updating an existing library, TutorialKit ensures that your users have the best learning experience possible. Don't let your library go unnoticed. [Get started now!](https://tutorialkit.dev/?utm_source=twir&utm_medium=link)",
+      "source_content_hash": "6a8214907f7ad22b286336dea0a73a6ffa35d2840920af51a77b4dd6b87a29f9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Que vous lanciez un nouveau framework ou mettiez à jour une bibliothèque existante, TutorialKit garantit à vos utilisateurs la meilleure expérience d'apprentissage possible. Ne laissez pas votre bibliothèque passer inaperçue. [Commencez dès maintenant !](https://tutorialkit.dev/?utm_source=twir&utm_medium=link)",
+        "en": "Que vous lanciez un nouveau framework ou mettiez à jour une bibliothèque existante, TutorialKit garantit à vos utilisateurs la meilleure expérience d'apprentissage possible. Ne laissez pas votre bibliothèque passer inaperçue. [Commencez dès maintenant !](https://tutorialkit.dev/?utm_source=twir&utm_medium=link)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f414353c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f947c8e4",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "- 💸 [Learn how to create a simple, type-safe PDF viewer with the Apryse SDK and React Native — complete with editing and annotation features.](https://apryse.com/blog/mobile/react-native-typescript-pdf-viewer?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0828)\n- 🐦 [Reanimated 4.0 will only work with Fabric (the new RN architecture)](https://x.com/kzzzf/status/1828461715228422153)\n- 🐦 [React Native WebGPU on visionOS demo](https://x.com/o_kwasniewski/status/1828079146456535224)\n- 👀 [React Native PR - migrate template to Swift](https://github.com/react-native-community/template/pull/45): Exciting to generate new React Native projects with AppDelegate in Swift instead of Objective-C.\n- 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 Wrocław - Sept 5-6. 10% discount with code \"TWIR\". Can’t make it in person? Register for Free Livestream Access! Speakers: Mike Grabowski, Fernando Rojo, Alex Hunt, Eric Vicenti...\n- 📜 [Shopify Tophat - Crafting a Delightful Mobile Developer Experience](https://shopify.engineering/shopify-tophat-mobile-developer-testing): Re-introduces “Tophat”, the macOS menubar app to increase React Native DX, that Shopify finally open-sourced last week. Apparently, this was an inspiration for Expo Orbit.\n- 📜 [Expo - What to do without CodePush](https://expo.dev/blog/what-to-do-without-codepush): Microsoft App Center will shut down soon, including CodePush. This article suggests CodePush alternatives for Over-The-Air updates. It encourages you to adopt EAS Updates by offering a nice side-by-side comparison, but also mentions self-hosted alternatives.\n- 📜 [Introducing Oblivious HTTP support in Swift](https://www.swift.org/blog/introducing-swift-nio-oblivious-http/): New Swift API could be useful for React Native devs looking to increase privacy protection.\n- 📜 [How to build a Bluetooth Low Energy powered Expo app](https://expo.dev/blog/how-to-build-a-bluetooth-low-energy-powered-expo-app): Tutorial using `react-native-ble-plx` with Expo Config plugin.\n- 📜 [How to deploy App Store and Beta versions of React Native iOS app from Azure DevOps pipeline](https://www.nico.fyi/blog/how-to-deploy-multiple-versions-react-native-ios-to-testflight-from-azure-devops-pipeline)\n- 📜 [How Rosebud decided to go native with Expo](https://expo.dev/blog/how-rosebud-decided-to-go-native-with-expo)\n- 📦 [React-Native-MMKV 3.0 - faster key/value storage, full rewrite to pure C++ TurboModule](https://github.com/mrousavy/react-native-mmkv/releases/tag/v3.0.0)\n- 📦 [React Native visionOS 0.75](https://github.com/callstack/react-native-visionos/releases/tag/v0.75.0-visionos)\n- 📦 [Re.Pack 4.3 - RN 0.75, --watch flag](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%404.3.0)\n- 📦 [Belt - Opionated CLI tool for starting a new React Native app](https://thoughtbot.com/blog/introducing-belt-your-new-favorite-tool-for-starting-react-native-apps)\n- 🎥 [Beto - Building an Obscura Pro Camera App with React Native Vision Camera and Expo](https://www.youtube.com/watch?v=xNaGYGDZ2JU)\n- 🎥 [Simon Grimm - When does local-first make sense?](https://www.youtube.com/watch?v=vLRtC53rwCg)\n- 🎥 [The React Native Podcast rebrands to React Universe On Air](https://www.youtube.com/watch?v=Y8VVdfP9QDE): The popular Callstack podcast has rebranded to a new name matching the upcoming React Universe conf next week and for covering a broader React cross-platform scope.\n- 🎙️ [Rocket Ship 48 - MLKit & The React Native Paradox with Gant Laborde](https://share.transistor.fm/s/9b305e63)\n- 🎙️ [RNR 305 - On-device AI in React Native with Gant Laborde](https://www.reactnativeradio.com/episodes/rnr-305-on-device-ai-in-react-native-with-gant-laborde) (yes, him again!)",
+      "source_content_hash": "31756c943046c1ef2a6f4e5993bf7198a2fa0a6adbdfb17e50805441f32a5106",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_38417f80",
+        "en": "@@untranslatable_placeholder_38417f80"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44f53186",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f1c1cd6",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "[![Rspack 1.0](/emails/issues/198/rspack.jpg)](https://rspack.dev/blog/announcing-1-0)",
+      "source_content_hash": "71be0b8d89f5524d25277c041aeac91873ad5a967d5444dd53382987820b0b41",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Rspack 1.0](/emails/issues/198/rspack.jpg)](https://rspack.dev/blog/announcing-1-0)",
+        "en": "[![Rspack 1.0](/emails/issues/198/rspack.jpg)](https://rspack.dev/blog/announcing-1-0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "**[Rspack 1.0](https://rspack.dev/blog/announcing-1-0)**",
+      "source_content_hash": "ea085455971c98cf6636d1fcbd22ad7cbf93b511cde04445ccd478087b632664",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Rspack 1.0](https://rspack.dev/blog/announcing-1-0)**",
+        "en": "**[Rspack 1.0](https://rspack.dev/blog/announcing-1-0)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "Rspack is a very fast Rust bundler that is almost 100% compatible with Webpack, including its entire ecosystem of plugins and loaders. Rspack is well suited to being a great choice for many React apps using Webpack that need to bundle faster today. It’s easy to adopt thanks to its compatibility, but also future-proof with [upcoming first-class React Server Components support](https://rspack.dev/blog/announcing-1-0#react-server-components-support). That’s why I’m [migrating Docusaurus to Rspack](https://x.com/sebastienlorber/status/1828696665135431879) by the way. I’d also recommend to take a look at [Rsdoctor](https://rsdoctor.dev/), it’s a great tool that also works with Webpack and will tell you the bottlenecks of your build.",
+      "source_content_hash": "88e5578bf0ba24a50313580544438cb802ffc29edb208ac1da2db5eb383ec559",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Rspack est un bundler Rust extrêmement rapide, quasi 100% compatible avec Webpack, y compris son écosystème complet de plugins et loaders. Rspack constitue un excellent choix pour les applications React utilisant Webpack qui nécessitent un bundling plus rapide dès aujourd'hui. Son adoption est facilitée par sa compatibilité, tout en étant tourné vers l'avenir avec [le support à venir de React Server Components](https://rspack.dev/blog/announcing-1-0#react-server-components-support). C'est d'ailleurs pourquoi je [migre Docusaurus vers Rspack](https://x.com/sebastienlorber/status/1828696665135431879). Je recommande également de jeter un œil à [Rsdoctor](https://rsdoctor.dev/), un outil performant compatible avec Webpack qui identifie les goulots d'étranglement de votre build.",
+        "en": "Rspack est un bundler Rust extrêmement rapide, presque 100% compatible avec Webpack, y compris tout son écosystème de plugins et de loaders. Rspack constitue un excellent choix pour les applications React utilisant Webpack qui nécessitent un bundling plus rapide aujourd'hui. Son adoption est facilitée par sa compatibilité, tout en étant tourné vers l'avenir avec [une prise en charge native prochaine des React Server Components](https://rspack.dev/blog/announcing-1-0#react-server-components-support). C'est d'ailleurs pourquoi je [migre Docusaurus vers Rspack](https://x.com/sebastienlorber/status/1828696665135431879). Je recommande également de consulter [Rsdoctor](https://rsdoctor.dev/), un outil remarquable qui fonctionne aussi avec Webpack et identifie les goulots d'étranglement de votre build."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8144f6e8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "31bf14c2",
+      "source_content": "- 📜 [JS Dates Are About to Be Fixed](https://docs.timetime.in/blog/js-dates-finally-fixed/)\n- 📜 [How To Create An NPM Package](https://www.totaltypescript.com/how-to-create-an-npm-package)\n- 📜 [How to make your web page faster before it even loads](https://blog.sentry.io/how-to-make-your-web-page-faster-before-it-even-loads/)\n- 📜 [Fix Your Annoying Popups with the CloseWatcher API](https://logaretm.com/blog/fix-your-annoying-popups-with-the-closewatcher-api/)\n- 📜 [Custom Range Slider Using Anchor Positioning & Scroll-Driven Animations](https://frontendmasters.com/blog/custom-range-slider-using-anchor-positioning-scroll-driven-animations/)\n- 📜 [Regexes Got Good: The History And Future Of Regular Expressions In JavaScript](https://www.smashingmagazine.com/2024/08/history-future-regular-expressions-javascript/)\n- 📦 [Node v20.17 - require() sync ESM graphs, matchesGlob()](https://nodejs.org/en/blog/release/v20.17.0)\n- 📦 [Node v22.7.0 - Experimental support for TS Enums/Namespaces, detect modules stable](https://nodejs.org/en/blog/release/v22.7.0)\n- 📦 [Deno 1.46 - The Last 1.x Release](https://deno.com/blog/v1.46)\n- 📦 [Test-server - Utility for creating HTTP and WebSocket servers for testing](https://github.com/epicweb-dev/test-server)\n- 📦 [TypeScript 5.6 RC - Iterator methods, Disallowed Nullish and Truthy Checks…](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6-rc/)\n- 📦 [Turborepo 2.1](https://turbo.build/blog/turbo-2-1-0)",
+      "source_content_hash": "bc9752d8a8e25b831d6d32cd82a8aa9972375b3adc845fca10ebbf167e6d986b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [Les dates JS vont enfin être corrigées](https://docs.timetime.in/blog/js-dates-finally-fixed/)\n- 📜 [Comment créer un package NPM](https://www.totaltypescript.com/how-to-create-an-npm-package)\n- 📜 [Comment accélérer votre page web avant même son chargement](https://blog.sentry.io/how-to-make-your-web-page-faster-before-it-even-loads/)\n- 📜 [Corrigez vos popups énervants avec l'API CloseWatcher](https://logaretm.com/blog/fix-your-annoying-popups-with-the-closewatcher-api/)\n- 📜 [Curseur de plage personnalisé avec positionnement d'ancrage et animations pilotées par le défilement](https://frontendmasters.com/blog/custom-range-slider-using-anchor-positioning-scroll-driven-animations/)\n- 📜 [Les regex sont devenus bons : l'histoire et l'avenir des expressions régulières en JavaScript](https://www.smashingmagazine.com/2024/08/history-future-regular-expressions-javascript/)\n- 📦 [Node v20.17 - require() pour les graphes ESM synchrones, matchesGlob()](https://nodejs.org/en/blog/release/v20.17.0)\n- 📦 [Node v22.7.0 - Support expérimental des TS Enums/Namespaces, détection de modules stable](https://nodejs.org/en/blog/release/v22.7.0)\n- 📦 [Deno 1.46 - La dernière version 1.x](https://deno.com/blog/v1.46)\n- 📦 [Test-server - Utilitaire pour créer des serveurs HTTP et WebSocket de test](https://github.com/epicweb-dev/test-server)\n- 📦 [TypeScript 5.6 RC - Méthodes d'itérateur, vérifications nulles et truthy interdites...](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6-rc/)\n- 📦 [Turborepo 2.1](https://turbo.build/blog/turbo-2-1-0)",
+        "en": "- 📜 [Les dates JS vont bientôt être corrigées](https://docs.timetime.in/blog/js-dates-finally-fixed/)\n- 📜 [Comment créer un package NPM](https://www.totaltypescript.com/how-to-create-an-npm-package)\n- 📜 [Comment accélérer votre page web avant même son chargement](https://blog.sentry.io/how-to-make-your-web-page-faster-before-it-even-loads/)\n- 📜 [Corrigez vos popups agaçantes avec l'API CloseWatcher](https://logaretm.com/blog/fix-your-annoying-popups-with-the-closewatcher-api/)\n- 📜 [Curseur de plage personnalisé utilisant le positionnement d'ancrage et les animations pilotées par le défilement](https://frontendmasters.com/blog/custom-range-slider-using-anchor-positioning-scroll-driven-animations/)\n- 📜 [Les regex s'améliorent : Histoire et avenir des expressions régulières en JavaScript](https://www.smashingmagazine.com/2024/08/history-future-regular-expressions-javascript/)\n- 📦 [Node v20.17 - require() sync ESM graphs, matchesGlob()](https://nodejs.org/en/blog/release/v20.17.0)\n- 📦 [Node v22.7.0 - Support expérimental pour les enums/namespaces TS, détection de modules stable](https://nodejs.org/en/blog/release/v22.7.0)\n- 📦 [Deno 1.46 - La dernière version 1.x](https://deno.com/blog/v1.46)\n- 📦 [Test-server - Utilitaire pour créer des serveurs HTTP et WebSocket pour les tests](https://github.com/epicweb-dev/test-server)\n- 📦 [TypeScript 5.6 RC - Méthodes d'itérateur, vérifications Nullish et Truthy interdites…](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6-rc/)\n- 📦 [Turborepo 2.1](https://turbo.build/blog/turbo-2-1-0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c66a3543",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6b2ca77",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 🤭 Amusant {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dce16ab4",
+      "source_content": "[![alt](/emails/issues/198/meme.jpg)](https://x.com/astrodotbuild/status/1820423005912105149)",
+      "source_content_hash": "aea33a836297a0c108ea89014d68b33f9a37091e232593ff1088e33fdb8d99dc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/198/meme.jpg)](https://x.com/astrodotbuild/status/1820423005912105149)",
+        "en": "[![alt](/emails/issues/198/meme.jpg)](https://x.com/astrodotbuild/status/1820423005912105149)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6f08f877",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus tard ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/198/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.213790+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "fb9de69bdce6f3e85133af14d81c0b9f05a45331ed943f17a01221fa535a895a",
+    "en": "fb9de69bdce6f3e85133af14d81c0b9f05a45331ed943f17a01221fa535a895a"
+  }
+}

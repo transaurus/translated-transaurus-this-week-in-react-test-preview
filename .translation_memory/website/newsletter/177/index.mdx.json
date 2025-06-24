@@ -1,0 +1,625 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/177/index.mdx",
+  "source_file_content_hash": "c3645ae01a39bd9bb955d147e2d5a9be732971b55e913b1fdf622f5acc944adc",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /177\ntitle: \"This Week In React #177: Skia, Pigment, Mist, Storybook, shadcn/ui, Hydration Diff, Geiger, MDXTS, Remotion, WinterJS, Astro, Rolldown, Tailwind, TypeScript, Biome, INP...\"\nauthors: [slorber, bndkt]\ndate: 03-13-2024\n---",
+      "source_content_hash": "cbf669b831b7520d6ee15b1035dc681e9cf47b3248e2421c98c4fd77c98ead7e",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week it's particularly exciting to see React Native Skia reaching 1.0. But we also have many other interesting releases to look at: Pigment, Storybook, Tailwind, Rolldown, MDXTS...",
+      "source_content_hash": "00deb22bb22cba1eddd474dc4990d3379e93c82f8d7a4fd89f475654b804ceb0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, il est particulièrement passionnant de voir React Native Skia atteindre la version 1.0. Mais nous avons également de nombreuses autres sorties intéressantes à découvrir : Pigment, Storybook, Tailwind, Rolldown, MDXTS...",
+        "en": "Cette semaine, l'arrivée de React Native Skia en version 1.0 est particulièrement enthousiasmante. Mais nous avons aussi de nombreuses autres sorties intéressantes à découvrir : Pigment, Storybook, Tailwind, Rolldown, MDXTS..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "There were also some fun ones, such as Mist and Geist. I'm really curious to know what you think of them. Would you use these?",
+      "source_content_hash": "938bc5ba46c0f62af28f104a3ef82628ed342eae24dcf0b6797476269d2bbd08",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Il y a aussi eu des sorties plus ludiques comme Mist et Geist. Je suis très curieux de savoir ce que vous en pensez. Les utiliseriez-vous ?",
+        "en": "Il y a aussi eu des projets plus ludiques comme Mist et Geist. Je suis très curieux de savoir ce que vous en pensez. Les utiliseriez-vous ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "I'm trying to monitor more closely weak signals (PRs, RFCs and tweets), do you find this kind of news valuable?",
+      "source_content_hash": "e75a23524e4bb050ed1f79a0e2691121f508ae70c52cb95ddc4a7c5cb89c36bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'essaie de surveiller de plus près les signaux faibles (PRs, RFCs et tweets). Trouvez-vous ce type d'actualité utile ?",
+        "en": "J'essaie de suivre plus attentivement les signaux faibles (PRs, RFCs et tweets). Trouvez-vous ce type d'actualités utile ?"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![In-App Subscriptions Made Easy](/emails/issues/177/revenuecat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)",
+      "source_content_hash": "7e67171014c2ddc86d457b290be06bd084be9783072904e6acb8a28e833da757",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![In-App Subscriptions Made Easy](/emails/issues/177/revenuecat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)",
+        "en": "[![In-App Subscriptions Made Easy](/emails/issues/177/revenuecat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[In-App Subscriptions Made Easy](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**",
+      "source_content_hash": "239eea7f98fd554bcf37ec20eb090acbfed962da6cfd466230176478351310d5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Abonnements In-App Simplifiés](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**",
+        "en": "**[In-App Subscriptions Made Easy](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "RevenueCat gives you everything you need to monetize, analyze, and grow your app business. Effortlessly control customer access and entitlements, manage data, and experiment with pricing. See why over 30,000 apps trust RevenueCat to power their in-app purchase infrastructure.",
+      "source_content_hash": "c6da2f2f57bdd089a400a54dfd9ef373cf2dfe0902019f728e1cfcb766c3862c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "RevenueCat vous offre tout ce dont vous avez besoin pour monétiser, analyser et développer votre activité d'applications. Contrôlez sans effort l'accès et les droits des clients, gérez les données et testez des tarifs. Découvrez pourquoi plus de 30 000 applications font confiance à RevenueCat pour leur infrastructure d'achats intégrés.",
+        "en": "RevenueCat vous offre tout ce dont vous avez besoin pour monétiser, analyser et développer votre application. Contrôlez facilement l'accès des clients et leurs droits, gérez les données et expérimentez avec les prix. Découvrez pourquoi plus de 30 000 applications font confiance à RevenueCat pour leur infrastructure d'achats intégrés."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[![Pigment CSS](/emails/issues/177/pigment.jpg)](https://github.com/mui/material-ui/tree/master/packages/pigment-css-react)",
+      "source_content_hash": "a15a69ddd6c75c8e4a5b6e47b3f629cf39317b35447700b12839c88e863cf564",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Pigment CSS](/emails/issues/177/pigment.jpg)](https://github.com/mui/material-ui/tree/master/packages/pigment-css-react)",
+        "en": "[![Pigment CSS](/emails/issues/177/pigment.jpg)](https://github.com/mui/material-ui/tree/master/packages/pigment-css-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[**Pigment CSS**](https://github.com/mui/material-ui/tree/master/packages/pigment-css-react)",
+      "source_content_hash": "6ca000e6e163c0854a40065aabcead7c912cde6f3923374ff24e39724cf2523d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Pigment CSS**](https://github.com/mui/material-ui/tree/master/packages/pigment-css-react)",
+        "en": "[**Pigment CSS**](https://github.com/mui/material-ui/tree/master/packages/pigment-css-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "The MUI team is working on Pigment, their own zero-runtime CSS-in-JS to replace Emotion in Material UI v6. The first versions have been published to npm, including a Next.js `withPigment()` plugin. Olivier explains in a 🐦 [tweet](https://twitter.com/olivtassinari/status/1765719897152127315) the motivations to create a new solution, and how it compares to existing ones (Panda, StyleX, Tailwind). Unlike all others, this one will ease the adoption for existing Emotion and Styled-Components users.",
+      "source_content_hash": "441b13a1bce7d17280712d4df5154c86cadbdfe85e0dc19cd933cca79bddcb9b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "L'équipe MUI travaille sur Pigment, leur solution CSS-in-JS sans runtime pour remplacer Emotion dans Material UI v6. Les premières versions ont été publiées sur npm, incluant un plugin Next.js `withPigment()`. Olivier explique dans un 🐦 [tweet](https://twitter.com/olivtassinari/status/1765719897152127315) les motivations derrière cette nouvelle solution et ses différences avec les alternatives existantes (Panda, StyleX, Tailwind). Contrairement aux autres, celle-ci facilitera la migration pour les utilisateurs actuels d'Emotion et Styled-Components.",
+        "en": "L'équipe MUI travaille sur Pigment, leur propre solution CSS-in-JS sans runtime pour remplacer Emotion dans Material UI v6. Les premières versions ont été publiées sur npm, incluant un plugin Next.js `withPigment()`. Olivier explique dans un 🐦 [tweet](https://twitter.com/olivtassinari/status/1765719897152127315) les motivations derrière cette nouvelle solution et comment elle se compare aux alternatives existantes (Panda, StyleX, Tailwind). Contrairement aux autres, celle-ci facilitera l'adoption pour les utilisateurs existants d'Emotion et Styled-Components."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06784e79",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![Storybook 8](/emails/issues/177/storybook.jpg)](https://storybook.js.org/blog/storybook-8/)",
+      "source_content_hash": "bf347f300ff3ec35f3e600b3dad0aba3facef7f6d9bbe98b112c220440cf4680",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Storybook 8](/emails/issues/177/storybook.jpg)](https://storybook.js.org/blog/storybook-8/)",
+        "en": "[![Storybook 8](/emails/issues/177/storybook.jpg)](https://storybook.js.org/blog/storybook-8/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[**Storybook 8**](https://storybook.js.org/blog/storybook-8/)",
+      "source_content_hash": "f9b0654f632b0930e1a80db48128905dac4f64aa608ef78cb58258f5a1fdda32",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Storybook 8**](https://storybook.js.org/blog/storybook-8/)",
+        "en": "[**Storybook 8**](https://storybook.js.org/blog/storybook-8/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "This new major version of Storybook comes with many improvements, including:",
+      "source_content_hash": "441cad71d192a7e5a757350afcc2dd68d4324e812ff27e5e640f7a98cd0f3c3f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette nouvelle version majeure de Storybook apporte de nombreuses améliorations, notamment :",
+        "en": "Cette nouvelle version majeure de Storybook apporte de nombreuses améliorations, notamment :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "- Experimental React Server Components support\n- Faster React control auto-generation (through `react-docgen`)\n- Faster static builds in \"test mode\" (CLI flag `--test`)\n- Built-in visual testing (through Chromatic)\n- Re-architected Vite support, Vitest, Vite 5\n- Improved mobile/desktop UI/UX",
+      "source_content_hash": "13ff0ed2651439c800da740c932bb89246b443b6a80c3f4226672874dcd360b4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Support expérimental des React Server Components\n- Génération automatique plus rapide des contrôles React (via `react-docgen`)\n- Builds statiques accélérés en \"mode test\" (flag CLI `--test`)\n- Tests visuels intégrés (via Chromatic)\n- Support réarchitecturé pour Vite, Vitest et Vite 5\n- UI/UX améliorée pour mobile/desktop",
+        "en": "- Support expérimental des React Server Components\n- Génération automatique accélérée des contrôles React (via `react-docgen`)\n- Builds statiques plus rapides en \"mode test\" (flag CLI `--test`)\n- Tests visuels intégrés (via Chromatic)\n- Support repensé pour Vite, Vitest, Vite 5\n- UI/UX améliorée pour mobile/desktop"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa7d3f2b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "- 💸 [Dive into React PDF viewing with Apryse. Seamless integration with PDF.js for an elevated experience. Learn more from our blog.](https://apryse.com/blog/react/building-react-pdf-viewer-with-pdfjs?utm_source=emailnewsletter3&utm_medium=email)\n- 🐦 [Sebastian Markbåge recommends to use package.json “imports” for dependency injection instead of Context](https://twitter.com/sebmarkbage/status/1765828741500981475)\n- 👀 [React Core PR - Add Diffs to Hydration Warnings](https://github.com/facebook/react/pull/28512): The React team is working on improving the React hydration error messages by displaying a diff. You can get a 🐦 [preview](https://twitter.com/sebastienlorber/status/1765666127558918243) from the unit tests.\n- 👀 [React 19 - its not fine](https://github.com/facebook/react/pull/28524): React 19 currently 🐦 [breaks the “its-fine” package](https://twitter.com/0xca0a/status/1766032105807483261), notably used to bridge React context from one renderer to another. It seems the React team is investigating bringing first-class support for this feature, although it looks like a challenging problem to solve.\n- 👀 [Next.js PR merged - add Lightning CSS](https://github.com/vercel/next.js/pull/61327): A new experimental opt-in CSS loader should be available soon.\n- 👀 [Remix RFC - Action Functions](https://github.com/remix-run/remix/discussions/9020): new RFC suggests to implement React actions functions and reduce indirection/boilerplate. It should be implemented first on the client-side, and later add support for RPC “use server” directive.\n- 👀 [Vercel - Support for Remix + Vite](https://vercel.com/changelog/support-for-remix-with-vite)\n- 📖 [The Framework Field Guide](https://unicorn-utterances.com/collections/framework-field-guide): A polished three-part series of books that teaches you Angular, React and Vue all at once, helping you figure out the differences between frameworks, and including many interactive examples. The first part \"Fundamentals\" is available.\n- 📅 [React Paris - 22 March](https://react.paris/): Next week I'll go to React Paris, and hope to meet some of you there. The conference is sold-out but you can still watch it online with a [-20% discount](https://ti.to/bejs/react-paris/discount/this-week-in-react).\n- 📜 [React Compiler & React 19 - forget about memoization soon?](https://www.developerway.com/posts/react-compiler-soon): Great overview of what we know about the upcoming compiler, its release timeframe and what kind of React code we might get rid of.\n- 📜 [Navigating the future of frontend](https://frontendmastery.com/posts/navigating-the-future-of-frontend/): Well-documented article to better understand the current direction of the frontend ecosystem, including React with its Server Components.\n- 📜 [Component Testing with SafeTest vs. Cypress vs. WebdriverIO](https://bromann.dev/post/safetest-vs-cypress-vs-webdriverio): The newly released Netflix SafeTest framework was recently roasted by competitors in 2 detailed articles, illustrated with React test examples.\n- 📜 [A Next.js package for managing third-party libraries](https://developer.chrome.com/blog/next-third-parties): Presents the work of the Chrome Aurora team, notably the @next/third-parties package that enables you to efficiently load third-party scripts and embeds in a Next.js project\n- 📜 [Implicit Assertions](https://www.epicweb.dev/implicit-assertions): Explains why a React render smoke test remains useful.\n- 📜 [You can now deploy the Remotion Studio](https://www.remotion.dev/blog/deployable-studio)\n- 📜 [How To Transform ReactJS Animation into Video - The Lightweight Version of Remotion](https://medium.com/numatic-ventures/how-to-transform-reactjs-animation-into-video-the-lightweight-version-of-remotion-25706b1e0251?sk=a979e3131d85e8de4f2666b134eea1ec)\n- 📜 [How to safely use dangerouslySetInnerHTML in React](https://deadsimplechat.com/blog/how-to-safely-use-dangerouslysetinnerhtml-in-react/)\n- 📜 [Progressively Enhance Handling Your Forms With React.js Server Actions](https://techhub.iodigital.com/articles/progressively-enhance-handling-your-forms-with-react-js-server-actions)\n- 📜 [Best Practices for Writing Tests with React Testing Library](https://claritydev.net/blog/improving-react-testing-library-tests)\n- 📦 [WinterJS 1.0 - WinterCG-compatible JS runtime built on Rust and SpiderMonkey](https://wasmer.io/posts/winterjs-v1): this new runtime claims to be the fastest, and can now run Next.js. A Hacker News RSC demo is available, and they plan to migrate their own Next.js frontend to it soon.\n- 📦 [React Geiger](https://github.com/kristiandupont/react-geiger): It’s like the audio version of WhyDidYouRender, emitting little audio farts whenever React re-renders. That’s a fun idea, but could actually be useful too.\n- 📦 [MistCSS - Write React components using CSS only](https://typicode.github.io/mistcss/): A crazy JS-from-CSS tool that permits to generate React components directly from CSS files, including Tailwind support 🤪.\n- 📦 [Shadcn/ui - March 2024 Update - New components: Breadcrumb, One-Time-Password Input](https://ui.shadcn.com/docs/changelog)\n- 📦 [MDXTS (Beta) - The Content & Documentation SDK for React](https://www.mdxts.dev/): “It's sort of a mashup of Contentlayer + Storybook”\n- 📦 [Astro 4.5 - Dev Audit UI, View Transition improvements, Multi-CDN, Shiki 1.0…](https://astro.build/blog/astro-450/)\n- 📦 [Remix-Dev-Tools 4.0 - now Vite/ESM-only, new docs site](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v4.0.0)\n- 📦 [BlockNote 0.12 - Block-Based rich text editor - New website and features](https://www.blocknotejs.org/)\n- 📦 [next-cache-toolbar - A toolbar that helps to identify data cache entries](https://github.com/KajSzy/next-cache-toolbar/)\n- 🎥 [Theo - New JS Framework Just Dropped (TanStack Start)](https://www.youtube.com/watch?v=LMTJPKD0lQw)\n- 🎥 [Jack Herrington - Forms Management with Next.js App Router](https://www.pronextjs.dev/tutorials/forms-management-with-next-js-app-router)\n- 🎙️ [This Month in React - February 2024 - React 19 (but more details), Apple tries to kill PWAs](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-02-React-19-but-more-details--Apple-tries-to-kill-PWAs-e2gj9gs)",
+      "source_content_hash": "3d56703de9c4bae18cb6059a6cddbc592f44785f57156a596790d94a34d3a5e2",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_ea0c7bae",
+        "en": "@@untranslatable_placeholder_ea0c7bae"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "db2c1b40",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_db2c1b40",
+        "en": "@@untranslatable_placeholder_db2c1b40"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7a7cb1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e06c002e",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "[![Refine - Open source Retool Alternative](/emails/issues/177/refine.jpg)](https://github.com/refinedev/refine)",
+      "source_content_hash": "2d276c5105b9e40121bca11ed0f2daffe4353daa792c7423bc6d5c7ca04b3d57",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Refine - Open source Retool Alternative](/emails/issues/177/refine.jpg)](https://github.com/refinedev/refine)",
+        "en": "[![Refine - Open source Retool Alternative](/emails/issues/177/refine.jpg)](https://github.com/refinedev/refine)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "**[Refine - Open source Retool Alternative](https://github.com/refinedev/refine)**",
+      "source_content_hash": "152be9996d9f37db0772a908980c48daf4886dd8b8a8dc9ec3481f0755c639ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Refine - Alternative Open Source à Retool](https://github.com/refinedev/refine)**",
+        "en": "**[Refine - Open source Retool Alternative](https://github.com/refinedev/refine)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "The sweet spot between the low code and traditional development for CRUD-heavy applications.",
+      "source_content_hash": "33253582f05660fa85f2ecf13f5f194f0acd33a7c968e2fd0340de64de573e16",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le point d'équilibre entre les solutions low-code et le développement traditionnel pour les applications riches en CRUD.",
+        "en": "Le compromis idéal entre le low-code et le développement traditionnel pour les applications CRUD intensives."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "As an open-source React meta-framework designed for Enterprise applications, [Refine](https://github.com/refinedev/refine) offers a headless solution ideal for tasks like admin panels, dashboards, and internal tools.",
+      "source_content_hash": "eac1fc245a10faf1ca83bfb35326e3ed842a9a889a4a9f18535596257ab8a7ec",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En tant que méta-framework React open source conçu pour les applications d'entreprise, [Refine](https://github.com/refinedev/refine) offre une solution headless idéale pour les tableaux de bord, panneaux d'administration et outils internes.",
+        "en": "En tant que méta-framework React open source conçu pour les applications d'entreprise, [Refine](https://github.com/refinedev/refine) propose une solution headless idéale pour des tâches comme les panneaux d'administration, les tableaux de bord et les outils internes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "While low-code tools may offer initial promise, they often fall short in handling complex scenarios due to scalability issues, limited customization options, and the risk of vendor lock-in.",
+      "source_content_hash": "a7ab4ae0250492c86bebe0cadc94d3c7c6d06825022b7d94dfb2b25d4123016d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bien que les outils low-code puissent sembler prometteurs initialement, ils échouent souvent à gérer des scénarios complexes en raison de problèmes d'évolutivité, d'options de personnalisation limitées et du risque de lock-in fournisseur.",
+        "en": "Bien que les outils low-code puissent offrir des promesses initiales, ils échouent souvent à gérer des scénarios complexes en raison de problèmes d'évolutivité, d'options de personnalisation limitées et du risque de dépendance à un fournisseur."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "Refine enables teams to rapidly develop production-ready apps while maintaining flexibility.",
+      "source_content_hash": "f398068bec29e41d559ca481c7dbd1221cb15b10974d04bd6ebf3766cbbd7b18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Refine permet aux équipes de développer rapidement des applications prêtes pour la production tout en conservant leur flexibilité.",
+        "en": "Refine permet aux équipes de développer rapidement des applications prêtes pour la production tout en conservant une grande flexibilité."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42bfcc5d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8172a0a5",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "This section is now co-authored with [Benedikt](https://twitter.com/bndkt). Feel free to send us your comments by email or on [Twitter](https://twitter.com/bndkt)!",
+      "source_content_hash": "03c93ddbf8c7962f08a28785d1027e43728cac6191b8183c1e16ffcc9503435b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette section est désormais co-écrite avec [Benedikt](https://twitter.com/bndkt). N'hésitez pas à nous envoyer vos commentaires par email ou sur [Twitter](https://twitter.com/bndkt) !",
+        "en": "Cette section est désormais co-écrite avec [Benedikt](https://twitter.com/bndkt). N'hésitez pas à nous envoyer vos commentaires par e-mail ou sur [Twitter](https://twitter.com/bndkt) !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "[![William Candillon - Time to Fly - React Native Skia 1.0](/emails/issues/177/skia.jpg)](https://www.youtube.com/watch?v=eUbj_NxcgKg)",
+      "source_content_hash": "d62f89e6aa390d77f06f9b937672a6ab7d289a7592fc4fe6e41ae985c0d1dfb2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![William Candillon - Time to Fly - React Native Skia 1.0](/emails/issues/177/skia.jpg)](https://www.youtube.com/watch?v=eUbj_NxcgKg)",
+        "en": "[![William Candillon - Time to Fly - React Native Skia 1.0](/emails/issues/177/skia.jpg)](https://www.youtube.com/watch?v=eUbj_NxcgKg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "🎥 [**William Candillon - Time to Fly - React Native Skia 1.0**](https://www.youtube.com/watch?v=eUbj_NxcgKg)",
+      "source_content_hash": "c3151d0ee0494a1afa057039da8ec7776f5259a701f3d5eb64f5797bfef61a34",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🎥 [**William Candillon - Time to Fly - React Native Skia 1.0**](https://www.youtube.com/watch?v=eUbj_NxcgKg)",
+        "en": "🎥 [**William Candillon - Time to Fly - React Native Skia 1.0**](https://www.youtube.com/watch?v=eUbj_NxcgKg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "Exciting major release of React Native Skia, with an inspiring launch video! This library was first released back in 2021 by William Candillon and Christian Falch and has been heavily supported by Shopify for a long time. Now, they’ve finally released a 1.0 and it’s packed with improvements and new features: Thanks to a new Paragraph API, Skia can now render rich text layouts, combining system fonts and custom fonts. Animations Hooks make it easier to build performant animations with the already existing RN Reanimated and Gesture Handler integration. Another highlight for me personally: RN Skia now also supports the web as a platform, via a package called canvaskit-js!",
+      "source_content_hash": "c55dad0917c1cc60c8b6970ae5bfa8ef66f7c4b5cf340277ed586d2cbddf1c4d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Version majeure passionnante de React Native Skia, accompagnée d'une vidéo de lancement inspirante ! Cette bibliothèque a été initialement publiée en 2021 par William Candillon et Christian Falch, et a été fortement soutenue par Shopify pendant longtemps. Ils viennent enfin de publier la version 1.0, riche en améliorations et nouvelles fonctionnalités : Grâce à une nouvelle API Paragraph, Skia peut désormais afficher des mises en page de texte enrichi, combinant polices système et polices personnalisées. Les Animation Hooks facilitent la création d'animations performantes avec l'intégration existante de RN Reanimated et Gesture Handler. Un autre point fort pour moi personnellement : RN Skia prend désormais également en charge le web en tant que plateforme, via un package appelé canvaskit-js !",
+        "en": "Version majeure passionnante de React Native Skia, avec une vidéo de lancement inspirante ! Cette bibliothèque a été initialement publiée en 2021 par William Candillon et Christian Falch et a été fortement soutenue par Shopify pendant longtemps. Maintenant, ils ont enfin publié une version 1.0 et elle regorge d'améliorations et de nouvelles fonctionnalités : Grâce à une nouvelle API de paragraphe, Skia peut désormais afficher des mises en page de texte enrichi, en combinant des polices système et des polices personnalisées. Les Animations Hooks facilitent la création d'animations performantes avec l'intégration déjà existante de RN Reanimated et Gesture Handler. Un autre point fort pour moi personnellement : RN Skia prend désormais également en charge le web en tant que plateforme, via un package appelé canvaskit-js !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40a587f3",
+      "source_content": "- 💸 [React Universe Conf - Meet the first speakers, and maybe become a speaker yourself? Our CFP is open until March 22. Apply today!](https://www.reactuniverseconf.com/?utm_campaign=React_Universe_Conf&utm_source=email&utm_content=This_Week_in_React)\n- 🐦 [React Navigation 7 will support animations for Bottom Tabs](https://x.com/satya164/status/1766404046036844876?s=20): Number of alpha releases has picked up significantly over the last weeks, so I guess the release is coming close?\n- 📖 [React Native Docs - About the New Architecture](https://reactnative.dev/docs/the-new-architecture/landing-page): We keep hearing “New Architecture” everywhere, and it will be the new default with RN 0.75. This new docs section explains what exactly this new architecture encompasses.\n- 📖 [New docs - Drag Drop Content View](https://expo-drag-drop-content-view.vercel.app/): You might’ve seen this library in last week’s newsletter, now it has shiny new docs.\n- 📜 [Learn Once, Hack Everywhere](https://www.callstack.com/blog/learn-once-hack-everywhere): Interesting glimpse into reverse engineering mobile apps.\n- 📜 [The Hidden Gems of React Native](https://www.reactiive.io/articles/the-hidden-gems-of-react-native)\n- 📜 [Expo - Support for FCM HTTP v1 API](https://expo.dev/blog/expo-adds-support-for-fcm-http-v1-api)\n- 📜 [Expo - Launching EAS Updates with Orbit](https://expo.dev/blog/launching-eas-updates-with-orbit)\n- 📜 [The Morrow guide to Expo Router](https://www.themorrow.digital/blog/what-is-the-expo-router)\n- 📜 [The Mini Guide to React Native Optimization for Web3](https://www.callstack.com/blog/the-mini-guide-to-react-native-optimization-for-web3)\n- 📜 [Why you don’t need Flipper in your React Native app … and how to get by without it](https://shift.infinite.red/why-you-dont-need-flipper-in-your-react-native-app-and-how-to-get-by-without-it-3af461955109)\n- 📜 [Consistently Improve App Performance With DMAIC and Reassure](https://www.callstack.com/blog/consistently-improve-app-performance-with-dmaic-and-reassure)\n- 📜 [RevenueCat’s State of Subscription Apps report 2024](https://www.revenuecat.com/state-of-subscription-apps-2024/)\n- 📜 [Fine-tuning React Performance: A Subtle Insider Tip from a TV App](https://www.bam.tech/article/fine-tuning-react-performance-a-subtle-insider-tip-from-a-tv-app)\n- 📦 [react-native 0.74.0-rc.3](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.3)\n- 📦 [react-native 0.73.6](https://github.com/facebook/react-native/releases/tag/v0.73.6)\n- 📦 [faster-image](https://github.com/candlefinance/faster-image): New library for fast image rendering, wraps Nuke on iOS and Coil on Android.\n- 📦 [OP-SQLite 3.0 - Now (optionally) with encryption](https://ospfranco.notion.site/Encryption-58aa9d33736f43e9a53a4f6f9116c36a)\n- 📦 [vision-camera-resize-plugin 2.1.0 - with two new features \"mirror\" and \"rotate\"](https://github.com/mrousavy/vision-camera-resize-plugin/releases/tag/v2.1.0)\n- 📦 [react-native-graph 1.1.0 now uses REA values for updating on the UI Thread](https://github.com/margelo/react-native-graph/releases/tag/v1.1.0)\n- 📦 [react-native-mmkv 2.12.2 contains a bunch of fixes](https://github.com/mrousavy/react-native-mmkv/releases/tag/v2.12.2)\n- 📦 [Obytes Starter - RN starter app now with Expo 50, Expo Router, and NativeWind 4](https://github.com/obytes/react-native-template-obytes/releases/tag/v5.0.0)\n- 🎥 [Simon Grimm - Role Based Navigation in React Native with Expo Router](https://www.youtube.com/watch?v=cMi6Vwo6C2M)\n- 🎙️ [Rocket Ship 33 - NativeWind & React Native Styling with Mark Lawlor](https://podcast.galaxies.dev/episodes/033-nativewind-react-native-styling-with-mark-lawlor)",
+      "source_content_hash": "ce8bd01dd4fdda98f41ce29b8de451032c23bb6b15b3958ef7d08f7ef760decd",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_40a587f3",
+        "en": "@@untranslatable_placeholder_40a587f3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74a488b8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "415dc9ef",
+      "source_content": "- 📜 [The Evolution of Shiki v1.0](https://nuxt.com/blog/shiki-v1)\n- 📜 [The quiet, pervasive devaluation of frontend](https://joshcollinsworth.com/blog/devaluing-frontend)\n- 📜 [Supercharge compression efficiency with shared dictionaries](https://developer.chrome.com/blog/shared-dictionary-compression)\n- 📜 [Interaction to Next Paint is officially a Core Web Vital](https://web.dev/blog/inp-cwv-launch)\n- 📦 [TypeScript 5.4 - NoInfer, groupBy, improved narrowing in closures](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/)\n- 📦 [Biome v1.6 - Partial support for Astro, Svelte and Vue files](https://biomejs.dev/blog/biome-v1-6/)\n- 📦 [Rolldown - Fast Rust bundler for JavaScript with Rollup-compatible API](https://rolldown.rs/)\n- 📦 [Node.js 21.7 - API for styling text](https://nodejs.org/en/blog/release/v21.7.0)\n- 📦 [Tailwind CSS v4 alpha - Oxide engine, CSS-first config](https://tailwindcss.com/blog/tailwindcss-v4-alpha)\n- 📦 [Speedometer 3.0 - The Best Way Yet to Measure Browser Performance](https://webkit.org/blog/15131/speedometer-3-0-the-best-way-yet-to-measure-browser-performance/)",
+      "source_content_hash": "474662faae3ca78a49badd39ce3d7ef6542b77339cbbbd5eff46b2d601152759",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📜 [L'évolution de Shiki v1.0](https://nuxt.com/blog/shiki-v1)\n- 📜 [La dévalorisation silencieuse et persistante du frontend](https://joshcollinsworth.com/blog/devaluing-frontend)\n- 📜 [Optimisez l'efficacité de compression avec des dictionnaires partagés](https://developer.chrome.com/blog/shared-dictionary-compression)\n- 📜 [Interaction to Next Paint est officiellement un Core Web Vital](https://web.dev/blog/inp-cwv-launch)\n- 📦 [TypeScript 5.4 - NoInfer, groupBy, amélioration du narrowing dans les closures](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/)\n- 📦 [Biome v1.6 - Support partiel pour les fichiers Astro, Svelte et Vue](https://biomejs.dev/blog/biome-v1-6/)\n- 📦 [Rolldown - Bundler JavaScript rapide en Rust avec une API compatible Rollup](https://rolldown.rs/)\n- 📦 [Node.js 21.7 - API de style de texte](https://nodejs.org/en/blog/release/v21.7.0)\n- 📦 [Tailwind CSS v4 alpha - Moteur Oxide, configuration CSS-first](https://tailwindcss.com/blog/tailwindcss-v4-alpha)\n- 📦 [Speedometer 3.0 - La meilleure méthode pour mesurer les performances des navigateurs](https://webkit.org/blog/15131/speedometer-3-0-the-best-way-yet-to-measure-browser-performance/)",
+        "en": "- 📜 [L'évolution de Shiki v1.0](https://nuxt.com/blog/shiki-v1)\n- 📜 [La dévaluation silencieuse et omniprésente du frontend](https://joshcollinsworth.com/blog/devaluing-frontend)\n- 📜 [Optimisez l'efficacité de la compression avec des dictionnaires partagés](https://developer.chrome.com/blog/shared-dictionary-compression)\n- 📜 [L'Interaction to Next Paint est officiellement une Core Web Vital](https://web.dev/blog/inp-cwv-launch)\n- 📦 [TypeScript 5.4 - NoInfer, groupBy, amélioration du rétrécissement dans les fermetures](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/)\n- 📦 [Biome v1.6 - Prise en charge partielle des fichiers Astro, Svelte et Vue](https://biomejs.dev/blog/biome-v1-6/)\n- 📦 [Rolldown - Bundler Rust rapide pour JavaScript avec une API compatible Rollup](https://rolldown.rs/)\n- 📦 [Node.js 21.7 - API pour styliser le texte](https://nodejs.org/en/blog/release/v21.7.0)\n- 📦 [Tailwind CSS v4 alpha - Moteur Oxide, configuration CSS-first](https://tailwindcss.com/blog/tailwindcss-v4-alpha)\n- 📦 [Speedometer 3.0 - La meilleure façon de mesurer les performances du navigateur](https://webkit.org/blog/15131/speedometer-3-0-the-best-way-yet-to-measure-browser-performance/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c81952ce",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "657bde08",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Fun {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "[![alt](/emails/issues/177/meme.jpg)](https://twitter.com/jacobmparis/status/1759264032349888799)",
+      "source_content_hash": "c83569edff51f2a929eff4ba7800581259c2fd571059648b60e5c7f2f2860c15",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/177/meme.jpg)](https://twitter.com/jacobmparis/status/1759264032349888799)",
+        "en": "[![alt](/emails/issues/177/meme.jpg)](https://twitter.com/jacobmparis/status/1759264032349888799)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "62d066b0",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À bientôt ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/177/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.177019+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "c3645ae01a39bd9bb955d147e2d5a9be732971b55e913b1fdf622f5acc944adc",
+    "en": "c3645ae01a39bd9bb955d147e2d5a9be732971b55e913b1fdf622f5acc944adc"
+  }
+}

@@ -1,0 +1,165 @@
+---
+slug: /134
+title: "This Week In React #134: Gatsby ➡️ Netlify, React DOM for Native, XState, Flashlight, re-renders, Custom Hooks, Ignite Cookbook..."
+authors: [slorber]
+date: 02-07-2023
+---
+
+Bonjour à tous !
+
+Gatsby vient d'être racheté par Netlify 🤯 !
+
+Il y a aussi une RFC très intéressante à lire si vous êtes passionné par le cross-platform en React-Native.
+
+Sinon, c'est une semaine assez calme. C'est bien tombé, car je n'ai pas beaucoup de temps 😄. Je termine quelques préparatifs pour l'email de la semaine prochaine qui sera un peu différent.
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Partenaire {#sponsor1}
+
+[![refine](/emails/issues/132/refine.png)](https://github.com/refinedev/refine)
+
+[**refine - Framework React headless 100% open-source pour créer des applications CRUD**](https://github.com/refinedev/refine)
+
+Préparez-vous à passer au niveau supérieur ! Nous sommes ravis de lancer un Hackathon Open Source refine
+
+Vous pouvez gagner 1500 $ et des kits swag spéciaux !
+
+Nous sommes ravis de collaborer avec Strapi, Appwrite, Meilisearch et Medusa. Ils sponsorisent le Hackathon refine et les gagnants recevront un kit swag de chacun d'eux !
+
+[Plus d'informations sur le Hackathon](https://s.refine.dev/hackathon).
+
+---
+
+## ⚛️ React {#react}
+
+[![Netlify Acquires Gatsby Inc. to Accelerate Adoption of Composable Web Architectures](/emails/issues/134/netlify-gatsby.jpg)](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)
+
+**[Netlify acquiert Gatsby Inc. pour accélérer l'adoption d'architectures web composables](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)**
+
+C'est la grande nouvelle de la semaine. Gatsby Inc. racheté par Netlify. Le framework est désormais sous l'égide de Netlify aux côtés d'Eleventy et SolidJS et continuera d'évoluer. Les fonctionnalités cloud (y compris le [Valhalla Content Hub](https://www.gatsbyjs.com/products/valhalla-content-hub/)) seront intégrées à l'offre de Netlify. Le nouveau slogan est "architecture composable". Gatsby n'est pas le framework React le plus populaire actuellement, mais je pense que cette acquisition a du sens, notamment pour le hub de contenu et toutes les intégrations CMS sur lesquelles ils ont travaillé. L'offre Gatsby Cloud est plus difficile à adopter que des fonctionnalités payantes optionnelles sur Netlify, et cela est encore plus vrai pour les sites qui n'utilisent pas Gatsby comme framework.
+
+Voir aussi :
+
+- 📜 [Gatsby rejoint Netlify](https://www.gatsbyjs.com/blog/gatsby-is-joining-netlify/)
+- 📜 [Netlify acquiert Gatsby, son concurrent Jamstack en difficulté](https://thenewstack.io/netlify-acquires-gatsby-its-struggling-jamstack-competitor/)
+- 🎥 [Pourquoi quelqu'un achèterait Gatsby ?](https://www.youtube.com/watch?v=5HE6FcOpit8)
+
+---
+
+[![Making state machines global in React](/emails/issues/134/xstate.jpg)](https://stately.ai/blog/making-state-machines-global-in-react)
+
+**[Rendre les machines à états globales dans React](https://stately.ai/blog/making-state-machines-global-in-react)**
+
+Présentation de la nouvelle API `createActorContext` apparaissant dans XState 3.1. Elle permet de faciliter la création de machines à états globales XState, associées à un contexte React. Il est possible d'utiliser un système de sélecteur, ou de fournir une machine à états personnalisée au provider (cela semble pratique pour personnaliser une machine à partir des `props` parentes).
+
+---
+
+- 📜 [React re-rendre récursivement les composants enfants, mais il y a une nuance](https://alexsidorenko.com/blog/react-render-children-prop/) : article visuel intéressant illustrant comment la décomposition des composants et la colocalisation de l'état peuvent éviter des re-rendus inutiles.
+- 📜 [Hooks React personnalisés et quand les utiliser](https://thoughtbot.com/blog/custom-react-hooks) : parfois vous devez créer des hooks personnalisés, même s'ils ne sont pas destinés à être réutilisés. Mais attention : les abstractions inutiles ont aussi un coût.
+- 📜 [Types utilitaires TypeScript à connaître](https://www.builder.io/blog/utility-types) : présente notamment `Awaited` et `ReturnType`, mais aussi `Readonly` dans un contexte React.
+- 📜 [Meilleures pratiques React JS issues de la nouvelle documentation](https://sebastiancarlos.com/react-js-best-practices-from-the-new-docs-1c65570e785d) : lecture intéressante pour ceux qui veulent avoir un aperçu du contenu de la nouvelle doc. Je ne suis pas d'accord avec tous les commentaires, en particulier ne manquez pas le [sous-estimé useSyncExternalStore](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api) 😄.
+- 📜 [WebStorm annonce un support officiel pour Astro](https://astro.build/blog/astro-webstorm-support/)
+- 📜 [Démystifier les frameworks UI et le thèming pour les apps React](https://www.velotio.com/engineering-blog/demystifying-ui-frameworks-and-theming-for-react-apps)
+- 🎥 [Utiliser Svelte à l'intérieur d'une app React](https://www.youtube.com/watch?v=FrusJNycQvk)
+- 👀 [Shopify.com utilise Remix](https://twitter.com/remix_run/status/1622666016135475200)
+- 👀 [Redesign du CLI `create-astro`](https://twitter.com/n_moore/status/1621524815550074880)
+- 📦 [Ionic 7 Beta](https://ionic.io/blog/announcing-the-ionic-7-beta)
+- 📦 [Netlify/Remix-Compute](https://github.com/netlify/remix-compute) : adaptateur Remix + Netlify
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+**[![Build and Run Synthetic Monitoring That Scales](/emails/issues/134/checkly.jpg)](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february)**
+
+**[Construire et exécuter une surveillance synthétique qui évolue](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february)**
+
+**[Checkly](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february)** vous permet de déployer facilement des scripts Playwright pour surveiller les applications, sites web et API, du développement à la production. Validez les flux utilisateurs cruciaux, collectez les traces d'erreurs, capturez des screenshots et enregistrez les métriques de performance pour comprendre comment votre application performe pour les utilisateurs à travers le monde !
+
+Utilisez [Checkly](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february) pour :
+
+- ✅ Exécuter des vérifications programmables d'API et de navigateur pour valider les performances des applications
+- ✅ Recevoir des alertes lorsque les vérifications échouent et intégrer facilement Checkly à votre stack technologique existante
+- ✅ Tirer parti de Playwright et JavaScript pour maximiser vos efforts de surveillance et de test
+
+[Commencez à surveiller vos applications gratuitement](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React DOM pour le Natif (réduire la fragmentation des API)](/emails/issues/134/rn-web.jpg)](https://github.com/necolas/discussions-and-proposals/blob/reduce-fragmentation/proposals/0000-reduce-fragmentation.md)
+
+**[React DOM pour le Natif (réduire la fragmentation des API)](https://github.com/necolas/discussions-and-proposals/blob/reduce-fragmentation/proposals/0000-reduce-fragmentation.md)**
+
+La [RFC](https://github.com/react-native-community/discussions-and-proposals/pull/496) de Nicolas Gallagher (Meta / React-Native-Web) vient d'être mise à jour. L'objectif est d'aligner autant que possible les APIs React-Native sur les APIs Web, incluant des éléments DOM comme `div`, `span` et même `select` ! Le "apprendre une fois, exécuter partout" pourrait progressivement devenir "écrire une fois, exécuter partout". La communauté est assez divisée. Il faudra y réfléchir un peu pour savoir si c'est une bonne idée 😄, et vu l'ampleur de ce projet ambitieux, ce n'est clairement pas pour demain !
+
+---
+
+- 📜 [Comment basculer entre React Native Storybook et votre application](https://dev.to/dannyhw/how-to-swap-between-react-native-storybook-and-your-app-p3o): technique utile pour ceux qui utilisent React-Native Storybook. Personnellement, j'aime avoir une barre de menu en dev avec des boutons pour ouvrir/fermer le Storybook, changer l'environnement API ou autre... Cela fait gagner beaucoup de temps à long terme de créer sa propre expérience développeur.
+- 📦 [Flashlight.dev](https://flashlight.dev/): Flashlight est un nouveau service qui vise à devenir le Lighthouse du mobile, incluant une offre pratique Flashlight Cloud. Projet anciennement nommé [Android-Performance-Profiler](https://twitter.com/almouro/status/1622588283740880897).
+- 📖 [Ignite Cookbook pour React Native](https://ignitecookbook.com/): courtes recettes pas à pas pour React-Native.
+- 🎨 [Démo SolidJS + NativeScript exécutant React-Native-WebView](https://twitter.com/ammarahm_ed/status/1622259723729764354): la promesse d'Open Native en action, intéressant pour la portabilité du code natif.
+- 👀 [La Maison Blanche demande plus d'interopérabilité entre les plateformes mobiles](https://twitter.com/JI/status/1620948253381632000)
+- 🎙️ [React-Native-Radio 258 - Des robots IA codant React Native ?!](https://reactnativeradio.com/episodes/r258-robots-coding-react-native)
+
+---
+
+## 🧑‍💻 Emplois {#jobs}
+
+🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - 160k€+, Berlin/distance**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, réseaux sociaux et newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de bâtir des entreprises évolutives et durables.
+
+🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement à distance, 21-32k PLN net sur B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)
+
+Vous souhaitez travailler sur les applications les plus utilisées au monde ? Voulez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature - montrez-nous ce que vous savez faire !
+
+🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Le salaire est d'environ 160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.
+
+💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 Autres {#other}
+
+- [Mises à jour de la 94ème réunion du TC39](https://dev.to/hemanth/updates-from-the-94th-tc39-meeting-48mb) : liste finalisée des propositions passant à l'étape suivante. Particulièrement enthousiasmant concernant [AsyncContext](https://twitter.com/sebastienlorber/status/1620391460679065601), Change array by Copy et Symbols as WeakMap keys (très attendu pour [Records & Tuples](https://sebastienlorber.com/records-and-tuples-for-react)).
+- [Deno - Le futur (et le passé) du Web est le rendu côté serveur](https://deno.com/blog/the-future-and-past-is-server-side-rendering)
+- [WebKit - Faire avancer l'interopérabilité en 2023](https://webkit.org/blog/13706/interop-2023/) + [Chrome - Interop 2023 : continuer à améliorer le Web pour les développeurs](https://web.dev/interop-2023/)
+- [Comprendre la monomorphie peut améliorer vos performances JavaScript 60x](https://twitter.com/mhevery/status/1622499229813047296)
+- [Accélérer l'écosystème JavaScript - eslint](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-3/)
+- [Google travaille à porter Chromium sur iOS](https://twitter.com/OpenWebAdvocacy/status/1621653519274246144) + [Mozilla travaille à porter Firefox sur iOS](https://twitter.com/OpenWebAdvocacy/status/1622898924775415808)
+- [Le guide du design responsive en 2023 et au-delà](https://ishadeed.com/article/responsive-design/)
+- [Argumentaire commercial pour SvelteKit](https://elliscs.hashnode.dev/a-business-case-for-sveltekit)
+- [Node.js 19.6](https://twitter.com/ruyadorno/status/1621186886470361093)
+- [Ada 1.0 - Nouveau parseur d'URL Node.js](https://twitter.com/nodejs/status/1622707746716917761)
+- [Vite 4.1](https://twitter.com/vite_js/status/1621149774627094535)
+- [N'utilisez pas les types de retour, sauf si...](https://www.youtube.com/watch?v=nwSe95uFN8E)
+- [Les dangers des types de retour en TypeScript](https://www.youtube.com/watch?v=I6V2FkW1ozQ)
+- [Apprendre les images - Cours approfondi sur les images pour le Web](https://web.dev/learn/images/)
+- [Forker Chrome pour le rendre dans un terminal](https://fathy.fr/carbonyl)
+
+---
+
+## 🤭 Fun {#fun}
+
+Sauvage 😅 pourquoi est-il si méchant !
+
+[![alt](/emails/issues/134/meme.png)](https://twitter.com/ThePrimeagen/status/1620827474681827333)
+
+À bientôt ! 👋

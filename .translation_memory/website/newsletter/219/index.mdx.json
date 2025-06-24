@@ -1,0 +1,517 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/219/index.mdx",
+  "source_file_content_hash": "888d1dda9b132ac1d19146c001eba08671ec75a5853b6abbd3f23d3ab26dfec0",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /219\ntitle: \"This Week In React #219: CRA, Next.js, Remix, Tremor, SaaS-Starter, Local-First, JSDom, 2n8, RN-Windows, OTA, Polygen, Audio API, Debugging, Shopify, Bottom Tabs, Reanimated, Tailwind, Standard Schema, TypeScript...\"\nauthors: [slorber]\ndate: 01-29-2025\n---",
+      "source_content_hash": "66fbf491402825013ec57bc94ec1bbcd98b14a13b6eb0eaa349dc1bd3f461788",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "It's been a fairly quiet week compared with the previous one, and I couldn't pick any headliner!",
+      "source_content_hash": "f419460006dc546e802d2766bb68bc43a46029153325caf6f6c6cfaeffec35af",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ce fut une semaine assez calme comparée à la précédente, et je n'ai pas pu identifier d'actualité majeure !",
+        "en": "Cette semaine a été assez calme comparée à la précédente, et je n'ai pas pu identifier de titre principal !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The most important news for our ecosystem is probably the official deprecation of Create React App. There's also Tailwind v4 and Standard Schema v1.",
+      "source_content_hash": "5dd2f8a96c0cc41de992ab0916172eeb0ce78b1d6039f3974d1ca62987e0804f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La nouvelle la plus importante pour notre écosystème est probablement la dépréciation officielle de Create React App. Il y a aussi Tailwind v4 et Standard Schema v1.",
+        "en": "La nouvelle la plus importante pour notre écosystème est probablement la dépréciation officielle de Create React App. Il y a aussi Tailwind v4 et Standard Schema v1."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "I'm quite excited by the upcoming TypeScript 5.8 `erasableSyntaxOnly` flag that forbids usage of features such as enums. This is the path toward making your app compatible Node.js built-in support, and maybe browsers too in the future.",
+      "source_content_hash": "0f5dd59a2816219bfa11edeceef2f5cd8a21e0ab454900cde1ef75d9ab569f34",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Je suis assez enthousiaste concernant le futur drapeau `erasableSyntaxOnly` de TypeScript 5.8 qui interdira l'usage de fonctionnalités comme les enums. C'est la voie vers la compatibilité de votre application avec le support natif de Node.js, et peut-être aussi des navigateurs à l'avenir.",
+        "en": "Je suis assez enthousiaste concernant le futur drapeau `erasableSyntaxOnly` de TypeScript 5.8 qui interdit l'utilisation de fonctionnalités comme les enums. C'est la voie vers la compatibilité de votre application avec le support natif de Node.js, et peut-être aussi des navigateurs à l'avenir."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Check our partner conf [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 03 April - Speakers announced! Ryan Dahl, creator of Node.js, Sarah Drasner, Director of Engineering at Google and Wes Bos, co-host of Syntax.fm podcast. Get 15% off tickets with code \"TWIR”.",
+      "source_content_hash": "2fbb855ecd6870c127359b55ddae8b12d7b6732b656d0fef2bc436cced14eba9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Découvrez notre conférence partenaire [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 3 avril - Les intervenants annoncés ! Ryan Dahl, créateur de Node.js, Sarah Drasner, Directrice de l'ingénierie chez Google et Wes Bos, co-animateur du podcast Syntax.fm. Bénéficiez de 15% de réduction avec le code \"TWIR\".",
+        "en": "Consultez notre conférence partenaire [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 03 avril - Les intervenants annoncés ! Ryan Dahl, créateur de Node.js, Sarah Drasner, Directrice de l'ingénierie chez Google et Wes Bos, co-animateur du podcast Syntax.fm. Obtenez 15% de réduction avec le code \"TWIR\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_45c63027",
+        "en": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_92f4ea84",
+        "en": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_5dfba1c3",
+        "en": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Convex: The Reactive Database for Web Developers](/emails/issues/219/convexbanner.jpg)](https://convex.link/thisweek)",
+      "source_content_hash": "fcce7a48bcd3cd3896bca883b793a34c5952a292d407d2e60efa94f1e8785478",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Convex : La base de données réactive pour les développeurs web](/emails/issues/219/convexbanner.jpg)](https://convex.link/thisweek)",
+        "en": "[![alt](/emails/issues/219/convexbanner.jpg)](https://convex.link/thisweek)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Convex: The Reactive Database for Web Developers](https://convex.link/thisweek)**",
+      "source_content_hash": "cf268ebe2b3d2b5af0ac1c91c1b02035d008860d4b3b7e73f2a855fbdce424bd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Convex : La base de données réactive pour les développeurs web](https://convex.link/thisweek)**",
+        "en": "**[Convex : La base de données réactive pour les développeurs web](https://convex.link/thisweek)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Convex is the all-in-one platform that gives you everything you need to build, launch, and scale a production-ready backend.",
+      "source_content_hash": "83e0d66e3492c80a700554355f601b234d432f7ebd3ae0333a73a081e632c6eb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Convex est la plateforme tout-en-un qui vous offre tout ce dont vous avez besoin pour construire, lancer et faire évoluer un backend prêt pour la production.",
+        "en": "Convex est la plateforme tout-en-un qui vous donne tout ce dont vous avez besoin pour créer, lancer et dimensionner un backend prêt pour la production."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Leverage TypeScript to write [queries as code](https://docs.convex.dev/functions/query-functions/) that are automatically cached and realtime, with an acid-compliant [reactive database](https://docs.convex.dev/database).",
+      "source_content_hash": "b45b708a2d2425de26c55e7d4915191f24ba74bf99bf1eb1d7bb5929f97daaa9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Tirez parti de TypeScript pour écrire des [requêtes comme du code](https://docs.convex.dev/functions/query-functions/) automatiquement mises en cache et en temps réel, avec une [base de données réactive](https://docs.convex.dev/database) conforme ACID.",
+        "en": "Tirez parti de TypeScript pour écrire des [requêtes sous forme de code](https://docs.convex.dev/functions/query-functions/) automatiquement mises en cache et en temps réel, avec une [base de données réactive](https://docs.convex.dev/database) conforme ACID."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "And that’s just the beginning. With Convex, you can:",
+      "source_content_hash": "6cde80d7e7f63df8bc62324cf0d40c07146774a00de388434787366d409a424a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Et ce n'est que le début. Avec Convex, vous pouvez :",
+        "en": "Et ce n'est que le début. Avec Convex, vous pouvez :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "- Easily schedule functions and write cron jobs\n- Set up file storage\n- Write efficient server functions\n- Generate your backend with your favorite AI coding tool\n- And so much more…",
+      "source_content_hash": "4d17e65c590fee1c3144a4de4f536b06621e844e75e04097f570712b1657c532",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Planifier facilement des fonctions et écrire des tâches cron\n- Configurer le stockage de fichiers\n- Écrire des fonctions serveur efficaces\n- Générer votre backend avec votre outil d'IA de codage préféré\n- Et bien plus encore...",
+        "en": "- Planifier facilement des fonctions et écrire des tâches cron\n- Configurer le stockage de fichiers\n- Écrire des fonctions serveur efficaces\n- Générer votre backend avec votre outil d'IA de codage préféré\n- Et bien plus encore…"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[Try a Quickstart today](https://docs.convex.dev/quickstarts)",
+      "source_content_hash": "bae3099e9bb4fe5dd167b12ba995e805841457f7c924697770516e6cf10e140a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Essayez un guide de démarrage rapide dès aujourd'hui](https://docs.convex.dev/quickstarts)",
+        "en": "[Essayez un démarrage rapide dès aujourd'hui](https://docs.convex.dev/quickstarts)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06784e79",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "- 💸 [Clerk - Build session-based authentication with React and Express](https://go.clerk.com/HRqsMAP)\n- 📣 [Vercel acquires Tremor to invest in open source React components](https://vercel.com/blog/vercel-acquires-tremor): The premium library to build dashboards is now free and open source.\n- 👀 [CRA breaks with React 19, and CRA needs deprecation notices](https://github.com/facebook/create-react-app/issues/17004): After various community discussions, Create-React-App has been officially deprecated\\!\n- 👀 [Next.js PR \\- New standalone `experimental.useCache` flag for usage without `dynamicIO`](https://github.com/vercel/next.js/pull/75240)\n- 👀 [Next.js PR \\- New `experimental.slowModuleDetection` flag to report modules that takes a long time to compile](https://github.com/vercel/next.js/pull/75368)\n- 👀 [Remix PR \\- Support for client side `routerContext`](https://github.com/remix-run/react-router/pull/12515)\n- 🐦 [React Three Fiber v9 in RC, supporting React 19 and Three.js WebGPURenderer](https://x.com/0xca0a/status/1882441755368563114)\n- 📜 [DexieJs: Reactive local state in React](https://www.typeonce.dev/article/dexie-js-reactive-local-state-in-react): You might not need a React state management library, the browser provides a built-in reactive IndexedDB. This great article shows how to wire everything (live queries and actions) using modern React 19 features.\n- 📜 [Next.js: an honest review](https://beeps.dev/blog/nextjs-an-honest-review): An interesting and quite pragmatic list of pros/cons of using Next.js in production apps.\n- 📜 [Why I Won’t Use JSDOM](https://www.epicweb.dev/why-i-won-t-use-jsdom): Recommends testing frontend components in an actual browser, using Vitest Browser Mode and Playwright, instead of a polyfilled Node.js env like JSDOM. The React integration is similar to using React Testing Library.\n- 📜 [UX++ and DX++ with Sync Engines](https://www.carlassmann.com/blog/improve-ux-dx-with-sync-engines): Explains why it’s difficult to invalidate queries and implement optimistic UI with React Query, then propose to use a local-first model with Replicache.\n- 📜 [Moving on from React, a Year Later](https://kellysutton.com/2025/01/18/moving-on-from-react-a-year-later.html): Feedback on removing React from a server-rendered Rails application, considering JS a handicap.\n- 📜 [Server-side React that renders as png, pdf, or interactive webapp](https://swizec.com/blog/server-side-react-that-renders-as-png-pdf-or-interactive-webapp/): Using a search parameter to return a PDF or png in a TanStack Start app.\n- 📜 [How to handle multiple concurrent submissions in Remix](https://tigerabrodi.blog/how-to-handle-multiple-concurrent-submissions-in-remix)\n- 📜 [Why are React Server Components actually beneficial?](https://tigerabrodi.blog/why-is-react-server-components-actually-beneficial-full-history)\n- 📜 [Picking a state management library for a React app used by millions (and why we went with MobX)](https://www.photoroom.com/inside-photoroom/picking-a-state-management-library-why-we-went-with-mobx-)\n- 📜 [useAsyncFetcher: How to implement an asynchronous fetch function in a Remix app](https://www.cerbos.dev/blog/useasyncfetcher-implement-asynchronous-fetch-in-remix)\n- 📜 [Intro to Formik](https://playfulprogramming.com/posts/formik-intro)\n- 📜 [How to build a CMS with React-Admin](https://marmelab.com/blog/2025/01/24/how-to-build-a-cms-with-react-admin.html)\n- 📦 [Vercel Next.js SaaS Starter](https://github.com/nextjs/saas-starter): Initially created by Lee Robinson, it’s now an official package maintained by Vercel. You probably don’t need to buy a paid boilerplate.\n- 📦 [2n8 \\- Class-based React store](https://2n8.wstone.uk/): An interesting blend between MobX and Zustand.\n- 🎥 [Theo \\- Why is every React site so slow?](https://www.youtube.com/watch?v=INLq9RPAYUw)\n- 🎥 [Youssef Benlemlih \\- TanStack Router Full Course](https://www.youtube.com/watch?v=fpXOT8SNTpY)",
+      "source_content_hash": "c2e3611936b83f73e81a9c23121f4620e9b4fe4cc0d8e17da9d87fe4d30b83cf",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_40251870",
+        "en": "@@untranslatable_placeholder_40251870"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "68209f5c",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_68209f5c",
+        "en": "@@untranslatable_placeholder_68209f5c"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fe5fa73a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98355e36",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "[![Rethink your React apps' UX with Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)",
+      "source_content_hash": "804609ec6328a8526330cfc5adad935be6f942c9f6bea83ca6b8e73fae6136fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Repensez l'UX de vos applications React avec Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)",
+        "en": "[![alt](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "**[Rethink your React apps' UX with Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**",
+      "source_content_hash": "f7b9f2aa5aa41fe9981609c34e5443470e14f2d217842e63a917f26b83c5fe9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Repensez l'UX de vos applications React avec Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**",
+        "en": "**[Repensez l'UX de vos applications React avec Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "Reactile is an UI/UX turnkey framework which features an out-of-the-box, intuitive tiling display with workspaces. It encourages parallel workloads for large web solutions within a single browser tab. Implement your own view containers, widgets and logic using React and let Reactile handle the display for you.",
+      "source_content_hash": "df73b3ca217de2b962e5f9e6cd04001a923739eb32f5ef2c9f7e34d980f99a23",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Reactile est un framework clé en main d'UI/UX proposant un affichage par tuiles intuitif prêt à l'emploi avec des espaces de travail. Il encourage les charges de travail parallèles pour les grandes solutions web au sein d'un seul onglet de navigateur. Implémentez vos propres conteneurs de vue, widgets et logique en utilisant React et laissez Reactile gérer l'affichage pour vous.",
+        "en": "Reactile est un framework clé en main pour l'UI/UX qui propose un affichage en tuiles intuitif et prêt à l'emploi avec des espaces de travail. Il encourage les charges de travail parallèles pour les grandes solutions web dans un seul onglet de navigateur. Implémentez vos propres conteneurs de vue, widgets et logique en utilisant React et laissez Reactile gérer l'affichage pour vous."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "On top of that, Reactile also offers:",
+      "source_content_hash": "c71c565a82c8c75ce60dc4fa8883e82871fe706100891d309b282c994e5f5106",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En plus, Reactile offre également :",
+        "en": "En plus, Reactile offre également :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "887c863e",
+      "source_content": "- A promise-based persistence mechanism which permits a uniform workflow across time and on multiple devices.\n- The possibility to use nested tabs for your tiles.\n- A simplified global search mechanism.\n- CSS @container based responsiveness.\n- And much more.",
+      "source_content_hash": "42dde46b8aa1c52356856bf6d8e4d69ce853e6976dee7b06d748d400f975600d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Un mécanisme de persistance basé sur les promesses permettant un flux de travail uniforme dans le temps et sur plusieurs appareils.\n- La possibilité d'utiliser des onglets imbriqués pour vos tuiles.\n- Un mécanisme de recherche globale simplifié.\n- Une réactivité basée sur les CSS @container.\n- Et bien plus encore.",
+        "en": "- Un mécanisme de persistance basé sur les promesses permettant un flux de travail uniforme dans le temps et sur plusieurs appareils.\n- La possibilité d'utiliser des onglets imbriqués pour vos tuiles.\n- Un mécanisme de recherche globale simplifié.\n- Une réactivité basée sur CSS @container.\n- Et bien plus encore."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "Version 2 coming out soon. Get started with your unique 30-day free trial. Learn more about it on reactile.net.",
+      "source_content_hash": "67c06d71c49f49d579b37262a90ca57cbc84ba8a53365d4b68cfd595d40324e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La version 2 sort bientôt. Commencez avec votre essai gratuit unique de 30 jours. Apprenez-en plus sur reactile.net.",
+        "en": "La version 2 sort bientôt. Commencez avec votre essai gratuit unique de 30 jours. Apprenez-en plus sur reactile.net."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[Reactile - The new React UI management system](https://www.reactile.net/price?utm_source=ThisweekinReact)",
+      "source_content_hash": "ab4c3876551f7d8cd91e51fc877e8f8c6ce9cc36641b0f39ded9e98c4305f5b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[Reactile - Le nouveau système de gestion d'interface React](https://www.reactile.net/price?utm_source=ThisweekinReact)",
+        "en": "[Reactile - Le nouveau système de gestion d'interface utilisateur pour React](https://www.reactile.net/price?utm_source=ThisweekinReact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ab3df6e6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c19de48a",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2d15468d",
+      "source_content": "- 💸 [PostHog - How Swype uses mobile session replays for testing and user insights](https://dub.link/twir-jan29)\n- 📣 [React Native 0.79 \\- Removal of Remote JS Debugging via Chrome](https://github.com/react-native-community/discussions-and-proposals/discussions/872)\n- 🐦 [Fernando Rojo highlights “newer versions of React Native have a less expensive `<Text>` component”](https://x.com/FernandoTheRojo/status/1882111985661415556): Starting at v0.75+ (not sure), text components with simple string children are much faster.\n- 🐦 [React Native at Shopify \\- CTO’s perspective](https://x.com/jmwind/status/1882071857098080653): Former Shopify CTO shared a long tweet that completes nicely the recent Shopify blog post. The decision to adopt RN took years. They took a bet on technology and community based on potential, not on the current state.\n- 🐦 [iOS App Clip in Expo Router demo](https://x.com/Baconbrix/status/1882141919574360421): This runs native iOS app screens simply by clicking a link, without even installing from the App Store.\n- 🐦 [Multiple windows on iPadOS demo](https://x.com/o_kwasniewski/status/1882388170643272130): A new “React Native Factory” feature unlocks new brownfield and multi-window possibilities.\n- 📜 [How to build beautiful React Native bottom tabs](https://expo.dev/blog/how-to-build-beautiful-react-native-bottom-tabs)\n- 📜 [Introducing React Native Audio API](https://blog.swmansion.com/hello-react-native-audio-api-bb0f10347211)\n- 📜 [Over the Air (OTA) updates with Zephyr](https://zephyr-cloud.io/blog/ota-with-zephyr): Gives the possibility for super apps to update their submodules independently.\n- 📦 [Polygen \\- Run WebAssembly modules in your apps, statically, without interpreting](https://github.com/callstackincubator/polygen): This Callstack package in preview converts Wasm to C and then call it through JSI to deliver great performance.\n- 📦 [Hot Updater \\- A self-hostable OTA update solution for React Native](https://github.com/gronxb/hot-updater): An interesting alternative to CodePush. Plugins let you decide where to host the JS bundles (S3, Supabase, PostgreSQL).\n- 📦 [React Native Windows 0.77](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0), and [MacOS 0.77](https://github.com/microsoft/react-native-macos/pull/2333) should come soon\n- 📦 [React Native 0.74.7](https://github.com/facebook/react-native/releases/tag/v0.74.7): End-of-life release, 0.74.x is now out of support.\n- 📦 [React Native CSS Animation presets for Reanimated 4](https://github.com/software-mansion-labs/react-native-css-animations)\n- 🎥 [Fernando Rojo \\- I built a React Native bottom sheet...with SwiftUI?](https://www.youtube.com/watch?v=TFEPTgGJ2iU)\n- 🎥 [Jack Herrington \\- Micro-Frontends in React-Native\\! Game Changer for Mobile Apps](https://www.youtube.com/watch?v=Lp-5wSsd5Do)\n- 🎥 [Simon Grimm \\- React Native Animations just got way easier (Reanimated v4)](https://www.youtube.com/watch?v=QgCLSR9EbDc)\n- 🎙️ [React Universe On Air 47 \\- Mobile Microfrontends With Zephyr Cloud and Re.Pack](https://www.youtube.com/watch?v=9fHpEngW2lU)\n- 🎙️ [RNR 319 \\- Shopify goes full throttle on React Native with Mustafa Ali](https://www.reactnativeradio.com/episodes/rnr-319-shopify-goes-full-throttle-on-react-native-with-mustafa-ali)\n- 🎙️ [PodRocket \\- Universal React with Mo Khazali](https://podrocket.logrocket.com/universal-react-mo-khazali)\n- 🎙️ [Rocket Ship 59 \\- Expo Router, RSC & DOM Components with Evan Bacon](https://share.transistor.fm/s/df636b75)",
+      "source_content_hash": "a067a85c4da49c699e96fc3f7103456f6c05c7a2f07b58a8d09a2a95d36f5233",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [PostHog - Comment Swype utilise les enregistrements de session mobile pour les tests et les insights utilisateur](https://dub.link/twir-jan29)\n- 📣 [React Native 0.79 - Suppression du débogage JS distant via Chrome](https://github.com/react-native-community/discussions-and-proposals/discussions/872)\n- 🐦 [Fernando Rojo souligne que \"les versions plus récentes de React Native ont un composant `<Text>` moins coûteux\"](https://x.com/FernandoTheRojo/status/1882111985661415556) : À partir de la v0.75+ (date incertaine), les composants texte avec des enfants chaîne simples sont beaucoup plus rapides.\n- 🐦 [React Native chez Shopify - Perspective du CTO](https://x.com/jmwind/status/1882071857098080653) : L'ancien CTO de Shopify a partagé un long tweet complétant bien le récent article de blog de Shopify. La décision d'adopter RN a pris des années. Ils ont parié sur la technologie et la communauté basée sur le potentiel, pas l'état actuel.\n- 🐦 [Démo de clip d'application iOS dans Expo Router](https://x.com/Baconbrix/status/1882141919574360421) : Exécute des écrans natifs iOS simplement en cliquant sur un lien, sans même installer depuis l'App Store.\n- 🐦 [Démo multi-fenêtres sur iPadOS](https://x.com/o_kwasniewski/status/1882388170643272130) : Une nouvelle fonctionnalité \"React Native Factory\" déverrouille de nouvelles possibilités brownfield et multi-fenêtres.\n- 📜 [Comment construire de beaux onglets inférieurs React Native](https://expo.dev/blog/how-to-build-beautiful-react-native-bottom-tabs)\n- 📜 [Présentation de l'API Audio React Native](https://blog.swmansion.com/hello-react-native-audio-api-bb0f10347211)\n- 📜 [Mises à jour Over the Air (OTA) avec Zephyr](https://zephyr-cloud.io/blog/ota-with-zephyr) : Permet aux super apps de mettre à jour leurs sous-modules indépendamment.\n- 📦 [Polygen - Exécutez des modules WebAssembly dans vos apps, statiquement, sans interprétation](https://github.com/callstackincubator/polygen) : Ce package Callstack en préversion convertit Wasm en C puis l'appelle via JSI pour une excellente performance.\n- 📦 [Hot Updater - Solution OTA auto-hébergeable pour React Native](https://github.com/gronxb/hot-updater) : Alternative intéressante à CodePush. Des plugins vous laissent décider où héberger les bundles JS (S3, Supabase, PostgreSQL).\n- 📦 [React Native Windows 0.77](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0), et [MacOS 0.77](https://github.com/microsoft/react-native-macos/pull/2333) devrait arriver bientôt\n- 📦 [React Native 0.74.7](https://github.com/facebook/react-native/releases/tag/v0.74.7) : Version en fin de vie, la branche 0.74.x n'est plus supportée.\n- 📦 [Préréglages d'animation CSS React Native pour Reanimated 4](https://github.com/software-mansion-labs/react-native-css-animations)\n- 🎥 [Fernando Rojo - J'ai construit un bottom sheet React Native... avec SwiftUI ?](https://www.youtube.com/watch?v=TFEPTgGJ2iU)\n- 🎥 [Jack Herrington - Micro-Frontends en React-Native ! Changement de jeu pour les apps mobiles](https://www.youtube.com/watch?v=Lp-5wSsd5Do)\n- 🎥 [Simon Grimm - Les animations React Native viennent de devenir bien plus simples (Reanimated v4)](https://www.youtube.com/watch?v=QgCLSR9EbDc)\n- 🎙️ [React Universe On Air 47 - Microfrontends mobiles avec Zephyr Cloud et Re.Pack](https://www.youtube.com/watch?v=9fHpEngW2lU)\n- 🎙️ [RNR 319 - Shopify passe à fond sur React Native avec Mustafa Ali](https://www.reactnativeradio.com/episodes/rnr-319-shopify-goes-full-throttle-on-react-native-with-mustafa-ali)\n- 🎙️ [PodRocket - React Universel avec Mo Khazali](https://podrocket.logrocket.com/universal-react-mo-khazali)\n- 🎙️ [Rocket Ship 59 - Expo Router, RSC & Composants DOM avec Evan Bacon](https://share.transistor.fm/s/df636b75)",
+        "en": "- 💸 [PostHog - Comment Swype utilise les enregistrements de sessions mobiles pour les tests et les insights utilisateur](https://dub.link/twir-jan29)\n- 📣 [React Native 0.79 - Suppression du débogage JS à distance via Chrome](https://github.com/react-native-community/discussions-and-proposals/discussions/872)\n- 🐦 [Fernando Rojo souligne « les versions plus récentes de React Native ont un composant `<Text>` moins coûteux »](https://x.com/FernandoTheRojo/status/1882111985661415556) : À partir de la v0.75+ (non confirmé), les composants texte avec des enfants chaînes simples sont beaucoup plus rapides.\n- 🐦 [React Native chez Shopify - Perspective du CTO](https://x.com/jmwind/status/1882071857098080653) : L'ancien CTO de Shopify a partagé un long tweet complétant le récent article de blog. La décision d'adopter RN a pris des années. Ils ont parié sur la technologie et la communauté basée sur le potentiel, pas l'état actuel.\n- 🐦 [Démo iOS App Clip dans Expo Router](https://x.com/Baconbrix/status/1882141919574360421) : Exécute des écrans d'applications iOS natives en cliquant simplement sur un lien, sans installation depuis l'App Store.\n- 🐦 [Démo fenêtres multiples sur iPadOS](https://x.com/o_kwasniewski/status/1882388170643272130) : La nouvelle fonctionnalité « React Native Factory » déverrouille de nouvelles possibilités brownfield et multi-fenêtres.\n- 📜 [Comment créer de beaux onglets inférieurs dans React Native](https://expo.dev/blog/how-to-build-beautiful-react-native-bottom-tabs)\n- 📜 [Présentation de l'API Audio React Native](https://blog.swmansion.com/hello-react-native-audio-api-bb0f10347211)\n- 📜 [Mises à jour Over-The-Air (OTA) avec Zephyr](https://zephyr-cloud.io/blog/ota-with-zephyr) : Permet aux super apps de mettre à jour leurs sous-modules indépendamment.\n- 📦 [Polygen - Exécutez des modules WebAssembly dans vos apps, statiquement sans interprétation](https://github.com/callstackincubator/polygen) : Ce package Callstack en préversion convertit Wasm en C puis l'appelle via JSI pour d'excellentes performances.\n- 📦 [Hot Updater - Solution OTA auto-hébergeable pour React Native](https://github.com/gronxb/hot-updater) : Alternative intéressante à CodePush. Les plugins vous permettent de choisir où héberger les bundles JS (S3, Supabase, PostgreSQL).\n- 📦 [React Native Windows 0.77](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0), et [MacOS 0.77](https://github.com/microsoft/react-native-macos/pull/2333) devrait arriver bientôt\n- 📦 [React Native 0.74.7](https://github.com/facebook/react-native/releases/tag/v0.74.7) : Version en fin de vie, la branche 0.74.x n'est plus supportée.\n- 📦 [Présélections d'animations CSS React Native pour Reanimated 4](https://github.com/software-mansion-labs/react-native-css-animations)\n- 🎥 [Fernando Rojo - J'ai construit un bottom sheet React Native... avec SwiftUI ?](https://www.youtube.com/watch?v=TFEPTgGJ2iU)\n- 🎥 [Jack Herrington - Micro-Frontends dans React Native ! Changement majeur pour les apps mobiles](https://www.youtube.com/watch?v=Lp-5wSsd5Do)\n- 🎥 [Simon Grimm - Les animations React Native viennent de devenir bien plus faciles (Reanimated v4)](https://www.youtube.com/watch?v=QgCLSR9EbDc)\n- 🎙️ [React Universe On Air 47 - Microfrontends mobiles avec Zephyr Cloud et Re.Pack](https://www.youtube.com/watch?v=9fHpEngW2lU)\n- 🎙️ [RNR 319 - Shopify passe à plein régime sur React Native avec Mustafa Ali](https://www.reactnativeradio.com/episodes/rnr-319-shopify-goes-full-throttle-on-react-native-with-mustafa-ali)\n- 🎙️ [PodRocket - React Universel avec Mo Khazali](https://podrocket.logrocket.com/universal-react-mo-khazali)\n- 🎙️ [Rocket Ship 59 - Expo Router, RSC & Composants DOM avec Evan Bacon](https://share.transistor.fm/s/df636b75)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf53fc07",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "47516512",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres sujets {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "683a33d9",
+      "source_content": "- 👀 [TypeScript 5.8 Iteration Plan · `erasableSyntaxOnly`, require(esm), dependent return type narrowing](https://github.com/microsoft/TypeScript/issues/61023)\n- 📜 [TypeScript 5.8 Ships \\--erasableSyntaxOnly To Disable Enums](https://www.totaltypescript.com/erasable-syntax-only)\n- 📜 [Container Queries Unleashed](https://www.joshwcomeau.com/css/container-queries-unleashed/)\n- 📜 [JavaScript Temporal is coming](https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/)\n- 📜 [Avoiding \\`any\\`s with Linting and TypeScript](https://typescript-eslint.io/blog/avoiding-anys/)\n- 📜 [The modern way to write JavaScript servers](https://marvinh.dev/blog/modern-way-to-write-javascript-servers/)\n- 📦 [Tailwind CSS 4.0 \\- High-performance engine, CSS-first config, modern CSS, Vite plugin](https://tailwindcss.com/blog/tailwindcss-v4)\n- 📦 [Standard Schema 1.0 \\- Common interface for TypeScript validation libraries](https://standardschema.dev/)",
+      "source_content_hash": "ba24573dcd6eb588ffe0ee716adfb66d109c4a785db56e9d2b7104becca42788",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Plan d'itération TypeScript 5.8 · `erasableSyntaxOnly`, require(esm), rétrécissement de type dépendant](https://github.com/microsoft/TypeScript/issues/61023)\n- 📜 [TypeScript 5.8 sort --erasableSyntaxOnly pour désactiver les enums](https://www.totaltypescript.com/erasable-syntax-only)\n- 📜 [Requêtes de conteneurs déchaînées](https://www.joshwcomeau.com/css/container-queries-unleashed/)\n- 📜 [JavaScript Temporal arrive](https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/)\n- 📜 [Éviter les \\`any\\` avec le linting et TypeScript](https://typescript-eslint.io/blog/avoiding-anys/)\n- 📜 [La manière moderne d'écrire des serveurs JavaScript](https://marvinh.dev/blog/modern-way-to-write-javascript-servers/)\n- 📦 [Tailwind CSS 4.0 - Moteur haute performance, configuration CSS-first, CSS moderne, plugin Vite](https://tailwindcss.com/blog/tailwindcss-v4)\n- 📦 [Standard Schema 1.0 - Interface commune pour les bibliothèques de validation TypeScript](https://standardschema.dev/)",
+        "en": "- 👀 [Plan d'itération de TypeScript 5.8 · `erasableSyntaxOnly`, require(esm), affinement des types de retour dépendants](https://github.com/microsoft/TypeScript/issues/61023)\n- 📜 [TypeScript 5.8 propose \\--erasableSyntaxOnly pour désactiver les enums](https://www.totaltypescript.com/erasable-syntax-only)\n- 📜 [Requêtes de conteneur déchaînées](https://www.joshwcomeau.com/css/container-queries-unleashed/)\n- 📜 [JavaScript Temporal arrive](https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/)\n- 📜 [Éviter les \\`any\\` avec le linting et TypeScript](https://typescript-eslint.io/blog/avoiding-anys/)\n- 📜 [La méthode moderne pour écrire des serveurs JavaScript](https://marvinh.dev/blog/modern-way-to-write-javascript-servers/)\n- 📦 [Tailwind CSS 4.0 \\- Moteur haute performance, configuration CSS-first, CSS moderne, plugin Vite](https://tailwindcss.com/blog/tailwindcss-v4)\n- 📦 [Standard Schema 1.0 \\- Interface commune pour les bibliothèques de validation TypeScript](https://standardschema.dev/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6868a9f",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Détente {#fun}",
+        "en": "## 🤭 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "[![alt](/emails/issues/219/meme.jpg)](https://x.com/dcorbacho/status/1655443576195538946)",
+      "source_content_hash": "471f812536d7c9529c3ae5bec4950ae3654bc863a42b0ed18cd2545fbb8db80a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/219/meme.jpg)](https://x.com/dcorbacho/status/1655443576195538946)",
+        "en": "[![alt](/emails/issues/219/meme.jpg)](https://x.com/dcorbacho/status/1655443576195538946)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "[![alt](/emails/issues/219/meme2.jpg)](https://x.com/thekitze/status/1883985586194706537)",
+      "source_content_hash": "5860422b49db4268770c232bef2bedc585ac8ba2b317b78ffebcbf8ab052d4da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/219/meme2.jpg)](https://x.com/thekitze/status/1883985586194706537)",
+        "en": "[![alt](/emails/issues/219/meme2.jpg)](https://x.com/thekitze/status/1883985586194706537)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À bientôt ! 👋",
+        "en": "À plus tard ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/219/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.221256+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "888d1dda9b132ac1d19146c001eba08671ec75a5853b6abbd3f23d3ab26dfec0",
+    "en": "888d1dda9b132ac1d19146c001eba08671ec75a5853b6abbd3f23d3ab26dfec0"
+  }
+}

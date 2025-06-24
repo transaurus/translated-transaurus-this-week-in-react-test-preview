@@ -1,0 +1,164 @@
+---
+slug: /158
+title: "This Week In React #158: Astro, Server Components, VisionCamera, Owner Tree, Props Drilling, Next.js, Remix, Chakra, TypeScript, Skia, Biome, CSS, Node.js..."
+authors: [slorber]
+date: 09-06-2023
+---
+
+Salut à tous !
+
+Nous couvrons 2 semaines d'actualités, dont 2 grandes versions : Astro 3.0 et VisionCamera 3.0. Il y a également eu beaucoup d'articles intéressants, j'ai donc dû faire une sélection !
+
+Bun 1.0 sort ce soir. Je suis curieux de voir ce qu'ils ont prévu. L'ayant testé sur des tests unitaires en remplacement de Jest, c'est vraiment très rapide.
+
+La conférence React-Native EU démarre aujourd'hui. J'ai repéré [🐦 des présentations très intéressantes](https://twitter.com/sebastienlorber/status/1696837186677530813), en particulier celle sur Static Hermes.
+
+Pour ceux qui veulent visiter l'Italie, rendez-vous à [reactjsday](https://2023.reactjsday.it/) à Vérone le 27 octobre. La conférence offre [-10% sur les billets](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) et 2 billets en ligne/distance à nos lecteurs, que je donne aux 2 premières personnes qui répondent à cet e-mail et les réclament.
+
+J'oublie souvent de le mentionner ici, mais je "construis en public". Vous pouvez consulter mon [dernier rapport mensuel Indie Hackers](https://www.indiehackers.com/product/french-react-newsletter) et [🐦 plus de détails sur Twitter](https://twitter.com/sebastienlorber/status/1699065823959421109).
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)
+
+**[FrontendMasters – Parcours d'apprentissage complet React.js pour devenir développeur React senior](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**
+
+Apprenez React.js depuis les bases jusqu'aux sujets avancés comme les performances, les tests et la qualité du code. Commencez par construire une application réelle dans l'Introduction Complète à React. Continuez avec React Intermédiaire, en intégrant les outils les plus populaires de l'écosystème. Puis apprenez les performances, TypeScript, et même Next.js, le framework React fullstack !
+
+---
+
+## ⚛️ React {#react}
+
+[![Astro 3.0](/emails/issues/158/astro3.jpg)](https://astro.build/blog/astro-3/)
+
+[**Astro 3.0**](https://astro.build/blog/astro-3/)
+
+Cette nouvelle version d'Astro innove notamment par l'utilisation de la nouvelle API View Transition, et la capacité à naviguer de manière fluide et animée d'une page à l'autre, tout en préservant l'état des composants affichés. Cela réduit le besoin d'une SPA dans de nombreux cas d'usage.
+
+Autres améliorations notables :
+
+- Optimisation d'image stable
+- Performances de rendu plus rapides : les composants Astro rendent 30 à 75 % plus vite.
+- Améliorations SSR pour Serverless : De nouvelles façons de se connecter à votre plateforme d'hébergement.
+- Améliorations HMR pour JSX : Prise en charge de Fast Refresh pour React et Preact.
+- Sortie de build optimisée : HTML plus propre et plus performant.
+
+---
+
+[![Making Sense of React Server Components](/emails/issues/158/rsc.jpg)](https://www.joshwcomeau.com/react/server-components/)
+
+[**Comprendre les React Server Components**](https://www.joshwcomeau.com/react/server-components/)
+
+Josh Comeau revient avec une excellente introduction aux React Server Components, tirée de son [cours](https://www.joyofreact.com/) qui devrait être disponible la semaine prochaine. Les nombreux diagrammes animés facilitent la compréhension de ce nouveau paradigme React.
+
+---
+
+- 💸 [Zero To Shipped - Master Fast-Paced Fullstack Development and **Finally** ship that product](https://www.zerotoshipped.com/)
+- 🐦 [Remix v2 pre-release](https://twitter.com/remix_run/status/1696525340640936190): if you have already enabled [future flags v2](https://remix.run/blog/future-flags), you should be able to upgrade easily and remove these flags.
+- 🐦 [Dan Abramov joins Bluesky](https://twitter.com/dan_abramov/status/1695566446007386214): Dan has left Meta and joined this Twitter competitor based on a cross-platform Expo app. I think this is great news, we may have gained a great evangelist [to promote cross-platform and Expo](https://twitter.com/dan_abramov/status/1699476986727399933).
+- 🐦 [WIP testing docs for Next.js App Router](https://twitter.com/leeerob/status/1698758756924825723)
+- 🧑‍🎓 [Next.js App Router - Forms and Mutations docs](https://nextjs.org/docs/app/building-your-application/data-fetching/forms-and-mutations): new doc page explaining the use of Server Actions and the React `useFormStatus` and `useOptimistic` hooks.
+- 💬 [Next.js Tim Neutkens' Deep Dive - Caching and Revalidating](https://github.com/vercel/next.js/discussions/54075)
+- 📜 [Parents & Owners in React: Data Flow](https://julesblom.com/writing/parents-owners-data-flow): original interactive and visual article, explaining the problem of props drilling and how to avoid it with slotted components. Explains the concepts of parent tree and owner tree. The props drilling problem becomes clearly visible in the diagrams.
+- 📜 [Challenging Established Norms: Making Component Fetching the Exception](https://jjenzz.com/making-component-fetching-the-exception/): an interesting thought that encourages you to run your queries at route level to avoid waterfalls, and use composition to avoid props drilling.
+- 📜 [Rust Server Components](https://anto.pt/articles/rust-server-components): proposes to partially reproduce RSC, MDX and Suspense using Rust, HTMX and a few other libs. "the Rust equivalent of T3 Stack". Nice to read, even though I don't do Rust. Not convinced that the end result solves all the problems RSCs do.
+- 📜 [Chakra, Panda and Ark - What's the plan?](https://www.adebayosegun.com/blog/chakra-panda-ark-whats-the-plan): Segun answers a number of questions about his libraries. Chakra v3 arrives in Q4, but will still use Emotion. The addition of "use client" makes it easier to use in RSCs. Adoption of the Radix `asChild` pattern.
+- 📜 [How to Pass a Component as a Prop in React](https://www.totaltypescript.com/pass-component-as-prop-react): Matt shares some TypeScript + React typing tips. The type to implement "as" prop is quite scary 😬.
+- 📜 [Handling type-safe toast notifications with zod in Remix applications](https://alemtuzlak.hashnode.dev/handling-toasts-in-remix): explains how to use the Remix flash session to give feedback after an action.
+- 📜 [Optimizing Next.js cold starts for Vercel](https://holocron.so/blog/optimizing-next.js-cold-starts-for-vercel)
+- 📜 [Strongly Typing React Props with TypeScript](https://www.totaltypescript.com/react-props-typescript)
+- 📜 [You Might Not Need A useEffectAsync Hook](https://krassnig.dev/blog/you-might-not-need-a-use-effect-async-hook.html)
+- 📜 [Web Developers, CSS-in-JS is Ruining Your Product](https://cord.com/blog/migrating-from-css-in-js-to-vanilla-extract)
+- 📜 [Build your own headless UI components](https://www.jacobparis.com/content/react-headless-submenus)
+- 📜 [Building a toast component](https://emilkowal.ski/ui/building-a-toast-component)
+- 📦 [next-flat-routes](https://github.com/ifyio/next-flat-routes)
+- 📦 [Puck - Self-hosted drag and drop editor for React](https://github.com/measuredco/puck)
+- 📦 [react-prod-sourcemaps](https://github.com/markerikson/react-prod-sourcemaps)
+- 📦 [Reshaped 2.2 - Now available on NPM](https://reshaped.so/content/blog/2.2)
+- 👥 [reactjsday](https://2023.reactjsday.it/) (Verona 🇮🇹, Octobre 27, 2023) is offering us [-10% on conference tickets](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) with code "media_TWIR"
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![A Non-Cloud Alternative to Google Forms that has it all](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)
+
+**[Une alternative non-cloud à Google Forms qui a tout pour plaire](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**
+
+Si vous cherchez à mettre en place un système robuste de gestion de formulaires entièrement intégré à votre infrastructure informatique, vous permettant de conserver le contrôle total du flux de données, et que vous ne voulez pas passer des mois et dépenser des milliers de dollars pour le mettre en place, alors SurveyJS est la solution !
+
+SurveyJS est une suite produit de quatre bibliothèques JavaScript open-source qui vous permettent de créer et modifier plusieurs formulaires dynamiques basés sur JSON dans un constructeur de formulaires par glisser-déposer, de les afficher dans votre application React et de stocker les données sensibles des enquêtes dans votre infrastructure interne. Vous pouvez ensuite afficher vos enquêtes et formulaires personnalisés sous forme de fichiers PDF modifiables dans un navigateur et visualiser les résultats d'enquête avec des graphiques et tableaux interactifs. [En savoir plus maintenant](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email).
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![VisionCamera 3.0](/emails/issues/158/visioncamera3.jpg)](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)
+
+[**VisionCamera 3.0**](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)
+
+La nouvelle version de VisionCamera vient de sortir. Points forts :
+
+- Réécriture complète d'Android Camera2
+- Pipeline vidéo OpenGL GPU personnalisé
+- Nouvelles fonctionnalités de caméra
+- Nouveau moteur de traitement d'images (react-native-worklets-core)
+- Nouvelle API de plugin de traitement d'images
+
+Marc a pris la décision de finalement [supprimer l'intégration avec Skia](https://github.com/mrousavy/react-native-vision-camera/pull/1740) pour maintenir une taille de code et une complexité raisonnables sur VisionCamera.
+
+Dans [**Détection de pose avec VisionCamera V3, TFLite et Skia**](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite), il explique ce qui est possible avec une telle intégration. Les résultats sont très impressionnants.
+
+[![Détection de pose avec VisionCamera V3, TFLite et Skia](/emails/issues/158/frame-processing-skia.jpg)](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite)
+
+---
+
+- 📜 [Things to look forward to in React Native](https://buttondown.email/whatever_jamie/archive/things-to-look-forward-to-in-react-native/) : propose une bonne vue d'ensemble de ce que nous pouvons attendre de React-Native dans les années à venir. Web Conformance, Static Hermes, Node-API, React Server Components...
+- 📜 [React Native Performance Measuring and Monitoring Tools](https://semaphoreci.com/blog/react-native-performance-measuring-monitoring-tools)
+- 🧵 [All gestures from React Native Gesture Handler explained with real-world examples](https://twitter.com/kacperkapusciak/status/1698719844089160189)
+- 👀 [Expo - Understand your users and grow your app with EAS Insights](https://expo.dev/changelog/2023/08-22-insights)
+- 📦 [expo-ahap - Apple Haptic and Audio Pattern](https://github.com/EvanBacon/expo-ahap)
+- 📦 [react-native-z-view](https://github.com/intergalacticspacehighway/react-native-z-view)
+- 📦 [Universal Medusa - E-commerce starter using Expo, Solito, Next.js, Nativewind, Medusa](https://github.com/bidah/universal-medusa/)
+- 🔗 [Awesome Universal React - Universal frameworks, libraries, design systems, apps and resources](https://github.com/axeldelafosse/awesome-universal-react)
+- 🎥 [Experimental Blur Gradient in React Native](https://www.youtube.com/watch?v=oboF_H1MApo)
+- 🎥 [iPhone wallpapers, but in React Native Skia](https://www.youtube.com/watch?v=Apqd749v34I)
+- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław 🇵🇱, 7–8 septembre) nous offre [-15% sur les billets de conférence](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) avec le code "thisweekinreact15".
+
+---
+
+## 🔀 Autres {#other}
+
+- 📊 [State of CSS 2023 - Survey Results](https://2023.stateofcss.com/)
+- 📜 [My Node.js is a bit Rusty](https://gal.hagever.com/posts/my-node-js-is-a-bit-rusty)
+- 📜 [Announcing Biome - The official fork of Rome (unmaintained)](https://biomejs.dev/blog/annoucing-biome)
+- 📜 [View Transitions Break Incremental Rendering](https://ericportis.com/posts/2023/view-transitions-break-incremental-rendering/)
+- 📜 [Use web components for what they’re good at](https://nolanlawson.com/2023/08/23/use-web-components-for-what-theyre-good-at/)
+- 📜 [Type safe CSS design systems with @property](https://nerdy.dev/cant-break-this-design-system)
+- 👀 [TypeScript 5.3 Iteration Plan](https://github.com/microsoft/TypeScript/issues/55486)
+- 📦 [Announcing TypeScript 5.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/)
+- 📦 [Node 20.6 - Built-in .env file support](https://nodejs.org/en/blog/release/v20.6.0)
+- 📦 [Firefox 117 - CSS Nesting is now widely available](https://www.mozilla.org/en-US/firefox/117.0/releasenotes/)
+- 📦 [Espresso Build - Experimental next-gen package registry, package manager, and toolchain](https://espresso.build/)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![alt](/emails/issues/158/meme.jpg)](https://twitter.com/sebastienlorber/status/1687456078198394882)
+
+À bientôt ! 👋

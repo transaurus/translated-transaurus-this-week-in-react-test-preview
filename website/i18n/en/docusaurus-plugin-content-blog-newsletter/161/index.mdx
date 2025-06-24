@@ -1,0 +1,143 @@
+---
+slug: /161
+title: "This Week In React #161: useFormState, Memo, Conform, Progressive Enhancement, Astro, Radix, React-Aria, Rustymotion, Ecctrl, Expo Apple Settings, Unistyles, TypeScript, TC39..."
+authors: [slorber]
+date: 10-04-2023
+---
+
+Bonjour à tous !
+
+Cette semaine, j'ai trouvé l'écosystème React plutôt calme, mais nous avons quelques articles plutôt cool à lire.
+
+L'amélioration progressive de React est à l'honneur à la fois dans Remix et Next.js !
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Enterprise Grade APIs for Feeds, Chat, & Video!](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**Enterprise Grade APIs for Feeds, Chat, & Video!**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Stream est le créateur d'**APIs** et de **SDKs** de qualité professionnelle qui aident les équipes produit et ingénierie à résoudre deux problèmes courants à grande échelle : le chat en application et les flux d'activité sociale.
+
+Avec Stream, les développeurs peuvent intégrer tout type d'expérience de messagerie ou de flux dans leur application en une fraction du temps qu'il faudrait pour construire ces fonctionnalités à partir de zéro. Stream Chat facilite l'intégration d'une messagerie riche et en temps réel dans leurs applications.
+
+Stream fournit des SDK côté client robustes pour des frameworks populaires tels que [**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22), [**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22), Expo, Flutter, Android, Angular, Compose, Unreal et iOS.
+Débloquez des fonctionnalités, fonctions et composants d'interface utilisateur de qualité professionnelle entièrement gratuits pour votre startup ou projet parallèle avec le compte Maker.
+
+[**Essayez le nouveau tutoriel React Video !**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+---
+
+## ⚛️ React {#react}
+
+[![The Uphill Battle of Memoization](/emails/issues/161/memo.jpg)](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)
+
+[**The Uphill Battle of Memoization**](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)
+
+Nous voulons créer des applications hautes performances, et pour cela nous utilisons `React.memo`, qui évite les rendus inutiles. Mais ces optimisations se cassent trop facilement. Dominik partage avec nous plusieurs scénarios qui conduisent à une dégradation des performances, notamment l'utilisation d'objets/fonctions de rappel en ligne, ou l'utilisation de slots JSX avec une prop comme `children`.
+
+J'en ai profité pour donner [mon avis sur Twitter](https://twitter.com/sebastienlorber/status/1709258817844752794) : les performances d'un composant React devraient être mieux encapsulées. En attendant le compilateur React-Forget, il existe quelques pistes moins connues à explorer, comme l'utilisation de plugins Babel.
+
+---
+
+[![Accessible, Typesafe, Progressively Enhanced Modern Web Forms](/emails/issues/161/epicweb.jpg)](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)
+
+[**Formulaires Web modernes accessibles, typés et à amélioration progressive**](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)
+
+Kent nous montre quelques exemples de code Remix et à quel point il est facile de mettre en place une interface utilisateur en attente (pending UI) et une interface utilisateur optimiste (optimistic UI). Il recommande d'utiliser un schéma Zod partagé pour valider les formulaires côté frontend, et de l'étendre côté backend pour éventuellement ajouter des règles supplémentaires. [conform](https://conform.guide/) facilite l'utilisation d'un schéma Zod pour valider un `FormData`, et semble être une solution sous-estimée pour gérer un formulaire React, de l'état local jusqu'au serveur.
+
+---
+
+- 💸 [Hackathon Ably Realtime - Créez une application React en temps réel, gagnez 19 000 $ de prix - des tableaux de bord temps réel aux expériences collaboratives !](https://ably.devpost.com/?utm_campaign=23-hackathon&utm_source=thisweekinreact&utm_medium=referral)
+- 👀 [PR Next.js - Amélioration progressive de l'état des formulaires](https://github.com/vercel/next.js/pull/55584) : Next.js introduit un nouveau hook React core `useFormState` (à ne pas confondre avec `useFormStatus`), qui permet de gérer les retours/réponses des Server Actions même avec JavaScript désactivé.
+- 👀 [PR React core - Ajout d'un avertissement de dépréciation pour Server Context](https://github.com/facebook/react/pull/27424) : le hook secret `createServerContext` est déprécié et sera supprimé.
+- 👀 [Feuille de route publique Panda CSS - Container Query, Panda Studio](https://panda-css.canny.io/)
+- 🐦 [Démo de transitions de vue Astro + modèle React-Three-Fiber persistant](https://twitter.com/astrodotbuild/status/1707918024471355406)
+- 🐦 [Remotion en contrat avec GitHub - Constitution d'une équipe pour produire GitHub Unwrapped 2023](https://twitter.com/Remotion/status/1707664519403614323)
+- 📜 [Partage d'état avec l'architecture Islands](https://frontendatscale.com/blog/islands-architecture-state/) : article bien illustré analysant plusieurs solutions pour la communication entre Islands dans un contexte Astro/React.
+- 📜 [Next.js 13 vs Remix : étude de cas approfondie](https://prateeksurana.me/blog/nextjs-13-vs-remix-an-in-depth-case-study/) : comparaison exhaustive et documentée des fonctionnalités de Next.js et Remix.
+- 📜 [React Google Maps : Outils de dessin](https://sudolabs.com/insights/react-google-maps-drawing-tools)
+- 📜 [Docusaurus - Préparer votre site pour la v3 + MDX 2](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3)
+- 📦 [Astro 3.2 - Améliorations des transitions de vue](https://astro.build/blog/astro-320/)
+- 📦 [Radix Themes 2.0 - Nouvelles couleurs, meilleure compatibilité Tailwind, améliorations des composants](https://www.radix-ui.com/themes/docs/overview/releases#200)
+- 📦 [React Aria - Versions du 2 octobre 2023 - Intégration du routage client](https://react-spectrum.adobe.com/releases/2023-10-02.html)
+- 📦 [Rustymotion - Moteur de rendu Rust pour vidéos Remotion](https://github.com/clearlysid/rustymotion)
+- 📦 [Ecctrl - Contrôleur de personnage React-Three-Fiber](https://github.com/pmndrs/ecctrl)
+- 🎥 [Theo T3 - Facebook a essayé Tailwind puis a construit ceci (styleX)](https://www.youtube.com/watch?v=PHV94q7BivI)
+- 🎙️ [Ce mois-ci dans React - Septembre 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--September-2023-e29vb6o)
+- 👥 [reactjsday](https://2023.reactjsday.it/) (Vérone 🇮🇹, 27 octobre) nous offre [\-10% - code "media_TWIR"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)
+- 👥 [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact) (Londres 🇬🇧, 20-23 octobre) nous offre [\-10% - code "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Une alternative non-cloud à Google Forms qui a tout pour plaire](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)
+
+**[Une alternative non-cloud à Google Forms qui a tout pour plaire](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**
+
+Si vous cherchez à mettre en place **un système robuste de gestion de formulaires entièrement intégré à votre infrastructure informatique** vous permettant de **conserver un contrôle total sur le flux de données**, sans vouloir y consacrer des mois ni des milliers de dollars, alors SurveyJS est la solution idéale !
+
+SurveyJS est une suite de quatre bibliothèques JavaScript open-source permettant de **créer et modifier** plusieurs **formulaires dynamiques basés sur JSON** via un constructeur par glisser-déposer, de les afficher dans votre application React et de **stocker les données sensibles d'enquêtes dans votre infrastructure interne**. Vous pouvez ensuite **afficher vos enquêtes personnalisées sous forme de fichiers PDF modifiables** dans un navigateur et visualiser les résultats via **des graphiques et tableaux interactifs**. [Découvrez-en plus dès maintenant](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email).
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Interface personnalisée des paramètres Apple avec Expo](/emails/issues/161/exposettings.jpg)](https://evanbacon.dev/blog/apple-settings)
+
+[**Interface personnalisée des paramètres Apple avec Expo**](https://evanbacon.dev/blog/apple-settings)
+
+Evan souligne les avantages limités de l'écran des paramètres iOS. Bien que complexe à implémenter en natif avec un ROI faible, son plugin Expo Config simplifie la tâche. Il explique comment basculer le son d'une application via un interrupteur ou automatiser l'affichage des licences logicielles.
+
+---
+
+- 💸 [Blitz - Développez des apps React Native plus rapidement pour iOS, Android et le Web !](https://www.blitz-rn.com/)
+- 📜 [Expo EAS - Prise en charge de XCode 15 et iOS 17](https://expo.dev/changelog/2023/09-28-new-xcode-ios)
+- 📖 [Documentation Expo - Génération Native Continue (CNG)](https://docs.expo.dev/workflow/continuous-native-generation/) : présente la génération continue des plateformes natives avec Expo Prebuild.
+- 📦 [create-react-native-library v0.34 - Support des bibliothèques locales](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.34.0) : simplifie la création de bibliothèques locales en React-Native vanilla. Compatible avec Expo.
+- 📦 [react-native-unistyles - Améliorez vos StyleSheet React Native, rendez-les multiplateforme et évolutifs](https://github.com/jpudysz/react-native-unistyles)
+- 📦 [react-native-compressor - Compressez images, vidéos et audio avant téléversement](https://github.com/numandev1/react-native-compressor)
+- 📦 [Expo-Image 1.3.4 - Correction de la vulnérabilité sécurité libwebp](https://expo.dev/changelog/2023/09-29-libwebp)
+- 📦 [React-Native-Skia v0.1.211 bêta - Images animées](https://shopify.github.io/react-native-skia/docs/animated-images/)
+- 🎥 [Pourquoi votre app a crashé ? Utiliser Logcat & Console macOS pour déboguer](https://www.youtube.com/watch?v=LvCci4Bwmpc)
+- 🎥 [Pourquoi Airbnb avait tort d'abandonner React Native en 2018](https://www.youtube.com/watch?v=RwUQnfcxH0o)
+- 🎙 [React Native Radio 276 - Annonce d'Ignite v9](https://reactnativeradio.com/episodes/rnr-276-announcing-ignite-v9-expresso)
+
+---
+
+## 🔀 Autre {#other}
+
+- 📜 [Mises à jour de la 98e réunion du TC39 - ArrayBuffer redimensionnable, ShadowRealm, échappement RegEx...](https://dev.to/hemanth/updates-from-the-98th-tc39-meeting-1lcf)
+- 📜 [Le strict minimum que tout développeur doit savoir sur Unicode en 2023](https://tonsky.me/blog/unicode/)
+- 📜 [CSS Subgrid - Désormais disponible dans tous les navigateurs grâce à Chrome 117](https://web.dev/css-subgrid/)
+- 📜 [Imbrication CSS et la Cascade](https://webkit.org/blog/14571/css-nesting-and-the-cascade/)
+- 📜 [Nouveautés sur la plateforme web en septembre](https://web.dev/web-platform-09-2023/)
+- 📦 [TypeScript 5.3 Bêta - Attributs d'import, "resolution-mode" pour les imports de types...](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-beta/)
+- 📦 [string-ts - Fonctions de chaîne fortement typées](https://github.com/gustavoguichard/string-ts)
+- 📦 [every-ts - Un utilitaire pour construire et diviser toute version de TypeScript](https://github.com/jakebailey/every-ts)
+- 📦 [pattycake - Correspondance de motifs sans runtime - Compilateur d'optimisation pour ts-pattern](https://github.com/aidenybai/pattycake)
+- 📦 [Node.js 20.8 - Améliorations notables des performances](https://nodejs.org/en/blog/release/v20.8.0)
+- 📦 [Vitest 1.0 bêta](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0-beta.0)
+
+---
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/161/meme.jpg)](https://twitter.com/creatine_cycle/status/1706912311309652159)
+
+À bientôt ! 👋

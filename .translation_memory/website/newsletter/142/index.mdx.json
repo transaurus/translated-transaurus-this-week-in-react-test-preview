@@ -1,0 +1,733 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/142/index.mdx",
+  "source_file_content_hash": "95f768be08f97688172b427ae23e79a6f0c574f8f61d64f864d0abdd2f2e8db3",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /142\ntitle: \"This Week In React #142: JSX, React-Query, Server Components, Next.js, Million, OpenNext, Ariakit, Expo-Image, React-Three-Fiber, TS 5.1, Node.js 20, WebGPU...\"\nauthors: [slorber]\ndate: 04-18-2023\n---",
+      "source_content_hash": "49178bfbd4ee14f376a285c8f1a6e9f881e0950eae242dabb1f0ea959b6069e1",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week, TypeScript 5.1 is released in beta with many improvements related to JSX and React!",
+      "source_content_hash": "2f64a084621da141417c4e62454a76d8c773908f76a2771efb9e4ab629e16c08",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine, TypeScript 5.1 est sorti en version bêta avec de nombreuses améliorations liées à JSX et React !",
+        "en": "Cette semaine, TypeScript 5.1 est sorti en version bêta avec de nombreuses améliorations liées à JSX et React !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React-Query plans to remove query callbacks in version 5, and this idea does not please everyone.",
+      "source_content_hash": "b5357972202ac27660c3375bd8fe5478311cb8324691b41d99d14c7e1aabb95f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React-Query prévoit de supprimer les callbacks de requête dans la version 5, et cette idée ne plaît pas à tout le monde.",
+        "en": "React-Query prévoit de supprimer les callbacks de requête dans la version 5, et cette idée ne plaît pas à tout le monde."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "For React-Native developers, don't miss [React-Native-Connection](https://reactnativeconnection.io/) on June 1st in Paris! I participated to the talks selection committee, and we just [published the complete line-up](https://twitter.com/sebastienlorber/status/1648269027318411264) with international and local speakers. 10% discount with the code \"REACTHEBDO\".",
+      "source_content_hash": "70df5f61c9e8b688f581297f46fd96abf0492c7f211c63076082a9089fb827a9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Pour les développeurs React-Native, ne manquez pas [React-Native-Connection](https://reactnativeconnection.io/) le 1er juin à Paris ! J'ai participé au comité de sélection des conférences, et nous venons de [publier la programmation complète](https://twitter.com/sebastienlorber/status/1648269027318411264) avec des intervenants internationaux et locaux. 10% de réduction avec le code \"REACTHEBDO\".",
+        "en": "Pour les développeurs React-Native, ne manquez pas [React-Native-Connection](https://reactnativeconnection.io/) le 1er juin à Paris ! J'ai participé au comité de sélection des conférences, et nous venons de [publier le programme complet](https://twitter.com/sebastienlorber/status/1648269027318411264) avec des intervenants internationaux et locaux. 10% de réduction avec le code \"REACTHEBDO\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_6429a3aa",
+        "en": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_fcd52337",
+        "en": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_42e34e45",
+        "en": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![React-admin](/emails/issues/141/react_admin.png)](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)",
+      "source_content_hash": "ba27576c01dc48035fe5b6c5312794449860966067321374cb4283566eef2131",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![React-admin](/emails/issues/141/react_admin.png)](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)",
+        "en": "[![React-admin](/emails/issues/141/react_admin.png)](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[React-admin - The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)**",
+      "source_content_hash": "7558fb07b3dfc71ff1da9cbf0ced365b2d21a06e5f29dd88ca1a3b08fd58ac8d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[React-admin - Le framework open-source pour les applications B2B](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)**",
+        "en": "**[React-admin - Le framework open-source pour les applications B2B](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Are you currently building an admin panel with React? If so, we have some exciting news for you! By using React-admin, an open-source framework for B2B apps, you can spare yourself days of coding! 🤩",
+      "source_content_hash": "d0cbd87941764695e228c9e2b1b65b46c4053751e6b539d6429651557a4c9dcc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Construisez-vous actuellement un panneau d'administration avec React ? Si oui, nous avons une excellente nouvelle pour vous ! En utilisant React-admin, un framework open-source pour les applications B2B, vous pouvez vous épargner des jours de codage ! 🤩",
+        "en": "Êtes-vous en train de développer un panneau d'administration avec React ? Si oui, nous avons une excellente nouvelle pour vous ! En utilisant React-admin, un framework open-source pour les applications B2B, vous pouvez vous épargner des jours de codage ! 🤩"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "With React-admin you can not only save valuable time, but you can also become a better developer! You don't have to take only our word for it, though. There are already over 20,000 developers who use it daily and swear by its effectiveness. And if you're curious about the experiences of developers who have used React-admin for years already, check out NPO [Caritas' testimonial](https://marmelab.com/blog/2022/07/07/react-admin-caritas.html).",
+      "source_content_hash": "5f06342f332878204fa13d3994e2741854b368153afb5dfcb5d7439d8757671b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Avec React-admin, vous pouvez non seulement gagner un temps précieux, mais aussi devenir un meilleur développeur ! Vous n'avez pas à nous croire sur parole. Plus de 20 000 développeurs l'utilisent quotidiennement et en attestent l'efficacité. Si vous êtes curieux des retours d'expérience, consultez le témoignage de l'ONG [Caritas](https://marmelab.com/blog/2022/07/07/react-admin-caritas.html).",
+        "en": "Avec React-admin, vous pouvez non seulement gagner un temps précieux, mais aussi devenir un meilleur développeur ! Ne vous fiez pas seulement à notre parole : plus de 20 000 développeurs l'utilisent quotidiennement et attestent de son efficacité. Si vous êtes curieux des retours d'expérience des développeurs utilisant React-admin depuis des années, consultez le témoignage de l'ONG [Caritas](https://marmelab.com/blog/2022/07/07/react-admin-caritas.html)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Join our thriving community as well as [Discord](https://discord.com/invite/jR3D6SdQ) server, so you can stay up-to-date on the latest React-admin updates and get support from a network of experienced developers.",
+      "source_content_hash": "4d787f066602eb35dac18a7ac2bad0418494a01a78c09bad3283b4d6a56b78d4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Rejoignez notre communauté dynamique et notre serveur [Discord](https://discord.com/invite/jR3D6SdQ) pour rester informé des dernières mises à jour de React-admin et bénéficier du soutien d'un réseau de développeurs expérimentés.",
+        "en": "Rejoignez notre communauté dynamique ainsi que notre serveur [Discord](https://discord.com/invite/jR3D6SdQ) pour rester informé des dernières mises à jour de React-admin et bénéficier du soutien d'un réseau de développeurs expérimentés."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "So what are you waiting for? Start using React-admin now, it’s free 😉, and take your development to the next level! 🚀",
+      "source_content_hash": "d3709694945980e080fd09ae4a49e8ea7330906b71fe57f7173f3abd43c83383",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Qu'attendez-vous ? Commencez à utiliser React-admin maintenant, c'est gratuit 😉, et faites passer votre développement au niveau supérieur ! 🚀",
+        "en": "Alors qu'attendez-vous ? Commencez à utiliser React-admin dès maintenant, c'est gratuit 😉, et faites passer votre développement au niveau supérieur ! 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "602e59c7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[![TypeScript 5.1 beta](/emails/issues/142/ts5.1.jpg)](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/)",
+      "source_content_hash": "6d56d6d3bb3d4d8c0720ea0589c2e75df1996133593c540f66e37c58e8ea0748",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![TypeScript 5.1 beta](/emails/issues/142/ts5.1.jpg)](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/)",
+        "en": "[![TypeScript 5.1 beta](/emails/issues/142/ts5.1.jpg)](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "**[TypeScript 5.1 (beta) + React](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/)**",
+      "source_content_hash": "069985cd7f49b11093ff2a2ac5e2fed349f9e0d0265b17356c38c961e8599587",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[TypeScript 5.1 (bêta) + React](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/)**",
+        "en": "**[TypeScript 5.1 (bêta) + React](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "An important TypeScript release that will allow React to be able to declare its own valid JSX types. It is planned to use this new feature as soon as possible in React typedefs, which have already been [forked](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/65126) to continue to support older versions (TypeScript \\<= 5.0).",
+      "source_content_hash": "d5fdf63549d586e50346006e12cbaa7d4857393a578a72be6a6568c284fb6c26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Une version majeure de TypeScript qui permettra à React de déclarer ses propres types JSX valides. Il est prévu d'utiliser cette nouvelle fonctionnalité dès que possible dans les typedefs React, qui ont déjà été [forkés](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/65126) pour continuer à supporter les anciennes versions (TypeScript ≤ 5.0).",
+        "en": "Une version importante de TypeScript qui permettra à React de déclarer ses propres types JSX valides. Il est prévu d'utiliser cette nouvelle fonctionnalité dès que possible dans les typedefs de React, qui ont déjà été [forkés](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/65126) pour continuer à prendre en charge les versions antérieures (TypeScript \\<= 5.0)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "There are good reasons to adopt TypeScript 5.1+ as soon as possible. It unlocks among other things:",
+      "source_content_hash": "069407c3c18b0782a1ca6859553eb4fdba7bab4ac0cff1aedc2ccfdbe67aa281",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Il y a de bonnes raisons d'adopter TypeScript 5.1+ dès que possible. Cela déverrouille notamment :",
+        "en": "Il existe de bonnes raisons d'adopter TypeScript 5.1+ dès que possible. Cela permet notamment :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "- the ability to use a React Server Component `async` in JSX without TypeScript errors or [workaround](https://gist.github.com/cramforce/b5e3f0b103f841d2e5e429b1d5ac4ded).\n- the ability to return all valid types for `ReactNode` (string, array, boolean...) without needing a fragment ([details](https://twitter.com/sebastienlorber/status/1648619398259769344)).\n- other interesting improvements around JSX: namespaced attributes and linked editing (VSCode).",
+      "source_content_hash": "c1329c76919459b2fb79ac789985240ed9193f509787a12f72bfd6c511a7b56c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- la possibilité d'utiliser un React Server Component `async` dans JSX sans erreurs TypeScript ni [contournement](https://gist.github.com/cramforce/b5e3f0b103f841d2e5e429b1d5ac4ded).\n- la possibilité de retourner tous les types valides pour `ReactNode` (string, tableau, booléen...) sans besoin d'un fragment ([détails](https://twitter.com/sebastienlorber/status/1648619398259769344)).\n- d'autres améliorations intéressantes autour de JSX : attributs avec espace de noms et édition liée (VSCode).",
+        "en": "- d'utiliser un composant serveur React `async` dans JSX sans erreurs TypeScript ou [contournement](https://gist.github.com/cramforce/b5e3f0b103f841d2e5e429b1d5ac4ded).\n- de renvoyer tous les types valides pour `ReactNode` (chaîne, tableau, booléen...) sans nécessiter de fragment ([détails](https://twitter.com/sebastienlorber/status/1648619398259769344)).\n- d'autres améliorations intéressantes autour de JSX : attributs avec espace de noms et édition liée (VSCode)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e2fed468",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "[![Breaking React Query's API on purpose](/emails/issues/142/rq.jpg)](https://tkdodo.eu/blog/breaking-react-querys-api-on-purpose)",
+      "source_content_hash": "b84bc3451dc53a6fefafb8caf83ca6cfef105fdd70759806deb550e2489a722a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Casser intentionnellement l'API de React Query](/emails/issues/142/rq.jpg)](https://tkdodo.eu/blog/breaking-react-querys-api-on-purpose)",
+        "en": "[![Casser volontairement l'API de React Query](/emails/issues/142/rq.jpg)](https://tkdodo.eu/blog/breaking-react-querys-api-on-purpose)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "**[Breaking React Query's API on purpose](https://tkdodo.eu/blog/breaking-react-querys-api-on-purpose)**",
+      "source_content_hash": "4863523e8de39c604a14f701eed6f596b9e4e723577a3ff61901ead37159e4c5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Casser intentionnellement l'API de React Query](https://tkdodo.eu/blog/breaking-react-querys-api-on-purpose)**",
+        "en": "**[Casser volontairement l'API de React Query](https://tkdodo.eu/blog/breaking-react-querys-api-on-purpose)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "React-Query will remove the callbacks (`onSuccess`, `onError`, `onSettled`) from the `useQuery` hook with v5. Dominik explains this choice and suggest alternatives more adapted to common cases, like displaying a toast. A controversial but necessary decision because these APIs were often misused. Note: callbacks are kept for `useMutation`.",
+      "source_content_hash": "91a418241aa054610c0bcff2886b35fb65f269b4395229aecf5b8891d677b9cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "React-Query supprimera les callbacks (`onSuccess`, `onError`, `onSettled`) du hook `useQuery` dans la version 5. Dominik explique ce choix et propose des alternatives mieux adaptées aux cas courants, comme l'affichage d'une notification. Une décision controversée mais nécessaire car ces API étaient souvent mal utilisées. Note : les callbacks sont conservés pour `useMutation`.",
+        "en": "React-Query supprimera les callbacks (`onSuccess`, `onError`, `onSettled`) du hook `useQuery` avec la v5. Dominik explique ce choix et propose des alternatives mieux adaptées aux cas courants, comme afficher une notification. Une décision controversée mais nécessaire car ces API étaient souvent mal utilisées. Note : les callbacks sont conservés pour `useMutation`."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e874d9e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "- 🧵 [Dan Abramov - \"good rule of thumb. for any “server components”](https://twitter.com/dan_abramov/status/1647203329854799872): explains the minimum requirements for a proper Server Components implementation, taking full advantage of their potential. Presents the limitations of Qwik and Remix models.\n- 👀 [Dan Abramov has a \"story to tell\" at Remix Conf (\"React from Another Dimension\")](https://twitter.com/remix_run/status/1646177445454950400)\n- 👀 [Next.js ships its own copy of React](https://twitter.com/devongovett/status/1647728887927906304): copy used only when using App Router.\n- 👀 [Use Storybook with Rspack](https://twitter.com/rspack_dev/status/1646164228598792196)\n- 👀 [WebGPU in React-Three-Fiber demo](https://twitter.com/CantBeFaraz/status/1647811509014216710)\n- ⚡ [SpiderMonkey Newsletter (Firefox 112-113)](https://spidermonkey.dev/blog/2023/04/14/newsletter-firefox-112-113.html): \"We’re working on improving performance for popular web frameworks such as React\".\n- 📜 [Animating View Transitions](https://www.patterns.dev/posts/view-transitions): explains how to use the new View Transition API (Chrome 111+) in a React context with Next.js App Router, and in a MPA context. Interesting, but the proposed React integration doesn't look ideal.\n- 📜 [An Animated Guide to Reacts Optional Parameters](https://julesblom.com/writing/react-optional-parameters): interactive article that presents some features of React APIs that we use less often.\n- 📜 [Next over Remix](https://bradgarropy.com/blog/next-over-remix): feedback from a dev who had planned to switch to Remix, but finally stayed with Next.js.\n- 📜 [Building a blog with Next.js 13 and React Server Components](https://maxleiter.com/blog/build-a-blog-with-nextjs-13): uses all the latest Next.js features to create a modern blog.\n- 📜 [React forwardRef(): How to Pass Refs to Child Components](https://dmitripavlutin.com/react-forwardref/)\n- 📜 [Is React the New WordPress?](https://www.seancdavis.com/posts/is-react-the-new-wordpress/)\n- 📜 [Becoming an Astro maintainer](https://www.elian.codes/blog/23-04-12-becoming-an-astro-maintainer/)\n- 📜 [Display Warning for Unsaved Form Data on Page Exit](https://claritydev.net/blog/display-warning-for-unsaved-form-data-on-page-exit)\n- 📜 [Mastering React: Techniques to Take Your UI to the Next Level](https://blog.bitsrc.io/mastering-react-techniques-to-take-your-ui-to-the-next-level-a5002173904f)\n- 📜 [What's new in the new Storybook](https://www.mariasimo.codes/storybook-7-new-release)\n- 📜 [Full-stack Web Apps Without React](https://remotesynthesis.com/blog/full-stack-without-react/)\n- 🎥 [Must Know React Portability Patterns](https://www.youtube.com/watch?v=yi8UCnXPu8U): good advices to reduce coupling of your code to a particular framework.\n- 🎥 [Maybe Create React App Isn't Dead?](https://www.youtube.com/watch?v=A2kWoKnpy1U)\n- 📦 [Ariakit 0.1.0](https://github.com/ariakit/ariakit/releases/tag/%40ariakit%2Freact%400.1.0): new way of managing state based on component stores. Motivations in this [RFC](https://github.com/ariakit/ariakit/issues/1875): less re-renders, becoming framework-agnostic...\n- 📦 [Million.js 2.2.1 - Support for hooks and non-primitives](https://twitter.com/aidenybai/status/1646238355427041285). This [thread](https://twitter.com/aidenybai/status/1647005716350406656) gives interesting explanations about the difference between React and Million reconciliation.\n- 📦 [OpenNext 1.0](https://github.com/serverless-stack/open-next/releases/tag/v1.0.0): aims to make Next.js more portable thanks to serverless adapter.\n- 📦 [Astro 2.3](https://twitter.com/astrodotbuild/status/1646593124997779465)\n- 📦 [React-Three-Next - starter updated - App Router support](https://twitter.com/onirenaud/status/1646139899291254786)\n- 📦 [React-Three-Fiber AutoFocus DOF](https://github.com/ektogamat/AutoFocusDOF)",
+      "source_content_hash": "261d71d075b4d8cbf566cb3ab43043666ee3d6bbfb8163e287d40661d08b83b1",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_645e08e3",
+        "en": "@@untranslatable_placeholder_645e08e3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0904148e",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_0904148e",
+        "en": "@@untranslatable_placeholder_0904148e"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4f2104fa",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f8edb6d2",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "[![Tina.io is a headless CMS for Markdown-powered sites](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)",
+      "source_content_hash": "d07d67b40382ffe752cafb4d03574ec5e0348f7991f13c5fd7a07d59ea0908aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)",
+        "en": "[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "**[Tina.io is a headless CMS for Markdown-powered sites](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**",
+      "source_content_hash": "8daaebad6e0f00c8c4faf2c3d04fabcc8992451ab583bfb3838238fb941d5ec7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**",
+        "en": "**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "936011bd",
+      "source_content": "- Editing UI for your Markdown files\n- UI for MDX components\n- Supports static (SSG) and server-side rendering (SSR)\n- Option for visual editing (live-preview)\n- Build with reusable blocks",
+      "source_content_hash": "cb5d921a7fe229312ad7e31fa01a28654568a7604897dcb86fe0ecaa88d5a4c0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Interface d'édition pour vos fichiers Markdown\n- Interface pour les composants MDX\n- Prend en charge le rendu statique (SSG) et côté serveur (SSR)\n- Option pour l'édition visuelle (prévisualisation en direct)\n- Construit avec des blocs réutilisables",
+        "en": "- Interface d'édition pour vos fichiers Markdown\n- UI pour les composants MDX\n- Prend en charge le rendu statique (SSG) et côté serveur (SSR)\n- Option d'édition visuelle (prévisualisation en direct)\n- Construisez avec des blocs réutilisables"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "Test a starter site",
+      "source_content_hash": "00cfdd6dfc445a7df446241a49f872dd69eae76fb2b91f1adce9cd97ccd3a228",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Tester un site de démarrage",
+        "en": "Testez un site de démarrage"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5cb70a3d",
+      "source_content": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind with visual editing](https://github.com/tinacms/tina-cloud-starter) (Github)",
+      "source_content_hash": "de7a40ae87efb6c6ab4417e89bb39524a8e8daca4f792ef09ca756319a654e0b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)",
+        "en": "- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "Or run  `npx create-tina-app@latest` then visit `localhost:3000/admin`",
+      "source_content_hash": "3c38b4e8e7ed89fb82c1d7a4781a5edfb7e4fda07b6616777408937de6748b5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Ou exécutez  `npx create-tina-app@latest`  puis visitez `localhost:3000/admin`",
+        "en": "Ou exécutez `npx create-tina-app@latest` puis visitez `localhost:3000/admin`"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "Watch the [4-min demo video](https://www.youtube.com/watch?v=zRkeKSZjlyw)",
+      "source_content_hash": "2a28b2aaced7040bc5de34214f8661699eb64901ddd6ce54922fe7b3e0a3a4b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)",
+        "en": "Regardez la [vidéo de démonstration de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9673e622",
+      "source_content": "- 👀 [Hover gesture coming soon to React Native Gesture Handler](https://twitter.com/breskin67/status/1646511002933153794): future cross-platform API with support for iOS, Android, web.\n- 👀 [Image perf demo](https://twitter.com/nightstomp/status/1647231665222176769): shows the bad perf impact of using too large images on your React-Native apps.\n- 📦 [Expo-Image 1.2.0 - ThumbHash support](https://twitter.com/tsapeta/status/1646875246362861569)\n- 📦 [React-Native-Widget-Extension](https://twitter.com/bndkt/status/1648431242025766912)\n- 📦 [AnimateReactNative](https://www.animatereactnative.com/): more than 100 animations by Catalin Miron (paid product).\n- 🧵 [Expo Docs Updates](https://twitter.com/amanhimself/status/1646959895995105281)\n- 🧵 [Jamon Holmgren - \"Want to know how easy it is to grab API keys out of a compiled iPhone app?\"](https://twitter.com/jamonholmgren/status/1647305506053320704)\n- 🎥 [Song of Bloom - “Can it be done in React Native?”](https://www.youtube.com/watch?v=PfCQEA72ljU)\n- 🎥 [React Native File Based Routing with Expo Router](https://www.youtube.com/watch?v=RglRiycD0oQ)\n- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (Paris, 1er June) is offering us -10% on entries (code \"REACTHEBDO\").\n- 👥 [App.js](https://appjs.co/) (Krakow, May 10-12) is offering us [-20% on workshops](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (code \"ThisWeekinReact20\").\n- 👥 [Chain React](https://chainreactconf.com/) (Portland, May 18-19) is offering us -10% on entries (code \"thisweekinreact\").",
+      "source_content_hash": "c2ce7f3a7817600dff2d5f03a82ea27cbd72afdb8a12de5845ed08cdc55bddf3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [Mouvement de survol bientôt disponible dans React Native Gesture Handler](https://twitter.com/breskin67/status/1646511002933153794) : future API multiplateforme avec support pour iOS, Android, web.\n- 👀 [Démo de performance d'image](https://twitter.com/nightstomp/status/1647231665222176769) : montre l'impact négatif des images trop volumineuses sur les applications React Native.\n- 📦 [Expo-Image 1.2.0 - Support de ThumbHash](https://twitter.com/tsapeta/status/1646875246362861569)\n- 📦 [React-Native-Widget-Extension](https://twitter.com/bndkt/status/1648431242025766912)\n- 📦 [AnimateReactNative](https://www.animatereactnative.com/) : plus de 100 animations par Catalin Miron (produit payant).\n- 🧵 [Mises à jour de la documentation Expo](https://twitter.com/amanhimself/status/1646959895995105281)\n- 🧵 [Jamon Holmgren - \"Vous voulez savoir à quel point il est facile d'extraire des clés API d'une appli iPhone compilée ?\"](https://twitter.com/jamonholmgren/status/1647305506053320704)\n- 🎥 [Song of Bloom - « Peut-on le faire en React Native ? »](https://www.youtube.com/watch?v=PfCQEA72ljU)\n- 🎥 [Routage basé sur les fichiers dans React Native avec Expo Router](https://www.youtube.com/watch?v=RglRiycD0oQ)\n- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (Paris, 1er juin) nous offre -10% sur les entrées (code \"REACTHEBDO\").\n- 👥 [App.js](https://appjs.co/) (Cracovie, 10-12 mai) nous offre [-20% sur les ateliers](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (code \"ThisWeekinReact20\").\n- 👥 [Chain React](https://chainreactconf.com/) (Portland, 18-19 mai) nous offre -10% sur les entrées (code \"thisweekinreact\").",
+        "en": "- 👀 [Hover gesture coming soon to React Native Gesture Handler](https://twitter.com/breskin67/status/1646511002933153794) : future API multiplateforme avec support pour iOS, Android, web.\n- 👀 [Image perf demo](https://twitter.com/nightstomp/status/1647231665222176769) : montre l'impact négatif des images trop volumineuses sur les performances de vos applications React-Native.\n- 📦 [Expo-Image 1.2.0 - Support de ThumbHash](https://twitter.com/tsapeta/status/1646875246362861569)\n- 📦 [React-Native-Widget-Extension](https://twitter.com/bndkt/status/1648431242025766912)\n- 📦 [AnimateReactNative](https://www.animatereactnative.com/) : plus de 100 animations par Catalin Miron (produit payant).\n- 🧵 [Mises à jour de la documentation Expo](https://twitter.com/amanhimself/status/1646959895995105281)\n- 🧵 [Jamon Holmgren - \"Voulez-vous savoir à quel point il est facile d'extraire des clés API d'une application iPhone compilée ?\"](https://twitter.com/jamonholmgren/status/1647305506053320704)\n- 🎥 [Song of Bloom - \"Peut-on le faire en React Native ?\"](https://www.youtube.com/watch?v=PfCQEA72ljU)\n- 🎥 [Routage basé sur les fichiers dans React Native avec Expo Router](https://www.youtube.com/watch?v=RglRiycD0oQ)\n- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (Paris, 1er juin) nous offre -10% sur les entrées (code \"REACTHEBDO\").\n- 👥 [App.js](https://appjs.co/) (Cracovie, 10-12 mai) nous offre [-20% sur les ateliers](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (code \"ThisWeekinReact20\").\n- 👥 [Chain React](https://chainreactconf.com/) (Portland, 18-19 mai) nous offre -10% sur les entrées (code \"thisweekinreact\")."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🧑‍💻 Emplois {#jobs}",
+        "en": "## 🧑‍💻 Emplois {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - 160k€+, Berlin/distanciel**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+        "en": "🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - 160k€+, Berlin/distance**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "534ac82e",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, réseaux sociaux et newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de bâtir des entreprises évolutives et durables.",
+        "en": "La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Réseaux Sociaux et Newsletters. Rejoignez-nous pour construire un outil permettant aux créateurs mondiaux de développer des entreprises évolutives et durables."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**Callstack - Développeur React Native Senior - 100% distanciel, 21-32k PLN nets en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)",
+        "en": "🧑‍💼 [**Callstack - Développeur React Native Senior - Entièrement à distance, 21-32k PLN net sur B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe de leaders React & React Native de Callstack. Consultez notre site pour plus de détails. Nous attendons votre candidature - montrez-nous ce que vous savez faire !",
+        "en": "Voulez-vous travailler sur les applications les plus utilisées au monde ? Souhaitez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack, leader dans React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature avec impatience - montrez-nous ce que vous savez faire !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "🧑‍💼 [**G2i - Emplois React Native 100% distanciels**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+        "en": "🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k$ plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.",
+        "en": "Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! Rémunération ~160k + 10% de bonus. Expérience en production avec RN requise. Basé aux États-Unis. DM [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus, en mentionnant This Week in React."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)",
+        "en": "💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7057b5fb",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2f2d5f01",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autres {#other}",
+        "en": "## 🔀 Autres {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9fbd2efb",
+      "source_content": "- [Node.js 20 Now Available](https://openjsf.org/blog/2023/04/18/node-js-20-now-available/): with stable test runner, permission model, compiling to executable binary...\n- [pretty-ts-errors](https://github.com/yoavbls/pretty-ts-errors): great idea to improve the TS DX in VSCode.\n- [total-typescript/shoehorn - Partial mocks in TypeScript](https://github.com/total-typescript/shoehorn)\n- [Chrome ships WebGPU](https://developer.chrome.com/blog/webgpu-release/): in Chrome 113+.\n- [WebGPU Fundamentals](https://webgpufundamentals.org/)\n- [Turborepo 1.9](https://twitter.com/turborepo/status/1646238976196444162)",
+      "source_content_hash": "4ef082a7102c1082e9e81c888296755179d4d4a4220f22734abbce851e8ea04e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- [Node.js 20 Now Available](https://openjsf.org/blog/2023/04/18/node-js-20-now-available/) : avec test runner stable, modèle de permissions, compilation en binaire exécutable...\n- [pretty-ts-errors](https://github.com/yoavbls/pretty-ts-errors) : excellente idée pour améliorer l'expérience développeur (DX) TypeScript dans VSCode.\n- [total-typescript/shoehorn - Partial mocks in TypeScript](https://github.com/total-typescript/shoehorn)\n- [Chrome ships WebGPU](https://developer.chrome.com/blog/webgpu-release/) : dans Chrome 113+.\n- [WebGPU Fundamentals](https://webgpufundamentals.org/)\n- [Turborepo 1.9](https://twitter.com/turborepo/status/1646238976196444162)",
+        "en": "- [Node.js 20 Now Available](https://openjsf.org/blog/2023/04/18/node-js-20-now-available/) : avec un test runner stable, un modèle de permissions, compilation en binaire exécutable...\n- [pretty-ts-errors](https://github.com/yoavbls/pretty-ts-errors) : excellente idée pour améliorer la DX de TypeScript dans VSCode.\n- [total-typescript/shoehorn - Mocks partiels en TypeScript](https://github.com/total-typescript/shoehorn)\n- [Chrome ships WebGPU](https://developer.chrome.com/blog/webgpu-release/) : dans Chrome 113+.\n- [WebGPU Fundamentals](https://webgpufundamentals.org/)\n- [Turborepo 1.9](https://twitter.com/turborepo/status/1646238976196444162)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1af652fb",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3f77c6a0",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39f476dc",
+      "source_content": "[![alt](/emails/issues/142/meme.jpg)](https://twitter.com/thekitze/status/1646511070801203202)",
+      "source_content_hash": "356e8d20951e204a8275de77cc552d4c09d44d666a156dbce3e293e582ed4ad1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/142/meme.jpg)](https://twitter.com/thekitze/status/1646511070801203202)",
+        "en": "[![alt](/emails/issues/142/meme.jpg)](https://twitter.com/thekitze/status/1646511070801203202)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/142/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.177404+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "95f768be08f97688172b427ae23e79a6f0c574f8f61d64f864d0abdd2f2e8db3",
+    "en": "95f768be08f97688172b427ae23e79a6f0c574f8f61d64f864d0abdd2f2e8db3"
+  }
+}

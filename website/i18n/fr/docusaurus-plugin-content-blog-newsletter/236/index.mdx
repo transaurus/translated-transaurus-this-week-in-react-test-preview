@@ -1,0 +1,133 @@
+---
+slug: /236
+title: "This Week In React #236: Remix, TanStack, RSC, RedwoodSDK, Storybook, Docusaurus | ExecuTorch, Screens, FlashList, Reanimated, Expo, EAS, Radon | TypeScript, Temporal, Angular, JSPM, ESLint, tsdown"
+authors: [cyrilbo, matthieugicquel]
+date: 05-28-2025
+---
+
+Bonjour à tous !
+
+Cyril et Matthieu de [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) ici 👋.
+
+Cette semaine, l'équipe Remix a annoncé d'importantes nouvelles. Microsoft a également facilité l'expérimentation de la réécriture TypeScript Go.
+
+Dans l'univers React Native, il y a eu quelques versions mineures mais intéressantes, et la conférence App.js commence demain. Seb aura plus à vous en dire la semaine prochaine.
+
+Plongeons dedans !
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![AG Charts : Les meilleurs graphiques React au monde.](/emails/issues/236/adgrid.jpg)](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)
+
+**[AG Charts : Les meilleurs graphiques React au monde.](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)**
+
+AG Charts est une bibliothèque de graphiques basée sur canvas d'AG Grid. Initialement conçue pour alimenter les [AG Grids](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1) Integrated Charts, AG Charts compte désormais plus d'**un million** de téléchargements npm/mois :
+
+- 🆓 **Gratuit :** Accédez à une gamme de types de graphiques, notamment **barres**, **lignes**, **nuages de points**, **aires**, et plus encore - **gratuitement** à vie.
+- 🚀 **Rapide :** Utilisant le **rendu par lots** et une détection avancée des changements avec l'**API Canvas hors écran**, AG Charts peut facilement afficher des centaines de milliers de points de données par défaut.
+- 📊 **Graphiques financiers :** Créez des graphiques financiers interactifs avec annotations avancées en seulement 3 lignes de code.
+- 🏢 **Fonctionnalités Entreprise :** Passez à Enterprise pour débloquer des capacités avancées comme les animations, menus contextuels, réticules et plus. Essayez gratuitement sans licence d'essai requise.
+
+En savoir plus : [www.ag-grid.com/charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)
+
+---
+
+## ⚛️ React {#react}
+
+[![Réveillez-vous Remix](/emails/issues/236/remix.jpg)](https://remix.run/blog/wake-up-remix)
+
+**[Réveillez-vous Remix - Le plan pour Remix v3](https://remix.run/blog/wake-up-remix)**
+
+Cette semaine, vous avez peut-être entendu une rumeur selon laquelle [Remix abandonnait React](https://x.com/AdamRackis/status/1925646909345058818). Ryan et Michael viennent de publier un article officiel décrivant l'avenir de Remix.
+
+En bref, React Router continuera d'être entièrement maintenu et restera un choix sûr. En parallèle, Remix v3 sera un nouveau framework basé sur un fork de Preact, leur permettant de contrôler toute la pile.
+
+Leur objectif avec Remix v3 est de "réinventer ce que peut être un framework web". L'article décrit les principes directeurs de ce nouveau framework (optimisation pour les LLM, construction sur les API Web, composition...)
+
+---
+
+- 💸 [Product for Engineers - Voici pourquoi vous ne livrez pas](https://go.posthog.com/twir-may28)
+- 📜 [La beauté de TanStack Router](https://tkdodo.eu/blog/the-beauty-of-tan-stack-router) : Dominik passe en revue les fonctionnalités qui distinguent Tanstack Router : routage typé avec le principe StrictOrFrom, gestion d'état des paramètres de recherche, routage basé sur les fichiers et support de Suspense.
+- 📜 [Composer des composants Serveur et Client : la superpuissance de React moderne](https://www.epicreact.dev/composing-server-and-client-components-the-modern-reacts-superpower-08yn9) : Les RSC contrastent fortement avec l'ancienne époque des balises script et variables globales.
+- 📜 [Pourquoi les Error Boundaries de React ne sont pas juste des Try/Catch pour composants](https://www.epicreact.dev/why-react-error-boundaries-arent-just-try-catch-for-components-i6e2l) : Ce sont des composants déclaratifs qui n'interceptent que les erreurs de rendu. Cet article partage divers conseils pragmatiques comme l'utilisation du package `react-error-boundary` ou comment intégrer un bouton de réessai.
+- 📜 [Les Server Actions de Next.js sont des endpoints API publics](https://growl.dev/blog/nextjs-server-actions/) : Les Server Actions peuvent être appelées via des commandes Curl, et leurs IDs peuvent facilement fuiter. Elles doivent être traitées avec les mêmes précautions de sécurité que des endpoints API publics traditionnels.
+- 📜 [Votre méta-framework React semble cassé, voici pourquoi](https://rwsdk.com/blog/your-react-meta-framework-feels-broken) : RedwoodSDK tente de supprimer les couches d'abstraction inutiles, conventions et autres éléments magiques existants dans Next.js et Remix.
+- 📜 [Construire avec des composants Serveur et Client dans RedwoodSDK](https://rwsdk.com/blog/react-rsc-redwoodsdk)
+- 📜 [SolidJS pour les développeurs React](https://marmelab.com/blog/2025/05/28/solidjs-for-react-developper.html)
+- 📜 [Construire un composant "Maintenir pour supprimer"](https://emilkowal.ski/ui/building-a-hold-to-delete-component)
+- 📜 [Comprendre les erreurs d'hydratation en construisant un projet React SSR](https://www.propelauth.com/post/understanding-hydration-errors)
+- 📜 [Pourquoi la composition surpasse l'héritage dans React](https://thetshaped.dev/p/why-composition-beats-inheritance-react-projects-extensible-components)
+- 💸 [The Road to Next - Maîtrisez le développement web full-stack avec Next.js 15 et React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)
+- 📦 [Docusaurus 3.8](https://docusaurus.io/blog/releases/3.8) : Poursuit le travail sur des builds plus rapides, ajoute le support des CSS Cascade layers, les deux derrière des "Future Flags".
+- 📦 [Storybook 9.0](https://github.com/storybookjs/storybook/releases/tag/v9.0.0) : Après de nombreuses betas/RCs, il est enfin sorti, mais pas encore d'article de blog officiel.
+- 📦 [TanStack Query v5.77](https://github.com/TanStack/query/releases/tag/v5.77.0) : Ajoute `maxChunks` pour conserver dans le cache pour les requêtes streamées.
+- 🎥 [Youssef Benlemlih - TanStack prend lentement le contrôle de React](https://www.youtube.com/watch?v=u10Zlg_Un8I)
+- 🎥 [Alem Tuzlak - Comprendre la cause des problèmes d'hydratation dans react-router](https://www.epicweb.dev/tips/understanding-the-cause-of-hydration-issues-in-react-router~si4z9)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Getting started with Clerk Billing](/emails/issues/236/clerk.jpg)](https://go.clerk.com/KfnV7Rj)
+
+**[Démarrer avec Clerk Billing](https://go.clerk.com/KfnV7Rj)**
+
+Apprenez à créer une expérience de facturation complète avec Clerk—sans interface personnalisée, webhooks ou gestion de sessions Stripe requise.
+
+- Créez une page de tarification avec le composant `<PricingTable />`
+- Connectez-vous à Stripe — pas d'appels API manuels, pas de synchronisation manuelle
+- Gérez les plans et les droits dans le tableau de bord Clerk
+- L'aide `has()` pour contrôler l'accès en fonction du plan, des fonctionnalités et des autorisations du client
+- Gérez les données utilisateur et d'abonnement au même endroit
+
+Activez la facturation, insérez `<PricingTable/>` sur votre page `/pricing` et [commencez à monétiser votre application](https://go.clerk.com/LphCouG).
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [EAS Workflows est la norme pour le CI/CD React Native. Passez moins de temps à penser au CI et plus de temps à développer des fonctionnalités.](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)
+- 📣 [Expo - Changements incrémentiels d'hébergement EAS](https://expo.dev/changelog/incremental-eas-hosting-changes)
+- 📜 [Expo \- Ce que tout développeur devrait savoir sur l'utilisation des variables d'environnement](https://expo.dev/blog/what-are-environment-variables)
+- 📜 [Expo - Comment publier votre application Bolt sur l'App Store (Aucun code requis)](https://expo.dev/blog/how-to-get-your-ai-app-to-the-app-store)
+- 📦 [RN ExecuTorch 0.4.0 - Plus de LLM, appels d'outils, embeddings de texte, reconnaissance vocale multilingue et OCR, et segmentation d'image](https://blog.swmansion.com/react-native-executorch-release-v0-4-0-262d4013ac10)
+- 📦 [RN Screens 4.11 \- intégration react-native-edge-to-edge, présentation `pageSheet`](https://github.com/software-mansion/react-native-screens/releases/tag/4.11.0)
+- 📦 [Radon IDE 1.7 \- Nombreuses corrections de bugs](https://github.com/software-mansion/radon-ide/releases/tag/v1.7.0)
+- 📦 [FlashList 2.0 RC1](https://github.com/Shopify/flash-list/releases/tag/v2.0.0-rc.1): Aucun changement majeur depuis la dernière alpha, c'est maintenant une Release Candidate et déjà considérée comme prête pour la production.
+- 📦 [Reanimated 4.0.0-beta.4 \- Support RN 0.78, 0.79 et 0.80, corrections d'animations CSS, améliorations de stabilité](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.4)
+- 🎥 [Expo - La playlist Golden Workflows](https://www.youtube.com/watch?v=u8MAJ0F18s0&list=PLsXDmrmFV_AQ1fp78TTKP51N_R-EW98oT)
+- 🎙️ [RNR 333 \- Expo Atlas avec Cedric van Putten](https://infinite.red/react-native-radio/rnr-333-expo-atlas-with-cedric-van-putten)
+- 🎙️ [Rocket Ship 070 \- L'enfer des versions React Native, les React Server Components avec Expo & mises à jour de l'application Invoice](https://share.transistor.fm/s/b04dbb2b)
+
+---
+
+## 🔀 Autres {#other}
+
+- 📜 [Aperçus natifs TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-native-previews/) : Microsoft a annoncé la réécriture en Go de TypeScript il y a quelques mois. Les versions nocturnes de cette réécriture seront désormais publiées et peuvent être utilisées avec une CLI ou une extension VS Code. La prise en charge JSX a été ajoutée, et elle reste environ 10 fois plus rapide que la version JS.
+- 📜 [Ne pas faire d'assertions sur les requêtes](https://www.epicweb.dev/do-not-assert-on-requests) : Le créateur de msw explique ce qu'il recommande à la place de vérifier le corps/en-tête des requêtes envoyées dans les tests.
+- 📜 [ESLint v9 Rétrospective - Un bilan de ce qui a fonctionné et de ce qui n'a pas fonctionné](https://eslint.org/blog/2025/05/eslint-v9.0.0-retrospective/)
+- 📜 [Passer de tsup à tsdown](https://alan.norbauer.com/articles/tsdown-bundler/)
+- 📜 [Une brève histoire de JavaScript](https://deno.com/blog/history-of-javascript)
+- 📦 [Firefox 139 - Temporal, `hidden=until-found`, `dialog.requestClose()`](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/139) : Le premier navigateur à prendre en charge l'API Temporal de stade 3 !
+- 📦 [JSPM 4.0 - Gestion de paquets basée sur les standards des cartes d'import](https://jspm.org/jspm-4.0-release) : Un projet assez innovant pour livrer des frontends sans étape de build.
+- 📦 [Angular 20.0 - Réactivité, API Resource, SSR, Sans Zones, Vitest, et plus](https://medium.com/@mgechev/b5c9c06cf301)
+
+---
+
+## 🤭 Amusant {#fun}
+
+[![Tweet de Benjamin Lee : En espérant que @tan_stack reste à l'abri de RSC](/emails/issues/236/meme.jpg)](https://x.com/Benjamin_D_Lee/status/1926071667345822140)
+
+[![mème2](/emails/issues/236/meme2.jpg)](hhttps://x.com/alxfazio/status/1926731799226462646)
+
+À plus ! 👋

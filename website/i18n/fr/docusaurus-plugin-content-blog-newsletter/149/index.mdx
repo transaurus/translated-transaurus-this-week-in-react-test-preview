@@ -1,0 +1,171 @@
+---
+slug: /149
+title: "This Week In React #149: Panda CSS, React-Native 0.72, Server Actions, Isograph, MDX, Remix, Gatsby, Storybook, OpenNext, Wrap-Balancer, Fresh, Docusaurus, surveys... "
+authors: [slorber]
+date: 06-20-2023
+---
+
+Bonjour à tous !
+
+Cette semaine a été plus chargée que la précédente. Il y a eu notamment 2 grandes sorties, dont une que j'[attendais avec impatience](https://twitter.com/sebastienlorber/status/1671433559280607235) de publier !
+
+- Panda CSS : une bibliothèque CSS-in-JS très prometteuse
+- React-Native 0.72 : des améliorations notables, notamment liées à Metro
+
+<!-- truncate -->
+
+**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![Tina.io est un CMS headless pour les sites basés sur Markdown](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io est un CMS headless pour les sites basés sur Markdown](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- Interface d'édition pour vos fichiers Markdown
+- UI pour les composants MDX
+- Prend en charge le rendu statique (SSG) et côté serveur (SSR)
+- Option d'édition visuelle (prévisualisation en direct)
+- Construction avec blocs réutilisables
+
+Testez un site de démarrage
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)
+- [Next.js + Tailwind avec édition visuelle](https://github.com/tinacms/tina-cloud-starter) (Github)
+
+Ou exécutez `npx create-tina-app@latest` puis visitez `localhost:3000/admin`
+
+Regardez la [vidéo de démo de 4 min](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## ⚛️ React {#react}
+
+[![Panda CSS](/emails/issues/149/panda.jpg)](https://panda-css.com/)
+
+**[Panda CSS](https://panda-css.com/)**
+
+Segun Adebayo (créateur de Chakra UI) dévoile sa bibliothèque CSS-in-JS tant attendue ([bande-annonce](https://twitter.com/thesegunadebayo/status/1669732623994834946)). Elle offre une excellente DX, s'appuie sur des fonctionnalités CSS modernes (couches en cascade), est performante (analyse statique à la compilation, pas de runtime, CSS atomique)... Bref, elle coche beaucoup de cases et suscite un vif intérêt. Elle s'intègre particulièrement bien avec React (props de style JSX, compatible avec les React Server Components, etc.), mais peut aussi être utilisée avec d'autres frameworks.
+
+C'est une bibliothèque à surveiller de près qui pourrait bien rivaliser avec Tailwind : elle s'intègre mieux avec les frameworks cibles et ne vous force pas à utiliser un `className` interminable.
+
+---
+
+- 👀 [State of React - Survey Preview](https://github.com/Devographics/surveys/issues/85#issuecomment-1586439053): design of the new React survey is almost complete. You can have a [preview](https://survey.devographics.com/en-US/survey/state-of-react/2023) and give feedback.
+- 👀 [Lee Robinson - "Dev server performance is our top priority"](https://twitter.com/leeerob/status/1671260151347830784): Next.js' dev server app dir has been criticised for its slowness, but Vercel plans to remedy this.
+- 👀 [Remix - Dev Server v2 is now stable](https://twitter.com/pcattori/status/1669828506044203008): can be activated in v1 with a flag.
+- 👀 [MDX - new GitHub syntax highlighting](https://twitter.com/wooorm/status/1671159366085672968)
+- 👀 [MDX - new playground options](https://twitter.com/sebastienlorber/status/1669332176431894533)
+- 📊 [Stack Overflow Developer Survey 2023](https://survey.stackoverflow.co/2023/): as expected, React remains the most widely used web framework this year and Next.js has moved up the rankings.
+- 💬 [Gatsby RFC - Adapters](https://github.com/gatsbyjs/gatsby/discussions/38231): a new type of plugin to adapt the build to a deployment platform (Vercel, Netlify...) regarding caching, headers, redirects...
+- 📖 [Improved Next.js image docs](https://twitter.com/leeerob/status/1670815761508581376)
+- 📜 [Introduction to Next.js Server Actions](https://makerkit.dev/blog/tutorials/nextjs-server-actions): great overview of Server Actions in Next.js 13.4. TIL that they can be invoked from a button.
+- 📜 [Introducing Isograph](https://isograph.substack.com/p/introducing-isograph): Robert Balicki (ex Relay) shares the POC of a new GraphQL client for React based on the concept of resolvers.
+- 📜 [SpiderMonkey Newsletter - Firefox 114-115](https://spidermonkey.dev/blog/2023/06/09/newsletter-firefox-114-115.html): Firefox devs announced that they are working on optimisations for frameworks such as React. With Firefox 115, [all browsers now support Change Array By Copy](https://twitter.com/sebastienlorber/status/1671166785738133505), a new ES2023 feature super useful to update your React state.
+- 📜 [React Admin June 2023 Update](https://marmelab.com/blog/2023/06/13/react-admin-june-2023-update.html): presents a fine list of features introduced over the last 3 months.
+- 📜 [Ryan Bigg - Rails 7, React, TypeScript, ESBuild and View Components](https://ryanbigg.com/2023/06/rails-7-react-typescript-setup): explain how to manually integrate React into a Rails app. SPA mode, or with several entry points.
+- 📜 [Replay for Test Suites](https://blog.replay.io/replay-for-test-suites): the time-travel debugging tool integrates with Cypress and raises $13m.
+- 📜 [Storybook - New API references, TypeScript code snippets, and docs DX](https://storybook.js.org/blog/docs-updates/)
+- 📜 [A Visual Guide to Layouts in Next.js 13](https://www.builder.io/blog/layouts-in-nextjs-13-visual)
+- 📜 [Building a `<Button>` in React](https://catjam.fi/articles/ultimate-button-component)
+- 📜 [Test your React hooks with Vitest efficiently](https://mayashavin.com/articles/test-react-hooks-with-vitest)
+- 📜 [Add Prisma to a Remix app](https://www.jacobparis.com/content/remix-prisma)
+- 📦 [Docusaurus v3 alpha - MDX 2 + React 18](https://twitter.com/docusaurus/status/1669370649326895105)
+- 📦 [Vercel AI SDK](https://vercel.com/blog/introducing-the-vercel-ai-sdk)
+- 📦 [React Wrap Balancer v1.0 - now uses the native CSS feature](https://twitter.com/shuding_/status/1669602326481387522)
+- 📦 [OpenNext 2.0 - revamped ISR support](https://twitter.com/fanjiewang/status/1670941900302368768)
+- 📦 [Fresh 1.2 – welcoming a full-time maintainer, sharing state between islands...](https://deno.com/blog/fresh-1.2)
+- 📦 [Melange 1.0 - compiles OCaml / Reason to JavaScript](https://buttondown.email/anmonteiro/archive/melange-hits-v10/)
+- 📦 [Waku 0.12](https://twitter.com/dai_shi/status/1670650381762961408)
+- 🎥 [Are React client components bad?](https://www.youtube.com/watch?v=6jM_0wDOw4g)
+- 🎥 [React Summit 2023 - Youtube Playlist](https://www.youtube.com/playlist?list=PLNBNS7NRGKME880lcYdw9QwkCiDYQFgCK)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Exploitez la puissance de React dans le prototypage](/emails/issues/149/uxpin.png)](https://www.uxpin.com/merge/developers?utm_source=partnerships&utm_medium=partner&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)
+
+**[Exploitez la puissance de React dans le prototypage.](https://www.uxpin.com/merge/developers?utm_source=partnerships&utm_medium=partner&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)**
+
+Intégrez des composants React dans le processus de conception et permettez aux designers de prototyper avec les mêmes éléments que ceux utilisés pour construire le produit final.
+
+Supprimez la déconnexion entre la conception et le code et publiez des produits plus rapidement !
+
+[Essayez le prototypage piloté par les composants avec UXPin Merge.](https://www.uxpin.com/merge/developers?utm_source=partnerships&utm_medium=partner&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![RN 0.72](/emails/issues/149/rn.jpg)](https://reactnative.dev/blog/2023/06/21/0.72-metro-package-exports-symlinks)
+
+**[React Native 0.72 - Prise en charge des liens symboliques, de meilleures erreurs et plus](https://reactnative.dev/blog/2023/06/21/0.72-metro-package-exports-symlinks)**
+
+Après plusieurs Golden RC, la dernière version de React-Native est enfin sortie et sera bientôt utilisée dans le SDK Expo 49. Plusieurs améliorations sont mentionnées (DX, Hermes, performance...) ainsi que des changements cassants. J'apprécie particulièrement ces 2 nouvelles fonctionnalités dans le bundler Metro :
+
+- Liens symboliques (bêta) : fonctionnalité longtemps attendue pour simplifier la prise en charge des monorepos et de pnpm
+- [Package Exports](https://reactnative.dev/blog/2023/06/21/package-exports-support) (bêta) : meilleure encapsulation des bibliothèques, compatibilité avec le reste de l'écosystème frontend et capacité à exposer un point d'entrée React-Native spécifique.
+
+---
+
+- 📜 [Variables d'environnement dans React Native : La bonne méthode](https://elazizi.com/posts/environment-variables-in-react-native-the-right-way/) : excellent article sur la gestion typée des variables d'environnement dans le contexte d'Expo.
+- 💬 [Nouvelle couche d'interopérabilité pour le rendu](https://twitter.com/cortinico/status/1671089178107363329) : avec RN v0.72, une couche d'interopérabilité expérimentale permet d'utiliser les composants React-Native hérités avec le nouveau moteur de rendu Fabric. Cela permet une adoption progressive de la nouvelle architecture.
+- 💬 [Changements à venir pour les bibliothèques dans React Native 0.73 - Android](https://github.com/react-native-community/discussions-and-proposals/issues/671) : vous devrez ajouter un namespace à la build Gradle.
+- 👀 [React-Native macOS 0.71 - Nouvelle architecture dans le template d'init](https://github.com/microsoft/react-native-macos/pull/1853)
+- 👀 [1/5 des 100 meilleures applications médicales de l'App Store utilisent React Native](https://twitter.com/Baconbrix/status/1671171049336221697)
+- 👀 [Expo Updates - future prise en charge de la compression Brotli](https://twitter.com/JI/status/1671368239463690240)
+- 📦 [react-native-colo-loco 1.1 - Colocalisation du code natif et JS](https://twitter.com/jamonholmgren/status/1671009094545846273)
+- 📦 [react-native-mmkv 2.9 - Prise en charge de RN 0.73](https://twitter.com/mrousavy/status/1671127232113266689)
+- 📦 [Maestro 1.29](https://twitter.com/mobile__dev/status/1670940310460043266)
+- 🎙️ [RNR 269 - React Native VisionCamera v3 avec Marc Rousavy](https://reactnativeradio.com/episodes/rnr-269-react-native-visioncamera-v3-with-marc-rousavy)
+
+---
+
+## 🧑‍💻 Emplois {#jobs}
+
+🧑‍💼 [**Passionfroot - Ingénieur Full-stack Senior (Remix) - €160k+, Berlin/distant**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+La mission de Passionfroot est d'autonomiser les entreprises indépendantes de demain via YouTube, Podcasts, Réseaux Sociaux et Newsletters. Rejoignez-nous pour construire un outil qui permettra aux créateurs du monde entier de développer des entreprises évolutives et durables.
+
+🧑‍💼 [**Callstack - Développeur React Native Senior - Télétravail complet, PLN 21-32k net en B2B, mensuel**](https://www.callstack.com/senior-react-native-developer)
+
+Vous souhaitez travailler sur les applications les plus utilisées au monde ? Aimeriez-vous co-créer la technologie React Native ? Rejoignez l'équipe Callstack de leaders React & React Native. Consultez notre site pour plus de détails. Nous attendons votre candidature avec impatience - montrez-nous ce que vous savez faire !
+
+🧑‍💼 [**G2i - Emplois React Native 100% à distance**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+Nous avons plusieurs postes ouverts pour des développeurs spécialisés en React Native ! La rémunération est d'environ 160k plus 10% de bonus. Vous devez avoir une expérience en production avec RN et être basé aux États-Unis. Envoyez un DM à [@gabe_g2i](https://twitter.com/gabe_g2i) pour en savoir plus et n'oubliez pas de mentionner This Week in React.
+
+💡 [Comment publier une offre ?](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 Autres {#other}
+
+- [Chrome for Testing : téléchargements fiables pour l'automatisation des navigateurs](https://developer.chrome.com/blog/chrome-for-testing/)
+- [La théorie unifiée de la réactivité selon Miško Hevery](https://www.builder.io/blog/unified-reactivity-theory)
+- [Emails HTML modernes à base de composants](https://fullystacked.net/posts/modern-component-driven-email/)
+- [L'enquête State of CSS 2023 est ouverte](https://dev.to/sachagreif/the-2023-state-of-css-survey-is-now-open-18bk)
+- [Les pièges de l'imbrication CSS](https://kilianvalkhof.com/2023/css-html/the-gotchas-of-css-nesting/)
+- [NestJS 10.0](https://trilon.io/blog/nestjs-10-is-now-available)
+- [Rspack v0.2.3](https://twitter.com/rspack_dev/status/1671035874770038784)
+- [TypeScript 5.2 : nouveau mot-clé 'using'](https://www.totaltypescript.com/typescript-5-2-new-keyword-using)
+- [Feuille de route de Vitest 1.0](https://twitter.com/sheremet_va/status/1669740155391864833)
+
+---
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/149/meme.jpg)](https://twitter.com/JLarky/status/1669741878324113408)
+
+À bientôt ! 👋

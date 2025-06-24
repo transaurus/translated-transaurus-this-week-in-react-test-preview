@@ -1,0 +1,601 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/185/index.mdx",
+  "source_file_content_hash": "206a8768cb110196456b6ce7957f58b534cdc749673d2c1923d8a504b418c94d",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /185\ntitle: \"This Week In React #185: React Conf, useDeferredValue, React Query, refs, Next.js after, mini-react, Astro, MDXTS, Radix, Solid, Redwood, Pigment, Apollo, Playwright, Re.Pack, RN-Model3D, RN perf, RN Video, VisionOS, LiveView, Anchor Positioning ...\"\nauthors: [slorber, bndkt]\ndate: 05-15-2024\n---",
+      "source_content_hash": "b483d326231415d4fb9d4fb57bcdd73d9956d7c9d118f9e377dd3a9620b4d204",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week is calm in terms of releases, so far at least!. We have great React articles, but also some criticisms, or content that suggests we use alternative solutions (Solid, Phoenix LiveView) 😅.",
+      "source_content_hash": "1aafa3d4b8187dada82f8ceeefc44cc4efa54a97fdf886b52aacdeee0fbee296",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette semaine est calme en termes de sorties, du moins jusqu'à présent ! Nous avons de superbes articles sur React, mais aussi quelques critiques ou contenus suggérant d'utiliser des solutions alternatives (Solid, Phoenix LiveView) 😅.",
+        "en": "Cette semaine est calme en termes de sorties, du moins jusqu'à présent ! Nous avons d'excellents articles sur React, mais aussi des critiques, ou du contenu qui suggère d'utiliser des solutions alternatives (Solid, Phoenix LiveView) 😅."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React Conf starts later today! We can expect great things to be presented there, that we'll cover next week. I sent the newsletter a bit earlier today to make sure I can watch it live without any pressure 😄.",
+      "source_content_hash": "9fdf3eeae887b1f51f824834fad20e10015272242d57e9013441eba3a13df3f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La React Conf débute plus tard aujourd'hui ! Nous pouvons nous attendre à des présentations exceptionnelles que nous couvrirons la semaine prochaine. J'ai envoyé la newsletter un peu plus tôt aujourd'hui pour pouvoir la suivre en direct sans pression 😄.",
+        "en": "La React Conf débute plus tard aujourd'hui ! Nous pouvons nous attendre à de grandes annonces qui seront présentées et que nous couvrirons la semaine prochaine. J'ai envoyé la newsletter un peu plus tôt aujourd'hui pour m'assurer de pouvoir la regarder en direct sans pression 😄."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The [React Conf YouTube live stream link](https://www.youtube.com/watch?v=T8TZQ6k4SLE) is already available. Looking at the [conf agenda](https://conf.react.dev/agenda), we are particularly excited about the following talks:",
+      "source_content_hash": "7e2da1c3873d9fa7bcff9546389bfd8cd40359f61378a884062ec5bf21f28498",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le [lien de diffusion en direct YouTube de la React Conf](https://www.youtube.com/watch?v=T8TZQ6k4SLE) est déjà disponible. En consultant [l'agenda de la conférence](https://conf.react.dev/agenda), nous sommes particulièrement enthousiastes à propos des présentations suivantes :",
+        "en": "Le [lien du live YouTube de la React Conf](https://www.youtube.com/watch?v=T8TZQ6k4SLE) est déjà disponible. En regardant [l'agenda de la conférence](https://conf.react.dev/agenda), nous sommes particulièrement enthousiastes pour les présentations suivantes :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4ddf6ae7",
+      "source_content": "- React and React Native keynotes and Q&A\n- Universal React Server Components in Expo Router - Evan Bacon - Expo\n- Real-time server components - Sunil Pai - PartyKit\n- Spatial computing with React - Michał Pierzchała - Callstack\n- Cross Platform React - Olga Zinoveva and Naman Goel - Meta",
+      "source_content_hash": "3b96e6ca9af6413d8aae3a4bb7fe9a24c54519dfa44f7467c8916f737aad3b03",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- Keynotes React et React Native et Q&R\n- Composants serveur universels React dans Expo Router - Evan Bacon - Expo\n- Composants serveur en temps réel - Sunil Pai - PartyKit\n- Informatique spatiale avec React - Michał Pierzchała - Callstack\n- React multiplateforme - Olga Zinoveva et Naman Goel - Meta",
+        "en": "- Keynotes React et React Native et séances de questions-réponses\n- Composants serveur universels dans Expo Router - Evan Bacon - Expo\n- Composants serveur en temps réel - Sunil Pai - PartyKit\n- Informatique spatiale avec React - Michał Pierzchała - Callstack\n- React multiplateforme - Olga Zinoveva et Naman Goel - Meta"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "Speaking of conferences, the U.S. React Native Conference [**Chain React**](https://chainreactconf.com/?utm_source=thisweekinreact) is back on July 17-19 (Portland/OR). We partnered to offer you 15% off your ticket with code “TWIR”.",
+      "source_content_hash": "efd50f53141de225c69430d65f6fd82aec097c6e83c66f5bec9d364bc6f2cb12",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En parlant de conférences, la conférence américaine React Native [**Chain React**](https://chainreactconf.com/?utm_source=thisweekinreact) revient du 17 au 19 juillet (Portland, Oregon). Nous nous sommes associés pour vous offrir 15% de réduction avec le code \"TWIR\".",
+        "en": "En parlant de conférences, la conférence React Native américaine [**Chain React**](https://chainreactconf.com/?utm_source=thisweekinreact) revient les 17-19 juillet (Portland/OR). Nous nous sommes associés pour vous offrir 15% de réduction sur votre billet avec le code \"TWIR\"."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a7f8824",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2a7f8824",
+        "en": "@@untranslatable_placeholder_2a7f8824"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "19fba416",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_19fba416",
+        "en": "@@untranslatable_placeholder_19fba416"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "99d14dfd",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_99d14dfd",
+        "en": "@@untranslatable_placeholder_99d14dfd"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2a0d3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "109ace10",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "[![In-App Subscriptions Made Easy](/emails/issues/177/revenuecat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)",
+      "source_content_hash": "7e67171014c2ddc86d457b290be06bd084be9783072904e6acb8a28e833da757",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Abonnements in-app simplifiés](/emails/issues/177/revenuecat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)",
+        "en": "[![Abonnements in-app simplifiés](/emails/issues/177/revenuecat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "**[In-App Subscriptions Made Easy](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**",
+      "source_content_hash": "239eea7f98fd554bcf37ec20eb090acbfed962da6cfd466230176478351310d5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Abonnements in-app simplifiés](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**",
+        "en": "**[Abonnements in-app simplifiés](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "RevenueCat gives you everything you need to monetize, analyze, and grow your app business. Effortlessly control customer access and entitlements, manage data, and experiment with pricing. See why over 30,000 apps trust RevenueCat to power their in-app purchase infrastructure.",
+      "source_content_hash": "c6da2f2f57bdd089a400a54dfd9ef373cf2dfe0902019f728e1cfcb766c3862c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "RevenueCat vous offre tout ce dont vous avez besoin pour monétiser, analyser et développer votre activité d'application. Contrôlez facilement l'accès et les droits des clients, gérez les données et testez des stratégies tarifaires. Découvrez pourquoi plus de 30 000 applications font confiance à RevenueCat pour leur infrastructure d'achats in-app.",
+        "en": "RevenueCat vous offre tout ce dont vous avez besoin pour monétiser, analyser et développer votre activité d'application. Contrôlez facilement l'accès et les droits des clients, gérez les données et expérimentez avec les prix. Découvrez pourquoi plus de 30 000 applications font confiance à RevenueCat pour leur infrastructure d'achats intégrés."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![Snappy UI Optimization with useDeferredValue](/emails/issues/185/useDeferredValue.jpg)](https://www.joshwcomeau.com/react/use-deferred-value/)",
+      "source_content_hash": "5ba8a9bae797bfe112acc24d2417c22c81ad58daff1b507ec0297c0e544d1e71",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Optimisation réactive de l'interface utilisateur avec useDeferredValue](/emails/issues/185/useDeferredValue.jpg)](https://www.joshwcomeau.com/react/use-deferred-value/)",
+        "en": "[![Optimisation réactive de l'interface avec useDeferredValue](/emails/issues/185/useDeferredValue.jpg)](https://www.joshwcomeau.com/react/use-deferred-value/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**[Snappy UI Optimization with useDeferredValue](https://www.joshwcomeau.com/react/use-deferred-value/)**",
+      "source_content_hash": "778e8b899915acc7c82da5da247bf8bd7487c93d7f6faf908bf4503c4b9c4b0c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Optimisation réactive de l'interface utilisateur avec useDeferredValue](https://www.joshwcomeau.com/react/use-deferred-value/)**",
+        "en": "**[Optimisation réactive de l'interface avec useDeferredValue](https://www.joshwcomeau.com/react/use-deferred-value/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Josh Comeau comes back with a great blog post showing the usefulness of the `useDeferredValue()` hook, that allows you to opt-in for Concurrent React by deferring the rendering of expensive components to a lower priority task. He presents a very concrete performance problem he was facing and how the hook helped solve it in practice. For this to work efficiently, it is important that you wrap your expensive components with `memo()`. The interactive timelines can help you understand how this is different from throttling.",
+      "source_content_hash": "760141747740d0c489d53918772651e7b6dde3f1df000ec081ef5d6f60f4e379",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Josh Comeau revient avec un excellent article démontrant l'utilité du hook `useDeferredValue()`, qui permet d'opter pour Concurrent React en différant le rendu des composants coûteux vers une tâche de priorité inférieure. Il présente un problème de performance concret et comment le hook l'a résolu en pratique. Pour une efficacité optimale, il est crucial d'encapsuler vos composants lourds avec `memo()`. Les chronologies interactives aident à comprendre la différence avec le throttling.",
+        "en": "Josh Comeau revient avec un excellent article montrant l'utilité du hook `useDeferredValue()`, qui vous permet d'opter pour React Concurrent en différant le rendu de composants coûteux vers une tâche de priorité inférieure. Il présente un problème de performance très concret auquel il était confronté et comment le hook a aidé à le résoudre en pratique. Pour que cela fonctionne efficacement, il est important que vous encapsuliez vos composants coûteux avec `memo()`. Les chronologies interactives peuvent vous aider à comprendre en quoi cela diffère du throttling."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "49d8fe2a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "[![Why React Query?](/emails/issues/185/reactquery.jpg)](https://ui.dev/why-react-query)",
+      "source_content_hash": "fdf6b0edd759f08b5ab21cfe108e3fb2e4c0ac08e5cc761a33b7a7c0bb83f576",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Pourquoi React Query ?](/emails/issues/185/reactquery.jpg)](https://ui.dev/why-react-query)",
+        "en": "[![Pourquoi React Query ?](/emails/issues/185/reactquery.jpg)](https://ui.dev/why-react-query)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "**[Why React Query?](https://ui.dev/why-react-query)**",
+      "source_content_hash": "f3a2c3ee00eb7d6a0a9ee249c29e268b3bb99194236e1038ce7160221cf95462",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Pourquoi React Query ?](https://ui.dev/why-react-query)**",
+        "en": "**[Pourquoi React Query ?](https://ui.dev/why-react-query)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "Dominik Dorfmeister is launching his official React Query course, and for the occasion published the first lesson for free. It's a great interactive article that slowly builds up on everything React Query does for you, including handling race conditions, deduping requests, and caching. It's really full-featured and more like an \"async state manager\" rather than just a library to fetch data. An interesting read for all React devs, even if you don't use React Query.",
+      "source_content_hash": "06119e7252a034377c8e2870a419b30cbe0df2396e0888f3208aa437e9d12e45",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Dominik Dorfmeister lance son cours officiel sur React Query et publie gratuitement la première leçon à cette occasion. Cet article interactif détaille progressivement toutes les fonctionnalités de React Query : gestion des conditions de course, déduplication des requêtes et mise en cache. Véritable gestionnaire d'état asynchrone plutôt que simple bibliothèque de récupération de données, c'est une lecture instructive pour tous les développeurs React, même sans utiliser React Query.",
+        "en": "Dominik Dorfmeister lance son cours officiel sur React Query, et pour l'occasion publie la première leçon gratuitement. C'est un excellent article interactif qui construit progressivement tout ce que React Query fait pour vous, y compris la gestion des conditions de concurrence, la déduplication des requêtes et la mise en cache. C'est une solution très complète, plus proche d'un \"gestionnaire d'état asynchrone\" que d'une simple bibliothèque de récupération de données. Une lecture intéressante pour tous les développeurs React, même si vous n'utilisez pas React Query."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "158e1f5d",
+      "source_content": "- 💸 [NLUX ― New React library to add AI features](https://nlux.dev/?utm_source=twir-m24)\n- 📖 [React Docs - StrictMode - Fixing bugs by re-running ref callbacks in development](https://19.react.dev/reference/react/StrictMode#fixing-bugs-found-by-re-running-ref-callbacks-in-development): I shared last week that refs are firing twice in React 19 StrictMode. This is for good reasons, and this new doc section explains how it can prevent bugs, notably when dealing with lists of refs.\n- 📖 [React Docs - Don’t use refs to prevent Effects from firing](https://react.dev/learn/synchronizing-with-effects#dont-use-refs-to-prevent-effects-from-firing)\n- 👀 [Next.js PR - unstable_after](http://next.js): This upcoming feature lets the user schedule a callback to be executed after the current request finishes. This requires the runtime to support a waitUntil function, a feature that [Vercel just shipped](https://vercel.com/changelog/waituntil-is-now-available-for-vercel-functions) (that Cloudflare already had). Particularly useful for logging/analytics without delaying the response.\n- 🐦 [Experimental Node.moveBefore() API - preserve DOM state across element moves & reparenting](https://twitter.com/domfarolino/status/1790407887740666335): An awesome new API could land on the web platform allowing React to reparent JSX nodes to different places without resetting the DOM state (see also [Sebastian Markbåge comment](https://github.com/whatwg/dom/issues/1255#issuecomment-2021486232)).\n- 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Grab the tickets before they're sold out. Get a 10% discount with code \"TWIR\".\n- 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - June 27 - Malte Ubl, Jessica Sachs, James Q Quick, and many other international speakers will be there! 10% discount with code \"TWIR\"\n- 📜 [Build Your Own React.js in 400 Lines of Code](https://webdeveloper.beehiiv.com/p/build-react-400-lines-code): The author built a “mini-react” able to run the official React tic-tac-toe tutorial, in 400 lines, with Fiber/interruption support. He explains some of the main algorithms\n- 📜 [The Forensics Of React Server Components (RSCs)](https://www.smashingmagazine.com/2024/05/forensics-react-server-components/): A deep dive into RSCs, Suspense, streaming, lazy loading including many helpful schemas, annotated screenshots, and payload examples. Interesting focus on the performance and UX impact.\n- 📜 [It’s not just you, Next.js is getting harder to use](https://www.propelauth.com/post/nextjs-challenges): Argues that with App Router, Next.js is becoming more subtle and difficult to use. Illustrated with aggressive caching and inability to get the current pathname in RSCs.\n- 📜 [Animating Radix Primitives with Framer Motion](https://sinja.io/blog/animating-radix-primitives-with-framer-motion): Exit animations are more tricky to handle correctly and require using Radix in a controlled way in combination with the “forceMount” prop.\n- 📜 [A React Developer's Guide to Learning SolidJS](https://www.stashpad.com/blog/react-developer-guide-to-solid-js): Greatly explains that the code of both libraries looks similar, but fundamentally works differently, and that can trick you.\n- 📜 [Prefetching data with TanStack Query](https://tigerabrodi.blog/prefetching-data-with-tanstack-query): On a blog with a “Next Post” navigation link, you can prefetch the React Query data of the next post so that navigation is faster.\n- 📜 [React, Electron, and LLMs have a common purpose: the labour arbitrage theory of dev tool popularity](https://www.baldurbjarnason.com/2024/react-electron-llms-labour-arbitrage/): Curious read arguing devs using popular technologies like React are commodities and management favors that over technological progress 🤷‍♂️.\n- 📜 [Moving from RSC to SolidStart](https://www.brenelz.com/posts/moving-from-rsc-to-solid-start)\n- 📜 [Middleware in RedwoodJS](https://redwoodjs.com/blog/middleware-in-redwoodjs) + [New Feature: og:image Middleware](https://redwoodjs.com/blog/new-feature-ogimage-middleware)\n- 📜 [Apollo Client - Optimizing Data Fetching, leveraging useFragment and Colocated Fragments](https://www.apollographql.com/blog/optimizing-data-fetching-with-apollo-client-leveraging-usefragment-and-colocated-fragments)\n- 📜 [How To Integrate Stripe With React?](https://scientyficworld.org/how-to-integrate-stripe-with-react/)\n- 📜 [Drag and Drop with React. Writing E2E tests using Playwright](https://wanago.io/2024/05/06/react-drag-drop-e2e-playwright/)\n- 📜 [Implementing infinite scrolling with React. Writing E2E tests with Playwright](https://wanago.io/2024/04/29/react-infinite-scrolling-e2e-playwright/)\n- 📦 [Astro 4.8 - Astro Actions, Request Rewriting](https://astro.build/blog/astro-480/): Astro added new experimental features, including the ability to call typesafe server functions, validated with Zod using JSON or FormData, and supporting progressive enhancement.\n- 📦 [Pigment CSS 0.0.10](https://github.com/mui/pigment-css/releases/tag/v0.0.10): New zero-runtime CSS-in-JS lib keeps progressing (🐦 [93% of MUI components now support CSS extractions](https://twitter.com/siriwatknp/status/1788061040544194836))\n- 📦 [MDXTS 1.0 - New tool for building content and documenting libraries with MDX, TypeScript, and React](https://www.mdxts.dev/blog/introducing-mdxts)\n- 🕹 [Athena Crisis is now Open Source](https://cpojer.net/posts/athena-crisis-open-source): Christoph Nakazawa (Jest, Metro…) created a full retro indie game available on Steam. The React-DOM codebase is now open source with bounties available for contributors.\n- 🎥 [Theo - This Release Makes Me Want To Leave React](https://www.youtube.com/watch?v=aOk67eT3fpg): Phoenix LiveView [1.0 RC is out](https://www.phoenixframework.org/blog/phoenix-liveview-1.0-released) and solves problems similar to React Server Components in interesting ways. Updates can be sent to the client in real time by maintaining a WebSocket connection to the server. Note there’s an exciting React Conf talk later today on this topic: Real-time server components.\n- 🎥 [React Conf - YouTube live stream](https://www.youtube.com/watch?v=T8TZQ6k4SLE)",
+      "source_content_hash": "51a4bc046af61016dec9d391f8acea862e28f002aa54b036ac50f5908eba744b",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_158e1f5d",
+        "en": "@@untranslatable_placeholder_158e1f5d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3ca4b8b0",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_3ca4b8b0",
+        "en": "@@untranslatable_placeholder_3ca4b8b0"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "945bf499",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e33a2404",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "[![Refine - Open source Retool Alternative](/emails/issues/177/refine.jpg)](https://github.com/refinedev/refine)",
+      "source_content_hash": "2d276c5105b9e40121bca11ed0f2daffe4353daa792c7423bc6d5c7ca04b3d57",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Refine - Alternative Open Source à Retool](/emails/issues/177/refine.jpg)](https://github.com/refinedev/refine)",
+        "en": "[![Refine - Alternative Open Source à Retool](/emails/issues/177/refine.jpg)](https://github.com/refinedev/refine)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "**[Refine - Open source Retool Alternative](https://github.com/refinedev/refine)**",
+      "source_content_hash": "152be9996d9f37db0772a908980c48daf4886dd8b8a8dc9ec3481f0755c639ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Refine - Alternative Open Source à Retool](https://github.com/refinedev/refine)**",
+        "en": "**[Refine - Alternative Open Source à Retool](https://github.com/refinedev/refine)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "The sweet spot between the low code and traditional development for CRUD-heavy applications.",
+      "source_content_hash": "33253582f05660fa85f2ecf13f5f194f0acd33a7c968e2fd0340de64de573e16",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le point idéal entre le développement low code et traditionnel pour les applications riches en CRUD.",
+        "en": "Le point idéal entre le développement low code et traditionnel pour les applications lourdes en CRUD."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "As an open-source React meta-framework designed for Enterprise applications, [Refine](https://github.com/refinedev/refine) offers a headless solution ideal for tasks like admin panels, dashboards, and internal tools.",
+      "source_content_hash": "eac1fc245a10faf1ca83bfb35326e3ed842a9a889a4a9f18535596257ab8a7ec",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "En tant que méta-framework React open source conçu pour les applications d'entreprise, [Refine](https://github.com/refinedev/refine) propose une solution headless idéale pour les tableaux d'administration, les tableaux de bord et les outils internes.",
+        "en": "En tant que méta-framework React open source conçu pour les applications d'entreprise, [Refine](https://github.com/refinedev/refine) offre une solution headless idéale pour des tâches comme les panneaux d'administration, les tableaux de bord et les outils internes."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "While low-code tools may offer initial promise, they often fall short in handling complex scenarios due to scalability issues, limited customization options, and the risk of vendor lock-in.",
+      "source_content_hash": "a7ab4ae0250492c86bebe0cadc94d3c7c6d06825022b7d94dfb2b25d4123016d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Si les outils low code peuvent sembler prometteurs initialement, ils échouent souvent à gérer des scénarios complexes en raison de problèmes d'évolutivité, d'options de personnalisation limitées et du risque de dépendance au fournisseur.",
+        "en": "Bien que les outils low code puissent sembler prometteurs initialement, ils échouent souvent à gérer des scénarios complexes en raison de problèmes d'évolutivité, d'options de personnalisation limitées et du risque de dépendance à un fournisseur."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "Refine enables teams to rapidly develop production-ready apps while maintaining flexibility.",
+      "source_content_hash": "f398068bec29e41d559ca481c7dbd1221cb15b10974d04bd6ebf3766cbbd7b18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Refine permet aux équipes de développer rapidement des applications prêtes pour la production tout en conservant une grande flexibilité.",
+        "en": "Refine permet aux équipes de développer rapidement des applications prêtes pour la production tout en conservant une grande flexibilité."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d1f76d04",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Cette section est rédigée par [Benedikt](https://twitter.com/bndkt).",
+        "en": "Cette section est rédigée par [Benedikt](https://twitter.com/bndkt)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0422e2e2",
+      "source_content": "- 💸 [React Native Analytics — Instantly measure component usage with Omlet. Use data from pre-built and custom charts to improve your codebase](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-may-2024)\n- 🐦 [Autolinking dependencies in React Native Community CLI just got much faster](https://x.com/SzymonRybczak/status/1788520827232584008)\n- 🐦 [Out of the top 100 Business apps in the App Store, 26 are built with React Native, 3 with Flutter, and 8 with Cordova](https://x.com/Baconbrix/status/1790095033472802858)\n- 🐦 [\"Not a HotDog\" detector app in React Native](https://x.com/mrousavy/status/1788895681320522048): Neat demo of frame processors in Vision Camera.\n- 👀 [Hermes now supports visionOS](https://github.com/facebook/hermes/pull/1358)\n- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 22-24 May. Get a [10% discount](https://ti.to/appjs/2024/discount/TWIR) with code \"TWIR\".\n- 📜 [Scratch Card in React Native using RN Skia](https://javascript.plainenglish.io/creating-a-scratch-card-in-react-native-using-react-native-skia-23332bd32942): Tutorial that includes Skia, Reanimated and Gesture Handler.\n- 📜 [Set up a React Native Web Project in a Monorepo](https://unicorn-utterances.com/posts/react-native-web-monorepo): This tutorial is more interesting than its title leads on to, as the setup also includes Vite and Styled Components.\n- 📜 [Handle slow re-renders : a not so obvious solution using React DevTools and JavaScript Profiler](https://www.bam.tech/article/handle-slow-re-renders-a-not-so-obvious-solution-using-react-devtools-and-javascript-profiler): Performance optimization is a really valuable skill but not straightforward to learn. This is a super detailed intro on using Dev Tools and JS Profiler.\n- 📜 [Debunk ideas on hybrid framework](https://www.bam.tech/article/debunk-ideas-on-hybrid-framework): As a RN dev, you hopefully know all this. In my opinion, this is a very good bookmark to have at hand when you encounter people that still have the common misconceptions about RN.\n- 📜 [React Native's New Architecture - An Overview of Performance Benchmarks](https://dev.to/yoel/react-native-new-architecture-what-you-need-to-know-1eke): An overview of New Arch and Bridgeless, followed by some interesting performance benchmarks for both native modules and view modules (rendered through Fabric). Good to see some benchmarks and the code is also available on GitHub.\n- 📜 [Dismissing keyboard in React-Native - Stop the struggle](https://www.bam.tech/article/dismissing-keyboard-in-react-native-stop-the-struggle)\n- 📦 [React-Native-Model3d - Render 3D models in visionOS apps](https://github.com/okwasniewski/react-native-model3d)\n- 📦 [Re.Pack 4.0 - Webpack for React Native - New Architecture, Metro-compatible module resolution](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%404.0.0)\n- 📦 [React Native Video 6.0 - TypeScript, RN 0.73, notification controls, subtitles style, full-screen](https://github.com/TheWidlarzGroup/react-native-video/releases/tag/v6.0.0)\n- 🎙️ [Rocket Ship 40 - From Next.js to React Native with Kitze](https://share.transistor.fm/s/47610b15)\n- 🎙️ [The React Native Show Podcast #37 - Creating Performant React Native Animations with Catalin Miron](https://www.youtube.com/watch?v=1XWmlgTYJ6k)\n- 🎥 [React Native Optimization Shorts - Is Flashlist Actually Better Than The Default Solution?](https://www.youtube.com/watch?v=2FfU-PIDN2U)\n- 🎥 [Simon Grimm - Expo SDK 51: New Packages, Router, Architecture & Template](https://www.youtube.com/watch?v=wqS8LqRhNVY)",
+      "source_content_hash": "4ff127d1e0634b7b82e6c97d7beede954217db51db0ba591986931c88cd2cb60",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [React Native Analytics — Mesure instantanée de l'utilisation des composants avec Omlet. Utilisez les données des graphiques prédéfinis et personnalisés pour améliorer votre base de code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-may-2024)\n- 🐦 [L'autolinking des dépendances dans React Native Community CLI est devenu beaucoup plus rapide](https://x.com/SzymonRybczak/status/1788520827232584008)\n- 🐦 [Parmi les 100 meilleures applications professionnelles de l'App Store, 26 sont construites avec React Native, 3 avec Flutter et 8 avec Cordova](https://x.com/Baconbrix/status/1790095033472802858)\n- 🐦 [Application de détection \"Not a HotDog\" dans React Native](https://x.com/mrousavy/status/1788895681320522048) : Démo élégante des processeurs d'images dans Vision Camera.\n- 👀 [Hermes prend désormais en charge visionOS](https://github.com/facebook/hermes/pull/1358)\n- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 22-24 mai. Obtenez une [réduction de 10%](https://ti.to/appjs/2024/discount/TWIR) avec le code \"TWIR\".\n- 📜 [Carte à gratter en React Native utilisant RN Skia](https://javascript.plainenglish.io/creating-a-scratch-card-in-react-native-using-react-native-skia-23332bd32942) : Tutoriel incluant Skia, Reanimated et Gesture Handler.\n- 📜 [Configurer un projet React Native Web dans un monorepo](https://unicorn-utterances.com/posts/react-native-web-monorepo) : Ce tutoriel est plus intéressant que son titre ne le suggère, car la configuration inclut également Vite et Styled Components.\n- 📜 [Gérer les rendus lents : une solution pas si évidente utilisant React DevTools et le profileur JavaScript](https://www.bam.tech/article/handle-slow-re-renders-a-not-so-obvious-solution-using-react-devtools-and-javascript-profiler) : L'optimisation des performances est une compétence précieuse mais complexe. Introduction détaillée à l'utilisation des Dev Tools et du profileur JS.\n- 📜 [Démystifier les idées reçues sur les frameworks hybrides](https://www.bam.tech/article/debunk-ideas-on-hybrid-framework) : En tant que dev RN, vous connaissez probablement déjà cela. Excellent signet face aux idées fausses persistantes sur RN.\n- 📜 [La nouvelle architecture de React Native - Aperçu des benchmarks de performance](https://dev.to/yoel/react-native-new-architecture-what-you-need-to-know-1eke) : Aperçu de la nouvelle architecture et du mode sans pont, avec benchmarks pour modules natifs et de vue. Code disponible sur GitHub.\n- 📜 [Masquer le clavier dans React-Native - Arrêtez de lutter](https://www.bam.tech/article/dismissing-keyboard-in-react-native-stop-the-struggle)\n- 📦 [React-Native-Model3d - Afficher des modèles 3D dans les apps visionOS](https://github.com/okwasniewski/react-native-model3d)\n- 📦 [Re.Pack 4.0 - Webpack pour React Native - Nouvelle architecture, résolution de modules compatible Metro](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%404.0.0)\n- 📦 [React Native Video 6.0 - TypeScript, RN 0.73, contrôles de notification, style des sous-titres, plein écran](https://github.com/TheWidlarzGroup/react-native-video/releases/tag/v6.0.0)\n- 🎙️ [Rocket Ship 40 - De Next.js à React Native avec Kitze](https://share.transistor.fm/s/47610b15)\n- 🎙️ [The React Native Show Podcast #37 - Créer des animations performantes avec Catalin Miron](https://www.youtube.com/watch?v=1XWmlgTYJ6k)\n- 🎥 [Shorts d'optimisation React Native - Flashlist est-elle vraiment meilleure que la solution par défaut ?](https://www.youtube.com/watch?v=2FfU-PIDN2U)\n- 🎥 [Simon Grimm - Expo SDK 51 : Nouveaux paquets, routeur, architecture & modèle](https://www.youtube.com/watch?v=wqS8LqRhNVY)",
+        "en": "- 💸 [React Native Analytics — Mesurez instantanément l'utilisation des composants avec Omlet. Utilisez les données de graphiques prédéfinis et personnalisés pour améliorer votre base de code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-may-2024)\n- 🐦 [L'autolinking des dépendances dans React Native Community CLI est devenu beaucoup plus rapide](https://x.com/SzymonRybczak/status/1788520827232584008)\n- 🐦 [Parmi les 100 meilleures applications professionnelles de l'App Store, 26 sont construites avec React Native, 3 avec Flutter et 8 avec Cordova](https://x.com/Baconbrix/status/1790095033472802858)\n- 🐦 [Application détectrice \"Pas un HotDog\" en React Native](https://x.com/mrousavy/status/1788895681320522048) : Démo astucieuse des processeurs d'images dans Vision Camera.\n- 👀 [Hermes prend désormais en charge visionOS](https://github.com/facebook/hermes/pull/1358)\n- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Cracovie - 22-24 mai. Obtenez une [réduction de 10%](https://ti.to/appjs/2024/discount/TWIR) avec le code \"TWIR\".\n- 📜 [Carte à gratter en React Native avec RN Skia](https://javascript.plainenglish.io/creating-a-scratch-card-in-react-native-using-react-native-skia-23332bd32942) : Tutoriel incluant Skia, Reanimated et Gesture Handler.\n- 📜 [Configurer un projet React Native Web dans un monorepo](https://unicorn-utterances.com/posts/react-native-web-monorepo) : Ce tutoriel est plus intéressant que ne le suggère son titre, car la configuration inclut également Vite et Styled Components.\n- 📜 [Gérer les re-rendus lents : une solution pas si évidente utilisant React DevTools et le Profileur JavaScript](https://www.bam.tech/article/handle-slow-re-renders-a-not-so-obvious-solution-using-react-devtools-and-javascript-profiler) : L'optimisation des performances est une compétence très précieuse mais pas simple à apprendre. Voici une introduction très détaillée sur l'utilisation des Dev Tools et du JS Profiler.\n- 📜 [Démystifier les idées sur les frameworks hybrides](https://www.bam.tech/article/debunk-ideas-on-hybrid-framework) : En tant que dev RN, vous connaissez sans doute déjà tout cela. À mon avis, c'est un excellent signet à avoir sous la main quand on rencontre des personnes ayant encore les idées reçues courantes sur RN.\n- 📜 [La nouvelle architecture de React Native - Aperçu des benchmarks de performance](https://dev.to/yoel/react-native-new-architecture-what-you-need-to-know-1eke) : Un aperçu de la New Arch et de Bridgeless, suivi de benchmarks de performance intéressants pour les modules natifs et les modules de vue (rendus via Fabric). Bon à voir des benchmarks et le code est également disponible sur GitHub.\n- 📜 [Masquer le clavier dans React-Native - Arrêtez de lutter](https://www.bam.tech/article/dismissing-keyboard-in-react-native-stop-the-struggle)\n- 📦 [React-Native-Model3d - Afficher des modèles 3D dans les applications visionOS](https://github.com/okwasniewski/react-native-model3d)\n- 📦 [Re.Pack 4.0 - Webpack pour React Native - Nouvelle architecture, résolution de modules compatible avec Metro](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%404.0.0)\n- 📦 [React Native Video 6.0 - TypeScript, RN 0.73, contrôles de notification, style des sous-titres, plein écran](https://github.com/TheWidlarzGroup/react-native-video/releases/tag/v6.0.0)\n- 🎙️ [Rocket Ship 40 - De Next.js à React Native avec Kitze](https://share.transistor.fm/s/47610b15)\n- 🎙️ [The React Native Show Podcast #37 - Créer des animations React Native performantes avec Catalin Miron](https://www.youtube.com/watch?v=1XWmlgTYJ6k)\n- 🎥 [Shorts d'optimisation React Native - Flashlist est-il réellement meilleur que la solution par défaut ?](https://www.youtube.com/watch?v=2FfU-PIDN2U)\n- 🎥 [Simon Grimm - Expo SDK 51 : Nouveaux packages, routeur, architecture et modèle](https://www.youtube.com/watch?v=wqS8LqRhNVY)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dc45ba24",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a461a67b",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1fe5236e",
+      "source_content": "- 👀 [CSS RFC - CSS Level Categorization - CSS4 & CSS5](https://github.com/CSS-Next/css-next/discussions/92)\n- 📊 [State of HTML 2023 - Survey results available](https://2023.stateofhtml.com/)\n- 📜 [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api)\n- 📦 [Chrome 125 - CSS Anchor Positioning, Compute Pressure API](https://developer.chrome.com/blog/new-in-chrome-125)\n- 📦 [WebKit Features in Safari 17.5 - text-wrap: balance, light-dark(), @starting-style](https://webkit.org/blog/15383/webkit-features-in-safari-17-5/)\n- 📦 [esbuild 0.21 - decorators](https://github.com/evanw/esbuild/releases/tag/v0.21.0)\n- 📦 [Type Complexity Tracer - A VSCode extension to measure type complexity within a project](https://github.com/tsperf/tracer)\n- 📦 [Oslo - Simple auth packages for the entire JS ecosystem](https://oslojs.dev)\n- 🗓 [GraphQLConf - San Francisco, 10-12 Sept - CFP is open until May 22](https://graphql.org/conf/2024/?utm_source=thisweekinreact)",
+      "source_content_hash": "fdc1bbe21a73e2950c0f4daea8f287b14811b8ba6c7b98fe6e588862b69561a4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [RFC CSS - Catégorisation des niveaux CSS - CSS4 & CSS5](https://github.com/CSS-Next/css-next/discussions/92)\n- 📊 [État d'HTML 2023 - Résultats de l'enquête disponibles](https://2023.stateofhtml.com/)\n- 📜 [Présentation de l'API de positionnement par ancre CSS](https://developer.chrome.com/blog/anchor-positioning-api)\n- 📦 [Chrome 125 - Positionnement par ancre CSS, API Compute Pressure](https://developer.chrome.com/blog/new-in-chrome-125)\n- 📦 [Fonctionnalités WebKit dans Safari 17.5 - text-wrap: balance, light-dark(), @starting-style](https://webkit.org/blog/15383/webkit-features-in-safari-17-5/)\n- 📦 [esbuild 0.21 - décorateurs](https://github.com/evanw/esbuild/releases/tag/v0.21.0)\n- 📦 [Type Complexity Tracer - Une extension VSCode pour mesurer la complexité des types dans un projet](https://github.com/tsperf/tracer)\n- 📦 [Oslo - Des packages d'authentification simples pour tout l'écosystème JS](https://oslojs.dev)\n- 🗓 [GraphQLConf - San Francisco, 10-12 sept. - Le CFP est ouvert jusqu'au 22 mai](https://graphql.org/conf/2024/?utm_source=thisweekinreact)",
+        "en": "- 👀 [RFC CSS - Catégorisation des niveaux CSS - CSS4 & CSS5](https://github.com/CSS-Next/css-next/discussions/92)\n- 📊 [State of HTML 2023 - Résultats de l'enquête disponibles](https://2023.stateofhtml.com/)\n- 📜 [Présentation de l'API de positionnement d'ancrage CSS](https://developer.chrome.com/blog/anchor-positioning-api)\n- 📦 [Chrome 125 - Positionnement d'ancrage CSS, API de pression de calcul](https://developer.chrome.com/blog/new-in-chrome-125)\n- 📦 [Fonctionnalités WebKit dans Safari 17.5 - text-wrap: balance, light-dark(), @starting-style](https://webkit.org/blog/15383/webkit-features-in-safari-17-5/)\n- 📦 [esbuild 0.21 - décorateurs](https://github.com/evanw/esbuild/releases/tag/v0.21.0)\n- 📦 [Type Complexity Tracer - Une extension VSCode pour mesurer la complexité des types dans un projet](https://github.com/tsperf/tracer)\n- 📦 [Oslo - Paquets d'authentification simples pour tout l'écosystème JS](https://oslojs.dev)\n- 🗓 [GraphQLConf - San Francisco, 10-12 sept. - L'appel à propositions est ouvert jusqu'au 22 mai](https://graphql.org/conf/2024/?utm_source=thisweekinreact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Divertissement {#fun}",
+        "en": "## 😄 Fun {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8f45da",
+      "source_content": "[![alt](/emails/issues/185/meme.jpg)](https://twitter.com/sebastienlorber/status/1788682484541952418)",
+      "source_content_hash": "a01e94d339ec714aba8c978bc6b9be87ab75a41b7008a57feb56126bc6bce19b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/185/meme.jpg)](https://twitter.com/sebastienlorber/status/1788682484541952418)",
+        "en": "[![alt](/emails/issues/185/meme.jpg)](https://twitter.com/sebastienlorber/status/1788682484541952418)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4c787c52",
+      "source_content": "[![alt](/emails/issues/185/meme2.jpg)](https://twitter.com/vincentriemer/status/1790447746987495818)",
+      "source_content_hash": "b37f0b05c151e598abaf14711b9f531d023b30cbe2aa7fd46d53d47f9c6dcb35",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/185/meme2.jpg)](https://twitter.com/vincentriemer/status/1790447746987495818)",
+        "en": "[![alt](/emails/issues/185/meme2.jpg)](https://twitter.com/vincentriemer/status/1790447746987495818)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "63565425",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/185/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.184210+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "206a8768cb110196456b6ce7957f58b534cdc749673d2c1923d8a504b418c94d",
+    "en": "206a8768cb110196456b6ce7957f58b534cdc749673d2c1923d8a504b418c94d"
+  }
+}

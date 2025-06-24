@@ -1,0 +1,143 @@
+---
+slug: /226
+title: "This Week In React #226: Parcel, TanStack, Astro, React-Scan, React-Router | Worklets, Enterprise Framework, Perf, Expo UI, FlatList, BackgroundTask | Node.js, Oxc Minifier, Oxlint, Valibot"
+authors: [matthieugicquel, cyrilbo]
+date: 03-19-2025
+---
+
+Bonjour à tous !
+
+Cyril et Matthieu de Theodo Apps ici 👋, avec de grandes nouveautés dans React et React Native !
+
+Les React Server Components sont désormais supportés dans Parcel, ce qui en fait un bundler plus viable pour les applications modernes. Callstack travaille sur un nouveau framework React Native destiné aux équipes entreprises, promettant un meilleur caching des builds. React Native Worklets apporte un véritable multithreading à React Native, le découplant enfin des animations. Et les migrations vers React 19 s'accélèrent, avec des équipes partageant leurs retours d'expérience sur l'adaptation aux changements.
+
+Des temps passionnants nous attendent - plongeons dedans ! 🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 Sponsor {#sponsor1}
+
+[![La première newsletter pour les ingénieurs produit](/emails/issues/226/dub.jpg)](https://dub.link/twir-mar19)
+
+**[La première newsletter pour les ingénieurs produit](https://dub.link/twir-mar19)**
+
+[Product for Engineers](https://dub.link/twir-mar19) est la newsletter de PostHog dédiée à aider les ingénieurs à renforcer leurs compétences produit.
+
+Avec plus de 50 000 abonnés, elle comble le fossé entre produit et ingénierie, vous aidant à livrer des produits que les utilisateurs adorent.
+
+Elle couvre des sujets comme pourquoi les délais sont néfastes, les comportements non évidents qui tueront votre startup, et les erreurs qu'ils ont apprises à la dure. Le meilleur ? C'est totalement gratuit.
+
+[**Abonnez-vous gratuitement.**](https://dub.link/twir-mar19)
+
+---
+
+## ⚛️ React {#react}
+
+[![Parcel v2.14.0](/emails/issues/226/parcel.jpg)](https://parceljs.org/blog/v2-14-0/)
+
+[**Parcel v2.14.0**](https://parceljs.org/blog/v2-14-0/)
+
+Parcel est intéressant : c'est un bundler robuste et complet en fonctionnalités. Bien qu'aucun framework React majeur ne l'utilise ou ne le supporte, cela ne l'empêche pas d'évoluer, avec la v2.14.0 qui ajoute plusieurs fonctionnalités majeures :
+
+- Server Components avec rendu client, serveur et statique
+- Support MDX intégré (utilisant la librairie Rust `mdx-rs`)
+- Un CLI `create-parcel` pouvant remplacer `create-react-app`
+- Un nouveau système d'overlay d'erreurs React
+
+Si vous "construisez votre propre framework" ou avez un cas d'usage spécifique, tout cela rend parcel encore plus attractif.
+
+---
+
+- 💸 [Convex a lancé un serveur MCP](https://convex.link/thisweekmcp)
+- 🐦 [Prise en charge du streaming pour React Query](https://bsky.app/profile/tkdodo.eu/post/3lkiuj7362k2a)
+- 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 13 mai. Découvrez la programmation complète : Shruti Kapoor, Quentin de Quelen, Sebastien Chopin ! Obtenez 10% de réduction avec le code "TWIR”
+- 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) \- 🇫🇮 Espoo - 26-28 mai. Développement web/design et IA réunis sur une seule piste. Réservez dès maintenant avec 10% de réduction via le code "TWIR”
+- 📣 [Partenariat TanStack + Netlify](https://tanstack.com/blog/netlify-partnership)
+- 📜 [Mode Live](https://www.openstatus.dev/blog/live-mode-infinite-query): Mises à jour en temps réel dans React avec les Infinite Queries de TanStack.
+- 📜 [Migration de MUI X vers React 19](https://mui.com/blog/react-19-update/): Nécessité de maintenir la compatibilité avec React 18 malgré les changements cassants de React 19 (réfs et StrictMode).
+- 📜 [Sites statiques avec Vite et React](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/): Fonctionnement du package expérimental `vite-ssg-react` et feuille de route.
+- 📜 [Plongée en profondeur du SSR pour développeurs React](https://www.developerway.com/posts/ssr-deep-dive-for-react-developers): Implémentation manuelle du SSR et mécanismes sous-jacents.
+- 📜 [Architecture commune des bibliothèques React](https://www.felgus.dev/blog/common-react-lib-architecture#react-19)
+- 📜 [Pourquoi React est le meilleur moteur pour les workflows LLM](https://www.gensx.com/blog/why-react-is-the-best-backend-workflow-engine)
+- 💸 [Extension VS Code : Insights d'utilisation des composants React](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+- 📦 [Astro 5.5 - Sessions typées, meilleure intégration des diagrammes Mermaid](https://astro.build/blog/astro-550/)
+- 📦 [React Scan 0.3 - Visualisation des composants parents](https://github.com/aidenybai/react-scan/releases/tag/v0.3.0)
+- 📦 [TanStack Form 1.1 - Utilitaire de réinitialisation](https://github.com/TanStack/form/releases/tag/v1.1.0)
+- 📦 [React Router 7.4](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v740)
+- 🎥 [Theo - Tanner vient de corriger les formulaires](https://www.youtube.com/watch?v=aezimBnSJqY)
+- 🎥 [Epic Web Dev - Mise à niveau de React Router](https://www.epicweb.dev/tips/upgrading-react-router)
+- 🎥 [Web Dev Simplified - Next.js a enfin corrigé le cache](https://www.youtube.com/watch?v=nHnw3pusFXw)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 Sponsor {#sponsor2}
+
+[![Les tests sont morts - Meticulous est là](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=mar19th)
+
+**[Les tests sont morts - Meticulous est là](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=mar19th)**
+
+Meticulous crée et maintient une suite exhaustive de tests e2e UI avec **zéro** effort développeur.
+
+Dropbox, Bilt Rewards, Lattice et des centaines d'organisations techniques comptent sur Meticulous pour leurs tests frontend.
+
+Cette citation du CTO de Traba résume parfaitement le produit : "Meticulous a fondamentalement transformé notre approche des tests frontend dans nos applications web, éliminant totalement le besoin d'écrire des tests frontend. Le logiciel nous donne la confiance que chaque modification sera entièrement testée en régression, nous permettant de livrer plus rapidement avec nettement moins de bugs dans notre code."
+
+Ce [billet](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th) de notre CTO, qui dirigeait auparavant un grand groupe d'ingénierie chez Palantir, expose le contexte expliquant pourquoi les tests exhaustifs peuvent doubler la vélocité d'ingénierie.
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native Worklets RFC](/emails/issues/226/worklets.jpg)](https://github.com/software-mansion/react-native-reanimated/discussions/7264)
+
+[**React Native Worklets RFC**](https://github.com/software-mansion/react-native-reanimated/discussions/7264)
+
+React Native Worklets est une nouvelle bibliothèque extraite de Reanimated qui permet un véritable multithreading dans React Native. Elle vous permet d'exécuter du code JavaScript sur plusieurs environnements d'exécution. Un nouveau modèle de mémoire introduit `Serializables`, `Shareables` et `Synchronizables` pour gérer les données entre les environnements d'exécution.
+
+En découplant le multithreading des animations, Reanimated devient plus léger, ce qui est particulièrement bénéfique pour les applications web visant des tailles de bundle plus petites. Parallèlement, les développeurs peuvent désormais utiliser le multithreading pour des tâches non-UI comme le stockage asynchrone, les opérations de base de données, le traitement audio en temps réel ou les calculs alimentés par l'IA - sans dépendre d'une bibliothèque d'animation.
+
+---
+
+- 💸 [PostHog - Comment configurer une configuration distante React Native (avec Expo Router)](https://dub.link/twir-mar19-rn)
+- 🐦 [React Native dans les applications natives : stratégies et obstacles](https://x.com/_atlj/status/1901990291306873047)
+- 🐦 [Les onglets inférieurs React Native s'intègrent parfaitement avec d'autres éléments d'UI natifs](https://x.com/o_kwasniewski/status/1884537940736393426)
+- 🐦 [expo/ui sera lancé avec Expo SDK 53](https://x.com/aleqsio/status/1902034184920584538) : Il inclura des composants d'entrée entièrement natifs, des sections de formulaires iOS, des menus contextuels et des aperçus iOS.
+- 🐦 [Fonctions serveur React dans Expo Router](https://x.com/Baconbrix/status/1900547469374574966)
+- 📊 [RevenueCat État des applications d'abonnement 2025](https://www.revenuecat.com/state-of-subscription-apps-2025/) : Les applications d'abonnement multiplateformes (notamment React Native) présentent de meilleures performances de rétention et de monétisation que les applications natives. Les meilleures excellent en optimisant l'onboarding, en affichant précocement les paywalls et en utilisant une monétisation hybride.
+- 📖 [Guide ultime de l'optimisation React Native 2025](https://www.callstack.com/ebook/the-ultimate-guide-to-react-native-optimization) : Callstack vient de publier son guide amélioré.
+- 📖 [Documentation Expo - Utilisation des notifications push](https://docs.expo.dev/guides/using-push-notifications-services/) : Rappel actualisé des services disponibles pour implémenter les notifications push dans une application Expo.
+- 📜 [Nous créons un nouveau framework React Native](https://www.callstack.com/blog/were-building-a-new-react-native-framework) : Michał de Callstack a dévoilé les fonctionnalités de leur framework React Native ciblant les grandes équipes mobiles, mettant l'accent sur un cache de build natif rapide. Il n'est pas encore open source.
+- 📜 [Optimisation de FlatList : Éviter le re-rendu lors de l'ajout ou de la suppression d'éléments](https://brainsandbeards.com/blog/2025-dont-rerender-new-flatlist-items/)
+- 📦 [Expo BackgroundTask Bêta](https://docs.expo.dev/versions/latest/sdk/background-task/)
+- 📦 [Create React Native Library 0.48 : Ajout d'un modèle pour les modules Nitro](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.48.0)
+- 📦 [Galeria 1.1 - Correction des problèmes de nouvelle architecture, support edge-to-edge](https://github.com/nandorojo/galeria/releases/tag/v1.1.0)
+- 🎙️ [RNR 325 \- Liste des légendes avec Jay Meistrich](https://infinite.red/react-native-radio/rnr-325-legend-list-with-jay-meistrich)
+
+---
+
+## 🔀 Autre {#other}
+
+- 👀 [Node.js TSC - Corepack doit-il rester dans la distribution Node.js ?](https://github.com/nodejs/TSC/pull/1697): Corepack ne sera plus distribué avec Node.js à partir de la version 25.
+- 📜 [Node.js lance un espace communautaire officiel sur Discord](https://nodejs.org/en/blog/announcements/official-discord-launch-announcement)
+- 📜 [Prise en charge du CSS et Baseline livrée dans ESLint](https://web.dev/blog/eslint-baseline-integration?hl=en)
+- 📦 [Oxc Minifier Alpha](https://oxc.rs/blog/2025-03-13-minifier-alpha): Un nouveau minificateur qui surpasse déjà esbuild, utilisé avec Rolldown qui vise à devenir le prochain bundler par défaut pour Vite.
+- 📦 [Oxlint Beta](https://oxc.rs/blog/2025-03-15-oxlint-beta): Propose plus de 500 règles de linting intégrées avec des gains de performance significatifs, permettant aux petits/moyens projets de remplacer entièrement ESLint. Le support des plugins ESLint et règles personnalisées arrivera dans la prochaine version majeure.
+- 📦 [Valibot 1.0 - Alternative 1kB à Zod](https://valibot.dev/blog/valibot-v1-the-1-kb-schema-library/)
+- 📦 [Node.js 23.10 - Nouveau `--experimental-config-file`](https://nodejs.org/en/blog/release/v23.10.0)
+- 📦 [Node.js 20.19 - require(esm) activé](https://nodejs.org/en/blog/release/v20.19.0)
+
+---
+
+## 🤭 Divertissement {#fun}
+
+[![Réécrire TypeScript en Rust](/emails/issues/226/ts-go.jpg)](https://x.com/IroncladDev/status/1899870309152342367)
+
+À plus ! 👋

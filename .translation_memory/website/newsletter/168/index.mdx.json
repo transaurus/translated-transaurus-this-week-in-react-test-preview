@@ -1,0 +1,541 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/168/index.mdx",
+  "source_file_content_hash": "e5d9e990f6055c4e69b77cf07b4411e8a682382f5e2793aa1a5a94c9069e1d13",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /168\ntitle: \"This Week In React #168: TanStack, useMemo, RSC, preload, flushSync, shadcn-ui, MDX, Storybook, StyleX, TWC, Tokenami, Catalyst, rsc-cache, WishList, VisionOS, Hermes, release-profiler...\"\nauthors: [slorber, bndkt]\ndate: 01-03-2024\n---",
+      "source_content_hash": "737e167aeeb65e0d7e6db0a426f0139b27af2b9e00d5d49eb8b1a09b12840e21",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_58cfcc64",
+        "en": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Bonjour à tous !",
+        "en": "Bonjour à tous !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Merry Christmas and Happy New Year! 🥂",
+      "source_content_hash": "d7977de7f09a1538a1cd6c892072a053c642b2cc7144be2995071654736841d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Joyeux Noël et Bonne Année ! 🥂",
+        "en": "Joyeux Noël et Bonne Année ! 🥂"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The newsletter is back for another year. Despite the holiday season we still had some interesting news, notably regarding the TanStack. Developers probably took this opportunity to work on their own open-source side projects 😄!",
+      "source_content_hash": "abcd64c59c38fa61163451f2cef3b5e2c7635737b538a03b22f522e5e591108d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "La newsletter est de retour pour une nouvelle année. Malgré la période des fêtes, nous avons tout de même eu des nouvelles intéressantes, notamment concernant le TanStack. Les développeurs ont probablement profité de cette occasion pour travailler sur leurs propres projets open-source secondaires 😄 !",
+        "en": "La newsletter est de retour pour une nouvelle année. Malgré la période des fêtes, nous avons eu des actualités intéressantes, notamment concernant TanStack. Les développeurs en ont probablement profité pour travailler sur leurs projets open-source personnels 😄 !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Don't forget to answer the [State of React Native 2023 survey](https://stateofreactnative.com/), it's your last chance!",
+      "source_content_hash": "91c2d703d64342e138a5eed1167742526ac07c66914ec61040d58c68c8381ce2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "N'oubliez pas de répondre à l'[enquête State of React Native 2023](https://stateofreactnative.com/), c'est votre dernière chance !",
+        "en": "N'oubliez pas de répondre au [sondage State of React Native 2023](https://stateofreactnative.com/), c'est votre dernière chance !"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Once again, this issue now has 2 authors [Benedikt](https://twitter.com/bndkt) is helping me.",
+      "source_content_hash": "63fe6acf772e437a99decd4b8bc6c0b0405d24abde4c3d3998186a6cc0b827bf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Une fois de plus, ce numéro a désormais 2 auteurs : [Benedikt](https://twitter.com/bndkt) m'apporte son aide.",
+        "en": "À nouveau, ce numéro compte désormais 2 auteurs : [Benedikt](https://twitter.com/bndkt) m'épaule."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "I hope to find time to write a full 2023 retrospective of the newsletter. Until then, if you are curious, I write monthly reports on my [Indie Hackers page](https://www.indiehackers.com/product/french-react-newsletter) for 2 years now.",
+      "source_content_hash": "ce67eb2af1383036bd7c5e6a40c29f7c2b12981357d418174397212f665fbd39",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "J'espère trouver le temps d'écrire une rétrospective complète de la newsletter pour 2023. En attendant, si vous êtes curieux, j'écris des rapports mensuels sur ma [page Indie Hackers](https://www.indiehackers.com/product/french-react-newsletter) depuis 2 ans maintenant.",
+        "en": "J'espère trouver le temps d'écrire une rétrospective complète de la newsletter pour 2023. En attendant, si vous êtes curieux, je publie des rapports mensuels sur ma [page Indie Hackers](https://www.indiehackers.com/product/french-react-newsletter) depuis 2 ans."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_c6da205d",
+        "en": "@@untranslatable_placeholder_c6da205d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**💡 [Consultez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**",
+        "en": "**💡 [Découvrez cette newsletter sur Twitter](https://slo.im/thread) - format visuel 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf4363fc",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_cf4363fc",
+        "en": "@@untranslatable_placeholder_cf4363fc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_2a3434e4",
+        "en": "@@untranslatable_placeholder_2a3434e4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2b28cb1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor1}",
+        "en": "## 💸 Sponsor {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[![A newsletter helping flex your product muscle](/emails/issues/168/posthog.png)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+      "source_content_hash": "d520704f46a78889306de889d45beeda279f7586495b73777169dfb2b66775b1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![Une newsletter pour renforcer vos compétences produit](/emails/issues/168/posthog.png)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+        "en": "[![Une newsletter pour muscler vos compétences produit](/emails/issues/168/posthog.png)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "**[A newsletter helping flex your product muscle](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+      "source_content_hash": "0c6700eb0dc2c748cc337305206ef0b38bd01083284b29bd28459713b1eef85e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[Une newsletter pour renforcer vos compétences produit](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+        "en": "**[Une newsletter pour muscler vos compétences produit](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) is PostHog’s newsletter dedicated to helping engineers improve their product skills. Learn what questions to ask users, how to build new features users love, and the path to product market fit. [**Subscribe for free**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) to get curated advice on building great products, lessons (and mistakes) from building PostHog, and deep dives into the strategies of top startups.",
+      "source_content_hash": "f5412b51a12d4837e89a247bded204550a42f8a7a589bb227478b01fdf717994",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit. Apprenez quelles questions poser aux utilisateurs, comment créer de nouvelles fonctionnalités que les utilisateurs adorent, et le chemin vers le product market fit. [**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils triés sur le volet pour construire de super produits, des leçons (et des erreurs) tirées de la construction de PostHog, et des analyses approfondies des stratégies des meilleures startups.",
+        "en": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) est la newsletter de PostHog dédiée à aider les ingénieurs à améliorer leurs compétences produit. Apprenez quelles questions poser aux utilisateurs, comment créer des fonctionnalités qu'ils adoreront, et le chemin vers le product-market fit. [**Abonnez-vous gratuitement**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) pour recevoir des conseils sur la création de produits performants, des retours d'expérience (et erreurs) du développement de PostHog, et des analyses détaillées des stratégies des meilleures startups."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## ⚛️ React {#react}",
+        "en": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![TanStack Router 1.0](/emails/issues/168/tanstack-router.jpg)](https://tanstack.com/router/v1)",
+      "source_content_hash": "815e91b7048f2e6d9039a6bc96cd405580eb26b99bb77153d7d07b34848fceea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![TanStack Router 1.0](/emails/issues/168/tanstack-router.jpg)](https://tanstack.com/router/v1)",
+        "en": "[![TanStack Router 1.0](/emails/issues/168/tanstack-router.jpg)](https://tanstack.com/router/v1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "**[TanStack Router 1.0](https://tanstack.com/router/v1)**",
+      "source_content_hash": "53d3c8c05eae35b34c7ed263c99b9a88721145be3c7280a8b82289c306a48fa3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[TanStack Router 1.0](https://tanstack.com/router/v1)**",
+        "en": "**[TanStack Router 1.0](https://tanstack.com/router/v1)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "The highly anticipated TanStack Router launched as stable 1.0 with a nice [🐦 trailer](https://twitter.com/tannerlinsley/status/1738709130213560497), just in time for Christmas. This new router pushes the boundary of what is possible in terms of type-safety, url state management (search params) and caching, among other things.",
+      "source_content_hash": "ea53cbe9828b3be982918a1a75906ed61328278f67a9b74b2ac2e6a9600fa3dd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le très attendu TanStack Router a été lancé en version stable 1.0 avec une belle [🐦 bande-annonce](https://twitter.com/tannerlinsley/status/1738709130213560497), juste à temps pour Noël. Ce nouveau routeur repousse les limites du possible en termes de sécurité de type, de gestion de l'état de l'URL (paramètres de recherche) et de mise en cache, entre autres.",
+        "en": "Le très attendu TanStack Router est sorti en version stable 1.0 avec une belle [🐦 bande-annonce](https://twitter.com/tannerlinsley/status/1738709130213560497), juste à temps pour Noël. Ce nouveau routeur repousse les limites du possible en matière de typage fort, de gestion d'état des URLs (paramètres de recherche) et de mise en cache, entre autres."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "The [SSR guide](https://tanstack.com/router/v1/docs/guide/ssr) reference a `@tanstack/react-start` package, probably a teaser for an upcoming [🐦 TanStack Start framework](https://twitter.com/sebastienlorber/status/1742589454563369123)",
+      "source_content_hash": "3d5d32a8f541e5ba86f76d11afd334d24e32391e4404921f776618c5537b5996",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le [guide SSR](https://tanstack.com/router/v1/docs/guide/ssr) fait référence à un package `@tanstack/react-start`, probablement un teaser pour un futur [🐦 framework TanStack Start](https://twitter.com/sebastienlorber/status/1742589454563369123).",
+        "en": "Le [guide SSR](https://tanstack.com/router/v1/docs/guide/ssr) mentionne un package `@tanstack/react-start`, probablement un teaser pour un futur [🐦 framework TanStack Start](https://twitter.com/sebastienlorber/status/1742589454563369123)."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Other recent TanStack packages that you might have missed:",
+      "source_content_hash": "8d3b1e2e8f49604be9733e822ebd3bb24708fcd30ee5a1b1f010d86bd41bd76c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Autres packages TanStack récents que vous avez pu manquer :",
+        "en": "Autres packages TanStack récents que vous auriez pu manquer :"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "- 📦 [TanStack Config - Tool for publishing and maintaining high-quality JavaScript packages](https://github.com/TanStack/config)\n- 📦 [TanStack Store - Framework agnostic, type-safe store with reactive framework adapters](https://tanstack.com/store/latest)",
+      "source_content_hash": "f8e9d5854b3c0f2a28aeafe3daa8bc65d5bcc074a44304ced1ea9d195cbcf825",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 📦 [TanStack Config - Outil pour publier et maintenir des packages JavaScript de haute qualité](https://github.com/TanStack/config)\n- 📦 [TanStack Store - Store agnostique, type-safe avec des adaptateurs réactifs pour frameworks](https://tanstack.com/store/latest)",
+        "en": "- 📦 [TanStack Config - Outil pour publier et maintenir des packages JavaScript de haute qualité](https://github.com/TanStack/config)\n- 📦 [TanStack Store - Store agnostique aux frameworks, typé et avec des adaptateurs réactifs](https://tanstack.com/store/latest)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6e9a41d8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- 💸 [From Dreamweaver to JSX: The Evolution of Visual Dev Tools for the Web](https://mightymeld.com/blog/browser-dev-tools-understand-code?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=link1)\n- 👀 [React Docs PR - React-DOM static resource loading functions](https://github.com/reactjs/react.dev/pull/6459)\n- 👀 [Next.js PR - Next.js is exploring moving to Lightning CSS](https://github.com/vercel/next.js/pull/58712)\n- 👀 [Remix PR - SPA Mode](https://github.com/remix-run/remix/pull/8338)\n- 🐦 [useMemo to become a better version of context selectors](https://twitter.com/sebastienlorber/status/1741218919732429108): It turns out [selectors do not compose well](https://twitter.com/dan_abramov2/status/1741200483862151663), and the plan is to improve useMemo to kind of act like a selector!\n- 🐦 [SkipRenderOnClient - interesting trick to optimize hydration performance](https://twitter.com/sebastienlorber/status/1742528219318738955)\n- 🐦 [Million.js joins Y Combinator](https://twitter.com/aidenybai/status/1737929698221682789)\n- 📜 [React Server Components: the Good, the Bad, and the Ugly](https://www.mayank.co/blog/react-server-components/): Critical, but well-informed take on the status quo of using RSC.\n- 📜 [Thoughts on Remix](https://www.viget.com/articles/thoughts-on-remix/): Balanced view on Remix - where it came from, their philosophy and how it compares to Next.js.\n- 📜 [More Than You Need to Know About ReactDOM.­flushSync](https://julesblom.com/writing/flushsync): Detailed and interactive look at React-DOM `flushSync()` method, a rarely used but sometimes crucial method enabling you to opt-out of React state update batching.\n- 📜 [Remix + MDX - How this site is built](https://remix-blog-mdx.fly.dev/): Vite features and plugins work together to power Remix + MDX.\n- 📜 [The View Transition API: A New Way to Animate Page Transitions](https://marmelab.com/blog/2023/12/21/view-transitions.html): Also shows how to use it in React Router and Remix.\n- 📜 [What should we ship?](https://rauno.me/craft/vercel): Detailed blog post about the vercel.com relaunch.\n- 📜 [Future of Storybook in 2024](https://storybook.js.org/blog/future-of-storybook-2024/): The themes for Storybook in 2024 will be application development (as opposed to isolated component development), enhanced support for non-React frameworks, and improved story generation (using AI).\n- 📜 [How to make Storybook 2-4x faster - v7.6 comes with perf improvement options, enabled by default in v8.0](https://storybook.js.org/blog/optimize-storybook-7-6/)\n- 📜 [Next.js 14 Parallel Routes](https://www.builder.io/blog/nextjs-14-parallel-routes): Simultaneously render multiple pages within the same layout (useful for dashboards).\n- 📜 [Next.js 14 Intercepting Routes](https://www.builder.io/blog/nextjs-14-intercepting-routes)\n- 📜 [Understanding React’s useFormState and useFormStatus Hooks](https://blog.logrocket.com/understanding-react-useformstate-useformstatus-hooks/)\n- 📜 [Diving into Server Actions in Next.js 14](https://blog.logrocket.com/diving-into-server-actions-next-js-14/)\n- 📦 [rsc-cache - cache expensive RSCs, with Next.js integration](https://github.com/fredkiss3/rsc-cache)\n- 📦 [Catalyst - Modern UI kit for React](https://tailwindcss.com/blog/introducing-catalyst): New official React UI kit from the Tailwind team. It's a paid product requiring a Tailwind UI license. There's also a free Headless UI update, now in v2.0 alpha.\n- 📦 [Tokenami - Atomic CSS in the style attribute](https://github.com/tokenami/tokenami): Modern type-safe styling solution with theming, responsive variant support. Supports React and Solid.\n- 📦 [shadcn-ui 0.5 - new components (Carousel, Drawer, Pagination, Resizable, Sonner) and CLI improvements](https://ui.shadcn.com/docs/changelog)\n- 📦 [StyleX 0.4.1 - ESLint and Rollup plugin improvements, autocomplete, performance, reduced runtime size, support for CSS layers...](https://stylexjs.com/blog/v0.4.1)\n- 📦 [Storybook 8.0.0 alpha 4 - no react peer dependency anymore](https://github.com/storybookjs/storybook/releases/tag/v8.0.0-alpha.4)\n- 📦 [TWC - Create reusable Tailwind CSS + React components](https://react-twc.vercel.app/)\n- 📦 [MDXTS - Build interactive, type-safe content and documentation in MDX, TypeScript, and React](https://www.mdxts.dev/)\n- 📦 [Plate - Rich-text editor framework for React, customizable, including a plugin system](https://platejs.org/)\n- 📦 [next-route-handler-pipe - Function pipelines for Next.js route handlers](https://github.com/KolbySisk/next-route-handler-pipe)",
+      "source_content_hash": "629ceec3d9f142cea7f5fefd0b214c3b20dfb18a9fd3648601bb3179149b4cae",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_30193704",
+        "en": "@@untranslatable_placeholder_30193704"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "897e0025",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "fr": "@@untranslatable_placeholder_897e0025",
+        "en": "@@untranslatable_placeholder_897e0025"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 💸 Sponsor {#sponsor2}",
+        "en": "## 💸 Sponsor {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[![ShipFast - Ship your startup in days, not weeks](/emails/issues/168/shipfast.jpg)](https://shipfa.st/?via=twir)",
+      "source_content_hash": "00e6d7e9cd9beafe2411611db8fda1cf83f48999036a97f4fb393fec15af2fcb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![ShipFast - Lancez votre startup en jours, pas en semaines](/emails/issues/168/shipfast.jpg)](https://shipfa.st/?via=twir)",
+        "en": "[![ShipFast - Livrez votre startup en jours, pas en semaines](/emails/issues/168/shipfast.jpg)](https://shipfa.st/?via=twir)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "**[ShipFast - Ship your startup in days, not weeks](https://shipfa.st/?via=twir)**",
+      "source_content_hash": "57ddfd0305020b580cc27d96203b2757330b7cfc3e3cb64318dc76786863673a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "**[ShipFast - Lancez votre startup en quelques jours, pas quelques semaines](https://shipfa.st/?via=twir)**",
+        "en": "**[ShipFast - Lancez votre startup en quelques jours, pas des semaines](https://shipfa.st/?via=twir)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "The Next.js boilerplate with all you need to build your SaaS, AI tool, or any other web app and make your first $ online fast.",
+      "source_content_hash": "0483e2e89fa2ddaca9c1aa4705df4a0455f663a71ae1cb348c2f287fc540bcac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "Le boilerplate Next.js avec tout le nécessaire pour créer votre SaaS, outil d'IA ou toute autre application web et générer votre premier $ en ligne rapidement.",
+        "en": "Le boilerplate Next.js avec tout ce dont vous avez besoin pour créer votre SaaS, outil d'IA ou toute autre application web et gagner votre premier $ en ligne rapidement."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9f974d3d",
+      "source_content": "- App Router or Page Router\n- JavaScript or TypeScript\n- Money-back guarantee, refundable within 7 days",
+      "source_content_hash": "4ee03c018ff0be5d7c9b43b912145c68a6c9b1b94aab9a9bb80991da90ee7c54",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- App Router ou Page Router\n- JavaScript ou TypeScript\n- Garantie remboursement, remboursable sous 7 jours",
+        "en": "- App Router ou Page Router\n- JavaScript ou TypeScript\n- Garantie de remboursement, remboursable sous 7 jours"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 📱 React-Native {#react-native}",
+        "en": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "664ad8b1",
+      "source_content": "- 💸 [Galaxies.dev - Master React Native & Save 25% on PRO with code GALAXIES24](https://galaxies.dev?utm_source=thisweekinreact.com)\n- 📊 [State of React Native 2023 survey - Last-call, closing on Friday 5](https://stateofreactnative.com/)\n- 👀 [RFC: Moving away from Obj-C on Apple platforms](https://github.com/react-native-community/discussions-and-proposals/pull/747): Moving to Swift will only start after the move to the New Architecture has been completed.\n- 👀 [hermes-jsi-demos - Use Hermes with JSI on desktop without any frameworks](https://github.com/tmikov/hermes-jsi-demos)\n- 👀 [jsi-rs - Write ultra fast React Native modules in Rust](https://github.com/laptou/jsi-rs/)\n- 🐦 [Expo SDK 50 optimizing bundle size with platform shaking](https://twitter.com/Baconbrix/status/1740487401414275120)\n- 🐦 [Chain React 2024 announced for July 17-19](https://twitter.com/ChainReactConf/status/1737578373415928100)\n- 🐦 [Top React Native Tweets of 2023](https://twitter.com/infinite_red/status/1737890233201623526)\n- 📜 [WishList Release scrapped](https://margelo.notion.site/WishList-Summit-b20c24d1f0da4889a0513dfa929be5ed): After a year of development, Margelo decided not to release their library aimed at solving performance problems for lists in React Native.\n- 📜 [Bringing React Native libraries to Apple Vision Pro](https://www.oskarkwasniewski.dev/blog/bringing-react-native-libraries-to-apple-vision-pro): the new out-of-tree VisionOS platform will support JS libs automatically. Most native libs will simply need to add a `visionos` platform to the podspec.\n- 📜 [How to Properly Read Xcode Error](https://levelup.gitconnected.com/how-to-properly-read-xcode-error-7b979692333d)\n- 📜 [JavaScript Achieves Breakthrough Performance with Static Hermes](https://medium.com/@elves.silva.vieira/javascript-achieves-breakthrough-performance-with-static-hermes-6286b0ac8ef7)\n- 📦 [react-native-release-profiler - passively profile JS/Hermes in production and release builds](https://github.com/margelo/react-native-release-profiler)\n- 📦 [expo-video-metadata](https://github.com/hirbod/expo-video-metadata): Retrieve information such as duration, dimensions, orientation, and codec for local and remote video files.\n- 📦 [react-native-macos 0.73.1](https://www.npmjs.com/package/react-native-macos/v/0.73.1)\n- 📦 [react-native-windows 0.73.2](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.2)\n- 📦 [Bootstrap a universal File-based Expo app with Tailwind styles](https://github.com/expo/examples/tree/master/with-router-tailwind): New create-expo-app template using Expo Router v3 and NativeWind v4.\n- 🎙 [React Native Show 32 - React Native for Apple Vision Pro and visionOS](https://www.callstack.com/podcasts/react-native-for-apple-vision-pro-and-visionos)\n- 🎙️ [RNR 284 - React Native Rewind - 2023 in Review](https://reactnativeradio.com/episodes/rnr-284-react-native-rewind-2023-in-review)\n- 🎙️ [Rocket Ship 23 - Why you should use React Native in 2024](https://podcast.galaxies.dev/episodes/023-why-you-should-use-react-native-in-2024)",
+      "source_content_hash": "716795099d029a4e9b8b181b00dafddfbb4129ef8ea74db2f143dd77f66ec8ab",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 💸 [Galaxies.dev - Maîtrisez React Native & économisez 25% sur PRO avec le code GALAXIES24](https://galaxies.dev?utm_source=thisweekinreact.com)\n- 📊 [Sondage State of React Native 2023 - Dernier appel, clôture vendredi 5](https://stateofreactnative.com/)\n- 👀 [RFC : Abandon d'Obj-C sur les plateformes Apple](https://github.com/react-native-community/discussions-and-proposals/pull/747) : La migration vers Swift ne débutera qu'après l'achèvement du passage à la Nouvelle Architecture.\n- 👀 [hermes-jsi-demos - Utiliser Hermes avec JSI sur desktop sans frameworks](https://github.com/tmikov/hermes-jsi-demos)\n- 👀 [jsi-rs - Écrire des modules React Native ultra-rapides en Rust](https://github.com/laptou/jsi-rs/)\n- 🐦 [Expo SDK 50 optimise la taille des bundles avec le platform shaking](https://twitter.com/Baconbrix/status/1740487401414275120)\n- 🐦 [Chain React 2024 annoncé du 17 au 19 juillet](https://twitter.com/ChainReactConf/status/1737578373415928100)\n- 🐦 [Top des Tweets React Native 2023](https://twitter.com/infinite_red/status/1737890233201623526)\n- 📜 [Publication de WishList annulée](https://margelo.notion.site/WishList-Summit-b20c24d1f0da4889a0513dfa929be5ed) : Après un an de développement, Margelo a renoncé à publier sa bibliothèque visant à résoudre les problèmes de performance des listes dans React Native.\n- 📜 [Adapter les bibliothèques React Native à l'Apple Vision Pro](https://www.oskarkwasniewski.dev/blog/bringing-react-native-libraries-to-apple-vision-pro) : La nouvelle plateforme visionOS hors-arborescence prendra en charge automatiquement les librairies JS. La plupart des libs natives devront simplement ajouter une plateforme `visionos` dans leur podspec.\n- 📜 [Comment lire correctement les erreurs Xcode](https://levelup.gitconnected.com/how-to-properly-read-xcode-error-7b979692333d)\n- 📜 [JavaScript atteint des performances révolutionnaires avec Static Hermes](https://medium.com/@elves.silva.vieira/javascript-achieves-breakthrough-performance-with-static-hermes-6286b0ac8ef7)\n- 📦 [react-native-release-profiler - Profilage passif de JS/Hermes en production et builds release](https://github.com/margelo/react-native-release-profiler)\n- 📦 [expo-video-metadata](https://github.com/hirbod/expo-video-metadata) : Récupère des informations comme la durée, dimensions, orientation et codec pour fichiers vidéo locaux et distants.\n- 📦 [react-native-macos 0.73.1](https://www.npmjs.com/package/react-native-macos/v/0.73.1)\n- 📦 [react-native-windows 0.73.2](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.2)\n- 📦 [Initialiser une app Expo universelle basée sur des fichiers avec styles Tailwind](https://github.com/expo/examples/tree/master/with-router-tailwind) : Nouveau template create-expo-app utilisant Expo Router v3 et NativeWind v4.\n- 🎙 [React Native Show 32 - React Native pour Apple Vision Pro et visionOS](https://www.callstack.com/podcasts/react-native-for-apple-vision-pro-and-visionos)\n- 🎙️ [RNR 284 - React Native Rewind - Bilan 2023](https://reactnativeradio.com/episodes/rnr-284-react-native-rewind-2023-in-review)\n- 🎙️ [Rocket Ship 23 - Pourquoi utiliser React Native en 2024](https://podcast.galaxies.dev/episodes/023-why-you-should-use-react-native-in-2024)",
+        "en": "- 💸 [Galaxies.dev - Maîtrisez React Native et économisez 25% sur PRO avec le code GALAXIES24](https://galaxies.dev?utm_source=thisweekinreact.com)\n- 📊 [Sondage State of React Native 2023 - Dernier appel, clôture le vendredi 5](https://stateofreactnative.com/)\n- 👀 [RFC : Abandon progressif d'Obj-C sur les plateformes Apple](https://github.com/react-native-community/discussions-and-proposals/pull/747) : La migration vers Swift ne débutera qu'après l'achèvement de la Nouvelle Architecture.\n- 👀 [hermes-jsi-demos - Utiliser Hermes avec JSI sur desktop sans frameworks](https://github.com/tmikov/hermes-jsi-demos)\n- 👀 [jsi-rs - Développez des modules React Native ultra-rapides en Rust](https://github.com/laptou/jsi-rs/)\n- 🐦 [Expo SDK 50 optimise la taille des bundles avec le platform shaking](https://twitter.com/Baconbrix/status/1740487401414275120)\n- 🐦 [Chain React 2024 annoncé pour le 17-19 juillet](https://twitter.com/ChainReactConf/status/1737578373415928100)\n- 🐦 [Top des Tweets React Native de 2023](https://twitter.com/infinite_red/status/1737890233201623526)\n- 📜 [Publication de WishList annulée](https://margelo.notion.site/WishList-Summit-b20c24d1f0da4889a0513dfa929be5ed) : Après un an de développement, Margelo renonce à publier sa bibliothèque visant à résoudre les problèmes de performance des listes en React Native.\n- 📜 [Adapter les bibliothèques React Native pour Apple Vision Pro](https://www.oskarkwasniewski.dev/blog/bringing-react-native-libraries-to-apple-vision-pro) : la nouvelle plateforme visionOS hors-tree prendra en charge automatiquement les libs JS. La plupart des libs natives devront simplement ajouter une plateforme `visionos` au podspec.\n- 📜 [Comment lire correctement les erreurs Xcode](https://levelup.gitconnected.com/how-to-properly-read-xcode-error-7b979692333d)\n- 📜 [JavaScript atteint des performances révolutionnaires avec Hermes statique](https://medium.com/@elves.silva.vieira/javascript-achieves-breakthrough-performance-with-static-hermes-6286b0ac8ef7)\n- 📦 [react-native-release-profiler - Profilez passivement JS/Hermes en production et builds release](https://github.com/margelo/react-native-release-profiler)\n- 📦 [expo-video-metadata](https://github.com/hirbod/expo-video-metadata) : Récupérez des informations comme la durée, dimensions, orientation et codec pour fichiers vidéo locaux et distants.\n- 📦 [react-native-macos 0.73.1](https://www.npmjs.com/package/react-native-macos/v/0.73.1)\n- 📦 [react-native-windows 0.73.2](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.2)\n- 📦 [Initialisez une app Expo universelle avec Tailwind et routage fichier](https://github.com/expo/examples/tree/master/with-router-tailwind) : Nouveau template create-expo-app utilisant Expo Router v3 et NativeWind v4.\n- 🎙 [React Native Show 32 - React Native pour Apple Vision Pro et visionOS](https://www.callstack.com/podcasts/react-native-for-apple-vision-pro-and-visionos)\n- 🎙️ [RNR 284 - Rétrospective React Native 2023](https://reactnativeradio.com/episodes/rnr-284-react-native-rewind-2023-in-review)\n- 🎙️ [Rocket Ship 23 - Pourquoi utiliser React Native en 2024](https://podcast.galaxies.dev/episodes/023-why-you-should-use-react-native-in-2024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🔀 Autre {#other}",
+        "en": "## 🔀 Autre {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d30a9380",
+      "source_content": "- 👀 [TypeScript 5.4 PR - Add auto-import for the package.json imports field](https://github.com/microsoft/TypeScript/pull/55015)\n- 📜 [Frontend predictions for 2024](https://buttondown.email/whatever_jamie/archive/frontend-predictions-for-2024/)\n- 📜 [JavaScript Frameworks - Heading into 2024](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2024-i3l)\n- 📜 [Alternate Futures for “Web Components”](https://blog.carlana.net/post/2023/web-component-alternative-futures/)\n- 📜 [Why JavaScript promises aren't technically monads](https://rybicki.io/blog/2023/12/23/promises-arent-monads.html)\n- 📜 [Shadow DOM and the problem of encapsulation](https://nolanlawson.com/2023/12/30/shadow-dom-and-the-problem-of-encapsulation/)\n- 📦 [ESLint v9.0.0-alpha.0](https://eslint.org/blog/2023/12/eslint-v9.0.0-alpha.0-released/)\n- 📦 [quick-lint-js. 3.0 - TypeScript bug finder](https://quick-lint-js.com/blog/version-3.0/)",
+      "source_content_hash": "6ac2ce218300f1bd68e27c4f31018852c2807d83ca655048c1b66e3333f0607b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "fr": "- 👀 [PR TypeScript 5.4 - Ajout de l'auto-import pour le champ imports de package.json](https://github.com/microsoft/TypeScript/pull/55015)\n- 📜 [Prédictions frontend pour 2024](https://buttondown.email/whatever_jamie/archive/frontend-predictions-for-2024/)\n- 📜 [Frameworks JavaScript - En route pour 2024](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2024-i3l)\n- 📜 [Futurs alternatifs pour les « Web Components »](https://blog.carlana.net/post/2023/web-component-alternative-futures/)\n- 📜 [Pourquoi les promesses JavaScript ne sont pas techniquement des monades](https://rybicki.io/blog/2023/12/23/promises-arent-monads.html)\n- 📜 [Shadow DOM et le problème de l'encapsulation](https://nolanlawson.com/2023/12/30/shadow-dom-and-the-problem-of-encapsulation/)\n- 📦 [ESLint v9.0.0-alpha.0](https://eslint.org/blog/2023/12/eslint-v9.0.0-alpha.0-released/)\n- 📦 [quick-lint-js 3.0 - Détecteur de bugs TypeScript](https://quick-lint-js.com/blog/version-3.0/)",
+        "en": "- 👀 [PR TypeScript 5.4 - Ajout de l'auto-import pour le champ imports de package.json](https://github.com/microsoft/TypeScript/pull/55015)\n- 📜 [Prédictions frontend pour 2024](https://buttondown.email/whatever_jamie/archive/frontend-predictions-for-2024/)\n- 📜 [Frameworks JavaScript - Cap sur 2024](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2024-i3l)\n- 📜 [Futurs alternatifs pour les \"Web Components\"](https://blog.carlana.net/post/2023/web-component-alternative-futures/)\n- 📜 [Pourquoi les promesses JavaScript ne sont pas techniquement des monades](https://rybicki.io/blog/2023/12/23/promises-arent-monads.html)\n- 📜 [Shadow DOM et le problème de l'encapsulation](https://nolanlawson.com/2023/12/30/shadow-dom-and-the-problem-of-encapsulation/)\n- 📦 [ESLint v9.0.0-alpha.0](https://eslint.org/blog/2023/12/eslint-v9.0.0-alpha.0-released/)\n- 📦 [quick-lint-js 3.0 - Détecteur de bugs TypeScript](https://quick-lint-js.com/blog/version-3.0/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9f823c77",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "fr": "---",
+        "en": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "af843cee",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "fr": "## 🤭 Amusant {#fun}",
+        "en": "## 🤭 Divertissement {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "681ef526",
+      "source_content": "[![alt](/emails/issues/168/meme.jpg)](https://twitter.com/webdevcody/status/1737138310605083051)",
+      "source_content_hash": "55fdb6761b531e1c41da98e431b5640b9b289997d97f216f21d613fc8052d315",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "[![alt](/emails/issues/168/meme.jpg)](https://twitter.com/webdevcody/status/1737138310605083051)",
+        "en": "[![alt](/emails/issues/168/meme.jpg)](https://twitter.com/webdevcody/status/1737138310605083051)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "be17ccc3",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "fr": "À plus ! 👋",
+        "en": "À plus ! 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/168/index.mdx",
+  "last_updated_timestamp": "2025-06-24T15:56:58.178219+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "fr": "e5d9e990f6055c4e69b77cf07b4411e8a682382f5e2793aa1a5a94c9069e1d13",
+    "en": "e5d9e990f6055c4e69b77cf07b4411e8a682382f5e2793aa1a5a94c9069e1d13"
+  }
+}
