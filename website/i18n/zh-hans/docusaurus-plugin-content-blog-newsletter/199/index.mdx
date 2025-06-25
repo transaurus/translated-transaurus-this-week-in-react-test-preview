@@ -1,0 +1,140 @@
+---
+slug: /199
+title: "This Week In React #199: shadcn, Next.js, TanStack, Remix, MDX, Astro, Storybook, @svg-use, MSW, RAG, RN-WebGPU, React-Three-Fiber, Re.Pack, Super Apps, RN-macOS, EAS, Node.jx, Stage 2.7, AggregateError, Style-Observer..."
+authors: [matthieugicquel, cyrilbo]
+date: 09-04-2024
+---
+
+大家好！
+
+我们是来自 [Theodo Apps（原 BAM）](https://apps.theodo.com/en?utm_source=thisweekinreact) 的 Cyril 和 Matthieu 👋，本周代替 Seb 为大家带来 React 和 React Native 领域的最新动态。
+
+本周，shadcn 发布了新的 CLI，我们还注意到其他正在酝酿中的新功能，比如 React Query 中对 `use()` 钩子的支持。
+
+React Universe 大会明天开幕，我们预计会有 React Native 的相关公告，下周将为大家详细解读！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期简讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![【现场研讨会】使用示例调试 Next.js](/emails/issues/199/sentry.jpg)](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)
+
+**[【现场研讨会】使用示例调试 Next.js](https://sentry.io/resources/faster-apis-better-experiences/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=tracing-fy25q3-fasterapiworkshop&utm_content=newsletter-Danworkshop-rsvp)**
+
+9月15日加入 Dan Mindru（Morning Maker 节目联合主持人）的实践研讨会，他将分享如何通过 Sentry 将 API 调用时间缩短 22.3 秒。您将学习使用 Sentry 的追踪和会话回放功能调试错误和性能问题的实用技巧——立即预订席位。
+
+---
+
+## ⚛️ React {#react}
+
+[![Shadcn 推出新的 CLI](/emails/issues/199/shadcn.jpg)](https://ui.shadcn.com/docs/changelog)
+
+**[Shadcn 推出新的 CLI](https://ui.shadcn.com/docs/changelog)**
+
+新 CLI 功能显著增强：
+
+- `shadcn add` 现在可安装组件、主题、钩子、工具、依赖项等
+- 支持多种 React 框架（Next.js、Remix、Vite、Laravel）
+- 可更新您的 tailwind 配置而非覆盖
+- 组件可直接从 URL 导入
+
+更多细节详见 🐦 [此 Twitter 帖子](https://x.com/shadcn/status/1829646528149143992)。
+
+---
+
+- 💸 [React Component Analytics — Omlet Scans Your Codebase to Measure Component Usage to Increase Code Quality and Design Systems Adoption](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-aug-2024)
+- 👀 [TanStack Query PR - Add support for `React.use()`](https://github.com/TanStack/query/pull/7988): React Query plans to return a promise that you can `use()`, making it easier to integrate with Suspense in a performant way. It’s more convenient than `usePrefetchQuery` and more parallel than `useSuspenseQuery`.
+- 👀 [Remix Route Convention Evolution](https://github.com/brookslybrand/route-convention-evolution): The new `routes.ts` we evoked last week will allow you to skip filesystem-based routing, or simplify using the convention of your choice.
+- 🐦 [Next.js 15 may be released soon](https://x.com/feedthejim/status/1829569083777437745) without waiting for React 19 to be stable, and without requiring React 19 for the pages router. It will include major Turbopack improvements.
+- 🐦 [Render on Fetch vs Fetch on Render](https://x.com/t3dotgg/status/1829988532489793957): Theo shares a graphical visualization of different React rendering patterns. An associated video is available to deep dive.
+- 📜 [Introducing @svg-use](https://fotis.xyz/posts/introducing-svg-use/): Greatly explains how SVG-in-JS (notably SVGR in React) is convenient for theming and distribution, but is not ideal in terms of performance and duplication. The `<use href>` pattern is a good alternative but requires manual plumbing, so the author created a toolchain to automate it.
+- 📜 [Build-time Components](https://codehike.org/blog/build-time-components): Greatly illustrated article explains the benefits of React Server Components for MDX users looking to make their content interactive. Client components and build-time Remark/Rehype plugins have limitations, and RSCs offer the best of both.
+- 📜 [Using Server Functions and TanStack Query](https://www.brenelz.com/posts/using-server-functions-and-tanstack-query/): TanStack Start is almost ready to use, and has a compelling data fetching approach, with “server fns” integrated with react-query and routing (for prefetching), fully typesafe of course.
+- 📜 [What the heck is atomic state management?](https://www.frontendundefined.com/posts/monthly/jotai-atomic-state-management/): A refresher on how to use Jotai “the right way” and the benefits it brings.
+- 📜 [Component testing in Storybook](https://storybook.js.org/blog/component-testing/): Storybook promotes component testing as a complement to end-to-end testing, offering speed and reliability with browser fidelity for better UI test coverage.
+- 📜 [The Complete Developer Guide to React 19:](https://www.callstack.com/blog/the-complete-developer-guide-to-react-19-part-1-async-handling) A 2-part series on what’s coming in React 19, including useTransition, useActionState, useOptimistic, use, Server Components, Server Actions, ref as a prop, Diffs for Hydration Errors, Improved error reporting, Context as a provider, useDeferredValue initial value & more.
+- 📜 [Easy RAG for TypeScript and React Apps](https://edspencer.net/2024/9/2/easy-rag-for-typescript-and-react-apps): Build a RAG system in TypeScript and React by processing text documents, generating embeddings, and utilizing a vector database for semantic search to answer user queries.
+- 📜 [Blending Markdown and React components in NextJS](https://edspencer.net/2024/8/28/using-markdown-with-nextjs)
+- 📜 [Higher Order Components (HOCs) in React: What They Are and How To Use Them](https://www.reactsquad.io/blog/higher-order-components-hocs-in-react)
+- 📜 [Comprehensive React Testing: Handling API Calls with Mock Service Worker](https://www.trevorlasn.com/blog/react-testing-mock-service-worker/)
+- 📜 [Using the inert attribute in React](https://www.mayank.co/notes/inert-in-react)
+- 📜 [Authoring CSS in modern JavaScript apps](https://www.alexchantastic.com/modern-css-authoring)
+- 📦 [Midday V1 - Starter kit based on Next.js, Turborepo, Shadcn & more](https://github.com/midday-ai/v1)
+- 📦 [Bulletproof-React - scalable React architecture repo - now updated with Next.js examples](https://github.com/alan2207/bulletproof-react)
+- 📦 [Astro 4.15 - Astro Actions, Use rewrites for i18n fallbacks, libSQL remotes in @astrojs/db, Timeout option in client:idle, Swap helpers for ViewTransitions](https://astro.build/blog/astro-4150/)
+- 🎥 [Lee Robinson - Build anything with v0 (3D games, interactive apps)](https://www.youtube.com/watch?v=zA-eCGFBXjM)
+- 🎥 [Jack Herrington - Using AI Structured Output with NextJS & React](https://www.youtube.com/watch?v=_Rb4SpWRHC8)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![以一半成本运行 GitHub Actions，速度提升高达 2 倍](/emails/issues/199/blacksmith.jpg)](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)
+
+**[以一半成本运行 GitHub Actions，速度提升高达 2 倍](https://blacksmith.sh/?utm_source=thisweekinreact&utm_medium=classified&utm_campaign=sep-4&utm_term=react)**
+
+Blacksmith 通过现代游戏 CPU 大幅加速 GitHub Actions 运行。只需单行代码即可集成。Ashby、GitBook、Superblocks 和 Slope 等 100+ 公司使用 Blacksmith 帮助开发者更快合并代码。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React 宇宙](/emails/issues/199/react-universe.jpg)](https://www.reactuniverseconf.com/)
+
+在我们撰写本文时，React Native 核心贡献者峰会正在弗罗茨瓦夫举行。
+
+随后将在周四和周五举行 React 宇宙大会。计划了许多令人兴奋的演讲，并且[您可以在 Youtube 上关注](https://www.youtube.com/watch?v=b48Lax2-jOQ)。部分亮点包括：新的调试器、新架构、Expo DOM 组件、Static Hermes。
+
+因此，我们下周可能会为您带来更多 React Native 新闻！
+
+---
+
+- 💸 [React Native Mastery - 掌握 React Native 和 Expo 所需的唯一课程](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 👀 [Re.Pack 正在添加对 Rspack 的支持](https://github.com/callstack/repack/pull/720)：这个替代的、与 webpack 兼容的 React Native 打包工具可能会因此次变更而获得显著的速度提升。
+- 🐦 [React Native IDE 将把 Storybook 集成到 IDE 的预览模式中](https://x.com/kzzzf/status/1829262449541062716)
+- 🐦 [React Three Fiber 在 react-native-webgpu 上运行](https://x.com/aarongrider/status/1830629528005460016)：我们已经看到 Three.js 在 react-native-webgpu 上运行的示例。来自 SpaceX 的 Aaron Grider 目前正在开发 React Three Fiber 支持，将其声明式 API 带入 React Native 领域。
+- 📜 [使用 Moropo 和 Expo 创建并运行快速端到端测试：配合 Maestro](https://expo.dev/blog/create-and-run-fast-end-to-end-tests-using-moropo-and-expo)
+- 📜 [如何使用 React Native 开发超级应用？](https://medium.com/@xayilmaz/how-to-develop-a-super-app-with-react-native-fe18fbe002c5)：使用自定义原生模块在微应用之间进行通信的方式与 Repack 方法不同，后者利用 Webpack 为每个微应用生成模块化和独立的 JavaScript 包。
+- 📖 [Expo 文档更新](https://x.com/amanhimself/status/1828545129499750498)：本地优先架构、DOM 组件、用于 SDK 51 的原生项目升级助手。
+- 📖 [Expo 应用服务 (EAS) 定价](https://expo.dev/pricing#update)：EAS 更新和构建并发自 9 月 1 日起变得更便宜。
+- 📦 [react-native-macos 0.75](https://www.npmjs.com/package/react-native-macos/v/0.75.2)
+- 🎥 [Minute React Native - 2 分钟内解释 React Native WebGPU](https://www.youtube.com/watch?v=DQrO2LFnrOw)
+- 🎥 [Dan 的实验室 - 如何使用 Expo 构建二维码扫描器](https://www.youtube.com/watch?v=PZIEqcdFjpQ)
+- 🎥 [Simon Grimm - Expo DOM 组件很狂野](https://www.youtube.com/watch?v=BWA8KY5QEPk)
+- 🎥 [Chain React 2024 - YouTube 播放列表已上线](https://www.youtube.com/playlist?list=PLE7tQUdRKcyb81ybEVsrk6PfxXu7pJs1i#chainreact2024)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [ECMAScript 内幕：JavaScript 标准新增一个阶段](https://thenewstack.io/inside-ecmascript-javascript-standard-gets-an-extra-stage/)
+- 📜 [Web 剪贴板及其多类型数据存储机制](https://alexharri.com/blog/clipboard)
+- 📜 [深入解析 JavaScript 生成器：高级开发者视角](https://www.reactsquad.io/blog/understanding-generators-in-javascript)
+- 📜 [JavaScript 中的 AggregateError](https://www.trevorlasn.com/blog/aggregate-error-in-javascript/)
+- 📦 [ThreeJS 168](https://github.com/mrdoob/three.js/releases/tag/r168)
+- 📦 [Style-observer - 专为 CSS 设计的 MutationObserver](https://www.bram.us/2024/08/31/introducing-bramus-style-observer-a-mutationobserver-for-css/)
+- 📦 [Effect 3.7 - 通过 HttpApi 实现声明式 API 端点定义](https://effect.website/blog/effect-3.7)
+- 📦 [Node 22.8](https://nodejs.org/en/blog/release/v22.8.0) - module.enableCompileCache()、支持可冻结 globalThis 的 vm.createContext()、覆盖率阈值
+- 📦 [Sherif 1.0 - 面向 JavaScript 单体仓库的零配置强约定 Linter](https://github.com/QuiiBz/sherif)
+- 📦 [Safari Technology Preview 202 - 大量 CSS 特性更新](https://webkit.org/blog/15798/release-notes-for-safari-technology-preview-202/)
+- 📦 [i-html - 内联 HTML 导入元素](https://www.keithcirkel.co.uk/i-html/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![2024 年程序员的生活](/emails/issues/199/meme.jpg)](https://x.com/daboigbae/status/1828778118888452572)
+
+下次见！👋

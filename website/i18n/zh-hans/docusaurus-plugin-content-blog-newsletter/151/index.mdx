@@ -1,0 +1,176 @@
+---
+slug: /151
+title: "This Week In React #151: Remotion, Next.js, SVG-in-JS, TypeScript, Expo, VisionCamera, Conform, TinyBase, i18n, App Clips, ES2023, CommonJS..."
+authors: [slorber]
+date: 07-04-2023
+---
+
+大家好！
+
+本周我们有多个重要发布：Remotion 4正式推出，Expo SDK 49进入测试版。Next.js团队正着力优化开发者体验。关于React+SVG和VisionCamera的技术文章非常值得一读。
+
+[Remotion 4正在ProductHunt展示](https://www.producthunt.com/posts/remotion-4-0)：欢迎投票支持！👍
+
+下周暂停更新一期，7月18日再见 👋
+
+<!-- truncate -->
+
+**💡 [在Twitter查看本期内容](https://slo.im/thread) - 视觉化排版 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![前端大师](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)
+
+**[企业级UI开发（使用React）：测试与代码质量](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**
+
+需要管理或迁移大型应用和代码库？本视频课程涵盖高效扩展同时保持代码质量所需的核心知识，包含单元测试、CI流水线、模拟测试、代码覆盖率等关键内容。
+
+---
+
+## ⚛️ React {#react}
+
+[![Remotion 4.0](/emails/issues/151/remotion4.jpg)](https://www.remotion.dev/blog/4-0)
+
+**[Remotion 4.0](https://www.remotion.dev/blog/4-0)**
+
+Remotion支持用React创建视频。本周开启[Remotion v4发布周](https://www.remotion.dev/4)，首日[主题演讲](https://www.youtube.com/watch?v=S3C9wlPNhkQ)展示了渲染器全新的3D SVG能力。每日将发布新特性公告，博客文章也详述了这些更新。重点包括：
+
+- Remotion Studio：基于Zod的可视化属性编辑，渲染按钮...
+- Rust驱动架构，内置FFmpeg，OffthreadVideo提速2倍
+- SVG 3D引擎
+- Tailwind与Rive集成
+
+今日还有[ProductHunt上线活动](https://www.producthunt.com/posts/remotion-4-0)，欢迎投票支持 ;)
+
+---
+
+[![2023年与SVG-in-JS分手](/emails/issues/151/svginjs.jpg)](https://kurtextrem.de/posts/svg-in-js)
+
+**[2023年与SVG-in-JS分手](https://kurtextrem.de/posts/svg-in-js)**
+
+深度解析React应用中SVG的各种使用方式及其性能影响。明确反对"SVG-in-JS"方案：应避免通过React组件渲染SVG标记导致SVG代码进入JS包（包括SVGR加载器等方案）。除少数特例外，也应避免在HTML中内联SVG：React服务端组件也非理想解决方案。SVG精灵(sprite)是较优选择。
+
+---
+
+- 👀 [React.dev PR - 新增 TypeScript 概览页](https://github.com/reactjs/react.dev/pull/6120)：即将推出文档页面，记录 React API 与 TypeScript 的结合使用。
+- 👀 [Next.js - 改进 next/image 支持](https://twitter.com/leeerob/status/1674250190432116736)
+- 📜 [使用 Conform、Zod 和 Remix 进行表单验证](https://www.jacobparis.com/content/remix-conform)：Conform 是一个在服务端验证 FormData 的库，遵循 Remix 的渐进增强原则并在客户端显示错误。未来应该能[与 Next.js 服务端操作结合使用](https://twitter.com/sebastienlorber/status/1676210400256204800)？
+- 📜 [TypeScript 5.1 中的 JSX 类型声明](https://blog.logrocket.com/declaring-jsx-types-typescript-5-1/)：详解 JSX 类型的最新改进，特别是针对 React 的优化。
+- 📜 [避免数据过渡时界面空白的 React Hook](https://www.jameskerr.blog/posts/use-data-transition/)
+- 📜 [Storybook - 新用户应用内引导教程](https://storybook.js.org/blog/in-app-tour-for-new-users/)
+- 📜 [使用 next-translate 实现 NextJs URL 国际化](https://dev.to/martinratinaud/internationalize-nextjs-urls-with-next-translate-49d8)
+- 📜 [在 React 中创建无缝多语言用户界面](https://www.honeybadger.io/blog/creating-multi-language-user-interface-with-react/)
+- 📜 [React 中的 Aria-Live 区域](https://dev.to/abbeyperini/live-regions-in-react-4dmd)
+- 📦 [Next.js 13.4.8 - 本地服务器启动提速 1.5 倍，更新提速 54%](https://twitter.com/nextjs/status/1675929873720680459)：Vercel 正致力于优化 Next.js 开发体验。详见 Tim Neutkens 的[技术说明](https://github.com/vercel/next.js/issues/48748#issuecomment-1614456247)。
+- 📦 [Styled-Components v6](https://github.com/styled-components/styled-components/releases/tag/v6.0.0)：包含完善的升级指南，记录了一些破坏性变更。
+- 📦 [Astro Starlight](https://starlight.astro.build/)：Astro 官方文档模板，低碳足迹且支持 React 和 MDX。
+- 📦 [next-international v0.5 - 初步支持 App Router](https://twitter.com/tomlienard/status/1675512683007705090)
+- 📦 [TinyBase v4.0 - 面向本地优先应用的反应式数据存储 - 集成 SQLite 和 CRDT](https://twitter.com/tinybasejs/status/1674826869169070080)
+- 📦 [Bun-Remix](https://github.com/jacob-ebey/bun-remix)
+- 🎙️ [Reactiflux - 2023 年 6 月 React 动态盘点](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--June-2023-e26dgii)
+- 🎥 [Redux 未来规划（Mark Erikson 访谈）](https://www.youtube.com/watch?v=n5FK8_EXcbs)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![React Bricks 是支持 Next.js、Remix 和 Gatsby 的可视化编辑 CMS](/emails/issues/148/reactbricks.png)](https://reactbricks.com/?utm_source=thisweekinreact)
+
+**[React Bricks 是支持 Next.js、Remix 和 Gatsby 的可视化编辑 CMS](https://reactbricks.com/?utm_source=thisweekinreact)**
+
+**为开发者提供灵活性**：通过 React 组件创建专属设计系统。在 JSX 中实现真正的行内可视化编辑，并通过侧边栏控件编辑背景色等属性。支持 Next.js、Remix、Gatsby 及任意 CSS 框架！
+
+**内容编辑者**可以轻松地内联编辑内容，而不会破坏设计系统。操作如同使用Word或Pages般简单，使他们能够在几分钟内创建落地页，无需依赖开发人员资源。
+
+**它具备企业级功能**，包括协作、时间机器、单点登录、符合GDPR的数据中心、用于优化图像的全球CDN、电子商务集成、细粒度权限、定时发布等特性。
+
+**从这里开始：[https://reactbricks.com](https://reactbricks.com/?utm_source=thisweekinreact)**
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo SDK 49测试版现已推出](/emails/issues/151/expo49beta.jpg)](https://blog.expo.dev/expo-sdk-49-beta-is-now-available-6373e78f8624)
+
+**[Expo SDK 49测试版现已推出](https://blog.expo.dev/expo-sdk-49-beta-is-now-available-6373e78f8624)**
+
+新版49 SDK已发布，测试版推出约一周。此版本包含大量重大改进，难以详尽列举。以下是我的重点摘要：
+
+- React-Native v0.72
+- Expo Router v2 RC
+- Reanimated v3
+- 网络调试，VS Code调试
+- 内置React开发工具
+- 环境变量
+- 本地Expo模块
+- expo-dev-client中Fabric的实验性支持
+
+---
+
+[![重新定义相机处理——在JavaScript中直接使用TensorFlow Lite GPU](/emails/issues/151/visioncamera.jpg)](https://mrousavy.com/blog/Reinventing-Camera-Processing)
+
+**[重新定义相机处理——在JavaScript中直接使用TensorFlow Lite GPU](https://mrousavy.com/blog/Reinventing-Camera-Processing)**
+
+Marc Rousavy阐述了如何在React-Native Vision Camera v3上运行TensorFlow模型（[演示](https://twitter.com/mrousavy/status/1674791891823648770)）。他的插件已在[VisionCamera v3 rc.3](https://twitter.com/mrousavy/status/1675883155822202880)中开源。文章技术性较强，深入解释了如何实现60+FPS的内部运行机制。简而言之：现在可轻松将TensorFlow模型集成至Vision Camera，并通过React-Native-Skia绘制实时反馈。无需编写原生代码，且所有逻辑均可通过空中下载(OTA)更新部署！
+
+---
+
+- 📦 [React-Native v0.72.1](https://github.com/facebook/react-native/releases/tag/v0.72.1)
+- 📦 [App Icon Badge](https://github.com/obytes/app-icon-badge): 超级实用的Expo配置插件，可根据环境（开发、预发布等）生成不同图标
+- 📜 [iOS App Clips：更快速流畅的用户体验](https://www.bam.tech/en/article/app-clips-ios-experience-utilisateur): 阐述iOS App Clips的UX优势及其在React-Native应用中的集成方法，需保持10MB大小限制
+- 🧵 [Expo每周文档更新](https://twitter.com/amanhimself/status/1675794149424115714)
+- 🎥 [用Colo Loco破解Xcode！](https://www.youtube.com/watch?v=ucEBfIZOap8)
+- 🎥 [React Native 0.72有哪些新特性？](https://www.youtube.com/watch?v=XNeoSaacyX4)
+
+---
+
+## 🧑‍💻 职位 {#jobs}
+
+🧑‍💼 [**Passionfroot - 高级全栈工程师（Remix）- €160k+，柏林/远程**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是通过 YouTube、播客、社交媒体和新闻通讯赋能未来的独立企业。加入我们，共同构建一个工具，赋能全球创作者建立可扩展、可持续的业务。
+
+🧑‍💼 [**Callstack - 高级 React Native 开发人员 - 完全远程，B2B 每月净收入 21-32k 波兰兹罗提**](https://www.callstack.com/senior-react-native-developer)
+
+您是否想开发世界上最受欢迎的应用程序？是否想共同创造 React Native 技术？加入由 React 和 React Native 领导者组成的 Callstack 团队。请访问我们的网站了解更多详情。我们期待看到您的申请——向我们展示您的实力！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们有几个面向 React Native 开发者的职位空缺！薪资约为 16 万美元外加 10% 的奖金。您必须拥有 RN 生产经验并且位于美国。请私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多信息，别忘了提及 This Week in React。
+
+💡 [如何发布招聘信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Ecma International 批准 ES2023](https://www.ecma-international.org/news/ecma-international-approves-new-standards-at-the-125th-general-assembly-27-june-2023/)。注：通过复制更改数组的功能现已在所有浏览器中可用 [随着今天 Firefox v115 的发布](https://twitter.com/sebastienlorber/status/1676139862745923585)。
+- [TypeScript 5.2 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2-beta/)
+- [Qwik 1.2](https://www.builder.io/blog/qwik-1-2-performance-autopilot)
+- [Ember 5.0](https://blog.emberjs.com/ember-5-0-released/)
+- [CSS：精华部分](https://www.builder.io/blog/css-the-good-parts)
+- [W3C 首个公开工作草案：CSS 锚点定位](https://twitter.com/sebastienlorber/status/1675900466553659396)
+- [六月份 Web 平台的新变化](https://web.dev/web-platform-06-2023/)
+- [理解 SVG 路径](https://www.nan.fyi/svg-paths)
+- [npm 生态核心的巨大漏洞](https://blog.vlt.sh/blog/the-massive-hole-in-the-npm-ecosystem)
+- [用 Rust 编写 Node 库](https://blog.metlo.com/writing-a-node-library-in-rust/)
+- [CommonJS 不会消失](https://bun.sh/blog/commonjs-is-not-going-away)
+- [CommonJS 正在伤害 JavaScript](https://deno.com/blog/commonjs-is-hurting-javascript)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/151/meme.jpg)](https://twitter.com/localhost_5173/status/1675142562473185281)
+
+再见！👋

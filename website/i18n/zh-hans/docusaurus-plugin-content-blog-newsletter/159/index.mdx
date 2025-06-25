@@ -1,0 +1,167 @@
+---
+slug: /159
+title: "React Hebdo #159: Bun, Static Hermes, Next.js, Redwood, Marz, React Aria Components, Next Nav, visionOS, Reanimated, Flame, Skia Fonts, Stagger, Tamagui, TypeScript, Tauri..."
+authors: [slorber]
+date: 09-13-2023
+---
+
+大家好！
+
+本周，运行时成为焦点。我们当然要聊聊 Bun 和 Static Hermes。
+
+这周推特上的激烈讨论我就不多说了 😅 让我们保持积极氛围。
+
+React 专家们请注意：[React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact) 大会将于 10 月 20 至 23 日在伦敦举行（[-10% 优惠码 "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)）。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期简讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助 {#sponsor1}
+
+[![企业级 API：消息流、聊天和视频！](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**企业级 API：消息流、聊天和视频！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Stream 提供企业级 **API** 和 **SDK**，帮助产品和工程团队规模化解决两大常见需求：应用内聊天和社交动态消息流。
+
+借助 Stream，开发者能以远低于从零开发的时间成本，在应用中集成各类消息或动态流功能。Stream Chat 让开发者能轻松实现丰富的实时消息功能。
+
+Stream 为流行框架提供强大的客户端 SDK，包括 [**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal 和 iOS。通过 Maker 账户，初创项目或个人项目可免费解锁企业级功能、组件和 UI 套件。
+
+[**立即尝试 React 视频教程！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+---
+
+## ⚛️ React {#react}
+
+[![Bun 1.0](/emails/issues/159/bun.jpg)](https://bun.sh/blog/bun-v1.0)
+
+[**Bun 1.0**](https://bun.sh/blog/bun-v1.0)
+
+本周不可能错过它：Bun 刚刚发布了稳定的 v1.0 版本。虽然这消息不直接关联 React，但迟早会影响所有 React 开发者。
+
+Bun 是基于 Webkit 并用 Zig 编写的 JavaScript/TypeScript 完整工具链。它为我们当前使用的整套前端工具提供了全新超高速替代方案：Node.js、npx、Babel、esbuild、swc、webpack、Jest、Vitest、npm、Yarn、pnpm... 其性能基准令人印象深刻且真实可信。
+
+它与现有工具的兼容性以及对ESM/CJS混合支持的特性，使其能够轻松地作为即插即用的替代方案。Bun通常能够直接运行你的代码而无需任何修改（否则会被[🐦视为一个错误](https://twitter.com/jarredsumner/status/1700497869160268155)）。诸如Next.js、Remix和Astro等React框架已得到支持。将其作为npm/Yarn/pnpm或Jest/Vitest的替代品可能是一个不错的切入点，风险也不大。
+
+**其他有用链接：**
+
+- 📣 [Vercel - 现在支持零配置安装Bun](https://vercel.com/changelog/bun-install-is-now-supported-with-zero-configuration)
+- 👀 [React-Native CLI PR - 在init命令中支持Bun](https://github.com/react-native-community/cli/pull/2073)
+- 🐦 [Bun控制台支持JSX](https://twitter.com/jarredsumner/status/1701499357080736047)
+- 🐦 [Bun + create-expo-app = 初始化速度快12倍](https://twitter.com/notbrent/status/1701044351177244790)
+- 📜 [Matteo Collina - 我对Bun及其他冒险的思考](https://adventures.nodeland.dev/archive/my-thoughts-on-bun/)
+- 📦 [Marz - 一个快速轻量的Bun版React服务端组件框架](https://github.com/hex2f/marz)
+- 🎥 [官方发布视频 - Bun 1.0现已发布](https://www.youtube.com/watch?v=BsnCpESUEqM)
+- 🎥 [Fireship - Bun正在颠覆JavaScript领域](https://www.youtube.com/watch?v=dWqNgzZwVJQ)
+- 🎥 [Lee Robinson - 我对Bun的看法](https://www.youtube.com/watch?v=z_66kDwxwBI)
+
+---
+
+- 💸 [Zero To Shipped - 掌握快节奏全栈开发并**最终**发布产品](https://www.zerotoshipped.com/)
+- 🐦 [Next.js - 重新设计的控制台输出](https://twitter.com/leeerob/status/1701775526459756620)
+- 👀 [RedwoodJS - 支持 React 服务器操作](https://community.redwoodjs.com/t/react-server-components-rsc/5081/7)：目前支持有限，服务器操作需放在单独文件中。
+- 👀 [React.gg](https://react.gg/) 和 [The Joy of React](https://www.joyofreact.com/)：两大备受期待的 React 课程刚刚发布！
+- 📜 [Next.js，为什么？](https://pilcrow.vercel.app/blog/nextjs-why)
+- 📜 [使用 Relay 扩展前端应用团队](https://hasura.io/blog/scaling-frontend-app-teams-using-relay/)
+- 📜 [React 应用自动化测试全景](https://reacthandbook.dev/automated-testing)
+- 📜 [使用 Tailwind 定制 React Select 样式](https://www.jussivirtanen.fi/writing/styling-react-select-with-tailwind)
+- 📜 [通过定制化流程克服应用复杂性](https://www.40seas.com/blog/overcoming-application-complexity-with-customized-flows)
+- 📜 [Storybook 中的自动视觉测试，以及 React+TS 构建速度提升 2.2 倍](https://storybook.js.org/blog/automatic-visual-tests-plus-2x-faster-react-ts/)
+- 📜 [用数学作画：光线追踪的温和探索](https://blog.maximeheckel.com/posts/painting-with-math-a-gentle-study-of-raymarching/)
+- 📦 [React Aria Components - 现已进入测试版](https://react-spectrum.adobe.com/releases/2023-09-07.html)
+- 📦 [Ariakit React 0.3](https://github.com/ariakit/ariakit/releases/tag/@ariakit/react@0.3.0)
+- 📦 [Next Admin - Next.js 和 Prisma 的全功能管理面板](https://github.com/premieroctet/next-admin)
+- 📦 [Next Nav - 用于导航和创建 Next.js 路由的 VSCode 扩展](https://www.next-nav.com/)
+- 👥 [reactjsday](https://2023.reactjsday.it/)（意大利维罗纳，10月27日）提供[-10%折扣 - 代码"media_TWIR"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)
+- 👥 [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact)（英国伦敦，10月20-23日）提供[-10%折扣 - 代码"REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![highlight.io - 开源的全栈监控平台](/emails/issues/159/highlight.jpg)](http://highlight.io)
+
+[**highlight.io - 开源的全栈监控平台**](http://highlight.io)
+
+[**highlight.io**](http://highlight.io) 是面向您下一个项目的真正开源会话重放、错误监控与日志记录平台。
+
+无需浪费时间猜测错误成因。使用 highlight 即可清晰掌握浏览器与服务器端应用中的任何动态。
+
+它在您喜爱的框架中安装极其简便：[React.js](https://www.highlight.io/docs/getting-started/client-sdk/reactjs)、[Next.js](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js)、[Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix) 或任何其他框架！
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Static Hermes](/emails/issues/159/hermes.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)
+
+[**Static Hermes**](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)
+
+Static Hermes 在 React-Native EU 大会上于上周宣布。我未能亲临现场，因此尝试通过阅读幻灯片来阐释我的理解，因为相关视频尚未上传至 YouTube。
+
+Static Hermes 是一个实验性项目，允许您将部分 TypeScript（或 Flow）代码选择性地编译为原生代码。与基于字节码解释的 Hermes 常规模式相比，这带来了显著的性能提升（10-20 倍）。同时支持直接从 TypeScript 代码无缝集成原生 API（零成本 FFI，比 JSI 封装快 15-80 倍）。
+
+要实现此功能，TypeScript 必须首先成为"健全"（sound）语言。Static Hermes 将修改 JavaScript 的语义，确保声明类型与运行时类型完全匹配。这张幻灯片清晰地阐释了该概念：
+
+[![Static Hermes 使 TypeScript 变得健全](/emails/issues/159/hermes2.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement?slide=14)
+
+这个非常有趣的想法，或许未来能在 React-Native 生态系统之外产生更广泛的影响？
+
+**其他实用链接：**
+
+- 📜 [如何在不作弊的情况下将微基准测试提速 300 倍](https://tmikov.blogspot.com/2023/09/how-to-speed-up-micro-benchmark-300x.html)
+- 🐦 [计划支持空中下载（OTA）更新](https://twitter.com/mdj_dev/status/1700424775116493053)
+
+---
+
+- 💸 [Blitz - 为 iOS、Android 和 Web 更快地构建 React Native 应用！](https://www.blitz-rn.com/)
+- 🐦 [微软有超过 1000 名开发者在使用 React Native](https://twitter.com/thymikee/status/1700100221940662684)
+- 🐦 [React-Native 在 Apple Vision Pro 模拟器上原生运行的演示](https://twitter.com/o_kwasniewski/status/1701626162521190688)
+- 🧵 [React-Native EU 大会速写](https://twitter.com/DelphineBugner/status/1700077346852622504)
+- 📜 [为 React Native 核心引入端到端（E2E）测试](https://www.callstack.com/blog/introducing-e2e-tests-to-react-native-core)
+- 📜 [Expo 发布派对回顾](https://blog.expo.dev/expo-launch-party-recap-697d7b7739e8)
+- 📦 [React-Native macOS 0.72](https://github.com/microsoft/react-native-macos/releases/tag/v0.72.0)
+- 📦 [Reanimated 3.5.0 - 支持 Windows/macOS、createWorkletRuntime、reduceMotion...](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.5.0)
+- 📦 [Stagger - 跨平台的 Reanimated 交错动画组件](https://github.com/animate-react-native/stagger)
+- 📦 [Flame AI - 用于交互式 AI 驱动的 React Native 升级的 CLI](https://github.com/infinitered/flame)
+- 📦 [React-Native-Skia - 字体管理器，支持系统和自定义字体](https://shopify.github.io/react-native-skia/docs/text/fonts/)
+- 📦 [react-native-secure-window - 在截屏时隐藏 React Native 视图](https://github.com/bufgix/react-native-secure-window)
+- 📦 [Tamagui 1.62 - 零配置支持](https://github.com/tamagui/tamagui/releases/tag/v1.62.0)
+- 🎙️ [React Native Radio 第 274 期 - React Native 持续集成（CI）与自动化部署](https://reactnativeradio.com/episodes/rnr-274-react-native-ci-automated-deployments)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Node.js 16 终止支持](https://nodejs.org/en/blog/announcements/nodejs16-eol)
+- 📜 [Tauri 2.0 路线图 - 移动端更新](https://beta.tauri.app/blog/roadmap-to-tauri-2-0/)
+- 📜 [TypeScript 阻止了坏事...也阻止了好事](https://kyleshevlin.com/typescript-prevents-bad-things-and-good-things)
+- 📜 [Deno Deploy 宣布原生支持 npm](https://deno.com/blog/npm-on-deno-deploy)
+- 📜 [你的缓存头设置或许可以更激进些](https://www.macarthur.me/posts/more-aggressive-cache-headers)
+- 📜 [大型项目正在弃用 TypeScript 吗？](https://www.totaltypescript.com/are-big-projects-ditching-typescript)
+- 📜 [2023 年 25+ 个 UI 组件库概览](https://www.builder.io/blog/25-plus-ui-component-libraries)
+- 📜 [Node.js vs. Deno vs. Bun：JavaScript 运行时对比](https://snyk.io/fr/blog/javascript-runtime-compare-node-deno-bun/)
+- 📜 [Vercel - 在逐步将 Turborepo 从 Go 迁移至 Rust 的过程中使用 Zig](https://vercel.com/blog/how-we-continued-porting-turborepo-to-rust)
+- 📦 [Chrome 117 - 数组分组、CSS 子网格、transition-behavior...](https://developer.chrome.com/en/blog/new-in-chrome-117/)
+- 📦 [Skott - 用于分析、搜索和可视化 JS/TS/Node.js 依赖图的开发工具](https://dev.to/antoinecoulon/introducing-skott-the-new-madge-1bfl)
+- 📦 [Vest 5.0 - 声明式验证框架](https://github.com/ealush/vest/releases/tag/vest%405.0.1)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/159/meme.jpg)](https://twitter.com/sebastienlorber/status/1701293733822541931)
+
+再见！👋

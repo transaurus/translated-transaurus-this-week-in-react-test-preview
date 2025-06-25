@@ -1,0 +1,141 @@
+---
+slug: /235
+title: "This Week In React #235: React Router, createStore, SuspenseList, Transition Indicator, Compiler, RenderHooks, Waku, React-Scan | Expo, Lava, Fortnite, Skia, AI, Lynx | TC39, using, Zod, Node, Deno"
+authors: [slorber]
+date: 05-21-2025
+---
+
+大家好！
+
+本周我们非常高兴地看到React Router终于发布了React Server Components的预览版。我还发现React仓库里一些非常有趣的PR，让大家可以提前了解即将到来的新功能！
+
+React Native生态圈出奇地平静，但毫无疑问他们正在为下周的[App.js Conf](https://appjs.co/)保密所有惊喜！
+
+顺便提一句，我真的很需要大家的支持。由于我现在会自动清理不活跃的订阅用户，通讯的订阅量正在持续下降😅。任何转发、点赞、互动或推荐都对我帮助巨大！请说服你的朋友们订阅❤️
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![将React代码审查时间和缺陷减少一半](/emails/issues/233/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)
+
+**[将React代码审查时间和缺陷减少一半](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)**
+
+代码审查至关重要但耗时。CodeRabbit作为AI助手，实时提供PR审查意见和每个变更的潜在影响分析。
+
+不仅指出问题，CodeRabbit还能一键提供修复建议，并支持通过AST Grep模式定义自定义代码质量规则，捕捉传统静态分析工具可能遗漏的细微问题。
+
+CodeRabbit已审查超过500万次PR，安装在100万个代码库，被5万个开源项目使用。所有开源项目均可免费使用。[立即体验！](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)
+
+---
+
+## ⚛️ React {#react}
+
+[![React Router RSC预览](/emails/issues/235/rr.jpg)](https://remix.run/blog/rsc-preview)
+
+**[React Router RSC预览](https://remix.run/blog/rsc-preview)**
+
+React Router团队发布了基于Parcel打包器的React Server Components支持预览。稳定版需等待Vite官方支持RSC，但好消息是React Router正变得更加框架无关，未来只需少量工作即可支持其他打包器。
+
+The feature is designed to be both incrementally adoptable by returning JSX in loaders/actions, but also to feel good on new greenfield projects looking to go all-in with Server Component Routes, `’use client’` and `’use server’` directives. They also explain how to solve the N+1 query problem in RSCs, inspired by GraphQL/DataLoader.
+
+---
+
+[![Render Hooks](/emails/issues/235/renderhook.jpg)](https://github.com/brandonmcconnell/render-hooks)
+
+**[Render Hooks](https://github.com/brandonmcconnell/render-hooks)与[With React](https://github.com/jacobparis/with-react)**
+
+Render Props模式似乎正在回归，两个新项目提出通过渲染回调暴露React核心钩子。这在某些场景下很方便，允许"内联"组件同时遵守钩子规则，但并未解决无法通过提取自定义组件解决的问题。建议谨慎使用这种有趣的模式。
+
+---
+
+- 💸 [Product for Engineers - What engineers get wrong about communication](https://go.posthog.com/twir-may21)
+- 👀 [React Core PR \- `createStore()` skeleton API](https://github.com/facebook/react/pull/33215): Initial scaffolding work to implement the Concurrent Stores feature mentioned in the latest React Labs update. There’s no implementation yet, but I still find it interesting to check the signature/types of this upcoming API that should support both ad-hoc state updates and the reducer/actions pattern. What strikes me the most is that you can’t access the store value directly, apart from using the `use(store)` API, and this totally makes sense in a concurrent world. Remember, this is a work in progress, and things may change.
+- 👀 [React Core PRs \- `<SuspenseList>` being actively worked on](https://github.com/search?q=repo%3Afacebook%2Freact+SuspenseList&type=pullrequests&s=created&o=desc): It’s been a while since we last heard of this upcoming component that we thought would be in React 18\. It allows to coordinate Suspense boundaries and control their “reveal order” (forwards/backwards/together).
+- 👀 [React Core PR \- Transition indicator \+ `onDefaultTransitionIndicator` API](https://github.com/facebook/react/pull/33162): A feature being worked on should allow giving user feedback while React transitions are in progress. The default React-DOM implementation should show a native browser spinner, but it’s possible to opt out or provide a custom feedback.
+- 👀 [SWC PR \- Initialize `@swc/react-compiler`](https://github.com/swc-project/swc/pull/10475): A new package to integrate the React Compiler for all SWC-based projects is coming. It will still use Babel under the hood ([details](https://github.com/oxc-project/oxc/issues/10048#issuecomment-2837628965)), but it’s possible to optimize by only running it on relevant files (see what [Next.js is doing](https://nextjs.org/docs/app/api-reference/config/next-config-js/reactCompiler)), potentially using parallelization.
+- 👀 [Next.js PR \- Initial Segment Explorer devtool](https://github.com/vercel/next.js/pull/78858): The Next.js team started working on a tool to help you visualize parallel and interception route segments.
+- 🔐 [Next.js Race Condition to Cache Poisoning \- CVE-2025-32421](https://github.com/advisories/GHSA-qpjv-v59x-3qc4): Low-severity Pages Router vulnerability, already patched.
+- 📣 [Appwrite Sites: The open-source Vercel alternative](https://appwrite.io/blog/post/announcing-appwrite-sites): The AppWrite cloud platform can now deploy full-stack React meta-frameworks. It positions itself as a direct Vercel competitor, although there are differences (containers vs serverless). It’s a paid cloud product, but you can also self-host it for free.
+- 📜 [Concurrent Rendering](https://ui.dev/c/react/concurrent-rendering): Free interactive lesson on React transitions from the ui.dev course.
+- 📜 [Correctly infers from initial props](https://rena.to/blog/13): You don’t need to explicitly type your context value and can leverage type inference instead.
+- 📜 [Making Next.js Navigation Fast af](https://upstash.com/blog/fast-nextjs): Using React Router within your Next.js app works, but I doubt it’s a good idea, doesn’t permit you to use RSCs, and is likely to cause trouble if you use different routers on different pages.
+- 📜 [Mastering Focus Management in React with `flushSync`](https://www.epicreact.dev/mastering-focus-management-in-react-with-flush-sync-f5b38): By default, React uses batching and doesn’t flush state updates immediately to the DOM, and you can opt out of this behavior when needed.
+- 📜 [Preserving and Resetting State in React](https://www.epicreact.dev/preserving-and-resetting-state-in-react-l2dxl): Explains why conditionally wrapping a component may make it reset its state.
+- 📜 [Just F\*\*\*ing Use React](https://justfuckingusereact.com/): Entertaining read, also exists in a less profane [Just Use React](https://www.epicreact.dev/just-use-react-dk4e0) variant.
+- 📜 [The Past and Future of Render Optimization with React Context](https://newsletter.daishikato.com/p/the-past-and-future-of-render-optimization-with-react-context)
+- 💸 [Full-Stack Upgrade – Build real apps with auth, orgs & file uploads: The Road to Next is your next step as a full-stack React developer.](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1)
+- 📦 [Waku 0.23 \- Fine-grained component render modes](https://waku.gg/blog/fine-grained-router-components): Makes it possible to statically pre-render parts of a dynamic page. I find the API a bit confusing, but the idea looks cool and simpler than Next.js Partial Pre-Rendering.
+- 📦 [React-Scan 0.3.4 \- Scan for React performance issues](https://github.com/aidenybai/react-scan/releases/tag/v0.3.4): A release that takes the opportunity to announce upcoming features and the availability of the [extension on the Chrome store](https://chromewebstore.google.com/detail/react-scan/anmmhkomejbdklkhoiloeaehppaffmdf).
+- 📦 [React Aria \- May 19 Release](https://react-spectrum.adobe.com/releases/2025-05-19.html)
+- 📦 [React-Admin \- May 2025 Update \- 5.7 & 5.8](https://marmelab.com/blog/2025/05/21/react-admin-may-2025-update.html)
+- 📦 [StyleX 0.13 \- New `defineConsts` and `positionTry` APIs](https://stylexjs.com/blog/v0.13.0)
+- 📦 [Shopify Hydrogen 2025.05 \- Upgrades to React Router 7](https://hydrogen.shopify.dev/update/may-2025)
+- 🎥 [Theo \- React Is the last framework](https://www.youtube.com/watch?v=P1FLEnKZTAE): Probably a quite controversial point of view that React runtime/syntax is less likely to change now (mainly due to AI). Innovation is moving an abstraction layer above with the React Compiler.
+- 🎥 [Alem Tuzlak \- Server Componets (RSC) in react-router are... actually good?](http://epicweb.dev/tips/server-componets-rsc-in-react-router-are-actually-good~n3u4j)
+- 🎙️ [Syntax 902 \- Fullstack Cloudflare with React and Vite \- RedwoodSDK with Peter Pistorius](https://syntax.fm/show/902/fullstack-cloudflare-with-react-and-vite-redwood-sdk)
+- 🎙️ [Front-end Fire 95 \-TanStack DB & The Rise of the Tannerverse](https://front-end-fire.com/episodes/95/)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![为您的产品添加忠诚度逻辑——只需一个API。](/emails/issues/235/ReactNewsletterAd3.jpg)](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)
+
+**[为您的产品添加忠诚度逻辑——只需一个API。](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)**
+
+**既然可以通过 Dynamo 直接集成，何必从零构建忠诚度体系？**
+
+Dynamo 是一款 API 优先的无头忠诚度引擎，被领先的金融科技和消费应用产品团队用于嵌入奖励机制、会员层级和行为驱动互动——无需从零编写代码。
+
+通过 250+ 云端数据集成、**React 和 React Native SDK** 以及**干净的沙盒试用环境**，您可以在数日内（而非数月）提升用户留存率。
+
+→ [立即启动演示并获取免费沙盒访问权限。](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [Radon IDE——React Native 和 Expo 开发的一体化工具。下周在 App.js Conf 会见 Radon IDE 团队！](https://ide.swmansion.com/?utm_source=thisweekinreact.com)
+- 🐦 [《堡垒之夜》重返美国 App Store 的 iPhone 和 iPad 平台... 同时在欧盟的 Epic Games Store 和 AltStore 上架！](https://x.com/Fortnite/status/1924949632628523199)：对整个移动行业的重大消息，苹果公司终于遵守法院裁决，允许移动应用使用基于网页的替代支付方式绕过 30% 的应用内购买抽成。
+- 🐦 [Airbnb Lava 技术预览](https://x.com/ramon_fritsch/status/1922358206862397478)：尚未开源，但 Airbnb 发明了一种新型轻量级媒体格式，用于跨平台嵌入动画和微交互图标。可能是 Lottie 的继任者？
+- 📜 [使用 Expo 和原生代码实现实时音频处理](https://expo.dev/blog/real-time-audio-processing-with-expo-and-native-code)
+- 📜 [Expo + IoT：通过 WiFi 实现 HTTPS 设备配置](https://expo.dev/blog/expo-iot-device-provisioning-with-https-via-wifi)
+- 📜 [如何在 React Native 中使用 Vercel AI SDK 在设备端运行 LLM](https://www.callstack.com/blog/meet-react-native-ai-llms-running-on-mobile-for-real)
+- 📦 [Lynx 3.2——测试库、新增 CSS 功能、改进微任务和控制台支持](https://lynxjs.org/blog/lynx-3-2.html)
+- 📦 [React Native Skia 2.0.1——iOS 广色域支持](https://github.com/Shopify/react-native-skia/releases/tag/v2.0.1)
+- 🎥 [Beto——如何从 Expo SDK 52 升级到 53](https://www.youtube.com/watch?v=HBPyP4OxVgs)
+- 🎥 [Simon Grimm——使用 Expo Router 实现 React Native 抽屉导航](https://www.youtube.com/watch?v=65xmaJNpZVY)
+- 🎙️ [Rocket Ship 69——Expo Router v5、Skia WebGPU、应用更新与 Galaxies 终身版](https://share.transistor.fm/s/51ee3a99)
+- 🎙️ [React Native Radio 332——Codemagic + React Native（Martin Remmelgas 访谈）](https://infinite.red/react-native-radio/rnr-332-codemagic-react-native-with-martin-remmelgas)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [TC39 - 第108次会议议程](https://github.com/tc39/agendas/blob/main/2025/05.md)：下周将有一批JavaScript新提案推进，部分可能成为标准：`using`关键字、`Error.isError()`。
+- 📜 [JavaScript的新超能力：显式资源管理](https://v8.dev/features/explicit-resource-management)：详解上述`using`关键字，已在Chrome和Node 24中实现。
+- 📜 [MCP的未来属于GraphQL](https://www.apollographql.com/blog/the-future-of-mcp-is-graphql)：Apollo发布MCP服务器，阐释GraphQL与AI需求的契合点。
+- 📜 [生成器的易用性正逐渐征服我](https://macarthur.me/posts/generators/)
+- 📜 [Deno消亡的报道被严重夸大](https://deno.com/blog/greatly-exaggerated)
+- 📦 [Node 22.16 - 支持`node.config.json`（实验性）](https://nodejs.org/en/blog/release/v22.16.0)
+- 📦 [Zod 4.0 - 更快、更轻量、更强的TS编译效率，新增Zod Mini导出与本地化](https://zod.dev/v4)
+- 📦 [Remotion媒体解析器 - 基于WebCodecs的跨平台视频解析/解码/编码库](https://www.remotion.dev/blog/media-parser)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/235/meme.jpg)](https://x.com/copyjosh/status/1924294150905614762)
+
+[![alt](/emails/issues/235/meme2.jpg)](https://x.com/sebastienlorber/status/1922935190080372837)
+
+下次见！👋

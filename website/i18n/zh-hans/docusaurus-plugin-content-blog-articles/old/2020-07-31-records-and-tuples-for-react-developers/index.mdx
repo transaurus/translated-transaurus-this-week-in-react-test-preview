@@ -1,0 +1,26 @@
+---
+slug: records-and-tuples-for-react
+title: Records & Tuples for React
+description: .Records & Tuples for React... and how they are much more than immutable data structures.
+authors: [slorber]
+twitterThreadUrl: "https://slo.im/thread"
+image: ./images/hero.png
+---
+
+**记录与元组**（Records & Tuples），一个非常有趣的**[提案](https://github.com/tc39/proposal-record-tuple)**，刚刚在**TC39**达到了**[阶段 2](https://twitter.com/robpalmer2/status/1286040041089904640)**。
+
+它们为 JavaScript 带来了**深度不可变的数据结构**。
+
+But don't overlook their **equality properties**, that are <u>**VERY**</u> interesting for **React**.
+
+一整类 **React bug** 都与**不稳定的对象标识**有关：
+
+- **性能**：本可避免的重新渲染
+- **行为**：无用的副作用重新执行、无限循环
+- **API 层面**：无法表达何时需要稳定的对象标识
+
+我将解释**记录与元组**的基础知识，以及它们如何解决**实际 React 应用中的问题**。
+
+[![hero](./images/hero.png)](https://sebastienlorber.com/records-and-tuples-for-react)
+
+🔗 [**阅读更多**](https://sebastienlorber.com/records-and-tuples-for-react)

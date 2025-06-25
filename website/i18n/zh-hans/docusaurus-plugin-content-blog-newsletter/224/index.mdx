@@ -1,0 +1,164 @@
+---
+slug: /224
+title: "This Week In React #224: Next.js, TanStack Form, Astro, RTK, State Machine, Remix, StyleX | Lynx, Entreprise, SwiftUI, VisionOS, Windows, Hermes, Expo | Node.js, TypeScript, ArkType, Nitro, BetterAuth"
+authors: [slorber]
+date: 03-05-2025
+---
+
+大家好！
+
+本周主要内容：
+
+- **React**：Next.js 发布重大更新改善开发者体验，TanStack Form 推出稳定版 v1
+- **React Native**：竞争日趋激烈，字节跳动、Callstack 表现活跃，Vercel 移动端布局初现端倪
+- **其他**：TypeScript 支持持续增强！
+
+关注合作伙伴大会 [React-Summit](https://reactsummit.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇳🇱 阿姆斯特丹 - 6月13-17日 - 全球最大React技术大会！使用优惠码 TWIR 可享9折门票
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![Convex：专为AI编程设计的数据库](/emails/issues/224/convex.jpg)](https://convex.link/thisweekai)
+
+**[Convex：专为AI编程设计的数据库](https://convex.link/thisweekai)**
+
+在代码生成时代，你需要一个能通过AI平台可靠生成的后端系统。Convex在这方面[遥遥领先](https://stack.convex.dev/introducing-fullstack-bench)。
+
+因为Convex仅使用TypeScript，允许您编写[即时代码查询](https://docs.convex.dev/functions/query-functions/)，这些查询自动具备事务性、缓存和实时更新特性。
+
+这仅仅是开始。使用Convex，您还能：
+
+- 轻松调度函数和编写定时任务
+- 设置文件存储
+- 编写高效服务端函数
+- 以及更多功能...
+
+[立即体验快速入门](https://docs.convex.dev/quickstarts)
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 15.2](/emails/issues/224/next.jpg)](https://nextjs.org/blog/next-15-2)
+
+[**Next.js 15.2**](https://nextjs.org/blog/next-15-2)
+
+Vercel发布Next.js新次版本，带来显著的开发者体验提升：
+
+- 重构错误UI和改进堆栈跟踪：利用React全新[`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack) API打造调试体验
+- 流式元数据：异步元数据不再阻塞页面渲染或客户端路由切换
+- Turbopack性能优化：编译速度提升，内存占用降低
+- React视图过渡(实验性)：支持React新视图过渡API
+- Node.js中间件(实验性)：支持在中间件中使用Node.js运行时
+
+---
+
+[![TanStack Form 1.0](/emails/issues/224/form.jpg)](https://tanstack.com/blog/announcing-tanstack-form-v1)
+
+[**TanStack Form 1.0**](https://tanstack.com/blog/announcing-tanstack-form-v1)
+
+历经多年开发的TanStack新库正式发布稳定版，公告博文重点介绍以下特性：
+
+- 框架无关的无头组件：支持5种框架，文中示例使用React
+- 极致类型安全：`<form.Field>` API设计精妙
+- 模式验证：支持Zod、Valibot、ArkType等标准模式
+- 异步验证、内置防抖、AbortSignal中断机制
+- 同构多平台：客户端/服务端共享验证逻辑
+
+---
+
+- 💸 [Clerk - Build session-based authentication with React and Express](https://go.clerk.com/HRqsMAP)
+- 👀 [Rsbuild Plugin React Router \- Epic Stack example](https://github.com/rspack-contrib/rsbuild-plugin-react-router/tree/main/examples/epic-stack): Did you know that Rsbuild can be used as an alternative to Vite for React Router framework mode? Yep, it can even run Kent’s favorite stack.
+- 🗓️ [React Paris 2025](https://react.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 20 & 21 March (2 days) / 19th of March (Workshops) - Last call to join the React Event of the year in Paris. Get 20% off tickets with code "TWIR"!
+- 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 03 April - Last week of regular registration! Secure your spot now to save 200€ until March 11. Join Ryan Dahl, Sarah Drasner, Wes Bos, Angie Jones, Kyle Simpson, Matteo Collina, Eduardo San Martin Morote and more! Get 15% off tickets with code "TWIR”.
+- 📜 [\{transitions} \= f(state)](https://jordaneldredge.com/blog/transitions-f-of-state/): A rather philosophical article explaining that React can be seen as a state machine where the possible state transitions are implicitly defined by its event handlers. The asynchronous/concurrent nature of React makes it possible to introduce invalid state transitions that you should guard against explicitly.
+- 📜 [Building APIs with Next.js](https://nextjs.org/blog/building-apis-with-nextjs): New official guide from Lee Robinson, covering many cases and answering common questions.
+- 📜 [It's probably time to stop recommending Redux](https://www.bennett.ink/its-probably-time-to-stop-recommending-redux): Argues you probably don’t need a global state manager and can go a long way with an API cache \+ `useState`.
+- 📜 [Signals in React? Not a good idea](https://www.felgus.dev/blog/signals-in-react): React doesn’t have first-class signal support on purpose, and relies on raw data.
+- 📜 [React, Solid, htmx: Part 2](https://bobaekang.com/blog/react-solid-htmx-part-2/): The recent evolution of multiple frameworks, all pushing the web forward in their way.
+- 📜 [Building an InertiaJS app with Rails](https://avohq.io/blog/inertia-js-with-rails): A complete example of a seamless integration of a React frontend with a Rails backend through Inertia, without the need for an API.
+- 📜 [How to Show a 404 in React Router](https://sergiodxa.com/tutorials/create-show-a-404-in-react-router)
+- 📦 [XState Store 3.0](https://stately.ai/blog/2025-02-26-xstate-store-v3): I particularly like the new `store.trigger` API that permits using the store more ergonomically, in particular for cases where event-driven indirection is not useful. This new version makes it an interesting alternative to Zustand, still lightweight but more opinionated, and a path toward adopting real XState state machines.
+- 📦 [Isograph 0.3 \- Modern GraphQL framework, support for Relay-style connections, fetch policies](https://isograph.dev/blog/2025/03/03/isograph-0.3.0/)
+- 📦 [Astro 5.4 \- Remote image optimization in Markdown, enhanced security for dev and preview servers](https://astro.build/blog/astro-540)
+- 📦 [React Hook Form Lenses \- Focus on specific parts of your deeply nested form state](https://github.com/react-hook-form/lenses)
+- 📦 [StyleX 0.11 \- Debugging, CLI caching and docs improvements](https://stylexjs.com/blog/v0.11.0)
+- 📦 [Redux Toolkit 2.6 \- Infinite Query support](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.6.0)
+- 📦 [Remix 2.16 \- Vite 6 support](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v2160)
+- 🎥 [Jack Herrington \- React’s New ViewTransition Component Is A Little Flakey](https://www.youtube.com/watch?v=xfzNXa8WYW8)
+- 🎥 [Alem Tuzlak \- React Router just made your apps faster (splitRouteModules)](https://www.youtube.com/watch?v=A96Xkc9GiGY)
+- 🎙️ [This Month in React \- CRA, React Router, RTK, TypeScript, Astro, Standard Schema](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-02-Updated-new-project-docs-e2vj003)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![动手调试工作坊：监控、诊断与修复](/emails/issues/224/sentry.jpg)](https://dub.sh/debugging-workshop)
+
+**[动手调试工作坊：监控、诊断与修复](https://dub.sh/debugging-workshop)**
+
+加入 Sentry 的 Lazar 参与实战工作坊：您将构建应用、制造问题、调试并修复故障。您将配置 Sentry、跟踪错误、使用会话回放和追踪功能，并借助 AI 技术快速定位和解决问题。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Lynx：释放原生能力](/emails/issues/224/lynx.jpg)](https://lynxjs.org/blog/lynx-unlock-native-for-more)
+
+[**Lynx：释放原生能力**](https://lynxjs.org/blog/lynx-unlock-native-for-more)
+
+字节跳动近日发布了其原生跨平台技术 Lynx，该技术已广泛应用于包括 TikTok 在内的生产级应用！通过 React 绑定，它成为 React Native 的有力竞争者，并预期支持其他框架。其架构设计颇具亮点：采用双线程模型和多种运行时环境，支持部分 React Native 尚未实现的 CSS 和 Web API，并提供便捷的内置 JSX 元素如 `<view>`。
+
+初始功能集令人印象深刻，但也存在值得商榷的设计：如采用 React 17/Preact、在 Web 端使用自定义元素等。这项技术能否兑现承诺并与现有方案抗衡，尚需时间验证。无论如何，良性竞争终将推动生态发展。
+
+---
+
+- 💸 [WithFrame - 预构建的 React Native 模板](https://withfra.me/templates)
+- 👀 [Fernando Rojo 加入 Vercel 担任移动端主管](https://x.com/rauchg/status/1896943726486032783)：有趣的是看到 Vercel 在 React 移动端/跨平台领域部署资源。
+- 👀 [面向企业的 React Native 框架](https://enterprise-framework.callstack.com/)：Callstack 公布计划，将开源一个专为企业需求定制的新 RN 框架。
+- 💬 [Riccardo 澄清关于 Hermes 的困惑](https://github.com/facebook/react-native/pull/48531)：将代码编译为原生代码尚未准备好投入生产，但我们可以期待带有字节码转换的新版 Hermes 首先落地。
+- 📜 [将 SwiftUI 视图暴露给 React Native：集成指南](https://www.callstack.com/blog/exposing-swiftui-views-to-react-native-an-integration-guide)：展示如何在 React Native 中构建一个适用于两种架构的 SwiftUI 付费墙。
+- 📜 [Expo 的 AI 策略](https://expo.dev/ai/strategy)：民主化应用创建，将 Expo 框架和 EAS 的受众扩展到包括人类开发者和 AI 代理。
+- 📜 [2024 年 React Native 现状：我们的关键收获](https://blog.swmansion.com/wstate-of-react-native-2024-our-key-takeaways-19a7c0039d36)
+- 📜 [4 个必备的 Radon IDE 功能，助力便捷的 Expo 开发](https://expo.dev/blog/4-must-have-radon-ide-features-for-even-more-convenient-expo-development)
+- 📜 [在 React Native 应用中实现国际化](https://addjam.com/blog/2025-02-27/implementing-internationalisation-react-native/)
+- 📦 [Re.Pack 5.0 \- 移动端微前端，速度提升5倍，配置更少](https://re-pack.dev/blog/repack-5-release)：这个替代打包器旨在成为 Metro 的直接替代品。新版本支持 Rspack 以提升速度，支持 Module Federation 2 用于微前端，并提供了适用于 Reanimated、Expo Modules 和 NativeWind 的插件。
+- 📦 [Metro 0.81.3 \- 支持解析 package.json 导入子路径](https://github.com/facebook/metro/releases/tag/v0.81.3)
+- 📦 [React Native VisionOS 0.78](https://github.com/callstack/react-native-visionos/releases/tag/v0.78.0-visionos)
+- 📦 [React Native Windows 0.78](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.78.0)
+- 🎥 [Dan's Lab \- 使用 Expo 和 React Native 构建 Instagram 风格的布局](https://www.youtube.com/watch?v=MKCUOLapII4)
+- 🎥 [Beto \- 掌握 Expo Router API 路由 | 处理请求和流式数据](https://www.youtube.com/watch?v=2_UzR1wdimI)
+- 🎥 [Catalin Miron \- 交互式五彩纸屑动画 - Reanimated、手势和 Skia！](https://www.youtube.com/watch?v=MPVUL3MhfZ0)
+- 🎙️ [React Native Radio 第 323 期 \- Tzvetan Mikov 谈静态 Hermes](https://infinite.red/react-native-radio/rnr-323-static-hermes-with-tzvetan-mikov)
+- 🎙️ [React Universe On Air 第 49 期 \- 使用 React Native 进行应用开发不仅限于移动端，而是更广阔的领域](https://www.youtube.com/watch?v=G1_RMxtswsc)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Node.js PR - 在 v22 中取消 TypeScript 支持的标记](https://github.com/nodejs/node/pull/57298)：TypeScript 支持应该很快会出现在 Node LTS 版本中！
+- 📜 [异步、同步与介于两者之间](https://antfu.me/posts/async-sync-in-between)：使用生成器创建无色函数，一种让人联想到 Effect 库的有趣方法。
+- 📜 [HTML 的 command 和 commandfor 属性](https://fullystacked.net/command-and-commandfor/)
+- 📦 [TypeScript 5.8 - `erasableSyntaxOnly`、`require(esm)`、依赖返回类型收窄](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/)：如果你曾想过在 Node 中原生运行 TypeScript，那么你可能应该开启这个标志！
+- 📦 [Better Auth 1.2 - Stripe、验证码、API 密钥、团队、Init CLI 等](https://www.better-auth.com/changelogs/1-2)
+- 📦 [ArkType 2.1 - 模式匹配](https://github.com/arktypeio/arktype/releases/tag/arktype%402.1.0)
+- 📦 [Nitro 2.11 - 改进的错误处理、开发服务器、数据库支持等](https://github.com/nitrojs/nitro/releases/tag/v2.11.0)
+
+---
+
+## 🤭 趣事 {#fun}
+
+[![alt](/emails/issues/224/meme.jpg)](https://x.com/devagrawal09/status/1894892406480281924)
+
+[![alt](/emails/issues/224/meme2.jpg)](https://x.com/aidenybai/status/1895868884986778103)
+
+再见！👋

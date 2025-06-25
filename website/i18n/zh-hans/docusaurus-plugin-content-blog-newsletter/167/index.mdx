@@ -1,0 +1,146 @@
+---
+slug: /167
+title: "This Week In React #167: Aria Components, Hydration, Remix, Server Components, useSyncExternalStore, cache, perf, Glow, Unistyles, Expo, :has(), Tailwind, date-fns..."
+authors: [slorber, bndkt]
+date: 12-19-2023
+---
+
+大家好！
+
+本周我们再次汇集了丰富的文章和发布内容。
+
+Firefox 121 已发布，使 [CSS `:has()`](https://twitter.com/stefanjudis/status/1737366970566053927) 正式获得跨浏览器支持 🥲
+
+这是今年的最后一期通讯，下一期将于1月3日恢复更新。
+
+祝大家新年快乐、圣诞快乐，感谢大家这一年的支持 ❤️️
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本期通讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![FrontendMasters – 从初级到高级 React 开发者的完整学习路径](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)
+
+**[FrontendMasters – 从初级到高级 React 开发者的完整学习路径](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**
+
+从零开始学习 React.js，直至掌握性能优化、测试和代码质量等高级主题。通过构建真实应用完成 React 入门，再整合主流生态工具学习中级 React，最后深入性能优化、TypeScript 及全栈框架 Next.js！
+
+---
+
+## ⚛️ React {#react}
+
+[![**React Aria Components 1.0**](/emails/issues/167/reactaria.jpg)](https://react-spectrum.adobe.com/releases/2023-12-20.html)
+
+[**React Aria Components 1.0**](https://react-spectrum.adobe.com/releases/2023-12-20.html)
+
+Devon 刚在 🐦 [推特宣布](https://twitter.com/devongovett/status/1737516074663362843) React Aria Components 1.0 稳定版发布。提供40+组件，内置行为逻辑、自适应交互、顶级可访问性和开箱即用的国际化支持，支持自定义样式。
+
+---
+
+[![**React Hydration Overlay**](/emails/issues/167/hydration.jpg)](https://www.builder.io/blog/announcing-react-hydration-overlay)
+
+[**React Hydration Overlay - 轻松解决水合错误**](https://www.builder.io/blog/announcing-react-hydration-overlay)
+
+这个全新项目提供了便捷的错误覆盖层，帮助调试水合错误。目前可通过 Webpack 插件在 Next.js 站点中使用，这是备受期待的功能，有望未来集成到 React 核心中。
+
+---
+
+- 💸 [参与开发者国家调查 - 调查结束后即可获得装满免费数据、活动门票优惠码、课程、工具和平台的虚拟礼包！](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad3)
+- 👀 [Remix PR - unstable_serverBundles - 拆分路由树](https://github.com/remix-run/remix/pull/8332)
+- 📖 [React 文档更新](https://github.com/reactwg/server-components/discussions/7)：概述了 React.dev 最新发布的所有官方文档页面，包括 `use`、`cache`、`form` 及其他实验性/Canary API。甚至还包含"即将推出"章节，预告了新的[静态资源预加载 API](https://github.com/reactjs/react.dev/pull/6459)文档。
+- 📖 [更新的 Next.js 测试文档 - 使用 App Router 和 TypeScript](https://nextjs.org/docs/app/building-your-application/testing)
+- 📜 [并发 React、外部存储与 UI 撕裂](https://interbolt.org/blog/react-ui-tearing/)：深度解析 React 如何导致界面显示不一致（撕裂）。`useSyncExternalStore` 可确保 UI 一致性，但可能降低过渡渲染性能。另见[可撕裂点交互演示](https://tearabledots.com/)。
+- 📜 [解析 React 的 cache 函数](https://unicorn-utterances.com/posts/explaining-reacts-cache-function)：通过交互示例介绍实验性 React API，阐释其与 `useMemo` 的差异，支持跨组件缓存及数据预加载。
+- 📜 [解决 Next.js 中 "Window is Not Defined" 及水合不匹配错误](https://medium.com/@eric.burel/how-to-get-rid-of-window-is-not-defined-and-hydration-mismatch-errors-in-next-js-567cc51b4a17)：分享避免 React 水合问题的 5 个技巧。
+- 📜 [React 技巧：高效、精简、有趣](https://molefrog.com/notes/react-tricks)：从开发 Wouter React 路由器中总结的性能优化经验。
+- 📜 [Netlify 针对 Next.js（及 Eleventy）的误导性调查报告](https://www.zachleat.com/web/netlify-and-nextjs/)：Eleventy 创建者批评 Netlify 呈现 Web 开发生态调查结果的方式。
+- 📜 [2024 年 React 与 React-Native 技术大会前瞻](https://thoughtbot.com/blog/upcoming-react-and-react-native-conferences-for-2024)
+- 📜 [什么是响应式编程？](https://unicorn-utterances.com/posts/what-is-reactivity)
+- 📜 [React 服务器操作详解](https://unicorn-utterances.com/posts/what-are-react-server-actions)
+- 📜 [深入理解 React Suspense 与异步渲染](https://unicorn-utterances.com/posts/what-is-react-suspense-and-async-rendering)
+- 📜 [React Suspense 完全指南](https://www.debugbear.com/blog/guide-to-react-suspense)
+- 📜 [将 React 应用测试从 Jest 迁移至 Vitest](https://dev.to/opensauced/migrating-from-jest-to-vitest-for-your-react-application-1b75)
+- 📜 [在 Remix 中获取请求的查询参数](https://sergiodxa.com/tutorials/access-the-search-params-of-a-request-in-remix)
+- 📦 [Remix 2.4.0 支持客户端数据](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v240)：首个实现客户端数据 RFC 的 Remix 版本，支持直接从客户端调用数据 API（绕过服务端）。
+- 📦 [React-Glow - 鼠标轨迹光效组件](https://github.com/codaworks/react-glow)
+- 📦 [next-export-i18n 3.0 - 支持 App Router](https://github.com/martinkr/next-export-i18n)
+- 🎥 [Ben Holmes - 从零实现 React 服务端组件](https://www.youtube.com/watch?v=MaebEqhZR84)：完整演示 RSC 实现流程，涵盖流式传输、打包、组件路由、SSR 处理及客户端引用解析。
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助 {#sponsor2}
+
+[![不只是开发](/emails/issues/167/notjustdev.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)
+
+**[您是一名 React Native 开发者，或者正在成为其中一员的路上吗？](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)**
+
+好消息！您已经找到了您无穷无尽的技能源泉！
+
+🎄 [**这里**](https://www.youtube.com/watch?v=bIQII7gTXDE&list=PLY3ncAV1dSVA9ltOEMgzT8ZTZiccpOUkX) 是 #**DEVember -** 为期一个月的 React Native 教程马拉松
+
+🚀 [**这里**](https://academy.notjust.dev/?utm_source=newsletter&utm_medium=Course&utm_campaign=thisweekinreact#section-1687709246499) 是我们的**全栈移动开发者**课程，拥有超过 550 位毕业生的真实成功案例。
+
+💌 [**这里**](https://assets.notjust.dev/profile?utm_source=newsletter&utm_medium=OurNewsletter&utm_campaign=thisweekinreact) 是我们的**简报**，精选关于 React Native 开发领域的顶级新闻和生活技巧。
+
+我们所有的内容都采用**基于项目的学习**方式——这意味着您将在学习**技能**的同时，将**项目**添加到您的作品集中！
+
+_附注：订阅我们的_ [**_YouTube 频道_**](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)_。今天我们将使用 Expo Router V3 和 API 路由构建一个_ **_ChatGPT 封装器_**！
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Unistyles 2.0](/emails/issues/167/unistyles20.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)
+
+[**欢迎使用 Unistyles 2.0！**](https://www.reactnativecrossroads.com/posts/unistyles-2-preview)
+
+Unistyles 是一个跨平台样式库。它作为 StyleSheet 的超集构建（如果您使用 React Native，您可能熟悉 StyleSheet.create……），类似于 TypeScript 是 JavaScript 的超集。三个月前首次发布，它已在 GitHub 上获得超过 500 颗星，目前正迎来第二个主要版本，包含增强的 TypeScript 类型、不再依赖 React Context，以及全新的 C++ 绑定以提升性能。一个非常有趣的新特性是插件支持的加入，这将可能实现一些有趣的新用例。
+
+---
+
+- 💸 [AnimateReactNative - Premium and Custom React Native animations](https://www.animatereactnative.com/?utm_source=thisweekinreact.com)
+- 🐦 [Evan Bacon - "Expo Router v3 now has full support for popular web libraries like Radix, Tailwind, Shadcn UI, etc.](https://twitter.com/Baconbrix/status/1735011941431595149)
+- 📖 [Expo Guide on How to use the New Architecture](https://docs.expo.dev/guides/new-architecture/): All `expo-*` packages except expo-updates support the new architecture. Support for `expo-updates` is planned for Expo SDK 51.
+- 📜 [Expo 2023 - The year in review](https://expo.dev/changelog/2023/12-20-2023-year-in-review): An overview of everything Expo launched this year, including Expo Orbit, Expo Router, EAS improvements, 3 SDKs, Expo Modules API and much more.
+- 📜 [Xcode 15.1 image is now available on EAS Build](https://expo.dev/changelog/2023/12-19-eas-build-xcode-15.1-image): Xcode 15.1 primarily fixes bugs.
+- 📜 [Optimizing Performance in React-Native: Tips and Techniques](https://thoughtbot.com/blog/optimizing-performance-in-react-native-tips-and-techniques): Tutorial on how to apply memoization, use virtualized lists, optimize images, debounce, optimize bundle size and network requests
+- 📜 [Building AR face masks in React Native](https://blog.logrocket.com/building-ar-face-masks-react-native/): How to load and apply 3D face masks using DeepAR
+- 📜 [Introducing docs.infinite.red — A New Home for Infinite Red’s Documentation - Ignite, Reactotron, RN MLKit, Gluegun](https://shift.infinite.red/introducing-docs-infinite-red-a-new-home-for-infinite-reds-documentation-6f4b25f7a1a4)
+- 📜 [Universal Medusa: The why, when and how of universal e-commerce apps with Medusa.js, Expo and Next.js](https://bidah.hashnode.dev/universal-medusa-the-why-when-and-how-of-universal-e-commerce-apps-with-medusajs-expo-and-nextjs)
+- 📦 [React Native 0.73.1 is out](https://github.com/facebook/react-native/releases/tag/v0.73.1): Adds `enableNetworkInspector` to enable Network panel and CDP handlers in inspector proxy, bumps CLI to 12.3.0
+- 📦 [React Native Windows 0.73.1 is out](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.1): Brings React Native 0.73 to Windows
+- 📦 [Repack 3.7 - 0.73 compat](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%403.7.0)
+- 🎥 [Ignite 9 video overview by Jamon Holmgren](https://youtu.be/QmkMsUYrTlk?si=p9rvLM-EMggZNcft)
+- 🎙️ [Rocket Ship #021 - The React Native IDE with Krzysztof Magiera](https://podcast.galaxies.dev/episodes/021-the-react-native-ide-with-krzysztof-magiera)
+- 🎙️ [React Native Radio 283 - From side-project to acquisition!](https://reactnativeradio.com/episodes/rnr-283-from-side-hustle-to-top-charts-with-simon-reggiani)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📖 [tsdocs.dev - 浏览 npm 包的类型文档](https://tsdocs.dev/)
+- 📜 [Web 平台 12 月新特性](https://web.dev/blog/web-platform-12-2023)
+- 📜 [JavaScript 中的 await 事件视界](https://frontside.com/blog/2023-12-11-await-event-horizon/)
+- 📦 [Node.js v21.5.0 - 高效解析 JSON，新增 `--trace-promises` 标志](https://nodejs.org/en/blog/release/v21.5.0)
+- 📦 [Tailwind CSS v3.4：动态视口单位、`:has()` 支持、平衡标题、子网格等](https://tailwindcss.com/blog/tailwindcss-v3-4)
+- 📦 [SvelteKit 2.0 - Vite 5、浅层路由、为 Svelte 5 做准备](https://svelte.dev/blog/sveltekit-2)
+- 📦 [date-fns 3.0 - TypeScript 重写、ESM 及其他日期功能](https://blog.date-fns.org/v3-is-out/)
+- 📦 [TSDiagram - 使用 TypeScript 创建图表并规划代码](https://github.com/3rd/tsdiagram)
+
+## 🤭 趣事 {#fun}
+
+[![alt](/emails/issues/167/meme.jpg)](https://twitter.com/sebastienlorber/status/1737380479383277636)
+
+再见！👋

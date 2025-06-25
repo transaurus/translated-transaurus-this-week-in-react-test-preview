@@ -1,0 +1,168 @@
+---
+slug: /222
+title: "This Week In React #222: CRA, React Router, captureOwnerStack, TanStack, CTRA, tRPC, Astro, Preact | RN 0.78, React 19, Expo, noCompress, JitPack, CRNL, Screens | TC39, Interop, TS, CSS, Node.js, Deno"
+authors: [slorber]
+date: 02-19-2025
+---
+
+大家好！
+
+本周我们有两篇来自 React 和 React Native 核心团队的官方博客文章！CRA 已被弃用，React Native 0.78 已发布并支持 React 19。
+
+🎂 我们还在庆祝这份时事通讯的五周年纪念！[首期内容](https://substack.thisweekinreact.com/p/react-hebdo-sebastien-lorber-1-20-02-13)发布于 2 月 13 日。前两年仅提供法语版。我很想知道谁是从早期就开始阅读的读者——如果您是，请打个招呼！😀
+
+查看我们的合作会议 **[React Native Connection](https://reactnativeconnection.io/?utm_source=thisweekinreact)** - 🇫🇷 巴黎 - 4月1-2日 - 使用代码 "TWIR" 可享 85 折优惠。法国 React Native 大会回归，演讲嘉宾包括 Britta Evans-Fenton (Shopify)、Kadi Kraman (Expo)、Krzysztof Piaskowy (Software Mansion)、Saad Najmi (Microsoft) 等，还有精彩的深度演讲！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![PropelAuth：让身份验证成为您的优势](/emails/issues/218/propelauth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrfeb192024)
+
+**[PropelAuth：让身份验证成为您的优势](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrfeb192024)**
+
+如果您的身份验证没有**助力业务增长**，那它就是在**拖累发展**。
+
+通过 [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)，您可获得启动和扩展 B2B 产品所需的一切：
+
+- **清晰易懂**的[文档](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)及**友好高效的**技术支持
+- **覆盖全场景的 UI** - 注册、登录、多因素认证、组织管理等
+- **用户身份模拟**功能，便于提供顶级客户支持
+- **企业级 SAML/SSO** 和**高级安全特性**，满足高端市场需求
+- **用户行为洞察**，助力战略规划和业务扩展
+
+[立即开始](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)
+
+---
+
+## ⚛️ React {#react}
+
+[![正式弃用 Create React App](/emails/issues/222/cra.jpg)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app)
+
+**[正式弃用 Create React App](https://react.dev/blog/2025/02/14/sunsetting-create-react-app)**
+
+姗姗来迟，CRA 已获得最新的 React 19 修复并正式宣告弃用。本文阐述了 CRA 及构建工具在路由、瀑布流、代码拆分等方面的局限性。React 团队鼓励我们采用 Next.js、React Router 或 Expo 等框架来解决这些问题。不过您仍可使用 Vite、Parcel、Rsbuild 等现代构建工具[从零构建 React 应用](https://react.dev/learn/build-a-react-app-from-scratch)。
+
+最初的公告在X和GitHub上引发了激烈争论，主要是因为它过度强调框架而忽视了Vite等构建工具。该公告[很快进行了更新](https://github.com/reactjs/react.dev/pull/7624)以解决这些担忧。这一切还促成了[尤雨溪（Vite）与React团队](https://github.com/facebook/react/pull/31768#issuecomment-2666856223)之间的潜在合作机会，双方将共同制定一种"官方"推荐方案，将Vite与React Server Components集成，并承诺在React代码库中长期维护该集成方案。
+
+相关新闻：
+
+- 📜 [使用框架构建React Native应用](https://reactnative.dev/blog/2024/06/25/use-a-framework-to-build-react-native-apps)：数月前，React Native团队发布过类似公告，宣称"你要么使用框架，要么就在构建自己的框架"
+- 📦 [Create TanStack Router App](https://github.com/TanStack/create-tsrouter-app)：Jack Herrington对TanStack的首个贡献，作为Create-React-App的替代方案，他还在[视频](https://www.youtube.com/watch?v=10J6RyMOxN0)中进行了介绍
+- 📦 [CRA迁移到Parcel](https://github.com/parcel-bundler/cra-to-parcel)：将未eject的Create React App迁移到Parcel的脚本
+
+---
+
+- 💸 [Product for Engineers - How we choose technologies](https://dub.link/twir-feb19)
+- 📣 [Vercel \- Support for React Router v7](https://vercel.com/changelog/support-for-react-router-v7): First-class support for React Router in framework mode with support for SSR on the new optimized Fluid compute serverless feature.
+- 📖 [React core docs \- `captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack): A new experimental React core API has been recently unflagged and is now officially documented. It is particularly useful for frameworks to enhance their custom error overlays. Unsurprisingly, Next.js is working on a new overlay that leverages this API ([example](https://x.com/sebastienlorber/status/1890361565960151374)).
+- 📖 [Vercel AI docs \- Duman-in-the-Loop with Next.js](https://sdk.vercel.ai/cookbook/next/human-in-the-loop): A recipe to prompt users for yes/no confirmation before LLM tool calls.
+- 📜 [Introducing the new TanStack React Query integration](https://trpc.io/blog/introducing-tanstack-react-query-client): The upcoming tRPC v11 is in RC and leverages React Query’s `queryOptions()` to remove an abstraction layer: you can now use the native `useQuery()` instead of the tRPC wrapper.
+- 📜 [Designing Backgrounds with LLMs and React](https://www.vigilant.run/blog/designing-backgrounds-with-llms-and-react): Tools like Cursor are quite good at authoring artistic React components.
+- 📜 [Snapshot testing styled-components with Vitest](https://brightinventions.pl/blog/snapshot-testing-styled-components-with-vitest/): The existing StyledComponents Jest snapshot serializer is also compatible with Vitest. I’m not a fan of snapshotting styles and usually prefer [visual regression tests](https://docusaurus.io/blog/upgrading-frontend-dependencies-with-confidence-using-visual-regression-testing), but this might help existing codebases migrate to Vitest.
+- 📜 [I like the future of Next.js](https://tigerabrodi.blog/i-like-the-future-of-nextjs): Thoughts on dynamic IO, PPR, and the `use cache` directive.
+- 📜 [React "as" Prop Using TypeScript](https://playfulprogramming.com/posts/react-as-prop)
+- 📜 [Client-Side Rendering in Flame Graphs](https://www.developerway.com/posts/client-side-rendering-flame-graph)
+- 📜 [React Libraries for 2025](https://www.robinwieruch.de/react-libraries/)
+- 📜 [Tanstack Start \- Is it the Next NextJS?](https://spin.atomicobject.com/tanstack-start-nextjs/)
+- 📦 [React Router 7.2 \- Type-safe `href()` utility](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v720): A welcome improvement giving route path autocompletion and params validation. This release also include support for an SPA fallback static file, and 2 new future flags `unstable_splitRouteModules` and `unstable_viteEnvironmentApi`.
+- 📦 [TanStack Start 1.107 \- AbortSignal for server functions](https://tanstack.com/start/latest/docs/framework/react/server-functions#cancellation)
+- 📦 [Astro 5.3 \- Faster SSR, automatic session storage setup](https://astro.build/blog/astro-530/)
+- 📦 [Preact 10.26 \- Support for React 19 `<Context>`](https://github.com/preactjs/preact/releases/tag/10.26.0)
+- 📦 [9ui \- Beautiful, customizable components built with Base UI and Tailwind CSS](https://www.9ui.dev/): Using the shadcn distribution model but using Base UI, a new interesting alternative to Radix. The author is also porting popular libs such as Vaul and cmdk.
+- 📦 [Kokonut UI \- Collection of components built for Next.js and React with Tailwind CSS](https://kokonutui.com/): Another option using the shadcn distribution model.
+- 📦 [React Bits \- Collection of animated, interactive & fully customizable React components for building stunning, memorable user interfaces](https://github.com/DavidHDev/react-bits)
+- 🎥 [Alem Tuzlak \- Understanding the server/client boundary in react-router](https://www.youtube.com/watch?v=zyQjzId0H7s)
+- 🎙️ [Front-End Fire 81 \- State of React Results, TypeScript 5.8, and v0 Upgrades](https://front-end-fire.com/episodes/81/)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![用Reactile重新思考React应用用户体验](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)
+
+**[用Reactile重新思考React应用用户体验](https://www.reactile.net/?utm_source=ThisweekinReact)**
+
+Reactile是开箱即用的UI/UX交钥匙框架，提供直观的瓦片式工作区布局。它支持在单个浏览器标签页内并行处理大型Web解决方案的工作负载。您只需使用React实现自定义视图容器、组件和逻辑，显示层交给Reactile处理。
+
+此外，Reactile还提供：
+
+- 基于Promise的持久化机制，实现跨设备、跨时段的统一工作流
+- 瓦片嵌套标签页功能
+- 简化的全局搜索机制
+- 基于CSS容器查询（@container）的响应式设计
+- 以及更多特性
+
+第2版即将发布。立即开启30天独家免费试用，访问reactile.net了解更多。
+
+[Reactile - 全新的React UI管理系统](https://www.reactile.net/price?utm_source=ThisweekinReact)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 0.78 - 支持React 19及其他更新](/emails/issues/222/rn.jpg)](https://reactnative.dev/blog/2025/02/19/react-native-0.78)
+
+**[React Native 0.78 \- 支持React 19及其他更新](https://reactnative.dev/blog/2025/02/19/react-native-0.78)**
+
+您可能没想到React Native会这么快发布新版本，但团队最近决定更频繁地发布小型更新。以下是重点内容：
+
+- 支持React 19！
+- 简化了启用React编译器的流程
+- Metro日志流功能在0.78和0.77.1版本回归，但需通过新的`--client-logs`标志启用，且仍处于弃用状态
+- `<Image>`组件支持Android XML资源，可解锁潜在性能优化
+- iOS端新增`ReactNativeFactory`，简化任意ViewController中的遗留代码集成
+
+React 19本身带来了多项重要能力：
+
+- Actions（异步转换）、`useActionState()`、`useOptimistic()`，均用于提交表单并管理加载状态、错误及乐观状态
+- 将`ref`作为常规属性使用（取代`forwardRef()`），同时支持ref清理函数
+- 使用`<Context>`替代`<Context.Provider>`
+- 通过`use()`读取上下文和Promise
+
+---
+
+- 💸 [Codemagic - React Native开发者的绝佳App Center替代方案！构建速度快8倍，支持CodePush，自动化分发。提供1个月免费试用！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)
+- 📣 [Expo对React Native 0.78的支持](https://expo.dev/changelog/react-native-78)：因React 19升级，v0.78将不支持SDK52，但会在金丝雀版本中提供。SDK 53计划今年春季发布，可能直接升级至0.79。
+- 👀 [Gradle插件PR - 新增禁用bundle压缩选项](https://github.com/facebook/react-native/pull/49449)：Marc Rousavy提议新增`react.enableBundleCompression` Gradle属性。关闭该选项可大幅优化Android应用启动时间（现已成为默认设置），但会增加安装包体积。
+- 💬 [使JitPack仓库成为可选依赖](https://github.com/react-native-community/discussions-and-proposals/discussions/877)：v0.78起Android应用新增`react.includeJitpackRepository=true` Gradle属性。关闭该属性可提升供应链安全性，未来可能设为默认。
+- 📜 [复选框交互 - 布局动画之美](https://reactiive.io/articles/checkbox-interactions)
+- 📜 [使用Expo构建通用应用](https://www.premieroctet.com/blog/en/universal-app-with-expo)
+- 📦 [Create React Native Library 0.48 - 支持Nitro模块](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.48.0)
+- 📦 [React Native Screens 4.7 - 修复Android formSheet转场效果](https://github.com/software-mansion/react-native-screens/releases/tag/4.7.0)
+- 📦 [Expo AI聊天机器人 - 构建通用Expo+Next.js聊天机器人的入门套件（含高级选项）](https://www.expoaichatbot.com/)
+- 🎥 [Expo - EAS工作流：面向应用开发者的React Native CI/CD](https://www.youtube.com/watch?v=OJ2u9tQCpr4)
+- 🎥 [Catalin Miron - Apple邀请函动画](https://www.youtube.com/watch?v=P_gYeiFipsk)
+- 🎥 [Simon Grimm - 构建移动应用的最快方式（AI + Expo = 魔法）](https://www.youtube.com/watch?v=fJb6f2Sw4Ek)
+- 🎙️ [React Universe On Air第48期 - Reanimated 4：流畅React Native动画的未来](https://www.youtube.com/watch?v=wAfJqFX62ag)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [TC39 \- Agenda for the 106th meeting](https://github.com/tc39/agendas/blob/main/2025/02.md): Meeting in progress. Great proposals have already progressed, including `RegExp.escape()`, `import defer`, `Math.clamp(),` and more.
+- 📣 [Interop 2025](https://web.dev/blog/interop-2025): Browsers agreed to work in priority on exciting features such as CSS anchor positioning, View Transition API, Navigation API, and many others.
+- 📣 [ESLint now officially supports linting of CSS](https://eslint.org/blog/2025/02/eslint-css-support/)
+- 📜 [Bundling dependencies (and when not to do it)](https://e18e.dev/blog/bundling-dependencies.html)
+- 📜 [CSS @function \+ CSS if() \= 🤯](https://www.bram.us/2025/02/18/css-at-function-and-css-if/)
+- 📜 [Mocking in Node.js Has Just Changed Forever](https://kettanaito.com/blog/mocking-in-nodejs-has-just-changed-forever)
+- 📦 [TypeScript 5.8 RC \- `erasableSyntaxOnly`\` , `require(esm)`, dependent return type narrowing](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8-rc/)
+- 📦 [Node 23.8 \- `URLPattern` API, thread names, zstd compression, using system CA](https://nodejs.org/en/blog/release/v23.8.0)
+- 📦 [Node 22.14 \- `findPackageJSON`, glob `exclude`, Corepack pnpm fix](https://nodejs.org/en/blog/release/v22.14.0)
+- 📦 [Deno 2.2 \- OpenTelemetry, Lint Plugins, `node:sqlite`](https://deno.com/blog/v2.2)
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/222/meme.jpg)](https://bsky.app/profile/sebastienlorber.com/post/3lifbkotlfc2v)
+
+[![alt](/emails/issues/222/meme2.jpg)](https://x.com/sebastienlorber/status/1891548981848834219)
+
+再见！👋

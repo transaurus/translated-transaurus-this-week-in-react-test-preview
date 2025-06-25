@@ -1,0 +1,181 @@
+---
+slug: /139
+title: "This Week In React #139: React.dev, Remix, next export, Server Components, i18n, Error Boundary, Wakuwork, Astro, React-Native, Bottom Sheet, TypeScript, TC39..."
+authors: [slorber]
+date: 03-21-2023
+---
+
+大家好！
+
+全新的 React 官网终于上线了，必须说它简直太棒了 🤗 我整理了不少相关链接，留待各位自行评判！
+
+这里还有些超棒的文章。我很喜欢 React API 的交互式地图、Remix v2 的重大变更处理方式，以及使用 React Server Components 实现翻译的方案。
+
+React Native 方面，v0.72 的首个候选版本已发布。Metro 0.76 中一些期待已久的新功能（比如符号链接支持）应该很快就能用上了！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期资讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)
+
+**[构建可复用区块。更快发布内容。获得更好的核心网页指标和 SEO。](https://suncel.io/)**
+
+**内容编辑者**：对于需要大量产出内容并拥有强力 SEO 策略的公司而言，这将是改变游戏规则的工具。营销人员和内容编辑无需任何复杂操作即可编辑发布页面。消除冗长延迟，实现即时发布。借助 Next.js 优化页面和图片，达成完美的核心网页指标评分。
+
+**开发者**：可与现有 Next.js 应用即插即用。使用 Suncel CMS 的开发者将获得诸多优势：
+
+- 使用 React 构建可复用区块
+- 自动生成 SEO 元数据和站点地图（通过我们的 SEO 模块实现）
+- 用 React 创建自定义设置项
+- 通过 React 自定义管理后台
+- 无需适配 CMS 的路由系统
+
+**[访问 Suncel.io](https://suncel.io/)** | **[5分钟演示视频](https://www.youtube.com/watch?v=LUupLEZKp3w)**
+
+---
+
+## ⚛️ React {#react}
+
+[![React.dev 正式发布](/emails/issues/139/reactdev.jpg)](https://react.dev/blog/2023/03/16/introducing-react-dev)
+
+**[React.dev 正式发布](https://react.dev/blog/2023/03/16/introducing-react-dev)**
+
+全新的 React 官网终于上线！伴随此次发布还有一篇专题文章。这是个非常庞大的项目（技术和内容层面皆是），耗费了数年时间和众多协作者的努力。
+
+我特别欣赏这些方面：
+
+- 聚焦于钩子和函数组件
+- 包含大量图表、插图和交互式挑战的指南
+- 强调 React 作为跨平台解决方案（不限于 Web）
+- API 页面按参考/用法、当前/弃用、客户端/服务端清晰划分
+- 整体体验的高度一致性
+
+本周部分变更也引发争议，特别是仅推荐少量框架（Next.js、Remix、Gatsby、Expo）作为新 React 项目的起点，而未推荐其他众多方案（如 Vite、Create-React-App、客户端单页应用等）。
+
+**另请参阅：**
+
+- 📜 [新版 React 文档假装 SPA 不复存在](https://wasp-lang.dev/blog/2023/03/17/new-react-docs-pretend-spas-dont-exist)
+- 📜 [如何在 2023 年启动一个 React 项目](https://www.robinwieruch.de/react-starter/)
+- 🧵 [Dan Abramov 谈新 React.dev 网站的上线](https://twitter.com/dan_abramov/status/1638004334544707584)
+- 🧵 [Dan Abramov 谈 CRA 可能的未来 - "纯客户端没有意义，限制太多"](https://twitter.com/dan_abramov/status/1636827365677383700)
+- 🧵 [Dan Abramov - "请愿弃用术语：SPA、MPA、SSR、SSG。它们代表上一代工具"](https://twitter.com/dan_abramov/status/1636943182322704385)
+- 🧵 [Dan Abramov - "大多数现代 React 框架不再需要 Node.js 服务器。它们只是让你在需要时添加一个。"](https://twitter.com/dan_abramov/status/1636716018973257728)
+- 🧵 [Dan Abramov - Next.js 示例 - 纯客户端 SPA（无 Node.js 服务器，100% 静态包）](https://twitter.com/dan_abramov/status/1636886736784457734)
+
+---
+
+[![React API 地图](/emails/issues/139/reactmap.jpg)](https://julesblom.com/writing/map-of-react-api)
+
+**[React API 地图](https://julesblom.com/writing/map-of-react-api)**
+
+这是 React API 的空间化和交互式表示，其中为每个 API 引用了优秀的外部文章。我认为这是一个很棒的想法，也是对官方文档的一个很好的、有见地的补充。
+
+---
+
+- 👀 [React PR - 在不阻塞渲染的情况下暂停提交](https://github.com/facebook/react/pull/26398)：该特性将首先在内部使用，特别是在资源（CSS、字体、图像）加载场景中。当使用 startTransition 导航时，React 将能够等待下一页图像加载完成后再提交过渡（[详情](https://twitter.com/acdlite/status/1637102880850059264)）。
+- 👀 [React PR - 移除服务端布局效果警告](https://github.com/facebook/react/pull/26395)：服务端渲染（SSR）中针对 useLayoutEffect 的警告将被移除。Dan Abramov 在 [useIsomorphicLayoutEffect](https://twitter.com/dan_abramov/status/1636176793592905729) 中发表了评论。
+- 🧵 [Tim Neutkens 谈改进 `next export`](https://twitter.com/timneutkens/status/1636693508223270912)：兼容应用路由（App Router）、服务器组件（Server Components）...
+- 📜 [未来验证你的 Remix 应用](https://remix.run/blog/future-flags)：Remix 解释了在主要版本中部署破坏性变更的策略。他们计划引入"未来标志"（Future flags），允许提前启用计划的破坏性变更。如果在 v1 中激活所有标志，升级到 v2 将更轻松。
+- 📜 [Next.js 13 中基于 React 服务器组件的国际化](https://www.smashingmagazine.com/2023/03/internationalization-nextjs-13-react-server-components/)：服务器组件将对 React 应用的翻译方式产生重大影响，特别是在性能、代码分割和包体积方面。本文对此主题进行了详细介绍。我在该[推文](https://twitter.com/sebastienlorber/status/1638528549056311297)中提供了更多补充说明。
+- 📜 [你可能不需要的 Hooks](https://reacttraining.com/blog/hooks-you-probably-dont-need)：介绍 React 中鲜为人知的 Hooks，按需使用概率分类（比如 `useInsertionEffect` 😅）。最后部分展示常见反模式及 `useLayoutEffect` 的预防机制值得关注。我认为 [useSyncExternalStore](https://twitter.com/sebastienlorber/status/1615329010761842689) 非常适合读取 `localStorage` 等浏览器 API。
+- 📜 [Front-Commerce 拥抱 Remix](https://developers.front-commerce.com/changelog/front-commerce-is-getting-a-remix)：继 Shopify 后，Front-Commerce 也决定基于 Remix 重构。这带来诸多优势，包括渐进增强支持、MPA 模式以及降低与 React 的耦合度。
+- 📜 [Astro：新兴 JavaScript 框架表现如何？](https://cult.honeypot.io/reads/astro-the-new-javascript-framework/)
+- 📜 [通过迁移至 Astro 减少 Open UI 网站 97% 的 JavaScript](https://blog.andri.co/023-migrating-open-ui-site-from-gatsby-to-astro/)
+- 📦 [React-Error-Boundary v4](https://twitter.com/sebastienlorber/status/1638465247886426113)：新增 `useErrorBoundary` API，可触发非渲染错误的错误边界，并能从任意位置轻松重置边界。
+- 📦 [Wakuwork](https://github.com/dai-shi/wakuwork)：Daishi Kato 正在开发支持 React 服务器组件的极简 React 框架。
+- 📦 [Framer-Motion 10.5](https://twitter.com/mattgperry/status/1636714500731592706)：新增 `useAnimate()`
+- 📦 [Remix-Sitemap](https://github.com/fedeya/remix-sitemap)
+- 🎥 [React 的新缓存机制能修复其 'Use' Hook 吗？](https://www.youtube.com/watch?v=T3m-MZkuadU)
+- 🎥 [NextJS 13 服务器与客户端组件的状态管理](https://www.youtube.com/watch?v=dRLjoT4r-jc)
+- 🎥 [理解 React 的类型系统](https://www.youtube.com/watch?v=u_zoRJh9krU)
+- 🎙️ [React 的未来](https://changelog.com/jsparty/267)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+**[![构建并运行可扩展的合成监控](/emails/issues/134/checkly.jpg)](https://www.checklyhq.com/product/monitoring-as-code/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react)**
+
+**[构建并运行可扩展的合成监控](https://www.checklyhq.com/product/monitoring-as-code/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react)**
+
+你构建它，你拥有它！这是多年来驱动软件开发的简单准则。但监控复杂的 React 应用程序的最佳方式是什么？
+
+首先：使用 Playwright 模拟关键用户流程，确保您的应用正常运行。其次：确保关键业务 API 已启动并运行。
+
+监控即代码是一种新方法，可直接通过代码定义、测试和部署整个基于 Playwright 的测试与监控方案。通过运行 npm create @checkly/cli 开始使用 Checkly CLI。
+
+在此了解有关 Checkly CLI 的[更多信息](https://www.checklyhq.com/docs/cli/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react)。
+
+[通过 Checkly 统一您的 QA、开发和运维团队](https://www.checklyhq.com/product/monitoring-as-code/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react)
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 👀 [Expo 中代码拆分的优势](https://twitter.com/Baconbrix/status/1636398236373078018)：代码拆分（通过 resolveWeak、Metro 0.76、React-Native 0.72 实现）可为 Expo Router 带来诸多优势！
+- 👀 [内置 TypeScript 别名/绝对路径支持将在 Expo SDK 49 推出](https://twitter.com/Baconbrix/status/1636048353799684115)
+- 👀 [在 Docusaurus 上运行的 Reanimated 示例](https://twitter.com/kacperkapusciak/status/1638539744635174914)
+- 📦 [React-Native v0.72 RC.0](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.0)：即将发布的 v0.72 特性详见[Road to 0.72.0](https://github.com/reactwg/react-native-releases/discussions/54)：Metro（符号链接、exports、resolveWeak）、Hermes...
+- 📦 [Bottom Sheet v5 Alpha](https://twitter.com/gorhom/status/1637237501294268416)：支持 Reanimated v3、Gesture Handler v2 和 Web
+- 📦 [React-Native-Permissions v3.8](https://github.com/zoontek/react-native-permissions/releases/tag/3.8.0)：支持新架构
+- 📦 [React-Native-PDF-Renderer v1](https://github.com/douglasjunior/react-native-pdf-renderer)：原生 PDF 渲染器
+- 📦 [React-Native-Testing-Library v12](https://twitter.com/mdj_dev/status/1635927436947865600)
+- 📜 [探索 Expo Router Alpha](https://www.g2i.co/blog/explore-expo-router-alpha)
+- 📜 [使用 Expo 简化 React Native 开发](https://thoughtbot.com/blog/simplifying-react-native-development-with-expo)
+- 🎥 [使用 Expo、React-Native、Swift 和 Kotlin 构建原生视图库](https://www.youtube.com/watch?v=c-tFADXScEI)
+- 🎥️ [The React Native Show #21 - 原生与 React Native 性能分析](https://www.youtube.com/watch?v=IyFxgEit3Jc)
+
+---
+
+## 🧑‍💻 职位 {#jobs}
+
+🧑‍💼 [**Callstack - 高级 React Native 开发工程师 - 全职远程，B2B 月薪净收入 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)
+
+想在世界上最受欢迎的应用程序上工作吗？想共同创造 React Native 技术吗？加入 Callstack 的 React 和 React Native 领导者团队。查看我们的网站获取更多详情。我们期待看到您的申请——展示您的实力吧！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们有几个专注于 React Native 的开发职位空缺！薪资约16万美元外加10%奖金。您必须拥有 RN 生产环境经验且位于美国。私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多，别忘了提及 This Week in React。
+
+💡 [如何发布职位？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Ecma TC39 第95次会议议程](https://github.com/tc39/agendas/blob/main/2023/03.md)：会议进行中。[Async Context](https://twitter.com/sebastienlorber/status/1620391460679065601) 候选进入第2阶段 👌 还有全新的[Promise相关提案](https://twitter.com/sebastienlorber/status/1638130215443390464)。
+- [Rspack 发布公告](https://www.rspack.dev/blog/announcement.html)：新型 Rust 打包工具的官方介绍
+- [Farm - Rust 编写的超快 Web 构建工具](https://github.com/farm-fe/farm)：又一个 😄
+- [TypeScript 5.0](https://twitter.com/typescript/status/1636416665071288321)：装饰器、新配置选项...
+- [Prettier 2.8.5](https://twitter.com/PrettierCode/status/1637707276286062593)：支持 TypeScript 5.0
+- [Vite 4.2](https://twitter.com/vite_js/status/1636362767744765952)
+- [Signals vs. Observables：争论焦点是什么？](https://www.builder.io/blog/signals-vs-observables)
+- [前端开发的终结](https://www.joshwcomeau.com/blog/the-end-of-frontend-development/)
+- [编写自己的响应式 Signal 库](https://www.lksh.dev/blog/writing-your-own-reactive-signal-library/)
+- [Deno 为何添加 package.json 支持](https://deno.com/blog/package-json-support)
+- [加速 JavaScript 生态系统 - npm 脚本](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-4/)
+- [2023 年前端开发者必知的 6 个 CSS 片段](https://web.dev/6-css-snippets-every-front-end-developer-should-know-in-2023/)
+- [Drizzle - 让您直接编写 SQL 的 ORM](https://www.propelauth.com/post/drizzle-an-orm-that-lets-you-just-write-sql)
+- [推出 "safe npm"：Socket npm 封装器](https://socket.dev/blog/introducing-safe-npm)
+- [Turbowatch - 极速文件变更检测器](https://github.com/gajus/turbowatch)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/139/meme.jpg)](https://twitter.com/trashh_dev/status/1636743375956348928)
+
+再见！👋

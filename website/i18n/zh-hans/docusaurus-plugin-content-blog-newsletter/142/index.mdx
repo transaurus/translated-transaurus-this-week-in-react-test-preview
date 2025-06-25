@@ -1,0 +1,171 @@
+---
+slug: /142
+title: "This Week In React #142: JSX, React-Query, Server Components, Next.js, Million, OpenNext, Ariakit, Expo-Image, React-Three-Fiber, TS 5.1, Node.js 20, WebGPU..."
+authors: [slorber]
+date: 04-18-2023
+---
+
+大家好！
+
+本周，TypeScript 5.1 beta 版本发布，带来了许多与 JSX 和 React 相关的改进！
+
+React-Query 计划在版本 5 中移除查询回调函数，这个决定并不让所有人满意。
+
+React-Native 开发者请注意，不要错过 6 月 1 日在巴黎举行的 [React-Native-Connection](https://reactnativeconnection.io/)！我参与了演讲评选委员会，我们刚刚[公布了完整阵容](https://twitter.com/sebastienlorber/status/1648269027318411264)，包含国际和本地演讲者。使用优惠码 "REACTHEBDO" 可享 10% 折扣。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期简讯](https://slo.im/thread) - 视觉格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![React-admin](/emails/issues/141/react_admin.png)](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[React-admin - B2B 应用开源框架](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+正在使用 React 构建管理面板？我们有好消息！通过 React-admin 这个 B2B 应用开源框架，您可以节省数天开发时间！🤩
+
+React-admin 不仅能节省宝贵时间，还能助您成为更优秀的开发者！已有超过 20,000 名开发者日常使用并验证其效能。若想了解长期使用 React-admin 的开发者经验，请参阅非营利组织 [Caritas 的案例分享](https://marmelab.com/blog/2022/07/07/react-admin-caritas.html)。
+
+加入我们活跃的社区及 [Discord](https://discord.com/invite/jR3D6SdQ) 服务器，及时获取最新更新并获得经验丰富的开发者网络支持。
+
+还在等什么？立即免费使用 React-admin 😉，让您的开发更上一层楼！🚀
+
+---
+
+## ⚛️ React {#react}
+
+[![TypeScript 5.1 beta](/emails/issues/142/ts5.1.jpg)](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/)
+
+**[TypeScript 5.1 (beta) + React](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/)**
+
+这个重要的 TypeScript 版本使 React 能够声明自己的有效 JSX 类型。计划尽快在 React 类型定义中应用此特性，相关类型定义已通过[分叉](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/65126)继续支持旧版 TypeScript（≤5.0）。
+
+有充分理由应尽快采用 TypeScript 5.1+，它特别解锁了以下能力：
+
+- 在 JSX 中使用异步 React 服务器组件 (`async`)，无需 TypeScript 错误或[变通方案](https://gist.github.com/cramforce/b5e3f0b103f841d2e5e429b1d5ac4ded)
+- 直接返回 `ReactNode` 的所有有效类型（字符串/数组/布尔值等），无需 Fragment 包裹（[详情](https://twitter.com/sebastienlorber/status/1648619398259769344)）
+- 其他 JSX 相关改进：命名空间属性和联动编辑（VSCode）
+
+---
+
+[![故意破坏 React Query 的 API](/emails/issues/142/rq.jpg)](https://tkdodo.eu/blog/breaking-react-querys-api-on-purpose)
+
+**[故意破坏 React Query 的 API](https://tkdodo.eu/blog/breaking-react-querys-api-on-purpose)**
+
+React-Query will remove the callbacks (`onSuccess`, `onError`, `onSettled`) from the `useQuery` hook with v5. Dominik explains this choice and suggest alternatives more adapted to common cases, like displaying a toast. A controversial but necessary decision because these APIs were often misused. Note: callbacks are kept for `useMutation`.
+
+---
+
+- 🧵 [Dan Abramov - "good rule of thumb. for any “server components”](https://twitter.com/dan_abramov/status/1647203329854799872): explains the minimum requirements for a proper Server Components implementation, taking full advantage of their potential. Presents the limitations of Qwik and Remix models.
+- 👀 [Dan Abramov has a "story to tell" at Remix Conf ("React from Another Dimension")](https://twitter.com/remix_run/status/1646177445454950400)
+- 👀 [Next.js ships its own copy of React](https://twitter.com/devongovett/status/1647728887927906304): copy used only when using App Router.
+- 👀 [Use Storybook with Rspack](https://twitter.com/rspack_dev/status/1646164228598792196)
+- 👀 [WebGPU in React-Three-Fiber demo](https://twitter.com/CantBeFaraz/status/1647811509014216710)
+- ⚡ [SpiderMonkey Newsletter (Firefox 112-113)](https://spidermonkey.dev/blog/2023/04/14/newsletter-firefox-112-113.html): "We’re working on improving performance for popular web frameworks such as React".
+- 📜 [Animating View Transitions](https://www.patterns.dev/posts/view-transitions): explains how to use the new View Transition API (Chrome 111+) in a React context with Next.js App Router, and in a MPA context. Interesting, but the proposed React integration doesn't look ideal.
+- 📜 [An Animated Guide to Reacts Optional Parameters](https://julesblom.com/writing/react-optional-parameters): interactive article that presents some features of React APIs that we use less often.
+- 📜 [Next over Remix](https://bradgarropy.com/blog/next-over-remix): feedback from a dev who had planned to switch to Remix, but finally stayed with Next.js.
+- 📜 [Building a blog with Next.js 13 and React Server Components](https://maxleiter.com/blog/build-a-blog-with-nextjs-13): uses all the latest Next.js features to create a modern blog.
+- 📜 [React forwardRef(): How to Pass Refs to Child Components](https://dmitripavlutin.com/react-forwardref/)
+- 📜 [Is React the New WordPress?](https://www.seancdavis.com/posts/is-react-the-new-wordpress/)
+- 📜 [Becoming an Astro maintainer](https://www.elian.codes/blog/23-04-12-becoming-an-astro-maintainer/)
+- 📜 [Display Warning for Unsaved Form Data on Page Exit](https://claritydev.net/blog/display-warning-for-unsaved-form-data-on-page-exit)
+- 📜 [Mastering React: Techniques to Take Your UI to the Next Level](https://blog.bitsrc.io/mastering-react-techniques-to-take-your-ui-to-the-next-level-a5002173904f)
+- 📜 [What's new in the new Storybook](https://www.mariasimo.codes/storybook-7-new-release)
+- 📜 [Full-stack Web Apps Without React](https://remotesynthesis.com/blog/full-stack-without-react/)
+- 🎥 [Must Know React Portability Patterns](https://www.youtube.com/watch?v=yi8UCnXPu8U): good advices to reduce coupling of your code to a particular framework.
+- 🎥 [Maybe Create React App Isn't Dead?](https://www.youtube.com/watch?v=A2kWoKnpy1U)
+- 📦 [Ariakit 0.1.0](https://github.com/ariakit/ariakit/releases/tag/%40ariakit%2Freact%400.1.0): new way of managing state based on component stores. Motivations in this [RFC](https://github.com/ariakit/ariakit/issues/1875): less re-renders, becoming framework-agnostic...
+- 📦 [Million.js 2.2.1 - Support for hooks and non-primitives](https://twitter.com/aidenybai/status/1646238355427041285). This [thread](https://twitter.com/aidenybai/status/1647005716350406656) gives interesting explanations about the difference between React and Million reconciliation.
+- 📦 [OpenNext 1.0](https://github.com/serverless-stack/open-next/releases/tag/v1.0.0): aims to make Next.js more portable thanks to serverless adapter.
+- 📦 [Astro 2.3](https://twitter.com/astrodotbuild/status/1646593124997779465)
+- 📦 [React-Three-Next - starter updated - App Router support](https://twitter.com/onirenaud/status/1646139899291254786)
+- 📦 [React-Three-Fiber AutoFocus DOF](https://github.com/ektogamat/AutoFocusDOF)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Tina.io 是为 Markdown 驱动站点设计的无头 CMS](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io 是为 Markdown 驱动站点设计的无头 CMS](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- 为 Markdown 文件提供编辑界面
+- 支持 MDX 组件的 UI
+- 兼容静态生成 (SSG) 和服务端渲染 (SSR)
+- 可选可视化编辑（实时预览）
+- 通过可复用区块构建
+
+测试入门站点
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)
+- [Next.js + Tailwind 可视化编辑](https://github.com/tinacms/tina-cloud-starter) (Github)
+
+或运行  `npx create-tina-app@latest`  后访问 `localhost:3000/admin`
+
+观看 [4 分钟演示视频](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 👀 [悬停手势即将登陆 React Native Gesture Handler](https://twitter.com/breskin67/status/1646511002933153794)：未来将支持 iOS、Android 和 Web 的跨平台 API。
+- 👀 [图像性能演示](https://twitter.com/nightstomp/status/1647231665222176769)：展示在 React Native 应用中使用过大图像对性能的负面影响。
+- 📦 [Expo-Image 1.2.0 - 支持 ThumbHash](https://twitter.com/tsapeta/status/1646875246362861569)
+- 📦 [React-Native-Widget-Extension](https://twitter.com/bndkt/status/1648431242025766912)
+- 📦 [AnimateReactNative](https://www.animatereactnative.com/)：Catalin Miron 提供的 100 多个动画（付费产品）。
+- 🧵 [Expo 文档更新](https://twitter.com/amanhimself/status/1646959895995105281)
+- 🧵 [Jamon Holmgren - "想知道从编译后的 iPhone 应用中提取 API 密钥有多简单吗？"](https://twitter.com/jamonholmgren/status/1647305506053320704)
+- 🎥 [Song of Bloom - "能用 React Native 实现吗？"](https://www.youtube.com/watch?v=PfCQEA72ljU)
+- 🎥 [使用 Expo Router 实现基于文件的 React Native 路由](https://www.youtube.com/watch?v=RglRiycD0oQ)
+- 👥 [React-Native-Connection](https://reactnativeconnection.io/)（巴黎，6月1日）提供 -10% 门票优惠（代码 "REACTHEBDO"）。
+- 👥 [App.js](https://appjs.co/)（克拉科夫，5月10-12日）提供[研讨会 -20% 优惠](https://ti.to/appjs/2023/discount/ThisWeekinReact20)（代码 "ThisWeekinReact20"）。
+- 👥 [Chain React](https://chainreactconf.com/)（波特兰，5月18-19日）提供 -10% 门票优惠（代码 "thisweekinreact"）。
+
+---
+
+## 🧑‍💻 招聘 {#jobs}
+
+🧑‍💼 [**Passionfroot - 高级全栈工程师 (Remix) - €160k+，柏林/远程**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是通过 YouTube、播客、社交媒体和通讯简报赋能未来的独立企业。加入我们，共同构建一个赋能全球创作者建立可扩展、可持续业务的工具。
+
+🧑‍💼 [**Callstack - 高级 React Native 开发者 - 全职远程，B2B 月薪净额 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)
+
+您想开发全球最常用的应用吗？您愿意共同创造 React Native 技术吗？加入 Callstack 的 React & React Native 领导者团队。访问官网查看更多详情。期待您的申请——请展示您的实力！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们开放多个专注于 React Native 的开发职位！薪资约 16 万美元加 10% 奖金。需具备 RN 生产环境经验且位于美国境内。私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解详情，并请注明来自 This Week in React。
+
+💡 [如何发布招聘信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Node.js 20 现已发布](https://openjsf.org/blog/2023/04/18/node-js-20-now-available/)：提供稳定的测试运行器、权限模型、编译为可执行二进制文件等功能...
+- [pretty-ts-errors](https://github.com/yoavbls/pretty-ts-errors)：在 VSCode 中改善 TypeScript 开发者体验的好主意。
+- [total-typescript/shoehorn - TypeScript 中的部分模拟](https://github.com/total-typescript/shoehorn)
+- [Chrome 发布 WebGPU](https://developer.chrome.com/blog/webgpu-release/)：在 Chrome 113+ 中。
+- [WebGPU 基础](https://webgpufundamentals.org/)
+- [Turborepo 1.9](https://twitter.com/turborepo/status/1646238976196444162)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![替代文本](/emails/issues/142/meme.jpg)](https://twitter.com/thekitze/status/1646511070801203202)
+
+再见！👋

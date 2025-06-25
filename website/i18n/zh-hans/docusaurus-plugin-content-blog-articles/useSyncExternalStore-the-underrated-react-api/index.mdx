@@ -1,0 +1,242 @@
+---
+slug: useSyncExternalStore-the-underrated-react-api
+title: useSyncExternalStore - The underrated React API
+authors: [slorber]
+date: 2022-09-06
+twitterThreadUrl: "https://slo.im/t/articles/useSyncExternalStore"
+image: ./social-card.png
+---
+
+# useSyncExternalStore - 被低估的React API
+
+你可能听说过 [`useSyncExternalStore()`](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)，这是React 18中用于**订阅外部数据源**的新钩子。它常被状态管理库（如[Redux](https://github.com/reduxjs/react-redux/pull/1808)）内部使用，用于实现**选择器系统**。
+
+但在你自己的应用代码中使用`useSyncExternalStore()`会怎样呢？
+
+在这篇交互式文章中，我想提出一个问题：**过度返回的React钩子会触发无用的重新渲染**。我们将看到`useSyncExternalStore()`如何成为有效的解决方案。
+
+![社交卡片](./social-card.png)
+
+<!-- truncate -->
+
+<SubscribeFormEmbed />
+
+import {
+  App,
+  AppFixed,
+  ScrollApp,
+} from "@site/articles/useSyncExternalStore-the-underrated-react-api/demos";
+
+## 过度返回的钩子
+
+让我们通过React-Router的[`useLocation()`](https://reactrouter.com/en/main/hooks/use-location)钩子来说明这个问题。
+
+该钩子返回包含多个属性（`pathname`、`hash`、`search`等）的对象，但你可能不会用到所有属性。仅仅调用钩子就会在任一属性更新时触发重新渲染。
+
+考虑以下应用：
+
+```tsx
+function CurrentPathname() {
+  const { pathname } = useLocation();
+  return <div>{pathname}</div>;
+}
+
+function CurrentHash() {
+  const { hash } = useLocation();
+  return <div>{hash}</div>;
+}
+
+function Links() {
+  return (
+    <div>
+      <Link to="#link1">#link1</Link>
+      <Link to="#link2">#link2</Link>
+      <Link to="#link3">#link3</Link>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <CurrentPathname />
+      <CurrentHash />
+      <Links />
+    </div>
+  );
+}
+```
+
+<App />
+
+点击任何哈希链接时，`CurrentPathname`组件都会重新渲染——即使它根本没有使用`hash`属性 😅。
+
+:::tip
+
+当某个钩子返回了你未使用的数据时，请思考React的重新渲染机制。稍不注意，在React树顶部添加一个微小的`useLocation()`调用就可能损害应用性能。
+
+:::
+
+:::info
+
+本文目的并非批评React-Router，而是阐明问题本质。`useLocation()`只是创建这篇交互式文章的实用案例。你自己的React钩子或其他第三方库同样可能存在过度返回问题。
+
+:::
+
+## `useSyncExternalStore`来救援？
+
+[官方文档](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)说明：
+
+> useSyncExternalStore是一个推荐用于读取和订阅外部数据源的钩子，其实现方式兼容选择性注水和时间切片等并发渲染特性。
+> 该方法返回存储的值并接受三个参数：
+>
+> - `subscribe`：注册回调的函数，在存储变更时被调用
+> - `getSnapshot`：返回存储当前值的函数
+> - `getServerSnapshot`：返回服务端渲染所用快照的函数
+
+```tsx
+function useSyncExternalStore<Snapshot>(
+  subscribe: (onStoreChange: () => void) => () => void,
+  getSnapshot: () => Snapshot,
+  getServerSnapshot?: () => Snapshot,
+): Snapshot;
+```
+
+这听起来有些抽象。这份[beta版文档](https://beta.reactjs.org/learn/you-might-not-need-an-effect#subscribing-to-an-external-store)提供了很好的示例：
+
+```tsx
+function subscribe(callback) {
+  window.addEventListener("online", callback);
+  window.addEventListener("offline", callback);
+  return () => {
+    window.removeEventListener("online", callback);
+    window.removeEventListener("offline", callback);
+  };
+}
+
+function useOnlineStatus() {
+  return useSyncExternalStore(
+    subscribe,
+    () => navigator.onLine,
+    () => true,
+  );
+}
+
+function ChatIndicator() {
+  const isOnline = useOnlineStatus();
+  // ...
+}
+```
+
+事实上，浏览器历史记录也可视为外部数据源。让我们看看如何将`useSyncExternalStore`与React-Router结合使用！
+
+## 实现`useHistorySelector()`
+
+React-Router提供了我们连接`useSyncExternalStore`所需的所有接口：
+
+- 通过[`useHistory()`](https://v5.reactrouter.com/web/api/Hooks/usehistory)访问浏览器历史记录
+- 通过[`history.listen(callback)`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#history.listen)订阅历史记录更新
+- 通过[`history.location`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#historylocation)访问当前位置的快照
+
+:::caution
+
+本网站使用 React-Router v5：此解决方案不适用于 React-Router v6（[参见](https://twitter.com/Zh0uzi/status/1567523679604539405)）。
+
+:::
+
+`useHistorySelector()` 的实现相对简单：
+
+```tsx
+function useHistorySelector(selector) {
+  const history = useHistory();
+  return useSyncExternalStore(history.listen, () =>
+    selector(history),
+  );
+}
+```
+
+让我们在应用中调用它：
+
+```tsx
+function CurrentPathname() {
+  const pathname = useHistorySelector(
+    (history) => history.location.pathname,
+  );
+  return <div>{pathname}</div>;
+}
+
+function CurrentHash() {
+  const hash = useHistorySelector(
+    (history) => history.location.hash,
+  );
+  return <div>{hash}</div>;
+}
+```
+
+<AppFixed />
+
+现在，当您点击上方哈希链接时，`CurrentPathname` 组件将**不再重新渲染**！
+
+## 另一个示例：`scrollY`
+
+我们可以订阅的外部数据源非常丰富，在其基础上实现自己的选择器系统能有效优化 React 的重新渲染。
+
+例如，假设我们需要获取页面的 `scrollY` 滚动位置。可以实现如下自定义 React Hook：
+
+```tsx
+// A memoized constant fn prevents unsubscribe/resubscribe
+// In practice it is not a big deal
+function subscribe(onStoreChange) {
+  global.window?.addEventListener("scroll", onStoreChange);
+  return () =>
+    global.window?.removeEventListener(
+      "scroll",
+      onStoreChange,
+    );
+}
+
+function useScrollY(selector = (id) => id) {
+  return useSyncExternalStore(
+    subscribe,
+    () => selector(global.window?.scrollY),
+    () => undefined,
+  );
+}
+```
+
+现在即可通过可选选择器调用该 Hook：
+
+```tsx
+function ScrollY() {
+  const scrollY = useScrollY();
+  return <div>{scrollY}</div>;
+}
+
+function ScrollYFloored() {
+  const to = 100;
+  const scrollYFloored = useScrollY((y) =>
+    y ? Math.floor(y / to) * to : undefined,
+  );
+  return <div>{scrollYFloored}</div>;
+}
+```
+
+<ScrollApp />
+
+滚动页面时观察上方组件的重新渲染情况？其中一个组件的渲染频率明显更低！
+
+:::info
+
+When you don't need a `scrollY` 1 pixel precision level, returning a wide range value such as `scrollY` can also be considered as over-returning. Consider returning a narrower value.
+
+For example: a `useResponsiveBreakpoint()` hook that only returns a limited set of values (`small`, `medium` or `large`) will be more optimized than a `useViewportWidth()` hook.
+
+If a React component only handles `large` screens differently, you can create an even narrower `useIsLargeScreen()` hook returning a boolean.
+
+:::
+
+## 结论
+
+希望本文能让您重新审视 `useSyncExternalStore()`。该 Hook 目前在 React 生态中使用不足，值得更多关注——可订阅的外部数据源非常广泛。
+
+若尚未升级至 React 18，可通过 npm [use-sync-external-store](https://www.npmjs.com/package/use-sync-external-store) 垫片在旧版本中使用。如需返回非原始值的记忆化结果，还可使用 `use-sync-external-store/with-selector` 导出。

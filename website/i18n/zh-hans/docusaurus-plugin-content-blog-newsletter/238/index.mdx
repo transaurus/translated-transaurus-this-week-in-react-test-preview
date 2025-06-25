@@ -1,0 +1,130 @@
+---
+slug: /238
+title: "This Week In React #238: React Router, RSC, shadcn/ui, React Aria, TanStack, ForesightJS, Cosmos | iOS 26, JSI, Nitro, WebView, Windows, Tabs, PencilKit | Node, Oxlint, Amaro, Jest, WebKit, pnpm"
+authors: [slorber]
+date: 06-11-2025
+---
+
+大家好！
+
+本周 React 生态相对平静，但我们仍有各种有趣的博客文章和发布。也许很快就能从 [React Summit](https://reactsummit.com/) 获得令人兴奋的消息，会议将在本周五举行！
+
+在 React Native 方面，开发者们已经开始着手支持 iOS 26 Liquid Glass 以及苹果昨日宣布的其他更新。这个新设计颇具争议并引发大量调侃 😂。React Native 0.80 即将发布，具体内容我将后续详述，您可通过 [Alex Hunt 在 App.js 的演讲](https://www.youtube.com/live/UTaJlqhTk2g?t=6520s)先睹为快。
+
+JS 生态相当活跃，包括 Oxlint 1.0 发布和各种 Node.js 新闻。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助 {#sponsor1}
+
+[![工程师在沟通中常犯的错误](/emails/issues/238/getwrong.jpg)](https://go.posthog.com/twir-jun11)
+
+**[工程师在沟通中常犯的错误](https://go.posthog.com/twir-jun11)**
+
+工程师的时间主要花在两件事上：编码和沟通。关于前者的论述汗牛充栋，后者却鲜少被提及。
+
+为弥补这一缺憾，[PostHog](https://go.posthog.com/twir-jun11-ph) 分享了工程师在沟通中最易犯的错误，以及这家远程异步、工程师主导的公司如何解决这些问题。
+
+[在此阅读](https://go.posthog.com/twir-jun11)。
+
+---
+
+## ⚛️ React {#react}
+
+- 💸 [Build professional design system in less than a day, using Hope AI, new model by Bit.Cloud.](https://bit.cloud/solutions/design-systems?utm_source=ThisWeekInReact&campaign=DesignSystem)
+- 🦋 [React Conf \- First speakers announced](https://bsky.app/profile/react.dev/post/3lqxleaezcs2p): I guess we’ll have React Compiler news in October.
+- 📣 [React Router Open Governance](https://remix.run/blog/rr-governance): React Router gets more community-driven, forming a Steering Committee initially composed of Remix team members. RFCs will follow stages inspired by the TC39 process. This also gives a sneak peek of what you can expect in v8. See also [video comments from Alem Tuzlak](https://www.youtube.com/watch?v=qh2TRkNnyVw).
+- 📜 [How Imports Work in RSC](https://overreacted.io/how-imports-work-in-rsc/): Dan Abramov deep dives on module systems. The JS one creates singletons and is quite different from the C one, which creates duplication by default. RSCs permit creating a single program spanning across two computers, with two independent module systems. By the way, you can now have a [1:1 consulting call with Dan](https://overreacted.io/im-doing-a-little-consulting/).
+- 📜 [Reactivity is easy](https://romgrk.com/posts/reactivity-is-easy/): Nice interactive article showing how to let cells of a data grid read from React context without useless re-renders.
+- 📜 [useState should require a dependency array](https://bikeshedd.ing/posts/use_state_should_require_a_dependency_array/): Interesting interactive article advocating for `useState(initialState, deps)` with good arguments. I’m not sure I agree, though: using a `key` and splitting your UI into smaller components is probably enough, but curious to see what others think about this idea.
+- 📜 [Beware The URL Type-Safety Iceberg](https://nuqs.47ng.com/blog/beware-the-url-type-safety-iceberg): The author of the `nuqs` library warns of the hidden dangers of search parameters. You’d rather design beautiful URLs, stay within size limits, deal with URL update rate limits, validate params, and be able to migrate old URLs to a new validation schema.
+- 📜 [Use Async Local Storage to prevent props drilling in Next.js Route handlers](https://www.nico.fyi/blog/async-local-storage-to-prevent-props-drilling): It's like React Context but for Node.js functions.
+- 📜 [How to Integrate Plausible Analytics in a Next.js App](https://mxd.codes/articles/how-to-integrate-plausible-analytics-in-a-next-js-app-without-getting-blocked): Proxying analytics API calls makes them less likely to trigger ad-blocking extensions.
+- 📜 [How to Create Your Own Simple useState Hook](https://www.deepintodev.com/blog/how-to-create-your-own-simple-use-state-hook)
+- 📜 [How React Suspense Works Under the Hood: Throwing Promises and Declarative Async UI](https://www.epicreact.dev/how-react-suspense-works-under-the-hood-throwing-promises-and-declarative-async-ui-plbrh)
+- 📜 [Astro Integrations Explained](https://lou.gg/blog/astro-integrations-explained)
+- 💸 [Build a working reward flow in minutes — with Dynamo](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)
+- 📦 [TanStack Router 1.121](https://github.com/TanStack/router/discussions/2863#discussioncomment-13104960): Important milestone introducing a new `@tanstack/react-start` package. TanStack Start is now just a Vite plugin.
+- 📦 [shadcn/ui \- June 2025 updates](https://ui.shadcn.com/docs/changelog): Upgrades `Calendar` to the latest `react-day-picker`, introduces a new CLI command to migrate imports to the new unified `radix-ui` package.
+- 📦 [ForesightJS 2.0 \- Predict user intent to prefetch](https://foresightjs.com/): This library predicts mouse cursor and keyboard navigation to prefetch data earlier than mouse hover. Docs show how to integrate it with React Router and Next.js link components. TanStack will soon have a similar feature built in ([tweet](https://x.com/tannerlinsley/status/1908723776650355111)). This might also be useful in the future for pre-rendering with React `<Activity>`.
+- 📦 [React Aria \- June 5 release \- Drag and drop support in React Aria Tree](https://react-spectrum.adobe.com/releases/2025-06-05.html)
+- 📦 [Puck 0.19 \- Visual editor for React \- Slots API & performance gains](https://puckeditor.com/blog/puck-019)
+- 📦 [Astro 5.9 \- Experimental CSP support, render Markdown in content loaders](https://astro.build/blog/astro-590/)
+- 📦 [React Cosmos 7.0 \- Develop UI components in isolation \- Support React 19,](https://github.com/react-cosmos/react-cosmos/releases/tag/v7.0.0) [Next.js](http://Next.js) [15](https://github.com/react-cosmos/react-cosmos/releases/tag/v7.0.0)
+- 🎥 [Youssef \- The Most Common React Query Mistake](https://www.youtube.com/watch?v=JVcZLEFaC2M)
+- 🎥 [Jack Herrington \- Remix V3's Fatal Flaw](https://www.youtube.com/watch?v=5SPqO6NR_Bg)
+- 🎥 [Theo \- Why Tech Companies Are Moving Off React](https://www.youtube.com/watch?v=HBpOzj-iBUg)
+- 🎙️ [Syntax 908 \- Storybook Has Evolved w/ Jeppe Reinhold](https://syntax.fm/show/908/storybook-has-evolved-w-jeppe-reinhold)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助 {#sponsor2}
+
+[![指南：如何构建安全的 B2B 应用](/emails/issues/238/LinkedInReddit.jpg)](https://go.clerk.com/vKxY0Sv)
+
+**[指南：如何构建安全的 B2B 应用](https://go.clerk.com/vKxY0Sv)**
+
+学习使用 Clerk 和 Supabase 构建可扩展的多租户 B2B SaaS 应用。本技术指南涵盖：
+
+- 🔐 组织级身份验证
+- 👥 按租户限定 Supabase 数据范围
+- 🧩 安全地将用户映射到组织
+- 🧑‍💻 为清晰的多租户结构设计 React 应用
+
+🚀 应用这些模式解决现代 SaaS 开发中实际的身份验证和数据隔离挑战。[阅读分步指南](https://go.clerk.com/vKxY0Sv)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [Radon IDE – 在编辑器内无缝调试 Redux 和 React Query。](https://ide.swmansion.com/?utm_source=thisweekinreact.com)
+- 🐦 [JSI 新运行时数据 API 介绍](https://x.com/tmikov/status/1932149053116313703): 全新的 `jsi::Runtime:setRuntimeData(uuid,data)` C++ API，帮助库作者在运行时存储自定义数据，并自动管理所有权和生命周期。
+- 🐦 [新 iOS 26 Liquid Glass UI 兼容 Expo Router](https://x.com/Baconbrix/status/1932194950403232110)
+- 🐦 [使用 Apple AI 基础模型在 iOS 离线生成 React 组件](https://x.com/Baconbrix/status/1932385006321860909)
+- 🧵 ["Apple 今日抨击了 React Native"](https://x.com/jamonholmgren/status/1932200003096990131): Jamon Holmgren 对 Apple 在 WWDC25 视频中批评跨平台解决方案的回应。
+- 📜 [构建 NeonCity：使用 React Native、Reanimated 和 Expo 开发的快节奏手机游戏](https://expo.dev/blog/mobile-game-development-with-expo)
+- 📜 [在 Expo 中构建实时活动计时器](https://tarikpinarci.com/blog/expo-live-activity-timer)
+- 📦 [Nitro Modules 0.26 - 支持 RN 0.80，日期支持](https://github.com/mrousavy/nitro/releases/tag/v0.26.0)
+- 📦 [WebView 13.15 - 添加 Google Pay（支付请求 API）支持](https://github.com/react-native-webview/react-native-webview/releases/tag/v13.15.0)
+- 📦 [Bottom Tabs 0.9.2 - 支持 iOS 26 Liquid Glass 标签页，`useBottomTabBarHeight`](https://github.com/callstackincubator/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.9.2)
+- 📦 [Expo PencilKit UI - 为 iOS 绘图体验集成的原生 Apple PencilKit](https://github.com/tarikfp/expo-pencilkit-ui)
+- 📦 [React Native Windows 0.79 - 改进 Fabric 功能对等性](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.79.0)
+- 📦 [Unistyles 3.0 RC5 - 黄金候选版，即将发布](https://github.com/jpudysz/react-native-unistyles/releases/tag/v3.0.0-rc.5)
+- 📦 [Expo GitHub 缓存 - 将构建产物存储在 GitHub 发布中的远程构建缓存提供者](https://github.com/Robert27/expo-github-cache)
+- 📦 [Android 16](https://blog.google/products/android/android-16/)
+- 🎥 [Dan 的实验室 - 使用 Matter.js、React Native Skia 和 Expo 实现 2D 游戏物理](https://www.youtube.com/watch?v=fxxaOu6pLnU)
+- 🎥 [Michał - 你加载了过多不必要的 Hermes Polyfills](https://www.youtube.com/watch?v=_Yo1kHz7h_I)
+- 🎥 [Simon Grimm - React Native 是移动应用的未来吗？](https://www.youtube.com/watch?v=r9pmtMmbHus)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📊 [CSS 2025 现状调查 - 问卷已上线](https://survey.devographics.com/en-US/survey/state-of-css/2025)
+- 📜 [警惕终止支持的 Node.js 版本 - 升级或寻求 EOL 后支持](https://nodejs.org/en/blog/announcements/node-18-eol-support)：Node.js 团队建议 v18 用户跳过 v20 直接升级到 v22。
+- 📦 [Oxlint 1.0](https://oxc.rs/blog/2025-06-10-oxlint-stable)：这款 Rust 编写的 linter 首个稳定版宣称比 ESLint 快 50-100 倍，且已兼容 500 条规则，包括 `eslint-plugin-react` 和 `eslint-plugin-react-hooks`。
+- 📦 [Amaro 1.0 -](https://github.com/nodejs/amaro/releases/tag/v1.0.0) [Node.js](http://Node.js) [TypeScript 封装器与类型剥离器](https://github.com/nodejs/amaro/releases/tag/v1.0.0)：笔者认为这才是 Node.js 原生 TypeScript 支持的"正式"发布。针对 Node 24.3，他们还[移除了实验性警告](https://github.com/nodejs/node/pull/58643)，该警告曾导致在生产环境重要场景中使用此功能时存在顾虑。
+- 📦 [Safari 26 beta 中的 WebKit - SVG 图标、全站 PWA 安装、WebGPU、SwiftUI WebView、CSS 锚点定位与滚动驱动动画、JS `using` 等](https://webkit.org/blog/16993/news-from-wwdc25-web-technology-coming-this-fall-in-safari-26-beta/)：充满亮点的激动人心版本！
+- 📦 [Jest 30 - 更快、内存占用更低且提供多项新测试功能](https://jestjs.io/blog/2025/06/04/jest-30)
+- 📦 [pnpm 10.12 - 新增目录功能、实验性标志 `enableGlobalVirtualStore`](https://github.com/pnpm/pnpm/releases/tag/v10.12.1)
+- 📦 [Node 24.2 - 通过 `import.meta.main` 检测应用入口点](https://nodejs.org/en/blog/release/v24.2.0)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/238/meme.jpg)](https://x.com/thekitze/status/1932132390937530421)
+
+[![alt](/emails/issues/238/meme2.jpg)](https://x.com/cedric_dev/status/1932553258121457808)
+
+[![alt](/emails/issues/238/meme3.jpg)](https://x.com/thymikee/status/1932123405459075466)
+
+再见！👋

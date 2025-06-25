@@ -1,0 +1,167 @@
+---
+slug: /153
+title: "This Week In React #153: Server Components, Astro, MUI, Next.js, Remix, React-Query, AsyncLocalStorage, forwardRef, Storybook, Vaul, Solito, Yoga, Reanimated, React-Tweet, Expo-Router, Lottie, Bun, TypeScript..."
+authors: [slorber]
+date: 07-25-2023
+---
+
+大家好！
+
+看起来并非所有人都在休假：本周React和React-Native领域仍有大量新闻动态。
+
+有个问题想征求大家的意见（欢迎邮件回复）：你们更希望我提供直接链接还是推文链接？
+
+- 直接链接：一键访问资源
+- 推文链接：阅读相关讨论
+
+<!-- truncate -->
+
+**💡 [在Twitter查看本期通讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![企业级Feed/聊天/视频API！](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**企业级Feed/聊天/视频API！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Stream提供企业级**API**和**SDK**，帮助产品与工程团队规模化解决两大常见需求：应用内聊天和社交动态流。
+
+通过Stream，开发者能以自建零头的开发时间集成各类消息或动态流功能。Stream Chat让开发者轻松实现丰富的实时消息功能。
+
+Stream提供多种流行框架的客户端SDK，包括[**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal和iOS。通过创客账户，初创项目可免费解锁企业级功能组件。
+
+[**尝试React视频新教程！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+---
+
+## ⚛️ React {#react}
+
+[![Astro 2.9](/emails/issues/153/astro.jpg)](https://astro.build/blog/astro-290/)
+
+[**Astro 2.9**](https://astro.build/blog/astro-290/)
+
+Astro新版发布，包含期待已久的实验性功能：[视图过渡](https://developer.chrome.com/docs/web-platform/view-transitions/)。无需客户端路由即可实现页面间流畅动画过渡（不同于Next.js/Remix的`<Link>`组件）。对React开发者而言，这在不改变简单架构模型的前提下显著提升了UX竞争力。注意：这些过渡不会保留React状态，可能造成问题。当前[视图过渡API支持度](https://caniuse.com/?search=View%20Transition%20API)有限但进展迅速，可作为渐进增强方案，Astro也提供了降级模式。
+
+---
+
+- 👤 [Dan Abramov leaves his job at Meta, but remains in the React core team](https://twitter.com/dan_abramov/status/1682029195843739649)
+- 👤 [Meta is hiring a React DX Engineering Manager (London)](https://twitter.com/sebastienlorber/status/1683529524414148608)
+- 🧑‍🎓 [New Jotai tutorial](https://twitter.com/jotaijs/status/1682075111040630784)
+- 💬 [Material UI RFC - Zero-runtime CSS-in-JS](https://github.com/mui/material-ui/issues/38137): MUI plans to develop a zero-runtime CSS-in-JS solution inspired by Linaria/Compiled, compatible with RSCs. Also explains why it cannot rely on any existing solution.
+- 💡 [Server Components allow to pass promises over the network](https://twitter.com/ryantotweets/status/1681696002883944451)
+- 💡 [forwardRef type fix that works with generics](https://twitter.com/sebastienlorber/status/1683753462058610688)
+- 📜 [React Query and React Context](https://tkdodo.eu/blog/react-query-and-react-context): Dominik explains how putting React-Query data into a React context can be useful in making your data dependencies more explicit. The future `useSuspenseQuery` hook could also be a good alternative.
+- 📜 [Next 13 cookies() and headers() explained](https://raphael.badia.cc/posts/next-13-cookies-and-headers-explained): explains how Next.js uses `AsyncLocalStorage` (and [later AsyncContext?](https://twitter.com/sebastienlorber/status/1639183216799100928)) to expose its `cookies()` and `headers()` functions to RSCs.
+- 📜 [Kuma UI vs Panda CSS – My first impressions](https://www.devas.life/my-first-impressions-of-kuma-ui-and-panda-css/): quick comparison of the 2 new CSS-in-JS libraries. The author settled on Kuma UI.
+- 📜 [Recipe kits, a great alternative to installable libraries](https://andrewingram.net/posts/recipe-kits-a-great-alternative-to-installable-libraries): discusses the emergence and interest of UI kits that are not distributed via npm: Shadcn UI, Tailwind UI (and soon Tailwind Catalyst).
+- 📜 [Tailwind Connect 2023 Recap](https://tailwindcss.com/blog/2023-07-18-tailwind-connect-2023-recap): written summary of the conference, which also presented Catalyst, the React UI Kit currently under development.
+- 📜 [Introducing React-Tweet](https://vercel.com/blog/introducing-react-tweet): Vercel offers an RSC-compatible package for efficiently displaying tweets in web pages.
+- 📜 [React Server Components Tips](https://echobind.com/post/react-server-components-tips): 5 good tips and mental models for understanding and using CSRs.
+- 📜 [Origins of JSX and Why It Exists](https://dodov.dev/blog/origins-of-jsx-and-why-it-exists)
+- 📜 [Lazy Loading in React and Next.js Apps](https://www.fullctx.dev/p/lazy-loading-in-react-and-nextjs)
+- 📦 [Storybook 7.1 - in-app onboarding, zero-config styling support, TypeScript snippets...](https://storybook.js.org/blog/storybook-7-1/)
+- 📦 [TanStack Query v5 beta - mostly stable, migration guide and code mods available](https://twitter.com/TkDodo/status/1683425919770173442)
+- 📦 [Remix 1.19 - Improved dev server networking option, ESBuild metafiles, better Node polyfills...](https://github.com/remix-run/remix/releases/tag/remix%401.19.0)
+- 📦 [Redwood v6.0.0 RC](https://community.redwoodjs.com/t/redwood-v6-0-0-rc-is-now-available/5044)
+- 📦 [Vaul - Unstyled drawer component for React](https://twitter.com/emilkowalski_/status/1683832539490942978)
+- 📦 [Framer-Motion 10.13 - Scroll API](https://twitter.com/mattgperry/status/1681663921072078851)
+- 📦 [Downshift v8](https://github.com/downshift-js/downshift/releases/tag/v8.0.0)
+- 🎥 [Jack Herrington - Why Panda: CSS for RSCs is Changing the Game](https://www.youtube.com/watch?v=fKSemrudovo)
+- 🎥 [Addy Osmani - The Cost Of JavaScript - 2023](https://www.youtube.com/watch?v=ZKH3DLT4BKw)
+- 🎥 [Jamon Holmgren - The Suspense is killing me](https://www.youtube.com/watch?v=3iRF63A_xbo)
+- 🎥 [Lee Robinson - Responding to Reddit on the Next.js App Router](https://www.youtube.com/watch?v=-YO_z14dUyI)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Porkbun.com - 最佳域名注册商](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)
+
+**[Porkbun.com - 最佳域名注册商](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**
+
+Porkbun为React和React-Native开发者提供数百种域名后缀选择，从.dev、.app到.cloud、.xyz及.ai等——均以**市场最低价**提供！每个Porkbun域名均附带**海量免费功能**，例如：
+
+- SSL证书
+- WHOIS隐私保护
+- DNS服务
+- URL转发
+- 网站及邮箱托管试用
+
+体验我们**革命性的AI生成搜索工具**，它正在改变人们寻找域名的方式。所有这些服务均得到**全年365天卓越技术支持**的保障，并在Trustpilot上获得数千条真实五星好评。
+
+点击链接，在Porkbun.com[注册域名立减1美元](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)！
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Solito 4](/emails/issues/153/solito4.jpg)](https://github.com/nandorojo/solito/releases/tag/v4.0.0)
+
+[**Solito 4**](https://github.com/nandorojo/solito/releases/tag/v4.0.0)
+
+该项目的新版本通过共享抽象层统一了React-Native与Next.js。v4版本现已支持Next.js应用路由（App Router），并为此引入了新的API。需注意，React-Native目前尚未支持React服务端组件（React-Server Components），在跨平台场景中使用该特性仍为时过早。
+
+---
+
+- 🎉 [Expo 启动派对](https://expo.dev/launch-party)：计划在8月8日当周举行的 Expo 发布周？
+- 👥 [端到端调试 React Native 应用：与 Meta 和 Sentry 专家的 AMA - 7月26日](https://sentry.io/resources/ama-debugging-react-native-apps-end-to-end/)
+- 📜 [在 React Native 中重新定义导航：expo-router 的潜力](https://www.bam.tech/en/article/redefining-navigation-in-react-native-the-potential-of-expo-router)：对 Expo Router (v1) 和 React-Navigation 之间权衡的良好分析。
+- 📜 [使用 Expo Router v2、SDK 49 和 TypeScript 设置 Storybook Web 和 Native](https://twitter.com/mauro_codes/status/1682765642963861505)
+- 📜 [EAS Build 将在今年秋季要求使用 M1/M2 构建器](https://blog.expo.dev/eas-build-will-require-using-m1-m2-builders-this-fall-df40e8a9e930)
+- 📦 [Yoga v2.0.0-beta.2](https://twitter.com/sebastienlorber/status/1683874650785210369)：React-Native 布局引擎的 v2 版本正处于测试阶段。其目标是符合 W3C 规范，这对于编写跨平台 React 代码来说是个好消息！请注意，Yoga 不仅适用于移动开发者：它还被许多其他项目使用，例如 Satori、React-Native-Skia、React-Three-Flex 和 React Ink CLI 渲染器。
+- 📦 [Reanimated 3.4.0](https://twitter.com/swmansion/status/1683848307452289025)：一个很棒的版本，包含了[共享元素过渡](https://twitter.com/piaskowyk/status/1683846036878393349)、Worklets 的改进、React-Native 0.72 支持以及像 `useReducedMotion` 这样的新 API。
+- 📦 [React-Native-Lottie v6 - 新架构支持](https://twitter.com/matinzd/status/1683623846992044034)
+- 📦 [Tamagui Takeout](https://twitter.com/tamagui_js/status/1681925619997868033)：可自我更新的模板，用于发布跨平台应用。付费产品旨在资助开源项目。
+- 🎥 [Jamon Holmgren - 使用 Colo Loco 黑入 Xcode！](https://www.youtube.com/watch?v=ucEBfIZOap8)
+- 🎙️ [The React Native Show 播客 #24 - Jacob Suñol (Abbott) 谈大规模使用 React Native](https://www.youtube.com/watch?v=tGGa885ycrg)
+- 🎙️ [React Native Radio 第272期 - 现实中的 React Native：NTWRK 的 Nick Alekhine](https://reactnativeradio.com/episodes/rnr-272-real-life-react-native-nick-alekhine-at-ntwrk)
+
+---
+
+## 🧑‍💻 工作 {#jobs}
+
+🧑‍💼 [**Passionfroot - 高级全栈工程师 (Remix) - €160k+, 柏林/远程**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是通过 YouTube、播客、社交媒体和时事通讯赋能未来的独立企业。加入我们，一起构建一个工具，赋能全球创作者建立可扩展、可持续的业务。
+
+🧑‍💼 [**Callstack - 高级 React Native 开发人员 - 完全远程，B2B 每月净收入 21-32k 波兰兹罗提**](https://www.callstack.com/senior-react-native-developer)
+
+您想开发世界上最常用的应用程序吗？您想共同创建 React Native 技术吗？加入 Callstack 的 React 和 React Native 领导者团队。查看我们的网站了解更多详情。我们期待看到您的申请——向我们展示您的实力！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 工作**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们有几个面向React Native开发者的职位空缺！薪资约为16万美元外加10%奖金。应聘者需具备RN生产环境经验且在美国居住。请私信[@gabe_g2i](https://twitter.com/gabe_g2i)了解更多详情，并备注来自This Week in React。
+
+💡 [如何发布招聘信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Bun 0.7 - Improved Node.js compat, Vite support, Worker, AsyncLocalStorage...](https://twitter.com/jarredsumner/status/1682383403684106242)
+- [Rspack 0.2.9](https://twitter.com/rspack_dev/status/1684039960230522880)
+- [Microsoft TypeChat - Helps get TypeScript type-safe reponses from AI / LLM](https://microsoft.github.io/TypeChat/blog/introducing-typechat)
+- [TypeScript and the dawn of gradual types](https://github.com/readme/featured/typescript-gradual-types)
+- [pkg-size - Find the true size of an npm package (thanks to WebContainers)](https://twitter.com/privatenumbr/status/1681206731127554048)
+- [Node.js Best Practices List - 2023 update](https://twitter.com/nodepractices/status/1683835221840654337)
+- [How Turborepo is porting from Go to Rust](https://vercel.com/blog/how-turborepo-is-porting-from-go-to-rust)
+- [Introducing Valibot, a < 1kb Zod Alternative](https://www.builder.io/blog/introducing-valibot)
+- [5 Inconvenient Truths about TypeScript](https://oida.dev/5-truths-about-typescript/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/153/meme.jpg)](https://twitter.com/fireship_dev/status/1682866059098095616)
+
+下期再见！👋

@@ -1,0 +1,148 @@
+---
+slug: /221
+title: "This Week In React #221: State of React, React Router, Rsbuild, ProseMirror, Redux, React Hook Form, Base UI, RSC, React Admin | AI & RN, Expo, Strict DOM, Polygen, Ignite, New Arch, Radon, macOS, Universal RSC, Gesture Handler | TypeScript, Prettier, esbuild..."
+authors: [cyrilbo, matthieugicquel]
+date: 02-12-2025
+---
+
+大家好！
+
+我们是来自 [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) 的 Cyril 和 Matthieu 👋，暂代 Seb 为大家带来 React 和 React Native 的最新动态！
+
+本周我们仔细研读了 [2024 年 React 生态调查报告](https://2024.stateofreact.com) 的结果，同时发现了几篇有趣的文章。不过在新版本发布方面相对平静。
+
+别忘了关注我们的合作会议 [App.js](https://appjs.co?utm_source=thisweekinreact)，将于 5 月 28-30 日在 🇵🇱 克拉科夫举行！这个最大的 React Native 和 Expo 主题会议提供 "TWIR" 专属 15% 折扣优惠。想[提交演讲](https://docs.google.com/forms/u/1/d/e/1FAIpQLSeKSqxwrTdJJavOFgK-UA25K-hJPmZ5wnZDY7UUo9ULDuckkA/viewform?usp=send_form)？请抓紧——征稿即将截止！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![EAS Workflows：快速、灵活的 React Native CI/CD](/emails/issues/221/eas-workflows.jpg)](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)
+
+**[EAS Workflows：快速、灵活的 React Native CI/CD](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)**
+
+清晨醒来时，您想管理多少个不同的 yaml 文件？使用 EAS Workflows，您可以将**所有内容集中在一处**。
+
+• 自动化构建  
+• 运行端到端测试  
+• 发送预览版本  
+• 提交到应用商店  
+• GitHub 触发器、代码检查、Slack 通知... 还有更多功能
+
+通过 EAS Workflows，您可以**自动化并编排**所有构建/更新/提交操作。将所有命令打包到工作流中，然后去喝杯咖啡吧。您值得拥有。
+
+[立即免费开始更快地构建和部署 →](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)
+
+---
+
+## ⚛️ React 相关 {#react}
+
+[![2024 年 React 状态 - 调查结果](/emails/issues/221/state-of-react.png)](https://2024.stateofreact.com)
+
+**[2024 年 React 状态 - 调查结果](https://2024.stateofreact.com)**
+
+2024 年 React 生态调查结果已发布。这是座信息金矿，我们无法在此详述所有内容，但以下是几个亮点：
+
+- 在"新" React 功能中，服务器组件最受欢迎，约 7000 名受访者中 40% 表示"使用过"，这可能要归功于 Next.js...
+- `forwardRef` 是最不受欢迎的 React API，即将被淘汰！
+- 您听说过 React 的 Taint API 吗？约 80% 的 React 开发者表示不了解，这可以理解因为它仍处于实验阶段。
+- 榜首位置变化不大：Next.js、TanStack Query、Axios、Jest 和 Zod 仍然是最常用的工具。
+- 几颗冉冉升起的新星：Zustand 和 Vitest 用户增长明显，TanStack Start 虽然几乎无人使用过，但关注度排名第一。
+
+Seb 撰写了[调查结论](https://2024.stateofreact.com/en-US/conclusion/)——务必查看哦！🙂
+
+---
+
+- 💸 [Meet Harmony - 一个用于从独立业务功能构建一致且高性能平台的开源库](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability?utm_source=This-Week-In-React&utm_id=7&utm_medium=newsletter)
+- 👀 [@rsbuild/plugin-react-router](https://github.com/rspack-contrib/rsbuild-plugin-react-router)：尚未发布到 npm，但可能很快成为在框架模式下打包 React Router 应用的更快替代方案，替代 Vite。
+- 📜 [React Router 底层工作原理](https://tigerabrodi.blog/how-react-router-works-under-the-hood)：从初始请求到水合、客户端导航和操作的全过程解析。
+- 📜 [为什么我在 React 中重构了 ProseMirror 的渲染器](https://smoores.dev/post/why_i_rebuilt_prosemirror_view/)：Prosemirror（文本编辑器）管理自身状态和虚拟 DOM，与 React 兼容性不佳。本文深入探讨相关问题及解决方案：直接使用 React 而非尝试"桥接"。
+- 📜 [跨越虚空的承诺：使用 RSC 实现数据流式传输](https://edspencer.net/2024/7/12/promises-across-the-void-react-server-components)：React 可将未解析的 Promise 从服务端发送到客户端继续等待。这篇数月前的文章详解其原理。
+- 📜 [老旧的 React，我们该如何处理？](https://www.manuelsanchezdev.com/blog/what-to-do-with-old-react-upgrading-to-modern-react)：升级仍在使用类组件和"老旧"Redux 代码库的实用技巧。
+- 📜 [我们用 Go 和 WebAssembly 替代了 React 前端](https://dagger.io/blog/replaced-react-with-go)：解释为何这对他们是正确选择（但请勿轻易模仿）。
+- 📜 [在 React Admin 中处理关联关系](https://marmelab.com/blog/2025/02/06/handling-relationships-in-react-admin.html)：内置组件（如 `<ReferenceField>`）通常能满足需求，本文同时讲解如何构建自定义组件。
+- 📜 [Create React App 因 React 19 兼容问题正式弃用](https://socket.dev/blog/create-react-app-officially-deprecated?utm_medium=feed)：如您尚未知晓，可通过本文回顾事件始末。
+- 📜 [2025 年如何启动 React 项目](https://www.robinwieruch.de/react-starter/)
+- 📜 [掌握 Redux Action 最佳实践 & 简化调试](https://janhesters.com/blog/master-redux-action-best-practices-and-make-debugging-easy)
+- 📦 [React Hook Form resolvers 4.0](https://github.com/react-hook-form/resolvers/releases/tag/v4.0.0)：新增 [standard-schema](https://github.com/standard-schema/standard-schema) 解析器，可轻松切换符合标准模式的验证库。
+- 📦 [Base UI v1.0.0 alpha 6](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.6)：这套备受期待的无样式组件集正在通过 alpha 测试阶段
+- 🎥 [Jack Herrington - RSC 让 React 性能翻倍的证明！](https://www.youtube.com/watch?v=AJvbnNFHx0A)
+- 🎙️ [Rocket Ship 60 - 与 Jack Herrington 探讨模块联邦、RSC 和通用应用](https://share.transistor.fm/s/144c4947)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![优化 Vercel 成本：实战策略](/emails/issues/221/pagepro.jpg)](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)
+
+**[优化 Vercel 成本：实战策略](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)**
+
+在 Vercel 上部署 Next.js 应用很简单，但优化托管成本？那就是另一回事了。
+
+请在 **2 月 20 日美国东部时间上午 11 点** 加入 Pagepro 的 Chris Lojniewski 和 Jakub Dakowicz，深入分析 Vercel 成本优化策略。学习如何识别成本驱动因素，并通过**代码级优化**来降低成本，例如调整预取以避免过多的函数调用、选择合适的渲染方法，以及减少不必要的数据传输。
+
+他们还将向您展示如何通过功能外部化（将分析、图像优化和密码保护等任务转移出去）来**最小化对 Vercel 高级功能的依赖**。此外，他们将分析何时值得考虑企业定价，以及何时使用替代方案更划算。**停止多付费用，立即[注册](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)**。
+
+## 📱 React-Native {#react-native}
+
+[![Bolt x Expo](/emails/issues/221/bolt-expo.jpg)](https://expo.dev/blog/bolt-expo-integration-announcement)
+
+**使用 AI 构建应用**
+
+我们在这个通讯中不太谈论大语言模型（LLM）（我们猜您已经听得够多了 😅），但鉴于本周的所有公告，我们认为现在是给您更新信息的好时机。
+
+重大新闻：**[Bolt 和 Expo 已达成合作](https://expo.dev/blog/bolt-expo-integration-announcement)**，为 Bolt 添加对（React-）Native 移动应用的支持。目前，您可以在网页上预览 AI 生成的应用，但需要下载代码才能进一步开发。他们计划未来添加与 EAS 的集成，以便部署到生产环境。
+
+一些竞争对手也有消息要宣布：
+
+- Replit 中现在有一个官方的 Expo 模板，并且[有一个您可以观看的演示视频](https://www.youtube.com/watch?v=mTm_dCF53qk)。Replit 本身就有应用，因此您可以在应用中构建应用。
+- 一家名为 a0 的初创公司[推出了类似 v0 的服务](https://a0.dev)来生成 RN 应用。
+
+---
+
+- 💸 [Codemagic - React Native 开发者的绝佳 App Center 替代方案！构建速度快 8 倍，支持 CodePush，自动化分发。提供 1 个月免费试用！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)
+- 🐦 [这不是 React Native](https://x.com/mrousavy/status/1889358737930068051)：Mark 正在开发基于 React、JSI 和 NitroModules 的新 UI 库，但**不包含** React Native。它在底层使用 SwiftUI 和 Compose。
+- 🐦 [DeepSeek R1 在 React 应用中本地运行：](https://x.com/SzymonRybczak/status/1889412928694002004) 代码库已在[此处](https://github.com/callstackincubator/ai)开源。请注意这是高度实验性的，可能使应用体积增加多达 1GB。
+- 👀 [Expo 通用 React 服务器组件 + AI 聊天应用演示](https://github.com/EvanBacon/expo-ai)：Evan Bacon 开源了他在多个技术大会上演示的应用。
+- 💬 [React Strict DOM - 生产环境就绪与采用情况](https://github.com/facebook/react-strict-dom/discussions/270)：Nicolas Gallagher 分享重要进展，提到 Meta 已在生产环境使用 RSD。
+- 🗓 [React Universe 大会](https://www.reactuniverseconf.com/?utm_campaign=RUC2025&utm_source=TWIRpartnership&utm_content=savethedate) \- 🇵🇱 弗罗茨瓦夫 - 9月2日至4日。论文征集已开放！使用代码"TWIR"可享 9 折优惠。
+- 📜 [通过 Polygen 将 WebAssembly 引入 React Native](https://www.callstack.com/blog/bringing-webassembly-to-react-native-with-polygen)：Polygen 通过将模块编译为原生代码，使 WebAssembly 在 React Native 中以近原生性能运行，突破 iOS JIT 限制。相比依赖 Wasm 解释的现有方案（如 react-native-webassembly），这是创新方法。
+- 📜 [用 Ignite Generators 增强 Expo 开发能力](https://expo.dev/blog/increase-your-expo-power-with-ignite-generators)：Ignite 不仅是知名 React Native 应用模板，还可作为生成器用于任何 React Native 项目（包括 Expo 应用），自动化创建屏幕、组件和状态切片。
+- 📜 [React Native 新架构如何影响性能？](https://dev.to/anishamalde/how-does-react-natives-new-architecture-affect-performance-1dkf)：Anisha 的基准测试显示，在性能关键的 React Native TV 应用中启用新架构后，性能提升高达 1000ms。
+- 📜 [无桥接原生开发](https://www.callstack.com/blog/bridgeless-native-development)：简要总结多年来桥接原生代码的方法演进（NativeModule, TurboModule, NitroModule）。
+- 📜 [使用 Tracy 分析 React Native 中的原生代码](https://www.callstack.com/blog/how-to-profile-native-code-react-native-with-tracy)
+- 📜 [如何用 Expo、SwiftUI 和 React Native 构建实时活动](https://christopher.engineering/en/blog/live-activity-with-react-native/)
+- 📦 [Radon IDE v1.3](https://github.com/software-mansion/radon-ide/releases/tag/v1.3.0)：内置网络检查器、Redux DevTools 支持、调试器改进。
+- 📦 [React Native Gesture Handler v2.23](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.23.0)：旧版 API 即将弃用。
+- 📦 [React Native macOS v0.77](https://github.com/microsoft/react-native-macos/releases/tag/react-native-macos%400.77.0)
+- 📦 [React Native Reanimated Carousel v4.0](https://rn-carousel.dev/migration-v4)：容器样式定制、最小滚动距离、固定方向滚动、进度变更处理、增强分页组件、改进 Web 支持。
+- 🎙️ [RNR 321 \- Evan Bacon 谈 Expo DOM](https://www.reactnativeradio.com/episodes/rnr-321-expo-dom-with-evan-bacon)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [`require(esm)` 已反向移植到 Node.js 20](https://github.com/nodejs/node/pull/56927)
+- 📜 [TypeScript：`satisfies` 运算符](https://2ality.com/2025/02/satisfies-operator.html)：确认对象形状正确性而不改变类型、验证对象中的可选属性、检查枚举类对象结构、确保 API 键正确性等...
+- 📜 [JavaScript 中拆分长任务的方法多种多样](https://macarthur.me/posts/long-tasks/)
+- 📜 [Style-observer：真正观察 CSS 属性变化的 JS 方案](https://lea.verou.me/blog/2025/style-observer/)
+- 📜 [优化图像提升 Web 性能](https://frontendmasters.com/blog/optimizing-images-for-web-performance/)
+- 📜 [Chrome Canary 中的 CSS 自定义函数实验](https://www.bram.us/2025/02/09/css-custom-functions-teaser/)
+- 📦 [Prettier 3.5 - TS 配置文件、`objectWrap` 选项、`experimentalOperatorPosition` 选项](https://prettier.io/blog/2025/02/09/3.5.0)
+- 📦 [esbuild 0.25 - 多项修复及部分不兼容变更](https://github.com/evanw/esbuild/releases/tag/v0.25.0)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![React npm 截图显示下载量为 0](/emails/issues/221/meme.jpg)](https://x.com/andrii_sherman/status/1887492134426558849)
+
+下次见！👋

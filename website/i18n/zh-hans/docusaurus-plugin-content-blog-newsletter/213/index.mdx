@@ -1,0 +1,158 @@
+---
+slug: /213
+title: "This Week In React #213: React 19, Next.js, React Compiler, React Router, Restyle, Lingui, State of RN, Uniffi, Shared Objects, Fast IO, Sheet Transitions, Radon, TC39, OpenAuth, TypeScript, Dioxus..."
+authors: [matthieugicquel, cyrilbo]
+date: 12-11-2024
+---
+
+大家好！
+
+我们是来自Theodo Apps（原BAM）的Cyril和Matthieu 👋，本期代替Seb为大家带来React和React Native的最新动态！
+
+React 19已正式进入稳定版。下文提及的众多文章和版本更新都与其新特性相关，足见本次发布的重要性 🙂
+
+《2024年React Native现状调查》已上线，请把握机会共同塑造React Native的未来！
+
+在Rust应用于前端开发方面也取得了令人兴奋的进展，如React Native的Uniffi和Dioxus等工具，正为构建更强大的跨平台体验铺平道路。
+
+让我们开始吧！🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![WorkOS：面向B2B SaaS的现代身份平台](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)
+
+**[WorkOS：面向B2B SaaS的现代身份平台](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**
+
+通过WorkOS，仅需几行代码即可开始向企业客户销售。
+
+🔐 WorkOS AuthKit提供完整的用户管理解决方案，支持**单点登录(SSO)、跨域身份管理(SCIM)、基于角色的访问控制(RBAC)和细粒度访问控制(FGA)**。
+
+🏗️ API具备**灵活易用、模块化设计**的特性。按需选择功能，数分钟即可完成集成。
+
+🎨 设计体验决定成败。从文档质量到用户引导流程，我们**为开发者消除所有不必要的复杂性**。
+
+✨ AuthKit**免费支持高达100万月活用户(MAU)**，包含机器人防护、多因素认证(MFA)、基于角色的访问控制等功能。
+
+🤝 WorkOS获**Perplexity、Vercel、Webflow**等数百家领先初创企业信任。
+
+[立即开始使用WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀
+
+---
+
+## ⚛️ React {#react}
+
+[![React 19](/emails/issues/213/react.jpg)](https://react.dev/blog/2024/12/05/react-19)
+
+**[React 19](https://react.dev/blog/2024/12/05/react-19)**
+
+过去一年React 19候选版本一直是本通讯的主角，因此除了两项新特性：导致版本延迟发布的预热功能(Pre-warming)和新的React-DOM静态API外，已无需赘述。以下是已覆盖特性的回顾：
+
+- Actions/服务端Actions/`useActionState()`
+- `<form>` + 渐进增强兼容的hooks
+- 使用`<Context>`替代`<Context.Provider>`
+- `use()`钩子
+- 自定义元素支持
+- 将ref作为标准props及ref回调清理函数
+- 元标签处理
+- 资源预加载
+- 更完善的错误处理及水合差异报告
+
+相关版本发布解读视频：
+
+- 🎥 [Theo - React 19 终于发布了！](https://www.youtube.com/watch?v=6aQgiJHReCI)
+- 🎥 [Ankita - 5分钟掌握React 19变更！](https://www.youtube.com/watch?v=ZcuOV60_z6s)
+- 🎥 [Brandon Roberts - React 19：每个Angular开发者需要了解的内容！](https://www.youtube.com/watch?v=0aHHGdxAmF4)
+
+---
+
+- 💸 [React Bricks – the Visual CMS for React got more accessible with lower entry price and flexible pay-as-you-go options. Start for free!](https://www.reactbricks.com/?utm_source=twir&utm_campaign=ql24)
+- 📖 [A new React Router tutorial](https://reactrouter.com/tutorials/address-book): It goes over most of the features you’ll need in \~30 minutes
+- 📜 [How React Compiler Performs on Real Code](https://www.developerway.com/posts/how-react-compiler-performs-on-real-code): Enabling the compiler on a real app led to same performance on initial load, and improved performance on interactions. But the compiler is not always able to fully optimize your existing code.
+- 📜 [Ref Callbacks, React 19 and the Compiler](https://tkdodo.eu/blog/ref-callbacks-react-19-and-the-compiler): TkDodo looks into ref callbacks, which now have cleanup functions. When should they replace `useEffect` ?
+- 📜 [Building Scalable Micro-Frontends with Next.js Multi Zones](https://techhub.iodigital.com/articles/building-scalable-micro-frontends-with-next-js-multi-zones): Being able to deploy independently is a major advantage for big teams, and it turns out it’s not that complicated with Next.js
+- 📜 [Root Element API in waku](https://waku.gg/blog/root-element-api): Customize `<html>`, `<body>` and `<head>` in a `\_root.tsx` file
+- 📜 [Multi-framework docs with Astro Starlight](https://blog.arcjet.com/multi-framework-docs-with-astro-starlight/)
+- 📜 [SSR is not expensive](https://t3.gg/blog/post/ssr-is-not-expensive)
+- 📜 [Reflections on managing state](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)
+- 📦 [Next.js 15.1](https://nextjs.org/blog/next-15-1): React 19 stable, improved error debugging, `after` (to run code after the response is sent, eg for analytics) is stable, and new experimental `forbidden` and `unauthorized` APIs that work like `notFound`
+- 📦 [Restyle 3.0](https://www.restyle.dev/): A very lightweight CSS-in-JS lib for React which uses the new React 19 metadata APIs
+- 📦 [Lingui 5.0](https://lingui.dev/blog/2024/11/28/announcing-lingui-5.0): Support for RSC and a new `useLingui` macro among other improvements.
+- 📦 [react-render-stream-testing-library 2.0](https://github.com/testing-library/react-render-stream-testing-library/releases/tag/v2.0.0): No major new features, some breaking changes were necessary to be compatible with React 19
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![从独立到协作：React + Stream视频！](/emails/issues/213/stream.jpg)](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)
+
+**[从独立到协作：React + Stream视频！](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)**
+
+Stream视频React SDK助力开发者轻松集成视频通话、会议和直播功能
+
+✔️ **开发者打造，为开发者服务：** 完全可定制的UI组件和钩子，全面文档和快速入门模板
+
+✔️ **极速性能：** 低于200毫秒的延迟和基于WebRTC的可扩展性。
+
+✔️ **开箱即用功能：** 群组通话、屏幕共享以及自适应码率、编解码器等。
+
+快速构建，轻松扩展。[立即开始使用 Stream](https://getstream.io/try-for-free/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 2024 状态报告](/emails/issues/213/state_of_rn.jpg)](https://stateofreactnative.com/)
+
+**[React Native 2024 状态报告](https://stateofreactnative.com/)**
+
+React Native 2024 状态调查现已上线！📊 这是您通过分享趋势、工具和挑战的见解来影响 React Native 未来的机会。您的反馈将指导 Expo 和 Meta 团队每年制定改进措施，惠及整个社区。
+
+---
+
+- 💸 [React Native Mastery - 现已开放报名！](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 🐦 [RN Unistyles v3 支持作用域主题](https://x.com/jpudysz/status/1865460854717632737)：自 v2 移除 `UnistylesTheme` 后缺失的功能。
+- 📜 [Shared Objects 在 Expo Modules 中的实际影响](https://expo.dev/blog/the-real-world-impact-of-shared-objects)：Expo Modules 中的 Shared Objects 实现了原生与 JavaScript 的无缝集成，优化了 API 设计并增强了跨包兼容性。
+- 📜 [为 React Native 引入 Uniffi：Rust 驱动的 Turbo Modules](https://hacks.mozilla.org/2024/12/introducing-uniffi-for-react-native-rust-powered-turbo-modules/)：Uniffi for React Native 将 Rust 与 Turbo Modules 集成，为 React Native 应用解锁了整个 Rust crates 生态系统。
+- 📜 [在包含多种变体与方案的裸 React Native 应用中实现自动化 EAS 更新](https://shift.infinite.red/automated-eas-updates-in-a-bare-react-native-app-with-multiple-flavors-schemes-dcdf17963079)：针对不使用 Expo 或 EAS 但依赖 CodePush 的项目，在 CodePush 正式停用前寻求 OTA 更新解决方案的绝佳时机。
+- 📜 [开发 React Native TV 应用](https://www.callstack.com/blog/developing-a-react-native-tv-app)
+- 📦 [React Native Sheet Transitions - 美观通用的表单转场效果](https://github.com/saulamsal/react-native-sheet-transitions)：效果惊艳，但仍处于积极开发阶段。
+- 📦 [@lingui/metro-transformer](https://lingui.dev/blog/2024/11/20/metro-transformer)：通过在 Metro 打包时处理编译，消除了预编译 `.po` 翻译文件的需求。
+- 📦 [React Native Fast IO 预发布版](https://github.com/callstackincubator/react-native-fast-io)：高性能 React Native I/O 解决方案，实现了 WebSocket、Fetch、FileSystem、Blob 和 Streams 等标准 W3C API，由 Nitro 驱动。
+- 📦 [React Native Bottom Tabs v0.7.2 - 支持 macOS，支持侧边栏](https://github.com/okwasniewski/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.7.2)
+- 📦 [React Native Video Player v0.15](https://github.com/TheWidlarzGroup/react-native-video-player/releases/tag/v0.15.0)
+- 🎥 [Radon IDE 现场演示：用于简化开发的 VS Code 扩展](https://www.youtube.com/watch?v=UeYmRKWhwFI)
+- 🎙️ [RNR 316 - 与 Cedric van Putten 和 Alex Hunt 共同调试调试器](https://reactnativeradio.com/episodes/rnr-316-debugging-the-debugger-with-cedric-van-putten-and-alex-hunt)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [TC39 第105次会议](https://dev.to/hemanth/updates-from-the-105th-tc39-meeting-3gkh)：本周多个ES提案取得进展，包括Intl.DurationFormat、Immutable ArrayBuffer、Import Sync等。
+- 📜 [Airtable - 将TypeScript扩展到数千个项目](https://medium.com/airtable-eng/a-leap-in-the-evolution-of-airtables-codebase-scaling-typescript-to-thousands-of-projects-734326c3a553)
+- 📜 [Node.js发布首个支持require(esm)的LTS版本，增强安全性和发布自动化](https://socket.dev/blog/node-js-delivers-first-lts-with-require-esm-enabled)
+- 📜 [用JavaScript Map解决N²复杂度问题](https://davidbonan.io/blog/solving-n2-complexity-with-javascript-maps)
+- 📜 [CSS年度回顾2024](https://chrome.dev/css-wrapped-2024/)
+- 📜 [如何通过浏览器缓存提升页面加载速度 | DebugBear](https://www.debugbear.com/blog/browser-caching)
+- 📜 [探索Node.js可读流](https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams)
+- 📦 [OpenAuth - 通用、基于标准的认证提供器](https://openauth.js.org/)
+- 📦 [Dioxus 0.6 - Rust全栈跨平台应用框架](https://dioxuslabs.com/blog/release-060)：灵感大量借鉴React，本次重大更新新增服务端函数、SSG/ISG、流式HTML等特性。
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![React 19 PeerDependencies](/emails/issues/213/react_19_meme.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3laz2eyx77k2l)
+
+[![JavaScript Math.sin](/emails/issues/213/math_sin.jpg)](https://x.com/davesnx/status/1863991593432391711)
+
+再见！👋

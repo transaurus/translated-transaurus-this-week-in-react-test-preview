@@ -1,0 +1,135 @@
+---
+slug: /188
+title: "This Week In React #188: React 19 RC0, Data Fetching, Framer Motion, Compiler, Astro, Zod, Remix, Docusaurus, React-Query,, Memory Leaks, Spline, Module Mocking, Slow Networks, MS Edge, RN Security Guide, RN 0.74.2, Reanimated 3.12, Turborepo 2, Biome 1.8..."
+authors: [bndkt]
+date: 06-06-2024
+---
+
+嘿，
+
+本周由[Benedikt](https://twitter.com/bndkt)代班，Sébastien正在休假暂别快讯。
+
+React 19即将发布最终版本，本周发布了首个候选版（RC）。除此之外，React和React Native社区近期的发布活动不多。因此本周我决定在两个版块都重点推荐两篇优质内容：邱俊涛（Juntao Qiu）撰写的关于单页应用数据获取模式的万字长文，以及Simon Grimm制作的关于Expo构建React Native应用多种方式的精彩视频解析。
+
+借此机会说明：我和Sébastien都投入大量精力筛选React和React Native领域的最佳内容，但难免仍有优秀作品被遗漏。我们始终欢迎内容推荐，如果您有新作发布，请随时告知！
+
+<!-- truncate -->
+
+**💡 [在Twitter查看本期快讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![打造产品技能](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)
+
+**[打造产品技能](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**
+
+[**工程师的产品指南**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)是PostHog的新闻通讯，专注帮助工程师提升产品能力。学习如何向用户提问、开发用户喜爱的新功能，以及达成产品市场匹配的路径。
+
+[**免费订阅**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)获取构建优秀产品的精选建议、PostHog开发中的经验教训，以及对顶尖初创企业策略的深度解析。
+
+---
+
+## ⚛️ React {#react}
+
+📜 **[单页应用中的数据获取模式](https://martinfowler.com/articles/data-fetch-spa.html)**
+
+这篇长文（约1万字）质量极高！标题未能完全体现其价值——内容远不止数据获取，还涵盖React基础概念、Suspense、异步状态处理、代码分割、预加载，以及避免瀑布流的并行数据获取。近期X平台涌现大量关于Web应用性能的讨论（Rails vs. React，Edge决策等），本文是重温基础、构建卓越用户体验的绝佳材料！
+
+- 💸 [Meilisearch - Build search as you type for React](https://www.meilisearch.com/with/react?utm_campaign=sponsoring&utm_source=thisweekinreact)
+- 👀 [React Router PR - defineRoute API](https://github.com/remix-run/react-router/pull/11596)
+- 🐦 [shadcn/ui is working on adding charts](https://x.com/shadcn/status/1795920488797188525)
+- 🐦 [Remix working inside a Cloudflare Durable Object 🤯](https://x.com/threepointone/status/1796223745243119890)
+- 🐦 [React 19.0.0-rc.0](https://x.com/acdlite/status/1797668537349328923): Andrew Clark says “This is the exact build we'll release as 19.0, unless an issue is reported that requires a breaking change.”
+- 🐦 [Upcoming Spline (3D rendering) and NextJS RSC integration](https://x.com/rauchg/status/1798021886657650711)
+- 📜 [I tried React Compiler today, and guess what …](https://www.developerway.com/posts/i-tried-react-compiler): A super interesting and detailed article about React Compiler and real-world use cases. Seems like we’re not at the point yet where we can just ignore everything about memoization because the Compiler takes care of it, and apart from this conclusion the article is also a great reminder of how memoization works exactly.
+- 📜 [Do you still need Framer Motion?](https://motion.dev/blog/do-you-still-need-framer-motion): The creator of the popular React animation library explains you might not need his library anymore thanks to 5 great new/upcoming CSS features.
+- 📜 [Sneaky React Memory Leaks II: Closures Vs. React Query](https://schiener.io/2024-05-29/react-query-leaks): This follows up on last week's great article. This time it shows how React Query might be affected as well by memory leaks, and how to fix them. Using custom hooks looks like a good general solution to this problem.
+- 📜 [An even faster Microsoft Edge](https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge/): Microsoft was using React for some elements of the UI in its Edge browser and is now abandoning this approach. See the video linked below for more context.
+- 📜 [Speeding up the JavaScript ecosystem - Server Side JSX](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-9/): The JSX runtime of React can lead to many object allocations. Marvin (Preact/Deno) shows it's possible to precompile JSX to improve server rendering of JSX and reduce GC. Maybe React could use that as well?
+- 📜 [Type-safe module mocking in Storybook](https://storybook.js.org/blog/type-safe-module-mocking/): Very elegant way to leverage subpath imports for module mocking.
+- 📜 [Multiple action handlers with Zod in Remix](https://www.jacobparis.com/content/zod-actions-remix): If you target one action endpoint from multiple components, this article shows you how to combine the different Zod schemas via discriminated union.
+- 📜 [Embracing Slow Networks: Improving User Experience](https://www.epicweb.dev/embracing-slow-networks-improving-user-experience)
+- 📜 [Cleaner components with useSuspenseQuery](https://swizec.com/blog/cleaner-components-with-use-suspense-query/) & [Why useSuspenseQuery works](https://swizec.com/blog/why-use-suspense-query-works/)
+- 📜 [Explore new hooks coming up in React 19](https://blog.saeloun.com/2024/06/05/new-hooks-in-react-19/)
+- 📦 [React 19.0.0-rc.0](https://www.npmjs.com/package/react/v/19.0.0-rc.0): Andrew Clark said "This is the exact build we'll release as 19.0, unless an issue is reported that requires a breaking change."
+- 📦 [Docusaurus 3.4](https://docusaurus.io/blog/releases/3.4): A new way to centrally manage tags (great for consistency), an experimental hash router (great for offline browsing without a web server), and an option to use namespaces for local storage (useful if you’re deploying multiple instances of Docusaurus on the same domain).
+- 🎙 [This Month in React, May 2024 - Updates from React Conf](https://www.reactiflux.com/transcripts/tmir-2024-05)
+- 🎥 [Jack Herrington - Beware of "auto" Mode in the NextJS App Router](https://www.youtube.com/watch?v=bU3Px8bHjPA)
+- 🎥 [Theo - Microsoft Regrets Using React (For Edge)](https://www.youtube.com/watch?v=Bm8Ga07BOnI)
+- 🎥 [Stephanie Dietz - How to Use React's `useOptimistic` Hook](https://www.youtube.com/watch?v=ChF9-P4Bjs4)
+- 🎥 [UI Engineering - Why 95% of Modals should be Local (in React)](https://www.youtube.com/watch?v=iMoAviG_ZUE)
+- 🎥 [Aaron Francis - Laravel vs React](https://www.youtube.com/watch?v=gRtv-BVkwA4)
+- 🎥 [Theo - How React Query Won](https://www.youtube.com/watch?v=xIflplz925Y)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![WorkOS：几分钟内实现企业级认证](/emails/issues/188/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)
+
+**[WorkOS：几分钟内实现企业级认证](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**
+
+🔐 WorkOS提供完整的用户管理解决方案，支持**SSO、SCIM、RBAC和FGA**。
+
+🗂️ 与其他依赖以用户为中心模型的认证提供商不同，WorkOS专为B2B SaaS设计，采用**组织建模方法**。
+
+🏗️ 这些 API **灵活、易用且模块化**。选择所需功能，几分钟内即可集成。
+
+✨ 用户管理**免费支持高达 100 万月活跃用户（MAU）**，包含机器人防护、模拟登录、多因素认证（MFA）等功能。
+
+🤝 WorkOS 获得数百家领先初创公司信任，包括 **Perplexity**、**Vercel** 和 **Webflow**。
+
+使用 [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 为您的认证技术栈保驾护航 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+![Simon Grimm：使用 Expo 构建 React Native 应用](/emails/issues/188/rn188.jpg)
+
+🎥 **[使用 Expo 构建 React Native 应用的完整指南](https://www.youtube.com/watch?v=cs-zgHjt5RQ)**
+
+条条大路通罗马，构建 Expo 应用的方式同样多样。这赋予开发者强大自由，但有时也会造成困惑——不仅对新手如此！值得庆幸的是，Simon 制作了精彩视频，对比通过 Expo Go、Expo Prebuild、Xcode、Android Studio 和 EAS 的不同实现方式。同时也祝贺 Expo 在 GitHub 上斩获 [30k stars！](https://x.com/expo/status/1796262781584654492)
+
+- 💸 [React Native 精通 - 掌握 React Native & Expo 的终极课程](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 🐦 [最强大的 AI 演示应用：通过 Expo Router 实现 RSC](https://x.com/Baconbrix/status/1795804445738963283)：我们曾讨论过 Evan Bacon 的 RSC 演示。这篇推文精彩总结了其潜力，并包含展示移动端 UI 在 LLM 聊天应用中卓越表现的对比视频。
+- 📜 [React Native 安全指南](https://ospfranco.com/react-native-security-guide/)：Oscar 探讨了常被忽视的话题。涵盖密钥管理（核心原则：勿存于设备）和用户数据加密（含生物识别技术）的优质入门指南。
+- 📜 [无缝过渡：从原生到 React Native](https://commerce.nearform.com/blog/2024/seamless-transitions-from-native-to-react-native)：为棕地开发提供洞见：由于 RN 创建真正的原生应用，在现有应用中引入或迁移至 RN 可为终端用户实现无缝体验。
+- 📦 [React Native 0.74.2](https://github.com/facebook/react-native/releases/tag/v0.74.2)：补丁版本，更新部分依赖（typescript-eslint、CLI）并修复错误。
+- 📦 [React Native Reanimated 3.12.0](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.12.0)：引入新钩子 useComposedEventHandler，简化多事件处理器合并。
+- 🎙️ [RNR 298 - 与 Dan Stepanov 探讨 Create Expo Stack、NativeWind Ul 及 Plugin Pro](https://reactnativeradio.com/episodes/rnr-298-create-expo-stack-nativewind-ul-plugin-pro-with-dan-stepanov)
+- 🎥 [Rocket Ship 42 - React Native 生命力！Áron Berezkin 解读 App.js 大会](https://www.youtube.com/watch?v=GeUfrojkoo0)
+- 🎥 [Expo - 2 分钟创建首个 Expo 项目](https://www.youtube.com/watch?v=yOUAEfDuI44)
+
+---
+
+## 🔀 其他 {#other}
+
+- 🐦 [使用 Chrome 开发者工具查找内存问题](https://x.com/addyosmani/status/1796527052306419820)
+- 👀 [Vitest 浏览器模式](https://github.com/vitest-dev/vitest/discussions/5828)
+- 📜 [2024年值得使用的10个现代Node.js运行时特性](https://snyk.io/blog/10-modern-node-js-runtime-features/)
+- 📜 [TypeScript单体仓库中的实时类型 - 停止编写无用的TypeScript](https://colinhacks.com/essays/live-types-typescript-monorepo)
+- 📜 [Corepack使用指南](https://www.totaltypescript.com/how-to-use-corepack)
+- 📜 [从零理解Promise](https://www.joshwcomeau.com/javascript/promises/)
+- 📜 [Zero - 重新思考Web端本地优先的通用同步引擎](https://zerosync.dev/)
+- 📦 [Turborepo 2.0 - 全新终端UI、监听模式、完整文档更新](https://turbo.build/blog/turbo-2-0)
+- 📦 [Biome 1.8 - 支持CSS、新增报告功能、CLI改进...](https://x.com/biomejs/status/1797963672004043040)
+- 📦 [Deno 1.44 - 私有npm仓库、增强Node.js兼容性、性能提升](https://deno.com/blog/v1.44)
+
+---
+
+## 🤭 趣事 {#fun}
+
+[![谢谢你JavaScript](/emails/issues/188/meme.jpg)](https://x.com/fireship_dev/status/1796526654183059925)
+
+下次见！👋

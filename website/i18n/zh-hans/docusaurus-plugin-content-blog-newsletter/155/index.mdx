@@ -1,0 +1,183 @@
+---
+slug: /155
+title: "This Week In React #155: RSC DevTools, Next.js Caching, Radix Themes, Expo Party, Graph Gallery, Astro, Apollo, Storybook, Remix, Reanimated, Apple Settings, Stable Diffusion..."
+authors: [slorber]
+date: 08-08-2023
+---
+
+大家好！
+
+我本以为这周会比较平静，但我在React和React Native方面都发现了许多有趣的内容！
+
+这份简报刚刚[突破了25,000名订阅者](https://twitter.com/sebastienlorber/status/1689285394855022592)！感谢大家每周阅读，让我能继续这段旅程。
+
+<!-- truncate -->
+
+**💡 [在Twitter上查看本简报](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![即插即用的身份验证和用户管理（用于React）](/emails/issues/155/clerk.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)
+
+**[即插即用的身份验证和用户管理（用于React）](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)**
+
+Clerk是为React应用添加身份验证和用户管理的最简单方式。它专为现代Web构建，旨在让您在几分钟内启动并运行。
+
+使用Clerk您将获得：
+
+- 💅 预构建的UI组件，用于登录、注册、用户资料和组织
+- 📦 适用于React、React Native、Next.js、Redwood、Remix等框架的SDK
+- ⚡ 与Firebase、Supabase、Convex等BaaS提供商的集成
+- 🎁 开箱即用的用户管理、社交登录、魔法链接、MFA等功能
+
+通过Clerk的[快速入门和教程](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)开始使用 🚀
+
+---
+
+## ⚛️ React {#react}
+
+[![React Server Components开发工具](/emails/issues/155/rscdevtools.jpg)](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)
+
+[**React Server Components开发工具**](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)
+
+React Server Components发布后，Alvar注意到客户端与服务端间的网络通信采用了一种难以解读的格式。因此他开发了网站[RSC解析器](https://rsc-parser.vercel.app/)，可更便捷地检查有效载荷。虽然有效，但用户体验欠佳。此后他转向开发浏览器扩展，其功能类似Chrome网络开发者工具，能通过时间轴展示有效载荷变化，甚至支持Suspense流式传输。该工具已帮助他在博客中检测并优化了过大的有效载荷。
+
+这个前景广阔的工具仍在开发中，值得持续关注。扩展程序尚未上架浏览器商店，但即将推出。相关视频演示详见[Twitter帖子](https://twitter.com/sebastienlorber/status/1689203357368365056)。
+
+---
+
+[![Next.js中的缓存](/emails/issues/155/cachinginnextjs.jpg)](https://nextjs.org/docs/app/building-your-application/caching)
+
+[**Next.js中的缓存**](https://nextjs.org/docs/app/building-your-application/caching)
+
+新的Next.js文档页面全面解释了4级缓存的工作原理、存在原因以及如何绕过它们：
+
+- 请求记忆化
+- 数据缓存
+- 完整路由缓存
+- 路由器缓存
+
+无法绕过路由器缓存：这个问题在[此视频](https://www.youtube.com/watch?v=_yhSh4g0NSk)中有详细说明。
+
+---
+
+[![Radix UI 主题](/emails/issues/155/radix.jpg)](https://www.radix-ui.com/)
+
+[**Radix UI 主题**](https://www.radix-ui.com/)
+
+Radix UI 是一个无头(Headless) React 库，近期广受赞誉，尤其因其优雅的 API 设计。他们刚刚通过精美的预告片（[在 Twitter 上](https://twitter.com/radix_ui/status/1688889619314585600)）宣布，除了原始组件外，Radix 现在提供了一套带样式的组件。
+
+---
+
+- 💬 [Meta的stylex发生了什么？](https://www.reddit.com/r/reactjs/comments/13akbvu/what_happened_to_metas_stylex/)：这款CSS-in-JS库的发布因多种原因被推迟，但应该很快会推出。
+- 📜 [React图表库](https://datavizuniverse.substack.com/p/the-react-graph-gallery)：Yan建议我们不要使用npm图表库，而是从他网站上丰富的React + D3示例中获取灵感。在当前使用配方工具包(Recipe Kits)的趋势中：Shadcn UI、Tailwind Catalyst...
+- 📜 [将我的博客从Gatsby迁移到Astro](https://sapegin.me/blog/gatsby-to-astro/)：迁移到Astro和Vanilla-Extract，但对后者不太满意。
+- 📜 [通过API发送UI](https://www.builder.io/blog/ui-over-apis)：介绍了Server-Driven UI概念，附带一些React示例。在我看来，RSCs就属于这个类别。
+- 📜 [将包现代化以支持ESM的经验](https://blog.isquaredsoftware.com/2023/08/esm-modernization-lessons/)：Mark Erikson详细阐述了为Redux包提供ESM支持的复杂性。RSCs的引入也无济于事。
+- 📜 [实现简洁可维护的React组件测试](https://medium.com/globant/achieving-clean-and-maintainable-react-component-tests-b3d5e0483307)
+- 📜 [使用createStateContext共享useState钩子](https://www.jacobparis.com/content/use-state-context)
+- 📜 [Next.js 13中的上下文是否会使整个应用在客户端渲染？](https://www.perssondennis.com/articles/do-contexts-in-nextjs-13-make-the-whole-app-render-on-the-client)
+- 📜 [使用React Flow和Resend构建电子邮件自动化系统](https://novu.co/blog/building-an-email-automation-system-with-react-flow-and-resend/)
+- 📜 [Markprompt + Algolia：将提示与文档即时搜索结合](https://markprompt.com/blog/algolia)
+- 📜 [打造Leptos Query——Rust中的TanStack Query](https://www.nicoburniske.com/thoughts/forging_leptos_query)
+- 📦 [Astro 2.10：视图过渡中的持久状态](https://astro.build/blog/astro-2100/)：Astro通过在有状态岛屿(stateful islands)间持久化状态的功能进一步突破极限。Astro v3现已进入测试版。
+- 📦 [Next.js Commerce 2.0](https://vercel.com/blog/introducing-next-js-commerce-2-0)：Vercel提供的支持App Router的电商模板，集成官方Shopify。详细文章解释该模板如何实现卓越性能。
+- 📦 [Apollo Client 3.8 - React Suspense集成](https://www.apollographql.com/blog/announcement/frontend/wait-for-it-announcing-apollo-client-3-8-with-react-suspense-integration/)：多项新功能，包括3个集成Suspense的新钩子，以及移除GraphQL `__typename`的Link。
+- 📦 [Storybook - Visual Tests插件预览 - 使用Chromatic](https://storybook.js.org/blog/visual-tests-addon-sneak-peek/)
+- 📦 [Remix Dev Tools v2.0 - 新增设置选项卡](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v2.0.0)
+- 📦 [Remix-Workers-POC - 在Service Workers中运行loaders/actions，支持离线优先](https://github.com/scandinavianairlines/remix-workers-poc)
+- 🎥 [HTMX：改变游戏规则的React替代品](https://www.youtube.com/watch?v=DuGyH5RvfbY)
+- 🎥 [Remotion最新动态——2023年7月](https://www.youtube.com/watch?v=ABQErIOxUNg)
+- 🎥 [什么是Radix UI？](https://www.youtube.com/watch?v=1JnwJBtg4VA)
+- 🎙️ [Software Engineering Daily - 与Sébastien Lorber一起简化文档](https://softwareengineeringdaily.com/2023/08/03/simplifying-documentation/)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助 {#sponsor2}
+
+[![一个拥有全部功能的非云端替代 Google Forms 的方案](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)
+
+**[一个拥有全部功能的非云端替代 Google Forms 的方案](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**
+
+如果您希望建立完全集成到IT基础设施中的强大表单管理系统，保留对数据流的完全控制权，同时不想花费数月时间和数千美元来启动运行，那么SurveyJS是您的最佳选择！
+
+SurveyJS是由四个开源JavaScript库组成的产品套件，允许您在拖放式表单构建器中创建和编辑多个基于JSON的动态表单，在React应用中呈现它们，并将敏感调查数据存储在内部基础设施中。随后您可以在浏览器中将自定义调查和表单渲染为可编辑的PDF文件，并通过交互式图表和表格可视化调查结果。[立即了解更多](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo 发布派对](/emails/issues/155/expolaunchparty.jpg)](https://expo.dev/launch-party)
+
+[**Expo 发布派对**](https://expo.dev/launch-party)
+
+本周Expo将宣布多项重要更新。目前已发布内容：
+
+- [功能预览：单点登录（SSO）](https://blog.expo.dev/feature-preview-single-sign-on-sso-9c1a7d50c1a9)
+- [功能预览：EAS更新的分阶段发布](https://blog.expo.dev/feature-preview-rollouts-for-eas-update-4eac28596470)
+- [expo-updates的useUpdates() API](https://expo.dev/changelog/2023/08-08-use-updates-api)
+- [Expo Orbit：下载并启动构建版本](https://expo.dev/changelog/2023/08-09-orbit)
+
+---
+
+- 💬 [Help us Kotlin-ify React Native tests - Round 2](https://github.com/facebook/react-native/issues/38825)：React Native 开发者再次邀请我们参与代码库从 Java 到 Kotlin 的转换工作。
+- 🐦 [即将支持 Reanimated 工作线程后台任务？](https://twitter.com/tomekzaw_/status/1688565879456350208)
+- 🐦 [愿望清单更新 - 即将发布](https://twitter.com/margelo_io/status/1689270087583195136)
+- 📜 [如何在 React Native 中使用 Stable Diffusion 在 iOS 上生成 AI 图像](https://andreizgirvaci.com/blog/how-to-create-ai-generated-images-on-ios-in-react-native-using-stable-diffusion)：Andrei 解释如何通过他的新包 [expo-stable-diffusion](https://github.com/andrei-zgirvaci/expo-stable-diffusion) 直接在 iPhone 上本地生成 AI 图像。
+- 📜 [在 React Native 中使用 Rust - 文章与视频教程](https://ospfranco.notion.site/Rust-in-React-Native-43316cdc499f43b48e9bc014074d3f72)
+- 📦 [Expo 配置插件 - Apple 设置](https://github.com/expo/config-plugins/tree/main/packages/apple-settings)
+- 📦 [React Native 测试库 v12.2.0 - 全新用户事件 API](https://callstack.github.io/react-native-testing-library/docs/user-event)
+- 📦 [React Native 线框 UI - React Native 线框 UI 套件](https://github.com/rborn/react-native-wireframe-ui)
+- 📦 [React Native 启动画面 v5 beta - 告别 AndroidX，支持暗黑模式+品牌图像，useHideAnimation 钩子等](https://github.com/zoontek/react-native-bootsplash/pull/475)
+- 🎥 [为 React Native 开发或移植 SDK](https://www.youtube.com/watch?v=A0JtWXt75yw)
+- 🎥 [如何使用 React Native Reanimated 制作动画渐变选择器](https://www.youtube.com/watch?v=_FehNLxxpRY)
+- 👥 [React Native EU 2023](https://www.react-native.eu/)（弗罗茨瓦夫，2023年9月7-8日）提供[-15%会议门票优惠](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)，优惠码 "thisweekinreact15"。
+
+---
+
+## 🧑‍💻 职位 {#jobs}
+
+🧑‍💼 [**Passionfroot - 高级全栈工程师 (Remix) - €160k+，柏林/远程**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是通过 YouTube、播客、社交媒体和新闻通讯赋能未来的独立企业。加入我们，共同构建一个能帮助全球创作者建立可扩展、可持续业务的工具。
+
+🧑‍💼 [**Callstack - 高级 React Native 开发者 - 完全远程，B2B 月薪净额 21-32k 波兰兹罗提**](https://www.callstack.com/senior-react-native-developer)
+
+您想开发全球使用最广泛的应用吗？您希望共同塑造 React Native 技术吗？加入 Callstack 的 React & React Native 领导者团队。详情请查看我们的网站。期待您的申请——向我们展示您的实力！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们开放多个面向 React Native 开发者的职位！薪资约 16 万美元加 10% 奖金。需具备 RN 生产环境经验且位于美国境内。私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多，并请提及 This Week in React。
+
+💡 [如何发布赞助？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Project IDX - Google 新的基于浏览器的代码环境，带有 AI 辅助](https://idx.dev/)
+- 📜 [Atlassian - 渲染如黄油般顺滑——Confluence 白板的故事](https://www.atlassian.com/engineering/rendering-like-butter-a-confluence-whiteboards-story)
+- 📜 [我们构建 TypeScript ORM 821 天后，这件事发生了](https://medium.com/@aleksandrblokh/weve-built-typescript-orm-for-821-days-then-this-happened-71282a8b0206)
+- 📜 [将 Sharp 引入 WebAssembly 和 WebContainers](https://blog.stackblitz.com/posts/bringing-sharp-to-wasm-and-webcontainers/)
+- 📜 [揭秘模式匹配的魔法](https://www.swan.io/blog-posts/unraveling-the-magic-of-pattern-matching)
+- 📦 [VitePress v1.0 RC](https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md)
+- 📦 [Deno 1.36：更灵活的安全性和扩展的测试 API](https://deno.com/blog/v1.36)
+- 📦 [Dioxus 0.4 - 用于在 Rust 中构建类 React 用户界面的库](https://dioxuslabs.com/blog/release-040)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/155/meme.jpg)](https://twitter.com/fireship_dev/status/1687106416614764547)
+
+再见！ 👋

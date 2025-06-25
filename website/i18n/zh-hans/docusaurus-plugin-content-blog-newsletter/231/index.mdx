@@ -1,0 +1,164 @@
+---
+slug: /231
+title: "This Week In React #231: React Labs, Compiler, React Router, Next.js, TanStack Query, c15t, RTK, Base UI | Legend List, FlashList, Versioning, Metro, ExecuTorch, Brownfield, Expo Router | TC39, Surveys, Rspack, tsdown"
+authors: [matthieugicquel, cyrilbo]
+date: 04-23-2025
+---
+
+大家好！
+
+我们是来自[Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact)的Cyril和Matthieu 👋，代替Seb为大家带来React和React Native世界的最新消息。
+
+本周，我们有两篇令人兴奋的React团队博客文章，并且来自React核心团队的一位特别嘉宾为大家带来了一条消息！
+
+我们还阅读了来自"官方"博客和社区的不少有趣文章。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![Convex: The Database Designed for AI Coding](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)
+
+**[Convex: 专为AI编程设计的数据库](https://convex.link/thisweekai)**
+
+在代码生成时代，您需要一个能够放心通过AI平台生成的后端。Convex在这方面[遥遥领先](https://stack.convex.dev/introducing-fullstack-bench)。
+
+因为Convex就是TypeScript本身，允许您编写[代码形式的查询](https://docs.convex.dev/functions/query-functions/)，这些查询自动具备事务性、缓存和实时能力。
+
+而这仅仅是个开始。使用Convex，您可以：
+
+- 轻松调度函数和编写cron任务
+- 设置文件存储
+- 编写高效的服务器函数
+- 以及更多功能...
+
+[立即尝试快速入门](https://docs.convex.dev/quickstarts)
+
+---
+
+## 📣 来自React团队 {#react-core-team}
+
+[![React实验室：视图过渡、活动状态及其他](/emails/issues/231/labs.jpg)](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)
+
+**[React实验室：视图过渡、活动状态及其他](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)**
+
+关于React团队只关心服务端的传言被严重夸大了。
+
+在今天的[React实验室文章](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)中，我们分享了[视图过渡](https://react.dev/reference/react/ViewTransition)和[活动状态](https://react.dev/reference/react/Activity)功能现已在实验频道开放试用，并附有相关文档。这些新功能使运行在客户端的React能够实现UI过渡动画，并在用户进行客户端导航时动态显示/隐藏UI部分。它们可与服务端功能协同工作，但主要解决客户端问题。
+
+我们还[分享了更新](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#features-in-development)，涉及影响客户端渲染应用的重点领域：包括更优的性能分析工具、自动编译effect依赖项、潜在的IDE扩展、片段引用(refs)，甚至包括并发存储方案。这些都是我们长期希望解决的问题，而React编译器和`use`API等新功能使我们终于能够着手处理。
+
+这些功能仍处于早期阶段，在正式发布前可能会有重大变更。您可以在我们构建过程中持续关注，本通讯是获取最新进展的理想渠道。但无需急于学习所有内容——请先给我们研发时间。
+
+当我们更确定某个功能将发布时，会像本次视图过渡和活动状态功能一样，在博客宣布并发布文档。
+
+尝试这些新的实验性功能，并在[博客文章](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)中查看我们正在研究的领域。
+
+\-[Ricky Hanlon](https://bsky.app/profile/ricky.fm)
+
+---
+
+## ⚛️ React {#react}
+
+[![React Compiler RC](/emails/issues/231/compiler.jpg)](https://react.dev/blog/2025/04/21/react-compiler-rc)
+
+**[React Compiler RC](https://react.dev/blog/2025/04/21/react-compiler-rc)**
+
+React Labs 的博文并不是本周唯一的激动更新！React 编译器也已进入候选发布版（Release Candidate），为编译器的稳定版发布做准备。
+
+无 Babel 的构建是个值得欢迎的改进，让我们能在现代 Rust 工具链中继续使用编译器！
+
+---
+
+- 💸 [如何使用 Clerk + Supabase 构建多租户应用](https://go.clerk.com/j5M7vZt)
+- 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 埃斯波 - 5月26-28日。与 Aurora Scharff、Rachel Nabors 等专家共同探索前端开发的未来！使用代码 "TWIR" 可享 9 折优惠。
+- 📜 [不可能的组件](https://overreacted.io/impossible-components/)：Dan Abramov 继续他的 RSC 系列博文，本次详解了其如何与 React 自顶向下的数据流协同工作。
+- 📜 [React Router v7.5+ 中的高效懒加载](https://remix.run/blog/faster-lazy-loading)：该功能已于数周前发布。Mark Dalgleish 在文中解释了新方案（按路由属性而非整个路由进行懒加载）的必要性，尤其在使用中间件时。
+- 📜 [Next.js 性能优化技巧](https://vercel.com/blog/guide-to-fast-websites-with-next-js-tips-for-maximizing-server-speeds#how-to-speed-up-the-page-render-minimize-client-burden)：完整回顾所有可用优化手段：预渲染、缓存利用、监控包体积、按需懒加载、优化字体与图像、虚拟化技术...
+- 📜 [通过模式匹配简化 TanStack React Query 状态处理](https://gabrielpichot.fr/blog/simplify-tanstack-react-query-state-handling-with-pattern-matching/)
+- 📜 [在 Loader 中使用客户端缓存](https://www.brenelz.com/posts/using-client-caches-in-loaders/)
+- 📜 [请求的生命周期：应用感知路由 - Vercel](https://vercel.com/blog/life-of-a-request-application-aware-routing)
+- 📜 [Tailwind 与 Linaria 性能对比研究](https://www.developerway.com/posts/tailwind-vs-linaria-performance)
+- 📦 [c15t](https://github.com/c15t/c15t)：全新同意管理框架，附带开箱即用的 React 组件。
+- 📦 [Redux Toolkit 2.7](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.7.0)：RTK Query 标准模式，增强无限查询功能。
+- 📦 [Headless Tree 1.0](https://headless-tree.lukasbach.com/)：作为 React Complex Tree 的继任者，作者撰写了[博客详解变更](https://medium.com/@lukasbach/headless-tree-and-the-future-of-react-complex-tree-fc920700e82a)。
+- 📦 [Module Federation Core 0.13](https://github.com/module-federation/core/releases/tag/v0.13.0)：增强 React 19 支持并修复错误。
+- 📦 [Base UI 1.0 alpha-8](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.8)：这款 Radix UI 替代方案持续演进，新增 Toast 和 Meter 等组件。
+- 🎙️ [Syntax.fm - React 服务端组件：现状如何？](https://syntax.fm/show/895/react-server-components-where-are-we-at)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![产品中的自助分析与仪表板](/emails/issues/231/semaphor.jpg)](https://semaphor.cloud)
+
+**[产品中的自助分析与仪表板](https://semaphor.cloud)**
+
+**您的工程师并非为构建仪表板而来。**
+让他们专注功能开发。
+
+通过 Semaphor，您的数据团队可独立交付洞察。无需代码变更，无需前端重新部署。将分析与产品代码解耦，加速前进。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Legend List 1.0](/emails/issues/231/legend-list.png)](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)
+
+**[Legend List 1.0](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)**
+
+优化长列表性能是个难题，React Native 的旧架构因其异步布局计算机制反而增加了复杂度。我们曾见证 Margelo 放弃他们的 `WishList` 项目。
+Legend List 现已推出 1.0 版本，不仅承诺比 `FlashList` 更快的性能，还能处理"复杂场景"：双向无限列表、动态尺寸项……同时兼容旧架构（尽管性能稍低且可能存在显示瑕疵）。
+
+正如 Seb 上周提到的，[`FlashList` v2 版本](https://github.com/Shopify/flash-list/tree/new-rlv-prototype)也在开发中，使用会更简便（例如无需指定 estimatedItemSize）。
+
+值得庆幸的是，这些库都沿用了 `FlatList` 的 API 设计，切换起来非常方便 🙂。
+
+---
+
+- 💸 [PostHog - 如何设置 React Native 会话回放](https://go.posthog.com/twir-apr23)
+- 🐦 [Module Federation 与 Metro Bundler 协同工作的原型](https://x.com/_jbroma/status/1912903068464594993)
+- 🐦 [React Native 支持 CSS 的实验（含网格布局）](https://x.com/mani3xis/status/1912947427864441144)
+- 📖 [React Native 版本策略](https://reactnative.dev/contributing/versioning-policy)：新页面详述了基于 `0.x.y` 模式的版本控制方案，更重要的是阐明了发布流程和破坏性变更的定义。这是明确公共 API 边界甚至缩减范围持续努力的一部分（参见[移除深度导入 RFC](https://github.com/react-native-community/discussions-and-proposals/pull/894)）。React Native 正趋于稳定，或许 v1.0 指日可待？
+- 📜 [减少 Expo 应用卡顿的最佳实践](https://expo.dev/blog/best-practices-for-reducing-lag-in-expo-apps)：重点涵盖开发者工具直接高亮渲染、React 编译器、React 19 及多线程优化。
+- 📜 [移动端离线文本识别：如何将 EasyOCR 引入 React Native ExecuTorch](https://blog.swmansion.com/bringing-easyocr-to-react-native-executorch-2401c09c2d0c)
+- 📜 [使用 Expo & ElevenLabs 构建跨平台应用语音助手](https://expo.dev/blog/how-to-build-universal-app-voice-agents-with-expo-and-elevenlabs)
+- 📜 [弃旧迎新：默认启用新架构](https://expo.dev/blog/out-with-the-old-in-with-the-new-architecture)
+- 📦 [React Native Brownfield 1.0](https://github.com/callstack/react-native-brownfield/releases/tag/v1.0.0)：新增 SwiftUI、Jetpack Compose 支持，并支持打包为框架。
+- 📦 [typegpu-confetti](https://github.com/software-mansion-labs/typegpu-confetti)：通过 `react-native-webgpu` 和 TypeGPU 在 GPU 端独家计算渲染的 React Native 彩带动画。
+- 🎥 [Expo Router 教程](https://www.youtube.com/playlist?list=PLsXDmrmFV_AT17JDf-otXSNE_eH7s0uDD)：前 5 集已上线，涵盖布局文件、堆栈/标签导航器、模态框及认证流程。
+- 🎙️ [RNR 328 - 与 Alexandre Moureaux 探讨 Flashlight](https://infinite.red/react-native-radio/rnr-328-flashlight-with-alexandre-moureaux)
+- 🎙️ [Rocket Ship 65 - Expo SDK 53 预览、RevenueCat 付费墙、AI 图像与 Gemini](https://www.youtube.com/watch?v=evGUO_CN1Fc)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [TC39 第107次会议 - ECMA提案更新](https://ecmascript-daily.github.io/ecmascript/2025/04/19/ecmascript-proposal-update)：总结了上周取得进展的提案。遗憾地看到Records & Tuples提案被撤回，但我们也有一些值得关注的新提案，例如Enums和Composites。
+- 📊 [2025年人工智能现状 - 调查结果](https://2025.stateofai.dev)
+- 📜 [优化Node.js性能：V8内存管理与GC调优](https://blog.platformatic.dev/optimizing-nodejs-performance-v8-memory-management-and-gc-tuning)
+- 📜 [首届开发者现状调查启动](https://dev.to/sachagreif/launching-the-first-ever-state-of-devs-survey-23il)
+- 📜 [GitHub Actions安全实践](https://blog.rafaelgss.dev/securing-github-actions)
+- 📜 [JavaScript打包工具Rspack入门指南](https://blog.appsignal.com/2025/04/16/an-introduction-to-javascript-bundler-rspack.html)
+- 📦 [tsdown - 优雅的库打包工具 - 基于Rolldown](https://tsdown.dev/)
+- 📦 [Node.js 22.15发布](https://nodejs.org/en/blog/release/v22.15.0)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![React Compiler RC梗图 - 展示React Compiler过山车上的猫](/emails/issues/231/meme0.jpg)](https://x.com/potetotes/status/1914855126348480850)
+
+[![Evan Bacon - 在Android Studio折腾一小时后回归Expo - Katy Perry太空返回后亲吻地面的照片](/emails/issues/231/meme1.jpg)](https://x.com/Baconbrix/status/1913353166483058931)
+
+[![巨型竖屏显示"package.json"依赖项 vs 巨型横屏显示"tailwind class names"](/emails/issues/231/meme2.jpg)](https://x.com/trashh_dev/status/1893339204710539265)
+
+再见！👋

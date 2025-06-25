@@ -1,0 +1,145 @@
+---
+slug: /225
+title: "This Week In React #225: React Router, React Aria, Ark, moveBefore(), Ark | JSC, Lynx, Metro, Reanimated, AI, Radon, Galeria, Zeego, Legal | TypeScript, Deno, Web Almanac"
+authors: [slorber]
+date: 03-12-2025
+---
+
+大家好！
+
+本周我们有：
+
+- **React**: 丰富的文章内容，以及React Router和React Aria的重大发布。
+- **React Native**: 众多精彩动态，社区对Lynx的反响热烈。
+- **Other**: TypeScript宣布将令人兴奋地移植到Go语言。
+
+查看我们的合作伙伴会议 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) \- 🇫🇮 埃斯波 - 5月26日至28日。芬兰单轨道会议，带您一窥未来！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![将React代码审查时间和错误减少一半](/emails/issues/225/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)
+
+**[将React代码审查时间和错误减少一半](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)**
+
+代码审查至关重要但耗时。CodeRabbit作为您的AI副驾驶，即时提供代码审查意见和每个拉取请求的潜在影响。
+
+CodeRabbit不仅标记问题，还提供一键修复建议，并允许您使用AST Grep模式定义自定义代码质量规则，捕捉传统静态分析工具可能遗漏的微妙问题。
+
+CodeRabbit已审查超过500万个PR，安装在100万个代码库上，被5万个开源项目使用。所有开源仓库均可免费使用。[立即开始！](https://www.coderabbit.ai?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_mar25)
+
+---
+
+## ⚛️ React {#react}
+
+[![React Router 7.3 - 路由中间件](/emails/issues/225/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)
+
+**[React Router 7.3 \- 路由中间件](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)**
+
+此版本引入了重要的中间件新特性。虽尚未投入生产环境，但可通过`future.unstable_middleware`未来标志启用。支持框架和库两种模式，区分客户端与服务器中间件，可用于实现日志记录、身份验证等横切关注点。
+
+相关社区资源：
+
+- 📜 [在React Router中使用中间件](https://sergiodxa.com/tutorials/use-middleware-in-react-router)
+- 📜 [测试React Router中间件](https://sergiodxa.com/tutorials/test-middleware-in-react-router)
+- 📜 [如何使用React Router中间件创建请求级单例](https://sergiodxa.com/tutorials/create-a-per-request-singleton-with-react-router-middleware)
+- 🎥 [Alem Tuzlak \- React Router中间件来了！](https://www.youtube.com/watch?v=H9WmtBchWtQ)
+
+---
+
+- 💸 [Product for Engineers - WTF is activation and why should engineers care?](https://dub.link/twir-mar12)
+- 👀 [React `moveBefore()` \+ `<ViewTransition>` demo](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3lk6phwfik226): This exciting browser feature permits to move/reorder DOM nodes while preserving their state (useful for video players, iframes…). It has been recently added to the DOM Living Standard, is supported in Chrome 133, and has just been enabled in the React DOM reconciler (experimental release only for now). I made a demo to see it in action combined with the upcoming ViewTransition component.
+- 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 03 April - 3 weeks left before dotJS! Chat 1:1 with top contributors who are rarely in Europe – Ryan Dahl, Wes Bos and more. Secure your spot now and get 15% off tickets with code "TWIR”.
+- 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 13 May. Don't miss our keynote speaker reveal : Sébastien Chopin, Matt Kane, Haris Ali Khan ! Get a 10% discount with code "TWIR".
+- 📜 [React Router \- Split Route Modules](https://remix.run/blog/split-route-modules): Explains how a new future flag enables React Router 7.2 to split a route module into multiple parts to avoid network waterfalls.
+- 📜 [Beyond React.memo: Smarter Ways to Optimize Performance](https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/): Before reaching for memoization, try to restructure your app and embrace composition.
+- 📜 [Server Actions with Toast Feedback (useActionState)](https://www.robinwieruch.de/react-server-actions-toast-useactionstate/): Exploring multiple ways to display a toast notification after a Server Action. I prefer this version, not relying on `useEffect`.
+- 📜 [React Router error reporting from scratch](https://programmingarehard.com/2025/03/11/react-router-error-reporting.html/): A pretty cool article showing how to send React Router loader errors to an email address with a great DX, reading source maps and displaying original source code around the error for each stack frame. Lessons are applicable in other JS contexts.
+- 📜 [How The New York Times systematically migrated from Enzyme into React Testing Library](https://open.nytimes.com/how-the-new-york-times-systematically-migrated-from-enzyme-into-react-testing-library-b3ea538d001c): Using an incremental migration strategy, starting with the simplest tests so that contributors have templates to get inspired from.
+- 📜 [Rails views, web components, React. Why make a choice?](https://www.aha.io/engineering/articles/rails-views-web-components-react): Each technology has its sweet spot. They use React only for rich, stateful interactions.
+- 📜 [How much traffic can a pre-rendered Next.js site really handle?](https://martijnhols.nl/blog/how-much-traffic-can-a-pre-rendered-nextjs-site-handle): Author load testing his self-hosted Next.js blog with pre-rendering and SSR to see how many requests per second it can handle.
+- 💸 [VS Code extension: Visualize how and where components (and their props) are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+- 📦 [React Aria \- March 5, 2025 Release \- Toast, Tree, Virtualizer, Tailwind 4, improved Autocomplete, Command Palette, DatePicker RTL, fix `usePress`, and more](https://react-spectrum.adobe.com/releases/2025-03-05.html)
+- 📦 [Ark UI 5.0 \- Cross-framework headless UI library \- Now faster and smaller](https://ark-ui.com/react/docs/overview/changelog#:~:text=.-,%5B5.0.0%5D%20%2D%202025%2D03%2D06)
+- 🎥 [Jack Herrington \- React/Solid-JS Module Federation on TanStack\!](https://www.youtube.com/watch?v=e8yY9ZgPozw)
+- 🎙️ [Front-end Fire 84 \- TanStack Form v1, ByteDance Debuts Lynx, & VS Code AI Levels Up](https://front-end-fire.com/episodes/84/)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![使用Reactile重新思考React应用的用户体验](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)
+
+**[使用Reactile重新思考React应用的用户体验](https://www.reactile.net/?utm_source=ThisweekinReact)**
+
+Reactile 是一款开箱即用的 UI/UX 交钥匙框架，具有直观的平铺显示和工作区功能。它支持在单个浏览器标签页内为大型 Web 解决方案实现并行工作负载。您可以使用 React 实现自定义视图容器、小组件和逻辑，而显示层交由 Reactile 处理。
+
+此外，Reactile 还提供：
+
+- 基于 Promise 的持久化机制，支持跨时间和多设备的统一工作流
+- 支持瓦片嵌套标签页功能
+- 简化的全局搜索机制
+- 基于 CSS @container 的响应式设计
+- 以及更多功能
+
+版本 2 即将发布。立即开启专属 30 天免费试用，更多详情请访问 reactile.net。
+
+[Reactile - 全新的 React UI 管理系统](https://www.reactile.net/price?utm_source=ThisweekinReact)
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [Introducing native Passkeys support for Expo - Unlock one of the fastest growing auth strategies for your next project](https://go.clerk.com/I4o9cHy)
+- 🧵 [Callstack’s Lynx Deep Dive \- The takeaways from a 3h livestream](https://threadreaderapp.com/thread/1898114457634500692.html)
+- 📜 [How React Native Reanimated Updates the Styles](https://blog.swmansion.com/how-react-native-reanimated-updates-the-styles-a-deep-dive-338ab22e9f21): A deep dive explaining how UI and native props are handled differently
+- 📜 [Local LLMs on Mobile Are a Gimmick—For Now](https://www.callstack.com/blog/local-llms-on-mobile-are-a-gimmick): An overview of the challenges running AI models on-device, such as model size/format, CPU/battery consumption, and quality/speed tradeoffs.
+- 📜 [Transitive Dependencies and React Native Autolinking](https://shift.infinite.red/transitive-dependencies-and-react-native-autolinking-d4d4b7a651cf): Transitive dependencies are not auto-linked for good reasons, and you need to declare them explicitly as `peerDependencies`.
+- 📜 [How to build a solid test harness for Expo apps](https://expo.dev/blog/how-to-build-a-solid-test-harness-for-expo-apps): Helps you adopt the right mindset to test your RN apps.
+- 📜 [React Native vs Lynx JS](https://shift.infinite.red/react-native-vs-lynx-js-b1fffb0f0152)
+- 📜 [An Android Developer's Guide to React Native](https://dev.to/amazonappdev/an-android-developers-guide-to-react-native-j66)
+- 📦 [React Native JavaScriptCore](https://github.com/react-native-community/javascriptcore): The Hermes runtime is widely used now, and the React Native team is extracting the JSC engine to a separate community repository. If you want to use JSC over Hermes, you can opt-in for it in RN 0.79. The built-in JSC will be removed in RN 0.81 or 0.82.
+- 📦 [Metro 0.82 \- Enables `package.json#exports` resolution and lazy file hashing](https://github.com/facebook/metro/releases/tag/v0.82.0): Upgrade included in RN 0.79.
+- 📦 [React Native Worklets 0.1](https://github.com/software-mansion/react-native-reanimated/tree/main/packages/react-native-worklets): Software Mansion is extracting its Reanimated worklet system to a standalone multithreading library. WIP, we’ll probably know more soon.
+- 📦 [Galeria 1.0 \- Universal image viewer](https://github.com/nandorojo/galeria/releases/tag/v1.0.0): Supports New Arch, Web, and works with any image component.
+- 📦 [Zeego 3.0 \- Universal menus/dropdowns](https://github.com/nandorojo/zeego/releases/tag/v3.0.1): Supports New Arch, RN 0.77, Expo 52
+- 📦 [React Native Legal \- Automagically generate dependency/license acknowledgment screens](https://github.com/callstackincubator/react-native-legal)
+- 📦 [React Native Executorch 0.3 \- On-device AI experiences \- Speech to Text, OCR](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.3.0)
+- 📦 [Radon IDE 1.4 \- React Query DevTools, React Scan re-render outliner, JS sampling profiler](https://github.com/software-mansion/radon-ide/releases/tag/v1.4.0)
+- 📦 [Testing Library 13.1 \- React 19 / React Native 0.78 support](https://github.com/callstack/react-native-testing-library/releases/tag/v13.1.0)
+- 📦 [React Native Emoji Popup \- using native primitives \- MCEmojiPicker on iOS, Emoji2 on Android](https://github.com/okwasniewski/react-native-emoji-popup)
+- 🎥 [Theo \- Lynx is incredible (deep dive into Tiktok's React Native killer)](https://www.youtube.com/watch?v=No0k-TMRuMA)
+- 🎥 [Simon Grimm \- Is React Native in trouble? (Lynx, React Native Framework & Vercel)](https://www.youtube.com/watch?v=aqgQatFPNSw)
+- 🎥 [Catalin Miron \- Circular Carousel with Reanimated](https://www.youtube.com/watch?v=6Va1yBFdUxI)
+- 🎙️ [React Native Radio 324 \- Migrating to Expo with Alfred Lieth Årøe](https://infinite.red/react-native-radio/rnr-324-migrating-to-expo-with-alfred-lieth-are)
+- 🎙️ [Rocket Ship 62 \- Navigation, Styling & The State of React Native with Beto](https://share.transistor.fm/s/6a224b64)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [Microsoft - 速度提升 10 倍的 TypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/)：编译器正在移植到 Go 语言，预计速度提升 10 倍，将随 TS 7.0 发布。详见 [Syntax.fm 播客](https://www.youtube.com/watch?v=ZlGza4oIleY)对 TypeScript 团队的专访，特别是选择 Go 而非 Rust 的原因
+- 📜 [2024 网络年鉴 - JavaScript](https://almanac.httparchive.org/en/2024/javascript)：最终章节（JS）已发布。React 使用率达 10%（+25%），但仍远低于 JQuery（74%）
+- 📜 [Node 新增 TypeScript 支持，对 Deno 意味着什么？](https://deno.com/blog/typescript-in-node-vs-deno)：两大运行时以不同方式支持 TS，例如 Deno 内置类型检查和 JSX/TSX 支持
+- 📜 [使用 document​.currentScript 实现内联渲染](https://leanrada.com/notes/inline-rendering-currentscript/)
+- 📜 [可复现性与溯源：信任 JavaScript 供应链](https://blog.vlt.sh/blog/reproducibility)
+- 📦 [Fast-check 4.0 - 基于属性的测试框架](https://fast-check.dev/blog/2025/03/10/whats-new-in-fast-check-4-0-0/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/225/meme.jpg)](https://x.com/schlimmson/status/1895489183101440486)
+
+[![alt](/emails/issues/225/meme2.jpg)](https://x.com/sebastienlorber/status/1899482883472961833)
+
+下次见！👋

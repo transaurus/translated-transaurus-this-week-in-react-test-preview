@@ -1,0 +1,139 @@
+---
+slug: /239
+title: "This Week In React #239: ViewTransition, Suspense, TanStack, Zero, use-mcp, Compiler, Intl-T | 0.80, Stable APIs, iOS prebuilds, shadcn, Expo, InstantDB, Granite | TypeBuddy, Hono, H3, Playwright, cosmos.gl"
+authors: [piaskowyk, tomekzaw]
+date: 06-18-2025
+---
+
+大家好！这里是 **[Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** 的 Krzysztof 和 Tomasz 👋
+
+对 React 生态来说这是相对平静的一周，但 React Native 领域却波澜起伏。Meta 发布了激动人心的 React Native 0.80 公告，宣布正式冻结旧架构。请务必准备好将应用迁移到新架构，这可能是最后的适配窗口期。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![IDE 内免费 AI 代码审查 - VSCode, Cursor, Windsurf](/emails/issues/239/coderabbit.jpg)](https://coderabbit.link/tUMe5xC)
+
+**[IDE 内免费 AI 代码审查 - VSCode, Cursor, Windsurf](https://coderabbit.link/tUMe5xC)**
+
+[CodeRabbit](https://coderabbit.link/6ZXULSK) 是专为加速代码审查、提升代码质量打造的 AI 平台。它能无缝集成到 Git 工作流和现有工具链中，提供代码库感知的审查，并支持所有编程语言。
+
+现在他们激动地宣布：AI 代码审查功能已直接集成到 VS Code、Cursor 和 Windsurf 中，让您和团队在保持心流状态下自信编码并实时审查。
+
+更棒的是：IDE 内的代码审查完全免费！没错：逐行审查和一键修复功能全部可在 IDE 中免费使用。
+
+立即[安装扩展](https://coderabbit.link/LszC1pB)，开始为您的代码注入活力检查吧！
+
+---
+
+## ⚛️ React {#react}
+
+- 💸 [Product for Engineers - The hidden benefits of being an open-source startup](https://go.posthog.com/twir-jun18)
+- 📊 [The State of React and the Community in 2025](https://blog.isquaredsoftware.com/2025/06/react-community-2025/)
+- 📖 [React Compiler – The Mutability & Aliasing Model](https://github.com/facebook/react/blob/156b7a96f5669470182ad226306184576d6f150f/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md)
+- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=ThisWeekinReact) - 🇺🇸 New York - 18 & 21 Nov. Final early bird opportunity! Join Addy Osmani (Google Chrome), Shaundai Person (Netflix), Shawn Swyx Wang & more!
+- 📜 [Bringing React's \<ViewTransition\> to vanilla JS](https://plainvanillaweb.com/blog/articles/2025-06-12-view-transitions/): A good explanation how view transitions are supposed to work and how you can implement them on your own.
+- 📜 [Composable streaming with Suspense](https://twofoldframework.com/blog/composable-streaming-with-suspense): React's Suspense composition allows you to easily implement features like lazy loading or out-of-order rendering without complex configurations and external dependencies.
+- 📜 [Real-Time Gesture Recognition in Videoconferencing](https://blog.swmansion.com/real-time-gesture-recognition-in-videoconferencing-4711855a1a53): browser-based video effects using MediaPipe, Fishjam and Smelter.
+- 📜 [Zero is Not Local-First. It's Better.](https://jjenzz.com/zero-is-not-local-first-its-better/): Zero library is a new sync engine that offers "partial sync first" rather than a full "local-first" approach, meaning it only syncs the data your application actively queries and uses, making it efficient for apps with large datasets. You don't need to take care of cache invalidation because the server is still the source of truth.
+- 📜 [TanStack Start: the Future of React Frameworks?](https://www.premieroctet.com/blog/en/tanstack-future-react-frameworks): Describes the advantages of the TanStack Start framework, which may potentially become a competitor to well-known frameworks like Remix or Next.js.
+- 📜 [Building the Twitter 1.0 Web Experience](https://largeapps.dev/case-studies/twitter/): A case study on how Twitter Lite PWA was optimized over time and the benefits it brought.
+- 💸 [The Road to Next - Master Full-Stack Web Development with Next.js 15 and React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)
+- 📦 [Relay 20.0 – ESLint plugin update](https://github.com/facebook/relay/releases/tag/v20.0.0)
+- 📦 [use-mcp - A lightweight React hook for connecting to Model Context Protocol servers](https://github.com/modelcontextprotocol/use-mcp)
+- 📦 [Intl-T – A Object-Typed Node-Based i18n Translation Library](https://github.com/nivandres/intl-t)
+- 📦 [React Final Form 7.0 – All modules modernized to TypeScript](https://erikras.com/blog/final-form-to-typescript)
+- 📦 [Meteor 3.3 – Faster Builds with SWC and Bundler Optimizations](https://dev.to/meteor/faster-builds-in-meteor-33-modern-build-stack-with-swc-and-bundler-optimizations-fm2) – 60% faster builds
+- 🎥 [Theo – Defending SQL in JSX](https://www.youtube.com/watch?v=PmXZvGtB7_U)
+- 🎥 [Shruti Kapoor – You’re Managing State Wrong in React](https://www.youtube.com/watch?v=c7FQP-tUn1U)
+- 🎥 [Future Frontend Conf – YouTube Playlist](http://youtube.com/watch?v=xadj32ExtWo&list=PLKGgD1M40S4hHnZtFi_kPgRRjMay_2KMp)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Embrace Web RUM 提供以用户为中心的可观测能力](/emails/issues/239/embrace.jpg)](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)
+
+**[Embrace Web RUM 提供以用户为中心的可观测能力](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)**
+
+想要了解技术性能如何实际影响用户参与度？借助 Embrace Web RUM，您可以将遥测数据与实际用户体验关联起来，从而精准定位问题所在、理解其影响并找到解决方案。
+
+完整会话时间线、上下文中的 Core Web Vitals 和 JS 异常分析、支持自定义流程的用户旅程追踪与智能问题关联。基于 OpenTelemetry 构建，可与现有可观测系统无缝集成。
+
+[参加网络研讨会了解更多详情](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 0.80 概览](/emails/issues/239/RN_banner.png)](https://reactnative.dev/blog/2025/06/12/react-native-0.80)
+
+[**React Native 0.80**](https://reactnative.dev/blog/2025/06/12/react-native-0.80)
+
+此里程碑版本宣布了[迈向稳定的 JavaScript API](https://reactnative.dev/blog/2025/06/12/moving-towards-a-stable-javascript-api)的目标，这是精确定义 JS 和 TypeScript API 的持续努力。
+
+核心更新包括：
+
+- React 19.1: Its new `captureOwnerStack()` API can improve the DX of error overlays.
+- JavaScript deep imports deprecation: You’ll have to import everything from the root `’react-native’` exports.
+- Strict TypeScript API (opt in): The Strict TypeScript API is an opt-in preview offering more accurate TypeScript types for the react-native package, generated directly from source code.
+- Legacy Architecture Freezing & Warnings: The React Native team will now focus on the New Architecture.
+- iOS Prebuilds for React Native: iOS builds are roughly 12% faster thanks to shipping prebuilds for Folly and GLog rather than building them from source. In a future release, the rest of React Native core will be shipped as a prebuild.
+
+---
+
+- 💸 [WithFrame - 预构建的 React Native 模板](https://withfra.me)
+- 📣 [Expo 对 React Native 0.80 的支持](https://expo.dev/changelog/react-native-80)：在今年夏天稳定版发布前，您需使用 Expo 54 canary 版本，并直接升级至 RN 0.81。
+- 👀 [shadcn/ui CLI PR - 支持通过 CLI 和注册系统为 Expo 应用搭建组件](https://github.com/shadcn-ui/ui/pull/7540)
+- 👀 [Bluesky 移动应用 PR – 启用新架构](https://github.com/bluesky-social/social-app/pull/8295)
+- 💬 [Flutter - 对 iOS 26“液态玻璃”的支持](https://github.com/flutter/flutter/issues/170310)：值得注意的是，Flutter 将不会在核心中添加对 iOS 26 和 Material 3 Expressive 的支持。
+- 🐦 [将 WWDC 的每个 iOS 26 液态玻璃特性引入 React Native](https://x.com/saul_sharma/status/1934467342576009254)
+- 🐦 [通过 Maestro 加速 iOS 端到端测试运行](https://x.com/janicduplessis/status/1933589353714102511)：避免在不必要时生成递归无障碍标签，该功能将在 0.81 版本中发布。
+- 📜 [2025 年最佳 React Native 调试工具](https://blog.swmansion.com/best-react-native-debugging-tools-in-2025-a95dcac7a014)：React Native 生态系统中调试工具的现状概览。
+- 📜 [在 Expo Router 中使用受保护路由简化身份验证流程](https://expo.dev/blog/simplifying-auth-flows-with-protected-routes)：如何通过 Expo Router 新增的受保护路由，根据用户认证状态直接在布局文件中控制屏幕访问权限。
+- 📜 [Expo + InstantDB – 如果 useState 成为你的后端会怎样？](https://expo.dev/blog/what-if-usestate-was-your-backend)：本教程展示如何通过 InstantDB 在 Expo 应用中简化后端通信，提供类 useState 的体验。
+- 📦 [Granite – 面向微服务应用的棕地友好型 React Native 框架](https://github.com/toss/granite)
+- 📦 [VisionCamera 4.7 - 支持 Android 16 KB 页面大小](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.7.0)
+- 📦 [Gesture Handler 2.26 - 支持 RN 0.80，Pressable 中的关系属性](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.26.0).
+- 📦 [create-react-native-library 0.51 - 在 Android 上支持 16 KB 页面大小](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.51.0).
+- 🎥 [Code with Beto – 液态玻璃底部标签栏](https://www.youtube.com/watch?v=L5f8Gy91Gv4)
+- 🎥 [Michał Pierzchała – 使用 R8 缩小 Android 应用体积](https://www.youtube.com/watch?v=Ud6TSlnEzCc)
+- 🎙️ [Rocket Ship 72 – 冻结架构、应用优化与 React Native 全球布局](https://share.transistor.fm/s/43ce5c20)
+- 🎙️ [RNR 334 – 与 Saad Najmi 探讨 React Native for macOS](https://infinite.red/react-native-radio/rnr-334-react-native-macos-with-saad-najmi)
+
+---
+
+## 🔀 其他 {#other}
+
+- 💡 [TypeBuddy](https://github.com/typed-rocks/type-buddy) – 将 TypeScript 类型编写为函数 ([playground](https://typed-rocks.github.io/type-buddy/))
+- 📜 [CSS 间隙样式新方案](https://developer.chrome.com/blog/gap-decorations?hl=en) – Chrome 和 Edge 139 中可供开发者试用的间隙装饰功能
+- 📜 [WWDC '25 上的 Safari：圣诞幽灵往事](https://infrequently.org/2025/06/the-ghost-of-christmas-past/)
+- 📜 [Node.js 工作线程：JavaScript 多线程完全指南](https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript)
+- 📜 [CSS 缩放动画实践：变换顺序的重要性](https://jakearchibald.com/2025/animating-zooming/)
+- 📜 [ES 模块顶层使用 await](https://allthingssmitty.com/2025/06/16/using-await-at-the-top-level-in-es-modules/) – 实际应用场景、限制与注意事项
+- 📜 [Dan Abramov – 抑制的抑制](https://overreacted.io/suppressions-of-suppressions/) – 关于 linter 抑制及软件开发社会契约的思考
+- 📦 [H3 v2 测试版 - 基于 Web 标准完全重构，向后兼容，性能更优](https://h3.dev/blog/v2-beta)
+- 📦 [Playwright v1.52 & v1.53 – AI 辅助修复，可描述定位器](https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9)
+- 📦 [Hono 4.8 - 路由助手、SSG、第三方中间件支持](https://github.com/honojs/hono/releases/tag/v4.8.0)
+- 📦 [cosmos.gl – OpenJS 基金会推出的高性能图可视化引擎](https://openjsf.org/blog/introducing-cosmos-gl)
+
+---
+
+## 🤭 趣事 {#fun}
+
+[![alt](/emails/issues/239/meme2.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7339605943137009664)
+
+[![alt](/emails/issues/239/meme1.jpg)](https://x.com/mrousavy/status/1922994477712453742)
+
+[![alt](/emails/issues/239/meme3.jpg)](https://nerdy.dev/fathers-day-2025)
+
+再见！👋

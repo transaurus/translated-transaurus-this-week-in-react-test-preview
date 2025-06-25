@@ -1,0 +1,156 @@
+---
+slug: /175
+title: "This Week In React #175: RSC, useSyncExternalStore, Vinxi, Server Actions, Next.js, Remix, margins, WakuLand, R3F-uikit, React-Forget, RN releases, Bridgeless, Expo Fingerprint, Flash Calendar, Zeego, RN Reusables..."
+authors: [slorber, bndkt]
+date: 02-28-2024
+---
+
+大家好！
+
+本周发布方面相当平静，但我们有很多精彩文章可供阅读！
+
+抱歉上周的邮件，由于邮件过长，即使删除了部分链接，它还是被Gmail截断了😅。
+
+<!-- truncate -->
+
+**💡 [在Twitter上查看此新闻简报](https://slo.im/thread) - 视觉格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![支持应用路由的Next.js内联可视化编辑CMS](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com/?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)
+
+**[支持应用路由的Next.js内联可视化编辑CMS](https://reactbricks.com/?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**
+
+[**只需1分钟即可设置项目**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)：通过CLI定义您自己的可视化区块作为React组件，使用任何CSS框架传达像素级完美的企业品牌。尝试支持服务器组件的新Next.js入门项目！
+
+内容编辑者可以轻松使用内容块以可视化方式组合页面，就像使用文字处理器一样，而不会影响设计。
+
+React Bricks已为企业做好准备，具备数字资产管理、高级SEO、实时协作、定时发布、多语言、外部API集成、审批工作流、多环境、更改历史记录等功能。
+
+受The Weather Channel、Deel.com、La Banque Postale等企业客户及全球9000多名用户信赖。
+[**立即开始！**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)
+
+---
+
+## ⚛️ React {#react}
+
+[![使用React服务器组件实现即时搜索参数](/emails/issues/175/next-search.jpg)](https://buildui.com/posts/instant-search-params-with-react-server-components)
+
+**[使用React服务器组件实现即时搜索参数](https://buildui.com/posts/instant-search-params-with-react-server-components)**
+
+一篇出色的交互式文章，展示了在React服务器组件世界中，将UI状态持久化到查询字符串并同时提供即时用户反馈出奇地困难。更新URL会触发服务器往返。新的`useOptimistic`钩子优雅地解决了这个问题。同时展示了CSS `:has()`的巧妙用例，避免提升`startTransition`的挂起状态。
+
+---
+
+[![使用Vinxi构建React元框架](/emails/issues/175/vinxi.jpg)](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)
+
+**[使用Vinxi构建React元框架](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)**
+
+今日了解到[Vinxi](https://vinxi.vercel.app/)，这是一个基于Vite和Nitro构建的工具箱，可轻松创建自定义元框架，支持SSR、路由约定、服务器函数等功能。Solid Start在底层使用它，但它是一个框架无关的SDK。[TanStack Start也将采用它](https://twitter.com/sebastienlorber/status/1762809340719780080)！本文讲解如何将其用于React。
+
+---
+
+- 💸 [Explore how to build a feature-rich PDF Viewer in React with Apryse's rendering engine. Customize UI, scroll, zoom, and search with annotations.](https://apryse.com/blog/build-custom-react-pdf-viewer?utm_source=thisweekinreact2&utm_medium=email&utm_campaign=newsletter2)
+- 📜 [Avoiding Hydration Mismatches with useSyncExternalStore](https://tkdodo.eu/blog/avoiding-hydration-mismatches-with-use-sync-external-store): Another great article from Dominik explaining how `useSyncExternalStore` and its 2 client/server snapshot callbacks can help prevent hydration mismatches. It can be a better alternative to useEffect for many use-cases, including rendering localized dates, or creating a client-only wrapper component.
+- 📜 [Exploring Next.js Forms with Server Actions](https://www.robinwieruch.de/next-forms/): A very comprehensive step-by-step tutorial on using the new React/Next.js form primitives without any abstractions, and all the little mistakes you might make along the way.
+- 📜 [No Outer margin](https://kyleshevlin.com/no-outer-margin/): Gives good reasons to not apply margins inside your component root, but instead let the parent component handle the layout. Margins are the first thing that come to mind, but there are also other CSS rules that break component encapsulation. I recovered a great deleted article for you on that matter: [Layout-isolated components](https://web.archive.org/web/20201024040746/https://visly.app/blog/layout-isolated-components).
+- 📜 [Vjeux - 12 Years at Meta](https://blog.vjeux.com/2024/project/12-years-at-meta.html): If you are a new React developer, you may not have heard of Christopher Chedeau, but he’s one of the most impactful member of our community. A few things he created or significantly contributed to: React, React Native, Yoga, CSS-in-JS, Prettier, Excalidraw, Docusaurus, GraphQL…
+- 📜 [Learning Four Key Primitives In Solid](https://www.brenelz.com/posts/learning-four-key-primitives-in-solid/): Don’t be mislead by the title, it’s a great article for React devs, comparing Solid vs React, Next.js and Remix on 4 interesting topics. TIL that Next.js RSC components would waterfall by default unless you use a preloading function.
+- 📜 [Handle both JSON and FormData in Remix](https://www.jacobparis.com/content/conform-json-formdata): Jacob explains the tradeoffs of using form inputs vs creating a FormData or JSON payload manually on an event handler. Shows how to create an Remix abstraction using Zod and Conform that can conveniently accept both JSON and FormData paylods.
+- 📜 [Introducing Waku Land](https://interbolt.org/blog/waku-land/): A live deployment of every Waku examples.
+- 📜 [Where to host your Remix app in 2024](https://www.jacobparis.com/content/where-to-host-remix?ref=twitter): Updated on 25 Feb.
+- 📜 [HTMX vs React - A Complete Comparison](https://semaphoreci.com/blog/htmx-react): The article suggests to use React for rich web experiences, and use HTMX for pages with simpler interactivity.
+- 📜 [Next.js vs. Remix - A Developer's Dilemma](https://blog.saeloun.com/2024/02/21/next.js-vs-remix/)
+- 📜 [Compiler Theory and Reactivity](https://www.recompiled.dev/blog/ssa/): Sathya works on React Forget and explains a compiler theory pass they use called Static Single Assignment form. I have to admit I’m a bit lost here 😅. His previous post on [Alias analysis](https://www.recompiled.dev/blog/alias-analysis/) is easier to understand.
+- 📜 [How to Style Active Links in Next.js App Router](https://spacejelly.dev/posts/how-to-style-active-links-in-next-js-app-router)
+- 📜 [Add Dynamic Sitemap to Next.js Website Using Pages or App Directory](https://claritydev.net/blog/nextjs-dynamic-sitemap-pages-app-directory)
+- 📦 [@react-three/uikit - Build performant 3D user interfaces using react-three/fiber and yoga](https://github.com/pmndrs/uikit): New Poimandres collective package preview with an impressive 🐦 [demo](https://twitter.com/0xca0a/status/1762069894932160943)
+- 🎥 [Ryan Toronto - Asset loading in React 19](https://www.youtube.com/watch?v=dxWLp-8mXes): Explains a quite unknown but exciting upcoming React feature that lets you load assets (here CSS) of the next page before completing the navigation transition.
+- 🎥 [Jack Herrington - React Hook Form & React 19 Form Actions, The Right Way](https://www.youtube.com/watch?v=VLk45JBe8L8)
+- 🎥 [Fireship - They made React great again? (React Labs)](https://www.youtube.com/watch?v=4k6Xgjqkad4)
+- 🎥 [Fireship - This UI component library is mind-blowing (Aceternity Components)](https://www.youtube.com/watch?v=RPa3_AD1_Vs)
+- 🎙️ [PodRocket -StyleX with Naman Goel](https://podrocket.logrocket.com/stylex-naman-goel)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![最全面的用户管理平台](/emails/issues/172/clerk.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)
+
+**[最全面的用户管理平台](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)**
+
+Clerk 简化了 React 应用的认证和用户管理，确保现代 Web 应用的快速搭建。
+
+体验 Clerk 的优势：
+
+- 💅 预构建的 UI 组件：登录、注册、用户档案和组织管理。可使用任何 CSS 库自定义并部署在您的域名
+- 📦 支持 React、React Native、Next.js、Redwood、Remix 等框架的 SDK
+- ⚡ 与 Firebase、Supabase、Convex 等 BaaS 提供商的集成
+- 🎁 开箱即用的用户管理、社交登录、魔法链接、多因素认证等功能
+
+探索 Clerk 的[快速入门指南和教程](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)，即刻启动您的项目 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+本版块现由 [Benedikt](https://twitter.com/bndkt) 联合撰写。欢迎通过邮件或 [Twitter](https://twitter.com/bndkt) 向我们反馈意见！
+
+过去一周，我们暂时没有重大 React Native 新闻（或者我错过了什么？有请 [@me](https://twitter.com/bndkt)）。在经历了 Expo 50、visionOS、React Native 现状报告、react-strict-dom 等事件旋风后，这或许是个令人欣慰的喘息。但这并不意味着 React Native 世界停滞不前。许多小型公告让我们得以窥见 React Native 的近未来。[RN 0.74](https://github.com/facebook/react-native/blob/ee2bc59dfe4579cad3b7f0b5de667a89fcac8710/CHANGELOG.md#0740-rc0) 的首批候选版本已发布，包含大量改进以及部分弃用和破坏性变更，但初步看来没有令人担忧的重大升级负担。最值得注意的是，桥接模式（bridgeless）将在 0.74 版本中成为新默认项（但仅在启用新架构时生效）。作为新架构的第三大支柱，桥接模式紧随已推出的 TurboModules 和新渲染器（Fabric）之后。关于新架构和默认设置，一个[PR](https://github.com/facebook/react-native/pull/43135) 已合并，将使新架构从 RN 0.75 起成为默认选项（但仍可选择退出）。此外，定义 [React Native 框架](https://github.com/react-native-community/discussions-and-proposals/blob/main/proposals/0759-react-native-frameworks.md) 的 RFC 也已合并，明确了 RN 与上层框架的职责边界。
+
+---
+
+- 💸 [React Universe Conf - 立即以最低价加入会议。目前有数量有限的“盲鸟票”可供抢购。](https://www.reactuniverseconf.com/)
+- 📜 [如何将原生 iOS 代码集成到 React Native 的 iOS 项目中](https://www.themorrow.digital/blog/how-to-integrate-native-modules-in-react-native-ios-apps)：关于桥接头（bridging headers）、@objc 等内容很好的入门介绍，这些是深入 iOS 原生代码前必备知识。
+- 📜 [react-strict-dom 为何如此出色？](https://szymonrybczak.dev/blog/react-strict-dom) 若想了解 `<html.div>` 如何成为 iOS 原生组件，请阅读这篇 react-strict-dom 的简明解析。
+- 📜 [Expo 推送通知迁移至 FCM V1](https://expo.dev/blog/expo-push-notifications-migrating-to-fcm-v1)：今年六月 FCM Legacy 将加入谷歌停服名单，迁移刻不容缓！
+- 📜 [@expo/fingerprint 🤝 GitHub Actions](https://expo.dev/blog/expo-fingerprint-github-actions) 个人认为 Fingerprint 是 Expo SDK 50 最被低估的功能，本文展示其杀手级应用场景：当 Fingerprint 判定需要新原生构建时立即触发。
+- 📜 [通用应用：单一代码库驱动移动端、桌面端、Web 和 TV？](https://www.reactnativetv.com/blog/universal-apps-powering-seven-platforms) 堪称圣杯级目标，也是 2024 年我最期待的主题：一个应用覆盖全平台。本文提出了有趣见解。
+- 📜 [如何使用 Expo 和 Legend State 构建离线优先应用](https://expo.dev/blog/offline-first-apps-with-expo-and-legend-state)
+- 📦 [React Native 0.74-rc.1](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.1)
+- 📦 [React Native v0.73.5](https://github.com/facebook/react-native/releases/tag/v0.73.5)
+- 📦 [react-native-visionos 0.73.6](https://github.com/callstack/react-native-visionos/releases/tag/v0.73.6-visionos)：支持多窗口并更新[文档](https://callstack.github.io/react-native-visionos-docs/)！
+- 📦 [Zeego 1.8 + 1.9 - 跨平台通用菜单 - 新增水平分组和组标签](https://github.com/nandorojo/zeego/releases)
+- 📦 [react-native-image-editor 4.0 - 支持 base64 输出、格式属性、返回元数据](https://github.com/callstack/react-native-image-editor/releases/tag/4.0.0)
+- 📦 [React Native Flash Calendar - 基于 Shopify FlashList 的快速灵活日历组件](https://github.com/MarceloPrado/flash-calendar)
+- 📦 [react-native-reusables](https://github.com/mrzachnugent/react-native-reusables)：我钟爱 web 端的 shadcn/ui（UI 库），这个项目将其引入 RN！
+- 🎥 [Fireship - 100 秒了解 Expo](https://www.youtube.com/watch?v=vFW_TxKLyrE)
+- 🎥 [Theo Brown - React 的下次重大变革？（react strict dom）](https://www.youtube.com/watch?v=hz5gbCXJ-vA)
+- 🎥 [Expo - 如何使用 Expo SDK 50 构建 TV 应用](https://www.youtube.com/watch?v=PUMBWeLVuiw)
+- 🎙️ [Rocket Ship 031 - 与 Kacper Kapuściak 探讨 React Native 手势与微交互](https://share.transistor.fm/s/64cd1071)
+- 🎙️ [RNR 289 - 真实场景中的 React Native：David Leuliette 谈零售扫描应用开发](https://www.reactnativeradio.com/episodes/rnr-289-real-life-react-native-david-leuliette-talks-retail-shake-scanner)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [苹果在欧盟扼杀PWA - 需要立即行动](https://open-web-advocacy.org/apple-attempts-killing-webapps/)
+- 👀 [TypeScript PR - 通过控制流分析从函数体推断类型谓词](https://github.com/microsoft/TypeScript/pull/57465)
+- 👀 [Rsbuild v1.0发布计划 - 2024年7月前发布Rspack v1和Rsbuild v1](https://github.com/web-infra-dev/rsbuild/discussions/1678)
+- 📜 [CSS :has()交互式指南](https://ishadeed.com/article/css-has-guide/)
+- 📜 [作为TypeScript替代语法的JSDoc](https://alexharri.com/blog/jsdoc-as-an-alternative-typescript-syntax)
+- 📜 [Node.js 2023年度回顾](https://blog.rafaelgss.dev/nodejs-2023-year-in-review)
+- 📦 [Babel 7.24 - 装饰器更新和JSON模块导入](https://babeljs.io/blog/2024/02/28/7.24.0)
+- 📦 [TypeScript 5.4 RC - NoInfet工具类型、闭包类型收窄改进](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4-rc/)
+- 📦 [LightningCSS 1.42 - light-dark()函数、系统颜色、自定义属性去重](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.24.0)
+- 📦 [Chrome 122 - 性能开发工具、存储桶、异步剪贴板](https://developer.chrome.com/blog/new-in-chrome-122/)
+- 📦 [PGlite - WASM中的PostgreSQL](https://github.com/electric-sql/pglite)
+- 📦 [snap - node:test的快照测试伴侣](https://github.com/mcollina/snap)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![图片](/emails/issues/175/meme.jpg)](https://twitter.com/sebastienlorber/status/1760963583603581163)
+
+下次见！👋

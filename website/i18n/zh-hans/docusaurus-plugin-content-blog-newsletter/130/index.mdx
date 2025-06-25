@@ -1,0 +1,177 @@
+---
+slug: /130
+title: "This Week In React #130: Next.js, callback ref, Zod, Redux, React-Hook-Form, Redux, mdxjs-rs, Tamagui, Skia, Shopify, Solid, Bun..."
+authors: [slorber]
+date: 01-03-2023
+---
+
+大家好，2023新年快乐 🍾🥂🥳️
+
+在这个假期里，Next.js发布了新版本，并出现了一些优秀的React文章，社区依然相当活跃。React-Native生态系统也格外活跃，包括Tamagui、TypeScript支持以及Shopify的两篇文章。
+
+现在已有超过**15000名订阅者**每周阅读我的内容 😍
+
+感谢你们的忠诚和对本项目发展的贡献。我很快会发布2022年度回顾来全面总结。在此期间，你们可以在我的[Indie Hackers页面](https://www.indiehackers.com/product/french-react-newsletter)找到更多信息。
+
+通讯提前回归：我推迟了滑雪计划，因为积雪不足 😅。下一期将于1月17日发布。
+
+哦，我终于成功创建了一个[病毒式传播的梗图](https://twitter.com/sebastienlorber/status/1610243388174991360) 🥲
+
+<!-- truncate -->
+
+**💡 [在Twitter上查看这份通讯](https://slo.im/thread) - 视觉格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![React Bricks is a CMS with visual editing based on React components](/emails/issues/128/reactbricks.png)](https://reactbricks.com/?utm_source=this_week_in_react)
+
+**[React Bricks是基于React组件的可视化编辑CMS](https://reactbricks.com/?utm_source=this_week_in_react)**
+
+**对开发者灵活**：使用React组件创建自定义设计系统，在JSX中添加可视化编辑，通过侧边栏控件编辑背景色等属性。支持Next.js、Gatsby或Remix及任意CSS框架！
+
+**内容编辑者易上手**：可直接可视化编辑且不破坏设计系统，比无头CMS的抽象字段编辑更直观。**节省时间**，内容编辑者可自主操作！
+
+**具备企业级功能**：协作、时间机器、单点登录、GDPR合规数据中心、全球CDN图片优化、电商集成、定时发布等。
+
+从这里开始：[ReactBricks.com](https://reactbricks.com/?utm_source=this_week_in_react)
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 13.1](/emails/issues/130/nextjs-13.1.jpg)](https://nextjs.org/blog/next-13-1)
+
+**[Next.js 13.1](https://nextjs.org/blog/next-13-1)**
+
+本次小版本更新包含多项改进：
+
+- app目录功能优化与错误修复
+- TypeScript插件提供卓越开发体验
+- 模块转译支持
+- Turbopack及基准测试改进
+- 转换导入的SWC插件
+- Edge运行时在API路由和高级中间件中已稳定
+
+---
+
+- 📖 Beta docs [useEffectEvent](https://beta.reactjs.org/learn/separating-events-from-effects#declaring-an-effect-event): some updated doc for the newly renamed React hook. The [new site is coming in January](https://twitter.com/dan_abramov/status/1606646280649904131)!
+- 📖 Redux docs [Side Effects Approaches](https://twitter.com/acemarke/status/1607869290715222016): new docs page with recommendations, and comparing thunks, sagas, observables, listeners, RTQ Query...
+- 📜 [React ref Callback Use–Cases](https://julesblom.com/writing/ref-callback-use-cases): complete article about callback refs which allow to trigger side effects related to DOM elements. Jules presents many use cases: portals, measuring a DOM element...
+- 📜 [The Ultimate Form Abstraction](https://www.brendonovich.dev/blog/the-ultimate-form-abstraction): explains how to use React-Hook-Form with a Zod resolver. Leverage the brand new Zod type-coercion feature for number inputs. Gradually build a great form abstraction with a good DX and typesafety.
+- 📜 [A React Developer’s First Take on Solid](https://jakelazaroff.com/words/a-react-developers-first-take-on-solid/): an interesting comparison between Solid and React, then SolidStart and Next.js/Remix. Jake also lists things he doesn't like in Solid.
+- 📜 [A Review of UltraJS, Mixing React and Deno in a Single Framework](https://blog.bitsrc.io/a-review-of-ultrajs-mixing-react-and-deno-in-a-single-framework-8e4dd41ea076): this React framework for Deno pushes the latest innovations forward (ES without bundling, ImportMaps...).
+- 📜 [Turbocharging Next.js: How Remote Caching decreased publish times by 80%](https://vercel.com/blog/turborepo-remote-cache-nextjs-publish-times-80-percent): feedback from Vercel, using Turborepo and Remote Caching to reduce Next.js build times, especially the native SWC binary build.
+- 📜 [Hello React, Goodbye useEffect (I Hope)](https://blog.imam.dev/post/hello-react-18-goodbye-useffect): well documented article about useEffect, probably too much used in our codebases. It is above all a synchronization tool. Some inconsistencies, but worth reading.
+- 📜 [Simplifying React Three Fiber with Entity Component System](https://douges.dev/blog/simplifying-r3f-with-ecs)
+- 📜 [Everything you need to know about Concurrent React (with a little bit of Suspense)](https://blog.codeminer42.com/everything-you-need-to-know-about-concurrent-react-with-a-little-bit-of-suspense/)
+- 🤔 [Bun + new JSX 2.0 Syntax](https://twitter.com/jarredsumner/status/1609025481684422659): add support to the `<User {user} />)` syntax. A news that does not please everyone because the spec of JSX 2.0 is not finalized.
+- 👀 [Remix - CSS Modules support](https://github.com/remix-run/remix/pull/4852): PR has been merged, should be released soon.
+- 📦 [mdxjs-rs](https://github.com/wooorm/mdxjs-rs): a Rust implementation of MDX 👌
+- 📦 [react-wrap-balancer](https://github.com/shuding/react-wrap-balancer): a component to balance the text of your titles on several lines (impossible in CSS). It inlines JavaScript to avoid layout shifts.
+- 📦 [react-resizable-panels](https://github.com/bvaughn/react-resizable-panels) ([demo](https://twitter.com/brian_d_vaughn/status/1605751430542925827)): a new lib from Brian Vaughn that allows you to resize elements of a layout.
+- 📦 [gltfjsx v6](https://twitter.com/0xca0a/status/1605566666066124802): optimizations on the GLTF 3D model loader.
+- 📦 [react-ts-form](https://github.com/iway1/react-ts-form): Zod and React-Hook-Form based form lib
+- 📦 [Gatsby 5.3](https://www.gatsbyjs.com/docs/reference/release-notes/v5.3/)
+- 📊 [Mobile Performance of Next.js Sites](https://calendar.perfplanet.com/2022/mobile-performance-of-next-js-sites/)
+- 🎥 [3 React Mistakes, 1 App Killer](https://www.youtube.com/watch?v=QuLfCUh-iwI)
+- 🎥 [Learn with Jason - TanStack Query v4 with Dominik Dorfmeister](https://www.learnwithjason.dev/tanstack-query-v4)
+- 🎥 [Learn How I Built a Twitter UI with TypeScript, Qwik, SolidJS, and React in Mitosis](https://www.youtube.com/watch?v=07UW3REM6k8)
+- 🎥 [Remotion - The Rust journey begins](https://twitter.com/JNYBGR/status/1610273808820363265)
+- 👥 [Storybook Day user conference](https://storybook.js.org/blog/storybook-day/): online conference on March 14, launch of Storybook 7.0
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Developer Nation Survey - Do you want to make an impact on the developer ecosystem?](/emails/issues/128/dn-survey.png)](https://developereconomics.net/?member_id=thisweekinreact)
+
+**[你想对开发者生态系统产生影响吗？](https://developereconomics.net/?member_id=thisweekinreact)**
+
+根据最新的开发者状况报告，React 是迄今为止最受欢迎的前端库，58% 使用客户端 Web 框架的 Web 开发者都在使用它。您对此有何看法？
+
+参与 Developer Nation 迄今为止最全面的[调查](https://developereconomics.net/?member_id=thisweekinreact)，塑造 2023 年开发者关键趋势并赢取丰厚奖品！🎁
+
+完成问卷后，您将免费获得虚拟礼品袋。别忘了注册参加每周抽奖。在 250 份奖品中，您可能会找到 ThinkPad L15 Gen 3、Intel NUC 10 Performance Mini PC、物联网套件、iPad Air、礼品卡、Udemy 课程、技术配件等等。
+
+[从这里开始](https://developereconomics.net/?member_id=thisweekinreact)！
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Tamagui 1.0](/emails/issues/130/tamagui.jpg)](https://tamagui.dev/blog/version-one)
+
+**[Tamagui 1.0](https://tamagui.dev/blog/version-one)**
+
+Tamagui 已正式结束测试版，它让基于 React 的同一代码库创建跨平台项目（Web 和移动端）变得容易，同时不会牺牲开发体验（DX）或性能。该项目分为三个部分：
+
+- Tamagui Core：基于 React-Native 和 [React-Native-Web-Lite](https://www.npmjs.com/package/react-native-web-lite) 的 CSS-in-JS 运行时
+- Tamagui Static：支持视图扁平化和原子 CSS 样式提取的 Babel 编译器和 Node 预评估工具
+- Tamagui UI：便于使用的 React 组件和钩子库
+
+Tamagui 作为创新项目获得了样式和跨平台领域思想领袖的积极反馈。即使您仅针对单一平台开发也值得关注，它已支持 React 18 的服务器组件、并发模式等特性。值得尝试！
+
+---
+
+[![React Native Skia：年度回顾与未来展望](/emails/issues/130/skia.jpg)](https://shopify.engineering/react-native-skia-2022)
+
+**[React Native Skia：年度回顾与未来展望](https://shopify.engineering/react-native-skia-2022)**
+
+William Candillon 对 React-Native-Skia 项目进行了精彩回顾。提醒您，[Skia](https://skia.org/) 是 Google 的 2D 引擎，被 Chrome、Android、Flutter 等使用。该项目通过 UI 线程渲染和新的声明式 Skia DOM API 显著提升了性能。该库灵活可扩展（支持 Skottie、VisionCamera 帧处理等），2023 年预计将实现基于 worklets 的动画、与 Reanimated 的深度集成以及文本布局功能。
+
+---
+
+- 📊 [State of React-Native 2022](https://twitter.com/swmansion/status/1605957585684799493): 调查问卷已开放。我会很快发送专属邮件，因为您的回答非常重要 😜
+- 📜 [First-class Support for TypeScript](https://reactnative.dev/blog/2023/01/03/typescript-first): React-Native 0.71 即将发布，默认提供完整的 TypeScript 支持：类型定义、文档和入门模板。
+- 📜 [Shopify - Migrating our Largest Mobile App to React Native](https://shopify.engineering/migrating-our-largest-mobile-app-to-react-native): Shopify 正在逐步将其主要应用迁移至 React-Native。这是一个拥有 300 多个屏幕、无重大技术债的 6 年老应用。关于这项持续迁移（目前完成约 10%）的反馈非常有趣。初期方案（用 React-Native 开发新功能）未能奏效，最终选择先转换应用根组件。
+- 📜 [Implementing CSS Style Inheritance in React Native](https://www.builder.io/blog/implementing-css-style-inheritance-in-react-native): 解析如何在 React-Native 中实现 CSS 级联机制（该特性因合理原因未被原生支持）。这对 CMS 集成尤其有用，因为 CMS 通常假设父级 View 能继承文本样式（类似 Web 行为）。
+- 📜 [Google Drive auto-backup for React Native on Android](https://dev.to/retyui/google-drive-auto-backup-for-react-native-on-android-254a): 实现跨设备持久化 Async Storage（或其他数据）。
+- 🎥 [How to use Bluetooth Low Energy ( BLE ) Beacons with React-Native](https://www.youtube.com/watch?v=1hYM_sdQcBU)
+
+---
+
+## 🧑‍💻 工作机会 {#jobs}
+
+🧑‍💼 [**Causal 招聘产品工程师，远程/伦敦/纽约，$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal 是 A 轮初创公司（获 Coatue/Accel 投资），致力于构建一体化数字处理与数据可视化工具。诚聘能解决复杂 UX/性能难题的资深 React 工程师。
+
+🧑‍💼 [**Callstack - 高级 React Native 开发工程师，完全远程，B2B 合同月薪净收入 2.1万-3.2万波兰兹罗提**](https://www.callstack.com/senior-react-native-developer)
+
+您希望参与全球热门应用的开发吗？想要共同塑造 React Native 技术生态吗？加入 Callstack 的 React 技术领导者团队。详情请访问官网，期待您的申请——请尽情展示才华！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们开放多个 React Native 开发职位！年薪约 16 万美元 + 10% 奖金。需具备 RN 生产环境经验且位于美国境内。私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解详情，并提及 This Week in React。
+
+💡 [如何发布招聘信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [JavaScript 框架 - 迈向 2023](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2023-nln)
+- [2022 CSS 更新](https://12daysofweb.dev/2022/2022-css-updates/)
+- [Nx 15.4 — 支持 Vite 4、全新的 Nx Watch 命令等更多功能！](https://blog.nrwl.io/nx-15-4-vite-4-support-a-new-nx-watch-command-and-more-77cbf6c9a711)
+- [Jamstack 趋势：2023 年我们将如何开发？](https://www.netlify.com/blog/jamstack-trend-predictions-2023/)
+- [我们如何提升 monday.com 看板的滚动性能](https://engineering.monday.com/how-we-improved-monday-com-boards-scroll-performance-a-case-study-on-boosting-fps-by-50/)
+- [Bun 0.4.0](https://twitter.com/jarredsumner/status/1606345309050634240)
+- [bunx - 比 npx 快 100 倍](https://twitter.com/jarredsumner/status/1606163655527059458)
+- [pretty-cache-header](https://github.com/jjenzz/pretty-cache-header)：将人类可读的时间字符串解析为秒数
+- [HTTP/3 优先级机制解析](https://calendar.perfplanet.com/2022/http-3-prioritization-demystified/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/130/meme.jpg)](https://twitter.com/sebastienlorber/status/1610243388174991360)

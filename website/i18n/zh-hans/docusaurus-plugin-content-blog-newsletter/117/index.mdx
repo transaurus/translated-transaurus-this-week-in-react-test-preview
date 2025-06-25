@@ -1,0 +1,143 @@
+---
+slug: /117
+title: "This Week In React #117: React criticism, useEvent, Next.js, Remix, Gatsby, Expo, Storybook, Ignite, React-Native, TypeScript, Qwik..."
+authors: [slorber]
+date: 09-27-2022
+---
+
+大家好！
+
+本周我们有一些有趣的React批评文章值得一读。
+
+我们还有各种关于路由的有趣消息：Next.js、React-Router、Expo...
+
+本通讯**终于恢复到了每周的常规节奏**！我刚休假回来，并借此机会更换了电子邮件提供商：我现在使用[ConvertKit](https://thisweekinreact.com/ck)。这使我在邮件渲染方面拥有更大的灵活性，并允许我稍后引入一些新功能 ;)
+
+<!-- truncate -->
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助 {#sponsor1}
+
+[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)
+
+您是否已经尝试过[Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)？它是专为开发者和营销人员设计的带可视化编辑器的无头CMS！
+
+使用Storyblok React SDK快速构建可复用组件并获取内容，创建您的React、Next.js、Remix甚至React-Native应用程序、网站或电子商务平台。
+
+查看[技术中心](https://www.storyblok.com/technologies?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)，亲自探索吧！
+
+---
+
+## ⚛️ React {#react}
+
+**[React，我爱你，但你让我失望](https://marmelab.com/blog/2022/09/20/react-i-love-you.html)**
+
+React-Admin的作者从多个方面（表单、useContextSelector、refs、依赖数组等）对React提出了中肯的批评。不要错过[Dan Abramov的回应](https://twitter.com/dan_abramov/status/1572590212647391235)。
+
+**[五分钟了解Next.js布局RFC](https://vercel.com/blog/next-js-layouts-rfc-in-5-minutes)**
+
+基于文件系统的Next.js路由器将在下一个主要版本中大幅升级。它包含对嵌套布局（类似Remix）的支持，可避免浏览时不必要的布局卸载/重挂载，同时管理数据加载和错误处理。本文提供了快速概述。另见[Delba的推文](https://twitter.com/delba_oliveira/status/1568291558776274945)。
+
+**[React Router 6.4](https://remix.run/blog/react-router-v6.4)**
+
+重大更新：正如预期，许多Remix API（数据加载、变更等）最终迁移到了React-Router。观看[2分钟视频](https://www.youtube.com/watch?v=aX74DbFT5nI)
+
+**[Gatsby 2022有哪些新功能？](https://www.smashingmagazine.com/2022/09/new-gatsby-2022/)**
+
+Paul将其博客升级至最新Gatsby v4版本，并分享了使用最新功能的经验。延迟静态生成可显著减少构建时间。另见[Gatsby 5总体讨论](https://github.com/gatsbyjs/gatsby/discussions/36609)和视频[Gatsby v5 Alpha展示](https://www.youtube.com/watch?v=C-WrnfUm33k)：部分水合即将到来！
+
+**其他内容**：
+
+- 🧑‍🎓Beta docs: [useCallback](https://twitter.com/dan_abramov/status/1570021510659579904) + [useMemo](https://twitter.com/dan_abramov/status/1568602727147520000)
+- 💬 [useEvent update](https://github.com/reactjs/rfcs/pull/220#issuecomment-1259938816): the `useEvent` prototype is implemented and available via `@experimental`. Some concerns will lead to the opening of a new RFC. If I understand correctly it is possible that this hook will never be released but another solution will be adopted.
+- 💬 [Dan Abramov - "in what ways is react 18 faster than react 17?"](https://www.reddit.com/r/reactjs/comments/xmr9tg/comment/ippsuin/)
+- 📜 [The new wave of Javascript web frameworks](https://frontendmastery.com/posts/the-new-wave-of-javascript-web-frameworks/): a good overview of the frontend ecosystem of Flash until today. Focus on React and its various challengers: Vue, Svelte, Solid, Qwik, Astro, Fresh...
+- 📜 [Get in Zoomer, We're Saving React](https://acko.net/blog/get-in-zoomer-we-re-saving-react/): article with interesting ideas. I didn't quite understand what the conclusion is except that React can do better and its challengers don't really improve things 😅
+- 📜 [useState with URLs: How to persist state with useSearchParams](https://blog.logrocket.com/use-state-url-persist-state-usesearchparams/): explains how and why to persist React state in querystring
+- 📜 [An apparent React bug](https://phelipetls.github.io/posts/surprising-react-bug/): related to behavior of the `<details>` element
+- 📜 [When to use “useImperativeHandle” and “forwardRefs” in React 18](https://betterprogramming.pub/when-to-use-useimperativehandle-and-forwardrefs-in-react-18-89cce42b3309)
+- 📜 [I18n with Storybook](https://storybook.js.org/blog/internationalize-components-with-storybook/): shows how to bring full i18n support in Storybook: locale dropdown switch, RTL support...
+- 📜 [Storybook community showcase #3](https://storybook.js.org/blog/community-showcase-3/)
+- 📜 [The Basics of Remix](https://css-tricks.com/the-basics-of-remix/)
+- 📜 [React and Observables from RxDB](https://www.sabre.com/locations/poland/react-and-observables-from-rxdb/)
+- 📜 [Automated Rule Docs With Docusaurus and Remark](https://typescript-eslint.io/blog/automated-rule-docs-with-docusaurus-and-remark/)
+- 📜 [Me & React: 5 Years in 15 Minutes](https://valeriavg.dev/me-and-react-5-years-in-15-minutes)
+- 🐦 [Mitosis - Write components with Sveltejs syntax, compile to other frameworks d](https://twitter.com/Steve8708/status/1573444026006585345)
+- 🎥 React Finland [day 1](https://www.youtube.com/watch?v=zE8PDM_7xoQ) + [day 2](https://www.youtube.com/watch?v=rHjwZu0EmlQ)
+- 🎥 [5 Pro-Level React Do's & Don'ts](https://www.youtube.com/watch?v=4FhJkX18fS8)
+- 🎥 [freeCodeCamp - Code a Minecraft Clone with JavaScript, React, Three.js](https://www.youtube.com/watch?v=qpOZup_3P_A)
+- 🐦 [React is focused on the problems that matter more](https://twitter.com/heyImMapleLeaf/status/1567960223759093760): interesting conversations. See also [Evan You](https://twitter.com/youyuxi/status/1569485243077529602) comment.
+- 🐦 [React form without useState](https://twitter.com/DavidKPiano/status/1569361453928300545)
+- 🚧 [MUI Base: the headless alternative to Material UI](https://twitter.com/MUI_hq/status/1570695041034731520)
+- 🎙️ [JS Party #244 - The spicy React debate show 🌶️](https://changelog.com/jsparty/244)
+- 📦 [Its fine](https://github.com/pmndrs/its-fine): a collection of advanced escape hatches for React. Useful for [bridging React context between renderers in the React-Three-Fiber ecosystem](https://twitter.com/0xca0a/status/1573064826339094528)
+- 📦 [Theatre.js v0.5](https://www.theatrejs.com/blog/theatre-05-is-out): new 3D editor, useful for React-Three-Fiber
+- 📦 [TinyBase 2.0](https://twitter.com/tinybasejs/status/1570864399728136193): reactive datastore with React bindings
+- 📦 [React-Tether 3.0](https://github.com/danreeves/react-tether/releases/tag/v3.0.0): one of the very first positioning libs for React seems to be back in business
+- 📦 [TanStack Query 4.4](https://github.com/TanStack/query/releases/tag/v4.4.0): decoupled from React, brings the support of another framework: SolidJS.
+- 🥳️ [Next.js merged 10000 pull-requests](https://twitter.com/github/status/1574750716966498304)
+
+<SubscribeFormEmbed />
+
+---
+
+## 📱 React Native {#react-native}
+
+**[RFC：基于文件系统的原生路由（Expo 与 React Native）](https://blog.expo.dev/rfc-file-system-based-routing-in-react-native-7a35474722a)**
+
+Evan Bacon 正在开发基于文件系统约定的新型 Expo 路由器，类似于 Next.js 或 Remix。他详细介绍了这一备受期待的功能，该功能将 Web 开发体验（DX）引入移动端。这将显著减少应用的样板代码，同时提升可发现性、深度链接、索引、数据加载和错误处理能力。另请参阅此[讨论串](https://twitter.com/Baconbrix/status/1574837248029331495)和此[播客](https://podrocket.logrocket.com/expo-router)。
+
+- 📦 [Ignite 8.0: "Maverick" 发布公告](https://shift.infinite.red/announcing-ignite-8-0-maverick-fbbdafbb738e)。InfiniteRed 热门的 React Native 样板项目迎来重要更新，包含多项改进：统一 Expo/Vanilla RN 支持、重新设计、国际化...
+- 📦 [FlashList 1.3 - MasonryFlashList](https://twitter.com/naqvitalha/status/1574416547426496513)：在 React Native 中实现类似 Masonry/Pinterest 的网格布局
+- 🥳️ [TypeScript 类型已在 v0.71 内置](https://twitter.com/thymikee/status/1572132314280300546)。不再需要额外安装 `@types/react-native`
+- 🥳️ [React Native 周下载量突破 100 万次](https://twitter.com/thymikee/status/1574441040626552832)
+- 🐦 [0.70 版本：堆栈跟踪显著优化](https://twitter.com/thymikee/status/1568257655323475972)
+- 🎨 [Amazon Interactive Video Service 演示](https://twitter.com/nightstomp/status/1572576326934208513)：React Native 性能优于 TikTok？
+- 🎨 [Software Mansion - 共享元素过渡 + Reanimated 预览演示](https://twitter.com/swmansion/status/1572246971829608449)
+- 📜 [使用 React Native Testing Library 测试 WebView](https://coolsoftware.dev/testing-react-native-webview-with-react-native-testing-library/)
+- 🎙 [The React Native Show #16 - React Native 在微软的应用](https://www.callstack.com/podcasts/react-native-at-microsoft-ep-16)
+- 🎙 [React-Native-Radio #247 - 重温五年前对 React Native 的常见质疑](https://reactnativeradio.com/episodes/rnr-247-revisiting-common-complaints-about-react-native-5-years-later-interview-with-hodeem)
+- 🔗️ [There's a Snack for That](https://www.snackforthat.com/)：Expo Snacks 集合
+
+---
+
+## 🧑‍💻 工作机会 {#jobs}
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们开放多个 React Native 开发职位！年薪约 16 万美元外加 10% 奖金。需具备 React Native 生产环境经验且位于美国境内。私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解详情，并请注明来自 This Week in React。
+
+💡 [如何发布招聘信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Qwik 和 Qwik City 已进入测试版！](https://www.builder.io/blog/qwik-and-qwik-city-have-reached-beta)：基于可恢复性（而非水合）的前沿框架，React 的挑战者
+- [TypeScript 4.9 测试版](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/)：万众期待的 `satisfies` 新特性！
+- [Token CSS](https://twitter.com/tokencss/status/1571823928187633664)：Tailwind 的潜在替代方案？
+- [第 92 届 TC39 会议更新](https://dev.to/hemanth/updates-from-the-92nd-tc39-meeting-5fi6)：小幅更新
+- [Cloudflare - workerd：开源的 Workers 运行时](https://blog.cloudflare.com/workerd-open-source-workers-runtime/)
+- [Meta - MemLab：用于检测 JavaScript 内存泄漏的开源框架](https://engineering.fb.com/2022/09/12/open-source/memlab/)
+- [Type-Level TypeScript](https://type-level-typescript.com/)
+- TotalTypeScript [技巧](https://www.totaltypescript.com/tips) + [Zod 教程](https://www.totaltypescript.com/tutorials/zod)
+- [JavaScript 新型类型检查编译器 Ezno](https://twitter.com/robpalmer2/status/1573244310644199425)
+- [Turborepo 1.5](https://twitter.com/turborepo/status/1573017581459488769)
+- [tRPC 10 测试版](https://twitter.com/alexdotjs/status/1571807618254905344)
+- [2022 年网络年鉴](https://almanac.httparchive.org/en/2022/)
+- [Chrome 开发者 - 容器查询开始登陆稳定版浏览器](https://developer.chrome.com/blog/cq-polyfill/)
+- [Safari 16.0 中的 WebKit 特性](https://webkit.org/blog/13152/webkit-features-in-safari-16-0/)
+- [创建现代 npm 包的最佳实践](https://snyk.io/blog/best-practices-create-modern-npm-package/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![展示极其复杂的基于文件系统的 Next.js 路由树](/emails/issues/117/meme.png)](https://twitter.com/thekitze/status/1568300470107783168)

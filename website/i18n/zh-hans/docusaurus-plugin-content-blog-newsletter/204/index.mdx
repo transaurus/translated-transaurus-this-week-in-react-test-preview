@@ -1,0 +1,147 @@
+---
+slug: /204
+title: "This Week In React #204: React at Meta, React Compiler, React Router, Next.js, StyleX, Mitosis, One, Hermes, BottomTabs, Zeego, Storybook, Nitro, TC39, Vite, Deno, Bun, Brisa, Lucia..."
+authors: [slorber]
+date: 10-09-2024
+---
+
+大家好！
+
+这是激动人心的一周！Meta Connect 活动发布了 React 跨平台的重要公告，对 React Compiler、StyleX、React Strict DOM 和 Hermes 的使用给予了积极反馈。同时令人振奋的是 React Compiler 将新增对 React 18 和 React 17（实验性）的官方支持。
+
+在 React Native 方面，我们也迎来了重要版本发布和公告，包括 Tamagui 团队推出的全新跨平台框架、Zeego 2、原生底部标签页以及 RN Storybook 8。
+
+前端领域方面，Deno 2.0 刚刚发布，同时正在进行一场备受期待的 TC39 会议。
+
+阅读愉快！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看此通讯](https://slo.im/thread) - 视觉格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助 {#sponsor1}
+
+[![使用 Clerk 和 React 保护 Node.js Express API](/emails/issues/204/clerk.jpg)](https://go.clerk.com/WER1UiL)
+
+**[使用 Clerk 和 React 保护 Node.js Express API](https://go.clerk.com/WER1UiL)**
+
+了解如何将 Clerk 与 Express 结合使用以实现 API 请求的身份验证。
+
+利用 `ClerkExpressWithAuth()` 和 `ClerkExpressRequireAuth()` 中间件保护任意端点，无需从零构建即可集成身份验证功能。
+
+---
+
+## ⚛️ React {#react}
+
+[![2024 年 Meta Connect 大会上的 React](/emails/issues/204/meta.jpg)](https://engineering.fb.com/2024/10/02/android/react-at-meta-connect-2024/)
+
+[**2024 年 Meta Connect 大会上的 React**](https://engineering.fb.com/2024/10/02/android/react-at-meta-connect-2024/)
+
+Meta 在近期活动中宣布：
+
+- 为 Meta Quest 头显推出 Instagram 和 Facebook 混合现实新应用。这些应用采用 React Native 并在 Static Hermes 上运行，借助 StyleX 和 React Strict DOM 等技术复用现有 Facebook Web 代码与基础设施
+- 全新 Meta Horizon RN 应用性能媲美原生 Facebook 应用，团队表示 render-as-you-fetch 模式是其实现的最显著性能优化
+- 基于尖端 React Compiler、StyleX、React Strict DOM 构建的跨平台 Meta Horizon Store（支持 Web/移动端/HorizonOS）
+- 基于 React Native Windows/macOS 的 Meta Spatial Editor 可原生集成定制 3D 渲染引擎，C++/Qt 团队从最初质疑转变为喜爱 Fast Refresh 功能
+
+众多创新项目正在 Meta 的实际生产应用中接受内部验证（dogfooding），持续改进全平台框架和生态系统。基于这些进展，我们可以确信 Meta 未来将继续押注 React 作为卓越的跨平台解决方案。
+
+另请参阅 🎥 [Theo 的解说视频](https://www.youtube.com/watch?v=GjBfD9PHff4)。
+
+---
+
+- 💸 [Omlet – A new tool for measuring React component usage across your repos. Try for free with unlimited scans and improve your code quality.](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-oct-2024)
+- 👀 [React Router v7 Prerelease](https://reactrouter.com/dev/guides/start/installation): The first prerelease (7.0.0-pre.0) is available on npm and you can already read the docs. The new version comes with a Vite plugin that enables React Router to be a full-stack framework (aka Remix). It also supports SSG, has a better config-based routing system, improves type-safety. RSC support will come later once React 19 and Vite Environment API are ready.
+- 👀 [React Compiler Docs - Usage with React v18 and v17](http://react-compiler-runtime) : A new official `react-compiler-runtime` package (experimental) has been published by the React team to support older versions of React. The babel config now accepts a new `target: '17' | '18' | '19'` option.
+- 👀 [Next.js Guide - Fixing breaking changes after v15.0.0-canary.171](https://github.com/vercel/next.js/issues/70899): For those living on the bleeding edge, the Next.js team explains how migrate the Dynamic APIs that now return promises.
+- 🗓️ [reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact) - 🇮🇹 Verona - 25 October - Last call for tickets! Don’t forget “TWIR” 10% discount code!
+- 🗓️ [React-Africa](https://react-africa.com/?utm_source=thisweekinreact) - 🇲🇦 Casablanca - 29 November - Get a 10% discount with code “TWIR”. And come listen from the best! Tejas Kumar et Jemima Abu will be here!
+- 📜 [Serverless servers and the challenge of new React architecture](https://bobaekang.com/blog/serverless-servers-and-the-challenge-of-new-react-architecture/): Vercel recently launched a new “Serverless Servers” feature (wait, what? 😅) that enables a Serverless Function instance to behave more like a traditional Node.js server accepting concurrent requests while idling. React RSCs will be more cost-effective: you won't be charged for the time spent awaiting promises.
+- 📜 [Handling Form Validation Errors and Resets with useActionState](https://aurorascharff.no/posts/handling-form-validation-errors-and-resets-with-useactionstate/): Teaches you how to handle React 19 resetting the fields of uncontrolled forms on submit.
+- 📜 [How Do Server Actions Work in NextJS?](https://codelynx.dev/posts/how-work-server-actions): Explains what happens under the hood when you call a Next.js Server Action, including simplified Next.js source code snippets.
+- 📜 [Using Mitosis to build a Design System](https://www.voorhoede.nl/en/blog/write-components-once-run-everywhere-with-mitosis-a-beautiful-dream-or-reality/): Mitigated feedback on this tool that permits creating cross-framework components from a shared JSX dialect.
+- 📜 [Increasing Vite's potential with the Environment API](https://green.sapphi.red/blog/increasing-vites-potential-with-the-environment-api): A modern React RSC app needs to bundle the code in multiple ways, one for each environment (client, SSR, RSC). A Vite contributor explains how Vite 6 helps you do so efficiently, and presents other use cases.
+- 📜 [Code based routing in Next.js](https://www.nico.fyi/blog/next-js-code-config-based-routing): Possible to achieve thanks to a catch-all route segment.
+- 📜 [Why Gumroad Didn't Choose htmx](https://htmx.org/essays/why-gumroad-didnt-choose-htmx/): Explain why they chose Next.js for their new product.
+- 📜 [React on the server is not PHP](https://www.artmann.co/articles/react-on-the-server-is-not-php)
+- 📦 [StyleX 0.8 - LightningCSS post-processing, theming and linting improvements](https://stylexjs.com/blog/v0.8.0)
+- 📦 [JSX Email 2.0 - config file, plugins, email compat, CSS inlining, new components](https://jsx.email/docs/v2/migration)
+- 📦 [Framer motion 11.11 - `animate()` can now animate any object such as Object3D from Three.js](https://www.framer.com/motion/animate-function/##objects)
+- 📦 [React-To-Print 3.0 - API modernization, React 19, smaller, Shadow DOM support, improved error handling](https://github.com/MatthewHerbst/react-to-print/blob/master/CHANGELOG.md#300-september-28th-2024)
+- 📦 [Assistant-UI - React Components for AI Chat](https://github.com/Yonom/assistant-ui)
+- 🎥 [Lee Robinson - Self-Hosting Next.js](https://www.youtube.com/watch?v=sIVL4JMqRfc): Including how to configure Next.js features like image optimization, caching, ISR, streaming, middleware …
+- 🎥 [Sam Selikoff - How to share a React Component with the URL](https://www.youtube.com/watch?v=fYqMPvPvVAc)
+- 🎥 [Jack Herrington - 5 Hidden React Server Function TRAPS Beginners Fall Into](https://www.youtube.com/watch?v=_wnamPRhgkA)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助 {#sponsor2}
+
+[![加入开源承诺](/emails/issues/204/sentry.jpg)](https://osspledge.com/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=oss-fy25q3-pledge&utm_content=newsletter-dontbea-join)
+
+**[加入开源承诺计划](https://osspledge.com/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=oss-fy25q3-pledge&utm_content=newsletter-dontbea-join)**
+
+年复一年，企业坐享开源成果，却少有向维护者付费——这导致了与倦怠相关的安全事故。通过这一承诺计划，具有前瞻性的企业正携手改变现状。是时候支付我们应付的份额了。您愿意加入我们吗？
+
+---
+
+## 📱 React Native {#react-native}
+
+[![One - 新的跨平台 React 框架](/emails/issues/204/one.jpg)](https://onestack.dev/)
+
+[**One - 新的跨平台 React 框架**](https://onestack.dev/)
+
+Tamagui 的创建者 Nate 发布了一个新的通用框架，支持 Web 和移动端。它构建在 Vite 之上（而非 Metro），具有通用的类型化基于文件的路由、类似 Remix 的加载器以及多种渲染模式（SSG/SSR/SPA）。它还通过可选的 granular Zero 同步引擎集成，帮助您构建本地优先（local-first）应用。
+
+---
+
+- 💸 [Apryse React Native PDF 库 - 轻松为您的跨平台应用添加 PDF 查看和编辑功能。](https://docs.apryse.com/documentation/ios/react-native/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1009)
+- 👀 [React Native 的静态 Hermes – 实验性构建](https://github.com/software-mansion-labs/hermes)：Software Mansion 正与 Hermes 团队合作开发分支项目，旨在将静态 Hermes 引入 RN 应用，现已开放 iOS 端尝鲜。初步基准测试显示生产应用启动速度提升 16%。
+- 👀 [React Native 文档 PR - 不鼓励使用受控输入，因其存在缺陷](https://github.com/facebook/react-native-website/pull/4247)：Dan Abramov 对 React Native 核心原语未能按预期工作表示不满，建议避免使用受控输入。该功能曾运行良好，但近期 iOS 特性（自动更正和预测文本）导致其失效。新架构支持同步原生调用，可能修复此问题。
+- 📖 [React Native 测试库 Cookbook](https://callstack.github.io/react-native-testing-library/cookbook/index)
+- 📜 [从 React 到 React Native 的旅程：差异与相似之处](https://dev.to/amazonappdev/journeying-from-react-to-react-native-21ep)
+- 📦 [React Native Storybook 8](https://storybook.js.org/blog/react-native-storybook-8/)：Storybook React Native 的重要里程碑，终于追齐 Storybook 核心版本，并计划通过共享基础设施保持同步。此重大更新包含多项新特性：全新移动端 UI、宽屏布局、简化的 Metro 配置、热重载、稳定的 RNW 支持等。
+- 📦 [React-Native-Bottom-Tabs - 采用原生平台原语的底部标签栏](https://github.com/okwasniewski/react-native-bottom-tabs)：上周提及库的早期版本，旨在配合 React-Navigation 使用，替代其非原生的 JS 实现。同时兼容 Expo Router。
+- 📦 [Zeego 2.0 - React Native 跨平台菜单](https://github.com/nandorojo/zeego/releases/tag/v2.0.0)：增强 Web 支持，移除 RNW 依赖，改用轻量级 RadixUI 层封装。
+- 📦 [setup-ci - 为 react-native 快速搭建 CI/CD 的 CLI](https://github.com/software-mansion/setup-ci)：Software Mansion 新推出的 CLI 项目，助您快速创建 RN GitHub Actions。
+- 📦 [Nitro Modules 0.11 - 新增旧架构支持](https://github.com/mrousavy/nitro/releases/tag/v0.11.0)
+- 📦 [React Native 0.76.0-rc.4](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.4)
+- 🎥 [Simon Grimm - 使用 Expo API 路由和 Cursor 更快构建 AI 驱动的移动应用](https://www.youtube.com/watch?v=9FzkE1qVBiA)
+- 🎥 [Reactiive - 用 React Native (Skia) 实现动态模糊卡片](https://www.youtube.com/watch?v=SveA2QjmEzM)
+- 🎙️ [RNR 310 - Nitro 与 Marc Rousavy](https://www.reactnativeradio.com/episodes/rnr-310-nitro-with-marc-rousavy)
+- 🎙️ [Rocket Ship 51 - React Native 棕地集成与 Mariusz Stanisz](https://share.transistor.fm/s/e737607c)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [TC39 - 第104次会议议程](https://github.com/tc39/agendas/blob/main/2024/10.md)：会议仍在进行中，但已有多个提案推进至第4阶段并将纳入ES2025标准，我们将在下周分享最终名单！
+- 👀 [Lucia Auth - 未来计划：弃用该库，转型为学习资源](https://github.com/lucia-auth/lucia/discussions/1707)
+- 📜 [使用htmx构建单页应用](https://jakelazaroff.com/words/building-a-single-page-app-with-htmx/)
+- 📜 [切勿在环境变量中存储密钥，以下提供更佳实践方案](https://www.nodejs-security.com/blog/do-not-use-secrets-in-environment-variables-and-here-is-how-to-do-it-better/)
+- 📦 [Deno 2.0 - 向后兼容，前瞻设计](https://deno.com/blog/v2.0)
+- 📦 [Brisa - 支持服务端组件、服务端操作、JSX和Web组件的全栈框架](https://brisa.build/blog/introducing-brisa)：受React和Next.js启发的新框架，利用声明式Shadow DOM实现服务端渲染。
+- 📦 [Bun 1.1.30 - CSS解析与打包、bun publish命令、CJS输出](https://bun.sh/blog/bun-v1.1.30)
+- 📦 [Better-Auth - 最全面的TypeScript身份验证库](https://github.com/better-auth/better-auth)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/204/meme.jpg)](https://x.com/jacobmparis/status/1841450326744010914)
+
+[![alt](/emails/issues/204/meme2.jpg)](https://x.com/sebastienlorber/status/1842131680833741094)
+
+[![alt](/emails/issues/204/meme3.jpg)](https://x.com/saltyAom/status/1842543015472386440)
+
+下次见！👋

@@ -1,0 +1,173 @@
+---
+slug: /176
+title: "This Week In React #176: useActionState, React Compiler, Million Lint, TanStack, Generative UI, Vinxi, Remix i18n, Next.js security, Typesafe Router, Shopify RN perf, RCTRootViewFactory, iOS Live Activities, Uni Stack, TypeScript, Parcel..."
+authors: [slorber, bndkt]
+date: 03-06-2024
+---
+
+大家好！
+
+本周内容繁多难以概括，有许多有趣的消息让我不知该重点突出哪些。
+
+我们尤其注意到React核心即将推出一个全新钩子函数，它将取代令人困惑的`useFormState`——现在连React Native开发者也能使用了！
+
+<!-- truncate -->
+
+**💡 [在Twitter查看本期通讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![Axiom - Vercel应用的最佳日志平台](/emails/issues/171/axiom.jpg)](https://axiom.co/vercel)
+
+**[Axiom - Vercel应用的最佳日志平台](https://axiom.co/vercel)**
+
+😴 高枕无忧，Axiom为Vercel项目提供的零配置可观测性全面守护您的应用。
+
+- 使用Axiom预置仪表盘纵览所有Vercel日志与性能指标，深入钻取特定项目与部署，单键点击即可获取函数执行洞察
+- 通过[next-axiom](https://github.com/axiomhq/next-axiom)无需特殊配置，即可从Next.js项目的客户端、边缘端或服务端任意位置发送日志与事件
+- 直接从代码发送结构化日志，并与Vercel日志进行整合分析
+
+Axiom高效捕获100%事件数据，您永远不必担心采样率或留存问题，也无需猜测用户实际体验。
+
+**附注**：[我本人用它监控通讯订阅数据](https://twitter.com/sebastienlorber/status/1528666563452317696) 😉
+
+---
+
+## ⚛️ React {#react}
+
+[![React核心PR - 全新useActionState钩子](/emails/issues/176/useActionState.jpg)](https://github.com/facebook/react/pull/28491)
+
+**[React核心PR - 全新useActionState钩子](https://github.com/facebook/react/pull/28491)**
+
+事实证明useFormState钩子容易造成混淆，且其设计初衷并非仅限于表单场景。React团队正通过引入新核心钩子来解决这个问题：
+
+- 将`useFormState`重命名为`useActionState`
+- 在返回元组中新增pending状态
+- 将该钩子移至`react`包
+
+从`react-dom`迁移到`react`意味着其他渲染器（如React Native）现在也能使用它。PR文档中还阐述了其他优势（如"渐进式部分增强"功能）及注意事项。
+
+---
+
+- 💸 [Secure your documents with PDF Redaction. Discover how to protect sensitive information in PDFs using React. Visit our blog to learn more.](https://apryse.com/blog/pdf-redaction-using-react?utm_source=this%20week%20in%20react&utm_medium=newsletter3)
+- 🐦 [React 19 != React Compiler](https://twitter.com/sebastienlorber/status/1764950877620654474): The React Labs post is a bit ambiguous and misled many of us, so let’s clarify. The compiler will likely come after the React 19.0 release as a separate project, and there’s a good chance it will initially be released as a Babel/TypeScript plugin. The internals are decoupled through, so it shouldn’t take long to adapt it it to Rust.
+- 🐦 [TanStack Start preview](https://twitter.com/tannerlinsley/status/1765120904370307438): Tanner works on a TanStack Start full-stack framework based on Vinxi and TanStack Router. This preview shows he’s migrating his own TanStack site to it.
+- 📜 [Vercel - Introducing AI SDK 3.0 with Generative UI support](https://vercel.com/blog/ai-sdk-3-generative-ui): With the AI SDK 3.0 and thanks to React Server Components, you can now stream UI components directly from LLMs. Super impressive demos!
+- 📜 [Secure statically rendered paid content in Next.js (with the App Router)](https://www.ericburel.tech/blog/static-paid-content-app-router): Shows that using Next.js layouts for authentication is not super secure, and the protected content can still leak through the RSC endpoint. Suggests using a middleware instead.
+- 📜 [Internationalization with Remix](https://remix.run/blog/remix-i18n): Goes back to i18n fundamentals, and then detail various i18n solutions you can set up within Remix. Optional route segments can help you use localized sub-directories.
+- 📜 [Did you know you can write your own typesafe React router in 500 lines?](https://sinja.io/blog/build-typesafe-react-router-from-scratch): A great comprehensive article that might give you a better understanding of how existing routers work. Also great to learn about advanced TypeScript type-level programming techniques.
+- 📜 [Streaming HTML out of order without JavaScript](https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/): This super interesting demo shows we don’t need JavaScript to stream out-of-order HTML chunks, and yet render them in the correct order. All you need is Declarative Shadow DOM and slots. It will be interesting to see if RSC streaming + Suspense could leverage that technique in the future instead of inlining JavaScript.
+- 📜 [Simple RSC With Vinxi](https://www.brenelz.com/posts/simple-rsc-with-vinxi/): The Vinxi SDK helps you create your own full-stack framework, and it even has a plugin for React Server Components support!
+- 📜 [Million.js - Blocks with noSlot Mode](https://million.dev/blog/block-noSlot): the Million compiler might wrap your components with `<slot>` elements, which might cause issues (styling). This introduces a new experimental `noSlot` mode..
+- 📜 [How to add Monaco to a Next.js app to enable custom user workflows](https://deno.com/blog/monaco-nextjs): Interesting tutorial that also shows how to deploy untrusted user code to Deno.
+- 📜 [Conceptual Model of React and RSC](https://ondrejvelisek.github.io/conceptual-model-of-react-and-rsc/): Reflects around the UI=f(state) formula in interesting ways, and concludes RSC kind of breaks the original model.
+- 📜 [Why React Server Components Are Breaking Builds to Win Tomorrow](https://www.builder.io/blog/why-react-server-components)
+- 📜 [The End Of My Gatsby Journey](https://www.smashingmagazine.com/2024/03/end-of-gatsby-journey/)
+- 📜 [React Admin March 2024 Update](https://marmelab.com/blog/2024/03/05/react-admin-march-2024-update.html)
+- 📦 [Million Lint - public beta](https://million.dev/blog/lint): A VSCode extension that helps you keep your React code fast thanks to dynamic analysis. Much simpler to use than React Devtools flame graphs. There will be an additional AI-based Lint++ paid service built on top to suggest you possible performance improvements.
+- 📦 [react-unforget - A compiler for automatic optimization of React apps](https://github.com/mohebifar/react-unforget): After Forgetti, this is another new alternative React compiler coming from the community. See also 🐦 [Joe Savona’s feedback](https://twitter.com/en_JS/status/1763593971224494106).
+- 📦 [Remix 2.8 - Pass resolved viteConfig to buildEnd hook](https://remix.run/docs/en/main/start/changelog#v280)
+- 📦 [React Query 5.25 - skipToken, typesafe query disabling](https://github.com/TanStack/query/releases/tag/v5.25.0)
+- 📦 [TanStack Router 1.18 - route groups](https://github.com/TanStack/router/releases/tag/v1.18.0)
+- 📦 [Starlight 0.21 - New UI components: Steps, FileTree](https://starlight.astro.build/guides/components/)
+- 📦 [Storybook 8.0 RC - v8 is officially stable enough to be used in production](https://github.com/storybookjs/storybook/releases/tag/v8.0.0-rc.0)
+- 📦 [Onborda - Onboarding wizard flow for Next.js powered by Framer Motion](https://github.com/uixmat/onborda)
+- 📦 [Input-OTP - One-time password input component for React](https://input-otp.rodz.dev/)
+- 📦 [Panda 0.33](https://github.com/chakra-ui/panda/discussions/2274)
+- 📦 [UVCanvas - React component library for beautifully shaded canvas](https://uvcanvas.com)
+- 🎥 [Jack Herrington - Is Tanstack Router Better Than React-Router?](https://www.youtube.com/watch?v=qOwnQJOClrw)
+- 🎥 [Theo - How Shadcn/ui Actually Works](https://www.youtube.com/watch?v=AqmMx_JidGo)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![需要的不只是登录框？](/emails/issues/176/clerk.jpg)](https://clerk.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=middleware&utm_content=03-06-24)
+
+**[需要的不只是登录框？](https://clerk.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=middleware&utm_content=03-06-24)**
+
+Clerk为React应用提供高效的身份验证与用户管理方案，助力现代Web应用快速搭建。
+
+体验Clerk的卓越优势：
+
+- 💅 预置的 UI 组件，用于登录、注册、用户资料和组织管理。可使用任意 CSS 库自定义样式，并部署在您的自有域名
+- 📦 提供 React、React Native、Next.js、Redwood、Remix 等框架的 SDK
+- ⚡ 集成 Firebase、Supabase、Convex 等 BaaS 服务提供商
+- 🎁 开箱即用的用户管理、社交登录、魔法链接、多因素认证（MFA）等功能
+
+立即探索 Clerk 的[快速入门指南和教程](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)，快速启动您的项目 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+本栏目现由 [Benedikt](https://twitter.com/bndkt) 共同撰写。欢迎通过邮件或在 [Twitter](https://twitter.com/bndkt) 上向我们提交反馈！
+
+[![提升 Shopify 应用性能](/emails/issues/176/shopify.jpg)](https://shopify.engineering/improving-shopify-app-s-performance)
+
+**[提升 Shopify 应用性能](https://shopify.engineering/improving-shopify-app-s-performance)**
+
+Shopify 长期倡导使用 React Native，但注意到迁移后应用性能有所下降。他们没有归咎技术栈，而是着手优化性能。成果显著：应用启动速度提升 44%，屏幕加载时间减少 59%。以下简要概述其优化措施（提示：FlashList 在其中发挥关键作用），详情请参阅其精彩总结文章：
+
+- 初始仅渲染屏幕可见内容（尤其适用于首页）
+- 基于 FlashList 将所有屏幕构建为列表
+- 使用 inlineRequires
+- 批量处理状态变更
+- 优化缓存机制
+
+极具价值的洞见和令人印象深刻的成果。期待 Shopify 团队持续分享细节，或许我们能看到此过程中开发的部分工具最终开源？
+
+---
+
+- 💸 [React Universe Conf 融合了 React Native EU 的最佳实践并推出全新升级议程。在 3 月 7 日前以最低价获取门票](https://www.reactuniverseconf.com/?utm_campaign=React_Universe_Conf&utm_source=email&utm_content=This_Week_in_React)
+- 👀 [PR - RCTRootViewFactory](https://github.com/facebook/react-native/pull/42263)：简化 iOS 遗留项目集成，免除对旧架构/新架构/桥接/无桥接组合的担忧
+- 🐦 [在您的 RN 应用中实现跨应用文件拖放功能](https://x.com/alihdjr/status/1764393524940673529)
+- 📖 [visionOS 文档 - 现有项目集成指南](https://callstack.github.io/react-native-visionos-docs/docs/guides/integrate-into-existing-projects/)
+- 📜 [Expo - 通过自定义构建编排高级工作流](https://expo.dev/blog/orchestrate-advanced-workflows-with-custom-builds)：自定义构建允许在 Expo 构建前后运行脚本（bash 或 JS），例如执行端到端测试、向团队发送通知等
+- 📜 [iOS 实时活动与 React Native - 利用最新 iOS 特性在不打开应用的情况下展示实时数据](https://www.reactnative.university/blog/live-activities-unleashed)：更多应用应该支持实时活动！但对 RN 开发者存在障碍，因其需用 Swift 编写。这个三部分系列详细讲解添加实时活动的完整步骤
+- 📜 [React Native 错误边界 - 功能边界、局部边界与服务器边界](https://www.reactnative.university/blog/react-native-error-boundaries)：错误边界仍是未被充分利用的功能，每个 React Native 应用至少应有其一（理想情况应更多）。本文阐释原因与实现方法
+- 📜 [通过原生加密库提升性能与安全性](https://www.callstack.com/blog/increase-speed-and-security-with-native-crypto-libraries)
+- 📜 [Morrow 对 2023 年 React Native 生态报告的分析摘要](https://www.themorrow.digital/blog/our-summary-of-the-state-of-react-native-2023-report)
+- 📦 [Intercom-react-native 6.5 - 新增 Expo 配置插件支持](https://github.com/intercom/intercom-react-native/releases/tag/6.5.0)
+- 📦 [Uni Stack - 基于 Expo + Prisma + tRPC 的 React Native 启动套件](https://www.uni-stack.dev/)
+- 📦 [Expo-foreground-actions - 启动在用户切换应用后的宽限期内持续运行的操作](https://github.com/Acetyld/expo-foreground-actions)
+- 📦 [React Native 0.74.0 RC 2](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.2)
+- 🎙️ [RNR 290 - 与 Bartłomiej Bukowski 探讨 React Native 生态现状调查](https://reactnativeradio.com/episodes/the-state-of-react-native-survey-with-bartomiej-bukowski)
+- 🎙️ [Rocket Ship 32 - 从破产教师到软件工程师：对话 Zach Taylor](https://podcast.galaxies.dev/episodes/032-from-broke-teacher-to-software-engineer-with-zach-taylor)
+- 🎥 [Simon Grimm - 使用 React Native 构建儿童绘画应用](https://www.youtube.com/watch?v=G5TjXRHoEno)
+- 🎥 [notJust Dev - 用 React Native 构建跨平台博客（Web & Mobile）](https://www.youtube.com/watch?v=ewW6_baBXko)
+- 📅 [Chain React 演讲者征集开放至 2024 年 5 月 3 日](https://sessionize.com/chain-react-2024/)
+- 📅 [React Universe Conf 2024 - 早鸟票今日截止](https://ti.to/RUC/react-universe-conf-2024)
+
+---
+
+## 🔀 其它 {#other}
+
+- 💬 [TypeScript 5.5 迭代计划 - 新增 Set 方法、配置扩展合并](https://github.com/microsoft/TypeScript/issues/57475)
+- 📜 [Effective TypeScript - 类型谓词的隐藏面](https://effectivetypescript.com/2024/02/27/type-guards/)
+- 📜 [Deno - 推出 JSR - JavaScript 注册表](https://deno.com/blog/jsr_open_beta)
+- 📜 [OpenJS 发起新合作以改进 JavaScript 包元数据的互操作性](https://socket.dev/blog/openjs-improve-interoperability-of-javascript-package-metadata)
+- 📜 [开放网络倡导 - Apple 放弃关闭网页应用，但斗争仍在继续](https://open-web-advocacy.org/blog/apple-backs-off-killing-web-apps/)
+- 📜 [Node.js 中 V8 引擎的近期八大更新](https://blog.appsignal.com/2024/02/28/top-8-recent-v8-in-node-updates.html)
+- 📦 [Safari 17.44 的 WebKit 功能 - CSS @scope, align-content](https://webkit.org/blog/15063/webkit-features-in-safari-17-4/)
+- 📦 [Shiki-magic-move - 流畅动画的代码块](https://github.com/shikijs/shiki-magic-move)
+- 📦 [Parcel 2.12 - 通过导入属性在构建时运行宏](https://parceljs.org/blog/v2-12-0/)
+- 📦 [Playwright 1.42 - 测试标记、跳过测试注解](https://github.com/microsoft/playwright/releases/tag/v1.42.0)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/176/meme.jpg)](https://twitter.com/sebastienlorber/status/1765373471645737153)
+
+下次见！👋

@@ -1,0 +1,198 @@
+---
+slug: /152
+title: "This Week In React #152: React 18, RSC, Kuma UI, Expo 49, Next.js, Remix DevTools, Fresh, React-Query, Redwood, Catalyst, Million, MDXEditor, Ariakit, Rewind, TC39, Prettier..."
+authors: [slorber]
+date: 07-18-2023
+---
+
+大家好！
+
+我刚从法国布列塔尼度假回来 😎，因此本期将涵盖两周的新闻。
+
+本以为会是平静的夏季，但实际上发布了相当多的更新，还有大量关于服务器组件的文章！😄
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期通讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![Tina.io 是面向 Markdown 驱动站点的无头 CMS](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io 是面向 Markdown 驱动站点的无头 CMS](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- 为 Markdown 文件提供编辑界面
+- 支持 MDX 组件的可视化编辑
+- 兼容静态生成（SSG）和服务器端渲染（SSR）
+- 提供可视化编辑选项（实时预览）
+- 通过可复用区块构建
+
+试用入门模板：
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)
+- [Next.js + Tailwind 带可视化编辑](https://github.com/tinacms/tina-cloud-starter) (Github)
+
+或运行 `npx create-tina-app@latest` 后访问 `localhost:3000/admin`
+
+观看[4 分钟演示视频](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## ⚛️ React {#react}
+
+[![React 18 如何提升应用性能](/emails/issues/152/react18perf.jpg)](https://vercel.com/blog/how-react-18-improves-application-performance)
+
+**[React 18 如何提升应用性能](https://vercel.com/blog/how-react-18-improves-application-performance)**
+
+关于 React 18 及其性能影响的全面图解文章。详解并发渲染机制及其对总阻塞时间（TBT）和交互到下一次绘制（INP）等指标的影响，同时介绍过渡 API、React 服务器组件、Suspense 及新版 React 缓存等特性。
+
+---
+
+[![Kuma UI](/emails/issues/152/kuma.jpg)](https://www.kuma-ui.com/)
+
+**[Kuma UI](https://www.kuma-ui.com/)**
+
+受 Chakra UI 开发体验启发的新 CSS-in-JS 库，兼容 React 服务器组件。该库采用独特的混合方法，融合了零运行时 CSS-in-JS 与传统运行时方案的优势。我们将持续关注其与 Chakra 团队开发的 [Panda CSS](https://panda-css.com/) 的对比表现。
+
+---
+
+- 🐦 [开发者关系负责人 Matt Carroll 重新加入 React 团队](https://twitter.com/mattcarrollcode/status/1681342638816112641)
+- 👀 [如何设置 Redwood 实验性 React 服务器组件](https://community.redwoodjs.com/t/react-server-components-rsc/5081)
+- 👀 [React-Query-Nextjs](https://twitter.com/TkDodo/status/1680153231853223938): React-Query 对 Next.js App Directory 的实验性支持。
+- 📜 [我对当前 React 服务器组件争议的看法](https://phryneas.de/react-server-components-controversy): Lenz 热爱 React 服务器组件，但作为 Apollo Client 和 Redux Toolkit 的维护者，解释了他的挫败感。
+- 📜 [使用 NextJS 13 App Router 解密 React 服务器组件](https://demystifying-rsc.vercel.app/): 通过带注释的演示应用和代码/网络负载样本，详细解释服务器组件工作原理。
+- 📜 [Next13 中服务器组件的 5 个常见陷阱（含示例）](https://www.propelauth.com/post/5-common-pitfalls-with-server-components-in-next13-with-examples): 图文并茂地介绍使用服务器组件时最常见的错误。
+- 📜 [使用 Capsize 优化排版](https://www.skovy.dev/blog/using-capsize-with-stitches): 在 React 环境中如何修剪和规范化字体周围空白以方便对齐。
+- 📜 [SvelteJS：我的生态系统比你的大](https://hackmd.io/@roguegpu/r1RKQMdt3): 支持 Svelte 的有趣批评，认为它不像 React 那样需要庞大生态系统。
+- 📜 [为什么需要服务器组件——Web 简史](https://www.perssondennis.com/articles/why-server-components-a-brief-history-of-web)
+- 📜 [Next.js 13 预取功能可视化指南](https://www.builder.io/blog/prefetching-nextjs-visual-guide)
+- 📜 [使用 Remix 自动保存表单输入](https://www.jacobparis.com/content/remix-form-autosave)
+- 📜 [Ariakit 现已稳定发布](https://newsletter.ariakit.org/p/stable)
+- 📜 [Next.js 中间件链式调用模式](https://raphael.badia.cc/posts/a-pattern-for-chaining-middlewares)
+- 📜 [拥抱多态性实现灵活组件](https://brightinventions.pl/blog/embracing-polymorphism-for-flexible-components/)
+- 📦 [Fresh 1.3 – 简化路由组件等更新](https://twitter.com/deno_land/status/1681340646723039232)
+- 📦 [Next.js 13.4.10](https://github.com/vercel/next.js/releases/tag/v13.4.10)
+- 📦 [Million.js 2.5 - 编译时宏支持](https://twitter.com/aidenybai/status/1679698685603774464)
+- 📦 [Remix 开发工具](https://twitter.com/AlemTuzlak59192/status/1680538200702369794)
+- 📦 [Remix-Hono](https://github.com/sergiodxa/remix-hono)
+- 📦 [Remix-JSON-Routes](https://github.com/brophdawg11/remix-json-routes)
+- 📦 [Vercel 多租户应用启动套件 - 使用 Next.js App Router 的模板](https://vercel.com/blog/platforms-starter-kit)
+- 📦 [MDX Editor - 用于 Markdown 编辑的 WYSIWYG React 组件](https://mdxeditor.dev/)
+- 📦 [Rewind-UI - React-TailwindCSS 组件库](https://rewind-ui.dev/)
+- 📦 [Featurevisor - 基于 Git 的功能开关，含 React 绑定](https://github.com/fahad19/featurevisor)
+- 🎥 [Tailwind Connect 2023 主题演讲](https://www.youtube.com/watch?v=CLkxRnRQtDE): 宣布 Catalyst React UI 套件
+- 🎥 [Legend：终极 React 状态管理器？](https://www.youtube.com/watch?v=E4TH77SMOG8)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Porkbun.com - 最佳域名注册商](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)
+
+**[Porkbun.com - 最佳域名注册商](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**
+
+Porkbun 为 React 和 React-Native 开发者提供数百种域名后缀，从 .dev、.app 到 .cloud、.xyz 和 .ai — 均为**市场最低价**！每个 Porkbun 域名都包含**大量免费功能**，例如：
+
+- SSL 证书
+- WHOIS 隐私保护
+- DNS 服务
+- URL 转发
+- 网站和邮箱托管试用
+
+试试我们**AI 生成搜索工具**，它正在改变人们查找域名的方式。所有这些都由**全年无休的卓越技术支持**作为后盾，并在 Trustpilot 上获得数千条真实的五星好评。
+
+点击链接，在 Porkbun.com [注册域名立减 1 美元](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)！
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo SDK 49](/emails/issues/152/expo49.jpg)](https://blog.expo.dev/expo-sdk-49-c6d398cdf740)
+
+**[Expo SDK 49](https://blog.expo.dev/expo-sdk-49-c6d398cdf740)**
+
+新版 SDK 49 已发布，包含多项新功能，其中我最喜欢的有：
+
+- React Native 0.72.3，React Native Web 0.19.6
+- Expo Router v2.0
+- 网络调试，VS Code 调试
+- 内置 React 开发者工具
+- 环境变量
+- 本地 Expo 模块
+- EAS Insights
+
+---
+
+[![Expo Router v2 发布](/emails/issues/152/exporouter2.jpg)](https://blog.expo.dev/introducing-expo-router-v2-3850fd5c3ca1)
+
+**[Expo Router v2 发布](https://blog.expo.dev/introducing-expo-router-v2-3850fd5c3ca1)**
+
+伴随 SDK 49，Expo 同时发布了 Expo Router v2，包含多项增强功能，例如：
+
+- TypeScript 支持
+- 静态路由、SEO、头部元数据
+- 异步路由
+- 通用链接、切换功能
+- CSS 与样式
+
+---
+
+- 📜 [关于 React 和 React Native 之间代码共享的思考](https://matthewwolfe.github.io/blog/code-sharing-react-and-react-native)
+- 📜 [React Native 开发与团队构成的新方法](https://itnext.io/a-new-approach-to-react-native-development-and-team-composition-d6e3e3eb5184)
+- 📦 [React-Native 0.72.3](https://github.com/facebook/react-native/releases/tag/v0.72.3)
+- 📦 [Flashlight 0.8 - measure 命令](https://twitter.com/almouro/status/1676202443346944000)
+- 📦 [react-native-image-colors 2.3 - 支持 Expo 49](https://github.com/osamaqarem/react-native-image-colors)
+- 📦 [react-native-android-widget 0.7 - 支持 Expo 49](https://github.com/sAleksovski/react-native-android-widget)
+- 🎙️ [RNR 271 - 从 Flutter 开发者视角看 RN](https://reactnativeradio.com/episodes/rnr-271-rn-from-a-flutter-devs-perspective)
+- 🎥 [Expo SDK 49：新特性与改进](https://www.youtube.com/watch?v=1CVlTqHW5xQ)
+- 🎥 [Theo 谈 Airbnb 弃用 React-Native](https://www.youtube.com/watch?v=ZM8lJIJb2Q4)
+- 🎥 [2023 年 Top 9 React Native UI 组件库](https://www.youtube.com/watch?v=SfJGBbv-qQw)
+
+---
+
+## 🧑‍💻 工作机会 {#jobs}
+
+🧑‍💼 [**Passionfroot - 高级全栈工程师（Remix）- €160k+，柏林/远程**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是通过 YouTube、播客、社交媒体和新闻通讯赋能未来的独立企业。加入我们，共同构建能帮助全球创作者建立可扩展、可持续业务的工具。
+
+🧑‍💼 [**Callstack - 高级 React Native 开发人员 - 完全远程，B2B 月薪净额 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)
+
+您想为全球最常用的应用工作吗？您想共同塑造 React Native 技术吗？加入 React & React Native 领导团队 Callstack。详情请访问官网，期待您的申请——展示您的实力！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们开放多个 React Native 开发者职位！薪资约 16 万美元+10% 奖金。需具备 RN 生产环境经验且位于美国。私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解详情，并注明来自 This Week in React。
+
+💡 [如何发布招聘信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [第97届TC39会议更新](https://dev.to/hemanth/updates-from-the-97th-tc39-meeting-1cnj)
+- [JavaScript的未来：值得期待的新特性](https://thenewstack.io/whats-next-for-javascript-new-features-to-look-forward-to/)
+- [Prisma 5：默认更快](https://www.prisma.io/blog/prisma-5-f66prwkjx72s)
+- [Deno 1.35：快速便捷的Web服务器构建方式](https://deno.com/blog/v1.35)
+- [Prettier 3.0](https://prettier.io/blog/2023/07/05/3.0.0.html)
+- [TypeScript-ESLint v6](https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/)
+- [Node v20.4](https://nodejs.org/en/blog/release/v20.4.0)
+- [Vite 4.4](https://twitter.com/vite_js/status/1676886213771264002)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/152/meme.jpg)](https://twitter.com/jantimon/status/1681275581629964300)
+
+再见！👋

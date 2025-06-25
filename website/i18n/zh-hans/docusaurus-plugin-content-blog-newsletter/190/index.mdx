@@ -1,0 +1,173 @@
+---
+slug: /190
+title: "This Week In React #190: Suspense, Internals Explorer, DevTools, RSC + Vite, Codemod, Astro, INP, composition, Reassure, Fumadocs, tscircuit, Sonner, Relay, Reanimated, RNGH, BottomSheet, RNScreens, VisionOS, TC39, Node, CSS ..."
+authors: [slorber, bndkt]
+date: 06-19-2024
+---
+
+大家好！
+
+我（Seb）回来了，很高兴地宣布本通讯已突破**40,000名订阅者**！🎉
+
+感谢您的支持并将本通讯分享给朋友。\
+有任何改进建议、反馈或链接投稿？直接回复本邮件即可！
+
+本周，因Suspense行为存在争议性变更，我们期待已久的React 19稳定版将稍作延期发布。
+
+在React Native方面，基于React 19的0.75版本首个RC候选版预计很快发布。
+
+<!-- truncate -->
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![定义类别的企业级React网格](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)
+
+**[定义类别的企业级React网格](https://1771technologies.com/graphitegrid)**
+
+数据网格是Web应用中的复杂组件，但现有解决方案效率低下、维护成本高且性能不佳。[Graphite Grid](https://1771technologies.com/graphitegrid)通过两大核心特性改变格局：可重定向渲染（retargetable rendering）和响应式信号状态（reactive signal state）。
+
+**Graphite Grid**将网格状态与视图逻辑分离，允许单一统一状态模型以声明式或命令式支持多种渲染目标。其包含**DOM与Canvas**渲染器，为开发者提供灵活的高性能选项🚀。
+
+Graphite Grid采用声明式一致性设计，利用状态信号确保与应用的完美集成。专为**React打造**，它是唯一基于React状态管理原语构建的JavaScript数据网格。[立即体验！](https://1771technologies.com/graphitegrid/demo)
+
+---
+
+## ⚛️ React {#react}
+
+![Suspense与兄弟组件](/emails/issues/190/suspense.jpg)
+
+**[React 19与Suspense——三幕剧](https://tkdodo.eu/blog/react-19-and-suspense-a-drama-in-3-acts)**
+
+两周前发布的React 19 RC.0本可能成为期待已久的稳定版。但因Suspense行为存在争议性变更，React团队决定延后发布直至解决方案确定。
+
+与React 18不同，v19中若组件挂起（suspends），其兄弟组件将不再渲染，可能导致瀑布流问题。在多数场景（使用"fetch-on-render"模式、React.lazy()等），异步代码可能从并行改为串行执行。此变更的核心动机是：尽早显示Suspense回退内容，避免无意义渲染。理论上，若在路由层"提升"请求（采用"render-as-you-fetch"模式）可规避瀑布流，但多数现存应用未采用此模式，性能可能受损。
+
+**相关资源**：
+
+- 📜 [React 19如何（几乎）拖慢整个互联网](https://blog.codeminer42.com/how-react-19-almost-made-the-internet-slower/)
+- 🔗 [React 19问题——禁用挂起组件的兄弟预渲染破坏通用模式](https://github.com/facebook/react/issues/29898)
+- 🎥 [Jack Herrington——代码解析React 19的Suspense重大变更](https://www.youtube.com/watch?v=sgnw8dRZa3Q)
+- 🎥 [Josh tried coding——React 19存在缺陷](https://www.youtube.com/watch?v=PZYXTFnP2po)
+
+---
+
+![React 内部原理探索器 - 截图 + 标志](/emails/issues/190/rie.jpg)
+
+**[React 内部原理探索器 - 轻松理解 React 工作机制](https://jser.dev/2024-05-11-introducing-rie/)**
+
+全新交互式沙盒环境，深入探索 React 底层运行机制。可逐步剖析内部实现细节，支持选择不同 React 版本。特别契合本期主题，能直观展示 React 18 与 React 19 在 Suspense 行为上的差异！
+
+---
+
+- 💸 [Meilisearch - Build search-as-you-type for React](https://www.meilisearch.com/with/react?utm_campaign=sponsoring&utm_content=june-19&utm_source=thisweekinreact)
+- 👀 [React Core PR - Badge Environment Name on Thrown Errors from the Server](https://github.com/facebook/react/pull/29846): A convenient DX improvement to know where the error comes from thanks to a [server] console badge.
+- 🐦 [React Router 7 - Ryan Florence Sneak Peek video](https://x.com/ryanflorence/status/1801388170891903252)
+- 🗓️ [The Geek Conf](https://www.thegeekconf.com/?utm_source=thisweekinreact) - 🇩🇪 Berlin - 18 & 25 July - Get a 10% discount with code "TWIR". Tomasz Sapeta (Expo/Software Mansion), Carmen Huidobro (DevCraft Academy), and Atila Fassina (CrabNebula) will speak !
+- 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - June 27 - Just 1 week left before the conference! 10% discount with code "TWIR"
+- 📜 [Codemod partnering with the React team](https://codemod.com/blog/react-announcement): The Codemod company is partnering with React to maintain the react-codemod repo and help us upgrade to React 19.
+- 📜 [Future of Astro series - Zero-JS view transitions, Astro Content Layer, and Server Islands](https://astro.build/blog/future-of-astro-zero-js-view-transitions/): Astro betting on new browser features like cross-document view transitions makes us question the need for client-side routing and SPAs. I hope they’ll figure out how to persist component state across navigation in this new mode. They also plan to improve their (CMS integration, composable, using LibSQL) and provide a new “server:defer” directive (similar to Suspense, but not using streaming).
+- 📜 [Demystifying INP: New tools and actionable insights](https://vercel.com/blog/demystifying-inp-new-tools-and-actionable-insights): Vercel CTO explains that the new Core Web Vital INP (Interaction to Next Paint) is a misleading metric. Surprisingly preloading data can even give you a lower INP score. Using a React example from the Next.js docs site (js/ts code block language picker), he explains that user input must be acknowledged within 200ms. He suggests using either his package “await-interaction-response” or React transitions to separate user input handling from rendering the meaningful result.
+- 📜 [Experimenting with React Server Components and Vite](https://danielnagy.me/posts/Post_usaivhdu3j5d): A quite advanced article recreating a RSC setup with Vite from scratch. Very useful resource for framework authors looking to support RSCs. All this work to run a blog for your cat Dan 😄.
+- 📜 [How to compose JavaScript functions that take multiple parameters](https://jrsinclair.com/articles/2024/how-to-compose-functions-that-take-multiple-parameters-epic-guide/): Shows how to use a compose() function with React useState, among other things that will interest functional programming enthusiasts.
+- 📜 [React Form with Loading State (Pending Action)](https://www.robinwieruch.de/react-form-loading-pending-action/): Shows 3 possible ways to can get the loading state of a form, using useActionState, useFormStatus and useTransition.
+- 📜 [Redwood “Love reloaded" - A DX Story](https://redwoodjs.com/blog/love-reloaded-a-dx-story): Redwood briefly explains the tradeoffs of 3 instant feedback mechanisms. For their RSC experience, they’ll start by shipping live reload, and plan to implement fast refresh later.
+- 📜 [Using React Query with Astro](https://hounie.me/writings/how-to-use-react-query-with-astro/): Using nanostores instead of React Context.
+- 📜 [Next.js Server Actions with next-safe-action](https://www.davegray.codes/posts/nextjs-server-actions-with-next-safe-action): The library handles typesafety and input validation (with zod).
+- 📜 [Hybrid i18n with Next and Astro - 4-part series](https://www.ericburel.tech/blog/hybrid-i18n-next-astro-1)
+- 📜 [Write SOLID React Hooks](https://www.perssondennis.com/articles/write-solid-react-hooks)
+- 📜 [Full Stack Web Push API Guide - Add push notifications to Remix Indie Stack](https://www.bocoup.com/blog/full-stack-web-push-api-guide)
+- 📦 [React DevTools 5.3 - Dim StrictMode extra console logs, fixes and refactors](https://github.com/facebook/react/blob/main/packages/react-devtools/CHANGELOG.md#530)
+- 📦 [Vercel AI SDK 3.2](https://vercel.com/blog/introducing-vercel-ai-sdk-3-2): you can now build generative UI chatbots client-side with just useChat() and streamText in your React projects
+- 📦 [Reassure 1.0 - Performance testing companion for React and React Native](https://github.com/callstack/reassure/releases/tag/reassure%401.0.0)
+- 📦 [Fumadocs 12 - Documentation framework for Next.js](https://fumadocs.vercel.app/blog/v12)
+- 📦 [react-distributed-components - Effortlessly compose client and server components](https://github.com/daniel-nagy/react-distributed-components)
+- 📦 [tscircuit - Design Electronics with React & AI](https://tscircuit.com/)
+- 📦 [Relay 17.0](https://github.com/facebook/relay/releases/tag/v17.0.0)
+- 📦 [Sonner 1.5 - Toast library - x3 smaller and many other improvements](https://github.com/emilkowalski/sonner/releases/tag/v.1.5.0)
+- 📦 [Remix Privacy Stack - Indie Stack + GDPR/CCPA flows + self-hosted](https://www.bocoup.com/blog/announcing-the-privacy-stack-for-remix)
+- 🎥 [Delba - Next.js: Authentication (Best Practices for Server Components, Actions, Middleware)](https://www.youtube.com/watch?v=N_sUsq_y10U)
+- 🎥 [Jolly Coding - Why You Should Use React Aria Components](https://www.youtube.com/watch?v=lTPh6NGLAmk)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![加入 React Native 性能优化课程](/emails/issues/190/AdCourseTWIR.jpg)](https://hubs.li/Q02B4mFd0)
+
+**[加入 React Native 性能优化课程](https://hubs.li/Q02B4mFd0)**
+
+**应用性能不应成为补丁星球**
+
+若想有效应对性能瓶颈，必须深谙其根源所在。
+
+这门[直播培训课程](https://hubs.li/Q02B4mFd0)将助你**基于 DMAIC 数据驱动方法论 🕵️ 破解优化难题**
+
+**5** 大互动模块，**3** 位资深 React Native 专家，**1** 套全面赋能开发生命周期的未来验证框架。
+
+准备启程？🚀 [**立即注册候补名单**](https://hubs.li/Q02B4mFd0) 并标记 7 月 9-10 日的日程！
+
+---
+
+## 📱 React-Native {#react-native}
+
+本节由 [Benedikt](https://twitter.com/bndkt) 供稿。
+
+![](/emails/issues/190/rn.jpg)
+
+本周虽无重大新闻，但值得庆贺 React Native 社区的两个项目：React Native [visionOS 团队荣获 React 开源大奖“最具创新技术应用”](https://x.com/michalchudziak/status/1801632496100008121)，同时 Infinite Red 团队发布了 [React Native Radio 播客第 300 期](https://reactnativeradio.com/episodes/rnr-300-special-episode-ask-us-anything)。祝贺这两个团队，感谢你们为社区做出的贡献！
+
+---
+
+- 💸 [WithFrame - Pre-Built React Native Components](https://withfra.me/?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--3)
+- 🐦 [React Native visionOS receives React Open Source Award](https://x.com/michalchudziak/status/1801632496100008121): Congratulations!
+- 🐦 [New React Native IDE beta with speed improvements](https://x.com/kzzzf/status/1801367065086816449)
+- 👀 [React Native 0.75 PRs - bump dependency to React 19](https://github.com/facebook/react-native/pull/44990)
+- 👀 [React Native PR - requestIdleCallback ](https://github.com/facebook/react-native/pull/44759): Schedule background and low-priority work on the main event loop.
+- 📖 [Expo Docs - React Compiler - Available from Expo SDK 51](https://docs.expo.dev/guides/react-compiler/): Still experimental, of course.
+- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 Portland, OR - July 17-19. The U.S. React Native Conference is back with engaging talks and hands-on workshops! Get 15% off your ticket with code “TWIR”
+- 📜 [Infinite Red maintains a list of the Top React Native Apps](https://shift.infinite.red/top-react-native-apps-1cae78fdee22): I didn’t know Burger King and Pizza Hut apps were built with RN. If you know of a great app that should be on that list, you can nominate it - even if it’s not a fast food chain!
+- 📜 [Reanimated Can Block Your JS Thread](https://andrei-calazans.com/posts/reanimated-blocking-js-thread/): Yes, you can shoot yourself in the foot when using shared values, this is a good reminder to evaluate whether a value needs to be a Shared Value.
+- 📜 [Testing Expo Web3 Apps With Wagmi and Anvil](https://www.callstack.com/blog/testing-expo-web3-apps-with-wagmi-and-anvil): Even if you’re like me and instantly fall asleep when you hear the word Web3 these days, this article is a good example walkthrough of different aspects of testing, including mocking.
+- 📜 [Baseball + React Native = Success](https://www.thewidlarzgroup.com/portfolio/flexpro-grip): I love seeing apps built with RN that are a bit unusual (and not just consist of lists of records). This is an example of such an app for the FlexPro Grip, a device that Baseball players use to train their grip.
+- 📜 [Bringing native AI to your mobile apps with ExecuTorch— part I — iOS](https://blog.swmansion.com/bringing-native-ai-to-your-mobile-apps-with-executorch-part-i-ios-f1562a4556e8)
+- 📦 [react-navigation-bottom-sheet](https://github.com/th3rdwave/react-navigation-bottom-sheet): I’m a big fan of @gorhom/bottom-sheet, this new library integrates it with React Navigation.
+- 📦 [react-native-screens 3.32.0 - Back button display mode on iOS, navigationBarTranslucent prop on Android](https://github.com/software-mansion/react-native-screens/releases/tag/3.32.0)
+- 📦 [react-native-config 1.5.2 adds visionOS support](https://github.com/lugg/react-native-config/releases/tag/v1.5.2)
+- 📦 [react-native-gesture-handler 2.17.0](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.17.0)
+- 🎙️ [RNR 300 - Special Episode: Ask Us Anything!](https://reactnativeradio.com/episodes/rnr-300-special-episode-ask-us-anything)
+- 🎙️ [Rocket Ship 43 - React Native Best Practices Template with Youssouf El Azizi](https://share.transistor.fm/s/cc24a442)
+- 🎥 [notJust․dev - Building an e-Scooter App with React Native and Mapbox](https://www.youtube.com/live/uxj8jnlooP8)
+- 🎥 [Simon Grimm - 5 React Native Tips to Wow Your Users](https://www.youtube.com/watch?v=pZgjlh5ezd4)
+- 🎥 [Baptiste Devessier - XState at Expo](https://www.youtube.com/watch?v=HuXnUGfHKZs): TIL that Expo Updates uses XState.
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [第 102 次 TC39 会议更新 - Promise.try、isError、废弃绑定、RegExp.escape、迭代器…](https://dev.to/hemanth/updates-from-the-102nd-tc39-meeting-i4i)
+- 📜 [CSS 条件语句（if）在自定义属性中的应用](https://geoffgraham.me/conditionals-on-custom-properties/)
+- 📜 [Drizzle 框架介绍](https://frontendmasters.com/blog/introducing-drizzle/)
+- 📜 [Node.js 将长存](https://blog.platformatic.dev/nodejs-is-here-to-stay)
+- 📜 [CSS 与 Web UI 最新动态：I/O 2024 技术回顾](https://developer.chrome.com/blog/new-in-web-ui-io-2024?hl=en)
+- 📜 [使用 Arktype 替代 Zod - 解析器适配指南](https://dev.to/seasonedcc/using-arktype-in-place-of-zod-how-to-adapt-parsers-3bd5)
+- 📜 [通过推测规则实现极速网站](https://www.debugbear.com/blog/speculation-rules)
+- 📦 [Node 22.3 - 快照测试、模块模拟(实验性)、fs.cp() 稳定版](https://nodejs.org/en/blog/release/v22.3.0)
+- 📦 [htmx 2.0 发布](https://htmx.org/posts/2024-06-17-htmx-2-0-0-is-released/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/190/meme.jpg)](https://x.com/trashh_dev/status/1803151970078957936)
+
+下次见！👋

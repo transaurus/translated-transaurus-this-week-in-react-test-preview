@@ -10,7 +10,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_58cfcc64",
-        "en": "@@untranslatable_placeholder_58cfcc64"
+        "en": "@@untranslatable_placeholder_58cfcc64",
+        "zh-hans": "@@untranslatable_placeholder_58cfcc64"
       },
       "invalid_translations": {}
     },
@@ -22,7 +23,8 @@
       "translatable": true,
       "translations": {
         "fr": "# useSyncExternalStore - L'API React sous-estimée",
-        "en": "# useSyncExternalStore - L'API React sous-estimée"
+        "en": "# useSyncExternalStore - L'API React sous-estimée",
+        "zh-hans": "# useSyncExternalStore - 被低估的React API"
       },
       "invalid_translations": {}
     },
@@ -34,7 +36,8 @@
       "translatable": true,
       "translations": {
         "fr": "Vous avez peut-être entendu parler de [`useSyncExternalStore()`](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore), un nouveau hook de React 18 pour **souscrire à des sources de données externes**. Il est souvent utilisé en interne par des bibliothèques de gestion d'état - comme [Redux](https://github.com/reduxjs/react-redux/pull/1808) - pour implémenter un **système de sélecteur**.",
-        "en": "Vous avez peut-être entendu parler de [`useSyncExternalStore()`](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore), un nouveau hook React 18 pour **souscrire à des sources de données externes**. Il est souvent utilisé en interne par des bibliothèques de gestion d'état - comme [Redux](https://github.com/reduxjs/react-redux/pull/1808) - pour implémenter un **système de sélecteurs**."
+        "en": "Vous avez peut-être entendu parler de [`useSyncExternalStore()`](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore), un nouveau hook React 18 pour **souscrire à des sources de données externes**. Il est souvent utilisé en interne par des bibliothèques de gestion d'état - comme [Redux](https://github.com/reduxjs/react-redux/pull/1808) - pour implémenter un **système de sélecteurs**.",
+        "zh-hans": "你可能听说过 [`useSyncExternalStore()`](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)，这是React 18中用于**订阅外部数据源**的新钩子。它常被状态管理库（如[Redux](https://github.com/reduxjs/react-redux/pull/1808)）内部使用，用于实现**选择器系统**。"
       },
       "invalid_translations": {}
     },
@@ -46,7 +49,8 @@
       "translatable": true,
       "translations": {
         "fr": "Mais qu'en est-il d'utiliser `useSyncExternalStore()` dans votre propre code d'application ?",
-        "en": "Mais qu'en est-il de l'utilisation de `useSyncExternalStore()` dans votre propre code d'application ?"
+        "en": "Mais qu'en est-il de l'utilisation de `useSyncExternalStore()` dans votre propre code d'application ?",
+        "zh-hans": "但在你自己的应用代码中使用`useSyncExternalStore()`会怎样呢？"
       },
       "invalid_translations": {}
     },
@@ -58,7 +62,8 @@
       "translatable": true,
       "translations": {
         "fr": "Dans cet article interactif, je souhaite vous présenter un problème : **les hooks React qui retournent trop de données déclenchent des re-rendus inutiles**. Nous verrons comment `useSyncExternalStore()` peut être une bonne solution.",
-        "en": "Dans cet article interactif, je souhaite vous présenter un problème : **les hooks React qui renvoient trop de données déclenchent des re-rendus inutiles**. Nous verrons comment `useSyncExternalStore()` peut constituer une bonne solution."
+        "en": "Dans cet article interactif, je souhaite vous présenter un problème : **les hooks React qui renvoient trop de données déclenchent des re-rendus inutiles**. Nous verrons comment `useSyncExternalStore()` peut constituer une bonne solution.",
+        "zh-hans": "在这篇交互式文章中，我想提出一个问题：**过度返回的React钩子会触发无用的重新渲染**。我们将看到`useSyncExternalStore()`如何成为有效的解决方案。"
       },
       "invalid_translations": {}
     },
@@ -70,7 +75,8 @@
       "translatable": true,
       "translations": {
         "fr": "![social card](./social-card.png)",
-        "en": "![carte sociale](./social-card.png)"
+        "en": "![carte sociale](./social-card.png)",
+        "zh-hans": "![社交卡片](./social-card.png)"
       },
       "invalid_translations": {}
     },
@@ -82,7 +88,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_c6da205d",
-        "en": "@@untranslatable_placeholder_c6da205d"
+        "en": "@@untranslatable_placeholder_c6da205d",
+        "zh-hans": "@@untranslatable_placeholder_c6da205d"
       },
       "invalid_translations": {}
     },
@@ -94,7 +101,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_5dfba1c3",
-        "en": "@@untranslatable_placeholder_5dfba1c3"
+        "en": "@@untranslatable_placeholder_5dfba1c3",
+        "zh-hans": "@@untranslatable_placeholder_5dfba1c3"
       },
       "invalid_translations": {}
     },
@@ -106,7 +114,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_0adfe0aa",
-        "en": "@@untranslatable_placeholder_0adfe0aa"
+        "en": "@@untranslatable_placeholder_0adfe0aa",
+        "zh-hans": "@@untranslatable_placeholder_0adfe0aa"
       },
       "invalid_translations": {}
     },
@@ -118,7 +127,8 @@
       "translatable": true,
       "translations": {
         "fr": "## Les hooks qui retournent trop de données",
-        "en": "## Les hooks qui renvoient trop de données"
+        "en": "## Les hooks qui renvoient trop de données",
+        "zh-hans": "## 过度返回的钩子"
       },
       "invalid_translations": {}
     },
@@ -130,7 +140,8 @@
       "translatable": true,
       "translations": {
         "fr": "Illustrons le problème avec [`useLocation()`](https://reactrouter.com/en/main/hooks/use-location) de React-Router.",
-        "en": "Illustrons le problème avec [`useLocation()`](https://reactrouter.com/en/main/hooks/use-location) de React-Router."
+        "en": "Illustrons le problème avec [`useLocation()`](https://reactrouter.com/en/main/hooks/use-location) de React-Router.",
+        "zh-hans": "让我们通过React-Router的[`useLocation()`](https://reactrouter.com/en/main/hooks/use-location)钩子来说明这个问题。"
       },
       "invalid_translations": {}
     },
@@ -142,7 +153,8 @@
       "translatable": true,
       "translations": {
         "fr": "Ce hook retourne un objet avec de nombreux attributs (`pathname`, `hash`, `search`...), mais vous pourriez ne pas tous les utiliser. Le simple fait d'appeler le hook déclenchera des re-rendus lorsque l'un de ces attributs est mis à jour.",
-        "en": "Ce hook renvoie un objet avec de nombreux attributs (`pathname`, `hash`, `search`...), mais vous pourriez ne pas tous les utiliser. Le simple fait d'appeler le hook déclenchera des re-rendus lorsque l'un de ces attributs est mis à jour."
+        "en": "Ce hook renvoie un objet avec de nombreux attributs (`pathname`, `hash`, `search`...), mais vous pourriez ne pas tous les utiliser. Le simple fait d'appeler le hook déclenchera des re-rendus lorsque l'un de ces attributs est mis à jour.",
+        "zh-hans": "该钩子返回包含多个属性（`pathname`、`hash`、`search`等）的对象，但你可能不会用到所有属性。仅仅调用钩子就会在任一属性更新时触发重新渲染。"
       },
       "invalid_translations": {}
     },
@@ -154,7 +166,8 @@
       "translatable": true,
       "translations": {
         "fr": "Considérons cette application :",
-        "en": "Considérons cette application :"
+        "en": "Considérons cette application :",
+        "zh-hans": "考虑以下应用："
       },
       "invalid_translations": {}
     },
@@ -166,7 +179,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_4dd51304",
-        "en": "@@untranslatable_placeholder_4dd51304"
+        "en": "@@untranslatable_placeholder_4dd51304",
+        "zh-hans": "@@untranslatable_placeholder_4dd51304"
       },
       "invalid_translations": {}
     },
@@ -178,7 +192,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_61a24b68",
-        "en": "@@untranslatable_placeholder_61a24b68"
+        "en": "@@untranslatable_placeholder_61a24b68",
+        "zh-hans": "@@untranslatable_placeholder_61a24b68"
       },
       "invalid_translations": {}
     },
@@ -190,7 +205,8 @@
       "translatable": true,
       "translations": {
         "fr": "À chaque clic sur un lien de hachage, le composant `CurrentPathname` se re-rendra, même s'il n'utilise même pas l'attribut `hash` 😅.",
-        "en": "À chaque clic sur un lien avec hash, le composant `CurrentPathname` se re-rendra, même s'il n'utilise pas l'attribut `hash` 😅."
+        "en": "À chaque clic sur un lien avec hash, le composant `CurrentPathname` se re-rendra, même s'il n'utilise pas l'attribut `hash` 😅.",
+        "zh-hans": "点击任何哈希链接时，`CurrentPathname`组件都会重新渲染——即使它根本没有使用`hash`属性 😅。"
       },
       "invalid_translations": {}
     },
@@ -202,7 +218,8 @@
       "translatable": true,
       "translations": {
         "fr": ":::tip\n\nChaque fois qu'un hook retourne des données que vous n'affichez pas, pensez aux re-rendus React. Si vous n'y prêtez pas attention, un simple appel à `useLocation()` ajouté en haut d'un arbre React pourrait nuire aux performances de votre application.\n\n:::",
-        "en": ":::tip\n\nLorsqu'un hook renvoie des données que vous n'affichez pas, pensez aux re-rendus React. Si vous n'y prêtez pas attention, un simple appel à `useLocation()` ajouté en haut d'un arbre React pourrait nuire aux performances de votre application.\n\n:::"
+        "en": ":::tip\n\nLorsqu'un hook renvoie des données que vous n'affichez pas, pensez aux re-rendus React. Si vous n'y prêtez pas attention, un simple appel à `useLocation()` ajouté en haut d'un arbre React pourrait nuire aux performances de votre application.\n\n:::",
+        "zh-hans": ":::tip\n\n当某个钩子返回了你未使用的数据时，请思考React的重新渲染机制。稍不注意，在React树顶部添加一个微小的`useLocation()`调用就可能损害应用性能。\n\n:::"
       },
       "invalid_translations": {}
     },
@@ -214,7 +231,8 @@
       "translatable": true,
       "translations": {
         "fr": ":::info\n\nL'objectif n'est pas de critiquer React-Router, mais plutôt d'illustrer le problème. `useLocation()` est simplement un bon candidat pragmatique pour créer cet article interactif. Vos propres hooks React et d'autres bibliothèques tierces pourraient également retourner trop de données.\n\n:::",
-        "en": ":::info\n\nL'objectif n'est pas de critiquer React-Router, mais plutôt d'illustrer le problème. `useLocation()` est simplement un bon candidat pragmatique pour créer cet article interactif. Vos propres hooks React et d'autres bibliothèques tierces pourraient également renvoyer trop de données.\n\n:::"
+        "en": ":::info\n\nL'objectif n'est pas de critiquer React-Router, mais plutôt d'illustrer le problème. `useLocation()` est simplement un bon candidat pragmatique pour créer cet article interactif. Vos propres hooks React et d'autres bibliothèques tierces pourraient également renvoyer trop de données.\n\n:::",
+        "zh-hans": ":::info\n\n本文目的并非批评React-Router，而是阐明问题本质。`useLocation()`只是创建这篇交互式文章的实用案例。你自己的React钩子或其他第三方库同样可能存在过度返回问题。\n\n:::"
       },
       "invalid_translations": {}
     },
@@ -226,7 +244,8 @@
       "translatable": true,
       "translations": {
         "fr": "## `useSyncExternalStore` à la rescousse ?",
-        "en": "## `useSyncExternalStore` à la rescousse ?"
+        "en": "## `useSyncExternalStore` à la rescousse ?",
+        "zh-hans": "## `useSyncExternalStore`来救援？"
       },
       "invalid_translations": {}
     },
@@ -238,7 +257,8 @@
       "translatable": true,
       "translations": {
         "fr": "La [documentation officielle](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore) dit :",
-        "en": "La [documentation officielle](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore) indique :"
+        "en": "La [documentation officielle](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore) indique :",
+        "zh-hans": "[官方文档](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)说明："
       },
       "invalid_translations": {}
     },
@@ -250,7 +270,8 @@
       "translatable": true,
       "translations": {
         "fr": "> useSyncExternalStore est un hook recommandé pour lire et souscrire à des sources de données externes d'une manière compatible avec les fonctionnalités de rendu concurrent comme l'hydratation sélective et le découpage en tranches de temps.\n> Cette méthode retourne la valeur du store et accepte trois arguments :\n>\n> - `subscribe` : fonction pour enregistrer un callback qui est appelé à chaque fois que le store change.\n> - `getSnapshot` : fonction qui retourne la valeur actuelle du store.\n> - `getServerSnapshot` : fonction qui retourne l'instantané utilisé lors du rendu serveur.",
-        "en": "> useSyncExternalStore est un hook recommandé pour lire et souscrire à des sources de données externes d'une manière compatible avec les fonctionnalités de rendu concurrent comme l'hydratation sélective et le découpage temporel.\n> Cette méthode renvoie la valeur du store et accepte trois arguments :\n>\n> - `subscribe` : fonction pour enregistrer un callback qui est appelé chaque fois que le store change.\n> - `getSnapshot` : fonction qui renvoie la valeur actuelle du store.\n> - `getServerSnapshot` : fonction qui renvoie l'instantané utilisé pendant le rendu serveur."
+        "en": "> useSyncExternalStore est un hook recommandé pour lire et souscrire à des sources de données externes d'une manière compatible avec les fonctionnalités de rendu concurrent comme l'hydratation sélective et le découpage temporel.\n> Cette méthode renvoie la valeur du store et accepte trois arguments :\n>\n> - `subscribe` : fonction pour enregistrer un callback qui est appelé chaque fois que le store change.\n> - `getSnapshot` : fonction qui renvoie la valeur actuelle du store.\n> - `getServerSnapshot` : fonction qui renvoie l'instantané utilisé pendant le rendu serveur.",
+        "zh-hans": "> useSyncExternalStore是一个推荐用于读取和订阅外部数据源的钩子，其实现方式兼容选择性注水和时间切片等并发渲染特性。\n> 该方法返回存储的值并接受三个参数：\n>\n> - `subscribe`：注册回调的函数，在存储变更时被调用\n> - `getSnapshot`：返回存储当前值的函数\n> - `getServerSnapshot`：返回服务端渲染所用快照的函数"
       },
       "invalid_translations": {}
     },
@@ -262,7 +283,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_ec99e704",
-        "en": "@@untranslatable_placeholder_ec99e704"
+        "en": "@@untranslatable_placeholder_ec99e704",
+        "zh-hans": "@@untranslatable_placeholder_ec99e704"
       },
       "invalid_translations": {}
     },
@@ -274,7 +296,8 @@
       "translatable": true,
       "translations": {
         "fr": "Cela semble un peu abstrait. Cette [page de documentation bêta](https://beta.reactjs.org/learn/you-might-not-need-an-effect#subscribing-to-an-external-store) donne un bon exemple :",
-        "en": "Cela semble un peu abstrait. Cette [page de documentation bêta](https://beta.reactjs.org/learn/you-might-not-need-an-effect#subscribing-to-an-external-store) donne un bon exemple :"
+        "en": "Cela semble un peu abstrait. Cette [page de documentation bêta](https://beta.reactjs.org/learn/you-might-not-need-an-effect#subscribing-to-an-external-store) donne un bon exemple :",
+        "zh-hans": "这听起来有些抽象。这份[beta版文档](https://beta.reactjs.org/learn/you-might-not-need-an-effect#subscribing-to-an-external-store)提供了很好的示例："
       },
       "invalid_translations": {}
     },
@@ -286,7 +309,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_de26f08a",
-        "en": "@@untranslatable_placeholder_de26f08a"
+        "en": "@@untranslatable_placeholder_de26f08a",
+        "zh-hans": "@@untranslatable_placeholder_de26f08a"
       },
       "invalid_translations": {}
     },
@@ -298,7 +322,8 @@
       "translatable": true,
       "translations": {
         "fr": "Il s'avère que l'historique du navigateur peut également être considéré comme une source de données externe. Voyons comment utiliser `useSyncExternalStore` avec React-Router !",
-        "en": "Il s'avère que l'historique du navigateur peut également être considéré comme une source de données externe. Voyons comment utiliser `useSyncExternalStore` avec React-Router !"
+        "en": "Il s'avère que l'historique du navigateur peut également être considéré comme une source de données externe. Voyons comment utiliser `useSyncExternalStore` avec React-Router !",
+        "zh-hans": "事实上，浏览器历史记录也可视为外部数据源。让我们看看如何将`useSyncExternalStore`与React-Router结合使用！"
       },
       "invalid_translations": {}
     },
@@ -310,7 +335,8 @@
       "translatable": true,
       "translations": {
         "fr": "## Implémentation de `useHistorySelector()`",
-        "en": "## Implémentation de `useHistorySelector()`"
+        "en": "## Implémentation de `useHistorySelector()`",
+        "zh-hans": "## 实现`useHistorySelector()`"
       },
       "invalid_translations": {}
     },
@@ -322,7 +348,8 @@
       "translatable": true,
       "translations": {
         "fr": "React-Router expose tout ce dont nous avons besoin pour connecter `useSyncExternalStore` :",
-        "en": "React-Router expose tout ce dont nous avons besoin pour connecter `useSyncExternalStore` :"
+        "en": "React-Router expose tout ce dont nous avons besoin pour connecter `useSyncExternalStore` :",
+        "zh-hans": "React-Router提供了我们连接`useSyncExternalStore`所需的所有接口："
       },
       "invalid_translations": {}
     },
@@ -334,7 +361,8 @@
       "translatable": true,
       "translations": {
         "fr": "- accéder à l'historique du navigateur avec [`useHistory()`](https://v5.reactrouter.com/web/api/Hooks/usehistory)\n- souscrire aux mises à jour de l'historique avec [`history.listen(callback)`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#history.listen)\n- accéder à un instantané de l'emplacement actuel avec [`history.location`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#historylocation)",
-        "en": "- accéder à l'historique du navigateur avec [`useHistory()`](https://v5.reactrouter.com/web/api/Hooks/usehistory)\n- souscrire aux mises à jour de l'historique avec [`history.listen(callback)`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#history.listen)\n- accéder à un instantané de l'emplacement actuel avec [`history.location`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#historylocation)"
+        "en": "- accéder à l'historique du navigateur avec [`useHistory()`](https://v5.reactrouter.com/web/api/Hooks/usehistory)\n- souscrire aux mises à jour de l'historique avec [`history.listen(callback)`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#history.listen)\n- accéder à un instantané de l'emplacement actuel avec [`history.location`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#historylocation)",
+        "zh-hans": "- 通过[`useHistory()`](https://v5.reactrouter.com/web/api/Hooks/usehistory)访问浏览器历史记录\n- 通过[`history.listen(callback)`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#history.listen)订阅历史记录更新\n- 通过[`history.location`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#historylocation)访问当前位置的快照"
       },
       "invalid_translations": {}
     },
@@ -346,7 +374,8 @@
       "translatable": true,
       "translations": {
         "fr": ":::caution\n\nCe site utilise React-Router v5 : la solution sera différente pour React-Router v6 ([voir](https://twitter.com/Zh0uzi/status/1567523679604539405)).\n\n:::",
-        "en": ":::caution\n\nCe site utilise React-Router v5 : la solution sera différente pour React-Router v6 ([voir](https://twitter.com/Zh0uzi/status/1567523679604539405)).\n\n:::"
+        "en": ":::caution\n\nCe site utilise React-Router v5 : la solution sera différente pour React-Router v6 ([voir](https://twitter.com/Zh0uzi/status/1567523679604539405)).\n\n:::",
+        "zh-hans": ":::caution\n\n本网站使用 React-Router v5：此解决方案不适用于 React-Router v6（[参见](https://twitter.com/Zh0uzi/status/1567523679604539405)）。\n\n:::"
       },
       "invalid_translations": {}
     },
@@ -358,7 +387,8 @@
       "translatable": true,
       "translations": {
         "fr": "L'implémentation de `useHistorySelector()` est relativement simple :",
-        "en": "L'implémentation de `useHistorySelector()` est relativement simple :"
+        "en": "L'implémentation de `useHistorySelector()` est relativement simple :",
+        "zh-hans": "`useHistorySelector()` 的实现相对简单："
       },
       "invalid_translations": {}
     },
@@ -370,7 +400,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_eb25bb8c",
-        "en": "@@untranslatable_placeholder_eb25bb8c"
+        "en": "@@untranslatable_placeholder_eb25bb8c",
+        "zh-hans": "@@untranslatable_placeholder_eb25bb8c"
       },
       "invalid_translations": {}
     },
@@ -382,7 +413,8 @@
       "translatable": true,
       "translations": {
         "fr": "Utilisons-la dans notre application :",
-        "en": "Utilisons-la dans notre application :"
+        "en": "Utilisons-la dans notre application :",
+        "zh-hans": "让我们在应用中调用它："
       },
       "invalid_translations": {}
     },
@@ -394,7 +426,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_5680b15c",
-        "en": "@@untranslatable_placeholder_5680b15c"
+        "en": "@@untranslatable_placeholder_5680b15c",
+        "zh-hans": "@@untranslatable_placeholder_5680b15c"
       },
       "invalid_translations": {}
     },
@@ -406,7 +439,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_b905852a",
-        "en": "@@untranslatable_placeholder_b905852a"
+        "en": "@@untranslatable_placeholder_b905852a",
+        "zh-hans": "@@untranslatable_placeholder_b905852a"
       },
       "invalid_translations": {}
     },
@@ -418,7 +452,8 @@
       "translatable": true,
       "translations": {
         "fr": "Désormais, lorsque vous cliquez sur un lien de hachage ci-dessus, le composant `CurrentPathname` **ne se réaffichera plus** !",
-        "en": "Maintenant, lorsque vous cliquez sur un lien de hachage ci-dessus, le composant `CurrentPathname` **ne se réaffichera plus** !"
+        "en": "Maintenant, lorsque vous cliquez sur un lien de hachage ci-dessus, le composant `CurrentPathname` **ne se réaffichera plus** !",
+        "zh-hans": "现在，当您点击上方哈希链接时，`CurrentPathname` 组件将**不再重新渲染**！"
       },
       "invalid_translations": {}
     },
@@ -430,7 +465,8 @@
       "translatable": true,
       "translations": {
         "fr": "## Autre exemple : `scrollY`",
-        "en": "## Autre exemple : `scrollY`"
+        "en": "## Autre exemple : `scrollY`",
+        "zh-hans": "## 另一个示例：`scrollY`"
       },
       "invalid_translations": {}
     },
@@ -442,7 +478,8 @@
       "translatable": true,
       "translations": {
         "fr": "Il existe tant de sources de données externes auxquelles s'abonner, et implémenter votre propre système de sélecteurs par-dessus pourrait vous permettre d'optimiser les réaffichages React.",
-        "en": "Il existe tellement de sources de données externes auxquelles nous pouvons nous abonner, et implémenter votre propre système de sélecteur peut vous permettre d'optimiser les réaffichages React."
+        "en": "Il existe tellement de sources de données externes auxquelles nous pouvons nous abonner, et implémenter votre propre système de sélecteur peut vous permettre d'optimiser les réaffichages React.",
+        "zh-hans": "我们可以订阅的外部数据源非常丰富，在其基础上实现自己的选择器系统能有效优化 React 的重新渲染。"
       },
       "invalid_translations": {}
     },
@@ -454,7 +491,8 @@
       "translatable": true,
       "translations": {
         "fr": "Par exemple, supposons que nous voulions utiliser la position `scrollY` d'une page. Nous pouvons implémenter ce hook React personnalisé :",
-        "en": "Par exemple, supposons que nous voulions utiliser la position `scrollY` d'une page. Nous pouvons implémenter ce hook React personnalisé :"
+        "en": "Par exemple, supposons que nous voulions utiliser la position `scrollY` d'une page. Nous pouvons implémenter ce hook React personnalisé :",
+        "zh-hans": "例如，假设我们需要获取页面的 `scrollY` 滚动位置。可以实现如下自定义 React Hook："
       },
       "invalid_translations": {}
     },
@@ -466,7 +504,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_65ba7468",
-        "en": "@@untranslatable_placeholder_65ba7468"
+        "en": "@@untranslatable_placeholder_65ba7468",
+        "zh-hans": "@@untranslatable_placeholder_65ba7468"
       },
       "invalid_translations": {}
     },
@@ -478,7 +517,8 @@
       "translatable": true,
       "translations": {
         "fr": "Nous pouvons désormais utiliser ce hook avec un sélecteur optionnel :",
-        "en": "Nous pouvons maintenant utiliser ce hook avec un sélecteur optionnel :"
+        "en": "Nous pouvons maintenant utiliser ce hook avec un sélecteur optionnel :",
+        "zh-hans": "现在即可通过可选选择器调用该 Hook："
       },
       "invalid_translations": {}
     },
@@ -490,7 +530,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_5b2e44c7",
-        "en": "@@untranslatable_placeholder_5b2e44c7"
+        "en": "@@untranslatable_placeholder_5b2e44c7",
+        "zh-hans": "@@untranslatable_placeholder_5b2e44c7"
       },
       "invalid_translations": {}
     },
@@ -502,7 +543,8 @@
       "translatable": false,
       "translations": {
         "fr": "@@untranslatable_placeholder_70c65cb9",
-        "en": "@@untranslatable_placeholder_70c65cb9"
+        "en": "@@untranslatable_placeholder_70c65cb9",
+        "zh-hans": "@@untranslatable_placeholder_70c65cb9"
       },
       "invalid_translations": {}
     },
@@ -514,7 +556,8 @@
       "translatable": true,
       "translations": {
         "fr": "Faites défiler la page et observez comment les composants ci-dessus se réaffichent ? L'un se réaffiche moins que l'autre !",
-        "en": "Faites défiler la page et observez comment les composants ci-dessus se réaffichent ? L'un se réaffiche moins que l'autre !"
+        "en": "Faites défiler la page et observez comment les composants ci-dessus se réaffichent ? L'un se réaffiche moins que l'autre !",
+        "zh-hans": "滚动页面时观察上方组件的重新渲染情况？其中一个组件的渲染频率明显更低！"
       },
       "invalid_translations": {}
     },
@@ -528,7 +571,13 @@
         "fr": ":::info\n\nLorsque vous n'avez pas besoin d'une précision au pixel près pour `scrollY`, renvoyer une valeur à large plage comme `scrollY` peut aussi être considéré comme un retour excessif. Envisagez de renvoyer une valeur plus restreinte.\n\nPar exemple : un hook `useResponsiveBreakpoint()` qui ne renvoie qu'un ensemble limité de valeurs (`small`, `medium` ou `large`) sera plus optimisé qu'un hook `useViewportWidth()`.\n\nSi un composant React ne gère différemment que les écrans `large`, vous pouvez créer un hook encore plus ciblé `useIsLargeScreen()` renvoyant un booléen.\n\n:::",
         "en": ":::info\n\nLorsque vous n'avez pas besoin d'une précision au pixel près pour `scrollY`, renvoyer une large plage de valeurs comme `scrollY` peut également être considéré comme un retour excessif. Envisagez de renvoyer une valeur plus étroite.\n\nPar exemple : un hook `useResponsiveBreakpoint()` qui ne renvoie qu'un ensemble limité de valeurs (`small`, `medium` ou `large`) sera plus optimisé qu'un hook `useViewportWidth()`.\n\nSi un composant React ne gère que les écrans `large` différemment, vous pouvez créer un hook encore plus ciblé `useIsLargeScreen()` renvoyant un booléen.\n\n:::"
       },
-      "invalid_translations": {}
+      "invalid_translations": {
+        "zh-hans": {
+          "translation": ":::info\n\n当不需要 `scrollY` 的像素级精度时，返回宽范围值（如 `scrollY`）也可视为过度返回。建议返回更精确的取值。\n\n例如：返回有限值集（`small`/`medium`/`large`）的 `useResponsiveBreakpoint()` Hook 比返回视口宽度的 `useViewportWidth()` 更优化。\n\n若组件仅需区分 `large` 屏幕，可进一步实现仅返回布尔值的 `useIsLargeScreen()` Hook。\n\n:::",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`useResponsiveBreakpoint()`', Translation: '`small`'.",
+          "timestamp": "2025-06-25T10:18:21.105247+00:00"
+        }
+      }
     },
     {
       "segment_id": "67dfd717",
@@ -538,7 +587,8 @@
       "translatable": true,
       "translations": {
         "fr": "## Conclusion",
-        "en": "## Conclusion"
+        "en": "## Conclusion",
+        "zh-hans": "## 结论"
       },
       "invalid_translations": {}
     },
@@ -550,7 +600,8 @@
       "translatable": true,
       "translations": {
         "fr": "J'espère que cet article vous a convaincu de reconsidérer `useSyncExternalStore()`. Je trouve que ce hook est actuellement sous-utilisé dans l'écosystème React et mérite davantage d'attention. Il existe de nombreuses sources de données externes auxquelles vous pouvez vous abonner.",
-        "en": "J'espère que cet article vous a convaincu de reconsidérer `useSyncExternalStore()`. Je pense que ce hook est actuellement sous-utilisé dans l'écosystème React et mérite plus d'attention. Il existe de nombreuses sources de données externes auxquelles vous pouvez vous abonner."
+        "en": "J'espère que cet article vous a convaincu de reconsidérer `useSyncExternalStore()`. Je pense que ce hook est actuellement sous-utilisé dans l'écosystème React et mérite plus d'attention. Il existe de nombreuses sources de données externes auxquelles vous pouvez vous abonner.",
+        "zh-hans": "希望本文能让您重新审视 `useSyncExternalStore()`。该 Hook 目前在 React 生态中使用不足，值得更多关注——可订阅的外部数据源非常广泛。"
       },
       "invalid_translations": {}
     },
@@ -562,16 +613,18 @@
       "translatable": true,
       "translations": {
         "fr": "Si vous n'avez pas encore migré vers React 18, il existe un shim npm [use-sync-external-store](https://www.npmjs.com/package/use-sync-external-store) que vous pouvez déjà utiliser dans les anciennes versions. Il existe également une exportation `use-sync-external-store/with-selector` au cas où vous auriez besoin de renvoyer une valeur mémoïsée non primitive.",
-        "en": "Si vous n'êtes toujours pas passé à React 18, il existe un shim npm [use-sync-external-store](https://www.npmjs.com/package/use-sync-external-store) que vous pouvez déjà utiliser dans les anciennes versions. Il existe également une exportation `use-sync-external-store/with-selector` si vous avez besoin de renvoyer une valeur non primitive mémorisée."
+        "en": "Si vous n'êtes toujours pas passé à React 18, il existe un shim npm [use-sync-external-store](https://www.npmjs.com/package/use-sync-external-store) que vous pouvez déjà utiliser dans les anciennes versions. Il existe également une exportation `use-sync-external-store/with-selector` si vous avez besoin de renvoyer une valeur non primitive mémorisée.",
+        "zh-hans": "若尚未升级至 React 18，可通过 npm [use-sync-external-store](https://www.npmjs.com/package/use-sync-external-store) 垫片在旧版本中使用。如需返回非原始值的记忆化结果，还可使用 `use-sync-external-store/with-selector` 导出。"
       },
       "invalid_translations": {}
     }
   ],
   "target_i18n_subpath": "docusaurus-plugin-content-blog-articles/useSyncExternalStore-the-underrated-react-api/index.mdx",
-  "last_updated_timestamp": "2025-06-24T15:56:58.153786+00:00",
+  "last_updated_timestamp": "2025-06-25T10:18:21.105301+00:00",
   "schema_version": "1.0",
   "translated_versions": {
     "fr": "d837303b04cde37a19a845d82af4186f11a8e3903e147c38fe77df1f4309161d",
-    "en": "d837303b04cde37a19a845d82af4186f11a8e3903e147c38fe77df1f4309161d"
+    "en": "d837303b04cde37a19a845d82af4186f11a8e3903e147c38fe77df1f4309161d",
+    "zh-hans": "d837303b04cde37a19a845d82af4186f11a8e3903e147c38fe77df1f4309161d"
   }
 }

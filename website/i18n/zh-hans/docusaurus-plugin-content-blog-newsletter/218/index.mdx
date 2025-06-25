@@ -1,0 +1,171 @@
+---
+slug: /218
+title: "This Week In React #218: React-Scan, Server Functions, Portals, Forms, Storybook, React Aria, Unpic, React Native 0.77, Reanimated, Expo, EAS, Legend-List, Shadowlist, Document Picker, BottomTabs, Swift, Bun, Rspack, Vitest, Biome, ESLint..."
+authors: [slorber]
+date: 01-22-2025
+---
+
+大家好！
+
+这真是疯狂的一周，各个领域都涌现了大量重要版本更新，在本期通讯的所有板块中，我们几乎不可能全面覆盖所有应得的报道。
+
+我特别兴奋的是React Native生态系统通过v0.77版本和Reanimated v4提升了CSS兼容性。这对跨平台开发兼容性来说是个绝佳消息。
+
+前端生态系统同样如火如荼 🔥，涌现了Bun 1.2、Rspack 1.2、Vitest 3.0等重磅更新。
+
+而且，Tailwind v4预计随时会发布！（大概率就在我点击发送之后 😅）
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![PropelAuth：让认证成为您的优势](/emails/issues/218/propelauth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)
+
+**[PropelAuth：让认证成为您的优势](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)**
+
+如果您的认证系统**不能助力业务增长**，那它就是在**拖累发展**。
+
+通过[PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)，您将获得启动和扩展B2B产品所需的一切：
+
+- **清晰易懂的**[文档](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)和**友好高效的**技术支持
+- **覆盖全场景的UI组件**——注册/登录/MFA/组织管理等
+- **用户模拟功能**助您提供顶级客户支持
+- **企业级SAML/SSO**与**高级安全特性**满足高端市场需求
+- **用户行为洞察**辅助战略决策与业务扩展
+
+[立即开始使用](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)
+
+---
+
+## ⚛️ React {#react}
+
+[![React Scan 0.1](/emails/issues/218/react-scan.jpg)](https://github.com/aidenybai/react-scan)
+
+[**React Scan 0.1**](https://github.com/aidenybai/react-scan)
+
+这是React Scan的首个正式版本，这款新兴React性能工具近期在社交平台引发热议，其创作者Aiden Bai展示了多个精彩演示。该工具安装简便，能高效定位非必要React重渲染问题，提供卓越开发者体验，堪称强化版"why-did-you-update"。相关播客：🎙️ [JavaScript Jabber - 用React Scan优化React性能](https://www.youtube.com/watch?v=pyV1wMcOtN0)。
+
+---
+
+- 💸 [What is middleware in Next.js? And how Clerk uses it for authentication](https://clerk.com/blog/what-is-middleware-in-nextjs?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=nextjs-middleware&utm_content=01-22-24)
+- 🐦 [Parcel \+ React Server Components integration preview](https://x.com/devongovett/status/1881730597011571050)
+- 💬 [Storybook RFCs](https://github.com/storybookjs/storybook/discussions/categories/rfc): Several were created to reduce story creation boilerplate and improve autocompletion, type safety, and simplify syntax for writing tests.
+- 📖 [shadcn/ui \- Block](https://ui.shadcn.com/docs/blocks): shadcn has a community-driven “reusable blocks” library and this page explains how to publish your custom blocks to the registry.
+- 📜 [Why Server Functions Matter In A Server Component World](https://www.brenelz.com/posts/why-server-functions-matter-in-a-server-component-world/): Interesting reflection on using Server Functions in a framework that doesn’t support (yet) RSCs, illustrated with TanStack Start. Using RSCs, you make a tradeoff between bundle size and payload size. See also part 2 [Server Function Benefits](https://www.brenelz.com/posts/server-function-benefits/) which explains how Server Functions can offer similar benefits to RSCs.
+- 📜 [Do JavaScript frameworks still need portals?](https://fullystacked.net/portal/): This greatly explains why modern HTML elements like `<dialog>` can solve similar cases as React portals. Even when usage is deeply nested, those dialogs are not affected by their parents. Note: you can also stack dialogs on top of each other without using `z-index`, similar to portals.
+- 📜 [Next.js on EAS Hosting](https://x.com/JI/status/1879740964492980598): Expo founder shows how to host a Next.js 15 static site on EAS from the CLI, then with an automated CI. See also Theo [deploying Universal RSCs on EAS](https://www.youtube.com/watch?v=weYe4ffxWQk), and Jack Herrington [deploying a Vite React SPA app to EAS](https://www.youtube.com/watch?v=YU0ENx1xgJk). Web devs should pay attention to EAS, it’s not just for mobile anymore.
+- 📜 [Progressive Forms with React 19](https://rdrn.me/react-forms/): A comprehensive post showing all the steps to provide a great form UX supporting optimistic UI and progressive enhancement.
+- 📜 [Formity: The Ultimate Tool For Multi-Step Forms In React](https://www.formity.app/blog/articles/formity-ultimate-tool-multi-step-forms-react): An interactive post presenting a new form library focusing on the complexities of dynamic multi-step forms that adapt to user inputs. You don’t need to abandon your favorite single-step form library, it integrates with it.
+- 📜 [The XSS dangers in interpolating styled-components](https://andrei-calazans.com/posts/styled-components-xss-danger/): You might need to sanitize your React styling props to avoid this XSS attack vector.
+- 📜 [Implementing Streaming SSR with React Relay and Vite](https://aqora.io/blog/AEJsb2dBcnRpY2xlAZRgyH4wdeKfFHS0yil0Fw/implementing-streaming-ssr-with-react-relay-and-vite): Interesting React setup to study, although not supporting SSR streaming.
+- 📦 [React Aria \- January 15, 2025 Release \- Overlay CSS transitions, Autocomplete (alpha), Test utils package (alpha), and more](https://react-spectrum.adobe.com/releases/2025-01-15.html)
+- 📦 [Storybook 8.5 \- React 19 support, React Native Web Vite framework, A11y tests, code coverage](https://storybook.js.org/blog/storybook-8-5/)
+- 📦 [Unpic 1.0](https://unpic.pics/blog/unpic-1/): A framework-agnostic toolkit to display images that natively understand many CDNs, with first-class integrations for React and Next.js.
+- 📦 [React Three Handles](https://pmndrs.github.io/xr/docs/handles/introduction): A new convenient package to build React XR interactions.
+- 📦 [HeroUI](https://www.heroui.com/blog/introducing-heroui): New identity for NextUI library, since it’s not limited to Next.js usage.
+- 📦 [Justd \- Accessible React UI Components](https://getjustd.com/): Similar shadcn/ui, but using React Aria instead of Radix.
+- 📦 [React Admin 5.5 \- React 19, MUI 6, React Router 7, various new features](https://github.com/marmelab/react-admin/releases/tag/v5.5.0)
+- 📦 [React Testing Library 16.2 \- Support for React 19 APIs `onRecoverableError` and `onCaughtError`](https://github.com/testing-library/react-testing-library/releases/tag/v16.2.0)
+- 📦 [Puck 0.18 \- Visual editor for React](https://github.com/measuredco/puck/releases/tag/v0.18.0)
+- 🎥 [Hamed Bahram \- Optimizing your NextJs app with after()](https://www.youtube.com/watch?v=0h402Lkg4xs)
+- 🎥 [Ankita \- The Next.js Masterclass with Lee Rob](https://www.youtube.com/watch?v=M8bf7HJNLBo)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![测试已死 - Meticulous登场](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=jan22nd)
+
+**[测试已死 - Meticulous登场](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=jan22nd)**
+
+Meticulous以**零开发工作量**创建并维护完整的端到端UI测试套件。
+
+Traba公司CTO的这段话完美总结了这款产品："Meticulous从根本上改变了我们在Web应用中处理前端测试的方式，完全消除了编写任何前端测试的需求。该软件让我们确信每次变更都将经过完整的回归测试，使我们能够更快地交付代码，同时显著减少代码中的错误。该平台易于使用，降低了后端开发人员参与前端代码库的门槛。"
+
+Meticulous已被Lattice、Bilt Rewards、Power等众多公司采用。
+
+我们CTO的这篇[文章](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th)阐述了为何详尽测试能使工程效率翻倍的背景。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 0.77](/emails/issues/218/react-native-0.77.jpg)](https://reactnative.dev/blog/2025/01/21/version-0.77)
+
+[**React Native 0.77**](https://reactnative.dev/blog/2025/01/21/version-0.77)
+
+正如计划，新版React Native已正式发布。主要更新包括：
+
+- CSS支持增强：`display: contents`、`boxSizing`、`mixBlendMode`和`outline`
+- 支持Android 15的边到边显示及16KB内存页大小（性能优化）
+- 采用Swift AppDelegate的iOS初始化模板
+
+Expo用户福音：[SDK 52已支持v0.77](https://expo.dev/changelog/2025/01-21-react-native-0.77)，并同步更新了多项基础设施包（Screens、RNGH、Reanimated）。React 19支持需等待v0.78版本，但可能比预期更早到来！
+
+---
+
+[![Reanimated 4.0 beta](/emails/issues/218/reanimated4.jpg)](https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40)
+
+[**Reanimated 4.0 beta**](https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40)
+
+Reanimated 4测试版发布，这是重大更新！🔥 动画核心全面重构。现在您可以直接在原生线程使用常规CSS实现动画，这得益于新增支持：
+
+- CSS属性过渡
+- CSS关键帧动画
+
+这对React Native的微交互特别有价值，可大幅减少样板代码并实现跨平台动画。现有worklet API保持向后兼容，仍适用于高级需求，但新架构(New Architecture)现已成为必备条件。
+
+参阅[Reactiive将Reanimated v2动画迁移至v4](https://reactiive.io/articles/css-animations-react-native)的案例，迁移过程大幅简化。更不用说迁移旧版Reanimated v1代码了🙈。
+
+附注：您是否关注过正在积极开发的[React实验性`<ViewTransition>`组件](https://motion.dev/blog/reacts-experimental-view-transition-api)？它尚未集成到React-DOM中，这背后可能有令人期待的原因👀。
+
+---
+
+- 💸 [Codemagic - React Native 开发者的绝佳 App Center 替代方案！构建速度快 8 倍，支持 CodePush，自动化分发。提供 1 个月免费试用！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)
+- 🐦 [Expo 53 模块将支持 SwiftUI 和 Jetpack Compose](https://x.com/Baconbrix/status/1879900047397314813)
+- 💬 [React Native 提案 - 使用 keyboardLayoutGuide 改进 iOS 键盘回避](https://github.com/react-native-community/discussions-and-proposals/discussions/867)
+- 📣 [EAS 现已通过 SOC 2 Type 2 合规认证](https://expo.dev/blog/eas-soc2-type2)
+- 📜 [我是如何将我的裸 React Native 应用迁移到 Expo 的](https://expo.dev/blog/how-i-migrated-my-bare-react-native-app-to-expo)
+- 📜 [彻底解决 React Native 中的 Swift 模块头文件问题](https://www.callstack.com/blog/solving-swift-modular-header-issues-in-react-native-for-good)
+- 📜 [React Native RCTRootViewFactory (Brownfield 应用)](https://ospfranco.com/react-native-rctrootviewfactory/)
+- 📦 [React Native 文档选择器与查看器 10.0](https://react-native-documents.github.io/)
+- 📦 [Bottom Tabs 0.8 - 支持 Android 页面过渡效果和 Material You](https://github.com/callstackincubator/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.8.0)
+- 📦 [Legend List 1.0 测试版 - 宣称性能优于 FlashList](https://legendapp.com/open-source/list/intro/introduction/)
+- 📦 [Shadowlist alpha - 面向 React Native 的全新高性能列表](https://github.com/azimgd/shadowlist)
+- 📦 [Screens 4.6 测试版](https://github.com/software-mansion/react-native-screens/releases/tag/4.6.0-beta.0)
+- 📦 [Repack 5.0 rc.7 - 支持 NativeWind](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%405.0.0-rc.7)
+- 🎥 [Catalin Miron - React Native 日程表动画](https://www.youtube.com/watch?v=F3KJNgINMIQ)
+- 🎥 [Simon Grimm - 2025 年 React Native 必备技术栈](https://www.youtube.com/watch?v=I_J7N0n5YPs)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Biome 2.0 和 2025 路线图 - 插件、领域（适用于 React 等框架的规则）、HTML 和模板字符串片段支持](https://biomejs.dev/blog/roadmap-2025/)
+- 📜 [通过 moveBefore() 在 DOM 变更期间保留状态](https://developer.chrome.com/blog/movebefore-api)：激动人心的功能将于 2月4日 随 Chrome 133 推出，对 React 兄弟节点的协调很有用。
+- 📜 [TypeScript 枚举：使用场景与替代方案](https://2ality.com/2025/01/typescript-enum-patterns.html)
+- 📜 [所以，你想推动 Web 平台功能？](https://blog.yoav.ws/posts/so_you_want_to_push_a_web_platform_feature/)
+- 📦 [Bun 1.2 - Node.js 兼容性、内置 S3 和 SQL 客户端、基于文本的 lockfile、HTML 导入等](https://bun.sh/blog/bun-v1.2)
+- 📦 [Rspack 1.2 - 持久化缓存、Yarn PnP、性能改进](https://rspack.dev/blog/announcing-1-2)
+- 📦 [Vitest 3.0 - 新报告器、内联工作区、多浏览器支持、按位置过滤、公共 API](https://vitest.dev/blog/vitest-3)
+- 📦 [ESLint 9.18 - 稳定的 TypeScript 配置文件支持](https://eslint.org/blog/2025/01/eslint-v9.18.0-released/)
+- 📦 [ArkType 2.0 - 现代 TypeScript 验证库](https://arktype.io/docs/blog/2.0)
+- 📦 [Shiki 2.0 - 语法高亮工具，常规更新，弃用警告](https://shiki.style/blog/v2)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/218/meme.jpg)](https://x.com/aidenybai/status/1881397529369034997)
+
+[![alt](/emails/issues/218/meme2.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3lgbup6t2es2b)
+
+再见！👋

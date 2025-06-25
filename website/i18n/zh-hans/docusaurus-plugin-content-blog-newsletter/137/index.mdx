@@ -1,0 +1,171 @@
+---
+slug: /137
+title: "This Week In React #137: Code Extraction, Server Components, Signals, Forget compiler, Next.js, Astro, Deno, Remix, Preact, Signia, TypeScript..."
+authors: [slorber]
+date: 03-07-2023
+---
+
+大家好！
+
+本周虽然仍有大量关于信号的内容，但服务器组件(Server Components)的讨论已开始占据主导地位！
+
+距离提交演讲提案给[React-Native-Connection](https://reactnativeconnection.io/)（巴黎 - 6月1日）的征集截止还剩一周。
+
+<!-- truncate -->
+
+**💡 [在Twitter查看本期简报](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助 {#sponsor1}
+
+[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)
+
+**[构建可复用区块。更快发布内容。获得更优核心网页指标和SEO效果](https://suncel.io/)**
+
+**内容编辑者**：对于需要大量产出内容且具有强力SEO策略的公司具有变革性意义。营销人员和内容编辑者无需任何复杂操作即可编辑发布页面。消除冗长延迟，实现即时发布。通过Next.js优化页面和图片，达成完美的核心网页指标评分。
+
+**开发者**：可即插即用接入现有Next.js应用。使用Suncel CMS对开发者有多重优势：
+
+- 使用React构建可复用区块
+- 自动生成SEO元数据和站点地图（通过我们的SEO模块）
+- 在React中创建自定义设置项
+- 可通过React定制的管理后台
+- 无需适配CMS的路由系统
+
+**[访问Suncel.io](https://suncel.io/)** | **[5分钟演示视频](https://www.youtube.com/watch?v=LUupLEZKp3w)**
+
+---
+
+## ⚛️ React {#react}
+
+[![WTF是代码提取](/emails/issues/137/codeextraction.jpg)](https://www.builder.io/blog/wtf-is-code-extraction)
+
+**[WTF是代码提取](https://www.builder.io/blog/wtf-is-code-extraction)**
+
+Miško（Qwik）阐释了在同一个文件中混合服务端/客户端代码的优势，以及当前Next.js模型（导出提取）的局限：只能声明一个`getServerSideProps`函数，且必须使用`ReturnType`将正确数据类型注入客户端组件。函数提取和闭包提取能提供更优的开发者体验。
+
+这些技术尚未在当前React生态中应用，但预计很快会出现在我们的框架中。Qwik团队计划[将其代码提取机制与框架解耦](https://twitter.com/manucorporat/status/1630955309890957313)。Tanner Linsley正[与他们合作](https://twitter.com/tannerlinsley/status/1630994907405115393)，并已在[Bling工具包](https://twitter.com/tannerlinsley/status/1631003945522065409)中应用此类提取技术，该工具包将为即将推出的TanStack Start框架提供支持。
+
+我认为在讨论Next.js当前局限时，也应将React服务器组件归入允许无缝混合服务端/客户端代码的技术范畴。
+
+---
+
+![React服务器组件](/emails/issues/137/rsc.jpg)
+
+**React服务器组件**
+
+继信号之后，服务器组件成为本周焦点。Dan Abramov在寻找解释该新特性的合适心智模型时引发了大量讨论。您需要深入这些讨论才能找到最能引起共鸣的类比。
+
+- 🧵 [Dan Abramov - "我需要开始收集推介 React 服务端组件的方式"](https://twitter.com/dan_abramov/status/1631885118355718144)
+- 🧵 [Dan Abramov - "关于 React 服务端组件，有什么问题尽管问我"](https://twitter.com/dan_abramov/status/1631641431742857216)
+- 🧵 [Dan Abramov - `ui = client(server(data), state)`](https://twitter.com/dan_abramov/status/1632535654142713862)
+- 🧵 [Rick Hanlon - "它们将你的容器组件移至服务器"](https://twitter.com/rickhanlonii/status/1632041893960855552)
+- 🧵 [Josh Comeau 谈服务端组件](https://twitter.com/JoshWComeau/status/1631398854632304641)
+- 🧵 [Andrew Clark 谈框架无关工具与深度集成工具](https://twitter.com/acdlite/status/1632910367289491459)
+- 🐦 [Ben Holmes - "React 服务端组件和 Astro 就像是...一回事"](https://twitter.com/BHolmesDev/status/1633133090057986050)
+- 🐦 [Daishi Kato - "我是这样将 RSC 放入客户端组件的"](https://twitter.com/dai_shi/status/1631989295866347520)
+- 🎥 [React 现在是一个后端框架了](https://www.youtube.com/watch?v=EhI6wb5nEEs)
+- 🎥 [与 Dan Abramov、Joe Savona 和 Kent C. Dodds 一起探讨 React 服务端组件](https://www.youtube.com/watch?v=h7tur48JSaw)：直播讨论即将开始，应该会非常有趣。
+
+服务端组件也可能带来意想不到的好处：[用于 Electron 线程的通信层](https://twitter.com/Eli_White/status/1632445703950852096) 或 [用于静态站点生成器的灵活数据层](https://twitter.com/sebastienlorber/status/1632310649609920513)。
+
+---
+
+- 📜 [React vs Signals：十年之后](https://dev.to/this-is-learning/react-vs-signals-10-years-later-3k71)：不要错过 Dan Abramov 对 Ryan Carniato 这篇文章的回应。Dan 不希望 React 组件的函数像 SolidJS 那样作为"setup"存在：重新执行函数应是自愿行为。
+- 📜 [为 JavaScript 中的 Signals 辩护](https://dev.to/this-is-learning/making-the-case-for-signals-in-javascript-4c7i)：Ryan Carniato 列举了使用 signals 的充分理由，并提出了一些相当有趣的观点。我也认为您不应为了性能原因而改变组件的组织结构。
+- 📜 [即将推出的 React 编译器只能解决部分问题](https://www.builder.io/blog/react-compiler-will-not-solve-prop-drilling)：解释了为什么 React Forget 编译器无法像 signals 那样解决中间重渲染问题。
+- 📜 [React Hooks 是个错误吗？](https://jakelazaroff.com/words/were-react-hooks-a-mistake/)：Jake 阐述了 hooks 引入的问题，以及 signals 与 React 类组件的相似性。
+- 📜 [框架定义的基础设施](https://vercel.com/blog/framework-defined-infrastructure)：Vercel 的 CTO 解释基础设施如何自动适配您的代码，并以 Next.js 为例说明。
+- 📜 [2023 年 Web 框架性能报告](https://astro.build/blog/2023-web-framework-performance-report/)：Fred（Astro）通过真实性能数据分析框架如何影响应用性能，提供了 Astro、Gatsby、Remix 和 Next.js 的性能评分。
+- 📜 [Deno - 您不需要构建步骤](https://deno.com/blog/you-dont-need-a-build-step)：剖析 Next.js 四个构建步骤（编译、压缩、打包、代码分割）的复杂性，提出基于 Fresh 及其即时编译模式的替代方案。
+- 📜 [React 初学者常见错误](https://www.joshwcomeau.com/react/common-beginner-mistakes/)：Josh Comeau 为初学者撰写的优秀交互式文章。
+- 📜 [对 React 编译器的期望清单](https://electricui.com/blog/wishlist-for-a-react-compiler)：Michael 通过大量编译前后示例说明他对 React-Forget 编译器的功能期许。
+- 📜 [Preact Signals 与 React 替代方案的基准测试](https://electricui.com/blog/benchmarking-preact-signals)
+- 📜 [Sentry 前端测试：从 Enzyme 迁移到 React Testing Library](https://blog.sentry.io/2023/02/23/sentrys-frontend-tests-migrating-from-enzyme-to-react-testing-library/)
+- 📜 [React 中的属性钻取与组件组合](https://alexsidorenko.com/blog/react-prop-drilling-composition/)
+- 🎨 ["React 设计思维"可视化](https://twitter.com/asidorenko_/status/1631967645376315400)
+- 🎥 [20 分钟重建 React 的 Jotai 状态管理器！](https://www.youtube.com/watch?v=gg31JTZmFUw)
+- 📦 [preact-reconcilers](https://github.com/CodyJasonBennett/preact-reconciler)：用于创建自定义 Preact 渲染器的包，支持[运行 React-Three-Fiber + Preact](https://twitter.com/Cody_J_Bennett/status/1632674026408558592)。
+- 📦 [Remix 1.14](https://twitter.com/kentcdodds/status/1631059357654818819)：热模块替换 + 热数据重新验证。
+- 📦 [Signia - 可扩展的 TypeScript 信号库](https://tldraw.substack.com/p/introducing-signia)：含 React 绑定的新型信号库。
+- 📦 [Remix + Fastly 支持](https://twitter.com/FastlyDevs/status/1631031583523192832)：新增 Remix 服务端适配器。
+- 📦 [Mantine 6.0](https://mantine.dev/changelog/6-0-0/)
+- 📦 [Storybook-Docusaurus](https://github.com/jodyheavener/storybook-docusaurus)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Surveyjs - 用于调查和表单的可扩展 JavaScript 库](/emails/issues/136/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)
+
+**[用于调查和表单的可扩展 JavaScript 库](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)**
+
+[SurveyJS](https://surveyjs.io/form-library?utm_source=thisweekinreact&utm_medium=referral) 是一套开源 JavaScript 表单库，可轻松集成到 Web 应用中。它支持**创建并运行多个表单**，将所有敏感数据保留在您的服务器上，或拥有**自托管的 WYSIWYG 表单构建器**供非技术人员直接使用。
+
+您还可在定制仪表板中**分析调查结果**，将表单保存为 PDF，或直接**转换为可编辑的 PDF 文件**。该库原生支持 **React 和 Angular 渲染**，且后端完全自由选择——**任何服务器+数据库组合均完全兼容**。
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 👀 [React Native 应用的代码消除演示](https://twitter.com/Baconbrix/status/1631749459389431808)：即将推出的 Expo CLI 功能，可识别应用中未使用的原生代码以便安全移除
+- 👀 [React Native 即将成为 Monorepo](https://twitter.com/o_kwasniewski/status/1631292628217266176)
+- 📜 [我将 JSON.parse() 性能提升 2 倍](https://radex.io/react-native/json-parse/)：Radek 提出通过基于 [SIMD 指令](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)的 C++ 库优化 Hermes 性能。即使不使用 React Native 也值得阅读。相关讨论见 [Hermes PR](https://github.com/facebook/hermes/issues/811)
+- 📜 [参加 Chain React 的十大理由](https://shift.infinite.red/top-ten-reasons-to-go-to-chain-react-665a93883e4f)
+- 🔗 [React Native 搭便车指南](https://twitter.com/ospfranco/status/1631984862474248193)：Oscar 分享的 React Native 知识库，含大量 JSI 相关高级主题
+- 🎙️ [RNR 261 - EAS 究竟如何运作？](https://reactnativeradio.com/episodes/rnr-261-whats-the-deal-with-eas)
+- 🎥 [Riveo 翻页效果 - "React Native 能实现吗？"](https://www.youtube.com/watch?v=xNZCQvtnhIU)
+- 📦 [React-Native-Graph 1.0](https://github.com/margelo/react-native-graph/releases/tag/v1.0.1)：Margelo 基于 Skia 的图表库稳定版
+- 📦 [Expo Router 1.2](https://twitter.com/Baconbrix/status/1630969201421582341)
+- 📦 [React-Native-Replicache](https://github.com/Braden1996/react-native-replicache/)
+- 📦 [VisionCamera 集成 TensorFlow Lite 实时对象检测](https://github.com/jaroslawkrol/vision-camera-realtime-object-detection) - [演示](https://twitter.com/mrousavy/status/1631269105796886528)
+
+---
+
+## 🧑‍💻 职位 {#jobs}
+
+🧑‍💼 [**Passionfroot - 高级全栈工程师 (Remix) - €160k+, 柏林/远程**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 致力于通过 YouTube、播客、社交媒体和新闻通讯赋能未来的独立企业。加入我们，共同构建助力全球创作者建立可扩展、可持续业务的工具。
+
+🧑‍💼 [**Callstack - 高级 React Native 开发工程师 - 完全远程，B2B 每月净收入 21-32k 波兰兹罗提**](https://www.callstack.com/senior-react-native-developer)
+
+您想开发世界上最常用的应用程序吗？您想共同创建 React Native 技术吗？加入 Callstack 的 React 和 React Native 领导者团队。查看我们的网站获取更多详情。我们期待看到您的申请——向我们展示您的实力！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们有几个专注于 React Native 的开发职位空缺！薪资约为 16 万美元外加 10% 奖金。您必须拥有 RN 生产环境经验且位于美国。请私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多信息，别忘了提及 This Week in React。
+
+💡 [如何发布招聘信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [通过 CSS 锚点定位实现元素互连](https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/)：CSS 草案功能，可替代 Popper、Floating-UI 或 Tether 等定位库
+- [TypeScript 5.0 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/)
+- [Zod 3.21](https://twitter.com/colinhacks/status/1632472849960280064)
+- [ArkType TS/JS 的同构类型](https://github.com/arktypeio/arktype)
+- [JavaScript 导入映射，第 2 部分：深度探索](https://spidermonkey.dev/blog/2023/03/02/javascript-import-maps-part-2-in-depth-exploration.html)
+- [WebAssembly 能否解决 Serverless 的难题？](https://thenewstack.io/can-webassembly-solve-serverless-problems/)
+- [JavaScript 垃圾回收器实验](https://dev.to/codux/experiments-with-the-javascript-garbage-collector-2ae3)
+- [Drizzle ORM - 面向 SQL 的 TypeScript ORM](https://github.com/drizzle-team/drizzle-orm)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/137/meme.jpg)](https://twitter.com/potetotes/status/1631401117186764803)
+
+🤣 [本周其他搞笑推文](https://twitter.com/sebastienlorber/status/1633443251955875840)
+
+再见！👋

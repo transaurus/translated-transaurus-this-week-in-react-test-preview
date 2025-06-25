@@ -1,0 +1,166 @@
+---
+slug: /187
+title: "This Week In React #187: Next.js, Expo, Popover, rethrow, SWR, React-Query, Astro, PPR, tRPC, zsa, Memory leaks, INP, RN IDE, Skia, WebGPU, RNSC, Atlas, Re.Pack, Prisma, SwiftUI, Flutter, Angular..."
+authors: [slorber, bndkt]
+date: 05-29-2024
+---
+
+大家好！
+
+上周我们在 Vercel Ship 和 App.js 大会上收获了许多重要公告。
+
+我还发现本周的社区博客文章非常有趣！这里有很多精彩内容值得阅读。关于内存泄漏的那篇相当吓人😅。
+
+我最近一直在思考：写[Twitter帖子](https://slo.im/thread)还有用吗？我已在[Twitter上提出这个问题](https://x.com/sebastienlorber/status/1795377678918554072)，感觉除了少数人之外，几乎没人阅读了。我正在考虑停止更新。你们怎么看？🤔
+
+<!-- truncate -->
+
+**💡 [在Twitter上查看本期通讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![React-admin：B2B应用的开源框架](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)
+
+**[React-admin：B2B应用的开源框架](https://marmelab.com/react-admin/)**
+
+👩🏻‍💻 **开发者打造，为开发者服务**：React-admin是免费的低代码库，能加速内部工具、管理后台或B2B应用的开发。与无代码工具不同，您使用真实代码，确保永远不会被框架限制。
+
+🔌 **灵活集成**：支持任何API格式（REST或GraphQL）及多种认证后端（包括Auth0、Cognito、Google Auth、Active Directory和Keycloak）。您完全掌控服务器，因此单点登录(SSO)功能不会产生额外费用。支持完整主题定制，可匹配企业品牌色。
+
+🚀 **久经验证**：已有超过25,000家公司使用React-admin构建单页应用。在您的下一个项目中，使用react-admin可节省数周开发时间。[立即尝试react-admin](https://marmelab.com/react-admin/)。
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 15 RC](/emails/issues/187/nextjs.jpg)](https://nextjs.org/blog/next-15-rc)
+
+**[Next.js 15 RC](https://nextjs.org/blog/next-15-rc)**
+
+Next.js新主版本在上周的Vercel Ship大会上发布RC版，主要亮点包括：
+
+- React 19 RC support
+- React Compiler support (experimental) through the Babel plugin (this might increase build time)
+- Hydration error improvements, displaying the diff mismatch
+- Less aggressive caching, now opt-in: `fetch` and Route Handlers are no longer cached by default
+- Incrementally adopt Partial Prerendering with a new `experimental_ppr` route config option
+- New `create-next-app` design, prompting for Turbo usage in dev, and ability to create projects
+- next/after (experimental), a new API useful to defer analytics tasks and keep responses fast
+- Optimizing bundling of external packages (`serverExternalPackages`) now stable
+
+Vercel Ship大会还宣布了其他重要内容，更多资源可参考：
+
+- 📜 [Vercel Ship 2024 回顾](https://vercel.com/blog/vercel-ship-2024)
+- 📜 [Vercel 功能标志深度集成发布](https://vercel.com/blog/feature-flags)
+- 📜 [Vercel Web 应用防火墙发布](https://vercel.com/blog/introducing-the-vercel-waf)
+- 🎥 [Jack Herrington - NextJS 15：React 19、缓存优化、Turbopack、更优的水合错误及 Vercel Ship 更多内容！](https://www.youtube.com/watch?v=N2LzvfM2R5M)
+
+---
+
+- 💸 [Build AI apps with React and JavaScript — Frontend and UI for any LLM](https://docs.nlkit.com/nlux/?utm_source=twir-my24-3)
+- 👀 [React Core PR - Throw if React and React DOM versions don't match](https://github.com/facebook/react/pull/29236): React 19 will be stricter and require that the renderer version (DOM or RN) uses the exact same version as the core React package.
+- 👀 [React DOM PR - Add support for Popover API](https://github.com/facebook/react/pull/27981): This new API is now available in all major browsers, and React just merged support for it.
+- 👀 [Next.js PR - `unstable_rethrow`](https://github.com/vercel/next.js/pull/65831): Upcoming Next.js API to avoid catching internal errors thrown by Next.js (such as redirect/notFound errors).
+- 🐦 [Latest SWR beta can seamlessly move data fetching between client-side and server-side](https://x.com/shuding_/status/1794461568505352693). And [React-Query](https://x.com/TkDodo/status/1794801851671695533) + [Apollo Client](https://x.com/phry/status/1795777518944784450) also implemented similar features.
+- 🗓 [React Rally](https://reactrally.com/?utm_source=thisweekinreact) - 🇺🇸 Utah - 12-13, August - Get a 10% discount with code "TWIR". There’s an advanced React [workshop](https://reactrally.com/workshop) with Cory House.
+- 📜 [Sneaky React Memory Leaks: How useCallback and closures can bite you](https://schiener.io/2024-03-03/react-closures): A great article simplifying a real production app memory leak to explain it. This surprised me, I couldn’t guess such React code would leak memory, and pretty sure my apps contain memory leaks now 😅. Good news though: the app wouldn't leak memory when using the new React Compiler.
+- 📜 [Automatic Query Invalidation after Mutations](https://tkdodo.eu/blog/automatic-query-invalidation-after-mutations): React Query is un-opinionated about how you invalidate cached resources and instead lets you implement a custom strategy on top of flexible primitives. For example, you can invalidate queries by tags.
+- 📜 [Migrating from Radix to React Aria: Improving Accessibility and UX](https://argos-ci.com/blog/react-aria-migration): After having used alternatives such as Reakit or Radix, Greg gives good reasons for adopting React Aria. The migration feedback is positive, but some challenges were encountered. React Aria is quite “strict” at ensuring your components remain accessible.
+- 📜 [On Laravel, Full-Stack JavaScript, and Productive Frameworks](https://www.jplhomer.org/posts/on-laravel-full-stack-javascript-and-productive-frameworks/): Josh created 2 React meta-frameworks (including Shopify Hydrogen) and also uses Laravel extensively. He shares an interesting perspective on the pros/cons of the Laravel vs React ecosystem.
+- 📜 [A virtual DOM in 200 lines of JavaScript](https://lazamar.github.io/virtual-dom/): This greatly explains how a virtual DOM (like the one from React) works under the hood, by creating a small library that can run a TodoMVC app.
+- 📜 [Design System Retrospective](https://kyleshevlin.com/design-system-retrospective/): Interesting perspective on the successfulness of implementing a Chakra-like design system (tokens as props). The average dev struggled to understand how to compose primitives. Tailwind might be a better fit for them.
+- 📜 [Combining React Server Components with react-query for Easy Data Management](https://frontendmasters.com/blog/combining-react-server-components-with-react-query-for-easy-data-management/): A good read explaining limits RSCs. Server Actions run serially, and you need to wait for RSCs to re-render which might be slow without proper caching. Using React-Query with prefetching might slightly increase bundle size and produce more roundtrips, but overall that could give a faster UX.
+- 📜 [Using Server Actions with tRPC](https://trpc.io/blog/trpc-actions): Server Actions are similar to tRPC but come barebone. tRPC maintainer explains things that tRPC enables on top, such as auth, input validation, observability, rate-limiting, and other possible middleware. Note there are alternatives to consider such as next-server-action and zsa.
+- 📜 [Optimizing INP for a React App & Performance Learnings](https://www.iamtk.co/optimizing-inp-for-a-react-app-and-performance-learnings): A long feedback on optimizing responsiveness on a React 18 prod app. Various takeaways include deferring work and analytics, or being careful of useless re-renders.
+- 📜 [Partial Prerendering without a framework](https://developers.netlify.com/guides/partial-prerendering-without-a-framework/): Demo from Netlify CEO shows how to implement “vanilla PPR” (without Next.js which has this as an experimental feature).
+- 📜 [Behind the ‘as’ prop: polymorphism done well](https://www.kripod.dev/blog/behind-the-as-prop-polymorphism-done-well/): Also explains how to type it properly.
+- 📜 [Redwood - Using Middleware: RSS and Sitemap](https://redwoodjs.com/blog/using-middleware-rss-and-sitemap)
+- 📜 [Structured logging for Next.js - Using the Pino logging library](https://blog.arcjet.com/structured-logging-in-json-for-next-js/)
+- 📜 [Facebook just updated its relationship status with web components](https://www.mux.com/blog/facebook-just-updated-it-s-relationship-status-with-web-components)
+- 📜 [Authentication with WorkOS in Next.js: A Comprehensive Guide](https://www.nirtamir.com/articles/authentication-with-workos-in-next-js-a-comprehensive-guide)
+- 📜 [The Next.js \<Image> Component](https://www.premieroctet.com/blog/en/next-image-component)
+- 📜 [How To Dockerize A React App](https://scientyficworld.org/how-to-dockerize-a-react-app/)
+- 📦 [Astro 4.9 - React 19 support for Astro Actions](https://astro.build/blog/astro-490/): Adds new withState/getActionState APIs to integrate Astro with React 19 useActionState, including progressive enhancement.
+- 📦 [Storybook 8.1 - typesafe mocking, Unit testing React Server Components](https://storybook.js.org/blog/storybook-8-1/)
+- 📦 [NextUI 2.4](https://nextui.org/blog/v2.4.0)
+- 📦 [Ark UI 3.0](https://ark-ui.com/react/docs/overview/changelog#300---2024-05-24)
+- 📦 [React-Query 5.39 - Supports React 19](https://github.com/TanStack/query/releases/tag/v5.39.0)
+- 📦 [Redwood 7.6 - React Compiler experimental flag](https://github.com/redwoodjs/redwood/releases/tag/v7.6.0)
+- 📦 [zsa 0.1 - Typesafe Server Actions for Next.js](http://next.js)
+- 📦 [React-Executor - Asynchronous task execution and state management for React](https://github.com/smikhalevski/react-executor)
+- 🎥 [UI Engineering - Portals Can Share State Between Windows](https://www.youtube.com/watch?v=jZx33FPMXzc): It's a pretty cool idea to use React portals to integrate seamlessly between windows and might also be useful for the upcoming browser Picture-in-Picture API.
+- 🎥 [Theo - I Was Wrong About React Router.](https://www.youtube.com/watch?v=m86HssTKExU)
+- 🎥 [James Quick - Astro Launches Actions Similar like Next.js](https://www.youtube.com/watch?v=8mIUIhp2YGQ)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Next.js 身份验证教程（含 RSC 和服务器操作）](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)
+
+**[Next.js 身份验证教程（含 RSC 和服务器操作）](https://www.youtube.com/watch?v=aoRG1q_kVo8)**
+
+WorkOS 与 Sam Selikoff 的最新教程演示了如何轻松地将 AuthKit 托管登录框集成到 Next.js 应用：
+
+📚 Get started using the Authkit \<> Next.js [integration library](https://github.com/workos/authkit-nextjs)  
+🤖 Set up environment variables, configure the callback route and middleware, and implement signIn and signOut functionalities  
+⚙️ Protect routes in the Next.js app from unauthenticated users with the getUser function
+
+AuthKit 可与 WorkOS 用户管理配合使用，支持 MFA、身份关联、邮件验证、用户模拟等功能。
+
+最重要的是，**每月活跃用户 (MAU) 100 万以内免费使用 🚀**
+
+---
+
+## 📱 React-Native {#react-native}
+
+本节由 [Benedikt](https://twitter.com/bndkt) 撰写。
+
+![4 张 App.js 幻灯片截图](/emails/issues/187/rn.jpg)
+
+上周的 App.js Conf 打破了开发者们为即将到来的会议保留重大发布的沉寂，为我们带来了大量精彩内容和激动人心的公告！Expo 发布了恰如其名的 Atlas 工具，它像一张地图能帮助探索打包器领域的未知区域。如果你想了解代码如何进入并输出到应用，这正是你需要的工具。它尤其有助于缩减包体积，同时也能加深你对应用工作原理的理解。在 ORM 领域，Drizzle 将其 Studio 作为 Expo 开发工具插件发布，Prisma 则宣布将增加 React Native 支持。React Native IDE 现已开放测试版，可在 VS Code 扩展市场下载。最后，William Candillon 宣布 RN Skia 即将支持视频渲染，以及 React Native 的 WebGPU 支持！当然，我们仍对上周提到的通用 React 服务器组件保持高度期待。请务必补看 [App.js Conf 直播回放](http://app.js)。
+
+---
+
+- 💸 [WithFrame - 预构建 React Native 组件](https://withfra.me/components?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--1)
+- 🐦 [Re.Pack V5 将基于 Rspack 替代 Webpack](https://x.com/_jbroma/status/1793286546008981933)：这将带来显著的性能提升（冷启动 15s → 2.5s，构建 10s → 2s，HMR 450ms → 100ms）。
+- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 俄勒冈州波特兰市 - 7月17-19日。美国 React Native 大会回归，包含深度演讲与实践工作坊！使用代码 "TWIR" 可享 15% 门票折扣
+- 📜 [Expo Atlas 正式发布](https://expo.dev/blog/introducing-expo-atlas)：Expo 团队内部使用该工具开发更快的 Metro 解析器、优化 Babel 配置及实现 RSC。现在您也可用它来理解和优化应用！
+- 📜 [RNW 0.74 发布：Gallery 焕新与 Fabric 基础！React Native](https://devblogs.microsoft.com/react-native/2024-05-24-improved-gallery-fabric-0-74/)：从公告中了解到 React Native Gallery 应用，本质上是 Windows 平台的 RN 功能演示应用
+- 📜 [将 Prisma ORM 引入 React Native 和 Expo](https://www.prisma.io/blog/bringing-prisma-orm-to-react-native-and-expo)：Prisma（含响应式查询）现已在 RN 提供测试版，团队同时开发本地优先同步方案
+- 📜 [在 React Native 中使用 React-Admin](https://marmelab.com/blog/2024/05/22/using-react-admin-with-react-native.html)：React-Admin 是快速构建 CRUD 应用的框架，本文展示如何利用其无头架构在 RN 中集成
+- 📜 [Fluttering in the sky](https://www.celest.dev/blog/fluttering-in-the-sky)：非 RN 但值得关注：某公司正为 Flutter 开发类 React Native 服务端组件功能
+- 📦 [React Native IDE 开放测试版](https://ide.swmansion.com/)：可直接从 VS Code 市场下载扩展
+- 📦 [SwiftUI-React-Native 6.0](https://github.com/andrew-levy/swiftui-react-native)：直接从 React Native 调用 SwiftUI 功能
+- 📦 [React Native Skia 1.3.0](https://github.com/Shopify/react-native-skia/releases/tag/v1.3.0)：Skia 新增视频渲染能力
+- 📦 [Drizzle Studio 现通过开发工具插件支持 Expo SQLite](https://github.com/drizzle-team/drizzle-studio-expo/tree/main)：无需在 Mac 模拟器文件系统中单独查找 sqlite 文件进行调试
+- 🎥 [Simon Grimm - App.js 大会给 React Native 开发者的 10 个启示](https://www.youtube.com/watch?v=mhos9givltA)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [首届 HTML 现状调查的启示](https://frontendmasters.com/blog/state-of-html-2023-results-2/)
+- 📜 [“Web components” 被认为有害](https://www.mayank.co/blog/web-components-considered-harmful/)
+- 📦 [Angular 18.0 - 无 Zone、Material 3、延迟视图...](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe)
+- 📦 [TypeScript-ESLint v8 测试版 - 支持 ESLint 9](https://typescript-eslint.io/blog/announcing-typescript-eslint-v8-beta/)
+- 📦 [fnm 1.36 - 快速 Node.js 版本管理器](https://github.com/Schniz/fnm/releases/tag/v1.36.0)
+- 📦 [rsbuild 0.7](https://rsbuild.dev/community/releases/v0-7)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/187/meme.jpg)](https://x.com/jamonholmgren/status/1791255201774719178)
+
+再见！ 👋

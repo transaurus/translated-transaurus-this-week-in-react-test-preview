@@ -1,0 +1,153 @@
+---
+slug: /223
+title: "This Week In React #223: TanStack, React Router, React-Scan, Bun, Next.js, INP, Storybook | State of RN, Nitro Views, Reanimated, Gesture Handler, Screens, AWS-LC, QuickPush, Metro | TC39, CSS, TypeScript, Observables..."
+authors: [slorber]
+date: 02-26-2025
+---
+
+大家好！
+
+本周我们有：
+
+- **React**：内容丰富，包含许多社区文章，但没有重大公告。
+- **React Native**：2024年调查结果已发布，基础架构库现已支持RN 0.78，并且Nitro Views已经发布！
+- **Other**：多个TC39提案正在推进——我最喜欢的是`import defer`和`RegExp.escape()`。
+
+我正在尝试一种新的方式，如果您喜欢按以上部分划分的简介，请告诉我。
+
+查看我们的合作伙伴 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 巴黎 - 5月13日。Strapi是React生态中流行的无头CMS，而且和我一样，是法国的🥐！使用代码"TWIR"可享受10%折扣。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![React-admin: The Open-Source Framework for B2B apps](/emails/issues/223/marmelab.jpg)](https://marmelab.com/react-admin/?ref=TWIR)
+
+**[React-admin：面向B2B应用的开源框架](https://marmelab.com/react-admin/?ref=TWIR)**
+
+[React-admin](https://marmelab.com/react-admin/?ref=TWIR)是构建B2B应用的首选框架——因为说实话，没人梦想着再写一个CRUD界面。以下是成千上万开发者信赖它的原因：
+
+- 🔌 **后端无关：** 可连接任何API——因为承诺问题不仅存在于关系中。
+- 🧩 **200+构建块：** 预构建组件比你的项目TODO项还多。
+- 🛠 **完全可定制：** 如果你不喜欢，就改掉它。我们不会介意（*擦掉眼泪*）。
+- 💻 **出色的开发者体验：** 让你感觉像个编程摇滚明星，不过没有追星族（除非你把橡皮鸭也算上）。
+
+经过7年的生产实践和100万日活跃用户，react-admin是一个可靠的选择。那么，为什么不[亲自试试](https://github.com/marmelab/react-admin?ref=TWIR)呢？
+
+---
+
+## ⚛️ React {#react}
+
+- 💸 [AI coding benchmarks for backends](https://convex.link/thisweekbench)
+- 👀 [React Explorer \- Turns your React site into an interactive visualization](https://www.react-explorer.com/)
+- 📖 [Deno docs \- Build an app with TanStack and Deno](https://docs.deno.com/examples/tanstack_tutorial/)
+- 🗓 [React-Summit](https://reactsummit.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇳🇱 Amsterdam - 13 & 17 June. CFP is closing soon on March 2! Last chance to submit your talks for a top-tier tech audience.
+- 📜 [How Preply improved INP on a Next.js application (without React Server Components and App Router)](https://medium.com/preply-engineering/how-preply-improved-inp-on-a-next-js-application-without-react-server-components-and-app-router-491713149875): A deep dive into this Core Web Vital metrics and various things Preply tried to improve it, using a data-driven approach.
+- 📜 [Avoiding Server Component Waterfall Fetching with React 19 cache()](https://aurorascharff.no/posts/avoiding-server-component-waterfall-fetching-with-react-19-cache/): You can use `React.cache()` to deduplicate requests and preload data as soon as possible to avoid request waterfalls. This works but creates an implicit coupling. I’d prefer a more explicit model, hoisting all requests and passing promises down as props.
+- 📜 [Armin's TanStack Router Notes](https://gist.github.com/mitsuhiko/555b45f020a8d7e389516b51f6d03534): Documents challenges encountered while trying to determine whether Sentry could adopt TanStack Router.
+- 📜 [There’s no such thing as an isomorphic layout effect](https://smoores.dev/post/no_such_thing_isomorphic_layout_effect/): A possible interpretation of the story behind the `useIsomorphicLayoutEffect` pattern.
+- 📜 [Debouncing in React Router v7](https://programmingarehard.com/2025/02/24/debouncing-in-react-router-v7.html/): Interesting technique relying on `clientLoader`
+- 📜 [How to Download a file from a React Router route](https://sergiodxa.com/tutorials/download-a-file-from-a-react-router-route): With/without dynamic params, with/without JS.
+- 📜 [Shadcn Registry: A Better Way to Manage Your UI Components](https://ouassim.tech/notes/shadcn-registry-a-better-way-to-manage-your-ui-components/)
+- 📜 [Throwing vs. Returning Redirects in React Router](https://sergiodxa.com/articles/throwing-vs-returning-redirects-in-react-router)
+- 📜 [Functional programming in React](https://www.56kode.com/posts/level-up-react-functional-programming-in-react/)
+- 📜 [React Performance: Common Problems & Their Solutions](https://blog.sentry.io/react-js-performance-guide/)
+- 📜 [Making Next.js Apps Faster: A Practical Performance Guide Beyond Next.js](https://tigerabrodi.blog/making-nextjs-apps-faster-a-practical-performance-guide-beyond-nextjs)
+- 📜 [Progressive forms with server actions](https://waku.gg/blog/progressive-forms)
+- 📦 [Create TanStack Router App 0.4 \- Add-ons, SolidJS support, MCP support](https://github.com/TanStack/create-tsrouter-app/releases/tag/v0.4.0)
+- 📦 [React Scan 0.2 \- Slowdown notifications, explanations and pre-generated prompts to fix them](https://github.com/aidenybai/react-scan/releases/tag/v0.2.0)
+- 📦 [React Scan Chrome Extension](https://github.com/jantimon/chrome-react-scan-inspector)
+- 📦 [Storybook 8.6 \- Storybook Test improvements](https://github.com/storybookjs/storybook/releases/tag/v8.6.0)
+- 📦 [React Admin 5.6 \- Black & white theme](https://github.com/marmelab/react-admin/releases/tag/v5.6.0)
+- 📦 [Bun 1.2.3 - Built-in React support with hot-reloading, React init template](https://bun.sh/blog/bun-v1.2.3)
+- 🔨 [Laravel Starter Kits](https://laravel.com/starter-kits): Include a new official React 19 \+ Inertia 2 starter kit.
+- 🔨 [Remix Epic Stack update \- Passkeys, Helmets, and more\!](https://github.com/epicweb-dev/epic-stack/discussions/937)
+- 🎥 [Jack Herrington \- Fix Your Slow React App With React-Scan](https://www.youtube.com/watch?v=3EnathFYgz8)
+- 🎥 [Syntax \- Should You Use Signals with React?](https://www.youtube.com/watch?v=Diy4XRSFTiA)
+- 🎥 [Cosden \- Combining React Query With Server Components (Next.js)](https://www.youtube.com/watch?v=XcUpTPbY4Wg)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Tests are dead - Meticulous is here](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)
+
+**[测试已死 - Meticulous来了](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)**
+
+Meticulous以**零**开发工作量创建并维护一套全面的端到端UI测试。
+
+Dropbox、Bilt Rewards、Lattice以及数百家工程组织依赖Meticulous进行前端测试。
+
+Traba的CTO的这句话最好地总结了该产品："Meticulous从根本上改变了我们在Web应用中处理前端测试的方式，完全消除了编写任何前端测试的需要。该软件让我们确信每一次更改都将得到完整的回归测试，使我们能够更快地发布，代码中的错误显著减少。"
+
+我们的CTO（之前曾在Palantir领导一个大型工程团队）的这篇[文章](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th)阐述了为什么全面测试可以使工程速度翻倍的背景。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![2024年React Native现状 - 调查结果](/emails/issues/223/state-of-rn.jpg)](https://results.stateofreactnative.com/)
+
+**[2024年React Native现状 - 调查结果](https://results.stateofreactnative.com/)**
+
+调查结果已经发布，我非常自豪的是，在所有的React Native资源中，这份通讯获得了最高的积极评价分数。谢谢大家！❤️
+
+我无法总结整个调查，但以下是我发现的一些要点：
+
+- 61%的RN开发者来自React（Web）
+- iOS和Android仍然是最常见的RN目标平台，但Web也占据了22%的市场份额
+- 最受好评的库有：Reanimated、TanStack Query、Zustand、React Navigation、Expo Router、Skia
+- 在样式方面没有明显的赢家。开发者喜欢内置API（如StyleSheet和内联样式）
+
+---
+
+- 💸 [PostHog - 我们如何构建移动端回放功能（以及为何耗时如此之久）](https://dub.link/twir-feb26)
+- 📜 [如何使用 Expo Router UI 构建自定义标签页](https://expo.dev/blog/how-to-build-custom-tabs-with-expo-router-ui)
+- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 克拉科夫 - 5月28日至30日。不要错过机会，使用代码 "TWIR" 获取门票并享受15%独家折扣。
+- 📦 [Nitro 0.23 - Nitro 视图](https://github.com/mrousavy/nitro/releases/tag/v0.23.0)：一种便捷高效的原生 Swift/Kotlin 视图集成方案，需 React Native 0.78+ 和新架构支持。
+- 📦 [Reanimated 3.17 - 全面屏适配、LAB 色彩空间、`boxShadow` 动画支持](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.17.0)：RN 0.78 支持将在 3.17.1 版本中推出。
+- 📦 [React Native Boost - 通过 Babel 插件自动优化 React Native 应用性能](https://github.com/kuatsu/react-native-boost)：通过安全的 AST 微优化提升性能，例如使用原生 Text/View 组件替代 JavaScript 封装层。
+- 📦 [AWS-LibCrypto](https://github.com/OP-Engineering/op-aws-lc)：提供 Rust AWS 库的 React Native 绑定，已获美国政府 FIPS 认证。
+- 📦 [Screens 4.8 - 支持 Android 16KB 页面尺寸](https://github.com/software-mansion/react-native-screens/releases/tag/4.8.0)
+- 📦 [Screens 4.9 - 支持 RN 0.78](https://github.com/software-mansion/react-native-screens/releases/tag/4.9.0)
+- 📦 [Gesture Handler 2.24 - 支持 RN 0.78 和 Android 16KB 页面尺寸](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.24.0)
+- 📦 [QuickPush - 用于快速测试 Expo 推送通知的轻量级 macOS 菜单栏工具](https://github.com/betomoedano/quick-push)
+- 📦 [Metro 0.81.2 - 包导出功能明确公共 API 边界，性能优化及实验性标志](https://github.com/facebook/metro/releases/tag/v0.81.2)
+- 🔨 [React Native 目录的 VSCode 扩展](https://marketplace.visualstudio.com/items?itemName=react-native-directory.vscode-react-native-directory)：直接从 IDE 查找并安装合适的 RND 包。
+- 🎥 [Simon Grimm - 12分钟创建你的 iOS 小组件](https://www.youtube.com/watch?v=00VwmqqXDik)
+- 🎙️ [RNR 322 - 与 Builder Bob 共建 React Native 库](https://infinite.red/react-native-radio/rnr-322-building-react-native-libraries-with-builder-bob-6g-7gnty)
+- 🎙️ [Rocket Ship 61 - 与普通技术兄弟一起交付成功的 AI 应用](https://share.transistor.fm/s/fde1972f)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Chromium - 计划在 Chrome 135 中发布 Observables API](https://groups.google.com/a/chromium.org/g/blink-dev/c/stxSgTgMHog)
+- 🎮 [Anchoreum - 学习 CSS 锚点定位的游戏](https://anchoreum.com/): 没想到锚点定位如此强大！它已纳入 Interop 2025 规范，今年有望登陆所有浏览器，现在正是学习的好时机\!
+- 📜 [TC39 推进 3 项提案至第 4 阶段：RegExp 转义、Float16Array 和可重定义的全局 eval 变量](https://socket.dev/blog/tc39-advances-3-proposals-to-stage-4-regexp-escaping-float16array-and-redeclarable-global-eval)
+- 📜 [极限服务端渲染](https://www.scd31.com/posts/extreme-server-side-rendering): 通过保持连接活动，服务器可向客户端持续流式传输更新。作者基于此技术实现了 Flappy Bird 游戏，完全无需 JavaScript。
+- 📜 [测试 Web 身份验证 (WebAuthn)](https://www.heal.dev/docs/blog/testing-webauthn): 今日得知，可在 Playwright 中利用 Chrome 开发者工具功能。
+- 📜 [加速 JavaScript 生态系统 - Rust 与 JavaScript 插件](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-11/)
+- 📜 [百万个小秘密 - 解构"奇思妙想动画"着陆页](https://www.joshwcomeau.com/blog/whimsical-animations/)
+- 📜 [用弱引用颠覆控制](https://jlongster.com/subverting-control-weak-refs)
+- 🎥 [TypeScript 类型能运行 DOOM](https://www.youtube.com/watch?v=0mCsluv5FXA): 简直 🤯。
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/223/meme.jpg)](https://bsky.app/profile/sebastienlorber.com/post/3lijm77wxdk2b)
+
+[![alt](/emails/issues/223/meme2.jpg)](https://x.com/schlimmson/status/1892257891870265830)
+
+[![alt](/emails/issues/223/meme3.jpg)](https://x.com/cramforce/status/1894781544851783754)
+
+再见！ 👋

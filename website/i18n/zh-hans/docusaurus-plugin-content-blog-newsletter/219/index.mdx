@@ -1,0 +1,145 @@
+---
+slug: /219
+title: "This Week In React #219: CRA, Next.js, Remix, Tremor, SaaS-Starter, Local-First, JSDom, 2n8, RN-Windows, OTA, Polygen, Audio API, Debugging, Shopify, Bottom Tabs, Reanimated, Tailwind, Standard Schema, TypeScript..."
+authors: [slorber]
+date: 01-29-2025
+---
+
+大家好！
+
+与上周相比，这是相当平静的一周，我无法选出任何头条新闻！
+
+对我们生态系统最重要的消息可能是 Create React App 的正式弃用。此外还有 Tailwind v4 和 Standard Schema v1。
+
+我对即将发布的 TypeScript 5.8 的 `erasableSyntaxOnly` 标志感到非常兴奋，该标志禁止使用诸如枚举之类的功能。这是使您的应用兼容 Node.js 内置支持的道路，也许未来也能兼容浏览器。
+
+查看我们的合作伙伴会议 [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 巴黎 - 4月3日 - 演讲者已公布！Node.js 创建者 Ryan Dahl，Google 工程总监 Sarah Drasner，以及 Syntax.fm 播客联合主持人 Wes Bos。使用代码 "TWIR" 可享 15% 门票折扣。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![Convex：面向 Web 开发者的响应式数据库](/emails/issues/219/convexbanner.jpg)](https://convex.link/thisweek)
+
+**[Convex：面向 Web 开发者的响应式数据库](https://convex.link/thisweek)**
+
+Convex 是一站式平台，为您提供构建、启动和扩展生产就绪后端所需的一切。
+
+利用 TypeScript 编写[代码即查询](https://docs.convex.dev/functions/query-functions/)，自动缓存且实时更新，搭配符合 ACID 的[响应式数据库](https://docs.convex.dev/database)。
+
+而这仅仅是个开始。通过 Convex，您可以：
+
+- 轻松调度函数和编写 cron 任务
+- 设置文件存储
+- 编写高效的服务器函数
+- 使用您喜欢的 AI 编码工具生成后端
+- 以及更多功能...
+
+[立即尝试快速入门](https://docs.convex.dev/quickstarts)
+
+---
+
+## ⚛️ React {#react}
+
+- 💸 [Clerk - Build session-based authentication with React and Express](https://go.clerk.com/HRqsMAP)
+- 📣 [Vercel acquires Tremor to invest in open source React components](https://vercel.com/blog/vercel-acquires-tremor): The premium library to build dashboards is now free and open source.
+- 👀 [CRA breaks with React 19, and CRA needs deprecation notices](https://github.com/facebook/create-react-app/issues/17004): After various community discussions, Create-React-App has been officially deprecated\!
+- 👀 [Next.js PR \- New standalone `experimental.useCache` flag for usage without `dynamicIO`](https://github.com/vercel/next.js/pull/75240)
+- 👀 [Next.js PR \- New `experimental.slowModuleDetection` flag to report modules that takes a long time to compile](https://github.com/vercel/next.js/pull/75368)
+- 👀 [Remix PR \- Support for client side `routerContext`](https://github.com/remix-run/react-router/pull/12515)
+- 🐦 [React Three Fiber v9 in RC, supporting React 19 and Three.js WebGPURenderer](https://x.com/0xca0a/status/1882441755368563114)
+- 📜 [DexieJs: Reactive local state in React](https://www.typeonce.dev/article/dexie-js-reactive-local-state-in-react): You might not need a React state management library, the browser provides a built-in reactive IndexedDB. This great article shows how to wire everything (live queries and actions) using modern React 19 features.
+- 📜 [Next.js: an honest review](https://beeps.dev/blog/nextjs-an-honest-review): An interesting and quite pragmatic list of pros/cons of using Next.js in production apps.
+- 📜 [Why I Won’t Use JSDOM](https://www.epicweb.dev/why-i-won-t-use-jsdom): Recommends testing frontend components in an actual browser, using Vitest Browser Mode and Playwright, instead of a polyfilled Node.js env like JSDOM. The React integration is similar to using React Testing Library.
+- 📜 [UX++ and DX++ with Sync Engines](https://www.carlassmann.com/blog/improve-ux-dx-with-sync-engines): Explains why it’s difficult to invalidate queries and implement optimistic UI with React Query, then propose to use a local-first model with Replicache.
+- 📜 [Moving on from React, a Year Later](https://kellysutton.com/2025/01/18/moving-on-from-react-a-year-later.html): Feedback on removing React from a server-rendered Rails application, considering JS a handicap.
+- 📜 [Server-side React that renders as png, pdf, or interactive webapp](https://swizec.com/blog/server-side-react-that-renders-as-png-pdf-or-interactive-webapp/): Using a search parameter to return a PDF or png in a TanStack Start app.
+- 📜 [How to handle multiple concurrent submissions in Remix](https://tigerabrodi.blog/how-to-handle-multiple-concurrent-submissions-in-remix)
+- 📜 [Why are React Server Components actually beneficial?](https://tigerabrodi.blog/why-is-react-server-components-actually-beneficial-full-history)
+- 📜 [Picking a state management library for a React app used by millions (and why we went with MobX)](https://www.photoroom.com/inside-photoroom/picking-a-state-management-library-why-we-went-with-mobx-)
+- 📜 [useAsyncFetcher: How to implement an asynchronous fetch function in a Remix app](https://www.cerbos.dev/blog/useasyncfetcher-implement-asynchronous-fetch-in-remix)
+- 📜 [Intro to Formik](https://playfulprogramming.com/posts/formik-intro)
+- 📜 [How to build a CMS with React-Admin](https://marmelab.com/blog/2025/01/24/how-to-build-a-cms-with-react-admin.html)
+- 📦 [Vercel Next.js SaaS Starter](https://github.com/nextjs/saas-starter): Initially created by Lee Robinson, it’s now an official package maintained by Vercel. You probably don’t need to buy a paid boilerplate.
+- 📦 [2n8 \- Class-based React store](https://2n8.wstone.uk/): An interesting blend between MobX and Zustand.
+- 🎥 [Theo \- Why is every React site so slow?](https://www.youtube.com/watch?v=INLq9RPAYUw)
+- 🎥 [Youssef Benlemlih \- TanStack Router Full Course](https://www.youtube.com/watch?v=fpXOT8SNTpY)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![通过 Reactile 重新思考 React 应用的用户体验](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)
+
+**[通过 Reactile 重新思考 React 应用的用户体验](https://www.reactile.net/?utm_source=ThisweekinReact)**
+
+Reactile 是开箱即用的 UI/UX 框架，提供直观的平铺工作区显示。它支持在单个浏览器标签页中并行处理大型 Web 解决方案的工作负载。您可以使用 React 实现自定义视图容器、组件和逻辑，由 Reactile 处理显示层。
+
+此外，Reactile 还提供：
+
+- 基于 Promise 的持久化机制，实现跨时间和多设备的统一工作流
+- 支持为平铺单元使用嵌套标签
+- 简化的全局搜索机制
+- 基于 CSS @container 的响应式设计
+- 以及更多功能
+
+2.0 版本即将发布。立即开始您的专属 30 天免费试用，详情请访问 reactile.net。
+
+[Reactile - 全新的 React UI 管理系统](https://www.reactile.net/price?utm_source=ThisweekinReact)
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [PostHog - Swype 如何利用移动端会话回放进行测试与用户洞察](https://dub.link/twir-jan29)
+- 📣 [React Native 0.79 - 移除通过 Chrome 的远程 JS 调试功能](https://github.com/react-native-community/discussions-and-proposals/discussions/872)
+- 🐦 [Fernando Rojo 强调“新版 React Native 的 `<Text>` 组件性能开销更低”](https://x.com/FernandoTheRojo/status/1882111985661415556)：从 v0.75+ 开始（具体版本待确认），包含简单字符串子元素的文本组件性能显著提升。
+- 🐦 [Shopify 的 React Native 实践 - CTO 视角](https://x.com/jmwind/status/1882071857098080653)：前 Shopify CTO 的长文推文完善了近期官方博文，采用 RN 的决策历经数年，他们基于技术潜力（而非现状）和社区前景下注。
+- 🐦 [Expo Router 的 iOS App Clip 演示](https://x.com/Baconbrix/status/1882141919574360421)：点击链接即可运行原生 iOS 应用界面，无需从 App Store 安装。
+- 🐦 [iPadOS 多窗口功能演示](https://x.com/o_kwasniewski/status/1882388170643272130)：全新“React Native Factory”特性解锁遗留系统改造与多窗口应用可能。
+- 📜 [构建精美的 React Native 底部标签栏](https://expo.dev/blog/how-to-build-beautiful-react-native-bottom-tabs)
+- 📜 [React Native 音频 API 正式发布](https://blog.swmansion.com/hello-react-native-audio-api-bb0f10347211)
+- 📜 [基于 Zephyr 的空中下载(OTA)更新方案](https://zephyr-cloud.io/blog/ota-with-zephyr)：支持超级应用独立更新子模块。
+- 📦 [Polygen - 在应用中静态运行 WebAssembly 模块（无需解释器）](https://github.com/callstackincubator/polygen)：Callstack 预览包将 Wasm 转为 C 代码，通过 JSI 调用实现高性能。
+- 📦 [Hot Updater - 可自托管的 React Native OTA 更新方案](https://github.com/gronxb/hot-updater)：CodePush 的替代方案，插件支持自定义 JS 包托管位置（S3/Supabase/PostgreSQL）。
+- 📦 [React Native Windows 0.77](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0)，[MacOS 0.77](https://github.com/microsoft/react-native-macos/pull/2333) 即将发布
+- 📦 [React Native 0.74.7](https://github.com/facebook/react-native/releases/tag/v0.74.7)：终止支持版本，0.74.x 系列不再维护。
+- 📦 [Reanimated 4 的 React Native CSS 动画预设](https://github.com/software-mansion-labs/react-native-css-animations)
+- 🎥 [Fernando Rojo - 我用 SwiftUI 实现了 React Native 底部操作表？](https://www.youtube.com/watch?v=TFEPTgGJ2iU)
+- 🎥 [Jack Herrington - React Native 微前端！移动应用的游戏规则改变者](https://www.youtube.com/watch?v=Lp-5wSsd5Do)
+- 🎥 [Simon Grimm - React Native 动画从未如此简单（Reanimated v4）](https://www.youtube.com/watch?v=QgCLSR9EbDc)
+- 🎙️ [React Universe On Air 第 47 期 - Zephyr Cloud 与 Re.Pack 实现移动微前端](https://www.youtube.com/watch?v=9fHpEngW2lU)
+- 🎙️ [RNR 第 319 期 - Shopify 与 Mustafa Ali 全力押注 React Native](https://www.reactnativeradio.com/episodes/rnr-319-shopify-goes-full-throttle-on-react-native-with-mustafa-ali)
+- 🎙️ [PodRocket - 与 Mo Khazali 探讨通用 React 实践](https://podrocket.logrocket.com/universal-react-mo-khazali)
+- 🎙️ [Rocket Ship 第 59 期 - 与 Evan Bacon 探讨 Expo Router、RSC 和 DOM 组件](https://share.transistor.fm/s/df636b75)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [TypeScript 5.8 迭代计划 · `erasableSyntaxOnly`、require(esm)、依赖返回类型收窄](https://github.com/microsoft/TypeScript/issues/61023)
+- 📜 [TypeScript 5.8 发布 --erasableSyntaxOnly 以禁用枚举](https://www.totaltypescript.com/erasable-syntax-only)
+- 📜 [容器查询全面解析](https://www.joshwcomeau.com/css/container-queries-unleashed/)
+- 📜 [JavaScript Temporal 即将到来](https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/)
+- 📜 [利用 Linting 和 TypeScript 避免使用 \`any\`](https://typescript-eslint.io/blog/avoiding-anys/)
+- 📜 [编写 JavaScript 服务器的现代方法](https://marvinh.dev/blog/modern-way-to-write-javascript-servers/)
+- 📦 [Tailwind CSS 4.0 - 高性能引擎、CSS优先配置、现代CSS、Vite插件](https://tailwindcss.com/blog/tailwindcss-v4)
+- 📦 [Standard Schema 1.0 - TypeScript 验证库的通用接口](https://standardschema.dev/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/219/meme.jpg)](https://x.com/dcorbacho/status/1655443576195538946)
+
+[![alt](/emails/issues/219/meme2.jpg)](https://x.com/thekitze/status/1883985586194706537)
+
+再见！👋

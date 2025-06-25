@@ -1,0 +1,158 @@
+---
+slug: /160
+title: "This Week In React #160: Remix, Next.js, Expo API Routes, Ladle, MDXEditor, Sonner, Docusaurus, AbortController, Query String, Menubar, VisionCamera, Victory Native XL, Bun, ESLint, TC39..."
+authors: [slorber]
+date: 09-27-2023
+---
+
+大家好！
+
+经过短暂休息后，本周我们将回顾过去两周的新闻！
+
+最近有不少发布，包括 Remix 和 Next.js，还有一些值得您关注的鲜为人知的包。
+
+非常兴奋看到 Expo 终于涉足服务器端！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本通讯](https://slo.im/thread) - 视觉格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![前端大师](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)
+
+**[前端大师 - 成为高级 React 开发者的完整 React.js 学习路径](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**
+
+从基础到高级主题（如性能、测试和代码质量）全面学习 React.js。从《React 完整入门》中构建一个真实应用开始。接着学习《中级 React》，集成生态中最流行的工具。然后学习性能优化、TypeScript，甚至全栈 React 框架 Next.js！
+
+---
+
+## ⚛️ React {#react}
+
+[![Remix v2](/emails/issues/160/remix-v2.jpg)](https://remix.run/blog/remix-v2)
+
+[**Remix v2**](https://remix.run/blog/remix-v2)
+
+正如预期，Remix v2 应该是一个相对直接的升级，因为许多 v2 功能在 v1 中已经作为可选的"未来标志"提供。本文概述了在 v1 中交付的所有标志，这些标志现在在 v2 中默认启用。Remix 还为那些更喜欢 v1 约定的人提供了向后兼容的包。React 服务器组件支持预计将在 Remix v3 中落地。
+
+---
+
+[![Next.js 13.5](/emails/issues/160/next-13.5.jpg)](https://nextjs.org/blog/next-13-5)
+
+[**Next.js 13.5**](https://nextjs.org/blog/next-13-5)
+
+许多开发者最近抱怨 Next.js 开发服务器的速度问题。Vercel 听取了反馈并推出了这个显著改善性能的版本。
+
+---
+
+- 💸 [Ably Realtime Hackathon - Create a real-time React app, win $19,000 in prizes - from real-time dashboards to collaborative experiences!](https://ably.devpost.com/?utm_campaign=23-hackathon&utm_source=thisweekinreact&utm_medium=referral)
+- 🐦 ["StyleX documentation site is nearly ready for launch"](https://twitter.com/naman34/status/1703576411330810282)
+- ❓ [Did the React team forget the React Forget compiler?](https://www.reddit.com/r/reactjs/comments/16nnh4z/did_the_react_team_forget_the_react_forget/): Joseph and Sathya respond on Reddit. They are making progress and starting to experiment in production. We'll know more at React Advanced next month.
+- 👀 [Vercel v0 alpha - "Midjourney for React"](https://v0.dev/): Vercel introduced a preview of an impressive AI capable of writing React components based on shadcn UI and Tailwind, and easy to copy/paste.
+- 💡 [Await Component - Use Suspense without creating a new component](https://buildui.com/recipes/await-component): a useful technique inspired by Remix.
+- 📜 [Speeding up the JavaScript ecosystem - Polyfills gone rogue](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-6/): many ESLint plugins like `eslint-plugin-react` come with a lot of unnecessary dependencies.
+- 📜 [The State of Web Frameworks on Deno](https://deno.com/blog/web-frameworks-on-deno): gives a good overview of the React frameworks that can be hosted on Deno Deploy. Next.js support is limited, but Remix and Astro seem to be well-supported. I've discovered that they've migrated their docs to Docusaurus 🥲.
+- 📜 [Abort Async Calls Inside Remix Loaders and Actions](https://sergiodxa.com/tutorials/abort-async-calls-inside-remix-loaders-and-actions): explains how to correctly manage the AbortSignal received in a Remix loader. There are a few pitfalls to avoid.
+- 📜 [Build a server-side filter UI with Remix](https://www.jacobparis.com/content/remix-filter-bar): offers a complete solution and a great demo for creating advanced filters inspired by the Linear app. TIL about the OData spec, which defines how to serialize filters as query string.
+- 📜 [Storing React state in the URL with Next.js](https://francoisbest.com/posts/2023/storing-react-state-in-the-url-with-nextjs): eencourages the use of the query string via a `next-usequerystate` package. v1.8 is out and supports Next.js App Router. Also shares a few details I didn't know about, such as the browser rate-limit on `history.replaceState` calls.
+- 📜 [Displaying Local Times in Next.js](https://francoisbest.com/posts/2023/displaying-local-times-in-nextjs): interesting tips to avoid hydration mismatch problems.
+- 📜 [Islands & Server Components & Resumability, Oh My!](https://dev.to/this-is-learning/islands-server-components-resumability-oh-my-319d): the 3 approaches are orthogonal and could converge?
+- 📜 [A First Look at HTMX and How it Compares to React](https://www.builder.io/blog/htmx-vs-react)
+- 📜 [React Server Components Made Our Site Faster](https://frigade.com/blog/bundle-size-reduction-with-rsc-and-frigade)
+- 📜 [Building Low Level Components the Radix Way](https://alexkondov.com/building-low-level-components-the-radix-way/)
+- 📜 [Exploring React Server Components and Server Actions with Next.js](https://www.antstack.com/blog/exploring-react-server-components-and-server-actions-with-next-js/)
+- 📦 [Ladle v3 - Uber seamless alternative to Storybook - SWC, Node 18, MDX stories...](https://ladle.dev/blog/ladle-v3/)
+- 📦 [Docusaurus v3 beta - MDX 2, React 18, TypeScript 5, Mermaid 10](https://github.com/facebook/docusaurus/discussions/9312)
+- 📦 [TanStack Query v5 RC.1 - Last call to report bugs](https://github.com/TanStack/query/releases/tag/v5.0.0-rc.1)
+- 📦 [Million v2.6 - HMR fixes, Million CLI, better pre-evaluation](https://github.com/aidenybai/million/releases/tag/v2.6.0)
+- 📦 [Mantine v7.0 - Fully featured React components library - Native CSS, App Router support](https://mantine.dev/changelog/7-0-0/)
+- 📦 [MDX Editor v1.0 - A rich text editor React component for markdown](https://github.com/mdx-editor/editor)
+- 📦 [Sonner v1.0 - An opinionated toast component for React - RSC support](https://sonner.emilkowal.ski/)
+- 📦 [Remix DevTools v3 - Remix v2 support, ESM, new dev server](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v3.0.0)
+- 🎥 [Theo - React Wasn't Built For The Web](https://www.youtube.com/watch?v=Y12sGu8-qFE&t=2s)
+- 🎥 [Jack Herrington & Ben Holmes - Future Astro and React Advanced!](https://www.youtube.com/watch?v=sbiuZj2s5fs)
+- 🎥 [Lee Robinson - Using Forms in Next.js (Server Actions, Revalidating Data)](https://www.youtube.com/watch?v=dDpZfOQBMaU)
+- 👥 [reactjsday](https://2023.reactjsday.it/) (Verona 🇮🇹, Octobre 27) is offering us [\-10% - code "media_TWIR"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)
+- 👥 [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact) (London 🇬🇧, Octobre 20-23) is offering us [\-10% - code "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)
+- 👥 [Next.js Conf](https://nextjs.org/conf): online, 26th of October
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![CoderPad：在共事之前先共同编程](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+[**CoderPad：在共事之前先共同编程**](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+招聘前端开发人员很难。😩 但包括 Netflix、Spotify 和 LinkedIn 在内的 4,000+ 工程团队已经找到了更好的方式！🤠 跳过算法面试，在完全可定制和协作的 IDE 中运行前端面试 - 您可以在其中：
+
+- 拖放 React（以及 Angular 或 Vue）仓库
+- 使用 npm install 添加依赖包
+- 允许候选人在面试中实时使用 ChatGPT
+- 面试后查看并共享代码回放
+
+使用 CoderPad 运行快速、公平且真实的编程面试，获得候选人和面试官的双重信任。[立即免费注册，充满信心地招聘](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo Router RFC - API Routes](/emails/issues/160/expo-api-routes.jpg)](https://blog.expo.dev/rfc-api-routes-cce5a3b9f25d)
+
+[**Expo Router RFC - API 路由**](https://blog.expo.dev/rfc-api-routes-cce5a3b9f25d)
+
+我一直期待这个功能！Expo 正通过提供基于 Expo Router 约定的 API 路由部署功能，进军服务器端领域。你可以自行部署这些路由，很快也能在流行托管平台上部署，但很明显，其长期目标是建议将服务器运行时托管在 EAS 上。
+
+这标志着 Expo 新时代的开始。在解决了原生移动端的问题后，现在通过服务端渲染和 React 服务组件填补 Web 支持的空白，使跨平台成为主流现实。
+
+---
+
+- 💸 [Blitz - 更快地为 iOS、Android 和 Web 构建 React Native 应用！](https://www.blitz-rn.com/)
+- 👀 [Expo - 在 EAS 和 Expo CLI 中支持 Bun](https://expo.dev/changelog/2023/09-25-eas-bun-support)
+- 📜 [升级 React Native 样式：针对自适应布局的 StyleSheet API 新探索](https://www.reactnativecrossroads.com/posts/level-up-react-native-styles)
+- 📜 [5+ 个用于自动化 React Native 工作流的 GitHub Actions](https://elazizi.com/posts/5-github-actions-to-automate-your-react-native-workflow/)
+- 📜 [iOS 渲染性能比较：SwiftUI vs. React Native vs. Flutter](https://blog.theodo.com/2023/09/ios-rendering-performance/)
+- 📦 [React Native v0.72.5 - 修复 XCode 15 兼容性](https://github.com/facebook/react-native/releases/tag/v0.72.5)
+- 📦 [React Native Menubar Extra - 轻松为 React Native MacOS 应用添加原生菜单栏 (NSMenu)](https://github.com/okwasniewski/react-native-menubar-extra)
+- 📦 [Victory Native XL - 图表库 - 基于 React-Native-Skia 重构，性能更优](https://github.com/FormidableLabs/victory-native-xl)
+- 📦 [React Native VisionCamera v3.1 - useCameraDevice、useCameraFormat、useCameraPermission、resizeMode...](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.1.0)
+- 📦 [React Native Gesture Handler 2.13 - 通用悬停手势，新增 𝚊𝚌𝚝𝚒𝚟𝚎𝙲𝚞𝚛𝚜𝚘𝚛 属性](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.13.0)
+- 🎥 [React Native EU 2023 - YouTube 播放列表](https://www.youtube.com/playlist?list=PLZ3MwD-soTTEm5KtB2AoZuM7fiYRR69k8)
+- 🎥 [静态 Hermes：新一代 Hermes 引擎 - Tzvetan Mikov](https://www.youtube.com/watch?v=q-xKYA0EO-c)
+- 🎥 [React Native Podcast 与 React Native Radio 跨界合作 - React Native 新闻、洞见与幕后故事](https://www.youtube.com/watch?v=xc15HtMuMhs)
+- 🎥 [React Native 能实现吗？- Telegram 深色模式](https://www.youtube.com/watch?v=vKYEFpO06Tk)
+- 🎙️ [React Native Radio 第 275 期 - RN EU 大会回顾](https://reactnativeradio.com/episodes/rnr-275-recapping-rn-eu)
+
+---
+
+## 🔀 其他 {#other}
+
+- 🐦 [CSS `:has()` 在 Firefox 119（测试版）中发布 - 现已全面支持所有浏览器](https://twitter.com/sebastienlorber/status/1706976759269224724)
+- 👀 [Ecma TC39 第98次会议议程 - 9月26-28日](https://github.com/tc39/agendas/blob/main/2023/09.md#agenda-for-the-98th-meeting-of-ecma-tc39)
+- 📊 [2023年HTML现状调查 - 问卷开放中](https://survey.devographics.com/en-US/survey/state-of-html/2023)
+- 📜 [Svelte - 引入符文(runes)功能](https://svelte.dev/blog/runes)
+- 📜 [Bun炒作：我们如何重蹈Yarn覆辙](https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j)
+- 📜 [Bun：颠覆技术生态系统的经验教训](https://blog.pragmaticengineer.com/bun-lessons-from-disrupting/)
+- 📜 [关于TypeScript，没人告诉你的关键事实](https://redd.one/blog/one-thing-nobody-explained-to-you-about-typescript)
+- 📜 [ESLint - 为v9版本准备自定义规则](https://eslint.org/blog/2023/09/preparing-custom-rules-eslint-v9/)
+- 📦 [Safari 17.0 - CSS、搜索元素、弹出层、存储API、集合操作、URL.canParse...](https://webkit.org/blog/14445/webkit-features-in-safari-17-0/)
+- 🎥 [TypeScript起源 - 纪录片](https://www.youtube.com/watch?v=U6s2pdxebSo)
+- 🔗 [FirstIssue.dev - 开启你的下一次开源贡献](https://firstissue.dev/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![替代文本](/emails/issues/160/meme.jpg)](https://twitter.com/HODLFrance/status/1704507457555284348)
+
+再见！👋

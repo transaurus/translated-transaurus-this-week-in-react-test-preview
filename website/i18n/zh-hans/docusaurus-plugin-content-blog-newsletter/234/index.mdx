@@ -1,0 +1,144 @@
+---
+slug: /234
+title: "This Week In React #234: TanStack DB, TanStack Query, React Router, Vite, Redux Toolkit, Parcel | 0.80 RC, Expo, Legal, Re.Pack, Skia, Radon IDE, Rive | Rslib, Composites, Lightning CSS, Accessibility, V8"
+authors: [tboba, kacperkapusciak]
+date: 05-14-2025
+---
+
+大家好！
+
+**我们是来自 [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact) 的 Kacper 和 Tymek** 👋。
+
+本周相对平静，我们主要带来了一些精彩文章和有趣的发布内容！我们对 Vite 团队正在开发的 RSC 支持、新的 React Query 提案以及 React Native 0.80 即将推出的功能感到非常兴奋，同时还有许多其他新主题值得关注。
+
+让我们深入探索吧！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![这就是你无法交付的原因](/emails/issues/234/posthog.jpg)](https://go.posthog.com/twir-may14)
+
+**[这就是你无法交付的原因](https://go.posthog.com/twir-may14)**
+
+[PostHog](https://go.posthog.com/twir-may14-ph) 在交付缓慢的团队中发现了一些危险信号：等待1对1会议解决问题、需要其他团队批准工作、以及销售人员数量超过工程师 🚩
+
+在[他们最新一期《工程师产品通讯》](https://go.posthog.com/twir-may14)中学习如何识别并解决这些问题（以及其他更多内容）💪
+
+---
+
+## ⚛️ React {#react}
+
+[![TanStackDB](/emails/issues/234/tanstackdb.jpg)](https://github.com/TanStack/db)
+
+**[TanStack DB](https://github.com/TanStack/db)**
+
+TanStack 团队与 ElectricSQL 合作推出了全新库，带来诸多激动人心的功能：极快的查询引擎、细粒度响应式设计以最小化重渲染、健壮的事务原语以及默认的标准化数据！
+
+该库构建于 TanStack Store 之上，并与 TanStack Query 协同工作，通过集合、实时查询和乐观更新扩展了功能。
+
+---
+
+- 💸 [Build professional design system in less than a day, using Hope AI, new model by Bit.Cloud](https://bit.cloud/solutions/design-systems?utm_source=ThisWeekInReact&campaign=DesignSystem)
+- 👀 [React PR \- Integrate React RSC with Vite](https://github.com/facebook/react/pull/33152): An implementation of React Server Components support in Vite. There used to be a community proposal in the past but this time it's coming officially from the Vite team.
+- 👀 [React Query RFC \- Unified Imperative Query Methods](https://github.com/TanStack/query/discussions/9135): As the API of TanStack Query grows, the creators proposed to reduce the number of six functions with similar functionality to two unique methods \- `query()` and `infiniteQuery()`.
+- 📜 [Static as a Server](https://overreacted.io/static-as-a-server/): Dan draws parallels between the Astro and built-time React Server Components for creating static sites without a server.
+- 📜 [React Hook Factory \- how to create custom hooks programmatically](https://tylur.blog/react-hook-factory/): A clever pattern to reduce boilerplate when setting up a new React Context.
+- 📜 [No, react context is not causing too many renders](https://blacksheepcode.com/posts/no_react_context_is_not_causing_too_many_renders): Argues that using React context is fine, and re-render problems are more likely related to large context values and controlled components.
+- 📜 [Dependency Inversion in React: Building Truly Testable Components](https://cekrem.github.io/posts/dependency-inversion-in-react/): Implementing the SOLID principle by passing dependencies as props.
+- 📜 [Using OpenAuth with React Router](https://seanpaulcampbell.com/blog/openauth-react-router/): Comprehensive 2-part tutorial explaining how to implement authentication using React Router, OpenAuth and deploying on AWS with SST.
+- 📜 [Client-Side React Rocks](https://marmelab.com/blog/2025/05/09/client-side-react-rocks.html): On the example of tabular layout, the author argues client-side React features like `useContext` and `createPortal` provide better DX than Server Components.
+- 📜 [The Limits of RSC: A Practitioner's Journey](https://www.nirtamir.com/articles/the-limits-of-rsc-a-practitioners-journey): Nir tried to implement infinite scrolling UI using Server Components, but ran into a wall. Spoiler: He used React Query instead.
+- 📜 [How to Build a Custom React Renderer](https://blog.swmansion.com/how-to-build-a-custom-react-renderer-595dc4a9cb1c): Using the `react-reconciler` package to build a video composition software.
+- 📜 [Patterns for state management with actors in React with XState](https://www.typeonce.dev/article/patterns-for-state-management-with-actors-in-react-with-xstate)
+- 📜 [How To Integrate React Query With AG Grid?](https://scientyficworld.org/how-to-integrate-react-query-with-ag-grid/)
+- 📦 [React Router 7.6 \- new `routeDiscovery` option](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v760): New config option introduced granting more control over the Lazy Route Discovery feature.
+- 📦 [Redux Toolkit 2.8 \- Infinite Query Page Params, RN compatibility](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.8.0)
+- 📦 [Parcel 2.15 \- New HTML and SVG to JSX transformer](https://parceljs.org/blog/v2-15-0/)
+- 📦 [eslint-plugin-react-you-might-not-need-an-effect](https://github.com/NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect)
+- 🎥 [Jack Herrington \- Server Functions Don't Exist (It Matters)](https://www.youtube.com/watch?v=FPJvlhee04E)
+- 🎥 [Lee Robinson \- Multi-tenant SaaS apps with Next.js and Vercel](https://www.youtube.com/watch?v=vVYlCnNjEWA)
+- 🎥 [Epic Web Conf 2025 \- Talks are online](https://www.epicweb.dev/talks)
+- 🎙️ [PodRocket 563 \- JSX over the wire with Dan Abramov](https://podrocket.logrocket.com/jsx-over-the-wire-dan-abramov)
+- 🎙️ [Syntax.fm 901 \- New React & Svelte APIs, RSC Updates, Redwood and Storybook](https://syntax.fm/show/901/js-news-new-react-and-svelte-apis-rsc-updates-redwood-and-storybook)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Clerk Billing 介绍](/emails/issues/234/clerk.jpg)](https://go.clerk.com/LphCouG)
+
+**[Clerk Billing 介绍](https://go.clerk.com/LphCouG)**
+
+无需编写自定义支付代码或构建自有 UI，即可在 B2B 或 B2C 应用中设置订阅。
+
+- 使用 `<PricingTable />` 组件创建定价页面
+- 与 Stripe 连接——无需手动 API 调用或同步
+- 在 Clerk 仪表板中统一管理计划和权限
+- 使用 `has()` 辅助函数基于客户计划、功能和权限控制访问
+- 在统一位置管理用户和订阅数据
+
+Enable Billing, drop in `<PricingTable/>` on your `/pricing` page and [start monetizing your application](https://go.clerk.com/LphCouG).
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![MS Office 使用 React Native](/emails/issues/234/microsoft-uses-react-native.png)](https://devblogs.microsoft.com/react-native/2025-05-09-office-modernize/)
+
+**[Office 如何利用 Windows App SDK 和 React Native 实现应用套件 UI 现代化](https://devblogs.microsoft.com/react-native/2025-05-09-office-modernize/)**
+
+微软的 Chiara Mooney 描述了团队如何利用 React Native 在旗舰产品 MS Office 套件中实现最新 Copilot 功能，该套件被**6亿用户**使用。
+
+他们采用岛屿架构模式实现，这种模式已被 Astro 等前端框架广泛采用。
+
+有趣的是，RN 在非 Android/iOS 平台的企业级场景中也得到了如此高规格的应用。
+
+---
+
+- 💸 [WithFrame - 预置 React Native 模板](https://withfra.me)
+- 🐦 [mrdoob - 灵魂拷问：为什么有人选择 Flutter 而非 React Native？](https://x.com/mrdoob/status/1920861880911884771)：由 Three.js 创始人发起的 React Native 与 Flutter 开发者视野拓展对话。
+- 🗓 [React Universe 大会](https://www.reactuniverseconf.com/?utm_campaign=RUC2025&utm_source=TWIRpartnership&utm_content=savethedate) - 🇵🇱 弗罗茨瓦夫 - 9月2-4日。明星讲师阵容公布！使用优惠码 "TWIR" 享 9 折。
+- 📜 [Expo - 通过构建缓存提供程序加速本地开发（实验性）](https://expo.dev/blog/build-cache-providers-in-expo)：利用远程构建缓存避免重复编译相同代码，加速交付。
+- 📜 [Apple 街噩梦](https://byk.im/posts/apple-code-signing-x-platform/)：从 Linux 发布应用到 App Store 可能成为噩梦。在自行尝试前，先了解从 Linux 机器推送 iOS 应用的流程障碍。
+- 📦 [React Native 0.80 RC.1](https://github.com/facebook/react-native/releases/tag/v0.80.0-rc.1)：新版本进入候选阶段。包含 TypeScript 改进（新增[严格 API](https://github.com/react-native-community/discussions-and-proposals/blob/main/proposals/0894-deprecate-subpath-imports.md#parallel-effort-strict-typescript-api)）、径向渐变支持、React 19.1 适配。
+- 📦 [React Native Legal - 零配置开源许可证展示组件](https://www.callstack.com/blog/react-native-legal-acknowledge-open-source-libraries-in-your-app)：Callstack 团队推出的跨平台库，自动处理许可证元数据生成与应用内展示。
+- 📦 [Re.Pack 5.1 - 远程模块预加载、运行时钩子与更快启动](https://www.callstack.com/blog/new-in-re-pack-5-1)：重点增强对 Module Federation 2 的支持。
+- 📦 [TanStack Query 5.76 - Expo/React Native 开发工具支持](https://github.com/TanStack/query/releases/tag/v5.76.0)
+- 📦 [Radon IDE 1.6 - React Profiler 集成、条件/表达式断点、Expo SDK 53 支持](https://github.com/software-mansion/radon-ide/releases/tag/v1.6.0)
+- 📦 [React Native Skia 2.0 - 最低要求 React 19 和 React Native 0.78](https://github.com/Shopify/react-native-skia/releases/tag/v2.0.0)
+- 📦 [Rive React Native 9.3 - 数据绑定支持、新 useRive() 钩子、简化 .riv 文件加载](https://github.com/rive-app/rive-react-native/releases/tag/v9.3.0)
+- 🎥 [Simon Grimm - 极简 React Native AI 应用开发指南 (Expo & Vercel AI SDK)](https://www.youtube.com/watch?v=W9bbVJwCyqo)
+- 🎙️ [React Native Radio 第331期 - Riccardo Cipolleschi 谈新架构新时代](https://infinite.red/react-native-radio/rnr-331-new-architecture-new-era-with-riccardo-cipolleschi)
+- 🎙️ [Rocket Ship 第68期 - Expo SDK 53 亮点、React Native AI、Worklets 与苹果免税新政](https://podcast.galaxies.dev/episodes/068-expo-sdk-53-highlights-react-native-ai-worklets-no-apple-app-store-commissions)
+
+---
+
+## 🔀 其他 {#other}
+
+- 🎥 [Matt Pocock - Arrays, objects... now `composites`?](https://www.youtube.com/watch?v=hFenspfGLTk): 这项令人兴奋的 JS 提案将取代 Records 和 Tuples。
+- 📜 [Introducing Rslib: Build library with Rspack](https://lib.rsbuild.dev/blog/introducing-rslib): 由字节跳动 Web 基础设施团队开发的 Rslib，旨在成为理想的库开发工具，它配置简单、功能全面、与应用程序构建共享生态系统，并优先考虑性能。
+- 📜 [shape(): CSS 中强大的新绘图语法](https://frontendmasters.com/blog/shape-a-new-powerful-drawing-syntax-in-css/): clip-path 的新函数现已支持，允许您使用任意响应式形状裁剪元素。
+- 📜 [CSS 高度之谜](https://www.joshwcomeau.com/css/height-enigma/)
+- 📜 [V8 JavaScript 引擎幕后工作原理](https://www.deepintodev.com/blog/how-v8-javascript-engine-works-behind-the-scenes)
+- 📜 [无障碍的艺术](https://playfulprogramming.com/collections/art-of-accessibility)
+- 📜 [使用自定义元素创建新表单控件](https://plainvanillaweb.com/blog/articles/2025-05-09-form-control/)
+- 📦 [Lightning CSS 1.30 - 相对颜色规范、伪元素嵌套规范、Android 构建支持等](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.30.0)
+
+---
+
+## 🤭 趣事 {#fun}
+
+[![alt](/emails/issues/234/meme.png)](https://x.com/adamwathan/status/1922002165884682690)
+
+[![alt](/emails/issues/234/meme2.png)](https://x.com/Baconbrix/status/1922134704330854557)
+
+再见！👋

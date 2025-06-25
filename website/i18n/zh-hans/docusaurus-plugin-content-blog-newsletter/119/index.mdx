@@ -1,0 +1,134 @@
+---
+slug: /119
+title: "This Week In React #119: React OG Images, Tremor, Storybook, Decoupling, Rendering, Data-Fetching, Remix, Qwik, TypeScript, Playwright..."
+authors: [slorber]
+date: 10-11-2022
+---
+
+大家好！
+
+本周涌现了大量优质的React技术文章。React Native方面则相对平静。
+
+[ViteConf](https://viteconf.org/)刚刚拉开帷幕，预计下周会有重要发布 ;)
+
+<!-- truncate -->
+
+**💡 [在Twitter查看本期通讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助 {#sponsor1}
+
+[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)
+
+您是否已尝试过[Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)？这是专为开发者和营销人员设计的可视化无头CMS！
+
+使用Storyblok React SDK快速构建可复用组件并获取内容，用于创建React、Next.js、Remix甚至React Native应用、网站或电商平台。
+
+立即探索[技术中心](https://www.storyblok.com/technologies?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)亲身体验！
+
+---
+
+## ⚛️ React {#react}
+
+**[Vercel OG图像生成：在边缘快速创建动态社交卡片图像](https://vercel.com/blog/introducing-vercel-og-image-generation-fast-dynamic-social-card-images)**
+
+Vercel推出全新高效解决方案，可在Vercel边缘函数中生成动态社交卡片。其优势在于：无需额外配置即可使用JSX、React无状态组件和Tailwind。强烈推荐[这个技术解析](https://twitter.com/shuding_/status/1579607964549513217)，非常有趣！他们甚至使用了React Native的布局引擎Yoga 🤭
+
+**[React渲染的未来](https://prateeksurana.me/blog/future-of-rendering-in-react/)**
+
+图文并茂的技术文章，详细解析了React 18及更高版本的渲染模式。涵盖SSR流式传输、Suspense、React lazy以及Server Components功能标志实现等核心机制。
+
+**[解决React项目的常见痛点](https://dinosaurs-with-jetpacks.com/posts/react-problems)**
+
+主张将JavaScript应用与框架（React等）解耦，倡导回归简洁开发范式。包含部分可能引发争议的激进观点。
+
+**[在Storybook中使用Material UI](https://storybook.js.org/blog/material-ui-in-storybook/)**
+
+本教程包含特别实用的技术方案：通过复用底层UI库的TypeScript类型，自动化生成Storybook控件。在属性透传场景中尤为高效，甚至支持`Pick`和`Omit`等辅助类型。
+
+- 👤 Sathya Gunasekaran (ex V8) [joins the React core team](https://twitter.com/_gsathya/status/1578816177371250688), most likely to [work on the React-Forget compiler](https://twitter.com/Huxpro/status/1578865666010263552)
+- 👥 [Next.js Conf 2022 speakers](https://twitter.com/vercel/status/1578401243243741185)
+- 📖 Beta docs: [React.Children](https://twitter.com/dan_abramov/status/1578457525628047360) + [useId](https://twitter.com/dan_abramov/status/1577283961763467265) + [createElement](https://twitter.com/dan_abramov/status/1577463721193897985) + [useImperativeHandle](https://twitter.com/dan_abramov/status/1577717226269966336)
+- 📖 [Next.js on Vercel docs improvements](https://twitter.com/leeerob/status/1577788730349436928)
+- 🌶 [React and Next.js is DEAD — Something New is (Finally) Replacing It (For Good)](https://javascript.plainenglish.io/react-and-next-js-is-dead-something-new-is-finally-replacing-it-for-good-c792c48806f6): explains how the Qwik framework presents a superior model to React. Click-bait title, but really interesting article.
+- 📜 [Build a React Custom Renderer - Part 1](https://www.markcodes.dev/posts/build-react-custom-renderer-part-1): new series that shows how to create a React renderer. For now it's quite easy to follow, but it does not yet support updates.
+- 📜 [Remix, React, and State](https://blog.jim-nielsen.com/2022/remix-react-and-state/): gives a mental model for Remix that reconciles the React state in an end-to-end / fullstack way.
+- 📜 [How to write your own state management library](https://judehunter.dev/blog/how-to-write-your-own-state-management-library): useful to understand how a state management library works, and how to implement a selector system.
+- 📜 [How to fetch data in React with performance in mind](https://www.developerway.com/posts/how-to-fetch-data-in-react): explains why data-fetching in React is not as simple as it seems. performance is related to UX/perception. Explain waterfalls, browser request limits...
+- 📜 [Avoid impossible UI states with React, Typescript and xState](https://whereisthemouse.com/avoid-impossible-ui-states-with-react-typescript-and-xstate): TypeScript's discriminated union-types avoid impossible states, and XState avoids impossible state transitions.
+- 📜 [I changed my mind about writing new JavaScript frameworks](https://whitep4nth3r.com/blog/write-a-new-javascript-framework/): there are only 4 frameworks that support both SSG + SSR: Eleventy, Next.js, Gatsby, Redwood.
+- 📜 [How to Use Sandpack for Code Demos](https://www.ctnicholas.dev/articles/how-to-use-sandpack-for-code-demos): article [updated with the latest Sandpack features](https://twitter.com/ctnicholasdev/status/1577683748878884864), this Codesandbox tool to create live code playgrounds. Used by React beta docs, Josh Comeau...
+- 📦 [Tremor 1.0](https://www.tremor.so/): a library of React UI components to create dashboard analytics.
+- 🐦 [W3C Trusted Types + React + XSS](https://twitter.com/sebastienlorber/status/1579485631260286977): a new HTML proposal could provide a native solution to prevent XSS vulnerabilities, and perhaps eventually remove the need for `dangerouslySetInnerHTML`?
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[**React Brussels - 线下与线上 React 会议 - 2022年10月14日**](https://www.react.brussels/)
+
+React Brussels 以首次**混合模式**回归欧洲中心 ❤️。议程将涵盖**前沿技术与技能**（Playwright、WebVR、useEffect、数据获取、Remix…），由 React 领域**顶尖专家**呈现，包括：
+
+- Tejas Kumar：开发者关系总监 - **Xata**
+- Kathleen McMahon：高级设计系统工程师 - **Northwestern Mutual**
+- David Khourshid：创始人 - **Stately**
+- Shaundai Person：高级软件工程师 - **Netflix**
+- Debbie O'Brien：高级项目经理 - **Microsoft**
+
+会后派对、竞赛、工作机会、比利时🍺、周边纪念品、城市导览……所有活动都将持续到会议结束之后！
+
+很遗憾，现场门票已**售罄**！不过您仍可通过[**30欧元的在线门票🎟**](https://ti.to/bejs/react-brussels-2022/discount/online_lastweek)参与盛会 😜
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 🎥 [React Native 能否实现 - 第五季预告片](https://www.youtube.com/watch?v=GArbi97dV08)
+- 🚧 [Expo Router 0.0.26](https://twitter.com/Baconbrix/status/1578805793733763072): [useHref / 复制链接](https://twitter.com/Baconbrix/status/1578176991441784833) + [启动屏幕编排](https://twitter.com/Baconbrix/status/1577690073906257921)
+- 📖 [React Native 文档全面双语化 - Java + Kotlin](https://twitter.com/reactnative/status/1578332414145105921)
+- 🎨 [Reanimated - useAnimatedKeyboard() 演示](https://twitter.com/swmansion/status/1579471824831725571)
+- 📦 [react-native-test-app 2.0](https://twitter.com/lord_sherlock/status/1578312268663906304): 支持 Expo 配置插件
+- 📦 [react-native-quick-sqlite 5.0](https://twitter.com/ospfranco/status/1578145916510273536): Promise API
+
+---
+
+## 🧑‍💻 工作机会 {#jobs}
+
+🧑‍💼 [**Causal 产品工程师，远程/伦敦/纽约，$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal 是 A 轮融资初创公司（由 Coatue/Accel 支持），致力于构建集数字处理和可视化功能于一体的工具。我们正在招募能解决复杂用户体验/性能挑战的资深 React 工程师。
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们提供多个专注于 React Native 的开发职位！薪酬约 16 万美元 + 10% 奖金。应聘者需具备 RN 生产环境经验且位于美国。私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多，提及 This Week in React 可获得优先关注。
+
+💡 [如何发布职位？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [受 Testing Library 启发的 Playwright Locators API](https://twitter.com/diegohaz/status/1578567655493193728)
+- [Deno - 网络的未来在边缘](https://deno.com/blog/the-future-of-web-is-on-the-edge)
+- [打造惊艳应用的新模式](https://web.dev/new-patterns-for-amazing-apps/)
+- [优化长任务](https://web.dev/optimize-long-tasks/)
+- [优化交互到下一次绘制 (INP)](https://speaking.jeremy.codes/GptKXg/optimizing-interaction-to-next-paint-inp)
+- [Cloudflare Pages 通过 Early Hints 变得更快](https://blog.cloudflare.com/early-hints-on-cloudflare-pages/)
+- [CodeSandbox - 统一的 CodeSandbox 体验](https://codesandbox.io/post/a-unified-codesandbox-experience)
+- [Safari 技术预览版 155](https://webkit.org/blog/13338/release-notes-for-safari-technology-preview-155/)
+- [Axios 1.0](https://github.com/axios/axios/releases/tag/v1.0.0)
+
+---
+
+## 🤭 趣事 {#fun}
+
+[![Kent C. Dodds 的 Twitter 编辑梗图 - Rick Rolled](/emails/issues/119/meme.png)](https://twitter.com/kentcdodds/status/1578334293863956480/history)

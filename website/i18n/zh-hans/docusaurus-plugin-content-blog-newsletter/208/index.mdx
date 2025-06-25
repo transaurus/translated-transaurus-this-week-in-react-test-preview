@@ -1,0 +1,166 @@
+---
+slug: /208
+title: "This Week In React #208: Compiler, Next.js, Docusaurus, TanStack, nuqs, Storybook, StyleX, React Navigation, Shopify, Reanimated, Nitro, BottomTabs, CocoaPods, Maestro, Rolldown, Container Queries..."
+authors: [slorber]
+date: 11-06-2024
+---
+
+大家好！
+
+本周没有重大的 React 公告，可能受到美国总统大选的影响。
+
+但我们仍然收获了大量精彩的 React 和 React Native 技术内容以及优质的社区文章。我对 React Compiler 的发展方向特别兴奋，还有 React Navigation 7 的发布及其全新的屏幕预加载 API。Shopify 对 React Native 的背书对我们整个生态系统也是重大利好消息。当然，我也很高兴向大家展示过去几个月在 Docusaurus 上的工作成果！
+
+别忘了参与[2024年React生态现状调查](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react)。调查将于下周截止，目前参与人数仍少于去年。如果您有影响力，请协助传播并添加[`?source=my_name`参数](https://github.com/Devographics/surveys/issues/250#issuecomment-2423485429)，以便追踪调查偏差。
+
+<!-- truncate -->
+
+**💡 [在Twitter上查看本期简报](https://slo.im/thread) - 可视化排版 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![AG Grid：全球最佳的React表格](/emails/issues/208/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-3)
+
+**[AG Grid：全球最佳的React表格](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-3)**
+
+AG Grid 是一款快速、免费且完全可定制的 React 表格组件。被**90%的财富500强企业**采用，100%开源，每月npm下载量超**400万次**：
+
+- 🆓 **免费**：永久免费使用**排序**、**筛选**、**分页**、**单元格编辑**等数百项功能
+- **🚀 极速**：默认支持展示**数百万单元格**，性能无损
+- **🎨 可定制**：在单元格/行/列中添加自定义组件，使用**主题API**构建专属主题
+- 🏢 **企业级功能**：购买授权可终身使用**透视表**、**分组**、**主从视图**及**内置图表**（由我们的React图表库[AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)驱动）。免费试用，无需许可证
+
+了解更多：[ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)
+
+---
+
+## ⚛️ React {#react}
+
+[![Sathya Gunasekaran - React Compiler的未来规划](/emails/issues/208/compiler.jpg)](https://www.youtube.com/watch?v=qd5yk2gxbtg)
+
+🎥 [**Sathya Gunasekaran \- React Compiler的未来规划**](https://www.youtube.com/watch?v=qd5yk2gxbtg)
+
+我最近观看了这个精彩演讲，它不仅宣布了[React Compiler测试版](https://react.dev/blog/2024/10/21/react-compiler-beta-release)，还揭示了几项创新功能。该编译器不仅是自动记忆化工具，更是构建更多优化功能的平台。演讲介绍了3个即将推出的特性：
+
+- 类型配置：通过提供额外的类型信息，可以帮助编译器更好地工作。
+- JSX 内联：编译器可以移除无用的 JSX 运行时调用，将其替换为预构建的 JSX 对象。`jsx('div')` 会变成 `{type: 'div'}`。
+- JSX 外联：编译器可以自动提取子组件，这些组件随后可被独立优化。这在处理列表元素时尤其有用，当使用 `array.map` 和内联 JSX 时，编译器可以创建 `<Item>` 组件（参见演讲截图，或参阅[此 PR](https://github.com/facebook/react/pull/30956) 了解详情）。
+
+---
+
+- 💸 [Omlet – Scan your repos and measure how and where components are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-oct-2024)
+- 📜 [Managing Advanced Search Param Filtering in the Next.js App Router](https://aurorascharff.no/posts/managing-advanced-search-param-filtering-next-app-router/): Great interactive article showing that lifting state to the URL is not so easy when using RSC-based routing. To obtain a good UX, you have to use startTransition and useOptimistic. The nuqs library can help simplify.
+- 📜 [Two ways to the two Reacts](https://bobaekang.com/blog/two-ways-to-the-two-reacts/): Interesting thoughts on the different visions that Next.js and TanStack Start are adopting to integrate modern React features. TanStack Start is more client-centric and less disruptive.
+- 📜 [How to (not) reset a form after a Server Action in React](https://www.robinwieruch.de/react-server-action-reset-form/): React Actions automatically reset the uncontrolled form inputs, but it might not be what you want on action errors.
+- 📜 [Storybook Test sneak peek](https://storybook.js.org/blog/storybook-test-sneak-peek/): Testing components and stories in your browsers.
+- 📜 [Upgrading React with micro-frontend](https://alexocallaghan.com/upgrading-react-with-microfrontends): Using a Module Federation React bridge to allow using different React versions.
+- 📜 [React Router Brand Update](https://remix.run/blog/react-router-brand-update): Updating the logo/wordmark for the upcoming v7 release.
+- 📜 [How headless components became the future for building UI libraries](https://www.subframe.com/blog/how-headless-components-became-the-future-for-building-ui-libraries): In particular focusing on Radix.
+- 📜 [Integrating Large Language Models into Frontends](https://www.manuelsanchezdev.com/blog/integrating-llm-frontend)
+- 📜 [XState in React: Look Ma, no useState or useEffect\!](https://www.frontendundefined.com/posts/monthly/xstate-in-react/)
+- 📜 [How To Build And Deploy A Headless WordPress With Next.js?](https://scientyficworld.org/how-to-deploy-headless-wordpress-with-next-js/)
+- 📜 [On Crafting Painterly Shaders (React Three Fiber)](https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders/)
+- 📜 [Preact \- Simplifying Islands Architecture](https://preactjs.com/blog/simplifying-islands-arch/)
+- 📦 [Docusaurus 3.6 \- Docusaurus Faster](https://docusaurus.io/blog/releases/3.6): The project I’ve been working on for a few months now, upgrading Docusaurus to Rust tooling (Rspack, SWC, LightningCSS) makes it 3x faster to build your static site\!
+- 📦 [next-validate-link \- Validate Your Markdown Links with Ease](https://next-validate-link.vercel.app/): It understands Next.js (App Router) conventions and reports broken links/anchors found in MD/MDX files.
+- 📦 [StyleX 0.9.3 \- Improves theming APIs and dynamic styles](https://stylexjs.com/blog/v0.9.3)
+- 📦 [nuqs 2.1 \- Type-safe search params \- Vitest 2 support, parseAsISODate, serializer urlKeys and clearAsDefaults](https://github.com/47ng/nuqs/releases/tag/v2.1.0)
+- 📦 [uikit 0.8 \- Performant 3D user interfaces using React-Three-Fiber and Yoga](https://github.com/pmndrs/uikit/releases/tag/v0.8.0)
+- 📦 [Quicky \- Deploy Next.js and Node.js to your own server](https://quicky.dev/)
+- 📦 [Shopify Hydrogen \- October 2024 release \- Storefront API](https://hydrogen.shopify.dev/update/october-2024-release-storefront-api-2024-10)
+- 📦 [Monicon \- Universal Icon Library](https://monicon-docs.vercel.app/)
+- 🎥 [Ethan Niser \- The secret to why React feels so fast](https://www.youtube.com/watch?v=vtotu8p9DWw): More about functional programming than React but still worth watching to understand the underlying techniques that allow Concurrent React to split work into smaller chunks and regularly yield to the main thread.
+- 🎥 [Delba \- Next.js 'use cache' in 100 seconds](https://www.youtube.com/watch?v=OWmRn74CQKY)
+- 🎙️ [This Month in React \- React Devtools, RN 0.76, Web Components...](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-10-React-DevTools-update--React-Native-0-76-new-architecture-dropped--Web-Components-arent-the-future-e2qi6bb)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![介绍 @clerk/nextjs v6 - 兼容 Next.js 15](/emails/issues/208/clerk.jpg)](https://go.clerk.com/763LGC2)
+
+**[介绍 @clerk/nextjs v6 - 兼容 Next.js 15](https://go.clerk.com/763LGC2)**
+
+Next.js 团队已宣布 Next.js 15 的稳定版发布，而 Clerk 延续了（近乎）当日支持主要 Next.js 版本的传统，推出了 `@clerk/nextjs` v6。在 v6 版本中，`auth()` 助手函数现为异步，`<ClerkProvider>` 默认采用静态渲染而非动态渲染，并引入了部分预渲染支持。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Navigation 7.0](/emails/issues/208/reactnavigation7.jpg)](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)
+
+[**React Navigation 7.0**](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)
+
+React Navigation v7 现已发布，将为即将随 Expo SDK 52 推出的 Expo Router v4 提供支持（两者均处于测试阶段）。最值得关注的亮点包括：
+
+- 屏幕预加载：可在实际导航前提前准备屏幕，从而提升感知性能。该功能非常令人期待，未来可能支持并发 React 特性。
+- 静态 API：简化了导航器配置，更便于与 TypeScript 和深度链接结合使用。
+
+---
+
+[**我们刚刚完成 Shopify 移动应用向 React Native 的迁移**](https://threadreaderapp.com/thread/1853619638141071573.html)
+
+工程总监 Mustafa 在 X 上宣布，Shopify 已完成将其旗舰应用（包含 586 个屏幕）迁移至 React Native，并取得显著成效。期待后续的详细技术博文。
+
+- 删除 180 万行代码
+- iOS 与 Android 间代码共享率达 86%
+- 屏幕加载速度提升 59%
+- 应用启动速度提升 44%
+- WebView 速度提升 63%
+- 减少应用崩溃
+- 提升应用商店评分
+
+---
+
+- 💸 [使用 Puppeteer 在 React 中创建可自定义的 PDF 查看器。学习如何利用 Node 和任意 JavaScript 框架轻松生成带样式的 PDF。](https://apryse.com/blog/react/react-to-pdf?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1106)
+- 💬 [用 Tuist 替代 CocoaPods 而不是 Swift Package Manager](https://github.com/react-native-community/discussions-and-proposals/issues/587#issuecomment-2457647318): iOS 工具链 Tuist 的创建者指出了在 React Native 中采用 SPM 的潜在问题，并提出了一个替代方案。
+- 📜 [Nitro 入门指南](https://www.renanmav.com/blog/getting-started-with-nitro)
+- 📜 [将 Electron 应用的 CSS 主题移植到 React Native 的计划](https://www.devas.life/my-plan-to-port-electron-app-css-themes-into-react-native/)
+- 📜 [使用 Expo 构建的会议应用架构](https://expo.dev/blog/the-architecture-of-a-conference-application-built-with-expo)
+- 📦 [Reanimated 3.16 \- RN 0.76，新的 React-Compiler 安全 get/set API，日志记录](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.16.0)
+- 📦 [Nitro 0.14 \- RN 0.76, getHybridObjectConstructor](https://github.com/mrousavy/nitro/releases/tag/v0.14.0)
+- 📦 [Bottom Tabs 0.3 \- 触觉反馈，Android 返回行为属性，preventDefault()](https://github.com/okwasniewski/react-native-bottom-tabs/releases)
+- 📦 [Vision Camera 4.6 \- RN 0.76，Android 视频比特率支持，CameraX 升级](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.6.0)
+- 📦 [Skia 1.5.1 \- ProMotion 120 fps](https://github.com/Shopify/react-native-skia/releases/tag/v1.5.1)
+- 📦 [Screens 3.35 \- RN 0.76，添加 RSC 'use client'，动态框架，模糊效果](https://github.com/software-mansion/react-native-screens/releases/tag/3.35.0)
+- 📦 [Safe Area Context 4.14 \- 支持 macOS](https://github.com/th3rdwave/react-native-safe-area-context/releases/tag/v4.13.0)
+- 📦 [Maests \- 使用 TypeScript 编写和组合 Maestro 流程](https://github.com/shoma-mano/maests)
+- 🎥 [Expo \- 如何在 EAS Build 上运行端到端测试](https://www.youtube.com/watch?v=-o-bfIRrg9U)
+- 🎥 [Simon Grimm \- Tailwind 正在走向移动端](https://www.youtube.com/watch?v=I_o17M30m5I)
+- 🎥 [Catalin Miron \- 壁纸重带动画轮播](https://www.youtube.com/watch?v=qaGRabISXwI)
+- 🎥 [Beto \- 使用 EAS Update 发送无线（OTA）更新](https://www.youtube.com/watch?v=DWpcD6bvTRA)
+- 🎙️ [Rocket Ship 53 \- 为什么 React Native 的无障碍性很重要，与 Britta Evans-Fenton 对谈](https://share.transistor.fm/s/ccfd5491)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [容器查询友好入门指南](https://www.joshwcomeau.com/css/container-queries-introduction/)
+- 📜 [什么是单页面应用？](https://jakelazaroff.com/words/whats-a-single-page-app/)
+- 📜 [瀑布流布局应该成为 CSS 网格的一部分吗？](https://ishadeed.com/article/css-grid-masonry/)
+- 📜 [你的 CSS 重置应该分层](https://www.mayank.co/blog/css-reset-layer/)
+- 📜 [10 月 Web 平台新特性](https://web.dev/blog/web-platform-10-2024?hl=en)
+- 📦 [Lightning CSS 1.28](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.28.0)
+- 📦 [Rolldown 0.14](https://github.com/rolldown/rolldown/releases/tag/v0.14.0)：即将推出的与 Rollup 兼容的 Rust 打包器，用于 Vite，现已功能完备，v1 测试版预计年底发布。
+
+---
+
+## 🤭 趣事 {#fun}
+
+[![alt](/emails/issues/208/meme.jpg)](https://bsky.app/profile/brophdawg11.bsky.social/post/3l7ookbysyq2h)
+
+[![alt](/emails/issues/208/meme2.jpg)](https://x.com/sebastienlorber/status/1854177504891650303)
+
+[![alt](/emails/issues/208/meme3.jpg)](https://x.com/bunjavascript/status/1854005887817699831)
+
+再见！👋

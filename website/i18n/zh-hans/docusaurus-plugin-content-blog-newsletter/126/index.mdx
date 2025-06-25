@@ -1,0 +1,161 @@
+---
+slug: /126
+title: "This Week In React #126: React Perf, Progressive Enhancement, Remix, Storybook, React-Native, FlashList, Nitro, TC39..."
+authors: [slorber]
+date: 11-29-2022
+---
+
+大家好！
+
+正如感恩节期间常见的情况，本周React领域新闻相对平静。
+
+[黑色星期五](https://thisweekinreact.com/black-friday)活动已近尾声，但部分优惠仍然有效。
+
+若贵司正在招聘，我同时提供[**招聘广告-50%的专属折扣**](https://thisweekinreact.com/sponsor#sponsor-jobs)。请务必转告HR或主管，这对我是极大的支持！
+
+<!-- truncate -->
+
+**💡 [在Twitter查看本期通讯](https://slo.im/thread) - 视觉化呈现 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![FlyCode让React应用无需编码即可编辑，基于Git](/emails/issues/124/flycode.jpg)](https://bit.ly/3UPwAoJ)
+
+**[FlyCode让React应用无需编码即可编辑，基于Git](https://bit.ly/3UPwAoJ)**
+
+[FlyCode](https://bit.ly/3wWSi00)（YC S22）让React Web应用在数分钟内可编辑，使产品和UX团队能快速迭代发布产品，无需等待（或占用）开发者时间。
+
+FlyCode解析常规React代码，定位文本、图片、设计令牌和分析事件后，允许非技术人员协作编辑并通过拉取请求提交（无需GitHub权限！）
+
+- 节省开发时间
+- 零代码集成，直接解析源码！
+- 基于GitHub，机器人扫描代码并创建PR
+- 兼容现有技术栈和组件
+- 保留代码库所有权
+
+由此开始：[flycode.com/developers](https://www.flycode.com/developers)
+
+---
+
+## ⚛️ React {#react}
+
+**[React将走向何方？](https://www.infoxicator.com/is-react-going-anywhere)**
+
+Ruben在接触某电商CTO（决定弃用React转向原生JS）后的深度思考：应用性能问题是否应归咎React？改用替代方案是否合理？未来5-10年React能否保持领先地位？
+
+**[将React交互性能提升4倍](https://www.causal.app/blog/react-perf)**
+
+Causal的云端电子表格应用曾遇性能瓶颈。文章通过Chrome性能分析工具详细解析问题根源：部分源自AG Grid（已打补丁修复），其余主要为自身代码的memoization问题。尝试使用Web Workers时，序列化开销过大导致方案不可行。
+
+- 📜 [逐步增强 Remix 中的 useFetcher 钩子](https://sergiodxa.com/articles/progressively-enhance-the-usefetcher-hook-in-remix)：小技巧，用于在 Remix 的 useFetcher API 上支持启用/禁用 JavaScript 的用户：强制重定向未启用 JavaScript 的用户。同样地，也可以处理[文件上传的渐进式增强](https://twitter.com/ebey_jacob/status/1596223682246234113)。这些功能对许多应用可能并非必需，但了解其可行性很有价值。
+- 📜 [Remix Deferred 概述](https://gist.github.com/jacob-ebey/9bde9546c1aafaa6bc8c242054b1be26)：解释 [defer](https://github.com/remix-run/remix/issues/4486) 在 Remix 中的工作原理，它允许将 promise 从后端“传送”到前端。适合希望理解 Remix 内部机制的用户。
+- 📜 [如何在 React 中更新兄弟组件的状态？](https://alexsidorenko.com/blog/react-siblings/)：短文，清晰阐释了“状态提升”的概念。
+- 📜 [React 极简 TypeScript 速成课程](https://profy.dev/article/react-typescript)：帮助开发者快速入门 TypeScript 和 React。
+- 📜 [前端 JavaScript 实战中的数据结构 - 附 React 代码示例](https://profy.dev/article/javascript-data-structures)：在 React 环境中熟悉数据结构的实用指南。
+- 📜 [ArConnect 将其 Chrome 扩展迁移至 Plasmo 框架](https://blog.plasmo.com/p/migrating-chrome-extension-to-plasmo)：关于使用 [Plasmo](https://github.com/PlasmoHQ/plasmo) 的实践反馈：用于创建 Web 扩展的开源 React 框架。
+- 📜 [面向全栈开发者的 Storybook](https://storybook.js.org/blog/storybook-for-full-stack-developers/)：全面概述 Storybook 生态系统能为开发者提供的功能。
+- 📜 [Solid Final Form - 概念验证](https://erikras.com/blog/solid-final-form-poc)：Erik 说明其库 [Final Form](https://final-form.org/react)（几年前流行）已与 React 解耦，并演示了在 SolidJS 环境中的应用。
+- 📜 [Ant Design 5.0 - 组件级 CSS-in-JS](https://ant.design/docs/blog/css-in-js)：React 设计系统发布新主版本，详解其 CSS-in-JS 运行时的优化方案。
+- 🎥 [论 React 与单页面应用的优劣](https://www.youtube.com/watch?v=ChfjZV-aA_Y)：Alex Russell 与 Theo Browne 的 2 小时辩论。尚未观看。Alex 以批评 React 和 SPA 闻名，Theo 应是 React 生态的有力辩护者。
+- 🎥 [React 开发者必须了解的 @container！](https://www.youtube.com/watch?v=ypN-Uwshc5M)：在原生 CSS + Tailwind 的 React 环境中，介绍查询容器新 CSS 特性。Firefox 暂不支持，但有 polyfill。
+- 🎥 [RTK Query 基础：查询端点、数据流与 TypeScript](https://egghead.io/courses/rtk-query-basics-query-endpoints-data-flow-and-typescript-57ea3c43)：RTK Query 创建者 Lenz 在 Egghead 推出的免费新课程。
+- 🧑‍💻 [Remix PR - 添加“跳转到定义”支持](https://github.com/remix-run/remix/pull/4689)：tRPC 贡献者将其 TypeScript 经验移植到 Remix 以提升开发者体验（DX）。
+- 📦 [react-three-editor](https://github.com/pmndrs/react-three-editor)：正在开发中的 React-Three-Fiber 场景编辑器。
+- 📦 [Gatsby 5.1](https://www.gatsbyjs.com/docs/reference/release-notes/v5.1/)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 赞助 {#sponsor2}
+
+[![Yuzu 是面向前端开发者的最佳金融数据 API](/emails/issues/126/yuzu.png)](https://www.yuzu.dev/)
+
+**[Yuzu 是面向前端的最佳金融数据 API](https://www.yuzu.dev/)**
+
+Yuzu 旨在为前端开发者消除数据工程负担，支持构建以下类型数据集的应用：
+
+- 实时股票、加密货币和外汇价格
+- 即时市场新闻
+- ETF 和共同基金详情
+
+开发者青睐 Yuzu 的 GraphQL、Websockets 和 SQL API，因其能灵活获取任意数据，让开发者专注于构建终端用户体验，而非数据抓取、规范化与维护。
+
+Yuzu 的专业级数据被经纪商、分析平台和投资应用广泛采用，用户涵盖新兴初创公司到成熟金融机构。
+
+最棒的是？任何人都能[免费开始使用](https://www.yuzu.dev/pricing)！
+
+---
+
+## 📱 React-Native {#react-native}
+
+**[React Native 核心贡献者峰会 2022](https://reactnative.dev/blog/2022/11/22/react-native-core-contributor-summit-2022)**
+
+9月初，大部分 React Native 贡献者齐聚 React Native EU 会议。他们通过系列研讨会形成报告，深入讨论了新架构、Metro 打包器和发布流程等议题。
+
+**[Shopify - 我们测量 React Native 渲染时间的解决方案](https://shopify.engineering/measuring-react-native-rendering-times)**
+
+[react-native-performance](https://github.com/Shopify/react-native-performance) 包可生成 JSON 格式的[现场/真实用户监控](https://web.dev/lab-and-field-data-differences/)性能报告。该工具与 React-Navigation 无缝集成，支持将报告发送至自选分析面板，帮助定位生产环境中存在性能问题的具体屏幕。其设计理念类似于现有 Web 指标：Core Web Vitals、TTI、INP 及 Vercel/Netlify/Gatsby 性能仪表板...
+
+- 📜 [Shopify - 开源 FlashList 的经验总结](https://shopify.engineering/what-we-learned-from-open-sourcing-flashlist)：Shopify 成功开源项目的复盘，强调营销与规划的重要性。另可参考[Docusaurus 2.0 发布经验](https://www.indiehackers.com/post/1-on-product-hunt-thanks-to-newsletters-and-good-timing-2c7d8809d9)
+- 📜 [如何用 Nitro 5 倍速构建 React Native 应用](https://blog.nitro.build/how-to-build-a-react-native-app-5x-faster-with-nitro-d7e512b18d90)：Nitro（付费预览工具）在仅修改 JS 代码时可大幅缩短 RN CI 构建时间
+- 📜 [2022 年及未来的 React Native](https://semaphoreci.com/blog/react-native)
+- 📜 [React Native 如何通过新架构实现原生级性能](https://medium.com/ocp-digital-factory/how-react-native-became-performant-as-native-with-the-new-architecture-6e678c3178aa)
+- 🐦 [setNativeProps 将在 Fabric 回归？](https://twitter.com/o_kwasniewski/status/1596090790350303233)
+- 🎨 [VisionCamera 帧处理器 + Skia - 人脸打码演示](https://twitter.com/mrousavy/status/1595746972190883840)
+- 📦 [React-Native 0.71.0-rc.2](https://twitter.com/Kelset/status/1595839212502261760)
+- 📦 [React Native Windows 0.69.14](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.69.14)
+
+---
+
+## 🧑‍💻 职位 {#jobs}
+
+🧑‍💼 [**Causal 产品工程师，远程/伦敦/纽约，$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal 是一家 A 轮初创公司（由 Coatue/Accel 支持），致力于构建用于数字处理和数据可视化的一体化工具。我们正在寻找能够解决复杂 UX/性能挑战的资深 React 工程师。
+
+🧑‍💼 [**Callstack - 高级 React Native 开发人员 - 完全远程，B2B 月净收入 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)
+
+您希望开发全球使用最广泛的应用吗？您想共同塑造 React Native 技术吗？加入 Callstack 的 React & React Native 专家团队。访问官网了解更多详情，期待您的申请——请向我们展示您的实力！
+
+🧑‍💼 [**G2i - 100% 远程 React Native 职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们开放多个专注于 React Native 的开发职位！年薪约 160k 美元外加 10% 奖金。要求具备 RN 生产环境经验且位于美国境内。私信 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解详情，请务必提及 This Week in React。
+
+💡 [如何发布招聘信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Ecma TC39 第93次会议议程](https://github.com/tc39/agendas/blob/main/2022/11.md)：会议正在进行中！我特别关注新的[异步上下文提案](https://github.com/legendecas/proposal-async-context)！
+- [高级网页字体优化技术](https://pixelpoint.io/blog/advanced-web-font-optimization-techniques/)：详细讲解如何优化字体：减小尺寸、避免布局偏移并调整垂直对齐。
+- [Octoverse 2022 - 开源软件现状](https://octoverse.github.com/)
+- [SolidStart 初探](https://ajcwebdev.com/2022/11/20/a-first-look-at-solidstart/)
+- [如何使用 "Intl.Segmenter" 将 JavaScript 字符串拆分为句子、单词或字素](https://www.stefanjudis.com/today-i-learned/how-to-split-javascript-strings-with-intl-segmenter/)
+- [我们如何丢失崭新的 npm 包名称（又将其找回）](https://reactflow.dev/blog/reactflow-npm-package-name/)
+- [2022年 JavaScript 从 ES6 到 ES12](https://medium.com/@bluetch/javascript-es6-es7-es8-es9-es10-es11-and-es12-519d8be7d48c)
+- [CSS 中的颜色格式](https://www.joshwcomeau.com/css/color-formats/)
+- [TypeScript 5.0 即将发布...](https://www.youtube.com/watch?v=PTU-H6Wwbh8)
+- [Fastify 插件系统完全指南](https://www.nearform.com/blog/complete-guide-fastify-plugin-system/)
+- [GitHub Copilot CLI](https://githubnext.com/projects/copilot-cli/)
+- [Wasmer 3.0](https://wasmer.io/posts/announcing-wasmer-3.0)
+- [WebAssembly: TinyGo vs Rust vs AssemblyScript](https://ecostack.dev/posts/wasm-tinygo-vs-rust-vs-assemblyscript/)
+- [大、小和动态视口单位](https://web.dev/viewport-units/)
+- [需规避的 Node.js 架构陷阱](https://blog.appsignal.com/2022/11/23/nodejs-architecture-pitfalls-to-avoid.html)
+- [Cloudflare - 使用 Pages Functions 服务端渲染全栈应用](https://blog.cloudflare.com/pages-full-stack-frameworks/)
+- [Vercel - Edge Config：边缘端的超低延迟数据](https://vercel.com/blog/edge-config-ultra-low-latency-data-at-the-edge)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/126/meme.png)](https://twitter.com/addyosmani/status/1595470573001314309)

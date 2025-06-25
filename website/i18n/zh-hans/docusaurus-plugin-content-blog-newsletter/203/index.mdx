@@ -1,0 +1,174 @@
+---
+slug: /203
+title: "This Week In React #203: Server Functions, DevTools, Next.js, React-Query, React Router, React-Aria, Vaul, Remotion, Skia, Native Tabs, Godot, CodePush, void(0), Oxc, Node.js, Tauri..."
+authors: [slorber]
+date: 10-01-2024
+---
+
+大家好！
+
+本周我们有许多有趣的新闻和发布！
+
+特别值得注意的是 Server Actions 的重要术语变更，以及即将发布的 React DevTools v6 预览。
+
+在 React Native 方面，我们也有大量有趣的新闻和激动人心的包预览！
+
+另外，我的表情包游戏回归了。结尾你就明白了 😂
+
+查看我们的合作伙伴会议 [React Day 🇩🇪 Berlin](https://reactday.berlin/?utm_source=Newsletter&utm_medium=thisweekinreact)（12月13日&16日）。使用我们的代码 TWIR 可享 9 折优惠。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期通讯](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![追踪 {React} 组件并用 Omlet 减少技术债务。](/emails/issues/203/omletad3x.png)](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-first-oct-2024)
+
+**[追踪 \{React} 组件并用 Omlet 减少技术债务。](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-first-oct-2024)**
+
+揭示 React 组件在开发团队中的使用情况。通过 Omlet 全面掌握组件库状况，证明设计系统的商业价值，减少技术债务，并跟踪跨项目采用率。Omlet 帮助您识别遗留组件位置，发现未使用属性，改进组件库并简化迁移。
+
+[在 5 分钟内生成可操作报告。](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-first-oct-2024) 分析代码使用情况并观察设计系统随时间的影响。
+
+立即免费试用 Omlet 并维护更简洁的代码：[omlet.dev](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-first-oct-2024)
+
+---
+
+## ⚛️ React {#react}
+
+[![Server Actions 已重命名为 Server Functions](/emails/issues/203/serverfunctions.jpg)](https://19.react.dev/reference/rsc/server-functions)
+
+**[Server Actions 已重命名为 Server Functions](https://19.react.dev/reference/rsc/server-functions)**
+
+这不是代码变更，而是已正式发布在 React v19 文档网站上的重要术语变更。Server Actions 现在被视为更广泛的 Server Function 功能的子集。仅当在以下场景中使用时才成为 Action：
+
+- `<form action>`
+- `useActionState()`
+- `startTransition()`
+
+此变更明确了 "use server" 是暴露服务端端点，不仅限于变更操作。使用 Server Functions 获取数据和 JSX 可能并非反模式。
+
+**关于 Next.js Server Actions**：它们使用 `POST` 请求并按顺序运行，但这只是 Next.js 的实现细节，React 并不阻止您并行执行 Actions。Next.js 团队已确认计划引入新 API 以 `GET` 方式调用 Server Functions。
+
+---
+
+[![React DevTools 6.0](/emails/issues/203/devtools.jpg)](https://github.com/facebook/react/blob/main/packages/react-devtools/CHANGELOG.md#600)
+
+**[React DevTools 6.0](https://github.com/facebook/react/blob/main/packages/react-devtools/CHANGELOG.md#600)**
+
+近期，React DevTools 成为大量开发工作的重点，特别是其能够为服务器组件和客户端组件呈现统一且易于理解的 React 树。浏览器扩展尚未发布，但 v6 版本的变更日志已公开，其中包含众多 PR 和截图可供查阅。根据我的观察，该团队在元素检查、性能分析、日志记录、堆栈跟踪和源码映射等方面提供了卓越的开发者体验（DX），完成了令人惊叹的工作。
+
+---
+
+- 💸 [React Bricks - Transform React components into dynamic, visually editable bricks of content with the pioneering React Visual Headless CMS.](https://www.reactbricks.com/?utm_source=twir&utm_campaign=ql24)
+- 👀 [Next.js PR \- Update Dynamic APIs to be async](https://github.com/vercel/next.js/pull/68812): The PR we mentioned last week (turning APIs such as `cookies()`, `headers()` and `searchParams` async) has been merged and released in Next.js 15 canary 171\. Libraries might have to adjust their code accordingly ([nuqs](https://x.com/fortysevenfx/status/1839158893710033141)) or introduce breaking changes ([Clerk](https://x.com/tweetsbycolin/status/1839273740577759603)). Migration instructions will be provided very soon.
+- 👀 [Next.js PR \- Add `connection()` as a new dynamic API](https://github.com/vercel/next.js/pull/69949): A new API to bail out of pre-rendering will replace `unstable_noStore()`.
+- 🐦 [React Core \- Lazy Context Propagation has been enabled for React 19 and React Native](https://x.com/sebastienlorber/status/1841042683122286641): This shouldn’t impact you directly, but it's an important implementation detail change that sets the stage for upcoming features to optimize React Context consumption.
+- 🐦 [React Router \- Typesafety improvements preview](https://x.com/pcattori/status/1841166684180402378): React Router will soon be able to generate types manually (CLI) or automatically (TS plugin) to improve type-safety.
+- 🗓️ [React-Brussels](https://www.react.brussels/?utm_source=thisweekinreact) - 🇧🇪 Brussels - 18 October - Last call! You still have a chance to get your ticket, and don’t forget the [10% discount](https://ti.to/react-rally/react-rally-2024/discount/TWIR) with code "TWIR".
+- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇺🇸 New-York - 19 & 22 December - 10% discount with code TWIR. Full line-up revealed!
+- 📜 [Cloudflare Builder Day 2024 \- 18 big updates to the Workers platform](https://blog.cloudflare.com/builder-day-2024-announcements/): Cloudflare made relevant announcements for React devs. They improved Node.js compatibility and added support for Static Assets. They also joined the OpenNext initiative and published a new adapter to reduce Next.js vendor lock-in and to make it more portable outside Vercel without compromises.
+- 📜 [Level up your env var tooling in Next.js with DMNO](https://dmno.dev/blog/dmno-nextjs-launch/): This interesting tool can help prevent leaking secrets in a modern React RSC world. It also supports Remix, Astro, and Vite.
+- 📜 [The unspoken rules of React hooks](https://macwright.com/2024/09/19/the-extra-rules-of-hooks): Some functions returned by React (such as `setState`) are known to be stable and do not need to be added to dependency arrays. This rule is implicit and there’s no way for third-party libraries to declare their returned functions as stable.
+- 📜 [SSR-friendly Custom React Hook for Local Storage Read and Write](https://www.nico.fyi/blog/ssr-friendly-local-storage-react-custom-hook): Reading `localStorage` with `useSyncExternalStore` is great and helps avoid hydration mismatches. But you have to work around storage events not firing for the current document.
+- 📜 [Intro to CSS animations for React developers](https://www.developerway.com/posts/intro-to-css-animations-for-react-devs): Interactive article that notably explains the problem with unmounting and animations.
+- 📜 [use() and data fetching](https://flaviocopes.com/use-and-data-fetching/): Moves data fetching from `useEffect` to an RSC, which also shows React’s ability to serialize promises.
+- 📜 [Reliable date formatting in Next.js](https://next-intl-docs.vercel.app/blog/date-formatting-nextjs): To avoid hydration mismatches, you need to use the same Date/timestamp, timezone, and locale across both client/server environments. `next-intl` gives you APIs to help you do so.
+- 📜 [Inverse Assertions](https://www.epicweb.dev/inverse-assertions): An interesting React Testing Library technique to assert a side effect did NT happen.
+- 📜 [Types of React Components](https://www.robinwieruch.de/react-component-types/): Documenting component types from 2013 to 2024\.
+- 📜 [Proxy state management: MobX vs Valtio](https://www.frontendundefined.com/posts/monthly/proxy-state-management-mobx-valtio/)
+- 📦 [React Query 5.59 \- Experimental support for `use()`](https://github.com/TanStack/query/releases/tag/v5.59.0): When using the new `experimental_prefetchInRender` option, the library will return a stable promise that you can `use()` making it easier to integrate with React 19 Suspense in a performant way. It’s more convenient than `usePrefetchQuery` and more parallel than `useSuspenseQuery` which can create waterfalls.
+- 📦 [Live Compositor \- React renderer for mixing real-time livestreams](https://compositor.live/): A new innovative product from Software Mansion provides live video and audio mixing capabilities similar to OBS through a familiar React interface. Open-source but requires a license for production usage.
+- 📦 [React Aria \- September 30, 2024 Release \- Color Pickers stable, Button pending state, Tree beta, Disclosure, DisclosureGroup (accordion)](https://react-spectrum.adobe.com/releases/2024-09-30.html)
+- 📦 [Vaul 1.0 \- Drawer component for React \- Rewritten, improved, new docs](https://github.com/emilkowalski/vaul/releases/tag/v1.0.0)
+- 📦 [Framer-Motion 11.9 \- `useAnimate()` mini, much smaller, built on top of WAAPI](https://www.framer.com/motion/use-animate/#usage)
+- 📦 [React-admin \- October 2024 Update](https://marmelab.com/blog/2024/09/27/react-admin-october-2024-update.html)
+- 🎥 [Remotion on Shark Tank \- Pitching a programming framework on TV](https://www.youtube.com/watch?v=XzY1ukohYdA): Remotion is the first React framework to pitch Shark Tank investors, and they even got an offer\!
+- 🎥 [Delba \- React explained: 'use client'](https://www.youtube.com/watch?v=eO51VVCpTk0): Greatly explained, and another great usage of Remotion\!
+- 🎥 [Theo \- Next.js has real competition now (TanStack Start)](https://www.youtube.com/watch?v=nz43Vuy9_dE)
+- 🎥 [Jack Herrington \- Legend State v3 \- Local first sync and fastest React State manager](https://www.youtube.com/watch?v=xkWvDG6uEfk)
+- 🎙️ [This Month in React 2024-09 – Async Components, a React 19 cheatsheet, Static Hermes, and trademarks drama](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-09--Async-Components----a-React-19-cheatsheet--static-Hermes--and-trademarks-drama-e2p2o6j)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![WorkOS：面向 B2B SaaS 的现代身份平台](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)
+
+**[WorkOS：面向 B2B SaaS 的现代身份平台](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**
+
+通过 WorkOS，您只需几行代码即可开始向企业客户销售产品。
+
+🔐 WorkOS AuthKit 支持完整的用户管理解决方案，包括 **SSO、SCIM、RBAC 和 FGA**。
+
+🏗️ API **灵活易用且模块化**，可根据需求选择功能并在数分钟内完成集成。
+
+🎨 设计和用户体验至关重要：从文档质量到用户引导流程，我们**为开发者消除了所有不必要的复杂性**。
+
+✨ AuthKit **在 100 万月活跃用户（MAU）内免费**，包含机器人防护、MFA、RBAC 等功能。
+
+🤝 WorkOS 获 **Perplexity**、**Vercel** 和 **Webflow** 等数百家领先初创企业信任。
+
+[立即开始使用 WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [React Native Mastery - The only course you need to Master React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 👀 [React Native PR \- Migrate template to Swift](https://github.com/react-native-community/template/pull/45): Newly initialized projects will use Swift by default starting React Native 0.77.
+- 👀 [React Native Proposal \- Removing "run on iOS/Android" key handlers from the CLI dev server](https://github.com/react-native-community/discussions-and-proposals/discussions/821)
+- 🐦 [React-Native-Godot preview](https://x.com/JannisRingwald/status/1840827419562836103): An upcoming package should allow React Native developers to create games with the Godot Engine.
+- 🐦 [React-Native-Bottom-Tabs preview](https://x.com/o_kwasniewski/status/1841383968148509149): Oskar is working on a new native tabs component using SwiftUI TabView and Android BottomNavigationView. Compatible with react-native-screens, it should be an almost drop-in replacement to the JS-based one from React-Navigation. The demo highlights the difference between native/JS, particularly for the VisionOS platform.
+- 🐦 [Tzvetan Mikov \- “The Problem of Intl in Hermes”](https://x.com/tmikov/status/1840575141182636469)
+- 📜 [Meta has rebuilt Instagram and Facebook for its Quest headsets](https://techcrunch.com/2024/09/25/meta-has-rebuilt-instagram-and-facebook-for-its-quest-headsets/): The announcement is not technical, but this VR experience is built with React Native and running on Static Hermes. **Edit**: this [more technical blog post](https://engineering.fb.com/2024/10/02/android/react-at-meta-connect-2024/) came out just before hitting publish!
+- 📜 [How to synchronize reactive local-first apps with TinyBase](https://expo.dev/blog/how-to-synchronize-reactive-local-first-apps-with-tinybase)
+- 📜 [Simplify Your iOS Brownfield Integration With RootViewFactory](https://www.callstack.com/blog/simplify-your-ios-brownfield-integration-with-rootviewfactory)
+- 📦 [React-Native-Skia 1.4](https://github.com/Shopify/react-native-skia/releases/tag/v1.4.0): William introduced an experimental WebGPU Canvas integration.
+- 📦 [Code-Push-Server](https://github.com/microsoft/code-push-server): Microsoft open-sourced a server implementation of CodePush before shutting down App Center to avoid disrupting apps relying on it. Note that the [React Native SDK doesn’t plan to support the New Architecture](https://github.com/microsoft/react-native-code-push/issues/2696) although someone found a way to make it work with the Interop layer.
+- 📦 [Expo-File-System@next](https://docs.expo.dev/versions/unversioned/sdk/filesystem-next/): The upcoming SDK 52 version has been rewritten to be simpler and fully synchronous.
+- 📦 [Expo-Speech-Recognition](https://github.com/jamsch/expo-speech-recognition): Cross-platform speech recognition for iOS, Android and Web.
+- 📦 [Pressto \- Improve your app with pressable micro-interactions](https://github.com/enzomanuelmangano/pressto)
+- 📦 [Lottie v1.0 specification](https://www.linuxfoundation.org/press/lottie-animation-community-announces-lottie-v1.0-specification)
+- 📦 [React-Native-Gesture-Handler 2.20 - Add v0.76 and Stylus support](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.20.0)
+- 📦 [React-Native 0.76.0-rc.3](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.3)
+- 🎥 [React Native Universe 2024 \- Conf playlist](https://www.youtube.com/watch?v=ayJTvbIFLuw&list=PLZ3MwD-soTTGAEY8kZD3tgXGTwojn5qYh)
+- 🎥 [Reactiive \- Animated Loader with Skia](https://www.youtube.com/watch?v=7pCiGUrJuow)
+- 🎥 [Dan’s Lab \- Add Computer Vision to your Expo iOS App using Skia (Golf Swing Tracer)](https://www.youtube.com/watch?v=a51ofzf2rDo)
+- 🎥 [Simon Grimm \- 10 Essential React Native Tips Every Developer Must Know](https://www.youtube.com/watch?v=zuFh9lfb4HY)
+- 🎙️ [RNR 309 \- React Native IDE with Krzysztof Magiera](https://www.reactnativeradio.com/episodes/rnr-309-react-native-ide-with-krzysztof-magiera)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📨 [ECMAScript 新闻 - 追踪 ES、TC39、JS 工具和运行时动态的首选通讯](https://ecmascript.news/?utm_source=thisweekinreact)
+- 📣 [宣布 VoidZero - JavaScript 下一代工具链](https://voidzero.dev/posts/announcing-voidzero-inc)：尤雨溪宣布成立 VC 支持的 `void(0)` 公司，旨在开发包含 Vite、Vitest、Rolldown、Oxc 的超高速 JS 工具链。这些项目将继续保持 MIT 许可证免费。
+- 👀 [Node.js PR - 为 v23 取消 require(esm) 标志](https://github.com/nodejs/node/pull/55085)：Node.js 的 CJS/ESM 互操作性迎来重大进展，计划向后移植至旧版 LTS。
+- 📜 [Web Components 并非未来](https://dev.to/ryansolid/web-components-are-not-the-future-48bh)：当前 Web Components 领域争议不断，多位行业领袖发表观点。
+- 📜 [HTML 的 Dialog 元素与 Popover 有何区别？](https://frontendmasters.com/blog/whats-the-difference-between-htmls-dialog-element-and-popovers/)
+- 📦 [Oxc Transformer Alpha - 转译速度比 SWC 快 5 倍](https://oxc.rs/blog/2024-09-29-transformer-alpha.html)
+- 📦 [Tauri 2.0](https://v2.tauri.app/blog/tauri-20/)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![替代文本](/emails/issues/203/meme.jpg)](https://x.com/sebastienlorber/status/1839661750498578602)
+
+[![替代文本](/emails/issues/203/meme2.jpg)](https://x.com/sebastienlorber/status/1840765064246112276)
+
+[![替代文本](/emails/issues/203/meme3.jpg)](https://x.com/sebastienlorber/status/1841110004792696850)
+
+下次见！👋

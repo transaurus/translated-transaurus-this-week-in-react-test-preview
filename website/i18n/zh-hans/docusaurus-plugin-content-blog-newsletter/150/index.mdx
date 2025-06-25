@@ -1,0 +1,186 @@
+---
+slug: /150
+title: "This Week In React #150: Next.js, Skew Protection, Portals, Remix Dev Server, Shadcn UI, AI, React-Aria, SWR, visionOS, tvOS, MiniSim, MMKV..."
+authors: [slorber]
+date: 06-27-2023
+---
+
+大家好！
+
+本周我们有一些关于 Next.js 的消息，它最近受到了很多批评。Remix 也发布了其带有热数据重新验证功能的新开发服务器。
+
+在 React-Native 方面，开发者们正在尝试在 Vision Pro 上运行最新版本。
+
+查看 [React Jam](https://reactjam.com/?utm_source=thisweekinreact)：一场于 7 月 20 日开始的 React 游戏开发大赛，我担任评委。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期通讯](https://slo.im/thread) - 视觉化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![Tina.io - 面向 Markdown 网站的 Headless CMS](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io - 面向 Markdown 网站的 Headless CMS](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- Markdown 文件的编辑界面
+- MDX 组件的可视化界面
+- 支持静态生成 (SSG) 和服务器端渲染 (SSR)
+- 可视化实时预览选项
+- 基于可复用区块构建
+
+体验示例项目：
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus) (GitHub)
+- [Next.js + Tailwind 可视化编辑](https://github.com/tinacms/tina-cloud-starter) (GitHub)
+
+或运行 `npx create-tina-app@latest`，然后访问 `localhost:3000/admin`
+
+观看 [4 分钟演示视频](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## ⚛️ React {#react}
+
+[![](/emails/issues/150/nextjs-update.jpg)](https://nextjs.org/blog/june-2023-update)
+
+**[Next.js App Router 更新 - 首要任务](https://nextjs.org/blog/june-2023-update)**
+
+Next.js 团队分享了关于新 App Router 的背景。他们最近受到大量批评，并清楚意识到当前开发者体验中的错误和其他问题。他们详细列出了优先级工作：
+
+- 性能优化：本地开发、构建和服务器运行时
+- 错误修复和稳定性提升
+- 文档完善和教育资源
+
+---
+
+[![](/emails/issues/150/skew-protection.jpg)](https://vercel.com/blog/version-skew-protection)
+
+**[Vercel - 引入版本偏差防护](https://vercel.com/blog/version-skew-protection)**
+
+Vercel 的新功能，缓解新部署期间可能出现的后端/前端不同步问题：来自有状态客户端的请求现在可路由到对应的旧版不可变服务器部署。对持续部署场景尤其有用。在 Next.js 13.4.7 中实验性提供，将自动应用正确的 HTTP 头。
+
+---
+
+[![](/emails/issues/150/shadcnui.jpg)](https://ui.shadcn.com/docs/changelog)
+
+**[Shadcn UI 更新 - 2023年6月](https://ui.shadcn.com/docs/changelog)**
+
+这套 Tailwind + Radix 组件集正迅速走红。作者刚刚发布了包含 CLI 的重大更新，已提供出色的开发者体验，并计划在近期添加[令人印象深刻的 AI 功能](https://twitter.com/shadcn/status/1673055193968287744)。Kent C. Dodds [解释](https://twitter.com/kentcdodds/status/1673806183935909888)了他在 Remix 技术栈中采用该组件集的原因。
+
+---
+
+- 🐦 [Fred K Schott - "React.js canary is _not_ stable and probably shouldn't be used in production."](https://twitter.com/FredKSchott/status/1673722399278403584): a debate that is particularly animating the community this week. I also shared [my opinion](https://twitter.com/sebastienlorber/status/1673802036666589185) and think it's OK to use a canary React release in a framework.
+- 💬 [Stitches is not longer maintained](https://github.com/stitchesjs/stitches/discussions/1149#discussioncomment-6223090)
+- 👀 [React Jam - Build and play games together!](https://reactjam.com/?utm_source=thisweekinreact)
+- 👀 [Remotion 4.0 launches next week](https://twitter.com/JNYBGR/status/1673641398539546625)
+- 💡 [Refresh React Server Component on Focus](https://buildui.com/recipes/refresh-react-server-component-on-focus): tip for reproducing a popular React-Query/SWR feature.
+- 📜 [Teleportation in React: Positioning, Stacking Context, and Portals](https://www.developerway.com/posts/positioning-and-portals-in-react): great interactive article for those struggling with z-index. Explains well the concept of stacking context, and how creating a React portal can simplify your life.
+- 📜 [GitHub - Crafting a better, faster code view](https://github.blog/2023-06-21-crafting-a-better-faster-code-view/): feedback on the implementation of GitHub's new Code View in React, and on the fancy techniques used for scaling with the number of code lines to be displayed.
+- 📜 [Our experience adding Edge Runtime to Next.js SDK](https://blog.logto.io/next-edge/): feedback from Logto on the changes needed to their SDK to support the Next.js Edge Runtime.
+- 📜 [Things you might not know about Next Image](https://pixelpoint.io/blog/next-image/): a good resource on how Next.js' Image component works, with a few pragmatic tips to help you optimise your Lighthouse score.
+- 📜 [Using useMutation to make an advanced toggle in React](https://www.propelauth.com/post/using-usemutation-to-make-an-advanced-toggle-in-react): uses React-Query's useMutation callbacks to give animated feedback to the user.
+- 📜 [Storybook - Zero-config support for Tailwind, MUI, styled-components, and Emotion](https://twitter.com/storybookjs/status/1671907527422795776): the styling-addon is now able to configure itself for several popular UI libs.
+- 📜 [A16z - The Getting Started with AI Stack for JavaScript](https://a16z.com/2023/06/21/the-getting-started-with-ai-stack-for-javascript/): VCs from Andreessen Horowitz present an AI starter based on a React and Next.js stack.
+- 📜 [SwiftUI stole the best parts of React…and my heart](https://www.mux.com/blog/swiftui-against-react)
+- 📦 [Remix 1.18 - Stable V2 Dev Server, JSON/Text Submission...](https://github.com/remix-run/remix/releases/tag/remix%401.18.0): see also the [video series](https://www.youtube.com/watch?v=2c2OeqOX72s) which explains how the Dev Server works and the concept of Hot Data Revalidation.
+- 📦 [AI.JSX - AI Application Framework for Javascript](https://github.com/fixie-ai/ai-jsx): a solution for creating AI applications based on JSX. Does not use React directly, but integrates particularly well with ([details](https://docs.ai-jsx.com/is-it-react)).
+- 📦 [Medusa Product Module](https://medusajs.com/recap/): the open-source e-commerce solution is offering a new module for Next.js and other serverless environments.
+- 📦 [React Aria - June 27 Release](https://twitter.com/devongovett/status/1673764872117714944): StrictMode support added, no need for SSRProvider anymore, and various other new features: Calendar, DatePicker, TagGroup...
+- 📦 [Next.js 13.4.7](https://github.com/vercel/next.js/releases/tag/v13.4.7)
+- 📦 [SWR 2.2](https://github.com/vercel/swr/releases/tag/v2.2.0)
+- 🎥 [Single Line React Performance Boost with Million](https://www.youtube.com/watch?v=x-aNifu9RNw)
+- 🎥 [Don't Follow This Bad React Advice!](https://www.youtube.com/watch?v=YlU9vznPWIk)
+- 🎥 [Make Your Own Next.js](https://www.youtube.com/watch?v=3RzhNYhjVAw)
+- 🎥 [The Ultimate Guide to Server Actions in NextJs 13](https://www.youtube.com/watch?v=sdKFEo6978U)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Porkbun.com - 最佳域名注册商](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)
+
+**[Porkbun.com - 最佳域名注册商](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**
+
+Porkbun 为 React 和 React-Native 开发者提供数百种域名后缀选择，从 .dev 和 .app 到 .cloud、.xyz 和 .ai——均以**全网最低价**提供！在 Porkbun 注册的每个域名都包含**海量免费功能**：
+
+- SSL 证书
+- WHOIS 隐私保护
+- DNS 服务
+- URL 转发
+- 网站和邮箱托管试用
+
+体验我们**革命性的 AI 域名搜索工具**，该工具正在改变人们寻找域名的方式。所有服务均得到**全年 365 天卓越技术支持**的保障，并在 Trustpilot 收获数千条五星好评。
+
+点击链接立即[享受域名注册立减 1 美元优惠](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)！
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 0.72 和 Expo SDK 49 在 visionOS 运行](/emails/issues/150/visionpro.jpg)](https://twitter.com/donadeldev/status/1671643367246032897)
+
+**[React Native 0.72 和 Expo SDK 49 在 visionOS 运行](https://twitter.com/donadeldev/status/1671643367246032897)**
+
+随着 React-Native 0.72 和 [Apple visionOS SDK](https://developer.apple.com/visionos/) 的发布，多个演示 ([1](https://twitter.com/donadeldev/status/1671643367246032897), [2](https://twitter.com/CipolleschiR/status/1671829763650904064), [3](https://twitter.com/piaskowyk/status/1672560913730117634)) 已证实 React-Native 可在 visionOS 和 Vision Pro 设备上运行。目前有 [3 个 PR](https://twitter.com/donadeldev/status/1673186295831568385) 正在为 CocoaPods 添加 visionOS 目标支持。
+
+---
+
+- 📜 [如何编写Flexbox布局引擎](https://tchayen.com/how-to-write-a-flexbox-layout-engine)：一位Expo开发者揭秘布局引擎工作原理，类似Yoga在React-Native中的实现。
+- 📜 [React Native电视应用焦点管理的革命](https://medium.com/xite-engineering/revolutionizing-focus-management-in-tv-applications-with-react-native-10ba69bd90)：XITE关于React-Native tvOS空间导航实现的反馈。挑战：Apple/Android TV平台具有不同的原生焦点管理行为。
+- 📜 [NativeScript与React Native模块集成](https://twitter.com/NativeScript/status/1671873172952567808)：展示NativeScript通过[Open Native](https://github.com/OpenNative/open-native)复用React-Native生态代码的能力。
+- 📜 [Chain React大会移动开发趋势分析](https://ionic.io/blog/mobile-development-trends-from-chain-react)：会议演讲解析及与Ionic/Capacitor的对比。
+- 🧵 [Maestro在React Native Pager View的应用](https://twitter.com/jaworek3211/status/1672230720545386496)：关于端到端移动测试框架使用的积极反馈。
+- 📦 [MiniSim - macOS菜单栏应用，用于启动iOS/Android模拟器](https://github.com/okwasniewski/minisim)：该应用因能[无声音启动Android模拟器](https://twitter.com/ariel_is_dev/status/1672250640704184321)而广受好评😄，并已支持[VisionOS](https://twitter.com/o_kwasniewski/status/1672257084379783174)。
+- 📦 [React-Native MMKV 2.10 - 支持iOS应用组](https://twitter.com/mrousavy/status/1672184227813642241)
+- 🎙️ [React Native Radio第270期 - 深入React Native 0.72](https://reactnativeradio.com/episodes/diving-into-react-native-072-with-lorenzo-sciandra-and-riccardo-cipolleschi)
+- 🎙️ [React Native Show播客第23期 - Matt Hargett谈大规模React Native应用](https://www.youtube.com/watch?v=60iOEg-vWjw)
+- 🎥 [React-Native中的Redux-Toolkit与低功耗蓝牙](https://www.youtube.com/watch?v=IWEAepFC0eo)
+
+---
+
+## 🧑‍💻 职位招聘 {#jobs}
+
+🧑‍💼 [**Passionfroot - 高级全栈工程师(Remix) - €160k+，柏林/远程**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot致力于通过YouTube、播客、社交媒体和新闻通讯赋能未来的独立企业。加入我们，共同打造帮助全球创作者建立可扩展、可持续业务的工具。
+
+🧑‍💼 [**Callstack - 高级React Native开发者 - 全职远程，B2B月薪21-32k PLN净收入**](https://www.callstack.com/senior-react-native-developer)
+
+您希望参与全球最热门应用的开发吗？想共同塑造React Native技术的未来吗？加入Callstack的React & React Native专家团队。详情请访问官网，期待您的申请——请尽情展示您的才华！
+
+🧑‍💼 [**G2i - 100%远程React Native职位**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我们开放多个React Native开发者职位！薪资约16万美元加10%奖金。需具备RN生产环境经验且位于美国境内。私信[@gabe_g2i](https://twitter.com/gabe_g2i)了解更多，并请提及This Week in React。
+
+💡 [如何发布赞助信息？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Web流式传输简介](https://vercel.com/blog/an-introduction-to-streaming-on-the-web)
+- [未来CSS：状态容器查询](https://ishadeed.com/article/css-state-queries/)
+- [Svelte 4](https://svelte.dev/blog/svelte-4)
+- [Svelte(Kit)使用一年并处理30亿次请求后的思考](https://claudioholanda.ch/en/blog/svelte-kit-after-3-billion-requests/)
+- [类型参数占位符：TypeScript 5.2最受讨论的特性](https://www.totaltypescript.com/type-argument-placeholders-typescript-5-2-most-discussed-feature)
+- [Vite 4.4 beta - 实验性Lightning CSS支持](https://twitter.com/vite_js/status/1671510085820882946)
+- [Ezno检查器预览](https://kaleidawave.github.io/posts/a-preview-of-the-checker/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/150/meme.jpg)](https://twitter.com/cesarzagonel/status/1671584136115494928)
+
+再见！👋

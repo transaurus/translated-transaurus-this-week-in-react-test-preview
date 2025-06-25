@@ -1,0 +1,143 @@
+---
+slug: /conferences/2024/react-summit-us-recap
+title: "📅 React Summit US 2024 - Conf Recap"
+authors:
+  - name: "Anton Meleshkin"
+    url: https://www.linkedin.com/in/anton-meleshkin-b226b5184/
+    image_url: https://github.com/Kragov.png
+    title: "Developer at FocusReactive"
+    socials:
+      github: https://github.com/Kragov
+      linkedin: https://www.linkedin.com/in/anton-meleshkin-b226b5184/
+      blog: https://focusreactive.com/blog/author/AntonMeleshkin/
+  - name: "Sergey Labuts"
+    url: https://www.linkedin.com/in/siarhei-labuts-aa3139125/
+    image_url: https://github.com/o8o0o8o.png
+    title: "Developer at FocusReactive"
+    socials:
+      github: https://github.com/o8o0o8o
+      linkedin: https://www.linkedin.com/in/siarhei-labuts-aa3139125/
+      blog: https://focusreactive.com/blog/author/SergeyLabuts/
+  - name: "Gleb Makhankov"
+    url: https://www.linkedin.com/in/gleb-makhankov/
+    image_url: https://github.com/user-attachments/assets/8235e2f0-c5d8-4dd5-89ea-305fb47a8285
+    title: "Developer at FocusReactive"
+    socials:
+      linkedin: https://www.linkedin.com/in/gleb-makhankov/
+      blog: https://focusreactive.com/blog/author/GlebMakhankov/
+  - slorber
+
+date: 11-26-2024
+---
+
+这封周一发送的华丽邮件是什么？嗯，我们正在尝试新花样！
+
+上周，**[React Summit US 2024](https://reactsummit.us?utm_source=Newsletter&utm_medium=thisweekinreact)** 在纽约举行。[视频即将上线](https://gitnation.com/events/react-summit-us-2024/talks)。与此同时，我们与组织者合作，为您带来一些精选演讲的回顾。
+
+<!-- truncate -->
+
+![会议图片](/emails/conferences/2024/react-summit-us/conf.jpg)
+
+**[Focus Reactive](https://focusreactive.com?utm_source=Newsletter&utm_medium=thisweekinreact)** 的开发人员编写了这些摘要。他们是值得信赖的技术合作伙伴，提供针对性能、可扩展性和 SEO 优化的高级内容平台。专注于 Next.js、Headless CMS、电子商务和 AI 集成，是 Vercel、Shopify、Sanity 的合作伙伴。[了解更多](https://focusreactive.com?utm_source=Newsletter&utm_medium=thisweekinreact)。
+
+美国版会议可能已经结束，但 **[React Summit 2025](https://reactsummit.com?utm_source=Newsletter&utm_medium=thisweekinreact)**（🇳🇱 阿姆斯特丹版 - 2025年6月13日至17日）刚刚宣布！准备好迎接另一场精彩的活动，与去年一样酷，但场地独特。早鸟票现已开售！
+
+这是我们第一次发送此类内容。您未来是否希望收到更多像这样的 React 会议回顾？
+
+闲话少说，以下是我们精选的 6 场演讲！
+
+<SubscribeFormEmbed placement="top" />
+
+---
+
+## Chrome DevTools：2024 年度回顾 - 调试 React 及其他
+
+![Addy 演讲](/emails/conferences/2024/react-summit-us/addy.jpg)
+
+**[Addy Osmani](https://bsky.app/profile/addyosmani.bsky.social)**（Chrome DX 负责人）对最新的 Chrome DevTools 功能进行了精彩回顾，并强调了 INP 指标。以下是涵盖的主要要点摘要：
+
+- **DevTools 中的 Gemini AI**：现在您可以要求它更改 UI、帮助解决错误，或协助您在开发过程中可能面临的任何挑战。
+- **React DevTools 中的服务器组件和“Memo”标签**：结合 Next.js 中浏览器控制台的服务器日志，使您能够更轻松地管理 Suspense 加载状态。
+- **useDebugValue**：有助于调试自定义钩子。
+- **字体颜色对比度修复工具**：现在直接内置于颜色选择器中。
+- **覆盖 XHR 和 Fetch 请求**：可以将模拟数据注入这些请求，甚至标头也可以被模拟。
+
+## 魔法：消失的网络
+
+![Kent 演讲](/emails/conferences/2024/react-summit-us/kent.jpg)
+
+Web 应用程序开发已经发展以满足用户和开发人员日益增长的需求。**[Kent C. Dodds](https://bsky.app/profile/kentcdodds.com)** 追溯了从多页面应用程序 (MPA) 到 React 服务器组件 (RSC) 的 Web 应用程序演进。让我们看看演讲中强调的这一演进的关键阶段：
+
+- **多页面应用程序 (MPA)**：简单有效，但需要整页重新加载。
+- **渐进增强的多页面应用程序 (PEMPA)**：引入 JavaScript 实现部分更新和 UX 改进，但增加了复杂性和服务器-客户端重复。
+- **单页面应用程序 (SPA)**：提高了交互性，但需要客户端网络和管理加载状态，增加了复杂性。
+- **渐进增强的单页面应用程序 (PESPA)**：带来了服务器端获取和渲染，改善了 UX。然而，将逻辑与路由绑定限制了可重用组件。
+- **React 服务器组件**：实现了全栈、可重用的组件，简化了工作流程，同时提高了速度和可扩展性。
+
+## 乱序流传输 - 驱动现代 React 的秘密
+
+![西奥在演讲](/emails/conferences/2024/react-summit-us/theo.jpg)
+
+**[Theo Browne](https://bsky.app/profile/t3.gg)** 探讨了 React 最具创新性的进步之一——乱序流式渲染。在 Web 应用中流式传输 HTML 使浏览器能够**逐步渲染到达的不完整 HTML**，显著提升**感知性能**，这对 SSR 尤其重要。唯一的限制是元素顺序：HTML 是线性的，位于顶部的慢速组件会阻塞下方组件。
+
+该限制通过 RSC 得到解决。使用 `<template/>` 和 `<script/>` 标签标识未解析内容的占位符，并在数据可用时动态替换。
+
+**Next.js 中的部分预渲染和动态 IO** 等新进展结合了静态与动态渲染。这种混合方法允许将初始静态内容缓存在 CDN 上实现快速加载，后续动态更新从服务器流式传输，既优化速度又改进开发工作流。这些方法通过增强用户体验并支持复杂 Web 交互，彻底革新了 SSR。
+
+<SubscribeFormEmbed placement="middle" />
+
+## 关于 React 19 你需要知道的一切
+
+![舒鲁蒂在演讲](/emails/conferences/2024/react-summit-us/shruti.jpg)
+
+**[Shruti Kapoor](https://bsky.app/profile/shrutikapoor08.bsky.social)**（Slack 前端工程师）概述了即将发布的 React 稳定版更新，主要特性包括：
+
+- **React actions**：使用异步转换的函数，同时支持服务端
+- **新钩子**：`useActionState` 和 `useFormStatus` 简化表单构建，`useOptimistic` 提供流畅 UI 效果
+- **React 编译器**：新插件，告别 `useMemo` 和 `useCallback`
+- **新 API**：`use` - 在组件内读取资源和 Promise
+- **`ref` 变更**：最终成为 prop，无需 `forwardRef`
+- **错误改进**：错误描述更详细
+- **上下文变更**：渲染 `<Context>` 替代 `<Context.Provider>`
+
+## AI 将彻底改变 UI
+
+![杰克在演讲](/emails/conferences/2024/react-summit-us/jack.jpg)
+
+**[Jack Herrington](https://bsky.app/profile/jherr.dev)** 指出应用中集成 AI 的常见问题：
+
+- 需向模型提供超大上下文
+- 如何获取正确数据？
+- AI 无法发起多重数据请求
+- AI 无法管理 UI
+
+他通过实例演示如何集成 AI：
+
+- 使用工具是实现检索增强生成（RAG）的最简方式
+- 可在服务端和客户端为 UI 使用工具
+- AI 可自主选择使用何种工具
+- 无需依赖 Vercel AI 库或 OpenAI，甚至可使用本地 LLM
+
+## AI 与无障碍：值得探讨的话题
+
+![卡特在演讲](/emails/conferences/2024/react-summit-us/cat.jpg)
+
+开发中常忽视无障碍性，但 **[Cat Johnson](https://www.linkedin.com/in/catandthemachines/)** 强调 AI 已发挥作用并指出开发者当前可采取的措施。
+
+AI 带来了改进的文本转语音、自动会议记录和高级语音命令等工具。"Be My Eyes" 等应用使用 AI 描述手机拍摄的物体，为视障用户提供宝贵支持。
+
+开发者可通过编写含正确标签和属性的简洁 HTML 提升无障碍性。无障碍工具可测试并确保功能正常，在 CI/CD 流程中添加 **axe-core** 或 **lighthouse-cli** 等扫描工具可进一步优化该流程。
+
+通过利用人工智能并遵循最佳实践，我们可以让技术对每个人更具包容性。
+
+---
+
+以上就是本周的内容！
+
+在离开之前，请确保：
+
+- 查看 [React Summit 2025](https://reactsummit.com?utm_source=Newsletter&utm_medium=thisweekinreact) 获取早鸟票
+- 聘请 [FocusReactive](https://focusreactive.com/?utm_source=Newsletter&utm_medium=thisweekinreact)，他们在 Next.js CMS 和电子商务方面拥有专业知识
+- 给我们反馈 - 你喜欢这封邮件吗？点击回复告诉我们！
+
+再见！👋

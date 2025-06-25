@@ -1,0 +1,143 @@
+---
+slug: /161
+title: "This Week In React #161: useFormState, Memo, Conform, Progressive Enhancement, Astro, Radix, React-Aria, Rustymotion, Ecctrl, Expo Apple Settings, Unistyles, TypeScript, TC39..."
+authors: [slorber]
+date: 10-04-2023
+---
+
+大家好！
+
+本周我发现 React 生态相当平静，但我们有一些相当酷的文章可以阅读。
+
+React 渐进式增强在 Remix 和 Next.js 中都成为焦点！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看此新闻稿](https://slo.im/thread) - 可视化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![企业级API，用于信息流、聊天和视频！](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**企业级API，用于信息流、聊天和视频！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Stream 是企业级 **API** 和 **SDK** 的制造商，帮助产品和工程团队大规模解决两个常见问题：应用内聊天和社交活动信息流。
+
+借助 Stream，开发人员可以在极短的时间内将任何类型的消息或信息流体验集成到他们的应用中，而无需从头构建这些功能。Stream Chat 使开发人员能够轻松地将丰富的实时消息功能集成到他们的应用中。
+
+Stream 为流行框架提供健壮的客户端 SDK，例如 [**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal 和 iOS。
+通过 Maker 账户，为您的初创项目或业余项目完全免费解锁企业级功能、函数和 UI 组件。
+
+[**尝试新的 React 视频教程！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+---
+
+## ⚛️ React {#react}
+
+[![记忆化的艰难之战](/emails/issues/161/memo.jpg)](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)
+
+[**记忆化的艰难之战**](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)
+
+我们希望创建高性能应用，为此我们使用 `React.memo` 来避免不必要的重新渲染。但这些优化太容易被破坏。Dominik 与我们分享了几种导致性能下降的场景，包括使用内联对象/回调函数，或使用带有像 `children` 这样的属性的 JSX 插槽。
+
+我借此机会在 [Twitter 上发表了个人观点](https://twitter.com/sebastienlorber/status/1709258817844752794)：React 组件的性能应该被更好地封装。在我们等待 React-Forget 编译器的同时，有一些鲜为人知的途径可以探索，例如使用 Babel 插件。
+
+---
+
+[![可访问、类型安全、渐进增强的现代 Web 表单](/emails/issues/161/epicweb.jpg)](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)
+
+[**可访问、类型安全、渐进增强的现代 Web 表单**](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)
+
+Kent 向我们展示了一些 Remix 代码示例，演示如何轻松实现待定 UI 和乐观 UI。他建议在前端使用共享的 Zod 模式（schema）进行表单验证，并在后端扩展该模式以添加额外规则。[conform](https://conform.guide/) 工具简化了利用 Zod 模式验证 `FormData` 的流程，对于管理从本地状态到服务器的 React 表单而言，这似乎是个被低估的解决方案。
+
+---
+
+- 💸 [Ably实时黑客马拉松 - 创建实时React应用，赢取19,000美元奖金 - 从实时仪表板到协作体验！](https://ably.devpost.com/?utm_campaign=23-hackathon&utm_source=thisweekinreact&utm_medium=referral)
+- 👀 [Next.js PR - 表单状态的渐进式增强](https://github.com/vercel/next.js/pull/55584)：Next.js引入了全新的React核心钩子`useFormState`（不要与`useFormStatus`混淆），可用于管理服务器操作的反馈/响应，即使JavaScript被禁用时也能正常工作。
+- 👀 [React核心PR - 添加服务器上下文弃用警告](https://github.com/facebook/react/pull/27424)：秘密钩子`createServerContext`已被弃用并将被移除。
+- 👀 [Panda CSS公共路线图 - 容器查询、Panda Studio](https://panda-css.canny.io/)
+- 🐦 [Astro视图过渡 + 持久化React-Three-Fiber模型演示](https://twitter.com/astrodotbuild/status/1707918024471355406)
+- 🐦 [Remotion与GitHub签约 - 组建团队制作GitHub Unwrapped 2023视频](https://twitter.com/Remotion/status/1707664519403614323)
+- 📜 [岛屿架构中的状态共享](https://frontendatscale.com/blog/islands-architecture-state/)：图文并茂的文章，分析在Astro/React环境中实现岛屿间通信的多种解决方案。
+- 📜 [Next.js 13对比Remix：深度案例研究](https://prateeksurana.me/blog/nextjs-13-vs-remix-an-in-depth-case-study/)：详尽且文档齐全的文章，并列比较Next.js和Remix的各项功能。
+- 📜 [React谷歌地图：绘图工具](https://sudolabs.com/insights/react-google-maps-drawing-tools)
+- 📜 [Docusaurus - 为v3和MDX 2准备您的站点](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3)
+- 📦 [Astro 3.2 - 视图过渡功能改进](https://astro.build/blog/astro-320/)
+- 📦 [Radix主题2.0 - 新配色、更好的Tailwind兼容性、多项组件优化](https://www.radix-ui.com/themes/docs/overview/releases#200)
+- 📦 [React Aria - 2023年10月2日更新 - 客户端路由集成](https://react-spectrum.adobe.com/releases/2023-10-02.html)
+- 📦 [Rustymotion - 基于Rust的Remotion视频渲染器](https://github.com/clearlysid/rustymotion)
+- 📦 [Ecctrl - React-Three-Fiber角色控制器](https://github.com/pmndrs/ecctrl)
+- 🎥 [Theo T3 - Facebook尝试Tailwind后，转而构建了这个替代品（styleX）](https://www.youtube.com/watch?v=PHV94q7BivI)
+- 🎙️ [本月React - 2023年9月](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--September-2023-e29vb6o)
+- 👥 [reactjsday](https://2023.reactjsday.it/)（意大利维罗纳🇮🇹，10月27日）提供[-10% - 优惠码"media_TWIR"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)
+- 👥 [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact)（英国伦敦🇬🇧，10月20-23日）提供[-10% - 优惠码"REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![一个拥有所有功能的非云端Google Forms替代方案](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)
+
+**[一个拥有所有功能的非云端Google Forms替代方案](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**
+
+如果您希望建立**一个完全集成到IT基础设施中的强大表单管理系统**，让您能够**完全控制数据流**，并且不想花费数月时间和数千美元来启动和运行，那么SurveyJS就是您的选择！
+
+SurveyJS是一个由四个开源JavaScript库组成的产品套件，允许您在拖放式表单构建器中**创建和编辑**多个动态的**基于JSON的表单**，在您的React应用中呈现它们，并**将敏感的调查数据存储在内部基础设施中**。然后，您可以在浏览器中将**自定义调查和表单呈现为可编辑的PDF文件**，并通过**交互式图表和表格**可视化调查结果。[立即了解更多](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![使用 Expo 自定义 Apple 设置界面](/emails/issues/161/exposettings.jpg)](https://evanbacon.dev/blog/apple-settings)
+
+[**使用 Expo 自定义 Apple 设置界面**](https://evanbacon.dev/blog/apple-settings)
+
+Evan指出了使用iOS设置界面的几个优点。原生实现起来很痛苦，而且投资回报率低，但他的Expo配置插件简化了这一任务。他解释了如何通过开关切换应用的音效，或者如何自动化显示应用的软件许可证。
+
+---
+
+- 💸 [Blitz - 为 iOS、Android 和 Web 更快地构建 React Native 应用！](https://www.blitz-rn.com/)
+- 📜 [Expo EAS - 支持 XCode 15 和 iOS 17](https://expo.dev/changelog/2023/09-28-new-xcode-ios)
+- 📖 [Expo 文档 - 持续原生生成（CNG）](https://docs.expo.dev/workflow/continuous-native-generation/)：介绍了使用 Expo Prebuild 持续生成原生平台的思路。
+- 📦 [create-react-native-library v0.34 - 支持本地库开发](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.34.0)：现在可以轻松在原生React-Native中生成本地库。Expo同样支持此功能。
+- 📦 [react-native-unistyles - 提升您的 React Native 样式表，实现跨平台和可扩展性](https://github.com/jpudysz/react-native-unistyles)
+- 📦 [react-native-compressor - 在上传前压缩图片、视频和音频](https://github.com/numandev1/react-native-compressor)
+- 📦 [Expo-Image 1.3.4 - 修复 libwebp 安全问题](https://expo.dev/changelog/2023/09-29-libwebp)
+- 📦 [React-Native-Skia v0.1.211 beta - 支持动态图像](https://shopify.github.io/react-native-skia/docs/animated-images/)
+- 🎥 [应用崩溃原因分析？使用 Logcat 和 macOS 控制台进行调试](https://www.youtube.com/watch?v=LvCci4Bwmpc)
+- 🎥 [Airbnb 在 2018 年放弃 React Native 是错误的](https://www.youtube.com/watch?v=RwUQnfcxH0o)
+- 🎙 [React Native Radio 第276期 - Ignite v9 发布公告](https://reactnativeradio.com/episodes/rnr-276-announcing-ignite-v9-expresso)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [来自第98届TC39会议的更新 - 可调整大小的ArrayBuffer、ShadowRealm、正则表达式转义等...](https://dev.to/hemanth/updates-from-the-98th-tc39-meeting-1lcf)
+- 📜 [2023年每位开发者必须掌握的Unicode基础知识](https://tonsky.me/blog/unicode/)
+- 📜 [CSS子网格 - 因Chrome 117现已支持所有浏览器](https://web.dev/css-subgrid/)
+- 📜 [CSS嵌套与层叠机制](https://webkit.org/blog/14571/css-nesting-and-the-cascade/)
+- 📜 [9月Web平台新特性](https://web.dev/web-platform-09-2023/)
+- 📦 [TypeScript 5.3 Beta - 导入属性、类型导入的"resolution-mode"等...](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-beta/)
+- 📦 [string-ts - 强类型字符串处理函数](https://github.com/gustavoguichard/string-ts)
+- 📦 [every-ts - 构建和二分定位任意TypeScript版本的工具](https://github.com/jakebailey/every-ts)
+- 📦 [pattycake - 零运行时模式匹配 - ts-pattern的优化编译器](https://github.com/aidenybai/pattycake)
+- 📦 [Node.js 20.8 - 显著的性能优化](https://nodejs.org/en/blog/release/v20.8.0)
+- 📦 [Vitest 1.0测试版](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0-beta.0)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![alt](/emails/issues/161/meme.jpg)](https://twitter.com/creatine_cycle/status/1706912311309652159)
+
+再见！👋

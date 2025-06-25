@@ -1,0 +1,158 @@
+---
+slug: /181
+title: "This Week In React #181: React errors, Fast JSX, Flow, React-Query, Jotai, Inline styles, RSC, Next.js, RTL, RN 3D, Orbit, Gesture Handler, Skia, NewArch Helper, TC39, ESLint, VSCode..."
+authors: [slorber, bndkt]
+date: 04-10-2024
+---
+
+大家好！
+
+这周我发现了许多React核心PR值得关注。事实上太多了，所以我留了一些到下周再看！
+
+继Skia实现2D效果后，看到React Native开发者探索3D领域真是令人兴奋！
+
+**💡 [在Twitter上查看这份新闻稿](https://slo.im/thread) - 视觉格式 🎨**
+
+<!-- truncate -->
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 赞助商 {#sponsor1}
+
+[![轻松实现应用内订阅](/emails/issues/177/revenuecat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)
+
+**[轻松实现应用内订阅](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**
+
+RevenueCat为您提供货币化、分析和扩展应用业务所需的一切。轻松控制客户访问权限、管理数据并尝试定价策略。了解为何超过30,000个应用选择RevenueCat为其应用内购买提供基础设施支持。
+
+---
+
+## ⚛️ React {#react}
+
+[![React文档 - 新增onCaughtError/onUncaughtError，改进onRecoverableError](/emails/issues/181/react-errors.jpg)](https://github.com/reactjs/react.dev/pull/6742)
+
+[**React文档 - 新增onCaughtError/onUncaughtError，改进onRecoverableError**](https://github.com/reactjs/react.dev/pull/6742)
+
+近期，React核心团队彻底重构了React 19的错误处理机制。这些改进已在React 19 canary版本中提供，预计将随Next.js 14.2+版本推出。最值得注意的是React根节点（`createRoot`, `hydrateRoot`）新增的公共API回调：
+
+- `onCaughtError` 🆕 报告被错误边界捕获的错误
+- `onUncaughtError` 🆕 报告未捕获的错误
+- `onRecoverableError` 现使用ES错误原因特性报告原始错误
+
+该PR是关于这些新API的WIP文档，包含多个交互示例。主要设计目标是为用户显示错误弹窗。
+
+最令人兴奋的是，这是我首次看到全新的React hydration错误信息在弹窗中实际展示（如上图所示）。这将极大提升React的开发者体验！
+
+---
+
+- 💸 [Get drop-in authentication for your React app using Clerk, with ready-to-use components, hooks, and helpers.](https://go.clerk.com/WtsedFE)
+- 👀 [React Core - Fast JSX: Don't clone props object](https://github.com/facebook/react/pull/28768): Creating JSX elements under React 19 should become much faster. Recent changes in how key/refs are handled make it possible to avoid cloning props. We create a lot of JSX nodes so this should have a significant impact!
+- 👀 [React Core - Remove defaultProps support (except for classes)](https://github.com/facebook/react/pull/28733)
+- 👀 [React Core - Rename SECRET INTERNALS](https://github.com/facebook/react/pull/28789)
+- 🐦 [TIL React can render promises and contexts as JSX nodes](https://twitter.com/sebastienlorber/status/1777383298618077331)
+- 📖 [TanStack Query - new Render Optimizations guide](https://tanstack.com/query/v5/docs/framework/react/guides/render-optimizations): It’s nice that React Query uses structural sharing under the hood, and try hard to preserve object identities over time.
+- 📈 [Docusaurus has overtaken Gatsby’s npm downloads](https://npmtrends.com/@docusaurus/core-vs-@remix-run/react-vs-astro-vs-gatsby-vs-nextra-vs-vitepress-vs-vuepress): It feels surreal that the framework I work on is now the 2nd most used React web framework just after Next.js (far behind), despite its focus on content-centric websites. This should not last though: Astro, Remix, and Expo Web have more potential to grow.
+- 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Get a 10% discount with code "TWIR".
+- 🗓 [React Connection - 22 April](https://reactconnection.io/) + [React-Native Connection - 23 April](https://reactnativeconnection.io/) - 🇫🇷 Paris - 2 days of web/mobile conferences. Get a [\-20% discount](https://www.billetweb.fr/react-connection-2024?discount=TWIR) with code "TWIR".
+- 📜 [New Flow Language Features for React](https://medium.com/flow-type/announcing-component-syntax-b6c5285660d0): Meta engineers use Flow (and not TypeScript). This post presents the benefits of new keywords `component`, `hook`, and `renders` keywords introduced directly into the language, and presents great benefits in terms of DX, type-safety, and static analysis in general. I wish we had those in TypeScript too, but since it’s specific to React it’s unlikely to happen unless benefiting the whole JS ecosystem.
+- 📜 [Are Inline Styles Faster than CSS?](https://danielnagy.me/posts/Post_tsr8q6sx37pl): Daniel implemented his personal React website in 3 variants and measured several things: HTML/JS size, compression, Web Vitals… Surprisingly, using plain inline styles outperforms other CSS techniques!
+- 📜 [Exploring using Suspense with React Query](https://www.teemutaskula.com/blog/exploring-query-suspense): Nicely explains how you can improve the UX when using React Query. Creates a `useSuspenseQueryDeferred` to avoid showing a Suspense fallback on query key changes.
+- 📜 [React Server Components in a Nutshell](https://thenewstack.io/react-server-components-in-a-nutshell/): Paul takes Waku to illustrate how RSCs enable convenient server-side requests at the component level, while former solutions only supported route level. He also makes an interesting comparison between Gatsby’s static queries and RSCs.
+- 📜 [Jotai Tips](https://blog.axlight.com/posts/jotai-tips/): Daishi aggregated 20 Jotai tips in a single article.
+- 📜 [State machines in React](https://thesametech.com/state-machines-in-react/): Implements a wizard flow by building a state machine from scratch.
+- 📜 [Server-only Code in Next.js App Router](https://www.builder.io/blog/server-only-next-app-router): Use server-only and client-only packages to ensure code runs where it should.
+- 📜 [Next.js Forms with Server Actions](https://www.jtmthf.com/posts/nextjs-forms): A tutorial using Radix Form (in preview) to implement form elements compatible with Server Actions.
+- 📜 [Exploring Server Actions with Next.js](https://www.robinwieruch.de/next-server-actions/): A Tutorial showing how to do each CRUD operation.
+- 📜 [Techniques for Fetching Data - Comparing Next.js, Remix, and RedwoodJS](https://redwoodjs.com/blog/techniques-for-fetching-data): Revisits old data fetching techniques to explain why RSC is better.
+- 📜 [React 19 - Part 1: The Backstory; My journey writing a framework from scratch!](https://www.cmrg.me/blog/rsc-part-1-the-backstory)
+- 📜 [Synchronize Backend and Frontend Types With tRPC](https://marmelab.com/blog/2024/04/04/trpc-full-stack-types.html)
+- 📦 [Jotai Effect 1.0 - A Jōtai utility package for reactive side-effects](https://github.com/jotaijs/jotai-effect/releases/tag/v1.0.0)
+- 📦 [Jotai 2.8 - atomWithLazy, experimental store](https://github.com/pmndrs/jotai/releases/tag/v2.8.0)
+- 📦 [react-testing-library 15.0 - requires Node 18, supports new WAI-ARIA 1.2 roles](https://github.com/testing-library/react-testing-library/releases/tag/v15.0.0)
+- 📦 [use-signals - An experimental React hook for TC39 signals](https://github.com/dai-shi/use-signals)
+- 🎥 [Jack Herrington - Declarative Routes for NextJS and React-Router](https://www.youtube.com/watch?v=MiZcNHJT_Ss): Jack introduced [declarative-routing](https://github.com/ProNextJS/declarative-routing), a new typesafe routing solution he’s working on with support for React Router and Next.js. It also supports API routes, which makes it an alternative to tRPC with control over the API endpoints.
+- 🎥 [Theo - Facebook wrote a language just for React](https://www.youtube.com/watch?v=HOFIefkepMA)
+- 🎥 [James Quick - Don’t Make This Mistake with Next.js Server Components](https://www.youtube.com/watch?v=F_AplRX3dJU)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 赞助商 {#sponsor2}
+
+[![Refine - 开源Retool替代方案](/emails/issues/177/refine.jpg)](https://github.com/refinedev/refine)
+
+**[Refine - 开源Retool替代方案](https://github.com/refinedev/refine)**
+
+专为CRUD密集型应用打造的低代码与传统开发完美平衡方案。
+
+作为面向企业应用的开源React元框架，[Refine](https://github.com/refinedev/refine)提供无头(headless)解决方案，特别适合管理面板、仪表板和内部工具开发。
+
+低代码工具初期看似便捷，但在处理复杂场景时常因扩展性限制、定制能力不足和供应商锁定风险而力不从心。
+
+Refine让团队在保持灵活性的同时快速构建生产级应用。
+
+---
+
+## 📱 React-Native {#react-native}
+
+本版块现由 [Benedikt](https://twitter.com/bndkt) 共同撰写
+
+[![React Native 新版 3D 库正在开发中](/emails/issues/181/rn3d.jpg)](https://twitter.com/mrousavy/status/1775840325161853389)
+
+🐦 [**React Native 新版 3D 库正在开发中**](https://twitter.com/mrousavy/status/1775840325161853389)
+
+RN 社区最令人振奋的动向之一，是目睹 Marc Rousavy、William Candillon 和 Christian Falch 等开发者不断突破技术边界，实现远超屏幕文本和按钮渲染的创举。近期 Skia 相关发布已展示 RN 2D 渲染的技术巅峰，而此刻 Marc 则预告了 RN 3D 渲染领域的重大进展。据悉 Margelo 团队正开发新库，旨在让 RN 直接调用原生图形 API（Metal/Vulkan）。除这段简短[演示视频](https://twitter.com/JPoliachik/status/1775866218743787934)外，这个[技术讨论串](https://twitter.com/mrousavy/status/1775870100945461277)同样值得关注——Marc 阐释了他们采用 C++ 库的方案决策，以及为何未选择 Three.js（尽管 Web 端的 React-Three-Fiber 在 RN 支持方面表现卓越）。
+
+---
+
+- 💸 [React库分析 — Omlet帮助您根据实际使用数据了解需要保留、移除或改进的组件和属性。](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-apr-2024)
+- 🐦 [VisionCamera直接渲染到Skia](https://twitter.com/mrousavy/status/1776326923674661065)：这将随Vision Camera 4一起发布，该版本似乎即将发布。
+- 📣 [Expo - Orbit现以预览版形式支持Windows](https://expo.dev/blog/expo-orbit-now-available-as-a-preview-for-windows)：如果您还不了解Orbit，它是一个方便的菜单栏应用，可在模拟器上启动构建。
+- 📣 [Expo - 推送通知回执ID将更改字符串格式](https://expo.dev/blog/push-receipt-id-format-will-change)
+- 📖 [RN Gesture Handler中的手势是状态机](https://docs.swmansion.com/react-native-gesture-handler/docs/fundamentals/states-events/#state-flows)：现在文档中提供了优秀的交互式可视化工具来帮助理解它们。
+- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 克拉科夫 - 5月22-24日。使用代码"TWIR"可享受[10%折扣](https://ti.to/appjs/2024/discount/TWIR)。
+- 📜 [在iOS上实现真正可选择的React Native文本](https://haileyok.com/truly-selectable-text-with-react-native-on-ios/)：任何曾尝试在RN中实现文本可选（即选择部分文本而非整个元素）的人都会欣赏这篇文章及附带的库。
+- 📜 [如何将React Native应用Docker化？](https://scientyficworld.org/how-to-dockerize-a-react-native-app/) 总结了在Docker中运行RN开发环境的方法。对我来说，主要问题仍是无法在Docker中进行iOS构建，这使得该方案仅有一半价值，但在某些场景下仍有意义（例如完全不运行本地原生构建时）。
+- 📜 [如何改进React Native 3D动画：使用Three.js控制相机](https://www.themorrow.digital/blog/how-to-improve-your-react-native-3d-animations-camera-control-with-three-js)
+- 📜 [在React Native应用中设置Detox进行端到端测试](https://thoughtbot.com/blog/set-up-detox-for-end-to-end-testing-in-your-react-native-app)
+- 📜 [使用TinyBase和PowerSync构建响应式本地优先应用的最简单方法](https://bndkt.com/blog/2024/the-easiest-way-to-build-reactive-local-first-apps-with-tinybase-and-powersync)
+- 📦 [React Native 0.74.0-rc.8](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.8)
+- 📦 [React-Native-Skia 1.1 - makeImageSnapshotAsync](https://github.com/Shopify/react-native-skia/releases/tag/v1.1.0)
+- 📦 [新架构助手 - 检查依赖项是否已支持新架构和无桥模式](https://github.com/aleqsio/new-arch-helper)
+- 📦 [react-native-localize 3.1 - 支持visionOS](https://github.com/zoontek/react-native-localize/releases/tag/3.1.0)
+- 📦 [expo-proximity - 访问系统距离传感器](https://github.com/tmallet/expo-proximity)
+- 📦 [react-native-qrcode-skia](https://github.com/enzomanuelmangano/react-native-qrcode-skia)
+- 🎥 [Simon Grimm - React Native安全性：锁屏、Face ID与隐私覆盖层](https://www.youtube.com/watch?v=iMFUWaIEzOs)
+- 🎙️ [RNR 293 - Benji Lightstone的真实React Native实践](https://reactnativeradio.com/episodes/rnr-293-real-life-react-native)
+- 🎙️ [Rocket Ship 37 - 与Gary Tokman一起将Swift引入React Native](https://share.transistor.fm/s/cf35076f)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [Set 方法（交集、并集、差集）进入第 4 阶段](https://twitter.com/robpalmer2/status/1777777295941386429) 🎉
+- 📣 [Promise.try 进入第 2.7 阶段](https://github.com/tc39/proposal-promise-try/issues/15)
+- 📜 [TC39 信号提案](https://eisenbergeffect.medium.com/a-tc39-proposal-for-signals-f0bedd37a335)
+- 📜 [Angular 与 Wiz 的协同增效](https://blog.angular.io/angular-and-wiz-are-better-together-91e633d8cd5a)
+- 📜 [HTML 流式传输技术深度解析](https://aralroca.com/blog/html-streaming-over-the-wire)
+- 📜 [使用可构建样式表和 CSS 模块脚本创建导入样式](https://fullystacked.net/constructable/)
+- 📜 [Enhance WASM - Web 组件的后端无关服务端渲染](https://begin.com/blog/posts/2024-04-08-introducing-enhance-wasm)
+- 📦 [ESLint 9.0 - 默认扁平配置、配置检查器、Node 20 支持、格式化工具优化](https://eslint.org/blog/2024/04/eslint-v9.0.0-released/)
+- 📦 [VS Code 1.88 - 自定义编辑器标签、测试覆盖率 API、Copilot 增强](https://code.visualstudio.com/updates/v1_88)
+- 📦 [zx 8.0 - 编写更优脚本：更小体积、同步调用、输入支持、AbortController...](https://github.com/google/zx/releases/tag/8.0.0)
+- 🎥 [JavaScript 可视化：事件循环、Web API、(微)任务队列](https://www.youtube.com/watch?v=eiC58R16hb8)
+
+---
+
+## 🤭 趣闻 {#fun}
+
+[![梗图](/emails/issues/181/meme.jpg)](https://twitter.com/sebastienlorber/status/1777647108822102502)
+
+下次见！👋

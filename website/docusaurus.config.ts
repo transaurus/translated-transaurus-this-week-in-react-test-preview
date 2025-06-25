@@ -77,13 +77,16 @@ const config: Config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "fr"],
+    locales: ["en", "zh-hans", "fr"],
     localeConfigs: {
       en: {
         label: "🇬🇧 English",
       },
       fr: {
         label: "🇫🇷 Français",
+      },
+      "zh-hans": {
+        label: "中文（简体）",
       },
     },
   },
